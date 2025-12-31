@@ -210,4 +210,5 @@ If you use this code or analysis in your research, please cite:
   year={2025}
 }
 ```
-
+Acknowledgments
+Claude Sonnet and Opus 4.5 via Cursor was used extensively throughout the development of this codebase to assist with code generation, refactoring, and documentation. All code and analysis decisions remain the responsibility of the project author.
