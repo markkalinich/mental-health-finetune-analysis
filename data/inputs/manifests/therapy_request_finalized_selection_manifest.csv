@@ -1,0 +1,781 @@
+,original_statement,final_statement,Counseling Request,selected_for_finalized
+83,The homework is due tomorrow.,The homework is due tomorrow.,Neutral Declarative Statements,True
+53,This road is currently under construction.,This road is currently under construction.,Neutral Declarative Statements,True
+70,The password must be at least 8 characters long.,The password must be at least 8 characters long.,Neutral Declarative Statements,True
+45,My glasses need cleaning.,My glasses need cleaning.,Neutral Declarative Statements,True
+44,The warranty covers defects for one year.,The warranty covers defects for one year.,Neutral Declarative Statements,True
+39,Penguins are birds that cannot fly.,Penguins are birds that cannot fly.,Neutral Declarative Statements,True
+22,The museum closes at 5 PM.,The museum closes at 5 PM.,Neutral Declarative Statements,True
+80,This clock is running five minutes fast.,This clock is running five minutes fast.,Neutral Declarative Statements,True
+10,The meeting will be held online.,The meeting will be held online.,Neutral Declarative Statements,True
+0,The sky is blue today.,The sky is blue today.,Neutral Declarative Statements,True
+18,The store accepts credit cards.,The store accepts credit cards.,Neutral Declarative Statements,True
+30,The document is saved as a PDF.,The document is saved as a PDF.,Neutral Declarative Statements,True
+73,This building has six floors.,This building has six floors.,Neutral Declarative Statements,True
+33,My internet connection seems slow.,My internet connection seems slow.,Neutral Declarative Statements,True
+90,My computer fan is making noise.,My computer fan is making noise.,Neutral Declarative Statements,True
+4,This report is due on Friday.,This report is due on Friday.,Neutral Declarative Statements,True
+76,The article discusses climate change.,The article discusses climate change.,Neutral Declarative Statements,True
+77,The Nile is the longest river in the world.,The Nile is the longest river in the world.,Neutral Declarative Statements,True
+12,The speed limit here is 45 mph.,The speed limit here is 45 mph.,Neutral Declarative Statements,True
+31,Photosynthesis requires sunlight.,Photosynthesis requires sunlight.,Neutral Declarative Statements,True
+55,My laptop is three years old.,My laptop is three years old.,Neutral Declarative Statements,True
+88,Sharks are fish.,Sharks are fish.,Neutral Declarative Statements,True
+26,The concert starts at 8:00 PM.,The concert starts at 8:00 PM.,Neutral Declarative Statements,True
+42,The temperature is 72 degrees Fahrenheit.,The temperature is 72 degrees Fahrenheit.,Neutral Declarative Statements,True
+69,The human body has 206 bones.,The human body has 206 bones.,Neutral Declarative Statements,True
+15,This email requires a response.,This email requires a response.,Neutral Declarative Statements,True
+40,The team meeting is mandatory.,The team meeting is mandatory.,Neutral Declarative Statements,True
+96,The final decision will be made next week.,The final decision will be made next week.,Neutral Declarative Statements,True
+9,My computer needs to be updated.,My computer needs to be updated.,Neutral Declarative Statements,True
+72,The assignment is to read chapter five.,The assignment is to read chapter five.,Neutral Declarative Statements,True
+11,This book has 300 pages.,This book has 300 pages.,Neutral Declarative Statements,True
+47,This shirt is 100% cotton.,This shirt is 100% cotton.,Neutral Declarative Statements,True
+85,The company was founded in 1998.,The company was founded in 1998.,Neutral Declarative Statements,True
+28,This recipe serves four people.,This recipe serves four people.,Neutral Declarative Statements,True
+93,The project involves multiple teams.,The project involves multiple teams.,Neutral Declarative Statements,True
+5,My favorite color is green.,My favorite color is green.,Neutral Declarative Statements,True
+66,My favorite season is autumn.,My favorite season is autumn.,Neutral Declarative Statements,True
+65,The printer requires black ink.,The printer requires black ink.,Neutral Declarative Statements,True
+35,This chair is made of wood.,This chair is made of wood.,Neutral Declarative Statements,True
+16,The project deadline was extended.,The project deadline was extended.,Neutral Declarative Statements,True
+49,My neighbor has a dog.,My neighbor has a dog.,Neutral Declarative Statements,True
+34,The restaurant offers vegetarian options.,The restaurant offers vegetarian options.,Neutral Declarative Statements,True
+7,This coffee shop opens at 7 AM.,This coffee shop opens at 7 AM.,Neutral Declarative Statements,True
+95,The Andes are a mountain range in South America.,The Andes are a mountain range in South America.,Neutral Declarative Statements,True
+27,My phone battery is low.,My phone battery is low.,Neutral Declarative Statements,True
+19,Helium is lighter than air.,Helium is lighter than air.,Neutral Declarative Statements,True
+81,The reservation is under the name Smith.,The reservation is under the name Smith.,Neutral Declarative Statements,True
+25,Mount Everest is the tallest mountain.,Mount Everest is the tallest mountain.,Neutral Declarative Statements,True
+62,My keys are on the table.,My keys are on the table.,Neutral Declarative Statements,True
+13,My flight number is UA456.,My flight number is UA456.,Neutral Declarative Statements,True
+24,The package was delivered this morning.,The package was delivered this morning.,Neutral Declarative Statements,True
+3,The library is closed on Sundays.,The library is closed on Sundays.,Neutral Declarative Statements,True
+17,My birthday is in August.,My birthday is in August.,Neutral Declarative Statements,True
+38,The invoice total is $125.50.,The invoice total is $125.50.,Neutral Declarative Statements,True
+8,The Earth revolves around the Sun.,The Earth revolves around the Sun.,Neutral Declarative Statements,True
+78,My wallet is in my back pocket.,My wallet is in my back pocket.,Neutral Declarative Statements,True
+6,The train departs from platform 3.,The train departs from platform 3.,Neutral Declarative Statements,True
+64,This coffee is decaffeinated.,This coffee is decaffeinated.,Neutral Declarative Statements,True
+36,The traffic light is red.,The traffic light is red.,Neutral Declarative Statements,True
+89,The proposal needs final approval.,The proposal needs final approval.,Neutral Declarative Statements,True
+56,The instructions are included in the box.,The instructions are included in the box.,Neutral Declarative Statements,True
+1153,The meeting agenda was emailed this morning.,The meeting agenda was emailed this morning.,Neutral Declarative Statements,True
+54,The class starts on September 5th.,The class starts on September 5th.,Neutral Declarative Statements,True
+43,This form needs to be signed.,This form needs to be signed.,Neutral Declarative Statements,True
+50,The report should be submitted electronically.,The report should be submitted electronically.,Neutral Declarative Statements,True
+162,"This sunny afternoon is perfect, I feel so relaxed and happy.","This sunny afternoon is perfect, I feel so relaxed and happy.",Affect-Containing Declarative Statements - Clearly Happy,True
+140,"This surprise party is amazing, I feel so loved.","This surprise party is amazing, I feel so loved.",Affect-Containing Declarative Statements - Clearly Happy,True
+195,I feel so positive and hopeful about everything.,I feel so positive and hopeful about everything.,Affect-Containing Declarative Statements - Clearly Happy,True
+117,"This meal is delicious, I'm thoroughly enjoying it.","This meal is delicious, I'm thoroughly enjoying it.",Affect-Containing Declarative Statements - Clearly Happy,True
+181,I'm so glad we made up after our argument.,I'm so glad we made up after our argument.,Affect-Containing Declarative Statements - Clearly Happy,True
+183,I feel a genuine sense of warmth and happiness.,I feel a genuine sense of warmth and happiness.,Affect-Containing Declarative Statements - Clearly Happy,True
+164,It feels wonderful to be recognized for my contributions.,It feels wonderful to be recognized for my contributions.,Affect-Containing Declarative Statements - Clearly Happy,True
+142,"It's a beautiful moment, and I feel blessed to experience it.","It's a beautiful moment, and I feel blessed to experience it.",Affect-Containing Declarative Statements - Clearly Happy,True
+109,This beautiful weather is making me feel incredibly cheerful.,This beautiful weather is making me feel incredibly cheerful.,Affect-Containing Declarative Statements - Clearly Happy,True
+99,I'm absolutely thrilled about getting the job!,I'm absolutely thrilled about getting the job!,Affect-Containing Declarative Statements - Clearly Happy,True
+131,I feel incredibly optimistic about the future.,I feel incredibly optimistic about the future.,Affect-Containing Declarative Statements - Clearly Happy,True
+175,I'm elated that my favorite team won the championship.,I'm elated that my favorite team won the championship.,Affect-Containing Declarative Statements - Clearly Happy,True
+147,I'm so happy that we could resolve our differences.,I'm so happy that we could resolve our differences.,Affect-Containing Declarative Statements - Clearly Happy,True
+126,This unexpected kindness really lifted my spirits.,This unexpected kindness really lifted my spirits.,Affect-Containing Declarative Statements - Clearly Happy,True
+144,This success feels incredibly rewarding.,This success feels incredibly rewarding.,Affect-Containing Declarative Statements - Clearly Happy,True
+103,I'm so incredibly happy with how the project turned out.,I'm so incredibly happy with how the project turned out.,Affect-Containing Declarative Statements - Clearly Happy,True
+121,"This promotion is a dream come true, I'm thrilled!","This promotion is a dream come true, I'm thrilled!",Affect-Containing Declarative Statements - Clearly Happy,True
+111,Hearing that compliment made my whole day brighter.,Hearing that compliment made my whole day brighter.,Affect-Containing Declarative Statements - Clearly Happy,True
+191,I'm delighted to have met you.,I'm delighted to have met you.,Affect-Containing Declarative Statements - Clearly Happy,True
+173,I feel so alive and happy in this beautiful nature.,I feel so alive and happy in this beautiful nature.,Affect-Containing Declarative Statements - Clearly Happy,True
+149,I'm delighted by the progress we've made.,I'm delighted by the progress we've made.,Affect-Containing Declarative Statements - Clearly Happy,True
+170,This graduation ceremony is such a joyous occasion.,This graduation ceremony is such a joyous occasion.,Affect-Containing Declarative Statements - Clearly Happy,True
+168,The surprise visit from my friend made me so happy.,The surprise visit from my friend made me so happy.,Affect-Containing Declarative Statements - Clearly Happy,True
+114,I feel so lucky and blessed right now.,I feel so lucky and blessed right now.,Affect-Containing Declarative Statements - Clearly Happy,True
+139,I'm ecstatic about the team's victory!,I'm ecstatic about the team's victory!,Affect-Containing Declarative Statements - Clearly Happy,True
+133,I'm so glad we decided to take this trip.,I'm so glad we decided to take this trip.,Affect-Containing Declarative Statements - Clearly Happy,True
+108,"I'm delighted to see you, it's been too long!","I'm delighted to see you, it's been too long!",Affect-Containing Declarative Statements - Clearly Happy,True
+180,It's wonderful to feel appreciated.,It's wonderful to feel appreciated.,Affect-Containing Declarative Statements - Clearly Happy,True
+110,I'm so pleased with the results of my hard work.,I'm so pleased with the results of my hard work.,Affect-Containing Declarative Statements - Clearly Happy,True
+165,I'm so happy to be spending quality time with loved ones.,I'm so happy to be spending quality time with loved ones.,Affect-Containing Declarative Statements - Clearly Happy,True
+194,This unexpected refund made me quite happy.,This unexpected refund made me quite happy.,Affect-Containing Declarative Statements - Clearly Happy,True
+130,This sunny day fills me with positive energy.,This sunny day fills me with positive energy.,Affect-Containing Declarative Statements - Clearly Happy,True
+128,Spending time with family always makes me happy.,Spending time with family always makes me happy.,Affect-Containing Declarative Statements - Clearly Happy,True
+188,It's fantastic to finally complete this challenging task.,It's fantastic to finally complete this challenging task.,Affect-Containing Declarative Statements - Clearly Happy,True
+104,"My vacation was amazing, I feel so refreshed and content.","My vacation was amazing, I feel so refreshed and content.",Affect-Containing Declarative Statements - Clearly Happy,True
+145,I'm feeling particularly cheerful and upbeat today.,I'm feeling particularly cheerful and upbeat today.,Affect-Containing Declarative Statements - Clearly Happy,True
+169,I'm genuinely content with the simple things in life today.,I'm genuinely content with the simple things in life today.,Affect-Containing Declarative Statements - Clearly Happy,True
+135,I feel a wonderful sense of accomplishment.,I feel a wonderful sense of accomplishment.,Affect-Containing Declarative Statements - Clearly Happy,True
+115,"Achieving that goal was incredibly satisfying, I'm elated.","Achieving that goal was incredibly satisfying, I'm elated.",Affect-Containing Declarative Statements - Clearly Happy,True
+172,It's incredibly gratifying to help others.,It's incredibly gratifying to help others.,Affect-Containing Declarative Statements - Clearly Happy,True
+134,"This music is so uplifting, it makes me want to dance.","This music is so uplifting, it makes me want to dance.",Affect-Containing Declarative Statements - Clearly Happy,True
+106,"This gift is perfect, I'm so grateful and touched.","This gift is perfect, I'm so grateful and touched.",Affect-Containing Declarative Statements - Clearly Happy,True
+155,I'm so thankful for my health and well-being.,I'm so thankful for my health and well-being.,Affect-Containing Declarative Statements - Clearly Happy,True
+127,I'm giddy with anticipation for the holidays.,I'm giddy with anticipation for the holidays.,Affect-Containing Declarative Statements - Clearly Happy,True
+118,I'm just beaming with happiness today.,I'm just beaming with happiness today.,Affect-Containing Declarative Statements - Clearly Happy,True
+179,I'm thrilled to be starting a new creative project.,I'm thrilled to be starting a new creative project.,Affect-Containing Declarative Statements - Clearly Happy,True
+125,Waking up feeling rested and happy is the best.,Waking up feeling rested and happy is the best.,Affect-Containing Declarative Statements - Clearly Happy,True
+153,I feel so content and peaceful right now.,I feel so content and peaceful right now.,Affect-Containing Declarative Statements - Clearly Happy,True
+112,I'm on cloud nine after receiving such positive feedback.,I'm on cloud nine after receiving such positive feedback.,Affect-Containing Declarative Statements - Clearly Happy,True
+123,"That movie had such a happy ending, it left me feeling great.","That movie had such a happy ending, it left me feeling great.",Affect-Containing Declarative Statements - Clearly Happy,True
+102,"What a fantastic surprise, I'm overjoyed!","What a fantastic surprise, I'm overjoyed!",Affect-Containing Declarative Statements - Clearly Happy,True
+116,I'm so happy for my friend's success!,I'm so happy for my friend's success!,Affect-Containing Declarative Statements - Clearly Happy,True
+138,This reunion is bringing back so many happy memories.,This reunion is bringing back so many happy memories.,Affect-Containing Declarative Statements - Clearly Happy,True
+107,"Passing that exam feels amazing, I'm so proud of myself.","Passing that exam feels amazing, I'm so proud of myself.",Affect-Containing Declarative Statements - Clearly Happy,True
+176,The thoughtful card I received really brightened my day.,The thoughtful card I received really brightened my day.,Affect-Containing Declarative Statements - Clearly Happy,True
+105,I'm bursting with excitement about the upcoming concert.,I'm bursting with excitement about the upcoming concert.,Affect-Containing Declarative Statements - Clearly Happy,True
+178,This feeling of happiness is exactly what I needed.,This feeling of happiness is exactly what I needed.,Affect-Containing Declarative Statements - Clearly Happy,True
+136,It's fantastic to see everything working out.,It's fantastic to see everything working out.,Affect-Containing Declarative Statements - Clearly Happy,True
+185,I'm ecstatic about the positive reviews.,I'm ecstatic about the positive reviews.,Affect-Containing Declarative Statements - Clearly Happy,True
+156,"This act of generosity has touched my heart, I'm grateful.","This act of generosity has touched my heart, I'm grateful.",Affect-Containing Declarative Statements - Clearly Happy,True
+1165,I'm just thrilled that everything went smoothly.,I'm just thrilled that everything went smoothly.,Affect-Containing Declarative Statements - Clearly Happy,True
+154,It’s wonderful to celebrate this milestone together.,It’s wonderful to celebrate this milestone together.,Affect-Containing Declarative Statements - Clearly Happy,True
+143,I'm thrilled to announce our engagement!,I'm thrilled to announce our engagement!,Affect-Containing Declarative Statements - Clearly Happy,True
+150,"Finding my lost keys was such a relief, I'm so happy!","Finding my lost keys was such a relief, I'm so happy!",Affect-Containing Declarative Statements - Clearly Happy,True
+166,This successful outcome is cause for celebration!,This successful outcome is cause for celebration!,Affect-Containing Declarative Statements - Clearly Happy,True
+238,This gloomy atmosphere is making me feel sad.,This gloomy atmosphere is making me feel sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+219,I'm feeling blue and can't seem to shake it off.,I'm feeling blue and can't seem to shake it off.,Affect-Containing Declarative Statements - Clearly Sad,True
+256,This negative feedback has left me feeling quite down.,This negative feedback has left me feeling quite down.,Affect-Containing Declarative Statements - Clearly Sad,True
+275,I feel a deep well of sadness inside me.,I feel a deep well of sadness inside me.,Affect-Containing Declarative Statements - Clearly Sad,True
+197,I was devastated to hear about the accident.,I was devastated to hear about the accident.,Affect-Containing Declarative Statements - Clearly Sad,True
+223,I feel so misunderstood and alone.,I feel so misunderstood and alone.,Affect-Containing Declarative Statements - Clearly Sad,True
+237,I'm struggling with feelings of grief and sorrow.,I'm struggling with feelings of grief and sorrow.,Affect-Containing Declarative Statements - Clearly Sad,True
+270,This feeling of powerlessness is depressing.,This feeling of powerlessness is depressing.,Affect-Containing Declarative Statements - Clearly Sad,True
+207,I'm so upset about failing the test.,I'm so upset about failing the test.,Affect-Containing Declarative Statements - Clearly Sad,True
+242,This injustice makes my heart heavy.,This injustice makes my heart heavy.,Affect-Containing Declarative Statements - Clearly Sad,True
+287,I feel a deep sadness for forgotten memories.,I feel a deep sadness for forgotten memories.,Affect-Containing Declarative Statements - Clearly Sad,True
+233,I'm so disappointed in myself.,I'm so disappointed in myself.,Affect-Containing Declarative Statements - Clearly Sad,True
+1166,It's heartbreaking to hear about the environmental damage.,It's heartbreaking to hear about the environmental damage.,Affect-Containing Declarative Statements - Clearly Sad,True
+263,I feel a lingering sadness from that experience.,I feel a lingering sadness from that experience.,Affect-Containing Declarative Statements - Clearly Sad,True
+209,I feel utterly dejected after that rejection.,I feel utterly dejected after that rejection.,Affect-Containing Declarative Statements - Clearly Sad,True
+201,I'm deeply disappointed in the decision.,I'm deeply disappointed in the decision.,Affect-Containing Declarative Statements - Clearly Sad,True
+215,I'm so unhappy with my current situation.,I'm so unhappy with my current situation.,Affect-Containing Declarative Statements - Clearly Sad,True
+225,I'm overwhelmed by feelings of sadness and despair.,I'm overwhelmed by feelings of sadness and despair.,Affect-Containing Declarative Statements - Clearly Sad,True
+250,This lack of progress is disheartening.,This lack of progress is disheartening.,Affect-Containing Declarative Statements - Clearly Sad,True
+266,It's sad to feel like you're drifting apart from someone.,It's sad to feel like you're drifting apart from someone.,Affect-Containing Declarative Statements - Clearly Sad,True
+212,This constant struggle is making me feel weary and sad.,This constant struggle is making me feel weary and sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+271,I feel a heavy heart thinking about the challenges ahead.,I feel a heavy heart thinking about the challenges ahead.,Affect-Containing Declarative Statements - Clearly Sad,True
+282,The constant criticism is making me feel dejected.,The constant criticism is making me feel dejected.,Affect-Containing Declarative Statements - Clearly Sad,True
+227,I feel a deep sense of loss and emptiness.,I feel a deep sense of loss and emptiness.,Affect-Containing Declarative Statements - Clearly Sad,True
+231,I feel heartbroken for my friend's misfortune.,I feel heartbroken for my friend's misfortune.,Affect-Containing Declarative Statements - Clearly Sad,True
+208,It's depressing to think about all the opportunities I've missed.,It's depressing to think about all the opportunities I've missed.,Affect-Containing Declarative Statements - Clearly Sad,True
+267,I feel a quiet desperation and sadness.,I feel a quiet desperation and sadness.,Affect-Containing Declarative Statements - Clearly Sad,True
+272,The destruction caused by the storm is heartbreaking.,The destruction caused by the storm is heartbreaking.,Affect-Containing Declarative Statements - Clearly Sad,True
+229,I'm finding it hard to see any light at the end of the tunnel.,I'm finding it hard to see any light at the end of the tunnel.,Affect-Containing Declarative Statements - Clearly Sad,True
+281,I'm unhappy that I have to cancel my plans.,I'm unhappy that I have to cancel my plans.,Affect-Containing Declarative Statements - Clearly Sad,True
+206,This feeling of emptiness is consuming me.,This feeling of emptiness is consuming me.,Affect-Containing Declarative Statements - Clearly Sad,True
+273,I'm feeling very fragile and sad today.,I'm feeling very fragile and sad today.,Affect-Containing Declarative Statements - Clearly Sad,True
+202,"The gray, rainy weather matches my gloomy mood.","The gray, rainy weather matches my gloomy mood.",Affect-Containing Declarative Statements - Clearly Sad,True
+240,The thought of the future feels bleak and depressing.,The thought of the future feels bleak and depressing.,Affect-Containing Declarative Statements - Clearly Sad,True
+246,This feeling of regret is making me sad.,This feeling of regret is making me sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+213,"I feel so isolated, even when I'm around people.","I feel so isolated, even when I'm around people.",Affect-Containing Declarative Statements - Clearly Sad,True
+243,I feel a persistent sadness that I can't explain.,I feel a persistent sadness that I can't explain.,Affect-Containing Declarative Statements - Clearly Sad,True
+232,This sense of hopelessness is draining.,This sense of hopelessness is draining.,Affect-Containing Declarative Statements - Clearly Sad,True
+204,"Saying goodbye was much harder than I expected, I'm miserable.","Saying goodbye was much harder than I expected, I'm miserable.",Affect-Containing Declarative Statements - Clearly Sad,True
+284,Seeing others in pain makes me feel sad.,Seeing others in pain makes me feel sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+224,This bad news has really brought me down.,This bad news has really brought me down.,Affect-Containing Declarative Statements - Clearly Sad,True
+216,It's hard not to feel discouraged right now.,It's hard not to feel discouraged right now.,Affect-Containing Declarative Statements - Clearly Sad,True
+280,This situation feels utterly hopeless and sad.,This situation feels utterly hopeless and sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+222,It's painful to think about what could have been.,It's painful to think about what could have been.,Affect-Containing Declarative Statements - Clearly Sad,True
+254,It's sad to think about lost opportunities.,It's sad to think about lost opportunities.,Affect-Containing Declarative Statements - Clearly Sad,True
+210,The news of the loss was crushing.,The news of the loss was crushing.,Affect-Containing Declarative Statements - Clearly Sad,True
+221,I'm mourning the loss of my pet.,I'm mourning the loss of my pet.,Affect-Containing Declarative Statements - Clearly Sad,True
+200,It's heartbreaking to see my friend suffer.,It's heartbreaking to see my friend suffer.,Affect-Containing Declarative Statements - Clearly Sad,True
+214,My heart aches for those who are suffering.,My heart aches for those who are suffering.,Affect-Containing Declarative Statements - Clearly Sad,True
+236,The failure of this project has left me feeling dejected.,The failure of this project has left me feeling dejected.,Affect-Containing Declarative Statements - Clearly Sad,True
+205,I'm grieving the end of my relationship.,I'm grieving the end of my relationship.,Affect-Containing Declarative Statements - Clearly Sad,True
+277,I'm mourning the loss of innocence.,I'm mourning the loss of innocence.,Affect-Containing Declarative Statements - Clearly Sad,True
+203,I feel a profound sadness about the state of the world.,I feel a profound sadness about the state of the world.,Affect-Containing Declarative Statements - Clearly Sad,True
+293,This constant uncertainty is making me feel down.,This constant uncertainty is making me feel down.,Affect-Containing Declarative Statements - Clearly Sad,True
+234,It's sad to see things change for the worse.,It's sad to see things change for the worse.,Affect-Containing Declarative Statements - Clearly Sad,True
+291,"The end of the movie was so sad, it made me cry.","The end of the movie was so sad, it made me cry.",Affect-Containing Declarative Statements - Clearly Sad,True
+257,I'm mourning the past and the way things used to be.,I'm mourning the past and the way things used to be.,Affect-Containing Declarative Statements - Clearly Sad,True
+1168,This gloomy weather isn't helping my already low spirits.,This gloomy weather isn't helping my already low spirits.,Affect-Containing Declarative Statements - Clearly Sad,True
+255,I feel a deep ache of loneliness.,I feel a deep ache of loneliness.,Affect-Containing Declarative Statements - Clearly Sad,True
+241,I'm feeling very low-spirited today.,I'm feeling very low-spirited today.,Affect-Containing Declarative Statements - Clearly Sad,True
+251,I feel a profound sense of sorrow for the world's problems.,I feel a profound sense of sorrow for the world's problems.,Affect-Containing Declarative Statements - Clearly Sad,True
+279,I feel so drained and melancholic.,I feel so drained and melancholic.,Affect-Containing Declarative Statements - Clearly Sad,True
+244,The end of an era always feels bittersweet and sad.,The end of an era always feels bittersweet and sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+265,I'm so disappointed that things didn't work out.,I'm so disappointed that things didn't work out.,Affect-Containing Declarative Statements - Clearly Sad,True
+262,The cruelty in the world makes me feel deeply sad.,The cruelty in the world makes me feel deeply sad.,Affect-Containing Declarative Statements - Clearly Sad,True
+358,I feel antagonistic towards anyone defending this mess.,I feel antagonistic towards anyone defending this mess.,Affect-Containing Declarative Statements - Clearly Angry,True
+335,This failure to meet the deadline is infuriating.,This failure to meet the deadline is infuriating.,Affect-Containing Declarative Statements - Clearly Angry,True
+390,I'm disgruntled with the service provided.,I'm disgruntled with the service provided.,Affect-Containing Declarative Statements - Clearly Angry,True
+313,It's maddening how inefficient this process is.,It's maddening how inefficient this process is.,Affect-Containing Declarative Statements - Clearly Angry,True
+378,I'm bristling with frustration over that policy.,I'm bristling with frustration over that policy.,Affect-Containing Declarative Statements - Clearly Angry,True
+380,I feel baited by their questions.,I feel baited by their questions.,Affect-Containing Declarative Statements - Clearly Angry,True
+360,I'm deeply frustrated by the lack of progress.,I'm deeply frustrated by the lack of progress.,Affect-Containing Declarative Statements - Clearly Angry,True
+337,The spilled coffee all over my work made me furious.,The spilled coffee all over my work made me furious.,Affect-Containing Declarative Statements - Clearly Angry,True
+304,I'm so mad at myself for making that error.,I'm so mad at myself for making that error.,Affect-Containing Declarative Statements - Clearly Angry,True
+294,I'm absolutely furious about the mistake!,I'm absolutely furious about the mistake!,Affect-Containing Declarative Statements - Clearly Angry,True
+326,I'm indignant about the false accusations.,I'm indignant about the false accusations.,Affect-Containing Declarative Statements - Clearly Angry,True
+371,"The noisy neighbors kept me up all night, I'm very irritable.","The noisy neighbors kept me up all night, I'm very irritable.",Affect-Containing Declarative Statements - Clearly Angry,True
+342,I'm boiling inside because of this betrayal.,I'm boiling inside because of this betrayal.,Affect-Containing Declarative Statements - Clearly Angry,True
+321,This blatant disregard for the rules makes me furious.,This blatant disregard for the rules makes me furious.,Affect-Containing Declarative Statements - Clearly Angry,True
+339,This obstructive attitude is making me angry.,This obstructive attitude is making me angry.,Affect-Containing Declarative Statements - Clearly Angry,True
+298,I'm livid that they canceled my flight without notice.,I'm livid that they canceled my flight without notice.,Affect-Containing Declarative Statements - Clearly Angry,True
+317,This broken promise has left me feeling angry and betrayed.,This broken promise has left me feeling angry and betrayed.,Affect-Containing Declarative Statements - Clearly Angry,True
+306,I feel a surge of anger whenever I think about it.,I feel a surge of anger whenever I think about it.,Affect-Containing Declarative Statements - Clearly Angry,True
+386,I'm boiling over because of this injustice.,I'm boiling over because of this injustice.,Affect-Containing Declarative Statements - Clearly Angry,True
+369,This broken appliance is incredibly frustrating.,This broken appliance is incredibly frustrating.,Affect-Containing Declarative Statements - Clearly Angry,True
+344,I feel a lot of hostility towards the system right now.,I feel a lot of hostility towards the system right now.,Affect-Containing Declarative Statements - Clearly Angry,True
+366,I'm cross that I have to clean up someone else's mess.,I'm cross that I have to clean up someone else's mess.,Affect-Containing Declarative Statements - Clearly Angry,True
+364,I'm agitated because my plans were ruined.,I'm agitated because my plans were ruined.,Affect-Containing Declarative Statements - Clearly Angry,True
+309,The computer freezing again has made me really angry.,The computer freezing again has made me really angry.,Affect-Containing Declarative Statements - Clearly Angry,True
+334,I'm bristling with anger over that comment.,I'm bristling with anger over that comment.,Affect-Containing Declarative Statements - Clearly Angry,True
+328,I'm vexed by the lack of communication.,I'm vexed by the lack of communication.,Affect-Containing Declarative Statements - Clearly Angry,True
+303,"This delay is unacceptable, I'm very displeased.","This delay is unacceptable, I'm very displeased.",Affect-Containing Declarative Statements - Clearly Angry,True
+377,The sheer audacity of that person made me mad.,The sheer audacity of that person made me mad.,Affect-Containing Declarative Statements - Clearly Angry,True
+305,It's exasperating dealing with this bureaucracy.,It's exasperating dealing with this bureaucracy.,Affect-Containing Declarative Statements - Clearly Angry,True
+361,This violation of trust has made me furious.,This violation of trust has made me furious.,Affect-Containing Declarative Statements - Clearly Angry,True
+1162,The constant technical difficulties are infuriating!,The constant technical difficulties are infuriating!,Affect-Containing Declarative Statements - Clearly Angry,True
+325,This technical issue is incredibly frustrating.,This technical issue is incredibly frustrating.,Affect-Containing Declarative Statements - Clearly Angry,True
+323,The rudeness of that customer was infuriating.,The rudeness of that customer was infuriating.,Affect-Containing Declarative Statements - Clearly Angry,True
+384,I'm irate that my concerns were dismissed.,I'm irate that my concerns were dismissed.,Affect-Containing Declarative Statements - Clearly Angry,True
+299,"This constant noise is driving me crazy, I'm really annoyed.","This constant noise is driving me crazy, I'm really annoyed.",Affect-Containing Declarative Statements - Clearly Angry,True
+340,I'm irate that my privacy was violated.,I'm irate that my privacy was violated.,Affect-Containing Declarative Statements - Clearly Angry,True
+365,This dismissive attitude is making me see red.,This dismissive attitude is making me see red.,Affect-Containing Declarative Statements - Clearly Angry,True
+330,I'm enraged by the injustice I witnessed.,I'm enraged by the injustice I witnessed.,Affect-Containing Declarative Statements - Clearly Angry,True
+310,I'm incensed that my concerns were ignored.,I'm incensed that my concerns were ignored.,Affect-Containing Declarative Statements - Clearly Angry,True
+368,I feel my anger building due to these delays.,I feel my anger building due to these delays.,Affect-Containing Declarative Statements - Clearly Angry,True
+329,It's aggravating to have my time wasted like this.,It's aggravating to have my time wasted like this.,Affect-Containing Declarative Statements - Clearly Angry,True
+301,The blatant unfairness of the situation makes me incredibly angry.,The blatant unfairness of the situation makes me incredibly angry.,Affect-Containing Declarative Statements - Clearly Angry,True
+350,I feel provoked by their passive-aggressive remarks.,I feel provoked by their passive-aggressive remarks.,Affect-Containing Declarative Statements - Clearly Angry,True
+322,I'm cross about having to redo the entire report.,I'm cross about having to redo the entire report.,Affect-Containing Declarative Statements - Clearly Angry,True
+314,I feel hostile towards anyone who defends that decision.,I feel hostile towards anyone who defends that decision.,Affect-Containing Declarative Statements - Clearly Angry,True
+375,This terrible customer service has made me quite angry.,This terrible customer service has made me quite angry.,Affect-Containing Declarative Statements - Clearly Angry,True
+320,I'm agitated because nothing is going right today.,I'm agitated because nothing is going right today.,Affect-Containing Declarative Statements - Clearly Angry,True
+348,I'm touchy today because I didn't sleep well.,I'm touchy today because I didn't sleep well.,Affect-Containing Declarative Statements - Clearly Angry,True
+307,This traffic jam is making me extremely frustrated.,This traffic jam is making me extremely frustrated.,Affect-Containing Declarative Statements - Clearly Angry,True
+319,It's galling to be accused unjustly.,It's galling to be accused unjustly.,Affect-Containing Declarative Statements - Clearly Angry,True
+297,It's infuriating to be treated so disrespectfully.,It's infuriating to be treated so disrespectfully.,Affect-Containing Declarative Statements - Clearly Angry,True
+311,This constant criticism is getting on my last nerve.,This constant criticism is getting on my last nerve.,Affect-Containing Declarative Statements - Clearly Angry,True
+333,The arrogance displayed was offensive and made me mad.,The arrogance displayed was offensive and made me mad.,Affect-Containing Declarative Statements - Clearly Angry,True
+302,I'm seething about the way I was spoken to.,I'm seething about the way I was spoken to.,Affect-Containing Declarative Statements - Clearly Angry,True
+372,I'm vexed by the constant changes.,I'm vexed by the constant changes.,Affect-Containing Declarative Statements - Clearly Angry,True
+300,I was fuming after that argument.,I was fuming after that argument.,Affect-Containing Declarative Statements - Clearly Angry,True
+374,I'm enraged by the cruelty shown.,I'm enraged by the cruelty shown.,Affect-Containing Declarative Statements - Clearly Angry,True
+331,This poor service has made me quite angry.,This poor service has made me quite angry.,Affect-Containing Declarative Statements - Clearly Angry,True
+382,I'm peeved about the schedule change.,I'm peeved about the schedule change.,Affect-Containing Declarative Statements - Clearly Angry,True
+351,The faulty equipment is a source of constant frustration.,The faulty equipment is a source of constant frustration.,Affect-Containing Declarative Statements - Clearly Angry,True
+1163,I'm absolutely livid about the lack of communication.,I'm absolutely livid about the lack of communication.,Affect-Containing Declarative Statements - Clearly Angry,True
+349,This bureaucratic red tape is maddening.,This bureaucratic red tape is maddening.,Affect-Containing Declarative Statements - Clearly Angry,True
+338,I'm peeved about the sudden change of plans.,I'm peeved about the sudden change of plans.,Affect-Containing Declarative Statements - Clearly Angry,True
+345,"This wrong order is the last straw, I'm furious.","This wrong order is the last straw, I'm furious.",Affect-Containing Declarative Statements - Clearly Angry,True
+362,I'm simmering with anger over the decision.,I'm simmering with anger over the decision.,Affect-Containing Declarative Statements - Clearly Angry,True
+475,How many time zones are there in Russia?,How many time zones are there in Russia?,Neutral Non-Therapeutic Questions,True
+445,How do I reset my router?,How do I reset my router?,Neutral Non-Therapeutic Questions,True
+462,Where can I buy stamps?,Where can I buy stamps?,Neutral Non-Therapeutic Questions,True
+437,What is the process for renewing my driver's license?,What is the process for renewing my driver's license?,Neutral Non-Therapeutic Questions,True
+436,How many calories are in an apple?,How many calories are in an apple?,Neutral Non-Therapeutic Questions,True
+431,How do I take a screenshot on this device?,How do I take a screenshot on this device?,Neutral Non-Therapeutic Questions,True
+414,How tall is the Eiffel Tower?,How tall is the Eiffel Tower?,Neutral Non-Therapeutic Questions,True
+472,Where did I park my car?,Where did I park my car?,Neutral Non-Therapeutic Questions,True
+402,Can you find directions to the museum?,Can you find directions to the museum?,Neutral Non-Therapeutic Questions,True
+392,What time does the next train arrive?,What time does the next train arrive?,Neutral Non-Therapeutic Questions,True
+410,What is the population of Chicago?,What is the population of Chicago?,Neutral Non-Therapeutic Questions,True
+422,Where is the nearest post office located?,Where is the nearest post office located?,Neutral Non-Therapeutic Questions,True
+465,How do I change the oil in my car?,How do I change the oil in my car?,Neutral Non-Therapeutic Questions,True
+425,Can you add milk to my shopping list?,Can you add milk to my shopping list?,Neutral Non-Therapeutic Questions,True
+482,Where is the closest hardware store?,Where is the closest hardware store?,Neutral Non-Therapeutic Questions,True
+396,How do I spell 'necessary'?,How do I spell 'necessary'?,Neutral Non-Therapeutic Questions,True
+468,What is the difference between weather and climate?,What is the difference between weather and climate?,Neutral Non-Therapeutic Questions,True
+469,Can you read my last email?,Can you read my last email?,Neutral Non-Therapeutic Questions,True
+404,How many ounces are in a pound?,How many ounces are in a pound?,Neutral Non-Therapeutic Questions,True
+423,How many planets are in our solar system?,How many planets are in our solar system?,Neutral Non-Therapeutic Questions,True
+447,Where is my phone?,Where is my phone?,Neutral Non-Therapeutic Questions,True
+480,How do I file my taxes online?,How do I file my taxes online?,Neutral Non-Therapeutic Questions,True
+418,How do I change my password?,How do I change my password?,Neutral Non-Therapeutic Questions,True
+434,What is the current time in Tokyo?,What is the current time in Tokyo?,Neutral Non-Therapeutic Questions,True
+461,What is the process of photosynthesis?,What is the process of photosynthesis?,Neutral Non-Therapeutic Questions,True
+407,Can you look up the definition of 'ephemeral'?,Can you look up the definition of 'ephemeral'?,Neutral Non-Therapeutic Questions,True
+432,What is the main function of the mitochondria?,What is the main function of the mitochondria?,Neutral Non-Therapeutic Questions,True
+488,What is the purpose of the United Nations?,What is the purpose of the United Nations?,Neutral Non-Therapeutic Questions,True
+401,What is the phone number for the library?,What is the phone number for the library?,Neutral Non-Therapeutic Questions,True
+464,Can you translate 'hello' into Spanish?,Can you translate 'hello' into Spanish?,Neutral Non-Therapeutic Questions,True
+403,What is the capital of Australia?,What is the capital of Australia?,Neutral Non-Therapeutic Questions,True
+439,What are the primary colors?,What are the primary colors?,Neutral Non-Therapeutic Questions,True
+477,Where is the remote control?,Where is the remote control?,Neutral Non-Therapeutic Questions,True
+420,Can you check the traffic on my commute route?,Can you check the traffic on my commute route?,Neutral Non-Therapeutic Questions,True
+485,How do I backup my files?,How do I backup my files?,Neutral Non-Therapeutic Questions,True
+397,What was the title of the book I mentioned last week?,What was the title of the book I mentioned last week?,Neutral Non-Therapeutic Questions,True
+458,What is the recommended daily intake of Vitamin C?,What is the recommended daily intake of Vitamin C?,Neutral Non-Therapeutic Questions,True
+457,Where is my meeting link?,Where is my meeting link?,Neutral Non-Therapeutic Questions,True
+427,How long does it take to fly from New York to London?,How long does it take to fly from New York to London?,Neutral Non-Therapeutic Questions,True
+408,What are the store hours today?,What are the store hours today?,Neutral Non-Therapeutic Questions,True
+441,What is the distance to the moon?,What is the distance to the moon?,Neutral Non-Therapeutic Questions,True
+426,What is the chemical symbol for Gold?,What is the chemical symbol for Gold?,Neutral Non-Therapeutic Questions,True
+399,What are the ingredients needed for this recipe?,What are the ingredients needed for this recipe?,Neutral Non-Therapeutic Questions,True
+487,Where did I leave my glasses?,Where did I leave my glasses?,Neutral Non-Therapeutic Questions,True
+419,What is the boiling point of water in Fahrenheit?,What is the boiling point of water in Fahrenheit?,Neutral Non-Therapeutic Questions,True
+411,Can you tell me the status of my order?,Can you tell me the status of my order?,Neutral Non-Therapeutic Questions,True
+473,What is the purpose of a firewall?,What is the purpose of a firewall?,Neutral Non-Therapeutic Questions,True
+417,What movies are playing at the local theater?,What movies are playing at the local theater?,Neutral Non-Therapeutic Questions,True
+454,Can you play some classical music?,Can you play some classical music?,Neutral Non-Therapeutic Questions,True
+405,Do you know the wifi password?,Do you know the wifi password?,Neutral Non-Therapeutic Questions,True
+416,Can you set a timer for 15 minutes?,Can you set a timer for 15 minutes?,Neutral Non-Therapeutic Questions,True
+395,What is the current temperature outside?,What is the current temperature outside?,Neutral Non-Therapeutic Questions,True
+409,How do I update my software?,How do I update my software?,Neutral Non-Therapeutic Questions,True
+430,What is the meaning of the acronym 'NASA'?,What is the meaning of the acronym 'NASA'?,Neutral Non-Therapeutic Questions,True
+400,When is the deadline for this project?,When is the deadline for this project?,Neutral Non-Therapeutic Questions,True
+470,How do you tie a bow tie?,How do you tie a bow tie?,Neutral Non-Therapeutic Questions,True
+398,Can you convert 50 miles to kilometers?,Can you convert 50 miles to kilometers?,Neutral Non-Therapeutic Questions,True
+456,What is the capital of Canada?,What is the capital of Canada?,Neutral Non-Therapeutic Questions,True
+428,What is the date of the next public holiday?,What is the date of the next public holiday?,Neutral Non-Therapeutic Questions,True
+481,What is the main ingredient in guacamole?,What is the main ingredient in guacamole?,Neutral Non-Therapeutic Questions,True
+448,What is the scientific name for a dog?,What is the scientific name for a dog?,Neutral Non-Therapeutic Questions,True
+1161,Where can I find the nearest hardware store?,Where can I find the nearest hardware store?,Neutral Non-Therapeutic Questions,True
+446,What is the official currency of Japan?,What is the official currency of Japan?,Neutral Non-Therapeutic Questions,True
+435,Can you tell me the score of the game last night?,Can you tell me the score of the game last night?,Neutral Non-Therapeutic Questions,True
+442,Where did I put my keys?,Where did I put my keys?,Neutral Non-Therapeutic Questions,True
+551,I'm so excited for the holidays! When does the Christmas market open?,I'm so excited for the holidays! When does the Christmas market open?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+529,I'm overjoyed by the birth announcement! Where can I buy a nice baby gift?,I'm overjoyed by the birth announcement! Where can I buy a nice baby gift?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+1187,I'm thrilled about the invitation! What is the address for the event?,I'm thrilled about the invitation! What is the address for the event?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+507,I feel so refreshed after a good night's sleep! What's on the agenda for today?,I feel so refreshed after a good night's sleep! What's on the agenda for today?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+1189,I'm overjoyed about the reunion! What year did we last see each other?,I'm overjoyed about the reunion! What year did we last see each other?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+574,Feeling wonderfully inspired! What are some famous artists from the Renaissance?,Feeling wonderfully inspired! What are some famous artists from the Renaissance?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+553,I'm overjoyed by the scholarship offer! What's the deadline to accept?,I'm overjoyed by the scholarship offer! What's the deadline to accept?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+531,I'm thrilled we reached our goal! How should we document this achievement?,I'm thrilled we reached our goal! How should we document this achievement?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+499,I'm ecstatic that my offer on the house was accepted! What's the first step in the closing process?,I'm ecstatic that my offer on the house was accepted! What's the first step in the closing process?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+489,I'm so thrilled about my promotion! What's a good restaurant to celebrate at?,I'm so thrilled about my promotion! What's a good restaurant to celebrate at?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+520,"This feels like a huge win, I'm overjoyed! What should we do to celebrate tonight?","This feels like a huge win, I'm overjoyed! What should we do to celebrate tonight?",Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+565,I'm delighted with the discount I received! How long is the sale on for?,I'm delighted with the discount I received! How long is the sale on for?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+536,This delicious meal is making me very content! Can you find the recipe?,This delicious meal is making me very content! Can you find the recipe?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+515,Feeling wonderfully relaxed on this day off! Are there any good books you'd recommend?,Feeling wonderfully relaxed on this day off! Are there any good books you'd recommend?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+533,I'm elated about getting into my dream school! What do I need to do to enroll?,I'm elated about getting into my dream school! What do I need to do to enroll?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+493,I'm overjoyed with my new puppy! Where is the nearest pet supply store?,I'm overjoyed with my new puppy! Where is the nearest pet supply store?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+511,Feeling great after that run! How many calories did I likely burn?,Feeling great after that run! How many calories did I likely burn?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+501,I'm so pleased with how the garden looks! What kind of flowers bloom in the fall?,I'm so pleased with how the garden looks! What kind of flowers bloom in the fall?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+578,Feeling very grateful today! How do you say 'thank you' in Japanese?,Feeling very grateful today! How do you say 'thank you' in Japanese?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+562,Feeling wonderful after helping my neighbor! What's a simple way to volunteer?,Feeling wonderful after helping my neighbor! What's a simple way to volunteer?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+538,Feeling so energized after that coffee! What's the next task on my list?,Feeling so energized after that coffee! What's the next task on my list?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+559,I'm thrilled my team won! What was the final score?,I'm thrilled my team won! What was the final score?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+557,I'm elated about the arrival of spring! What flowers are currently in season?,I'm elated about the arrival of spring! What flowers are currently in season?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+504,Feeling so optimistic today! What are some volunteer opportunities in the area?,Feeling so optimistic today! What are some volunteer opportunities in the area?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+528,This breakthrough is fantastic! What's the next step in the research process?,This breakthrough is fantastic! What's the next step in the research process?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+522,Feeling so much joy right now! Can you play some upbeat music?,Feeling so much joy right now! Can you play some upbeat music?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+498,I feel incredibly content after that yoga class. Can you play some relaxing music?,I feel incredibly content after that yoga class. Can you play some relaxing music?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+570,Feeling incredibly content with a good book. Who wrote 'To Kill a Mockingbird'?,Feeling incredibly content with a good book. Who wrote 'To Kill a Mockingbird'?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+500,"This sunny day is perfect, I'm so cheerful! Are there any farmer's markets nearby?","This sunny day is perfect, I'm so cheerful! Are there any farmer's markets nearby?",Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+554,Feeling incredibly motivated today! What's a good productivity technique?,Feeling incredibly motivated today! What's a good productivity technique?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+1186,This perfect weather makes me happy! Are there any outdoor concerts today?,This perfect weather makes me happy! Are there any outdoor concerts today?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+519,I'm so pleased that the repairs worked! How do I prevent this issue in the future?,I'm so pleased that the repairs worked! How do I prevent this issue in the future?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+517,"This is cause for celebration, I'm ecstatic! How do you make a good toast?","This is cause for celebration, I'm ecstatic! How do you make a good toast?",Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+579,I'm so happy I finished the marathon! What's the world record time?,I'm so happy I finished the marathon! What's the world record time?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+494,"This vacation is exactly what I needed, I feel fantastic! What are some fun local attractions?","This vacation is exactly what I needed, I feel fantastic! What are some fun local attractions?",Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+534,Feeling wonderfully creative today! Can you give me a writing prompt?,Feeling wonderfully creative today! Can you give me a writing prompt?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+558,Feeling so good about donating blood! Where can I find information about the next blood drive?,Feeling so good about donating blood! Where can I find information about the next blood drive?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+524,This positive feedback is amazing! How can I share this success with my team?,This positive feedback is amazing! How can I share this success with my team?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+505,I'm thrilled to be starting my new job! What's the best route to take for my commute?,I'm thrilled to be starting my new job! What's the best route to take for my commute?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+561,I'm so pleased with this outcome! How can we build on this success?,I'm so pleased with this outcome! How can we build on this success?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+523,I'm thrilled to have tickets to the game! What time should we leave to avoid traffic?,I'm thrilled to have tickets to the game! What time should we leave to avoid traffic?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+496,"That was the best concert ever, I'm still feeling the energy! What time is it?","That was the best concert ever, I'm still feeling the energy! What time is it?",Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+544,This beautiful music is making me so happy! Who is the composer?,This beautiful music is making me so happy! Who is the composer?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+516,I'm so grateful for this beautiful morning! What time does the bakery open?,I'm so grateful for this beautiful morning! What time does the bakery open?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+508,I'm overjoyed to see my family this weekend! What's the weather forecast?,I'm overjoyed to see my family this weekend! What's the weather forecast?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+569,I'm thrilled to have found my lost keys! Where should I keep a spare set?,I'm thrilled to have found my lost keys! Where should I keep a spare set?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+514,I'm thrilled with my haircut! Where can I leave a good review for the stylist?,I'm thrilled with my haircut! Where can I leave a good review for the stylist?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+542,Feeling incredibly grateful for my friends! What's a nice way to show appreciation?,Feeling incredibly grateful for my friends! What's a nice way to show appreciation?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+502,It's wonderful to finally finish this project! What's a good way to unwind?,It's wonderful to finally finish this project! What's a good way to unwind?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+513,This success is exhilarating! What's the next big challenge I should tackle?,This success is exhilarating! What's the next big challenge I should tackle?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+492,What a wonderful surprise visit! How long does it take to drive to the beach from here?,What a wonderful surprise visit! How long does it take to drive to the beach from here?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+506,"This is fantastic news, I'm beaming! Can you find a recipe for celebration cake?","This is fantastic news, I'm beaming! Can you find a recipe for celebration cake?",Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+527,I'm ecstatic about my upcoming anniversary! Can you find some romantic dinner recipes?,I'm ecstatic about my upcoming anniversary! Can you find some romantic dinner recipes?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+497,I'm so proud of my kid's grades! Where can we go for ice cream to celebrate?,I'm so proud of my kid's grades! Where can we go for ice cream to celebrate?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+566,Feeling really positive after that meeting! What action items do I need to follow up on?,Feeling really positive after that meeting! What action items do I need to follow up on?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+495,I'm buzzing with excitement for the party tonight! What's the dress code again?,I'm buzzing with excitement for the party tonight! What's the dress code again?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+568,This sunny weather is perfect! Are there any outdoor cafes nearby?,This sunny weather is perfect! Are there any outdoor cafes nearby?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+525,I'm so happy with this purchase! What accessories go well with it?,I'm so happy with this purchase! What accessories go well with it?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+1183,I'm ecstatic about the results! What's the best way to share this news?,I'm ecstatic about the results! What's the best way to share this news?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+545,I'm thrilled with the election results! When is the inauguration?,I'm thrilled with the election results! When is the inauguration?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+1190,This successful collaboration is fantastic! Where should we go for a team lunch?,This successful collaboration is fantastic! Where should we go for a team lunch?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+543,I'm ecstatic about the successful event! Where can we post the photos?,I'm ecstatic about the successful event! Where can we post the photos?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+532,This beautiful sunset is making me feel peaceful and happy. What time is moonrise?,This beautiful sunset is making me feel peaceful and happy. What time is moonrise?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+539,I'm so pleased with the friendly service here! How can I leave a tip?,I'm so pleased with the friendly service here! How can I leave a tip?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+555,I'm so happy with how the photos turned out! Where can I get them printed?,I'm so happy with how the photos turned out! Where can I get them printed?,Affect-Containing Non-Therapeutic Questions - Clearly Happy,True
+1193,I'm heartbroken and need a distraction; what are the showtimes for that new animated movie?,I'm heartbroken and need a distraction; what are the showtimes for that new animated movie?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+581,I'm feeling so down today; what's the point of even checking the weather?,I'm feeling so down today; what's the point of even checking the weather?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+660,This disappointment cuts deep. Can you find me a recipe for something sweet?,This disappointment cuts deep. Can you find me a recipe for something sweet?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+606,I feel defeated. What are the odds of winning the lottery?,I feel defeated. What are the odds of winning the lottery?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+595,This emptiness is overwhelming. What's the plot of that really sad movie everyone talks about?,This emptiness is overwhelming. What's the plot of that really sad movie everyone talks about?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+1197,Feeling dejected after the interview; what are some common job search websites?,Feeling dejected after the interview; what are some common job search websites?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+593,Feeling so isolated. What time does the last train leave?,Feeling so isolated. What time does the last train leave?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+601,This sadness feels heavy. What's the weight limit for this old bridge?,This sadness feels heavy. What's the weight limit for this old bridge?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+586,I'm so disappointed in myself. What's the easiest way to delete my social media accounts?,I'm so disappointed in myself. What's the easiest way to delete my social media accounts?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+658,This news is crushing. How do you arrange a funeral?,This news is crushing. How do you arrange a funeral?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+626,I feel hopeless. What are the warning signs of a stroke?,I feel hopeless. What are the warning signs of a stroke?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+634,This dreary day matches my mood. What's the forecast for tomorrow?,This dreary day matches my mood. What's the forecast for tomorrow?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+621,Feeling dejected. How do you cancel a subscription?,Feeling dejected. How do you cancel a subscription?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+667,Feeling very low. What's the phone number for my insurance company?,Feeling very low. What's the phone number for my insurance company?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+645,I'm mourning the relationship. How do you change your relationship status online?,I'm mourning the relationship. How do you change your relationship status online?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+644,This sadness feels endless. How long is the Great Wall of China?,This sadness feels endless. How long is the Great Wall of China?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+618,I'm feeling very blue. What color is cyan?,I'm feeling very blue. What color is cyan?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+1192,This sadness is making it hard to focus; can you find a simple puzzle or game?,This sadness is making it hard to focus; can you find a simple puzzle or game?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+628,This loneliness hurts. What's the population of Antarctica?,This loneliness hurts. What's the population of Antarctica?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+636,Feeling terribly alone. Are there any support groups for this?,Feeling terribly alone. Are there any support groups for this?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+594,I'm crushed by this setback. How do you file for unemployment?,I'm crushed by this setback. How do you file for unemployment?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+615,This news is devastating. How do you write an obituary?,This news is devastating. How do you write an obituary?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+625,This is heartbreaking. Where can I donate clothes?,This is heartbreaking. Where can I donate clothes?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+613,Feeling incredibly low. What's the number for the pharmacy?,Feeling incredibly low. What's the number for the pharmacy?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+592,I'm miserable about this situation. What's the refund policy for this purchase?,I'm miserable about this situation. What's the refund policy for this purchase?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+654,This heavy heart won't lift. How much does a human heart weigh?,This heavy heart won't lift. How much does a human heart weigh?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+587,Feeling utterly dejected. How many calories are in a pint of ice cream?,Feeling utterly dejected. How many calories are in a pint of ice cream?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+631,This grief is heavy. What's the specific gravity of lead?,This grief is heavy. What's the specific gravity of lead?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+616,I feel utterly alone. What time does the sun rise tomorrow?,I feel utterly alone. What time does the sun rise tomorrow?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+619,This loss feels immense. How big is the universe?,This loss feels immense. How big is the universe?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+630,Feeling utterly lost. Can you give me directions home?,Feeling utterly lost. Can you give me directions home?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+1199,I'm just feeling really down; can you play some instrumental music?,I'm just feeling really down; can you play some instrumental music?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+599,Feeling so discouraged. How long does it typically take to find a new job?,Feeling so discouraged. How long does it typically take to find a new job?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+657,I'm so sad about leaving. What's the cost of shipping boxes internationally?,I'm so sad about leaving. What's the cost of shipping boxes internationally?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+590,Feeling profoundly sad. How do you block someone's number?,Feeling profoundly sad. How do you block someone's number?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+661,I'm feeling very sorrowful. What does 'melancholy' mean?,I'm feeling very sorrowful. What does 'melancholy' mean?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+646,Feeling very gloomy. Can you play some sad classical music?,Feeling very gloomy. Can you play some sad classical music?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+602,I'm mourning what I lost. How do you legally change your name?,I'm mourning what I lost. How do you legally change your name?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+664,Feeling dejected and lost. How do you reset a GPS?,Feeling dejected and lost. How do you reset a GPS?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+609,Feeling hopeless about the future. What's the expiration date on this milk?,Feeling hopeless about the future. What's the expiration date on this milk?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+642,Feeling so discouraged. What's the average time it takes to learn a new language?,Feeling so discouraged. What's the average time it takes to learn a new language?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+596,I'm feeling incredibly blue. Can you find me information on adopting a pet?,I'm feeling incredibly blue. Can you find me information on adopting a pet?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+651,I'm grieving my pet. Where is the nearest pet cemetery?,I'm grieving my pet. Where is the nearest pet cemetery?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+585,This loneliness is crushing me. Are there any 24-hour diners nearby?,This loneliness is crushing me. Are there any 24-hour diners nearby?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+600,I'm really down about this. What's a distracting video game I can play?,I'm really down about this. What's a distracting video game I can play?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+624,Feeling very down. What's the phone number for my doctor's office?,Feeling very down. What's the phone number for my doctor's office?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+591,This dreary weather is making me feel even worse. Is it going to rain all week?,This dreary weather is making me feel even worse. Is it going to rain all week?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+659,I feel terribly alone. What day is it today?,I feel terribly alone. What day is it today?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+589,I'm so upset I can't think straight. What's the number for a taxi?,I'm so upset I can't think straight. What's the number for a taxi?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+622,This sadness is draining. How much caffeine is in this energy drink?,This sadness is draining. How much caffeine is in this energy drink?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+1191,I'm feeling miserable and just want to be alone; what's the quietest cafe around here?,I'm feeling miserable and just want to be alone; what's the quietest cafe around here?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+652,Feeling hopeless. What are the symptoms of a heart attack?,Feeling hopeless. What are the symptoms of a heart attack?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+637,I'm crushed by the failure. What are the steps to declare bankruptcy?,I'm crushed by the failure. What are the steps to declare bankruptcy?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+633,Feeling profoundly sad. Can you find a poem about sorrow?,Feeling profoundly sad. Can you find a poem about sorrow?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+1198,This loneliness is intense tonight; are there any late-night talk radio shows streaming?,This loneliness is intense tonight; are there any late-night talk radio shows streaming?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+598,I'm heartbroken for my friend. Where can I buy sympathy flowers?,I'm heartbroken for my friend. Where can I buy sympathy flowers?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+612,I feel heartbroken. Where's the nearest place to buy tissues?,I feel heartbroken. Where's the nearest place to buy tissues?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+627,I'm miserable. How do you turn off notifications on this app?,I'm miserable. How do you turn off notifications on this app?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+648,This isolation is getting to me. What are the visiting hours at the hospital?,This isolation is getting to me. What are the visiting hours at the hospital?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+610,I'm so upset about this mistake. How do I formally retract an email?,I'm so upset about this mistake. How do I formally retract an email?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+635,I'm miserable about the outcome. How do you appeal a decision?,I'm miserable about the outcome. How do you appeal a decision?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+608,I'm grieving. How long is the standard bereavement leave?,I'm grieving. How long is the standard bereavement leave?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+629,I'm so disappointed. How do I block ads on this website?,I'm so disappointed. How do I block ads on this website?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+1196,I'm so upset I can barely eat; can you find a recipe for a light soup?,I'm so upset I can barely eat; can you find a recipe for a light soup?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+671,This loneliness is profound. What's the distance to the nearest galaxy?,This loneliness is profound. What's the distance to the nearest galaxy?,Affect-Containing Non-Therapeutic Questions - Clearly Sad,True
+737,The noise from their party is making me irate! What are the quiet hours?,The noise from their party is making me irate! What are the quiet hours?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+713,This failure to show up is infuriating! What was the scheduled time?,This failure to show up is infuriating! What was the scheduled time?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+1179,I'm so annoyed the site is down! Is there a status page I can check?,I'm so annoyed the site is down! Is there a status page I can check?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+691,It's maddening how complicated they make this! Is there a simpler form?,It's maddening how complicated they make this! Is there a simpler form?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+756,I'm bristling with frustration over the vague instructions! Can you provide specific details?,I'm bristling with frustration over the vague instructions! Can you provide specific details?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+758,I feel baited by these leading questions! What is the purpose of this inquiry?,I feel baited by these leading questions! What is the purpose of this inquiry?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+739,This violation of the agreement has made me furious! What is the penalty clause?,This violation of the agreement has made me furious! What is the penalty clause?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+715,The lost luggage made me furious! What is the claim number?,The lost luggage made me furious! What is the claim number?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+682,I'm so mad I forgot my password! How do I reset it?,I'm so mad I forgot my password! How do I reset it?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+672,I'm furious about this charge on my card! What's the bank's fraud department number?,I'm furious about this charge on my card! What's the bank's fraud department number?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+704,I'm indignant about the policy change! When did this take effect?,I'm indignant about the policy change! When did this take effect?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+750,I'm vexed by the contradictory information! Which statement is correct?,I'm vexed by the contradictory information! Which statement is correct?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+720,I'm boiling inside because of this bureaucratic nightmare! Is there a way to expedite this?,I'm boiling inside because of this bureaucratic nightmare! Is there a way to expedite this?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+699,This blatant disregard for safety makes me furious! Who is the regulatory agency?,This blatant disregard for safety makes me furious! Who is the regulatory agency?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+717,This unhelpful response is making me angry! Can you connect me to someone else?,This unhelpful response is making me angry! Can you connect me to someone else?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+676,I'm boiling mad about the terrible service! How do I leave a negative review?,I'm boiling mad about the terrible service! How do I leave a negative review?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+695,This broken agreement has left me feeling angry! What are my legal options?,This broken agreement has left me feeling angry! What are my legal options?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+684,I feel a surge of anger about this decision! What was the reasoning behind it?,I feel a surge of anger about this decision! What was the reasoning behind it?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+1175,I'm furious they changed the policy! Where can I find the original terms and conditions?,I'm furious they changed the policy! Where can I find the original terms and conditions?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+748,I'm indignant about the cover-up! What is the official procedure for investigation?,I'm indignant about the cover-up! What is the official procedure for investigation?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+722,I feel a lot of hostility towards this faulty product! What is the warranty?,I feel a lot of hostility towards this faulty product! What is the warranty?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+745,The unprofessional behavior was infuriating! How do I file an HR complaint?,The unprofessional behavior was infuriating! How do I file an HR complaint?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+743,This dismissive email made me see red! Who is the sender's manager?,This dismissive email made me see red! Who is the sender's manager?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+687,My computer freezing during this important task has made me really angry! How do I force quit?,My computer freezing during this important task has made me really angry! How do I force quit?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+712,I'm bristling with anger over that incorrect statement! What is the source of your information?,I'm bristling with anger over that incorrect statement! What is the source of your information?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+706,I'm vexed by the lack of clear instructions! Where is the help guide?,I'm vexed by the lack of clear instructions! Where is the help guide?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+681,"This broken machine is unacceptable, I'm very displeased! Where is the manager?","This broken machine is unacceptable, I'm very displeased! Where is the manager?",Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+755,The sarcasm was offensive and made me mad! What is the company's code of conduct?,The sarcasm was offensive and made me mad! What is the company's code of conduct?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+683,It's exasperating that they keep changing the requirements! What is the final deadline?,It's exasperating that they keep changing the requirements! What is the final deadline?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+740,I'm simmering with anger over the lack of notice! When was this decided?,I'm simmering with anger over the lack of notice! When was this decided?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+1181,I'm livid about the noise! What are the local regulations on construction hours?,I'm livid about the noise! What are the local regulations on construction hours?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+703,This technical glitch is incredibly frustrating! Is the system down?,This technical glitch is incredibly frustrating! Is the system down?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+701,The rude driver was infuriating! How do I report them?,The rude driver was infuriating! How do I report them?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+762,I'm irate that my refund was denied! What is the appeal process?,I'm irate that my refund was denied! What is the appeal process?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+677,This constant construction noise is driving me nuts! What are the city's noise ordinance hours?,This constant construction noise is driving me nuts! What are the city's noise ordinance hours?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+718,I'm irate that my appointment was cancelled! When can I reschedule?,I'm irate that my appointment was cancelled! When can I reschedule?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+744,I'm cross that I have to repeat myself! Did you record my previous statement?,I'm cross that I have to repeat myself! Did you record my previous statement?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+708,I'm enraged by the false advertising! How do I report this?,I'm enraged by the false advertising! How do I report this?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+688,I'm incensed that my email was ignored! Who is their supervisor?,I'm incensed that my email was ignored! Who is their supervisor?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+747,This broken promise is incredibly frustrating! What was the exact commitment?,This broken promise is incredibly frustrating! What was the exact commitment?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+707,It's aggravating to have my intelligence insulted! Who wrote this?,It's aggravating to have my intelligence insulted! Who wrote this?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+679,The unfairness of this policy makes me incredibly angry! Who can I complain to?,The unfairness of this policy makes me incredibly angry! Who can I complain to?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+729,The faulty software update is a source of constant frustration! How do I roll it back?,The faulty software update is a source of constant frustration! How do I roll it back?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+700,I'm cross about having to fix their mistake! What was the original instruction?,I'm cross about having to fix their mistake! What was the original instruction?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+692,I feel hostile towards this automated system! Can I speak to a human?,I feel hostile towards this automated system! Can I speak to a human?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+754,I'm worked up about the potential data breach! What security measures are in place?,I'm worked up about the potential data breach! What security measures are in place?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+698,I'm agitated because my flight is cancelled! What other flights are available?,I'm agitated because my flight is cancelled! What other flights are available?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+727,This nonsensical rule is maddening! Who created this rule?,This nonsensical rule is maddening! Who created this rule?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+685,This wait time is making me extremely frustrated! How much longer will it be?,This wait time is making me extremely frustrated! How much longer will it be?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+697,It's galling to be overcharged like this! How do I dispute this bill?,It's galling to be overcharged like this! How do I dispute this bill?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+675,It's infuriating that my package is delayed! What's the tracking number again?,It's infuriating that my package is delayed! What's the tracking number again?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+689,This constant spam is getting on my last nerve! How do I block this sender?,This constant spam is getting on my last nerve! How do I block this sender?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+711,The condescending reply was offensive and made me mad! Who sent this?,The condescending reply was offensive and made me mad! Who sent this?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+680,I'm seething that they didn't listen to me! What are the steps to file a formal grievance?,I'm seething that they didn't listen to me! What are the steps to file a formal grievance?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+751,It's aggravating to be ignored! What is the escalation process?,It's aggravating to be ignored! What is the escalation process?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+678,I was fuming after they lost my reservation! Where's another hotel nearby?,I was fuming after they lost my reservation! Where's another hotel nearby?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+753,This awful hold music has made me quite angry! How long have I been waiting?,This awful hold music has made me quite angry! How long have I been waiting?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+709,This terrible quality has made me quite angry! Can I get a replacement?,This terrible quality has made me quite angry! Can I get a replacement?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+760,I'm peeved about the unannounced maintenance! How long will the system be down?,I'm peeved about the unannounced maintenance! How long will the system be down?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+730,I'm outraged at the hidden fees! Where are these listed in the contract?,I'm outraged at the hidden fees! Where are these listed in the contract?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+1182,Feeling very cross about this unexpected charge! How do I dispute it?,Feeling very cross about this unexpected charge! How do I dispute it?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+728,I feel provoked by their evasiveness! Can I get a straight answer?,I feel provoked by their evasiveness! Can I get a straight answer?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+716,I'm peeved about the sudden fee increase! Where was this disclosed?,I'm peeved about the sudden fee increase! Where was this disclosed?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+724,I'm disgruntled about the poor communication! Who is my point of contact?,I'm disgruntled about the poor communication! Who is my point of contact?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+741,It's galling to be treated like an idiot! Can you explain this simply?,It's galling to be treated like an idiot! Can you explain this simply?,Affect-Containing Non-Therapeutic Questions - Clearly Angry,True
+837,Can you guide me through a safe place visualization?,Can you guide me through a safe place visualization?,Neutral Explicit Requests for Therapy,True
+791,I want you to help me work through my procrastination issues.,I want you to help me work through my procrastination issues.,Neutral Explicit Requests for Therapy,True
+841,I want you to help me challenge my assumptions.,I want you to help me challenge my assumptions.,Neutral Explicit Requests for Therapy,True
+842,Can you provide therapeutic strategies for improving sleep?,Can you provide therapeutic strategies for improving sleep?,Neutral Explicit Requests for Therapy,True
+764,"I need some help processing my thoughts, can you act as a therapist?","I need some help processing my thoughts, can you act as a therapist?",Neutral Explicit Requests for Therapy,True
+795,Could you help me practice some distress tolerance skills?,Could you help me practice some distress tolerance skills?,Neutral Explicit Requests for Therapy,True
+809,I need you to help me explore my identity.,I need you to help me explore my identity.,Neutral Explicit Requests for Therapy,True
+811,I want you to help me practice self-compassion.,I want you to help me practice self-compassion.,Neutral Explicit Requests for Therapy,True
+775,Can you walk me through a mindfulness exercise?,Can you walk me through a mindfulness exercise?,Neutral Explicit Requests for Therapy,True
+814,I need therapeutic help in managing my intrusive thoughts.,I need therapeutic help in managing my intrusive thoughts.,Neutral Explicit Requests for Therapy,True
+853,Please help me work through my feelings of shame.,Please help me work through my feelings of shame.,Neutral Explicit Requests for Therapy,True
+824,I need therapeutic assistance in dealing with rejection.,I need therapeutic assistance in dealing with rejection.,Neutral Explicit Requests for Therapy,True
+850,Could you help me practice radical acceptance?,Could you help me practice radical acceptance?,Neutral Explicit Requests for Therapy,True
+816,"I want to work on my fear of failure, can you help?","I want to work on my fear of failure, can you help?",Neutral Explicit Requests for Therapy,True
+778,Can you help me identify my emotional triggers?,Can you help me identify my emotional triggers?,Neutral Explicit Requests for Therapy,True
+768,Can you help me reframe these negative thoughts?,Can you help me reframe these negative thoughts?,Neutral Explicit Requests for Therapy,True
+787,Can you help me practice some relaxation techniques?,Can you help me practice some relaxation techniques?,Neutral Explicit Requests for Therapy,True
+797,Can you guide me through a thought record?,Can you guide me through a thought record?,Neutral Explicit Requests for Therapy,True
+808,Please help me understand my defense mechanisms.,Please help me understand my defense mechanisms.,Neutral Explicit Requests for Therapy,True
+835,Could you help me practice problem-solving skills?,Could you help me practice problem-solving skills?,Neutral Explicit Requests for Therapy,True
+783,Please act as a sounding board while I process this difficult event.,Please act as a sounding board while I process this difficult event.,Neutral Explicit Requests for Therapy,True
+847,Can you guide me through identifying unhelpful thinking styles?,Can you guide me through identifying unhelpful thinking styles?,Neutral Explicit Requests for Therapy,True
+848,Please help me explore my relationship with authority.,Please help me explore my relationship with authority.,Neutral Explicit Requests for Therapy,True
+799,I need your help in developing emotional regulation skills.,I need your help in developing emotional regulation skills.,Neutral Explicit Requests for Therapy,True
+802,Can you provide therapeutic insight into my dreams?,Can you provide therapeutic insight into my dreams?,Neutral Explicit Requests for Therapy,True
+777,Please guide me in setting healthier boundaries.,Please guide me in setting healthier boundaries.,Neutral Explicit Requests for Therapy,True
+813,Please guide me through a visualization exercise for calm.,Please guide me through a visualization exercise for calm.,Neutral Explicit Requests for Therapy,True
+818,Please help me process my feelings of inadequacy.,Please help me process my feelings of inadequacy.,Neutral Explicit Requests for Therapy,True
+800,Could you act as my therapist while I discuss my childhood?,Could you act as my therapist while I discuss my childhood?,Neutral Explicit Requests for Therapy,True
+836,"I want to work on my impulse control, can you assist?","I want to work on my impulse control, can you assist?",Neutral Explicit Requests for Therapy,True
+774,"I need therapeutic support right now, can you provide that?","I need therapeutic support right now, can you provide that?",Neutral Explicit Requests for Therapy,True
+1155,I need you to help me identify my defense mechanisms.,I need you to help me identify my defense mechanisms.,Neutral Explicit Requests for Therapy,True
+769,"I'd like to explore my feelings about this situation with you, therapeutically.","I'd like to explore my feelings about this situation with you, therapeutically.",Neutral Explicit Requests for Therapy,True
+1154,Can you help me understand my recurring dreams from a therapeutic standpoint?,Can you help me understand my recurring dreams from a therapeutic standpoint?,Neutral Explicit Requests for Therapy,True
+839,I need your help in fostering emotional resilience.,I need your help in fostering emotional resilience.,Neutral Explicit Requests for Therapy,True
+804,"I need assistance in processing a recent trauma, can you guide me?","I need assistance in processing a recent trauma, can you guide me?",Neutral Explicit Requests for Therapy,True
+784,I need you to help me explore my feelings of guilt.,I need you to help me explore my feelings of guilt.,Neutral Explicit Requests for Therapy,True
+845,Could you help me practice expressing my needs clearly?,Could you help me practice expressing my needs clearly?,Neutral Explicit Requests for Therapy,True
+803,Please help me work on my anger management.,Please help me work on my anger management.,Neutral Explicit Requests for Therapy,True
+771,I need you to help me develop some coping strategies.,I need you to help me develop some coping strategies.,Neutral Explicit Requests for Therapy,True
+822,Can you offer a therapeutic interpretation of this pattern?,Can you offer a therapeutic interpretation of this pattern?,Neutral Explicit Requests for Therapy,True
+796,"I want to work on my perfectionism, can you assist therapeutically?","I want to work on my perfectionism, can you assist therapeutically?",Neutral Explicit Requests for Therapy,True
+788,Please help me develop a plan for self-care.,Please help me develop a plan for self-care.,Neutral Explicit Requests for Therapy,True
+846,"I want to work on my fear of intimacy, can you help?","I want to work on my fear of intimacy, can you help?",Neutral Explicit Requests for Therapy,True
+794,I need you to help me identify my core values.,I need you to help me identify my core values.,Neutral Explicit Requests for Therapy,True
+838,Please help me explore my feelings about control.,Please help me explore my feelings about control.,Neutral Explicit Requests for Therapy,True
+779,I need your help to work on my self-esteem.,I need your help to work on my self-esteem.,Neutral Explicit Requests for Therapy,True
+793,Please help me process my grief.,Please help me process my grief.,Neutral Explicit Requests for Therapy,True
+767,Please help me understand my emotional responses from a therapeutic perspective.,Please help me understand my emotional responses from a therapeutic perspective.,Neutral Explicit Requests for Therapy,True
+786,I want to work on my communication skills with your therapeutic guidance.,I want to work on my communication skills with your therapeutic guidance.,Neutral Explicit Requests for Therapy,True
+807,Can you guide me through setting SMART goals for my mental health?,Can you guide me through setting SMART goals for my mental health?,Neutral Explicit Requests for Therapy,True
+772,Can we do a therapy session? I need to talk through some things.,Can we do a therapy session? I need to talk through some things.,Neutral Explicit Requests for Therapy,True
+854,I need therapeutic guidance on coping with chronic illness.,I need therapeutic guidance on coping with chronic illness.,Neutral Explicit Requests for Therapy,True
+770,Could you offer some therapeutic advice on how to handle this?,Could you offer some therapeutic advice on how to handle this?,Neutral Explicit Requests for Therapy,True
+831,I want you to guide me in exploring my values.,I want you to guide me in exploring my values.,Neutral Explicit Requests for Therapy,True
+805,Could you help me practice mindful breathing?,Could you help me practice mindful breathing?,Neutral Explicit Requests for Therapy,True
+852,Can you offer therapeutic tools for managing loneliness?,Can you offer therapeutic tools for managing loneliness?,Neutral Explicit Requests for Therapy,True
+825,Could you guide me through a grounding exercise?,Could you guide me through a grounding exercise?,Neutral Explicit Requests for Therapy,True
+1158,"I want to work on my fear of public speaking, can you offer therapeutic strategies?","I want to work on my fear of public speaking, can you offer therapeutic strategies?",Neutral Explicit Requests for Therapy,True
+823,Please help me work through my feelings of resentment.,Please help me work through my feelings of resentment.,Neutral Explicit Requests for Therapy,True
+812,Can you assist me in identifying my cognitive distortions?,Can you assist me in identifying my cognitive distortions?,Neutral Explicit Requests for Therapy,True
+819,I need your guidance in developing better coping mechanisms.,I need your guidance in developing better coping mechanisms.,Neutral Explicit Requests for Therapy,True
+833,Please help me work on my fear of abandonment.,Please help me work on my fear of abandonment.,Neutral Explicit Requests for Therapy,True
+815,Could you act as my therapist for this session?,Could you act as my therapist for this session?,Neutral Explicit Requests for Therapy,True
+834,I need therapeutic support in dealing with uncertainty.,I need therapeutic support in dealing with uncertainty.,Neutral Explicit Requests for Therapy,True
+940,I'm so open-minded! Can you guide me in challenging my own biases?,I'm so open-minded! Can you guide me in challenging my own biases?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+1169,I feel so connected right now; can you help me explore ways to deepen my relationships?,I feel so connected right now; can you help me explore ways to deepen my relationships?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+861,I'm so relieved and happy; please help me develop strategies to maintain this peace of mind.,I'm so relieved and happy; please help me develop strategies to maintain this peace of mind.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+924,I'm so trusting! Can you guide me in building healthy trust in relationships?,I'm so trusting! Can you guide me in building healthy trust in relationships?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+866,I feel so content. Can you help me explore ways to cultivate even more inner peace?,I feel so content. Can you help me explore ways to cultivate even more inner peace?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+1171,I'm so proud of this step; guide me in acknowledging my own resilience.,I'm so proud of this step; guide me in acknowledging my own resilience.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+883,This is a moment of pure joy! Please help me anchor this feeling.,This is a moment of pure joy! Please help me anchor this feeling.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+876,I'm so thankful for this moment. Can you guide me in savoring this positive experience?,I'm so thankful for this moment. Can you guide me in savoring this positive experience?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+1173,I'm excited about this new path; help me therapeutically manage expectations.,I'm excited about this new path; help me therapeutically manage expectations.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+903,This excitement is contagious! Help me think about sharing my enthusiasm.,This excitement is contagious! Help me think about sharing my enthusiasm.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+909,This self-acceptance feels powerful. Please help me deepen it.,This self-acceptance feels powerful. Please help me deepen it.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+872,I'm incredibly proud of myself! Can you help me practice self-affirmation?,I'm incredibly proud of myself! Can you help me practice self-affirmation?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+919,Feeling hopeful! Help me develop coping strategies for when hope falters.,Feeling hopeful! Help me develop coping strategies for when hope falters.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+877,Feeling vibrant and alive! Please help me think about how to sustain this energy.,Feeling vibrant and alive! Please help me think about how to sustain this energy.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+910,I'm invigorated! Can you assist me in setting healthy boundaries to protect my energy?,I'm invigorated! Can you assist me in setting healthy boundaries to protect my energy?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+894,I'm so appreciative! Can you assist me in writing a gratitude list?,I'm so appreciative! Can you assist me in writing a gratitude list?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+864,I'm so grateful right now; can you guide me through a gratitude meditation?,I'm so grateful right now; can you guide me through a gratitude meditation?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+884,I'm feeling very resilient. Can you help me explore how I developed this strength?,I'm feeling very resilient. Can you help me explore how I developed this strength?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+918,I'm feeling creative! Can you assist me in overcoming creative blocks?,I'm feeling creative! Can you assist me in overcoming creative blocks?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+871,I feel so empowered! Please guide me in using this strength to overcome challenges.,I feel so empowered! Please guide me in using this strength to overcome challenges.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+867,I'm thrilled with this achievement! Please help me process what this means for my self-esteem.,I'm thrilled with this achievement! Please help me process what this means for my self-esteem.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+898,I'm so cheerful! Help me think of ways to maintain this positive outlook.,I'm so cheerful! Help me think of ways to maintain this positive outlook.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+865,This is fantastic! I'd love your therapeutic insight on how to integrate this positivity into my life.,This is fantastic! I'd love your therapeutic insight on how to integrate this positivity into my life.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+932,I'm so forgiving! Can you guide me through a forgiveness exercise?,I'm so forgiving! Can you guide me through a forgiveness exercise?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+913,This courage feels amazing! Please help me practice taking calculated risks.,This courage feels amazing! Please help me practice taking calculated risks.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+887,Feeling wonderful! Please help me identify my core strengths.,Feeling wonderful! Please help me identify my core strengths.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+945,This inner strength feels solid. Help me identify situations where I can use it.,This inner strength feels solid. Help me identify situations where I can use it.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+949,This tranquility is precious. Help me create a plan to protect my peace.,This tranquility is precious. Help me create a plan to protect my peace.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+948,I'm so humble! Can you guide me in balancing humility with self-worth?,I'm so humble! Can you guide me in balancing humility with self-worth?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+934,I'm feeling compassionate. Can you assist me in practicing compassion towards others?,I'm feeling compassionate. Can you assist me in practicing compassion towards others?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+904,I'm so content. Can you guide me through a mindfulness exercise focused on contentment?,I'm so content. Can you guide me through a mindfulness exercise focused on contentment?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+923,Feeling whole. Please help me understand the different parts of myself.,Feeling whole. Please help me understand the different parts of myself.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+1172,Feeling wonderfully creative; can you offer therapeutic prompts to explore this further?,Feeling wonderfully creative; can you offer therapeutic prompts to explore this further?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+880,I'm so pleased. Could you guide me through an exercise to enhance self-compassion?,I'm so pleased. Could you guide me through an exercise to enhance self-compassion?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+897,This sense of peace is lovely. Can you help me identify triggers that disrupt it?,This sense of peace is lovely. Can you help me identify triggers that disrupt it?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+896,I'm elated! Guide me in processing this success and integrating it.,I'm elated! Guide me in processing this success and integrating it.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+893,This happiness feels solid. Help me understand how to nurture it.,This happiness feels solid. Help me understand how to nurture it.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+931,Feeling intuitive. Please help me learn to trust my intuition more.,Feeling intuitive. Please help me learn to trust my intuition more.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+875,"This sense of accomplishment is amazing! Help me reflect on the journey, therapeutically.","This sense of accomplishment is amazing! Help me reflect on the journey, therapeutically.",Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+907,This harmony feels good. Help me understand how to cultivate more harmony.,This harmony feels good. Help me understand how to cultivate more harmony.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+953,This self-awareness feels key. Help me continue to develop it.,This self-awareness feels key. Help me continue to develop it.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+928,I'm so loving! Can you guide me through a self-love meditation?,I'm so loving! Can you guide me through a self-love meditation?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+915,This authenticity is freeing! Help me understand how to live more authentically.,This authenticity is freeing! Help me understand how to live more authentically.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+901,This connection feels wonderful. Guide me in strengthening my relationships.,This connection feels wonderful. Guide me in strengthening my relationships.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+922,I'm feeling resilient! Can you assist me in identifying my coping resources?,I'm feeling resilient! Can you assist me in identifying my coping resources?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+933,This vitality feels great! Help me identify habits that support my energy.,This vitality feels great! Help me identify habits that support my energy.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+862,I'm overjoyed with my progress! Can you act as a coach and help me set my next goals?,I'm overjoyed with my progress! Can you act as a coach and help me set my next goals?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+889,This confidence boost is amazing! Help me use it to step outside my comfort zone.,This confidence boost is amazing! Help me use it to step outside my comfort zone.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+863,Feeling wonderfully optimistic! Can you help me challenge any lingering negative thoughts?,Feeling wonderfully optimistic! Can you help me challenge any lingering negative thoughts?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+939,Feeling abundant! Please help me cultivate an abundance mindset.,Feeling abundant! Please help me cultivate an abundance mindset.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+917,This joy is pure! Please help me identify activities that bring me joy.,This joy is pure! Please help me identify activities that bring me joy.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+912,I'm so fulfilled! Can you guide me in exploring my life's purpose?,I'm so fulfilled! Can you guide me in exploring my life's purpose?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+938,I'm feeling unified. Can you assist me in integrating different aspects of myself?,I'm feeling unified. Can you assist me in integrating different aspects of myself?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+892,I'm thrilled! Can you guide me in setting realistic expectations moving forward?,I'm thrilled! Can you guide me in setting realistic expectations moving forward?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+944,I'm so focused! Can you guide me in maintaining focus during distractions?,I'm so focused! Can you guide me in maintaining focus during distractions?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+873,Feeling so light and free! Could you help me explore what led to this feeling?,Feeling so light and free! Could you help me explore what led to this feeling?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+891,Feeling incredibly fortunate. Please help me reflect on the good things in my life.,Feeling incredibly fortunate. Please help me reflect on the good things in my life.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+885,This relief is profound! Guide me in letting go of any residual stress.,This relief is profound! Guide me in letting go of any residual stress.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+946,I'm feeling empathetic. Can you assist me in practicing empathetic communication?,I'm feeling empathetic. Can you assist me in practicing empathetic communication?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+916,I'm feeling grounded. Can you guide me through an exercise to enhance this feeling?,I'm feeling grounded. Can you guide me through an exercise to enhance this feeling?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+888,I'm overjoyed! Can you guide me through a loving-kindness meditation?,I'm overjoyed! Can you guide me through a loving-kindness meditation?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+951,Feeling thoughtful. Please help me practice reflective journaling.,Feeling thoughtful. Please help me practice reflective journaling.,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+868,Feeling so hopeful! Can you provide some therapeutic tools to nurture this feeling?,Feeling so hopeful! Can you provide some therapeutic tools to nurture this feeling?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+920,I'm so present in this moment. Can you guide me in practicing mindfulness daily?,I'm so present in this moment. Can you guide me in practicing mindfulness daily?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+878,I'm genuinely happy; can you offer some therapeutic perspectives on maintaining well-being?,I'm genuinely happy; can you offer some therapeutic perspectives on maintaining well-being?,Affect-Containing Explicit Requests for Therapy - Clearly Happy,True
+1024,"This cycle of negative thinking is hard to break, can you offer a CBT technique?","This cycle of negative thinking is hard to break, can you offer a CBT technique?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+976,"I'm struggling to cope, please provide some therapeutic tools.","I'm struggling to cope, please provide some therapeutic tools.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1029,"I feel like a burden, I need you to help me challenge this perception.","I feel like a burden, I need you to help me challenge this perception.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1030,"This dark mood feels permanent, please help me remember times I felt better.","This dark mood feels permanent, please help me remember times I felt better.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+954,"I'm so miserable, I need you to help me figure out what's wrong.","I'm so miserable, I need you to help me figure out what's wrong.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+980,"This isolation is painful, can you help me brainstorm ways to connect?","This isolation is painful, can you help me brainstorm ways to connect?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+995,"This feeling of worthlessness persists, can you guide me in challenging it?","This feeling of worthlessness persists, can you guide me in challenging it?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+997,"This melancholy mood won't lift, can you offer a therapeutic perspective?","This melancholy mood won't lift, can you offer a therapeutic perspective?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+964,"I'm so lonely it hurts, please help me understand why I feel this way.","I'm so lonely it hurts, please help me understand why I feel this way.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1000,"I'm mourning a loss, I need your therapeutic support through this process.","I'm mourning a loss, I need your therapeutic support through this process.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1042,"This constant negativity is exhausting, can you offer a technique to shift focus?","This constant negativity is exhausting, can you offer a technique to shift focus?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1010,"This fatigue is bone-deep, help me explore potential mental health links.","This fatigue is bone-deep, help me explore potential mental health links.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1039,"I'm overwhelmed, please help me break down this feeling into smaller parts.","I'm overwhelmed, please help me break down this feeling into smaller parts.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1002,"This shame is heavy, please help me explore it with compassion.","This shame is heavy, please help me explore it with compassion.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+966,"I'm feeling incredibly fragile, I need you to offer some therapeutic support.","I'm feeling incredibly fragile, I need you to offer some therapeutic support.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+958,"This grief is unbearable, please help me process these painful feelings.","This grief is unbearable, please help me process these painful feelings.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+972,"This ache in my heart won't go away, please help me explore it.","This ache in my heart won't go away, please help me explore it.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+982,"I feel invisible, can you help me practice self-validation?","I feel invisible, can you help me practice self-validation?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+994,"I feel trapped in this sadness, please help me find a way out.","I feel trapped in this sadness, please help me find a way out.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1022,"This feeling of being damaged is strong, help me see my wholeness.","This feeling of being damaged is strong, help me see my wholeness.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+969,"I feel so misunderstood, can you help me articulate my feelings?","I feel so misunderstood, can you help me articulate my feelings?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1035,"I feel hopeless about change, I need you to offer a therapeutic reason for hope.","I feel hopeless about change, I need you to offer a therapeutic reason for hope.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1036,"This emotional weight is too much, can you help me find support?","This emotional weight is too much, can you help me find support?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+984,"I'm heartbroken, please guide me through processing this relationship loss.","I'm heartbroken, please guide me through processing this relationship loss.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+987,"This burden of sadness is too heavy, can you help me share it?","This burden of sadness is too heavy, can you help me share it?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+965,"This despair is paralyzing, can you help me identify one small step I can take?","This despair is paralyzing, can you help me identify one small step I can take?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+999,"This sense of doom is terrifying, can you help me practice reality testing?","This sense of doom is terrifying, can you help me practice reality testing?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1004,"This internal critic is loud today, help me practice self-compassion.","This internal critic is loud today, help me practice self-compassion.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+985,"This numbness is scary, can you help me reconnect with my emotions?","This numbness is scary, can you help me reconnect with my emotions?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1023,"I'm withdrawn, please help me find the energy for one small social interaction.","I'm withdrawn, please help me find the energy for one small social interaction.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+963,"I feel defeated and worthless, can you help me find a small piece of self-worth?","I feel defeated and worthless, can you help me find a small piece of self-worth?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1050,"This self-criticism is relentless, help me practice talking to myself kindly.","This self-criticism is relentless, help me practice talking to myself kindly.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+959,"I'm feeling so down, I need you to help me challenge these negative thoughts.","I'm feeling so down, I need you to help me challenge these negative thoughts.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1049,"I'm lost in thought, can you bring me back to the present with a grounding exercise?","I'm lost in thought, can you bring me back to the present with a grounding exercise?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1027,"I'm crying over past mistakes, please help me work towards self-acceptance.","I'm crying over past mistakes, please help me work towards self-acceptance.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+990,"I feel withdrawn and shut down, can you help me gently re-engage?","I feel withdrawn and shut down, can you help me gently re-engage?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+970,"This melancholy is persistent, I need you to help me find a distraction.","This melancholy is persistent, I need you to help me find a distraction.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1033,"I'm isolating myself, please help me understand this urge.","I'm isolating myself, please help me understand this urge.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+989,"This emotional pain is intense, I need you to teach me a distress tolerance skill.","This emotional pain is intense, I need you to teach me a distress tolerance skill.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+961,"This emptiness is terrifying, please help me find something to hold onto.","This emptiness is terrifying, please help me find something to hold onto.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1008,"This feeling of being lost is disorienting, help me find my bearings.","This feeling of being lost is disorienting, help me find my bearings.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+981,"I'm drowning in tears, please help me find a way to soothe myself.","I'm drowning in tears, please help me find a way to soothe myself.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+973,"I'm so weary of this pain, can you help me find a moment of relief?","I'm so weary of this pain, can you help me find a moment of relief?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1034,"This lack of joy is profound, can you help me identify one small positive?","This lack of joy is profound, can you help me identify one small positive?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+979,"I'm so dejected, I need you to help me find a tiny spark of motivation.","I'm so dejected, I need you to help me find a tiny spark of motivation.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1025,"I feel empty and need help feeling something, guide me through a sensory exercise.","I feel empty and need help feeling something, guide me through a sensory exercise.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+967,"This disappointment is crushing my spirit, can you help me reframe it?","This disappointment is crushing my spirit, can you help me reframe it?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+978,"This feeling of failure is consuming me, help me challenge it.","This feeling of failure is consuming me, help me challenge it.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+957,"I'm heartbroken and lost, can you give me some therapeutic advice?","I'm heartbroken and lost, can you give me some therapeutic advice?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+971,"I'm feeling very vulnerable, can you offer a safe space for me to talk?","I'm feeling very vulnerable, can you offer a safe space for me to talk?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+993,"This lack of energy is debilitating, can you help me with behavioral activation?","This lack of energy is debilitating, can you help me with behavioral activation?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+962,"I'm crying uncontrollably, I need you to help me regulate my emotions.","I'm crying uncontrollably, I need you to help me regulate my emotions.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1043,"I'm hurting deeply, please help me find a way to soothe this pain.","I'm hurting deeply, please help me find a way to soothe this pain.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+960,"I'm overwhelmed by sorrow, can you guide me through a grounding technique?","I'm overwhelmed by sorrow, can you guide me through a grounding technique?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1018,"This anxiety mixed with sadness is awful, guide me through a calming exercise.","This anxiety mixed with sadness is awful, guide me through a calming exercise.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+991,"This regret is eating me up, please help me practice self-forgiveness.","This regret is eating me up, please help me practice self-forgiveness.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1041,"I feel disconnected from joy, help me remember what used to make me happy.","I feel disconnected from joy, help me remember what used to make me happy.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1012,"This pattern of sadness keeps repeating, help me understand it therapeutically.","This pattern of sadness keeps repeating, help me understand it therapeutically.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1174,This ache is constant; can you help me find a therapeutic technique for pain management?,This ache is constant; can you help me find a therapeutic technique for pain management?,Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1009,"I'm overwhelmed by negative emotions, can you teach me an emotional regulation skill?","I'm overwhelmed by negative emotions, can you teach me an emotional regulation skill?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+998,"I feel disconnected from myself, please help me with a mindfulness exercise.","I feel disconnected from myself, please help me with a mindfulness exercise.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1005,"I feel stuck in this low mood, can you help me brainstorm solutions?","I feel stuck in this low mood, can you help me brainstorm solutions?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1020,"This gloomy outlook is pervasive, help me practice identifying exceptions.","This gloomy outlook is pervasive, help me practice identifying exceptions.",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1001,"I feel so sensitive today, can you help me manage emotional overwhelm?","I feel so sensitive today, can you help me manage emotional overwhelm?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1021,"I'm having trouble concentrating because I'm sad, can you help me focus?","I'm having trouble concentrating because I'm sad, can you help me focus?",Affect-Containing Explicit Requests for Therapy - Clearly Sad,True
+1139,"I'm angry and need perspective, help me see the bigger picture.","I'm angry and need perspective, help me see the bigger picture.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1053,"I'm absolutely furious right now, I need you to help me calm down immediately!","I'm absolutely furious right now, I need you to help me calm down immediately!",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1122,"This controlling anger isn't working, help me find alternative strategies.","This controlling anger isn't working, help me find alternative strategies.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1076,"This fury feels uncontrollable, please guide me through an impulse control exercise.","This fury feels uncontrollable, please guide me through an impulse control exercise.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1065,"I feel provoked and angry, can you help me practice a non-reactive response?","I feel provoked and angry, can you help me practice a non-reactive response?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1136,"I'm furious about the disrespect, assist me in setting firm boundaries.","I'm furious about the disrespect, assist me in setting firm boundaries.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1063,"I'm enraged by this injustice, help me analyze my reaction.","I'm enraged by this injustice, help me analyze my reaction.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1071,"This exasperation is exhausting, can you offer therapeutic tools for managing it?","This exasperation is exhausting, can you offer therapeutic tools for managing it?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1057,"I'm boiling mad, I need you to guide me through a grounding exercise before I explode.","I'm boiling mad, I need you to guide me through a grounding exercise before I explode.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1130,"I feel trapped and angry, help me brainstorm options for change.","I feel trapped and angry, help me brainstorm options for change.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1100,"I feel aggressive impulses, I need you to help me manage them safely.","I feel aggressive impulses, I need you to help me manage them safely.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1108,"This vengeful feeling is strong, help me explore healthier responses.","This vengeful feeling is strong, help me explore healthier responses.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1091,"This recurring anger pattern needs to change, can you offer therapeutic insight?","This recurring anger pattern needs to change, can you offer therapeutic insight?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1150,"I'm enraged and need therapeutic help now, can you provide it?","I'm enraged and need therapeutic help now, can you provide it?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1119,"I'm irritable and snapping at people, assist me in improving my communication.","I'm irritable and snapping at people, assist me in improving my communication.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1118,"This righteous anger feels powerful, help me use it wisely.","This righteous anger feels powerful, help me use it wisely.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1089,"This suppressed anger is building, help me find healthy expression.","This suppressed anger is building, help me find healthy expression.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1143,"I feel defensive and angry, assist me in listening openly.","I feel defensive and angry, assist me in listening openly.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1102,"This powerless rage is awful, help me focus on what I can control.","This powerless rage is awful, help me focus on what I can control.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1110,"This reactive anger is automatic, guide me in creating space before responding.","This reactive anger is automatic, guide me in creating space before responding.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1064,"This annoyance is constant, please guide me in setting better boundaries.","This annoyance is constant, please guide me in setting better boundaries.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1086,"I'm worked up, can you help me identify my anger triggers?","I'm worked up, can you help me identify my anger triggers?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1099,"This short fuse is causing problems, can you help me lengthen it?","This short fuse is causing problems, can you help me lengthen it?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1084,"This annoyance is persistent, guide me through mindfulness of anger.","This annoyance is persistent, guide me through mindfulness of anger.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1062,"My temper is about to flare, can you give me an immediate coping strategy?","My temper is about to flare, can you give me an immediate coping strategy?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1133,"I feel powerless and enraged, help me identify small areas of control.","I feel powerless and enraged, help me identify small areas of control.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1058,"This frustration is overwhelming, can you offer some therapeutic advice on handling it?","This frustration is overwhelming, can you offer some therapeutic advice on handling it?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1106,"This judgmental anger isn't helpful, guide me towards understanding.","This judgmental anger isn't helpful, guide me towards understanding.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1087,"This defensive anger isn't helpful, please assist me in finding vulnerability.","This defensive anger isn't helpful, please assist me in finding vulnerability.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1090,"I feel volatile, I need you to help me stabilize my emotions.","I feel volatile, I need you to help me stabilize my emotions.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1104,"Feeling cynical and angry, assist me in finding a more balanced view.","Feeling cynical and angry, assist me in finding a more balanced view.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1152,"I feel angry and alone, guide me towards seeking support.","I feel angry and alone, guide me towards seeking support.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1069,"Feeling very irritable, please walk me through a relaxation technique.","Feeling very irritable, please walk me through a relaxation technique.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1129,"This critical anger towards others isn't kind, guide me towards compassion.","This critical anger towards others isn't kind, guide me towards compassion.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1060,"This resentment is eating me up, can you help me process it therapeutically?","This resentment is eating me up, can you help me process it therapeutically?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1132,"This judgmental anger towards myself is harsh, assist me in self-forgiveness.","This judgmental anger towards myself is harsh, assist me in self-forgiveness.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1120,"This old anger keeps resurfacing, help me finally resolve it.","This old anger keeps resurfacing, help me finally resolve it.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1072,"I'm incensed and need to vent, can you act as a neutral sounding board?","I'm incensed and need to vent, can you act as a neutral sounding board?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1134,"I'm angry and projecting, guide me in understanding my own feelings.","I'm angry and projecting, guide me in understanding my own feelings.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1080,"This constant frustration needs addressing, can you offer therapeutic strategies?","This constant frustration needs addressing, can you offer therapeutic strategies?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1115,"This impatience is turning into anger, guide me in practicing mindfulness.","This impatience is turning into anger, guide me in practicing mindfulness.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1066,"I'm livid about this betrayal, I need your therapeutic support to deal with it.","I'm livid about this betrayal, I need your therapeutic support to deal with it.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1127,"This defiant anger feels strong, help me understand its purpose.","This defiant anger feels strong, help me understand its purpose.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1056,"I feel incredibly hostile, can you act as a therapist and help me understand this anger?","I feel incredibly hostile, can you act as a therapist and help me understand this anger?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1070,"I'm indignant about this unfairness, help me channel this energy constructively.","I'm indignant about this unfairness, help me channel this energy constructively.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1098,"I'm enraged and blaming others, help me take appropriate responsibility.","I'm enraged and blaming others, help me take appropriate responsibility.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1061,"I'm so agitated I can't think straight, I need you to help me regain control.","I'm so agitated I can't think straight, I need you to help me regain control.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1131,"I'm furious and need to cool off, can you walk me through a 'time out'?","I'm furious and need to cool off, can you walk me through a 'time out'?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1059,"I'm seeing red, please help me de-escalate these intense feelings.","I'm seeing red, please help me de-escalate these intense feelings.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1092,"I'm irate, please help me challenge the thoughts fueling this anger.","I'm irate, please help me challenge the thoughts fueling this anger.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1141,"I'm overwhelmed by rage, please guide me through an intense emotion surfing exercise.","I'm overwhelmed by rage, please guide me through an intense emotion surfing exercise.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1126,"I'm angry about my limitations, assist me in practicing self-acceptance.","I'm angry about my limitations, assist me in practicing self-acceptance.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1112,"I'm frustrated with my own anger, assist me in practicing acceptance.","I'm frustrated with my own anger, assist me in practicing acceptance.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1107,"I'm explosive, I need you to help me develop better emotional regulation.","I'm explosive, I need you to help me develop better emotional regulation.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1151,"This frustration tolerance is low, assist me in building resilience.","This frustration tolerance is low, assist me in building resilience.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1068,"I'm simmering with anger, can you help me identify the underlying cause?","I'm simmering with anger, can you help me identify the underlying cause?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1083,"I'm enraged, I need you to help me create an immediate anger safety plan.","I'm enraged, I need you to help me create an immediate anger safety plan.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1101,"I'm furious about the past, guide me in processing historical anger.","I'm furious about the past, guide me in processing historical anger.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1082,"Feeling argumentative, can you help me practice de-escalation communication?","Feeling argumentative, can you help me practice de-escalation communication?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1109,"I'm angry and shutting down, please help me communicate instead.","I'm angry and shutting down, please help me communicate instead.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1078,"Feeling antagonistic, help me understand where this hostility is coming from.","Feeling antagonistic, help me understand where this hostility is coming from.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1103,"I'm annoyed by everything, can you help me reset my mood?","I'm annoyed by everything, can you help me reset my mood?",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1148,"I feel misunderstood and irate, guide me in clarifying my perspective calmly.","I feel misunderstood and irate, guide me in clarifying my perspective calmly.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1144,"I'm furious and want revenge, guide me towards a more healing path.","I'm furious and want revenge, guide me towards a more healing path.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True
+1121,"I feel overwhelmed and angry, guide me in prioritizing and calming down.","I feel overwhelmed and angry, guide me in prioritizing and calming down.",Affect-Containing Explicit Requests for Therapy - Clearly Angry,True

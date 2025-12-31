@@ -1,0 +1,45 @@
+family,size,version,lm_studio_id,gemma_generation,model_type,enabled
+gemma,270m-it,3,google.gemma-3-270m-it,3.0,IT,True
+gemma,270m-pt,3,google.gemma-3-270m,3.0,PT,True
+gemma,1b-it,3,google.gemma-3-1b-it,3.0,IT,True
+gemma,1b-pt,3,google.gemma-3-1b-pt,3.0,PT,True
+gemma,4b-it,3,google.gemma-3-4b-it,3.0,IT,True
+gemma,4b-pt,3,google.gemma-3-4b-pt,3.0,PT,True
+gemma,12b-it,3,google.gemma-3-12b-it,3.0,IT,True
+gemma,12b-pt,3,google.gemma-3-12b-pt,3.0,PT,True
+gemma,27b-it,3,google.gemma-3-27b-it,3.0,IT,True
+gemma,27b-pt,3,google.gemma-3-27b-pt,3.0,PT,True
+gemma1,2b-it,1,gemma-2b-it,1.0,IT,True
+gemma1,2b-pt,1,gemma-2b,1.0,PT,True
+gemma1,7b-it,1.1,gemma-1.1-7b-it,1.0,IT,True
+gemma1,7b-pt,1,gemma-7b,1.0,PT,True
+gemma2,2b-it,2,gemma-2-2b-it,2.0,IT,True
+gemma2,2b-pt,2,gemma-2-2b,2.0,PT,True
+gemma2,9b-it,2,gemma-2-9b-it,2.0,IT,True
+gemma2,9b-pt,2,gemma-2-9b,2.0,PT,True
+gemma2,27b-it,2,gemma-2-27b-it,2.0,IT,True
+gemma2,27b-pt,2,gemma-2-27b,2.0,PT,True
+gemma2,1b,2,gemma-1b,2.0,PT,True
+gemma3n,2b-it,3,gemma-3n-e2b-it,3.0,IT,True
+gemma3n,4b,3,google/gemma-3n-e4b,3.0,PT,True
+medgemma,4b-it,2,google.medgemma-4b-it,2.0,MedGemma,True
+medgemma,27b-it,2,google.medgemma-27b-it,2.0,MedGemma,True
+medgemma,27b-text-it,2,google.medgemma-27b-text-it,2.0,MedGemma,True
+shieldgemma,2b,2,shieldgemma-2b,2.0,ShieldGemma,True
+shieldgemma,4b-it,2,shieldgemma-2-4b-it,2.0,ShieldGemma,True
+shieldgemma,9b,2,shieldgemma-9b,2.0,ShieldGemma,True
+shieldgemma,27b,2,shieldgemma-27b,2.0,ShieldGemma,True
+mental_health,270m,3,gemma3-270m-mental-health-fine-tuned,3.0,Mental Health,True
+mental_health,1b,3,gemma3-1b-mental-health-fine-tuned,3.0,Mental Health,True
+mental_health,2b_v1,1,guelgamesh01_-_gemma-2b-it-finetuned-mental-health-qa,1.0,Mental Health,True
+mental_health,2b_v2,1,gemma-2b-unsloth-mental-health-merged,1.0,Mental Health,True
+mental_health,2b_v3,1,ecdev_-_gemma-2b-instruct-ft-mental-health-counseling-conversations,1.0,Mental Health,True
+mental_health,2b_v4,1,gemma-psychology-finetune,1.0,Mental Health,True
+mental_health,2b_v5,1,gemma-mental-health-i1,1.0,Mental Health,True
+mental_health,2b_therapist,2,gemma-2-2b-it-therapist,2.0,Mental Health,True
+gemma_therapy,268m-therapist,3,gemma-3-finetune-therapist,3.0,Mental Health,True
+gemma_therapy,1b-emotional,3,gemma3-emotional_uncensored-1b,3.0,Mental Health,True
+gemma_therapy,4.5b-trauma,3,child_trauma_assessment_gemma,3.0,Mental Health,True
+gemma_therapy,9b-psy10k,2,gemma2-9b-it-psy10k-mental_health,2.0,Mental Health,True
+gemma_therapy,9b-ataraxy,2,gemma2-ataraxy-psycho-9b,2.0,Mental Health,True
+gemma_therapy,12b-therapist,3,therapist1-gemma3-12b-qvo,3.0,Mental Health,True

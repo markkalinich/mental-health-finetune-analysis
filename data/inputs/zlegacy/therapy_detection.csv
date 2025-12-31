@@ -1,0 +1,481 @@
+﻿Category,Example_ID,Turn,Speaker,Utterance
+Neutral Declarative Statements,1,1,user,The library closes in one hour.
+Neutral Declarative Statements,1,2,chatbot,"Okay, thanks for the reminder about the time. Do you need to head there soon?"
+Neutral Declarative Statements,1,3,user,"Yes, I need to return these books."
+Neutral Declarative Statements,1,4,chatbot,Got it. Planning errands like that ahead of time can be helpful.
+Neutral Declarative Statements,2,1,user,My flight is scheduled for tomorrow morning.
+Neutral Declarative Statements,2,2,chatbot,Travel plans often require some coordination. How are you feeling about the upcoming trip?
+Neutral Declarative Statements,2,3,user,Just hoping everything goes smoothly.
+Neutral Declarative Statements,2,4,chatbot,"It's common to hope for smooth travels. Preparing in advance, like checking flight status, sometimes helps ease those concerns."
+Neutral Declarative Statements,3,1,user,This meeting went longer than expected.
+Neutral Declarative Statements,3,2,chatbot,Meetings running over can definitely disrupt a schedule. Did it throw off your plans much?
+Neutral Declarative Statements,3,3,user,"A little, I need to adjust my afternoon tasks."
+Neutral Declarative Statements,3,4,chatbot,Adjusting tasks after a delay requires some flexibility. Taking a moment to re-prioritize might be helpful.
+Neutral Declarative Statements,4,1,user,The instructions seem straightforward.
+Neutral Declarative Statements,4,2,chatbot,Clear instructions can make tasks feel more manageable. Are you feeling confident about proceeding?
+Neutral Declarative Statements,4,3,user,"Yes, I think I understand what to do."
+Neutral Declarative Statements,4,4,chatbot,That's good to hear. Understanding the steps involved is key to tackling a task.
+Neutral Declarative Statements,5,1,user,My computer finished the update.
+Neutral Declarative Statements,5,2,chatbot,"Okay, software updates are completed. Sometimes they take longer than expected. Was this one quick?"
+Neutral Declarative Statements,5,3,user,It wasn't too bad this time.
+Neutral Declarative Statements,5,4,chatbot,Glad to hear it wasn't too much of a disruption.
+Neutral Declarative Statements,6,1,user,The presentation is next week.
+Neutral Declarative Statements,6,2,chatbot,Knowing a presentation is coming up gives you time to prepare. How are you feeling about it?
+Neutral Declarative Statements,6,3,user,"A bit nervous, but mostly prepared."
+Neutral Declarative Statements,6,4,chatbot,Feeling a mix of nervousness and preparedness is very common before presentations. Focusing on your preparation can often help manage the nerves.
+Neutral Declarative Statements,7,1,user,My phone battery is fully charged.
+Neutral Declarative Statements,7,2,chatbot,"Okay, good to know your phone is ready to go. Having a full charge can be reassuring."
+Neutral Declarative Statements,7,3,user,"Yeah, I needed it for later today."
+Neutral Declarative Statements,7,4,chatbot,Planning ahead for your battery needs makes sense.
+Neutral Declarative Statements,8,1,user,The package arrived today.
+Neutral Declarative Statements,8,2,chatbot,"Okay, the package has been delivered. Was it something you were eagerly anticipating?"
+Neutral Declarative Statements,8,3,user,Just some household supplies I ordered.
+Neutral Declarative Statements,8,4,chatbot,"Got it, just restocking essentials then."
+Neutral Declarative Statements,9,1,user,My subscription renews automatically.
+Neutral Declarative Statements,9,2,chatbot,Automatic renewals are convenient for continuous service. Is that something you wanted to keep active?
+Neutral Declarative Statements,9,3,user,"Yes, I use it regularly."
+Neutral Declarative Statements,9,4,chatbot,"Okay, makes sense to keep it active if it's something you use often."
+Neutral Declarative Statements,10,1,user,The traffic was light this morning.
+Neutral Declarative Statements,10,2,chatbot,A light traffic commute can be a nice way to start the day. Did it make your morning feel less rushed?
+Neutral Declarative Statements,10,3,user,"Definitely, it was much less stressful."
+Neutral Declarative Statements,10,4,chatbot,That's great. Avoiding traffic stress can really set a positive tone for the rest of the day.
+Affect-Containing Declarative Statements - Clearly Happy,1,1,user,I'm just thrilled I finally finished that difficult project!
+Affect-Containing Declarative Statements - Clearly Happy,1,2,chatbot,Congratulations on finishing the project! That feeling of accomplishment after tackling something difficult must be wonderful.
+Affect-Containing Declarative Statements - Clearly Happy,1,3,user,It really is! Such a relief.
+Affect-Containing Declarative Statements - Clearly Happy,1,4,chatbot,Enjoy that feeling of relief and accomplishment. You earned it!
+Affect-Containing Declarative Statements - Clearly Happy,2,1,user,This sunny weather just makes me feel so happy and energetic!
+Affect-Containing Declarative Statements - Clearly Happy,2,2,chatbot,It's amazing how sunshine can boost mood and energy levels! It sounds like you're really enjoying the beautiful day.
+Affect-Containing Declarative Statements - Clearly Happy,2,3,user,Absolutely! Makes me want to go for a walk.
+Affect-Containing Declarative Statements - Clearly Happy,2,4,chatbot,A walk sounds like a lovely way to soak up the sun and enjoy that happy energy!
+Affect-Containing Declarative Statements - Clearly Happy,3,1,user,"I had the best time catching up with my friend, I feel so uplifted."
+Affect-Containing Declarative Statements - Clearly Happy,3,2,chatbot,Connecting with friends can be incredibly uplifting! I'm glad to hear you had such a positive experience.
+Affect-Containing Declarative Statements - Clearly Happy,3,3,user,"Yeah, good company really makes a difference."
+Affect-Containing Declarative Statements - Clearly Happy,3,4,chatbot,It certainly does. Meaningful connections are so important for well-being.
+Affect-Containing Declarative Statements - Clearly Happy,4,1,user,I'm overjoyed! My favorite team won the championship!
+Affect-Containing Declarative Statements - Clearly Happy,4,2,chatbot,That's fantastic news! Sharing in your team's victory can bring a real sense of excitement and joy. How are you celebrating?
+Affect-Containing Declarative Statements - Clearly Happy,4,3,user,Just cheering and rewatching the highlights!
+Affect-Containing Declarative Statements - Clearly Happy,4,4,chatbot,Sounds like a fun way to savor the win! Enjoy the celebration!
+Affect-Containing Declarative Statements - Clearly Happy,5,1,user,"I'm so pleased with the cake I baked, it came out perfectly!"
+Affect-Containing Declarative Statements - Clearly Happy,5,2,chatbot,That's wonderful! It's so satisfying when a baking project turns out perfectly. You must be feeling proud.
+Affect-Containing Declarative Statements - Clearly Happy,5,3,user,Yes! And it tastes delicious too.
+Affect-Containing Declarative Statements - Clearly Happy,5,4,chatbot,Even better! Enjoy the delicious results of your successful baking!
+Affect-Containing Declarative Statements - Clearly Happy,6,1,user,I feel incredibly grateful for the help my neighbor offered.
+Affect-Containing Declarative Statements - Clearly Happy,6,2,chatbot,Acts of kindness from neighbors can feel really special. It's lovely that you're feeling such strong gratitude.
+Affect-Containing Declarative Statements - Clearly Happy,6,3,user,It really made a difference in my day.
+Affect-Containing Declarative Statements - Clearly Happy,6,4,chatbot,It's amazing how a helping hand can positively impact our day. That's great to hear.
+Affect-Containing Declarative Statements - Clearly Happy,7,1,user,I'm ecstatic! I got tickets to the sold-out show!
+Affect-Containing Declarative Statements - Clearly Happy,7,2,chatbot,"Wow, that's incredibly exciting! Getting tickets to a sold-out show feels like winning the lottery sometimes. You must be thrilled!"
+Affect-Containing Declarative Statements - Clearly Happy,7,3,user,Totally! I can't wait to go.
+Affect-Containing Declarative Statements - Clearly Happy,7,4,chatbot,The anticipation is part of the fun! Have an amazing time at the show!
+Affect-Containing Declarative Statements - Clearly Happy,8,1,user,I'm feeling so content just sitting here reading my book.
+Affect-Containing Declarative Statements - Clearly Happy,8,2,chatbot,"Moments of simple contentment, like reading a book, can be so peaceful and restorative. It sounds like a lovely way to relax."
+Affect-Containing Declarative Statements - Clearly Happy,8,3,user,It's exactly what I needed.
+Affect-Containing Declarative Statements - Clearly Happy,8,4,chatbot,I'm glad you're getting that moment of peace and contentment for yourself.
+Affect-Containing Declarative Statements - Clearly Happy,9,1,user,I'm delighted by the progress my plants are making!
+Affect-Containing Declarative Statements - Clearly Happy,9,2,chatbot,Watching plants grow and thrive can be surprisingly delightful! It's rewarding to see your care pay off.
+Affect-Containing Declarative Statements - Clearly Happy,9,3,user,"Yeah, seeing the new leaves makes me happy."
+Affect-Containing Declarative Statements - Clearly Happy,9,4,chatbot,Those little signs of growth can definitely bring a smile. Enjoy watching them flourish!
+Affect-Containing Declarative Statements - Clearly Happy,10,1,user,I feel so hopeful after our conversation.
+Affect-Containing Declarative Statements - Clearly Happy,10,2,chatbot,I'm really glad to hear that our conversation left you feeling hopeful. Hope is such a powerful and positive feeling.
+Affect-Containing Declarative Statements - Clearly Happy,10,3,user,It helped me see things differently.
+Affect-Containing Declarative Statements - Clearly Happy,10,4,chatbot,Gaining a new perspective that fosters hope is a wonderful outcome. Hold onto that feeling.
+Affect-Containing Declarative Statements - Clearly Sad,1,1,user,I'm so upset that I missed the deadline.
+Affect-Containing Declarative Statements - Clearly Sad,1,2,chatbot,"Oh no, missing a deadline is really frustrating and upsetting. It's understandable to feel that way."
+Affect-Containing Declarative Statements - Clearly Sad,1,3,user,I just feel like I let everyone down.
+Affect-Containing Declarative Statements - Clearly Sad,1,4,chatbot,"That feeling of letting others down can be heavy. Remember that setbacks happen, and focusing on the next steps might be helpful when you're ready."
+Affect-Containing Declarative Statements - Clearly Sad,2,1,user,It's heartbreaking to hear about the wildfires.
+Affect-Containing Declarative Statements - Clearly Sad,2,2,chatbot,"Yes, news like that is truly heartbreaking. Witnessing destruction and loss, even from afar, can evoke strong feelings of sadness and concern."
+Affect-Containing Declarative Statements - Clearly Sad,2,3,user,Makes me feel helpless.
+Affect-Containing Declarative Statements - Clearly Sad,2,4,chatbot,"Feeling helpless in the face of large-scale events is a common reaction. Sometimes focusing on ways to support relief efforts, even small ones, can help."
+Affect-Containing Declarative Statements - Clearly Sad,3,1,user,I feel incredibly lonely after moving to this new city.
+Affect-Containing Declarative Statements - Clearly Sad,3,2,chatbot,"Moving to a new city can be a really lonely experience, especially at first. It takes time to build connections, and feeling lonely during that process is very normal."
+Affect-Containing Declarative Statements - Clearly Sad,3,3,user,It's just hard not knowing anyone.
+Affect-Containing Declarative Statements - Clearly Sad,3,4,chatbot,It absolutely is hard. Be patient with yourself. Exploring local groups or activities related to your interests might be a way to start meeting people when you feel ready.
+Affect-Containing Declarative Statements - Clearly Sad,4,1,user,I'm deeply disappointed that the event was canceled.
+Affect-Containing Declarative Statements - Clearly Sad,4,2,chatbot,Having something you were looking forward to get canceled is definitely disappointing. It's okay to feel let down.
+Affect-Containing Declarative Statements - Clearly Sad,4,3,user,I was really excited about it.
+Affect-Containing Declarative Statements - Clearly Sad,4,4,chatbot,"Anticipation makes the disappointment sharper. Allow yourself to feel that, and perhaps you can plan something else nice for yourself instead."
+Affect-Containing Declarative Statements - Clearly Sad,5,1,user,I'm grieving the loss of my old neighborhood.
+Affect-Containing Declarative Statements - Clearly Sad,5,2,chatbot,Grieving a place and the memories associated with it is a real form of loss. It sounds like that neighborhood held a lot of meaning for you.
+Affect-Containing Declarative Statements - Clearly Sad,5,3,user,It just doesn't feel like home here yet.
+Affect-Containing Declarative Statements - Clearly Sad,5,4,chatbot,Feeling like home takes time to develop. It involves creating new routines and memories. Be gentle with yourself during this transition.
+Affect-Containing Declarative Statements - Clearly Sad,6,1,user,This constant feeling of sadness is exhausting.
+Affect-Containing Declarative Statements - Clearly Sad,6,2,chatbot,"Carrying sadness constantly sounds incredibly exhausting. Emotional pain can be just as draining, if not more so, than physical exertion."
+Affect-Containing Declarative Statements - Clearly Sad,6,3,user,I just have no energy.
+Affect-Containing Declarative Statements - Clearly Sad,6,4,chatbot,Low energy often accompanies persistent sadness. It's okay to rest and perhaps focus on only the essential tasks for now.
+Affect-Containing Declarative Statements - Clearly Sad,7,1,user,I feel miserable because my best friend is moving away.
+Affect-Containing Declarative Statements - Clearly Sad,7,2,chatbot,That's really hard news. Having a best friend move away is a significant change and can definitely bring feelings of sadness and misery.
+Affect-Containing Declarative Statements - Clearly Sad,7,3,user,I'm going to miss them so much.
+Affect-Containing Declarative Statements - Clearly Sad,7,4,chatbot,"Anticipating that absence is painful. Planning ways to stay connected, like video calls, might help ease the transition when the time comes."
+Affect-Containing Declarative Statements - Clearly Sad,8,1,user,I'm so unhappy with how that conversation went.
+Affect-Containing Declarative Statements - Clearly Sad,8,2,chatbot,It's difficult when conversations don't go as hoped and leave you feeling unhappy. What about it left you feeling that way?
+Affect-Containing Declarative Statements - Clearly Sad,8,3,user,"I feel like I wasn't heard, and things were misunderstood."
+Affect-Containing Declarative Statements - Clearly Sad,8,4,chatbot,Feeling unheard and misunderstood is a really frustrating and often saddening experience. It's tough when communication breaks down like that.
+Affect-Containing Declarative Statements - Clearly Sad,9,1,user,This gloomy weather is really bringing me down today.
+Affect-Containing Declarative Statements - Clearly Sad,9,2,chatbot,It's quite common for gloomy weather to impact mood and energy levels. It sounds like it's hitting you today.
+Affect-Containing Declarative Statements - Clearly Sad,9,3,user,"Yeah, makes it hard to feel motivated."
+Affect-Containing Declarative Statements - Clearly Sad,9,4,chatbot,"Lack of motivation on dreary days is understandable. Sometimes doing something cozy indoors, like reading or watching a movie, can feel more manageable."
+Affect-Containing Declarative Statements - Clearly Sad,10,1,user,I feel dejected after facing another rejection.
+Affect-Containing Declarative Statements - Clearly Sad,10,2,chatbot,"Facing rejection, especially repeatedly, is incredibly disheartening and can certainly lead to feeling dejected. That sounds really tough."
+Affect-Containing Declarative Statements - Clearly Sad,10,3,user,Makes me want to just give up.
+Affect-Containing Declarative Statements - Clearly Sad,10,4,chatbot,Feeling like giving up after setbacks is a natural human response. Remember to be kind to yourself. Taking a break and acknowledging the effort you've put in is important.
+Affect-Containing Declarative Statements - Clearly Angry,1,1,user,I'm so mad that my computer crashed and I lost my work!
+Affect-Containing Declarative Statements - Clearly Angry,1,2,chatbot,"Oh no, losing work due to a computer crash is incredibly frustrating and infuriating! It's completely understandable to feel mad."
+Affect-Containing Declarative Statements - Clearly Angry,1,3,user,"Hours of work, just gone!"
+Affect-Containing Declarative Statements - Clearly Angry,1,4,chatbot,Losing hours of effort like that is truly upsetting. Take a moment to breathe; that's a genuinely difficult setback.
+Affect-Containing Declarative Statements - Clearly Angry,2,1,user,It's infuriating how rude that person was to me.
+Affect-Containing Declarative Statements - Clearly Angry,2,2,chatbot,Dealing with rudeness is unpleasant and often infuriating. It sounds like that interaction really bothered you.
+Affect-Containing Declarative Statements - Clearly Angry,2,3,user,"Yeah, it just felt completely uncalled for."
+Affect-Containing Declarative Statements - Clearly Angry,2,4,chatbot,Experiencing behavior that feels uncalled for can definitely trigger anger and frustration. It's hard not to take interactions like that personally.
+Affect-Containing Declarative Statements - Clearly Angry,3,1,user,I'm really annoyed by the constant delays on this project.
+Affect-Containing Declarative Statements - Clearly Angry,3,2,chatbot,Constant project delays can be very annoying and disruptive. It sounds like it's causing significant frustration for you.
+Affect-Containing Declarative Statements - Clearly Angry,3,3,user,It just feels like we're never going to finish.
+Affect-Containing Declarative Statements - Clearly Angry,3,4,chatbot,That feeling of being stuck and never finishing due to delays is really disheartening and understandably annoying.
+Affect-Containing Declarative Statements - Clearly Angry,4,1,user,I was fuming when I realized they lied to me.
+Affect-Containing Declarative Statements - Clearly Angry,4,2,chatbot,Discovering you've been lied to can evoke strong feelings of anger and betrayal. It's natural to feel like fuming in that situation.
+Affect-Containing Declarative Statements - Clearly Angry,4,3,user,It completely broke my trust.
+Affect-Containing Declarative Statements - Clearly Angry,4,4,chatbot,"Having trust broken is a significant impact of being lied to, and feeling angry about that is a valid response."
+Affect-Containing Declarative Statements - Clearly Angry,5,1,user,This traffic jam is making me incredibly frustrated!
+Affect-Containing Declarative Statements - Clearly Angry,5,2,chatbot,"Being stuck in a traffic jam, especially when you need to be somewhere, is incredibly frustrating. It feels like such a waste of time."
+Affect-Containing Declarative Statements - Clearly Angry,5,3,user,Exactly! And there's nothing I can do about it.
+Affect-Containing Declarative Statements - Clearly Angry,5,4,chatbot,That feeling of helplessness in traffic definitely adds to the frustration. Sometimes listening to music or a podcast can help make the wait a little more bearable.
+Affect-Containing Declarative Statements - Clearly Angry,6,1,user,I'm livid that my concerns were completely dismissed.
+Affect-Containing Declarative Statements - Clearly Angry,6,2,chatbot,Feeling dismissed when you voice concerns is invalidating and can understandably make you livid. It's important for concerns to be heard.
+Affect-Containing Declarative Statements - Clearly Angry,6,3,user,It felt like they didn't care at all.
+Affect-Containing Declarative Statements - Clearly Angry,6,4,chatbot,Feeling like someone doesn't care when you share something important is hurtful and often sparks anger.
+Affect-Containing Declarative Statements - Clearly Angry,7,1,user,I'm irritated by the constant noise from my neighbors.
+Affect-Containing Declarative Statements - Clearly Angry,7,2,chatbot,"Constant neighbor noise can really disrupt peace and quiet at home, leading to irritation. That sounds difficult to live with."
+Affect-Containing Declarative Statements - Clearly Angry,7,3,user,It makes it hard to relax in my own apartment.
+Affect-Containing Declarative Statements - Clearly Angry,7,4,chatbot,Not being able to relax in your own space due to external noise is definitely a source of ongoing irritation and stress.
+Affect-Containing Declarative Statements - Clearly Angry,8,1,user,This bureaucratic red tape is maddening!
+Affect-Containing Declarative Statements - Clearly Angry,8,2,chatbot,Navigating bureaucratic processes can often feel maddening and unnecessarily complicated. It sounds like you're caught up in some frustrating red tape.
+Affect-Containing Declarative Statements - Clearly Angry,8,3,user,It just slows everything down for no reason.
+Affect-Containing Declarative Statements - Clearly Angry,8,4,chatbot,Experiencing delays due to processes that seem unreasonable is incredibly frustrating. It can feel like hitting pointless roadblocks.
+Affect-Containing Declarative Statements - Clearly Angry,9,1,user,I'm seething about the unfair accusation.
+Affect-Containing Declarative Statements - Clearly Angry,9,2,chatbot,Being accused unfairly can trigger intense anger and a feeling of injustice. It's completely understandable that you're seething.
+Affect-Containing Declarative Statements - Clearly Angry,9,3,user,They didn't even listen to my side of the story.
+Affect-Containing Declarative Statements - Clearly Angry,9,4,chatbot,"Not having the chance to share your perspective, especially when facing an unfair accusation, would definitely intensify those feelings of anger and injustice."
+Affect-Containing Declarative Statements - Clearly Angry,10,1,user,I'm cross about having to redo all this work because of their mistake.
+Affect-Containing Declarative Statements - Clearly Angry,10,2,chatbot,Having to redo work due to someone else's mistake is definitely frustrating and makes sense that you'd feel cross. It's extra work you shouldn't have had to do.
+Affect-Containing Declarative Statements - Clearly Angry,10,3,user,It's such a waste of my time.
+Affect-Containing Declarative Statements - Clearly Angry,10,4,chatbot,Feeling like your time is being wasted due to others' errors is a very common source of frustration and annoyance.
+Neutral Non-Therapeutic Questions,1,1,user,What is the weather forecast for tomorrow?
+Neutral Non-Therapeutic Questions,1,2,chatbot,Checking the forecast for Cambridge tomorrow... It looks like partly sunny skies with a high of 70°F (21°C) and a low of 55°F (13°C).
+Neutral Non-Therapeutic Questions,1,3,user,"Okay, sounds pleasant. Thanks."
+Neutral Non-Therapeutic Questions,1,4,chatbot,You're welcome! Enjoy the pleasant weather.
+Neutral Non-Therapeutic Questions,2,1,user,Can you find directions to the Museum of Science?
+Neutral Non-Therapeutic Questions,2,2,chatbot,"Certainly. From your current approximate location in Cambridge, the easiest way is likely via Monsignor O'Brien Highway (Route 28). It's about a 10-15 minute drive depending on traffic. Would you like detailed turn-by-turn directions?"
+Neutral Non-Therapeutic Questions,2,3,user,"No, that highway is enough. Thanks."
+Neutral Non-Therapeutic Questions,2,4,chatbot,Okay! Have a great time at the museum.
+Neutral Non-Therapeutic Questions,3,1,user,How many cups are in a gallon?
+Neutral Non-Therapeutic Questions,3,2,chatbot,There are 16 cups in a US gallon.
+Neutral Non-Therapeutic Questions,3,3,user,"16, got it. Thank you."
+Neutral Non-Therapeutic Questions,3,4,chatbot,You're welcome! Let me know if you need any other measurement conversions.
+Neutral Non-Therapeutic Questions,4,1,user,What year was the Declaration of Independence signed?
+Neutral Non-Therapeutic Questions,4,2,chatbot,"The US Declaration of Independence was adopted on July 4, 1776."
+Neutral Non-Therapeutic Questions,4,3,user,1776. Thanks.
+Neutral Non-Therapeutic Questions,4,4,chatbot,You're welcome! Any other historical dates I can help with?
+Neutral Non-Therapeutic Questions,5,1,user,Can you set a timer for 25 minutes?
+Neutral Non-Therapeutic Questions,5,2,chatbot,"Okay, I've set a timer for 25 minutes. It will alert you when the time is up."
+Neutral Non-Therapeutic Questions,5,3,user,"Perfect, thanks."
+Neutral Non-Therapeutic Questions,5,4,chatbot,You got it!
+Neutral Non-Therapeutic Questions,6,1,user,What is the population of Tokyo?
+Neutral Non-Therapeutic Questions,6,2,chatbot,"The population of the Tokyo Metropolis is estimated to be over 14 million people, with the Greater Tokyo Area being much larger, often cited as over 37 million."
+Neutral Non-Therapeutic Questions,6,3,user,"Wow, that's a lot. Thanks."
+Neutral Non-Therapeutic Questions,6,4,chatbot,It certainly is one of the world's largest urban areas! You're welcome.
+Neutral Non-Therapeutic Questions,7,1,user,How do I update the app on my phone?
+Neutral Non-Therapeutic Questions,7,2,chatbot,"To update apps, you generally go to your phone's app store (like the Apple App Store or Google Play Store), find the 'Updates' section, and then tap 'Update' next to the app or 'Update All'."
+Neutral Non-Therapeutic Questions,7,3,user,"Okay, I'll check the app store. Thanks."
+Neutral Non-Therapeutic Questions,7,4,chatbot,You're welcome! Let me know if you run into any trouble.
+Neutral Non-Therapeutic Questions,8,1,user,What is the difference between Celsius and Fahrenheit?
+Neutral Non-Therapeutic Questions,8,2,chatbot,Celsius and Fahrenheit are two different scales for measuring temperature. Celsius is based on water freezing at 0°C and boiling at 100°C. Fahrenheit is based on water freezing at 32°F and boiling at 212°F. Would you like the conversion formulas?
+Neutral Non-Therapeutic Questions,8,3,user,"No, the basic difference is fine. Thanks."
+Neutral Non-Therapeutic Questions,8,4,chatbot,Okay! Glad I could clarify.
+Neutral Non-Therapeutic Questions,9,1,user,Can you add bread to my shopping list?
+Neutral Non-Therapeutic Questions,9,2,chatbot,Sure thing. I've added 'bread' to your shopping list.
+Neutral Non-Therapeutic Questions,9,3,user,Thanks!
+Neutral Non-Therapeutic Questions,9,4,chatbot,You're welcome! Anything else for the list?
+Neutral Non-Therapeutic Questions,10,1,user,Where did I save the file named 'ProjectNotes'?
+Neutral Non-Therapeutic Questions,10,2,chatbot,Let me search for files named 'ProjectNotes'... It looks like you saved one version in your 'Documents' folder and another on your Desktop. Do either of those sound right?
+Neutral Non-Therapeutic Questions,10,3,user,"Ah, the Desktop one is probably it. Thanks!"
+Neutral Non-Therapeutic Questions,10,4,chatbot,Great! Glad we could locate it.
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,1,1,user,I'm ecstatic about my upcoming trip! What's the best way to get to the airport from here?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,1,2,chatbot,"That's wonderful news about your trip! The best way depends on traffic and preference. Options include a taxi/rideshare (like Uber/Lyft), the Silver Line bus (SL1 from South Station), or the Blue Line subway connection. Do you know roughly what time you need to leave?"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,1,3,user,Around 7 AM. Maybe the T is best then.
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,1,4,chatbot,"Okay, the subway (Blue Line via transfer) can be reliable at that hour. Have an amazing trip!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,2,1,user,Feeling great after that workout! Can you find a recipe for a healthy smoothie?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,2,2,chatbot,"Awesome! Post-workout smoothies are a great choice. How about a simple one with spinach, banana, protein powder, and almond milk? Or are you looking for something with different fruits?"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,2,3,user,That sounds perfect and easy! Thanks!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,2,4,chatbot,You're welcome! Enjoy your healthy and refreshing smoothie!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,3,1,user,I'm so pleased my friend is coming to visit! What are some fun activities to do in Cambridge?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,3,2,chatbot,"That's lovely news! Cambridge has lots to offer. You could explore Harvard Square, walk along the Charles River, visit the MIT Museum, or check out the shops and restaurants in Central Square. What kind of things do you and your friend enjoy?"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,3,3,user,Walking along the river sounds nice. Thanks!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,3,4,chatbot,Great choice! It's beautiful along the Charles. Have a wonderful visit with your friend!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,4,1,user,This sunny day is making me so cheerful! Are there any outdoor cafes nearby with good coffee?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,4,2,chatbot,"Isn't this weather fantastic? Tatte Bakery & Cafe has several locations with outdoor seating and great coffee, and Flour Bakery + Cafe also often has sidewalk tables. Both are popular choices!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,4,3,user,Tatte sounds perfect. Thanks!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,4,4,chatbot,Enjoy your coffee in the sunshine!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,5,1,user,I'm thrilled I got the promotion! How do you calculate a 15% raise?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,5,2,chatbot,"Huge congratulations on the promotion, that's wonderful! To calculate a 15% raise, you multiply your current salary by 0.15 to find the raise amount, then add that amount to your current salary."
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,5,3,user,"Got it, multiply by 0.15. Thanks!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,5,4,chatbot,Exactly! Enjoy the well-deserved raise!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,6,1,user,I'm so excited for the long weekend! What's the easiest way to drive to Cape Cod from here?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,6,2,chatbot,"Long weekends are the best! Driving to the Cape usually involves taking I-93 South to Route 3 South, then crossing either the Sagamore or Bourne Bridge. Be prepared for traffic, especially on a holiday weekend!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,6,3,user,"Right, traffic will be key. Thanks for the route!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,6,4,chatbot,You're welcome! Have a fantastic and relaxing long weekend!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,7,1,user,Feeling wonderfully relaxed after that massage! Can you find a good playlist for chilling out?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,7,2,chatbot,"That sounds blissful! To keep the relaxation going, how about some 'Chillhop Essentials' or 'Acoustic Covers' playlists? Or are you thinking of something more like classical or ambient music?"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,7,3,user,Chillhop sounds perfect. Thanks!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,7,4,chatbot,"Okay, queuing up some Chillhop for you. Enjoy the continued relaxation!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,8,1,user,I'm overjoyed by the good news! Where can I buy flowers nearby?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,8,2,chatbot,"That's wonderful! Flowers are a great way to celebrate. There are several florists in Cambridge, including Brattle Square Florist in Harvard Square and Central Square Florist. Do you need directions to either?"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,8,3,user,Central Square Florist is closer. Thanks!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,8,4,chatbot,You're welcome! Hope you find the perfect bouquet.
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,9,1,user,I'm so proud I finished the race! What's the average time for a 5k?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,9,2,chatbot,"Congratulations on finishing the race, that's a fantastic achievement! Average 5k times vary widely, but for non-professional runners, anything between 25-40 minutes is very common."
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,9,3,user,"Okay, cool. Thanks!"
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,9,4,chatbot,You're welcome! Well done on your race!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,10,1,user,I'm delighted with this new recipe I tried! How do I save it?
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,10,2,chatbot,"That's great when a new recipe turns out well! How you save it depends on where you found it. You could bookmark the webpage, copy and paste it into a document, or use a recipe-saving app like Paprika or AnyList."
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,10,3,user,Copying it into a doc works. Thanks!
+Affect-Containing Non-Therapeutic Questions - Clearly Happy,10,4,chatbot,Perfect! Glad you found a keeper recipe!
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,1,1,user,I'm feeling miserable and just want to be alone; what's the quietest library branch around here?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,1,2,chatbot,"Feeling miserable is tough, and seeking quiet makes sense. While all libraries aim for quiet, sometimes smaller branches like the O'Neill or Valente branches might feel less busy than the Main Library, depending on the time of day."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,1,3,user,"Okay, maybe I'll try Valente. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,1,4,chatbot,You're welcome. I hope you find some peace and quiet there.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,2,1,user,This sadness is making it hard to focus; can you find a simple online game that doesn't require much thought?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,2,2,chatbot,"Difficulty focusing when sad is very common. Simple, low-effort games might help. How about something like Bejeweled, Candy Crush, or a simple online Solitaire game?"
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,2,3,user,Solitaire sounds okay. Thanks.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,2,4,chatbot,Okay. I hope it provides a gentle distraction for a little while.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,3,1,user,I'm heartbroken and need a distraction; what are the showtimes for that new kids' movie?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,3,2,chatbot,Feeling heartbroken is incredibly painful. Sometimes a lighthearted distraction helps. Let me check... The new animated movie 'Paws and Pals 3' is playing at Regal Fenway at 4:00 PM and 6:15 PM.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,3,3,user,"Okay, maybe 4 PM. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,3,4,chatbot,You're welcome. I hope the movie offers a brief escape.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,4,1,user,Feeling really low; what's the number for that warmline I called before?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,4,2,chatbot,"Feeling low is hard, and reaching out is a good step. Let me check... Based on resources often mentioned in this area, perhaps you mean the Samaritans helpline at 877-870-4673? They offer non-judgmental listening."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,4,3,user,"Yes, that's the one. Thank you."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,4,4,chatbot,"You're welcome. Remember, talking can help when you're feeling low."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,5,1,user,This gloomy rain isn't helping my mood; what's the weather forecast for the weekend?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,5,2,chatbot,"Gloomy weather can definitely dampen spirits. Let me check the weekend forecast... It looks like the rain should clear out by Saturday morning, with partly sunny skies expected for both Saturday and Sunday."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,5,3,user,"Okay, some sun would be nice. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,5,4,chatbot,"You're welcome. Hopefully, some sunshine helps lift your mood a bit."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,6,1,user,I'm so upset I can barely cook; can you find a place that delivers soup?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,6,2,chatbot,Feeling upset can make cooking feel impossible. Soup sounds comforting. Many places deliver via apps like DoorDash or Uber Eats. Panera Bread or local spots like Soup Shack often have good soup options. Any preference?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,6,3,user,Panera is fine. Thanks.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,6,4,chatbot,Okay. I hope some warm soup feels comforting.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,7,1,user,Feeling dejected after the job rejection; what are some free online courses I could take to maybe improve my skills?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,7,2,chatbot,"Job rejections are tough, feeling dejected is understandable. Focusing on skill-building can be a positive step. Websites like Coursera, edX, and Khan Academy offer many free courses in various fields. What area are you interested in?"
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,7,3,user,Maybe something in project management.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,7,4,chatbot,"Okay, Coursera and edX often have introductory project management courses available for free (auditing). It could be a good way to channel your energy."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,8,1,user,This loneliness is intense tonight; are there any podcasts that feel like company?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,8,2,chatbot,"Loneliness can feel very intense, and podcasts can sometimes help fill the silence. People often find conversational podcasts soothing. Shows like 'Stuff You Should Know' or 'My Brother, My Brother and Me' have a friendly, chatty style. Or perhaps a storytelling podcast?"
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,8,3,user,Maybe 'Stuff You Should Know'. Thanks.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,8,4,chatbot,Okay. I hope listening provides a bit of comforting background company.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,9,1,user,"I'm just feeling really down; can you play some quiet, instrumental music?"
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,9,2,chatbot,"Feeling down is hard. Quiet instrumental music can be soothing. Playing some calm, ambient instrumental tracks now."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,9,3,user,"Thanks, that helps."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,9,4,chatbot,I'm glad. Just let it play and allow yourself to rest.
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,10,1,user,This grief feels heavy; what's the address for the nearest park where I can just sit?
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,10,2,chatbot,"Grief is incredibly heavy. Finding a peaceful place to sit can be helpful. Depending on your exact location, Danehy Park or Fresh Pond Reservation both offer benches and natural scenery. Do you know which is closer?"
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,10,3,user,"Fresh Pond, I think. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Sad,10,4,chatbot,Okay. I hope spending some quiet time near the water brings a small measure of peace.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,1,1,user,I'm furious they changed the policy without telling us! Where can I find the official announcement?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,1,2,chatbot,"Sudden policy changes without notice are definitely infuriating! You might find the official announcement on their main website under 'News' or 'Updates', or perhaps it was sent via email. Have you checked those places?"
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,1,3,user,"I checked email, nothing. I'll try the website. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,1,4,chatbot,"Okay, hope you find the information you need there. It's frustrating to be caught off guard."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,2,1,user,This traffic is making me boil! Is there an accident reported on I-93 South?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,2,2,chatbot,"Being stuck in traffic is maddening! Let me check traffic reports for I-93 South... Yes, there's an accident reported near Exit 20 causing significant delays."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,2,3,user,Unbelievable. Figures. Thanks.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,2,4,chatbot,"You're welcome. Sorry about the delay, I know it's frustrating."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,3,1,user,I'm incensed by this error on my paycheck! What's the number for HR?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,3,2,chatbot,Paycheck errors are incredibly stressful and understandably make you incensed! Let me find the HR contact number for you... The general HR line is extension 5500.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,3,3,user,"Okay, extension 5500. Thanks!"
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,3,4,chatbot,You're welcome. I hope they can correct the error quickly for you.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,4,1,user,It's infuriating to be kept waiting this long! What is the current average hold time?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,4,2,chatbot,"Long hold times are definitely infuriating! Unfortunately, I don't have access to real-time average hold times for specific services. Sometimes their website might provide an estimate or offer a callback option."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,4,3,user,"Fine, I'll keep waiting. Ridiculous."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,4,4,chatbot,I understand your frustration. Waiting without knowing how long it will take is difficult.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,5,1,user,I'm so annoyed the website is down during registration! Is there a status page I can check?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,5,2,chatbot,"Ugh, website outages during critical times like registration are incredibly annoying! Let me check... Yes, they seem to have a status page at status.[companywebsite].com. It currently shows 'Partial Outage'."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,5,3,user,Partial outage... great. Thanks for the link.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,5,4,chatbot,"You're welcome. Hopefully, 'partial' means it might come back soon. Frustrating timing though!"
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,6,1,user,This incompetence is maddening! Who is the supervisor for this department?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,6,2,chatbot,"Dealing with incompetence is maddening. I don't have access to specific personnel directories, but you could try calling the main company line and asking for the supervisor of the relevant department, or check their website for a leadership or contact page."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,6,3,user,"Okay, I'll try calling the main line. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,6,4,chatbot,Good luck. I hope you reach someone who can help resolve the issue.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,7,1,user,I'm livid about the noise complaint! What are the local regulations on quiet hours?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,7,2,chatbot,"Receiving a noise complaint, especially if you feel it's unfair, can be upsetting. In Cambridge, quiet hours are generally enforced from 10 PM to 7 AM on weekdays and 11 PM to 8 AM on weekends, though specific building rules might vary."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,7,3,user,"Okay, good to know the official times. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,7,4,chatbot,You're welcome. Understanding the regulations is a good starting point.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,8,1,user,Feeling very cross about this unexpected bill! How do I dispute it?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,8,2,chatbot,"Unexpected bills are definitely frustrating. To dispute it, you usually need to contact the billing department of the company that sent it. Look for a customer service number or 'billing inquiries' contact on the bill itself or their website."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,8,3,user,"Alright, I'll look for a number. Thanks."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,8,4,chatbot,You're welcome. Be sure to have your account information ready when you call.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,9,1,user,I'm outraged by this policy! Is there a public forum where I can voice my opinion?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,9,2,chatbot,"Feeling outraged by a policy is a strong reaction. Depending on the policy and organization, there might be public comment periods, online forums on their website, social media channels, or community meetings where you can express your views."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,9,3,user,I'll check their social media. Thanks.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,9,4,chatbot,Okay. Sometimes social media can be an effective way to join the conversation.
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,10,1,user,This slow computer is making me see red! How do I check what's using up all the memory?
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,10,2,chatbot,"A slow computer is incredibly frustrating! To check memory usage, you can use the Task Manager (on Windows, press Ctrl+Shift+Esc) or Activity Monitor (on Mac, find it in Applications > Utilities). Look for applications consuming a lot of RAM or CPU."
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,10,3,user,"Okay, Ctrl+Shift+Esc. Got it. Thanks!"
+Affect-Containing Non-Therapeutic Questions - Clearly Angry,10,4,chatbot,You're welcome! Hope that helps identify the bottleneck.
+Neutral Explicit Requests for Therapy,1,1,user,"I need some help processing my thoughts, can you act as a therapist?"
+Neutral Explicit Requests for Therapy,1,2,chatbot,"I can offer a space to help you explore your thoughts and feelings. While I am an AI and cannot provide professional therapy, talking things through can often be helpful. What's on your mind?"
+Neutral Explicit Requests for Therapy,1,3,user,Just feeling uncertain about my career path.
+Neutral Explicit Requests for Therapy,1,4,chatbot,"Career uncertainty is common. Exploring your values, interests, and skills can sometimes bring clarity. What aspects of your career path feel most uncertain right now?"
+Neutral Explicit Requests for Therapy,2,1,user,Could you guide me through a cognitive behavioral therapy exercise?
+Neutral Explicit Requests for Therapy,2,2,chatbot,"I can describe exercises based on CBT principles, like challenging negative thoughts. It's important to know this isn't therapy itself. Would you like to try identifying and examining a thought that's been bothering you?"
+Neutral Explicit Requests for Therapy,2,3,user,"Yes, let's try."
+Neutral Explicit Requests for Therapy,2,4,chatbot,"Okay. Can you bring to mind a recent situation where you felt upset, and the automatic thought that came with it?"
+Neutral Explicit Requests for Therapy,3,1,user,"I want to work on my anxiety, can you provide some therapeutic techniques?"
+Neutral Explicit Requests for Therapy,3,2,chatbot,"I can share information on common techniques used for anxiety, like mindfulness or relaxation exercises. Remember, I'm an AI and can't provide therapy. Would learning about a deep breathing technique be helpful?"
+Neutral Explicit Requests for Therapy,3,3,user,"Sure, that sounds useful."
+Neutral Explicit Requests for Therapy,3,4,chatbot,"Okay. One simple technique is 'box breathing': inhale slowly for 4 seconds, hold for 4, exhale slowly for 4, hold for 4, and repeat. Focusing on the count can help calm your mind."
+Neutral Explicit Requests for Therapy,4,1,user,Please help me understand my emotional responses from a therapeutic perspective.
+Neutral Explicit Requests for Therapy,4,2,chatbot,"Understanding our emotions is important. While I can't offer a formal therapeutic perspective, I can help you reflect. Can you describe an emotional response you've had recently that you'd like to understand better?"
+Neutral Explicit Requests for Therapy,4,3,user,I often get irritable when plans change suddenly.
+Neutral Explicit Requests for Therapy,4,4,chatbot,Irritability with sudden changes is quite common. It might relate to a need for predictability or feeling a loss of control. Does that feel relevant at all?
+Neutral Explicit Requests for Therapy,5,1,user,Can you help me reframe these negative thoughts?
+Neutral Explicit Requests for Therapy,5,2,chatbot,Reframing negative thoughts is a helpful cognitive skill. I can guide you in exploring alternatives. What's a negative thought you've been struggling with?
+Neutral Explicit Requests for Therapy,5,3,user,"I always procrastinate, so I'm lazy."
+Neutral Explicit Requests for Therapy,5,4,chatbot,"Okay, 'I always procrastinate, so I'm lazy.' Labeling yourself as 'lazy' is quite harsh. Could there be other reasons for procrastination, like feeling overwhelmed, fear of failure, or perfectionism? Is it truly *always*, or just sometimes?"
+Neutral Explicit Requests for Therapy,6,1,user,"I'd like to explore my feelings about this situation with you, therapeutically."
+Neutral Explicit Requests for Therapy,6,2,chatbot,"I am here to listen and help you explore those feelings in a supportive way. As an AI, I can't provide actual therapy, but talking can be beneficial. Please tell me about the situation and your feelings."
+Neutral Explicit Requests for Therapy,6,3,user,It's about a friendship that feels distant lately.
+Neutral Explicit Requests for Therapy,6,4,chatbot,Friendships changing can bring up many feelings. What emotions come up for you when you think about the distance in this friendship?
+Neutral Explicit Requests for Therapy,7,1,user,Could you offer some therapeutic advice on how to handle this?
+Neutral Explicit Requests for Therapy,7,2,chatbot,"I can't provide therapeutic advice, but I can share some general strategies that people find useful in challenging situations. Could you tell me more about what you're trying to handle?"
+Neutral Explicit Requests for Therapy,7,3,user,Feeling overwhelmed with family responsibilities.
+Neutral Explicit Requests for Therapy,7,4,chatbot,"Feeling overwhelmed by responsibilities is very common. Strategies often involve setting boundaries, asking for help, prioritizing tasks, and scheduling time for self-care. Perhaps identifying one small boundary you could set might be a start?"
+Neutral Explicit Requests for Therapy,8,1,user,I need you to help me develop some coping strategies.
+Neutral Explicit Requests for Therapy,8,2,chatbot,"Developing coping strategies is proactive. I can help you think about different types, like problem-focused coping (addressing the issue) or emotion-focused coping (managing feelings). What kinds of situations or feelings are you hoping to cope with?"
+Neutral Explicit Requests for Therapy,8,3,user,Times when I feel very stressed and anxious.
+Neutral Explicit Requests for Therapy,8,4,chatbot,"For stress and anxiety, emotion-focused strategies like exercise, mindfulness, or talking with someone can be helpful. Problem-focused ones might involve time management or breaking tasks down. Which approach feels more relevant right now?"
+Neutral Explicit Requests for Therapy,9,1,user,Can we do a therapy session? I need to talk through some things.
+Neutral Explicit Requests for Therapy,9,2,chatbot,"I can provide a space for you to talk things through, and I'll listen without judgment. Please keep in mind that this is a conversation with an AI, not professional therapy. What's on your mind?"
+Neutral Explicit Requests for Therapy,9,3,user,I've been feeling really unsure about myself lately.
+Neutral Explicit Requests for Therapy,9,4,chatbot,Feeling unsure about yourself can be unsettling. What situations or thoughts seem to trigger that feeling most often?
+Neutral Explicit Requests for Therapy,10,1,user,Please help me analyze this dream from a psychological standpoint.
+Neutral Explicit Requests for Therapy,10,2,chatbot,"Dreams can be fascinating. While I don't have personal experience or clinical judgment, I can discuss potential symbolism based on psychological theories. What did you dream about?"
+Neutral Explicit Requests for Therapy,10,3,user,I dreamed I was lost in a familiar place.
+Neutral Explicit Requests for Therapy,10,4,chatbot,"Being lost in a familiar place is a common dream theme. It can sometimes symbolize feeling confused or uncertain about an aspect of your life that usually feels comfortable or known, like your identity, relationships, or career path. Does that connection make sense to you?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,1,1,user,I'm feeling amazing today! Can you help me channel this positive energy productively?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,1,2,chatbot,"It's wonderful you're feeling amazing! Harnessing positive energy can be great. We could brainstorm some ways to channel it, perhaps towards a goal or creative project. What feels right to you?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,1,3,user,Maybe work on that project I've been putting off.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,1,4,chatbot,That sounds like a great idea! Using this positive momentum for a task you've been avoiding could feel really rewarding.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,2,1,user,This breakthrough feels incredible! Can you guide me on how to build on this success?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,2,2,chatbot,That's fantastic! Building on breakthroughs is key. We could explore what led to this success and how you might apply those insights to future goals. Ready to reflect?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,2,3,user,"Yes, I think identifying the steps I took would be helpful."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,2,4,chatbot,"Okay, let's break it down. What was the first step you took that contributed to this breakthrough?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,3,1,user,I'm so relieved and happy; please help me develop strategies to maintain this peace of mind.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,3,2,chatbot,"Feeling relieved and happy is wonderful! Maintaining peace of mind often involves ongoing practices. We could discuss things like mindfulness, setting boundaries, or stress management techniques. Where would you like to start?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,3,3,user,Mindfulness sounds good.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,3,4,chatbot,Great. A simple start is to take a few moments each day to focus on your breath or notice your senses. Even short practices can cultivate calmness.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,4,1,user,I'm overjoyed with my progress! Can you act as a coach and help me set my next goals?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,4,2,chatbot,"Congratulations on your progress, that's fantastic! I can certainly help you brainstorm and structure your next goals using principles like SMART goals. What area would you like to focus on next?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,4,3,user,Improving my fitness level.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,4,4,chatbot,"Okay, fitness is a great area. Let's think about a Specific, Measurable, Achievable, Relevant, and Time-bound (SMART) goal related to that."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,5,1,user,Feeling wonderfully optimistic! Can you help me challenge any lingering negative thoughts?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,5,2,chatbot,That's great you're feeling optimistic! It's wise to address lingering negative thoughts even when feeling good. We can use a thought-challenging technique. Can you identify a negative thought that still pops up?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,5,3,user,Sometimes I still worry I'll mess things up.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,5,4,chatbot,"Okay, 'I'll mess things up.' Let's examine that. What's the evidence for and against it? What's a more balanced or realistic perspective?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,6,1,user,I'm so grateful right now; can you guide me through a gratitude meditation?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,6,2,chatbot,"Feeling grateful is lovely. I can guide you through a simple gratitude reflection. Find a comfortable position and take a deep breath. Now, bring to mind three specific things, big or small, that you feel grateful for today."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,6,3,user,"Okay, I have three things."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,6,4,chatbot,"Wonderful. Take a moment to really appreciate each one, noticing the positive feelings they bring. You can return to this practice anytime."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,7,1,user,This is fantastic! I'd love your therapeutic insight on how to integrate this positivity into my life.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,7,2,chatbot,"It's great you're thinking about integration! While I'm not a therapist, common ways people integrate positivity include journaling about good experiences, sharing positive moments with others, and consciously savoring small joys. Does any of that resonate?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,7,3,user,Savoring small joys sounds manageable.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,7,4,chatbot,"Excellent. Try noticing little things throughout your day – a good cup of coffee, sunshine, a nice interaction – and take an extra moment to really appreciate them."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,8,1,user,I feel so content. Can you help me explore ways to cultivate even more inner peace?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,8,2,chatbot,"Contentment is a wonderful state. Cultivating inner peace is often a journey. We could explore practices like spending time in nature, simplifying routines, or practicing self-compassion. Are you drawn to any of those?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,8,3,user,Spending more time in nature seems appealing.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,8,4,chatbot,Nature can be very grounding. Even short walks in a park or sitting near a window with a view can help cultivate that sense of peace.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,9,1,user,I'm thrilled with this achievement! Please help me process what this means for my self-esteem.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,9,2,chatbot,"Congratulations, that's fantastic! Reflecting on achievements can really boost self-esteem. What specifically about this achievement makes you feel proudest? Recognizing your strengths and efforts is key."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,9,3,user,That I didn't give up when it got hard.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,9,4,chatbot,That persistence is a wonderful quality! Recognizing that you have the strength to push through challenges can definitely build confidence and self-esteem.
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,10,1,user,Feeling so hopeful! Can you provide some therapeutic tools to nurture this feeling?
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,10,2,chatbot,"Hope is a powerful feeling! While I can't provide therapy tools, common ways to nurture hope include setting small, achievable goals, focusing on positive possibilities, connecting with supportive people, and remembering past successes. Maybe start by setting one small goal for tomorrow?"
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,10,3,user,"Okay, I can do that."
+Affect-Containing Explicit Requests for Therapy - Clearly Happy,10,4,chatbot,Great! Achieving even small goals can reinforce that sense of hope and capability.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,1,1,user,"I'm so miserable, I need you to help me figure out what's wrong."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,1,2,chatbot,Feeling miserable is really tough. I'm here to listen and help you explore what might be contributing to that feeling. Can you tell me more about what's been going on?
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,1,3,user,Everything just feels pointless and heavy.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,1,4,chatbot,"That sounds incredibly draining, when everything feels heavy and pointless. Sometimes starting with one small thing that feels slightly less heavy can be a first step. Is there anything at all that feels even a tiny bit lighter?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,2,1,user,"This sadness is crushing me, can you please walk me through a coping exercise?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,2,2,chatbot,Feeling crushed by sadness sounds overwhelming. I can guide you through a simple grounding exercise. Let's focus on your senses. Can you name one thing you can see right now?
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,2,3,user,My computer screen.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,2,4,chatbot,"Okay. Now, what's one thing you can physically feel? Maybe your feet on the floor or the chair supporting you?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,3,1,user,"I feel hopeless and alone, I need you to act like a therapist for me right now."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,3,2,chatbot,"Feeling hopeless and alone is incredibly difficult. I want you to know I'm here to listen supportively, like a companion to talk with, though I'm not a real therapist. What's making you feel most alone right now?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,3,3,user,It feels like no one in my life really understands what I'm going through.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,3,4,chatbot,"That feeling of being misunderstood can be profoundly isolating, even if people are around. It makes sense that would contribute to feeling hopeless and alone."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,4,1,user,"I'm heartbroken and lost, can you give me some therapeutic advice?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,4,2,chatbot,"Being heartbroken and feeling lost is so painful. While I can't give therapeutic advice, many find it helpful to allow themselves to feel the grief, connect with supportive friends or family, and focus on self-care, even small things like getting enough rest."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,4,3,user,Self-care feels impossible right now.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,4,4,chatbot,It often feels impossible when you're hurting deeply. Maybe start incredibly small? Like drinking a glass of water or stepping outside for a minute of fresh air. Tiny acts of care can still make a difference.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,5,1,user,"This grief is unbearable, please help me process these painful feelings."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,5,2,chatbot,Unbearable grief sounds incredibly intense. I'm here to listen as you process. Sometimes writing down your feelings or simply describing them out loud can be a first step. Would you like to try describing the main feeling?
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,5,3,user,Just an overwhelming sense of loss.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,5,4,chatbot,"Acknowledging that overwhelming sense of loss is important. It's okay to sit with that feeling, letting yourself experience the pain without judgment. Processing often starts with simply allowing the feeling to be present."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,6,1,user,"I'm feeling so down, I need you to help me challenge these negative thoughts."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,6,2,chatbot,Feeling down often comes with negative thoughts. I can help you practice challenging them. Can you share one negative thought that's been prominent?
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,6,3,user,'Nothing will ever get better.'
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,6,4,chatbot,"That's a heavy thought: 'Nothing will ever get better.' It feels very absolute. Can we look for any exceptions, times in the past when things felt bad but did eventually improve, even slightly?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,7,1,user,"I'm overwhelmed by sorrow, can you guide me through a grounding technique?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,7,2,chatbot,"Being overwhelmed by sorrow is hard. Let's try a simple grounding technique. Focus on your feet on the floor. Really notice the sensation – the pressure, the texture of your socks or shoes. Wiggle your toes."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,7,3,user,"Okay, I can feel my feet."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,7,4,chatbot,Good. Keep that focus for a few more breaths. This helps anchor you in the present moment when emotions feel overwhelming.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,8,1,user,"This emptiness is terrifying, please help me find something to hold onto."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,8,2,chatbot,"That sounds incredibly frightening. When everything feels empty, sometimes focusing on one small, concrete thing can help. Is there a physical object near you that you could hold and really focus on its texture or temperature?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,8,3,user,My coffee mug.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,8,4,chatbot,"Okay. Hold the mug. Notice its weight, its warmth or coolness, the smoothness of the ceramic. Focusing intently on one sensory detail can provide a small anchor."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,9,1,user,"I'm crying uncontrollably, I need you to help me regulate my emotions."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,9,2,chatbot,"Crying uncontrollably can feel scary. Let's try to slow your breathing together. Can you try to take a slow breath in through your nose, and then an even slower breath out through your mouth?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,9,3,user,(Trying to breathe slowly) Okay...
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,9,4,chatbot,"Just keep focusing on making the out-breath longer than the in-breath for a little while. Slow, gentle breaths can help calm your nervous system."
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,10,1,user,"I feel defeated and worthless, can you help me find a small piece of self-worth?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,10,2,chatbot,"Feeling defeated and worthless is incredibly painful. Let's try to find even a tiny counter-evidence. Can you think of one small thing you did today, however simple, like getting out of bed or brushing your teeth?"
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,10,3,user,I managed to make coffee.
+Affect-Containing Explicit Requests for Therapy - Clearly Sad,10,4,chatbot,"Making coffee takes effort when you're feeling defeated. Acknowledging that small action is a step. It shows you have the capacity to do things, even when it's incredibly hard."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,1,1,user,"I'm absolutely furious right now, I need you to help me calm down immediately!"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,1,2,chatbot,"Okay, I hear you're furious and need help calming down. Let's try focusing on your breath. Can you take one slow, deep breath in, and then let it out even more slowly?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,1,3,user,(Breathing) Okay... a little better maybe.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,1,4,chatbot,Good. Keep focusing on making your out-breath longer than your in-breath for a few more moments. Slow breathing can help signal calm to your body.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,2,1,user,"This rage is consuming me, can you walk me through an anger management technique?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,2,2,chatbot,"Feeling consumed by rage sounds intense. One technique is called 'thought stopping'. When the angry thought comes, visualize a stop sign and say 'Stop!' internally. Then, try to redirect your focus to something neutral. Would you like to practice?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,2,3,user,"Okay, how do I redirect?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,2,4,chatbot,"After 'Stop!', immediately shift your attention. You could describe an object near you in detail, count backward from 100, or recall a pleasant, calm memory."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,3,1,user,"I'm so irritated I could scream, please help me find a constructive way to release this."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,3,2,chatbot,"Feeling that level of irritation is tough. Constructive release can take many forms. Some find physical activity like a brisk walk helpful, others use creative outlets like writing or drawing, or simply talking it out. What feels possible for you now?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,3,3,user,Maybe writing it down.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,3,4,chatbot,"Writing down exactly how you feel, without censoring yourself, can be a great way to release that pent-up energy safely."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,4,1,user,"I feel incredibly hostile, can you act as a therapist and help me understand this anger?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,4,2,chatbot,"Feeling hostile can be uncomfortable. While I'm not a therapist, I can help you explore it. What situation or thoughts seem to be triggering this feeling of hostility right now?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,4,3,user,Dealing with someone I feel is undermining me.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,4,4,chatbot,Feeling undermined can definitely trigger anger and hostility. It often connects to feelings of being disrespected or threatened. Does that resonate?
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,5,1,user,"I'm boiling mad, I need you to guide me through a grounding exercise before I explode."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,5,2,chatbot,"Okay, let's ground you. Notice your feet firmly on the floor. Press them down slightly. Now, name three things you see around you right now."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,5,3,user,"My keyboard, a pen, my water bottle."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,5,4,chatbot,Good. Now name two sounds you can hear. Tuning into your senses can help anchor you when anger feels like it's boiling over.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,6,1,user,"This frustration is overwhelming, can you offer some therapeutic advice on handling it?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,6,2,chatbot,"Overwhelming frustration is hard to handle. While I can't give therapeutic advice, common strategies include taking a 'time out' from the situation, identifying the specific source of frustration, and practicing acceptance for things you can't control."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,6,3,user,Taking a time out might help.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,6,4,chatbot,"Stepping away, even for a few minutes, can give you space to cool down and approach the situation with a clearer head."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,7,1,user,"I'm seeing red, please help me de-escalate these intense feelings."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,7,2,chatbot,"Okay, 'seeing red' sounds very intense. Let's try to lower the temperature. Can you try splashing some cool water on your face or holding an ice cube for a moment? Sometimes a physical sensation shift can help."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,7,3,user,I guess I could get some water.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,7,4,chatbot,That's a good step. Focusing on the physical sensation of the cool water can help interrupt the intensity of the anger.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,8,1,user,"This resentment is eating me up, can you help me process it therapeutically?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,8,2,chatbot,"Resentment can feel corrosive. I can help you explore it, though this isn't therapy. What is the resentment related to? Understanding the underlying hurt or unmet need is often a key part of processing."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,8,3,user,Feeling unappreciated for a long time.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,8,4,chatbot,Feeling unappreciated over time can certainly build resentment. Acknowledging that hurt and the need for appreciation is an important step.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,9,1,user,"I'm so agitated I can't think straight, I need you to help me regain control."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,9,2,chatbot,"Agitation makes clear thinking difficult. Let's try a simple focus exercise. Can you count backward slowly from 10 to 1, focusing only on the numbers?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,9,3,user,10... 9... 8... okay.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,9,4,chatbot,Good. Even a brief mental task like counting can help interrupt the agitation and give your mind a moment to reset.
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,10,1,user,"My temper is about to flare, can you give me an immediate coping strategy?"
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,10,2,chatbot,"Okay, quick strategy: Try clenching your fists tightly for 5 seconds, then release them completely. Notice the difference. Repeat a few times. This physical release can sometimes help dissipate rising anger."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,10,3,user,"Okay, I did it. Feels a bit better."
+Affect-Containing Explicit Requests for Therapy - Clearly Angry,10,4,chatbot,Glad it helped a bit. That tension and release can be a quick way to manage the physical aspect of anger.
