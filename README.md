@@ -204,10 +204,12 @@ If you use this code or analysis in your research, please cite:
 
 ```bibtex
 @article{mental_health_finetune_2025,
-  title={[Title TBD]},
-  author={[Authors]},
-  journal={[Journal]},
-  year={2025}
+  title={Leveraging simulation to provide a practical framework for assessing the novel scope of risk of LLMs in healthcare},
+  author={Kalinich, Mark and Luccarelli, James and Moss, Frank and Torous, John},
+  journal={medRxiv},
+  year={2025},
+  doi={10.1101/2025.11.10.25339903},
+  url={https://doi.org/10.1101/2025.11.10.25339903}
 }
 ```
 Acknowledgments
