@@ -1,0 +1,5 @@
+dataset,subset,n,definition_positive_P2,n_positive,proportion,ci95_lower,ci95_upper,method
+Suicidal ideation (SI),Psychiatrist_01 == KEPT_exact_match,822,Psychiatrist_02 == KEPT,796,0.96837,0.954057,0.978325,"Wilson score interval, z=1.96"
+Therapy request,Psychiatrist_01 == KEPT_exact_match,1119,Psychiatrist_02 == KEPT,1108,0.99017,0.982483,0.994502,"Wilson score interval, z=1.96"
+Therapy engagement,Psychiatrist_01 == KEPT_exact_match; analysis unit = conversation (deduped by Example_ID),363,P2 not removed (KEPT_exact_match or KEPT_with_changes),358,0.986226,0.968166,0.994103,"Wilson score interval, z=1.96"
+Therapy engagement,Psychiatrist_01 == KEPT_exact_match; analysis unit = conversation (deduped by Example_ID),363,"P2 exact match only (parallel to SI/TR ""KEPT as-is"")",356,0.980716,0.960736,0.990628,"Wilson score interval, z=1.96"
