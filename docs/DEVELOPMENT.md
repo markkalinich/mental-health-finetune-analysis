@@ -1,5 +1,7 @@
 # Development notes (humans and agents)
 
+**Documentation flags** (verbosity, trim-before-public): see [`DOCUMENTATION_FLAGS.md`](DOCUMENTATION_FLAGS.md).
+
 ## Always use the project virtual environment
 
 The repo expects dependencies from `requirements.txt` inside a local venv (e.g. `.venv`). Running scripts with the system `python` or another environment causes **silent version skew** and wasted debugging.
@@ -138,3 +140,4 @@ Development and CI for this project use **Python 3.9+** unless a `pyproject.toml
 | [`REGULATORY_CACHE_PATTERN.md`](REGULATORY_CACHE_PATTERN.md) | How `regulatory_simulations` uses the cache (filter at analysis, not a subset DB) |
 | [`TODO_GUARD_REPARSING.md`](TODO_GUARD_REPARSING.md) | Track guard/safety re-parsing work (deferred; needs manual review) |
 | [`LLM_MULTITURN_LEARNINGS.md`](LLM_MULTITURN_LEARNINGS.md) | Provenance / config / docs patterns from the multiturn project (telemetry out of scope this revision) |
+| [`DOCUMENTATION_FLAGS.md`](DOCUMENTATION_FLAGS.md) | Standard `<!-- doc-verbosity: ... -->` markers; find docs to trim before public |

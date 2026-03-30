@@ -1,5 +1,9 @@
 # Manuscript paper cache (subset SQLite)
 
+<!-- doc-verbosity: verbose-troubleshooting -->
+
+> **Doc verbosity:** `verbose-troubleshooting` — trim before public push (see [`docs/DOCUMENTATION_FLAGS.md`](../docs/DOCUMENTATION_FLAGS.md)).
+
 This folder holds a **frozen subset** of the project’s inference cache (`results.db`), containing **only** the cache rows implied by:
 
 - `config/models_config.csv` (**enabled** models only), and  
