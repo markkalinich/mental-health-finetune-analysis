@@ -6,9 +6,9 @@ Unambiguous statements of the form:
 
 > We used **git commit** `abc1234` of this repository, **SQLite cache** at path `…` with SHA-256 `…`, **pinned inputs** (hashes below), and **config** `models_config.csv` at hash `…`, then ran `run_paper_pipeline.py` (or a named wrapper) to produce the artifacts in `results/FINETUNE_PAPER_FIGURES/<run_id>/`.
 
-## Design sketch (implementation TBD)
+## Design sketch
 
-1. **`MANIFEST.json` (or `provenance.json`) per pipeline run** — Written next to the timestamped output folder (e.g. under `results/FINETUNE_PAPER_FIGURES/<YYYYMMDD_HHMMSS>/`).
+1. **`MANIFEST.json` per paper pipeline run** — Written under `results/FINETUNE_PAPER_FIGURES/<YYYYMMDD_HHMMSS>/` by `run_paper_pipeline.py` (see `utilities/paper_run_manifest.py`). Schema: `paper_run_manifest_v1`. Use `--no-manifest` to skip. **Outputs** (hashes of generated figures) are not yet listed; extend the writer when needed.
 
    Suggested fields:
 
@@ -25,7 +25,7 @@ Unambiguous statements of the form:
    | `command` | argv as executed |
    | `outputs` | List of output paths or glob + hashes of key deliverables (figures, table CSVs) |
 
-2. **Helper script** — e.g. `utilities/write_run_manifest.py` invoked at the **start or end** of `run_paper_pipeline.py` so humans never forget to record hashes.
+2. **Helper** — `utilities/paper_run_manifest.py`; invoked at the **end** of each run (including failed resolution of experiment dirs).
 
 3. **Pinning policy** — Document whether a “manuscript freeze” uses:
    - a **copied** `results.db` snapshot (recommended for strict reproducibility), or

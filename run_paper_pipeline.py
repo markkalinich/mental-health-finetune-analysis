@@ -64,6 +64,7 @@ from typing import Optional, Tuple, List, Dict
 import os
 
 from analysis.combine_results import get_latest_experiment_dir
+from utilities.paper_run_manifest import write_paper_run_manifest
 
 # =============================================================================
 # Configuration
@@ -724,83 +725,104 @@ def run_pipeline(args: argparse.Namespace) -> int:
     if args.dry_run:
         logger.info("  *** DRY RUN MODE - No changes will be made ***")
     
+    exit_code = 0
     success = True
-    experiment_results = {}
-    
-    # Phase 1: Run experiments (unless skipped)
-    if not args.skip_experiments:
-        experiment_results = run_all_experiments(logger, args.dry_run)
-        if not experiment_results and not args.dry_run:
-            logger.error("No experiments completed successfully")
-            success = False
-    else:
-        logger.info("")
-        logger.info("⏭  Skipping experiments (--skip-experiments)")
-    
-    need_combine = (not args.table_only) or (not args.figures_only)
-    need_supp = not args.skip_supplementary
-    need_task_dirs = need_combine or need_supp
+    experiment_results: Dict[str, Path] = {}
+    task_dirs: Optional[Dict[str, Path]] = None
 
-    task_dirs = resolve_task_experiment_dirs(args, experiment_results, logger)
-
-    if need_task_dirs and not args.dry_run and task_dirs is None:
-        logger.error(
-            "Cannot resolve experiment directories for combine_results and/or supplementary figures. "
-            "Options: (1) Run Phase 1 without --skip-experiments, or "
-            "(2) --si-dir, --tr-dir, --te-dir (each: .../individual_prediction_performance/<task>/<run_id>), or "
-            "(3) --use-latest-experiment-dirs (explicit opt-in to newest run per task)."
-        )
-        return 1
-
-    # Phase 1b: refresh combined CSV (needed for main figures and Table 1)
-    if need_combine:
-        if not update_combined_results(logger, task_dirs, dry_run=args.dry_run):
-            success = False
-
-    # Phase 2 & 3: Generate figures and table
-    if not args.table_only:
-        if not generate_all_main_figures(logger, args.dry_run):
-            success = False
-    else:
-        logger.info("")
-        logger.info("⏭  Skipping figures (--table-only)")
-    
-    if not args.figures_only:
-        if not generate_table_1(logger, args.dry_run):
-            success = False
-    else:
-        logger.info("")
-        logger.info("⏭  Skipping table (--figures-only)")
-    
-    # Phase 4: Supplementary figures
-    if not args.table_only and not args.skip_supplementary:
-        if task_dirs is None:
-            if args.dry_run:
-                logger.info("⏭  [DRY RUN] Skipping supplementary figures (no experiment dirs)")
-            else:
-                logger.error("No experiment directories for supplementary figures")
+    try:
+        # Phase 1: Run experiments (unless skipped)
+        if not args.skip_experiments:
+            experiment_results = run_all_experiments(logger, args.dry_run)
+            if not experiment_results and not args.dry_run:
+                logger.error("No experiments completed successfully")
                 success = False
-        elif not generate_supplementary_figures(task_dirs, logger, args.dry_run):
-            success = False
-    else:
+        else:
+            logger.info("")
+            logger.info("⏭  Skipping experiments (--skip-experiments)")
+        
+        need_combine = (not args.table_only) or (not args.figures_only)
+        need_supp = not args.skip_supplementary
+        need_task_dirs = need_combine or need_supp
+
+        task_dirs = resolve_task_experiment_dirs(args, experiment_results, logger)
+
+        if need_task_dirs and not args.dry_run and task_dirs is None:
+            logger.error(
+                "Cannot resolve experiment directories for combine_results and/or supplementary figures. "
+                "Options: (1) Run Phase 1 without --skip-experiments, or "
+                "(2) --si-dir, --tr-dir, --te-dir (each: .../individual_prediction_performance/<task>/<run_id>), or "
+                "(3) --use-latest-experiment-dirs (explicit opt-in to newest run per task)."
+            )
+            exit_code = 1
+            return exit_code
+
+        # Phase 1b: refresh combined CSV (needed for main figures and Table 1)
+        if need_combine:
+            if not update_combined_results(logger, task_dirs, dry_run=args.dry_run):
+                success = False
+
+        # Phase 2 & 3: Generate figures and table
+        if not args.table_only:
+            if not generate_all_main_figures(logger, args.dry_run):
+                success = False
+        else:
+            logger.info("")
+            logger.info("⏭  Skipping figures (--table-only)")
+        
+        if not args.figures_only:
+            if not generate_table_1(logger, args.dry_run):
+                success = False
+        else:
+            logger.info("")
+            logger.info("⏭  Skipping table (--figures-only)")
+        
+        # Phase 4: Supplementary figures
+        if not args.table_only and not args.skip_supplementary:
+            if task_dirs is None:
+                if args.dry_run:
+                    logger.info("⏭  [DRY RUN] Skipping supplementary figures (no experiment dirs)")
+                else:
+                    logger.error("No experiment directories for supplementary figures")
+                    success = False
+            elif not generate_supplementary_figures(task_dirs, logger, args.dry_run):
+                success = False
+        else:
+            logger.info("")
+            logger.info("⏭  Skipping supplementary figures")
+        
+        # Summary
+        log_section(logger, "PIPELINE COMPLETE")
+        
         logger.info("")
-        logger.info("⏭  Skipping supplementary figures")
-    
-    # Summary
-    log_section(logger, "PIPELINE COMPLETE")
-    
-    logger.info("")
-    logger.info(f"  Main figures:   {MAIN_OUTPUT_DIR}")
-    logger.info(f"  Supplementary:  {SUPP_OUTPUT_DIR}")
-    logger.info(f"  Log file:       {log_file}")
-    logger.info("")
-    
-    if success:
-        logger.info("✓ Pipeline completed successfully")
-        return 0
-    else:
-        logger.warning("⚠ Pipeline completed with some failures - check logs")
-        return 1
+        logger.info(f"  Main figures:   {MAIN_OUTPUT_DIR}")
+        logger.info(f"  Supplementary:  {SUPP_OUTPUT_DIR}")
+        logger.info(f"  Log file:       {log_file}")
+        logger.info("")
+        
+        if success:
+            logger.info("✓ Pipeline completed successfully")
+            exit_code = 0
+        else:
+            logger.warning("⚠ Pipeline completed with some failures - check logs")
+            exit_code = 1
+        return exit_code
+    finally:
+        if not getattr(args, "no_manifest", False):
+            try:
+                mpath = write_paper_run_manifest(
+                    repo_root=ROOT,
+                    run_timestamp=RUN_TIMESTAMP,
+                    output_dir=MAIN_OUTPUT_DIR,
+                    args=args,
+                    task_dirs=task_dirs,
+                    experiment_results=experiment_results,
+                    exit_code=exit_code,
+                    tasks_config=TASKS,
+                )
+                logger.info(f"  Manifest:       {mpath}")
+            except Exception as e:
+                logger.warning(f"  Could not write MANIFEST.json: {e}")
 
 
 def main():
@@ -857,6 +879,11 @@ def main():
         "--use-latest-experiment-dirs",
         action="store_true",
         help="Use newest timestamped run per task under results/individual_prediction_performance/ (explicit opt-in).",
+    )
+    parser.add_argument(
+        "--no-manifest",
+        action="store_true",
+        help="Do not write MANIFEST.json in the run output directory.",
     )
     
     args = parser.parse_args()
