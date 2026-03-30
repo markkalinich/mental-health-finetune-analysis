@@ -43,3 +43,7 @@ Unambiguous statements of the form:
 
 - Guard / safety re-parsing is **out of scope** for this manifest until rules are finalized — see [`TODO_GUARD_REPARSING.md`](TODO_GUARD_REPARSING.md).
 - Final field list should be minimal but sufficient for a Methods / reproducibility paragraph.
+
+### Deferred: raw SQLite file hash
+
+Recording **`sha256sum` of the `results.db` file bytes** is sufficient when the file is treated as a single artifact and not rebuilt (e.g. `VACUUM`) between snapshot and compare. **Optional later:** if two copies of the DB ever disagree on hash but should be “the same data,” consider hashing a **canonical SQL dump** or running **`VACUUM` + fixed journal mode** before hash — see discussion in workflow review. **No change required** until that situation appears; file-level hashes used today (e.g. `manuscript_paper_cache/SHA256SUMS.txt`) stay as-is.

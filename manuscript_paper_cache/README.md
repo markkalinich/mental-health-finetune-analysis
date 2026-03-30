@@ -9,6 +9,14 @@ This folder holds a **frozen subset** of the project’s inference cache (`resul
 - `config/models_config.csv` (**enabled** models only), and  
 - the three finalized task datasets and prompts (`SI`, `TR`, `TE`) as wired in `utilities/build_manuscript_cache_subset.py`.
 
+### Full cache elsewhere (not deleted)
+
+Experiments resolve SQLite at **`cache/results.db`** (directory + filename fixed in code: `orchestration/run_experiment.py` uses `{base_dir}/cache`, with `--base-dir` defaulting to the repo root). There is **no separate `--cache-dir`** on the main experiment runner—only `--base-dir`, which moves the whole project root.
+
+In this checkout, **`cache/results.db`** is intended to be a **symlink** to **`manuscript_paper_cache/results.db`** so runs use the subset without copying bytes. Removing an old symlink to another checkout does **not** delete any database file; it only changes where `cache/results.db` points.
+
+The **full** inference database for development may still live on disk at paths such as **`/home/mkalinich/safety_simulations/cache/results.db`** (sibling repo). That file is unchanged when relinking `cache/results.db` here. Rebuild the subset with `--source` pointing at that full DB when refreshing `manuscript_paper_cache/results.db`.
+
 ## Files
 
 | File | Purpose |

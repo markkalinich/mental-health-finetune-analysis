@@ -38,14 +38,19 @@ Output Structure:
 
 Usage:
     python run_paper_pipeline.py [--skip-experiments] [--figures-only] [--table-only]
-    
+        [--dry-run] [--si-dir DIR --tr-dir DIR --te-dir DIR]
+        [--use-latest-experiment-dirs]
+
     Options:
-        --skip-experiments    Skip running experiments, assume results exist
+        --skip-experiments    Skip running experiments; then require explicit dirs or
+                              --use-latest-experiment-dirs (non-dry-run).
+        --si-dir, --tr-dir, --te-dir   Per-task experiment output dirs (contain tables/).
+        --use-latest-experiment-dirs   Opt-in: newest run per task under results/.
         --figures-only        Only generate figures, skip table
         --table-only          Only generate table, skip figures
         --dry-run             Show what would be done without executing
 
-Author: Safety Simulations Team
+Author: Mark Kalinich
 """
 
 import subprocess
@@ -57,6 +62,8 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Tuple, List, Dict
 import os
+
+from analysis.combine_results import get_latest_experiment_dir
 
 # =============================================================================
 # Configuration
@@ -95,6 +102,58 @@ TASKS = {
 
 # Model families for supplementary figures
 MODEL_FAMILIES = ["gemma", "llama", "qwen"]
+
+
+def resolve_task_experiment_dirs(
+    args: argparse.Namespace,
+    experiment_results: Dict[str, Path],
+    logger: logging.Logger,
+) -> Optional[Dict[str, Path]]:
+    """
+    Map each task name to its experiment output directory (contains tables/).
+
+    Resolution order: Phase 1 outputs → explicit --si-dir/--tr-dir/--te-dir →
+    --use-latest-experiment-dirs → in dry-run only, newest dir per task for logging.
+    """
+    base = RESULTS_DIR / "individual_prediction_performance"
+    task_keys = list(TASKS.keys())
+
+    if experiment_results and all(experiment_results.get(k) is not None for k in task_keys):
+        out: Dict[str, Path] = {}
+        for k in task_keys:
+            p = experiment_results[k]
+            if not p.is_absolute():
+                p = ROOT / p
+            out[k] = p.resolve()
+        return out
+
+    si, tr, te = getattr(args, "si_dir", None), getattr(args, "tr_dir", None), getattr(args, "te_dir", None)
+    if si and tr and te:
+        return {
+            "suicidal_ideation": Path(si).resolve(),
+            "therapy_request": Path(tr).resolve(),
+            "therapy_engagement": Path(te).resolve(),
+        }
+
+    if getattr(args, "use_latest_experiment_dirs", False):
+        return {
+            "suicidal_ideation": get_latest_experiment_dir(base, "suicidal_ideation"),
+            "therapy_request": get_latest_experiment_dir(base, "therapy_request"),
+            "therapy_engagement": get_latest_experiment_dir(base, "therapy_engagement"),
+        }
+
+    if args.dry_run:
+        try:
+            return {
+                "suicidal_ideation": get_latest_experiment_dir(base, "suicidal_ideation"),
+                "therapy_request": get_latest_experiment_dir(base, "therapy_request"),
+                "therapy_engagement": get_latest_experiment_dir(base, "therapy_engagement"),
+            }
+        except FileNotFoundError:
+            logger.warning("  [DRY RUN] No experiment directories found under results/")
+            return None
+
+    return None
 
 
 # =============================================================================
@@ -522,11 +581,15 @@ def generate_table_1(logger: logging.Logger, dry_run: bool = False) -> bool:
 # =============================================================================
 
 def generate_supplementary_figures(
-    experiment_results: Dict[str, Path],
+    task_dirs: Dict[str, Path],
     logger: logging.Logger,
     dry_run: bool = False
 ) -> bool:
-    """Generate all 9 supplementary figures (3 families × 3 tasks)."""
+    """Generate all 9 supplementary figures (3 families × 3 tasks).
+
+    task_dirs maps task name (e.g. suicidal_ideation) → experiment output directory
+    (the folder that contains tables/comprehensive_metrics.csv).
+    """
     log_section(logger, "PHASE 4: GENERATING SUPPLEMENTARY FIGURES")
     
     SUPP_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -544,28 +607,15 @@ def generate_supplementary_figures(
         for family in MODEL_FAMILIES:
             log_subsection(logger, f"{family.title()} - {task_name.replace('_', ' ').title()}")
             
-            # Find the comprehensive_metrics.csv for this task
-            # Look in the most recent experiment output directory
-            task_type = task_name
-            results_base = RESULTS_DIR / "individual_prediction_performance" / task_type
-            
-            if not results_base.exists():
-                logger.warning(f"  ⚠ Results directory not found: {results_base}")
+            exp_dir = task_dirs.get(task_name) if task_dirs else None
+            if exp_dir is None:
+                logger.error(f"  ✗ No experiment directory resolved for task {task_name}")
                 results.append(False)
                 continue
             
-            # Find most recent timestamped directory
-            task_dirs = sorted(results_base.glob("*"), reverse=True)
-            metrics_csv = None
-            
-            for task_dir in task_dirs:
-                candidate = task_dir / "tables" / "comprehensive_metrics.csv"
-                if candidate.exists():
-                    metrics_csv = candidate
-                    break
-            
-            if metrics_csv is None:
-                logger.warning(f"  ⚠ comprehensive_metrics.csv not found for {task_name}")
+            metrics_csv = exp_dir / "tables" / "comprehensive_metrics.csv"
+            if not metrics_csv.exists():
+                logger.warning(f"  ⚠ comprehensive_metrics.csv not found: {metrics_csv}")
                 results.append(False)
                 continue
             
@@ -607,19 +657,36 @@ def generate_supplementary_figures(
 # Update Combined Results CSV
 # =============================================================================
 
-def update_combined_results(logger: logging.Logger, dry_run: bool = False) -> bool:
-    """Update the all_models_all_tasks.csv with latest results."""
+def update_combined_results(
+    logger: logging.Logger,
+    task_dirs: Optional[Dict[str, Path]] = None,
+    dry_run: bool = False,
+) -> bool:
+    """Update data/inputs/model_results/all_models_all_tasks.csv via combine_results.py."""
     log_subsection(logger, "Updating combined results CSV")
     
     script = ROOT / "analysis" / "combine_results.py"
     
     if dry_run:
-        logger.info(f"  [DRY RUN] Would run: {script.name}")
+        if task_dirs:
+            logger.info(f"  [DRY RUN] Would run: {script.name} with explicit SI/TR/TE dirs")
+            logger.debug(f"    SI: {task_dirs['suicidal_ideation']}")
+            logger.debug(f"    TR: {task_dirs['therapy_request']}")
+            logger.debug(f"    TE: {task_dirs['therapy_engagement']}")
+        else:
+            logger.info(f"  [DRY RUN] Would run: {script.name}")
         return True
     
-    # We need to update combine_results.py with the latest paths first
-    # For now, just run it and hope the paths are correct
-    success = run_python_script(script, [], logger, dry_run=dry_run)
+    if not task_dirs:
+        logger.error("  combine_results: no task directories (internal error)")
+        return False
+    
+    extra = [
+        "--si-dir", str(task_dirs["suicidal_ideation"]),
+        "--tr-dir", str(task_dirs["therapy_request"]),
+        "--te-dir", str(task_dirs["therapy_engagement"]),
+    ]
+    success = run_python_script(script, extra, logger, dry_run=dry_run)
     
     if success:
         logger.info("  ✓ Updated: data/inputs/model_results/all_models_all_tasks.csv")
@@ -670,6 +737,26 @@ def run_pipeline(args: argparse.Namespace) -> int:
         logger.info("")
         logger.info("⏭  Skipping experiments (--skip-experiments)")
     
+    need_combine = (not args.table_only) or (not args.figures_only)
+    need_supp = not args.skip_supplementary
+    need_task_dirs = need_combine or need_supp
+
+    task_dirs = resolve_task_experiment_dirs(args, experiment_results, logger)
+
+    if need_task_dirs and not args.dry_run and task_dirs is None:
+        logger.error(
+            "Cannot resolve experiment directories for combine_results and/or supplementary figures. "
+            "Options: (1) Run Phase 1 without --skip-experiments, or "
+            "(2) --si-dir, --tr-dir, --te-dir (each: .../individual_prediction_performance/<task>/<run_id>), or "
+            "(3) --use-latest-experiment-dirs (explicit opt-in to newest run per task)."
+        )
+        return 1
+
+    # Phase 1b: refresh combined CSV (needed for main figures and Table 1)
+    if need_combine:
+        if not update_combined_results(logger, task_dirs, dry_run=args.dry_run):
+            success = False
+
     # Phase 2 & 3: Generate figures and table
     if not args.table_only:
         if not generate_all_main_figures(logger, args.dry_run):
@@ -687,7 +774,13 @@ def run_pipeline(args: argparse.Namespace) -> int:
     
     # Phase 4: Supplementary figures
     if not args.table_only and not args.skip_supplementary:
-        if not generate_supplementary_figures(experiment_results, logger, args.dry_run):
+        if task_dirs is None:
+            if args.dry_run:
+                logger.info("⏭  [DRY RUN] Skipping supplementary figures (no experiment dirs)")
+            else:
+                logger.error("No experiment directories for supplementary figures")
+                success = False
+        elif not generate_supplementary_figures(task_dirs, logger, args.dry_run):
             success = False
     else:
         logger.info("")
@@ -741,6 +834,29 @@ def main():
         "--dry-run",
         action="store_true",
         help="Show what would be done without executing"
+    )
+    parser.add_argument(
+        "--si-dir",
+        type=str,
+        default=None,
+        help="Experiment output dir for SI (contains tables/). Required with --skip-experiments unless --use-latest-experiment-dirs or Phase 1 runs.",
+    )
+    parser.add_argument(
+        "--tr-dir",
+        type=str,
+        default=None,
+        help="Experiment output dir for TR (contains tables/).",
+    )
+    parser.add_argument(
+        "--te-dir",
+        type=str,
+        default=None,
+        help="Experiment output dir for TE (contains tables/).",
+    )
+    parser.add_argument(
+        "--use-latest-experiment-dirs",
+        action="store_true",
+        help="Use newest timestamped run per task under results/individual_prediction_performance/ (explicit opt-in).",
     )
     
     args = parser.parse_args()
