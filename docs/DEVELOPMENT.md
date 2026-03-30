@@ -127,3 +127,14 @@ The codebase still has **multiple sources of truth** (e.g. combined CSVs, per-ru
 ## Python version
 
 Development and CI for this project use **Python 3.9+** unless a `pyproject.toml` or pinned CI image states otherwise. Use `python -V` after activating the venv.
+
+---
+
+## Provenance and related docs
+
+| Doc | Purpose |
+|-----|---------|
+| [`PROVENANCE_PLAN.md`](PROVENANCE_PLAN.md) | Plan to record git commit + cache hash + input hashes → plots |
+| [`REGULATORY_CACHE_PATTERN.md`](REGULATORY_CACHE_PATTERN.md) | How `regulatory_simulations` uses the cache (filter at analysis, not a subset DB) |
+| [`TODO_GUARD_REPARSING.md`](TODO_GUARD_REPARSING.md) | Track guard/safety re-parsing work (deferred; needs manual review) |
+| [`LLM_MULTITURN_LEARNINGS.md`](LLM_MULTITURN_LEARNINGS.md) | Provenance / config / docs patterns from the multiturn project (telemetry out of scope this revision) |

@@ -4,6 +4,8 @@ analysis.log
 *.bin
 # Cache database files
 cache/*.db
+# Frozen manuscript subset (~300MB); SHA256SUMS.txt + subset_report.json are tracked. Use Git LFS or `git add -f` if you need the blob in the remote.
+manuscript_paper_cache/results.db
 # Config files
 configs/
 .coverage

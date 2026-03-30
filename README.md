@@ -139,7 +139,7 @@ results/FINETUNE_PAPER_FIGURES/[YYYYMMDD_HHMMSS]/
 - **Reviewer-driven analyses** (parse success, ΔF1, guard-cache behavior): see [`results/revision_experiments/README_REVISIONS.md`](results/revision_experiments/README_REVISIONS.md).  
 - **Session notes** on guard parsing fixes and data integrity checks: [`results/revision_experiments/GUARD_FIX_SESSION_SUMMARY.md`](results/revision_experiments/GUARD_FIX_SESSION_SUMMARY.md).  
 
-A **manuscript-only results cache** (single source of truth aligned with the exact inputs used for the paper) is planned to reduce ambiguity between “what’s on disk” and “what the paper used”; subsequent steps will walk through transformations explicitly.
+A **manuscript-only results cache** (single source of truth aligned with the exact inputs used for the paper) is planned to reduce ambiguity between “what’s on disk” and “what the paper used”; subsequent steps will walk through transformations explicitly. A concrete **provenance manifest plan** (commit + cache + input hashes → outputs) is in [`docs/PROVENANCE_PLAN.md`](docs/PROVENANCE_PLAN.md). The regulatory paper’s **frozen subset cache** ([`regulatory_paper_cache_v3`](https://github.com/markkalinich/regulatory_simulations/tree/main/regulatory_paper_cache_v3) — `results.db` + `MD5SUM.txt`) and the separate “filter at analysis time” flow are both described in [`docs/REGULATORY_CACHE_PATTERN.md`](docs/REGULATORY_CACHE_PATTERN.md). Narrow **provenance** learnings from the multiturn project are in [`docs/LLM_MULTITURN_LEARNINGS.md`](docs/LLM_MULTITURN_LEARNINGS.md).
 
 **Integrity:** When comparing or pinning artifacts, use **checksums** (e.g. `sha256sum`), not file size or informal “looks the same.” See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
 

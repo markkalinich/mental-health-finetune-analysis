@@ -1,0 +1,34 @@
+{
+  "git": {
+    "commit": "bd9180d1326d18cfe1954916aafa19c8c1825277",
+    "dirty": true
+  },
+  "source_db": "/home/mkalinich/safety_simulations/cache/results.db",
+  "source_db_sha256": "981dec54dbb20c8cfe55a4adac9eb77a17f12344d335b464fdc8797e7d3ee672",
+  "enumeration": {
+    "enabled_models": 127,
+    "rows_per_task": {
+      "suicidal_ideation": 450,
+      "therapy_request": 780,
+      "therapy_engagement": 420
+    },
+    "expected_unique_cache_ids": 209550,
+    "expected_total_enumerations": 209550
+  },
+  "expected_cache_ids": 209550,
+  "found_in_source": 209550,
+  "missing_in_source": 0,
+  "missing_sample": [],
+  "verification_notes": [
+    "Found/missing refer to whether each expected cache_id exists in the SOURCE db.",
+    "If missing_in_source > 0, the large cache is incomplete for current models_config + inputs.",
+    "This script does NOT prove byte-identity with the original journal submission unless you also hold a contemporaneous DB snapshot or regenerate metrics and match pinned CSVs."
+  ],
+  "output_db": "/home/mkalinich/main/manuscript_paper_cache/results.db",
+  "output_counts": {
+    "cache_keys": 209550,
+    "input_texts": 1649,
+    "cached_results": 209550
+  },
+  "output_db_sha256": "c408935dc7a8700792c8ffdc5eebc366f34199a0b86f619aea4565d8ab80a227"
+}
