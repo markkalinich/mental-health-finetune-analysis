@@ -16,7 +16,9 @@ This folder holds a **frozen subset** of the project’s inference cache (`resul
 | `results.db` | SQLite subset (same schema as `cache/results.db`) |
 | `SHA256SUMS.txt` | `sha256sum` of `results.db` — verify with `sha256sum -c SHA256SUMS.txt` |
 | `subset_report.json` | Machine-readable report from the last build (git HEAD, source path, counts, missing keys) |
-| `qc_report_latest.txt` | Optional: text output from `cache_qc_report.py --output` (create locally; not required in git) |
+| `qc_report_latest.md` | Optional: Markdown output from `cache_qc_report.py --output` (create locally; not required in git) |
+| `qc_parse_fail_matrix.csv`, `qc_api_error_matrix.csv` | Optional: model × task (SI/TR/TE) counts plus a **total** column; rows **sorted by total descending** (same folder as `--output`) |
+| `model_cache_crosswalk_approved.csv` | **Human-approved** `model_full_name` → `lm_studio_id` rows only (see QC section). Default path next to `--db`; header-only until you add approved lines. |
 
 ## Build / refresh
 
@@ -34,14 +36,34 @@ cd manuscript_paper_cache && sha256sum results.db > SHA256SUMS.txt
 
 ## QC report (`utilities/cache_qc_report.py`)
 
-- **Where you see output:** terminal **stdout**, and if you pass **`--output`**, the same text is written to that file (UTF-8).
-- **Example (save under this folder):**
-  ```bash
-  python utilities/cache_qc_report.py \
-    --db manuscript_paper_cache/results.db \
-    --output manuscript_paper_cache/qc_report_latest.txt
-  ```
-- Runtime on this machine’s subset DB is on the order of **one second** (SQL aggregates only).
+Resolution order (same triple as `experiment_manager` / `MODEL_NAME_MAP`: **`(model_family, model_size, normalized model_version)`** → enabled `lm_studio_id` in `config/models_config.csv`):
+
+1. **Triple mapping** — For each distinct `cache_keys.model_full_name`, look up the registry id from the triple derived from the cache row.
+2. **Report (§1)** — The Markdown report lists models **resolved directly by triple**, **label drift** (triple points to an id that differs from `model_full_name`), **missing triple** (no registry row for that triple), and what was **fixed only via** the approved CSV.
+3. **Approved crosswalk CSV** — **`--crosswalk-csv`** (default: **`<parent of --db>/model_cache_crosswalk_approved.csv`**) must contain **only** rows you explicitly approve: columns **`model_full_name`**, **`lm_studio_id`**. Every `lm_studio_id` must be an **enabled** id in `models_config.csv`. Drift cases require a row whose `lm_studio_id` matches the triple’s canonical id; missing-triple cases require a row that supplies the intended id.
+4. **Exit** — If any cache model **still** cannot be resolved after triple + approved CSV, the script **prints the unresolved list to stderr and exits with code 1** (no full report). If everything resolves, the full report (including §1) is written.
+
+**Output:** terminal **stdout**; with **`--output`**, Markdown is written to that path (UTF-8). With `--output` (or **`--tables-dir`**), the script also writes **`qc_parse_fail_matrix.csv`** and **`qc_api_error_matrix.csv`**. Override the models grid with **`--models-config`** if needed.
+
+**Example (save under this folder):**
+
+```bash
+python utilities/cache_qc_report.py \
+  --db manuscript_paper_cache/results.db \
+  --output manuscript_paper_cache/qc_report_latest.md
+```
+
+Runtime on this machine’s subset DB is on the order of **one second** (SQL aggregates only).
+
+**Report outline (Markdown sections):**
+
+| § | Contents |
+|---|----------|
+| **0** | Row counts (`cache_keys` vs `cached_results`), enabled model count from registry. |
+| **1** | Cache model → registry resolution (triple, drift, approved CSV, status). |
+| **2** | One row per distinct **`prompt_hash`** (all tasks): prompt label(s), `cache_keys` count, % qwen by resolved family. |
+| **3** | **Per task check:** one row per **`(SI \| TR \| TE, prompt_hash)`** — applicable enabled qwen vs non-qwen count, distinct `input_hash`, `cache_keys`, expected product, **OK**, `cached_results`. |
+| **4–6** | Hyperparameters (`temperature`, `max_tokens`, `top_p`), `created_at` by day, `cached_results` status / parse / API error breakdown. |
 
 ## What this proves vs what it does not
 

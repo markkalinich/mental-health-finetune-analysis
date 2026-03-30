@@ -6,7 +6,12 @@ analysis.log
 cache/*.db
 # Frozen manuscript subset (~300MB); SHA256SUMS.txt + subset_report.json are tracked. Use Git LFS or `git add -f` if you need the blob in the remote.
 manuscript_paper_cache/results.db
+manuscript_paper_cache/qc_report_latest.md
 manuscript_paper_cache/qc_report_latest.txt
+manuscript_paper_cache/qc_parse_fail_matrix.csv
+manuscript_paper_cache/qc_api_error_matrix.csv
+# Obsolete generated crosswalk (QC now uses approved CSV + Markdown §1 only)
+manuscript_paper_cache/model_cache_config_crosswalk.md
 # Config files
 configs/
 .coverage

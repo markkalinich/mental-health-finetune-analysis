@@ -180,6 +180,10 @@ bash bash_scripts/run_all_models.sh --models "gemma:12b-it,llama3.1:8b" \
 python -m cache.cache_manager stats
 ```
 
+**Manuscript subset + QC:** Build a frozen SQLite subset with `utilities/build_manuscript_cache_subset.py`.
+
+Run **`utilities/cache_qc_report.py`** against `manuscript_paper_cache/results.db` (registry triple + optional `model_cache_crosswalk_approved.csv`) to summarize coverage and integrity — see [`manuscript_paper_cache/README.md`](manuscript_paper_cache/README.md).
+
 ## Citation
 
 If you use this code or data, please cite:
