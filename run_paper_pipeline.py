@@ -64,7 +64,7 @@ from typing import Optional, Tuple, List, Dict
 import os
 
 from analysis.combine_results import get_latest_experiment_dir
-from utilities.paper_run_manifest import write_paper_run_manifest
+from utilities.paper_run_provenance import write_paper_run_provenance
 
 # =============================================================================
 # Configuration
@@ -727,7 +727,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
     
     exit_code = 0
     success = True
-    experiment_results: Dict[str, Path] = {}
+    experiment_results: Dict[str, Optional[Path]] = {}
     task_dirs: Optional[Dict[str, Path]] = None
 
     try:
@@ -808,9 +808,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
             exit_code = 1
         return exit_code
     finally:
-        if not getattr(args, "no_manifest", False):
+        if not getattr(args, "no_provenance", False):
             try:
-                mpath = write_paper_run_manifest(
+                ppath = write_paper_run_provenance(
                     repo_root=ROOT,
                     run_timestamp=RUN_TIMESTAMP,
                     output_dir=MAIN_OUTPUT_DIR,
@@ -820,9 +820,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
                     exit_code=exit_code,
                     tasks_config=TASKS,
                 )
-                logger.info(f"  Manifest:       {mpath}")
+                logger.info(f"  Provenance:     {ppath}")
             except Exception as e:
-                logger.warning(f"  Could not write MANIFEST.json: {e}")
+                logger.warning(f"  Could not write PROVENANCE.json: {e}")
 
 
 def main():
@@ -881,9 +881,9 @@ def main():
         help="Use newest timestamped run per task under results/individual_prediction_performance/ (explicit opt-in).",
     )
     parser.add_argument(
-        "--no-manifest",
+        "--no-provenance",
         action="store_true",
-        help="Do not write MANIFEST.json in the run output directory.",
+        help="Do not write PROVENANCE.json (machine run record) in the run output directory.",
     )
     
     args = parser.parse_args()

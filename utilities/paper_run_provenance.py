@@ -1,7 +1,23 @@
 """
-Write MANIFEST.json for a paper pipeline run.
+Write PROVENANCE.json (machine-generated run record) for a paper pipeline run.
 
-See docs/PROVENANCE_PLAN.md. File-level SHA-256 for SQLite is intentional (deferred canonicalization).
+This is not a user-authored manifest; see docs/PROVENANCE_PLAN.md.
+
+**Files read** (hashed or path-recorded):
+  - ``cache/results.db`` (resolved path + SHA-256 of file bytes)
+  - ``config/models_config.csv``
+  - ``data/inputs/model_results/all_models_all_tasks.csv``
+  - Per task in ``TASKS``: finalized input CSV and prompt file (3 tasks × 2 = 6 paths)
+  - For each resolved experiment dir: ``tables/comprehensive_metrics.csv`` (path + hash)
+
+**Also recorded** (not necessarily files): ``git rev-parse HEAD``, ``git status --porcelain``,
+``sys.argv``, hostname, Python version, CLI flags, Phase 1 output dir paths, exit code.
+
+**Output file** (single JSON):
+  - ``<output_dir>/PROVENANCE.json`` where ``output_dir`` is
+    ``results/FINETUNE_PAPER_FIGURES/<YYYYMMDD_HHMMSS>/``
+
+File-level SHA-256 for SQLite is intentional; see PROVENANCE_PLAN deferred canonicalization note.
 """
 
 from __future__ import annotations
@@ -101,19 +117,19 @@ def _combine_results_block(task_dirs: Optional[Dict[str, Path]]) -> Dict[str, An
     return {"tasks": tasks}
 
 
-def build_paper_run_manifest(
+def build_paper_run_provenance(
     repo_root: Path,
     run_timestamp: str,
     output_dir: Path,
     args: Namespace,
     task_dirs: Optional[Dict[str, Path]],
-    experiment_results: Dict[str, Path],
+    experiment_results: Dict[str, Optional[Path]],
     exit_code: int,
     tasks_config: Dict[str, Dict[str, Any]],
 ) -> Dict[str, Any]:
     cache_path = (repo_root / "cache" / "results.db").resolve()
     return {
-        "schema": "paper_run_manifest_v1",
+        "schema": "paper_run_provenance_v1",
         "pipeline": "run_paper_pipeline.py",
         "timestamp": run_timestamp,
         "output_dir": str(output_dir.resolve()),
@@ -153,17 +169,17 @@ def build_paper_run_manifest(
     }
 
 
-def write_paper_run_manifest(
+def write_paper_run_provenance(
     repo_root: Path,
     run_timestamp: str,
     output_dir: Path,
     args: Namespace,
     task_dirs: Optional[Dict[str, Path]],
-    experiment_results: Dict[str, Path],
+    experiment_results: Dict[str, Optional[Path]],
     exit_code: int,
     tasks_config: Dict[str, Dict[str, Any]],
 ) -> Path:
-    data = build_paper_run_manifest(
+    data = build_paper_run_provenance(
         repo_root=repo_root,
         run_timestamp=run_timestamp,
         output_dir=output_dir,
@@ -173,7 +189,7 @@ def write_paper_run_manifest(
         exit_code=exit_code,
         tasks_config=tasks_config,
     )
-    out_path = output_dir / "MANIFEST.json"
+    out_path = output_dir / "PROVENANCE.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, sort_keys=False)

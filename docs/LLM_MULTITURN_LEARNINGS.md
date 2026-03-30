@@ -10,7 +10,7 @@ Repository: `llm_multiturn_benchmarking` (local clone; publish URL when the repo
 
 - **`get_git_info()`** in `src/utils.py` records **`git_commit`** (`git rev-parse HEAD`) and **`git_dirty`** (`git status --porcelain` non-empty). If dirty, the recorded commit is **not** a guarantee that code matches the tree.
 - Run JSON / classification outputs embed **`meta.git_commit`** / **`meta.git_dirty`** so downstream analysis knows what code produced the run.
-- **Actionable for this repo:** Add the same helper (or reuse logic) and include fields in [`PROVENANCE_PLAN.md`](PROVENANCE_PLAN.md) manifest JSON (`git.commit`, `git.dirty`). No need to mirror their full JSON run format unless we redesign the pipeline.
+- **Actionable for this repo:** Add the same helper (or reuse logic) and include fields in [`PROVENANCE_PLAN.md`](PROVENANCE_PLAN.md) provenance JSON (`git.commit`, `git.dirty`). No need to mirror their full JSON run format unless we redesign the pipeline.
 
 ---
 
@@ -25,7 +25,7 @@ Repository: `llm_multiturn_benchmarking` (local clone; publish URL when the repo
 ## Documentation
 
 - README includes a **“Reproducibility (what is stored)”** table mapping artifact types to what is pinned (prompts, model IDs, runtime metadata).
-- **Actionable for this repo:** Extend README / [`PROVENANCE_PLAN.md`](PROVENANCE_PLAN.md) with a similar table once the frozen cache + manifest exist (what is committed vs generated vs symlinked).
+- **Actionable for this repo:** Extend README / [`PROVENANCE_PLAN.md`](PROVENANCE_PLAN.md) with a similar table once the frozen cache + provenance record exist (what is committed vs generated vs symlinked).
 
 ---
 

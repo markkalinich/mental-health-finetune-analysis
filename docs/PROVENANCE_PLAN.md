@@ -8,7 +8,7 @@ Unambiguous statements of the form:
 
 ## Design sketch
 
-1. **`MANIFEST.json` per paper pipeline run** — Written under `results/FINETUNE_PAPER_FIGURES/<YYYYMMDD_HHMMSS>/` by `run_paper_pipeline.py` (see `utilities/paper_run_manifest.py`). Schema: `paper_run_manifest_v1`. Use `--no-manifest` to skip. **Outputs** (hashes of generated figures) are not yet listed; extend the writer when needed.
+1. **`PROVENANCE.json` (machine-generated run record)** — Written under `results/FINETUNE_PAPER_FIGURES/<YYYYMMDD_HHMMSS>/` by `run_paper_pipeline.py` (see `utilities/paper_run_provenance.py`). Schema: `paper_run_provenance_v1`. Use `--no-provenance` to skip. This is **not** a user-authored manifest; a separate input manifest (future) would declare intent **before** the run. **Generated figure/table hashes** are not yet listed in JSON; extend the writer when needed.
 
    Suggested fields:
 
@@ -25,13 +25,13 @@ Unambiguous statements of the form:
    | `command` | argv as executed |
    | `outputs` | List of output paths or glob + hashes of key deliverables (figures, table CSVs) |
 
-2. **Helper** — `utilities/paper_run_manifest.py`; invoked at the **end** of each run (including failed resolution of experiment dirs).
+2. **Helper** — `utilities/paper_run_provenance.py`; invoked at the **end** of each run (including failed resolution of experiment dirs).
 
 3. **Pinning policy** — Document whether a “manuscript freeze” uses:
    - a **copied** `results.db` snapshot (recommended for strict reproducibility), or
    - the live cache (hash recorded at run time only).
 
-4. **Regression check (optional)** — CI or a local script that fails if pinned manifest hashes do not match files on disk (for tagged releases only).
+4. **Regression check (optional)** — CI or a local script that fails if pinned provenance hashes do not match files on disk (for tagged releases only).
 
 ## Relationship to other repos
 
@@ -41,7 +41,7 @@ Unambiguous statements of the form:
 
 ## Open items
 
-- Guard / safety re-parsing is **out of scope** for this manifest until rules are finalized — see [`TODO_GUARD_REPARSING.md`](TODO_GUARD_REPARSING.md).
+- Guard / safety re-parsing is **out of scope** for this provenance record until rules are finalized — see [`TODO_GUARD_REPARSING.md`](TODO_GUARD_REPARSING.md).
 - Final field list should be minimal but sufficient for a Methods / reproducibility paragraph.
 
 ### Deferred: raw SQLite file hash
