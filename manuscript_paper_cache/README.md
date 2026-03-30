@@ -31,6 +31,16 @@ cd manuscript_paper_cache && sha256sum results.db > SHA256SUMS.txt
 
 `--source` should point at your live cache (a symlink to `safety_simulations/cache/results.db` is fine).
 
+## QC reports (metadata sanity checks)
+
+Read-only SQL aggregates — **typically well under one minute** (often a few seconds), not 30+ minutes:
+
+```bash
+python utilities/cache_qc_report.py --db manuscript_paper_cache/results.db
+```
+
+Reports prompt/input hash structure, API parameter uniformity, `created_at` by day, and status/replicate summaries.
+
 ## What this proves vs what it does not
 
 - **Proves:** Every **expected** `cache_id` for the current model grid and inputs is **present** in the source DB at build time (`missing_in_source` should be `0` in `subset_report.json`). The subset is a **lossless copy** of those rows for offline use.
