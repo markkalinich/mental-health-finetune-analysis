@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-Quality-control report for a results.db (full cache or manuscript subset).
+Read-only SQL aggregates on cache results.db. Writes facts only (no interpretation).
 
-Read-only; uses SQL aggregates only (no per-row JSON parsing) — typically
-seconds to ~1–2 minutes on ~200k–300k rows.
-
-Usage (from repo root, with pandas venv if needed):
+Usage:
   python utilities/cache_qc_report.py
   python utilities/cache_qc_report.py --db manuscript_paper_cache/results.db
+  python utilities/cache_qc_report.py --output manuscript_paper_cache/qc_report_latest.txt
 """
 
 from __future__ import annotations
 
 import argparse
+import io
 import sqlite3
 import sys
 from pathlib import Path
+from typing import TextIO
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -26,24 +26,38 @@ def connect(db: Path) -> sqlite3.Connection:
     return conn
 
 
-def section(title: str) -> None:
-    print()
-    print("=" * 72)
-    print(title)
-    print("=" * 72)
+class TeeStdout:
+    """Send stdout to console and optional file."""
+
+    def __init__(self, file_obj: TextIO | None) -> None:
+        self._file = file_obj
+        self._stdout = sys.__stdout__
+
+    def write(self, s: str) -> int:
+        self._stdout.write(s)
+        if self._file is not None:
+            self._file.write(s)
+        return len(s)
+
+    def flush(self) -> None:
+        self._stdout.flush()
+        if self._file is not None:
+            self._file.flush()
 
 
-def q0_totals(conn: sqlite3.Connection) -> None:
-    section("0) Row accounting (nothing is “extra” beyond this total)")
+def section(out: TextIO, title: str) -> None:
+    print(file=out)
+    print("=" * 72, file=out)
+    print(title, file=out)
+    print("=" * 72, file=out)
+
+
+def run_report(conn: sqlite3.Connection, out: TextIO) -> None:
+    section(out, "0) Row counts and partition by prompt_name")
     ck = conn.execute("SELECT COUNT(*) FROM cache_keys").fetchone()[0]
     cr = conn.execute("SELECT COUNT(*) FROM cached_results").fetchone()[0]
-    print(f"  cache_keys:     {ck}")
-    print(f"  cached_results: {cr}")
-    print(
-        "  Every cache_keys row is one (model × effective prompt × input × API defaults) cell; "
-        "cached_results should match unless replicates split rows."
-    )
-
+    print(f"cache_keys:     {ck}", file=out)
+    print(f"cached_results: {cr}", file=out)
     parts = conn.execute(
         """
         SELECT prompt_name, COUNT(*) AS n
@@ -53,27 +67,31 @@ def q0_totals(conn: sqlite3.Connection) -> None:
         """
     ).fetchall()
     s = sum(r["n"] for r in parts)
-    print("  Rows per prompt_name (these partition the total; they are NOT additive “on top of” 209,550):")
+    print("cache_keys by prompt_name:", file=out)
     for r in parts:
-        print(f"    {r['prompt_name']}: {r['n']}")
-    print(f"  Sum of parts: {s}  (should equal cache_keys={ck})")
-    if s != ck:
-        print("  *** WARNING: sum != cache_keys ***")
+        print(f"  {r['prompt_name']}: {r['n']}", file=out)
+    print(f"sum of above: {s}  (equals cache_keys: {s == ck})", file=out)
 
+    section(out, "1) prompt_hash (content MD5); prompt_name (stored label)")
+    n_distinct_hash = conn.execute(
+        "SELECT COUNT(DISTINCT prompt_hash) FROM cache_keys"
+    ).fetchone()[0]
+    print(f"COUNT(DISTINCT prompt_hash): {n_distinct_hash}", file=out)
+    print("", file=out)
+    print("Per prompt_name: COUNT(DISTINCT prompt_hash), cache_keys:", file=out)
+    by_name = conn.execute(
+        """
+        SELECT prompt_name, COUNT(DISTINCT prompt_hash) AS n_dh, COUNT(*) AS n_keys
+        FROM cache_keys
+        GROUP BY prompt_name
+        ORDER BY prompt_name
+        """
+    ).fetchall()
+    for r in by_name:
+        print(f"  {r['prompt_name']}: {r['n_dh']}, {r['n_keys']}", file=out)
 
-def q1_prompt_hashes(conn: sqlite3.Connection) -> None:
-    section("1) Prompt hashes — expect ≤6 from (3 tasks × 2: base vs Qwen /no_think)")
-    print(
-        "  Design intent: for each task, at most TWO effective prompt texts — the base file, and the\n"
-        "  same file plus model suffix for Qwen-family models (e.g. /no_think). That yields up to\n"
-        "  3 tasks × 2 = 6 distinct prompt_hash values globally (if every task has both cohorts).\n"
-    )
-    print(
-        "  **Undesired pattern:** MORE than two distinct prompt_hash values **for the same\n"
-        "  prompt_name** usually means the **on-disk prompt file was edited** between runs\n"
-        "  (old hash + new hash). That is separate from the Qwen suffix split.\n"
-    )
-
+    print("", file=out)
+    print("(prompt_name, prompt_hash, cache_keys):", file=out)
     rows = conn.execute(
         """
         SELECT prompt_name, prompt_hash, COUNT(*) AS n_keys
@@ -82,72 +100,42 @@ def q1_prompt_hashes(conn: sqlite3.Connection) -> None:
         ORDER BY prompt_name, prompt_hash
         """
     ).fetchall()
-    distinct_hashes = {r["prompt_hash"] for r in rows}
-    print(f"  Distinct prompt_hash values (global): {len(distinct_hashes)}")
-    print("  Per (prompt_name, prompt_hash):")
     for r in rows:
-        print(f"    {r['prompt_name']:45}  hash={r['prompt_hash']}  cache_keys={r['n_keys']}")
+        print(f"  {r['prompt_name']}: {r['prompt_hash']}  {r['n_keys']}", file=out)
 
-    by_name = conn.execute(
+    print("", file=out)
+    print(
+        "prompt_hash values with COUNT(DISTINCT prompt_name) > 1:",
+        file=out,
+    )
+    multi = conn.execute(
         """
-        SELECT prompt_name, COUNT(DISTINCT prompt_hash) AS n_hashes, COUNT(*) AS n_keys
+        SELECT prompt_hash,
+               COUNT(DISTINCT prompt_name) AS n_names,
+               GROUP_CONCAT(DISTINCT prompt_name) AS names
         FROM cache_keys
-        GROUP BY prompt_name
-        ORDER BY prompt_name
+        GROUP BY prompt_hash
+        HAVING COUNT(DISTINCT prompt_name) > 1
         """
     ).fetchall()
-    print("  Distinct prompt_hash count per prompt_name:")
-    for r in by_name:
-        flag = ""
-        if r["n_hashes"] > 2:
-            flag = "  *** >2: likely prompt FILE revision, not only Qwen suffix ***"
-        elif r["n_hashes"] == 2:
-            flag = "  (often = base + Qwen suffix for this task)"
-        print(f"    {r['prompt_name']}: {r['n_hashes']} hash(es), {r['n_keys']} cache_keys{flag}")
+    if not multi:
+        print("  (none)", file=out)
+    for r in multi:
+        print(f"  hash={r['prompt_hash']}  prompt_names={r['n_names']}  {r['names']}", file=out)
 
-    n_names = conn.execute("SELECT COUNT(DISTINCT prompt_name) FROM cache_keys").fetchone()[0]
-    print(f"  Distinct prompt_name strings: {n_names} (expect 3 for SI/TR/TE only; >3 ⇒ legacy names).")
-
-
-def q2_input_hashes(conn: sqlite3.Connection) -> None:
-    section("2) Input hashes — per task and one global deduplication fact")
+    section(out, "2) input_hash per prompt_name (distinct input_hash, cache_keys)")
     per_prompt = conn.execute(
         """
-        SELECT prompt_name, COUNT(DISTINCT input_hash) AS n_unique_input_hash,
-               COUNT(*) AS n_cache_keys
+        SELECT prompt_name, COUNT(DISTINCT input_hash) AS n_u, COUNT(*) AS n_ck
         FROM cache_keys
         GROUP BY prompt_name
         ORDER BY prompt_name
         """
     ).fetchall()
     for r in per_prompt:
-        print(
-            f"  {r['prompt_name']}: distinct input_hash={r['n_unique_input_hash']}, "
-            f"cache_keys={r['n_cache_keys']}"
-        )
-    global_distinct = conn.execute(
-        "SELECT COUNT(DISTINCT input_hash) FROM cache_keys"
-    ).fetchone()[0]
-    print()
-    print(
-        f"  **Global DISTINCT input_hash = {global_distinct}** — meaning: if you listed every\n"
-        "  distinct input *string* (by MD5) that appears **anywhere** in this database, you get\n"
-        "  this many unique texts. It is NOT 450+780+420 = 1650 because that sum **double-counts**\n"
-        "  any line that is **byte-identical** in two different task CSVs: it has one hash but\n"
-        "  appears in two tasks, so the global unique count drops by one per such collision.\n"
-    )
-    print(
-        f"  Here: 450 + 780 + 420 = 1650; 1650 − {global_distinct} = {1650 - global_distinct} "
-        "shared hash(es) across tasks (usually duplicate line text in two files).\n"
-    )
-    print(
-        "  Per task, distinct input_hash should match dataset row count (450 / 780 / 420) for the\n"
-        "  main TE/TR/SI runs; a smaller count under a legacy prompt_name means a partial grid.\n"
-    )
+        print(f"  {r['prompt_name']}: {r['n_u']}, {r['n_ck']}", file=out)
 
-
-def q3_api_params(conn: sqlite3.Connection) -> None:
-    section("3) temperature, max_tokens, top_p")
+    section(out, "3) temperature, max_tokens, top_p")
     rows = conn.execute(
         """
         SELECT temperature, max_tokens, top_p, COUNT(*) AS n
@@ -156,17 +144,14 @@ def q3_api_params(conn: sqlite3.Connection) -> None:
         ORDER BY n DESC
         """
     ).fetchall()
-    print(f"  Distinct combinations: {len(rows)}")
+    print(f"distinct (temperature, max_tokens, top_p) rows: {len(rows)}", file=out)
     for r in rows:
         print(
-            f"    temp={r['temperature']}  max_tokens={r['max_tokens']}  top_p={r['top_p']}  rows={r['n']}"
+            f"  {r['temperature']}, {r['max_tokens']}, {r['top_p']}: {r['n']}",
+            file=out,
         )
-    if len(rows) != 1:
-        print("  WARNING: More than one API-parameter combination.")
 
-
-def q4_created_histogram(conn: sqlite3.Connection) -> None:
-    section("4) created_at (when keys were inserted)")
+    section(out, "4) cache_keys.created_at by calendar day")
     rows = conn.execute(
         """
         SELECT substr(created_at, 1, 10) AS day, COUNT(*) AS n
@@ -175,47 +160,24 @@ def q4_created_histogram(conn: sqlite3.Connection) -> None:
         ORDER BY day
         """
     ).fetchall()
-    if not rows:
-        print("  No created_at data.")
-        return
-    print("  Counts by calendar day (cache_keys):")
     max_n = max(r["n"] for r in rows) if rows else 1
-    bar_width = 40
+    bar_w = 40
     for r in rows:
-        day = r["day"] or "?"
-        n = r["n"]
-        bar_len = int(bar_width * n / max_n) if max_n else 0
-        bar = "#" * bar_len
-        print(f"    {day}  {n:7}  {bar}")
-
+        bar_len = int(bar_w * r["n"] / max_n) if max_n else 0
+        print(f"  {r['day']}  {r['n']:7}  {'#' * bar_len}", file=out)
     mm = conn.execute(
         "SELECT MIN(created_at), MAX(created_at) FROM cache_keys"
     ).fetchone()
-    print(f"  MIN: {mm[0]}")
-    print(f"  MAX: {mm[1]}")
-    print()
-    print(
-        "  **Note:** Sparse late days (e.g. a handful of rows on a new date) often correspond to\n"
-        "  **re-runs / fill-ins** after bulk collection. Heavy **api_error:Request timeout** in\n"
-        "  the status section is consistent with **LM Studio overload** when many parallel calls\n"
-        "  hit the server — retries may land on a later calendar day.\n"
-    )
+    print(f"MIN(created_at): {mm[0]}", file=out)
+    print(f"MAX(created_at): {mm[1]}", file=out)
 
-
-def q5_status_and_errors(conn: sqlite3.Connection) -> None:
-    section("5) Row alignment, replicate index, status & API errors")
-
-    ck = conn.execute("SELECT COUNT(*) FROM cache_keys").fetchone()[0]
-    cr = conn.execute("SELECT COUNT(*) FROM cached_results").fetchone()[0]
+    section(out, "5) cached_results: replicate_index, status, api_error breakdown")
+    ck2 = conn.execute("SELECT COUNT(*) FROM cache_keys").fetchone()[0]
+    cr2 = conn.execute("SELECT COUNT(*) FROM cached_results").fetchone()[0]
     it = conn.execute("SELECT COUNT(*) FROM input_texts").fetchone()[0]
-    print("  **Core row counts**")
-    print(f"    cache_keys:      {ck}")
-    print(f"    cached_results:  {cr}")
-    print(f"    input_texts:     {it}  (one row per distinct input_hash text)")
-    if ck == cr:
-        print("    → cache_keys == cached_results: one stored result per cache_id (replicate_index 0 only).")
-    else:
-        print("    → mismatch: check replicates or orphans.")
+    print(f"cache_keys: {ck2}", file=out)
+    print(f"cached_results: {cr2}", file=out)
+    print(f"input_texts: {it}", file=out)
 
     rep = conn.execute(
         """
@@ -225,9 +187,9 @@ def q5_status_and_errors(conn: sqlite3.Connection) -> None:
         ORDER BY replicate_index
         """
     ).fetchall()
-    print("  **replicate_index**")
+    print("replicate_index:", file=out)
     for r in rep:
-        print(f"    replicate_index={r['replicate_index']}: {r['n']}")
+        print(f"  {r['replicate_index']}: {r['n']}", file=out)
 
     n_ok = conn.execute(
         "SELECT COUNT(*) FROM cached_results WHERE status = 'ok'"
@@ -238,23 +200,15 @@ def q5_status_and_errors(conn: sqlite3.Connection) -> None:
     n_api = conn.execute(
         "SELECT COUNT(*) FROM cached_results WHERE status LIKE 'api_error%'"
     ).fetchone()[0]
-    n_other = cr - n_ok - n_pf - n_api
-
-    print("  **Status (collapsed)**")
-    print(f"    ok:          {n_ok}")
-    print(f"    parse_fail:  {n_pf}")
-    print(f"    api_error:   {n_api}")
+    n_other = cr2 - n_ok - n_pf - n_api
+    print("status:", file=out)
+    print(f"  ok: {n_ok}", file=out)
+    print(f"  parse_fail: {n_pf}", file=out)
+    print(f"  api_error: {n_api}", file=out)
     if n_other:
-        print(f"    other:       {n_other}")
-
-    pct_api = (100.0 * n_api / cr) if cr else 0.0
-    print()
-    print("  *** API errors (highlight) ***")
-    print(
-        f"    Total api_error rows: {n_api}  ({pct_api:.2f}% of all cached_results)\n"
-        "    These are failed API calls (timeouts, 400s, etc.); metrics pipelines treat them\n"
-        "    differently from parse_fail — review downstream handling for manuscript claims.\n"
-    )
+        print(f"  other: {n_other}", file=out)
+    if cr2:
+        print(f"api_error / cached_results: {n_api / cr2:.6f}", file=out)
 
     n_to = conn.execute(
         """
@@ -268,11 +222,11 @@ def q5_status_and_errors(conn: sqlite3.Connection) -> None:
         WHERE status LIKE 'api_error%' AND status LIKE '%400%'
         """
     ).fetchone()[0]
-    rest_api = n_api - n_to - n_400
-    print("    Approximate split (string match on status):")
-    print(f"      contains 'timeout':  {n_to}")
-    print(f"      contains '400':      {n_400}")
-    print(f"      other api_error:     {rest_api}")
+    n_rest = n_api - n_to - n_400
+    print("api_error substring counts on status field:", file=out)
+    print(f"  LIKE '%timeout%': {n_to}", file=out)
+    print(f"  LIKE '%400%': {n_400}", file=out)
+    print(f"  remaining api_error: {n_rest}", file=out)
 
     rows = conn.execute(
         """
@@ -281,23 +235,28 @@ def q5_status_and_errors(conn: sqlite3.Connection) -> None:
         WHERE status LIKE 'api_error%'
         GROUP BY status
         ORDER BY n DESC
-        LIMIT 12
+        LIMIT 20
         """
     ).fetchall()
-    if rows:
-        print("    Top distinct api_error strings:")
-        for r in rows:
-            msg = (r["status"] or "")[:75]
-            print(f"      n={r['n']:5}  {msg}")
+    print("DISTINCT api_error status values (top 20 by count):", file=out)
+    for r in rows:
+        msg = (r["status"] or "")[:100]
+        print(f"  n={r['n']}: {msg}", file=out)
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="QC report for results.db")
+    parser = argparse.ArgumentParser(description="QC report for results.db (facts only)")
     parser.add_argument(
         "--db",
         type=Path,
         default=ROOT / "manuscript_paper_cache" / "results.db",
         help="Path to results.db (read-only)",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Also write the full report to this file (UTF-8)",
     )
     args = parser.parse_args()
 
@@ -305,22 +264,27 @@ def main() -> int:
         print(f"ERROR: Database not found: {args.db}", file=sys.stderr)
         return 1
 
-    print("cache_qc_report.py — read-only SQL aggregates")
-    print(f"Database: {args.db.resolve()}")
-    print("Expected runtime: typically seconds (~1–2 min worst case); no per-row JSON parsing.")
-
-    conn = connect(args.db)
+    file_obj = None
+    old_stdout = sys.stdout
     try:
-        q0_totals(conn)
-        q1_prompt_hashes(conn)
-        q2_input_hashes(conn)
-        q3_api_params(conn)
-        q4_created_histogram(conn)
-        q5_status_and_errors(conn)
-    finally:
-        conn.close()
+        if args.output:
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            file_obj = open(args.output, "w", encoding="utf-8")
+            sys.stdout = TeeStdout(file_obj)
 
-    section("Done")
+        print("cache_qc_report.py")
+        print(f"database: {args.db.resolve()}")
+        conn = connect(args.db)
+        try:
+            run_report(conn, sys.stdout)
+        finally:
+            conn.close()
+        section(sys.stdout, "end")
+    finally:
+        sys.stdout = old_stdout
+        if file_obj is not None:
+            file_obj.close()
+
     return 0
 
 

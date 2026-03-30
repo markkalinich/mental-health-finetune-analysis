@@ -16,6 +16,7 @@ This folder holds a **frozen subset** of the project’s inference cache (`resul
 | `results.db` | SQLite subset (same schema as `cache/results.db`) |
 | `SHA256SUMS.txt` | `sha256sum` of `results.db` — verify with `sha256sum -c SHA256SUMS.txt` |
 | `subset_report.json` | Machine-readable report from the last build (git HEAD, source path, counts, missing keys) |
+| `qc_report_latest.txt` | Optional: text output from `cache_qc_report.py --output` (create locally; not required in git) |
 
 ## Build / refresh
 
@@ -31,15 +32,16 @@ cd manuscript_paper_cache && sha256sum results.db > SHA256SUMS.txt
 
 `--source` should point at your live cache (a symlink to `safety_simulations/cache/results.db` is fine).
 
-## QC reports (metadata sanity checks)
+## QC report (`utilities/cache_qc_report.py`)
 
-Read-only SQL aggregates — **typically well under one minute** (often a few seconds), not 30+ minutes:
-
-```bash
-python utilities/cache_qc_report.py --db manuscript_paper_cache/results.db
-```
-
-Reports prompt/input hash structure, API parameter uniformity, `created_at` by day, and status/replicate summaries.
+- **Where you see output:** terminal **stdout**, and if you pass **`--output`**, the same text is written to that file (UTF-8).
+- **Example (save under this folder):**
+  ```bash
+  python utilities/cache_qc_report.py \
+    --db manuscript_paper_cache/results.db \
+    --output manuscript_paper_cache/qc_report_latest.txt
+  ```
+- Runtime on this machine’s subset DB is on the order of **one second** (SQL aggregates only).
 
 ## What this proves vs what it does not
 
