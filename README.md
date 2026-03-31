@@ -23,7 +23,7 @@ High-level flow from inputs through inference, metrics, and publication artifact
 ```mermaid
 flowchart TB
     subgraph P0["Phase 0: Inputs and configuration"]
-        data["Expert-reviewed synthetic data\n(SI / TR / TE CSVs)"]
+        data["Synthetic data (SI / TR / TE CSVs)\n(data/inputs/finalized_input_data)"]
         prompts["Task prompts\n(data/prompts/)"]
         cfg["Model list\n(config/models_config.csv)"]
     end
@@ -32,11 +32,11 @@ flowchart TB
         data --> keygen["Compute cache key\n(model, prompt_hash, input_hash, params)"]
         prompts --> keygen
         cfg --> keygen
-        keygen --> check{"Cache hit?"}
-        check -->|"Miss"| lms["Inference\n(LM Studio)"]
-        lms --> parse["Parse response\n(extract JSON → validate\nagainst task schema)"]
-        parse --> cache[("SQLite cache\n(cache/results.db)\nStores: raw_response +\nparsed_result + status")]
-        check -->|"Hit"| cache
+        keygen --> check{"Present in Cache?"}
+        check -->|"No"| lms["Inference\n(LM Studio)"]
+        lms --> parse["Parse response\n(extract JSON → validate\nagainst task schema*)"]
+        parse --> cache[("SQLite cache\n(cache/results.db)")]
+        check -->|"Yes"| cache
     end
 
     subgraph P2["Phase 2: Analysis (per task)"]
@@ -63,7 +63,7 @@ flowchart TB
     style check fill:#fff9c4,stroke:#f9a825,stroke-width:2px
 ```
 
-**Note:** The dashed edges reflect that guard-model corrections **read** cached raw responses in analysis code paths (not only at `combine_results` time). Exact behavior is documented under `results/revision_experiments/`.
+**\*Schema validation note:** Guard/safety models (ShieldGemma, Llama Guard, Qwen Guard) output non-standard formats (plain text or non-task JSON) that fail the standard schema validation at inference time (`status=parse_fail`). Their metrics are computed by **re-parsing `raw_response`** from the cache at analysis time (dashed edges in Phase 4). The raw model output is always preserved in the cache regardless of parse status.
 
 **Direction:** The intended end state is inference → raw cache → **one pinned ground-truth artifact** (including safety/guard transformations applied once), then figures and tables. The current rollup still mixes sources; see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
 
