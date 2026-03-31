@@ -31,7 +31,7 @@ assert _te_mod.loader is not None
 _te_mod.loader.exec_module(_te)
 dedupe_by_conversation = _te.dedupe_by_conversation
 INTERMEDIATE = REPO_ROOT / "data" / "inputs" / "intermediate_files"
-DEFAULT_OUT = REPO_ROOT / "data" / "revision_data" / "results" / "kappa_sensitivity_binary_keep_remove.csv"
+DEFAULT_OUT = REPO_ROOT / "results" / "revision_experiments" / "kappa_sensitivity_binary_keep_remove.csv"
 
 
 def is_p2_missing(val: str | None) -> bool:
