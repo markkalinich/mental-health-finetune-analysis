@@ -33,7 +33,7 @@ flowchart TB
         prompts --> keygen
         cfg --> keygen
         keygen --> check{{"Cache hit?"}}
-        check -->|"Miss"| lms["LM Studio\n(local API)"]
+        check -->|"Miss"| lms["Inference\n(LM Studio)"]
         lms --> cache[("SQLite cache\n(cache/results.db)")]
         check -->|"Hit"| cache
         cache --> analyze["batch_results_analyzer.py"]
