@@ -32,7 +32,7 @@ flowchart TB
         data --> keygen["Compute cache key\n(model, prompt_hash, input_hash, params)"]
         prompts --> keygen
         cfg --> keygen
-        keygen --> check{{"Cache hit?"}}
+        keygen --> check{"Cache hit?"}
         check -->|"Miss"| lms["Inference\n(LM Studio)"]
         lms --> parse["Parse response\n(extract JSON → validate\nagainst task schema)"]
         parse --> cache[("SQLite cache\n(cache/results.db)\nStores: raw_response +\nparsed_result + status")]

@@ -19,7 +19,7 @@ from typing import List, Tuple
 from .metrics_calculator import determine_multiclass_labels
 from cache.result_cache import ResultCache
 from orchestration.experiment_manager import ExperimentConfig, ModelConfig, PromptConfig
-from config.utils import load_system_prompt
+from config.utils import load_system_prompt, EvaluationConfig
 from config.experiment_config import get_experiment_config
 from utilities.category_validator import validate_prompt_config_match, CategoryValidationError
 
@@ -130,6 +130,8 @@ def load_experiment_results(input_data_path: str, prompt_file_path: str,
     from config.experiment_config import load_models_config
     models_config_df = load_models_config()
     
+    eval_defaults = EvaluationConfig()
+    
     for family_name, model_sizes in model_families.items():
         for model_size in model_sizes:
             # Look up version from models_config.csv (single source of truth)
@@ -161,28 +163,23 @@ def load_experiment_results(input_data_path: str, prompt_file_path: str,
             model_config = SimpleModelConfig(family_name)
             prompt_content = load_system_prompt(prompt_file_path, model_config)
             
-            # Create experiment config for this model
-            model = ModelConfig(
-                family=family_name,
-                size=model_size,
-                version=model_version
-            )
-            
-            prompt = PromptConfig(
-                name=prompt_name,
-                description=f"Prompt: {prompt_name}",
-                file_path=prompt_file_path,
-                version="1.0"
-            )
-            
             config = ExperimentConfig(
                 experiment_name=f"{family_name}_{model_size}_{prompt_name}_analysis",
-                model=model,
-                prompt=prompt,
+                model=ModelConfig(
+                    family=family_name,
+                    size=model_size,
+                    version=model_version,
+                ),
+                prompt=PromptConfig(
+                    name=prompt_name,
+                    description=f"Prompt: {prompt_name}",
+                    file_path=prompt_file_path,
+                    version="1.0",
+                ),
                 input_dataset=input_data_path,
-                temperature=0.0,
-                max_tokens=256,
-                top_p=1.0
+                temperature=eval_defaults.temperature,
+                max_tokens=eval_defaults.max_tokens,
+                top_p=eval_defaults.top_p,
             )
             
             # Query cache for this model
