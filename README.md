@@ -34,19 +34,25 @@ flowchart TB
         cfg --> keygen
         keygen --> check{{"Cache hit?"}}
         check -->|"Miss"| lms["Inference\n(LM Studio)"]
-        lms --> cache[("SQLite cache\n(cache/results.db)")]
+        lms --> parse["Parse response\n(extract JSON → validate\nagainst task schema)"]
+        parse --> cache[("SQLite cache\n(cache/results.db)\nStores: raw_response +\nparsed_result + status")]
         check -->|"Hit"| cache
-        cache --> analyze["batch_results_analyzer.py"]
-        analyze --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/&lt;task&gt;/&lt;run_id&gt;/)"]
     end
 
-    subgraph P2["Phase 2: Metrics rollup"]
-        runs --> per_task["per-task\ncomprehensive_metrics.csv"]
-        per_task --> combine["combine_results.py"]
+    subgraph P2["Phase 2: Analysis (per task)"]
+        cache --> load["Load from cache\n+ join ground truth\nfrom input CSV"]
+        data -.-> load
+        load --> classify["Binary classification\n(predicted vs ground truth\n→ TP/TN/FP/FN)"]
+        classify --> metrics["comprehensive_metrics.csv\n(per-model F1, accuracy,\nsensitivity, specificity)"]
+        metrics --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/&lt;task&gt;/&lt;run_id&gt;/)"]
+    end
+
+    subgraph P3["Phase 3: Combine"]
+        runs --> combine["combine_results.py"]
         combine --> combined["all_models_all_tasks.csv\n(data/inputs/model_results/)"]
     end
 
-    subgraph P3["Phase 3: Figures and tables"]
+    subgraph P4["Phase 4: Figures and tables"]
         combined --> figs["Figures 1–3,\nsupplementary figures"]
         combined --> tab1["Table 1 regression"]
         cache -.->|"Guard models:\nre-parse raw responses"| figs
