@@ -63,7 +63,7 @@ flowchart TB
     style check fill:#fff9c4,stroke:#f9a825,stroke-width:2px
 ```
 
-**\*Schema validation note:** Guard/safety models (ShieldGemma, Llama Guard, Qwen Guard) output non-standard formats (plain text or non-task JSON) that fail the standard schema validation at inference time (`status=parse_fail`). Their metrics are computed by **re-parsing `raw_response`** from the cache at analysis time (dashed edges in Phase 4). The raw model output is always preserved in the cache regardless of parse status.
+**\*Schema validation note:** Llama Guard and Qwen Guard were tuned to rigidly output plain text (`safe`/`unsafe`), not JSON, so they fail standard validation. ShieldGemma outputs standard task JSON and passes normally. Guard model metrics are re-parsed from cached `raw_response` at analysis time (dashed edges in Phase 4).
 
 **Direction:** The intended end state is inference → raw cache → **one pinned ground-truth artifact** (including safety/guard transformations applied once), then figures and tables. The current rollup still mixes sources; see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
 
