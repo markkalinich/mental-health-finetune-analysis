@@ -40,9 +40,8 @@ flowchart TB
     end
 
     subgraph P2["Phase 2: Analysis (per task)"]
-        cache --> load["Load from cache\n+ join ground truth\nfrom input CSV"]
-        data -.-> load
-        load --> classify["Binary classification\n(predicted vs ground truth\n→ TP/TN/FP/FN)"]
+        cache --> classify["Binary classification\n(cache results + ground truth\n→ TP/TN/FP/FN)"]
+        data -.-> classify
         classify --> metrics["comprehensive_metrics.csv\n(per-model F1, accuracy,\nsensitivity, specificity)"]
         metrics --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/&lt;task&gt;/&lt;run_id&gt;/)"]
     end
@@ -55,15 +54,16 @@ flowchart TB
     subgraph P4["Phase 4: Figures and tables"]
         combined --> figs["Figures 1–3,\nsupplementary figures"]
         combined --> tab1["Table 1 regression"]
-        cache -.->|"Guard models:\nre-parse raw responses"| figs
-        cache -.->|"Guard models:\nre-parse raw responses"| tab1
+        cache -.->|"Llama Guard + Qwen Guard:\nre-parse raw responses\n(SI task only)"| figs
+        cache -.->|"Llama Guard + Qwen Guard:\nre-parse raw responses\n(SI task only)"| tab1
     end
+
+    footnote["*Llama Guard and Qwen Guard output plain text, not JSON —\nthey fail standard validation and get 0% in Phase 2.\nTheir SI metrics are re-parsed from raw_response in Phase 4.\nShieldGemma outputs standard task JSON and needs no re-parsing."]
 
     style cache fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style check fill:#fff9c4,stroke:#f9a825,stroke-width:2px
+    style footnote fill:#f5f5f5,stroke:#999,stroke-dasharray:3,font-size:11px
 ```
-
-**\*Schema validation note:** Llama Guard and Qwen Guard were tuned to rigidly output plain text (`safe`/`unsafe`), not JSON, so they fail standard validation. ShieldGemma outputs standard task JSON and passes normally. Guard model metrics are re-parsed from cached `raw_response` at analysis time (dashed edges in Phase 4).
 
 **Direction:** The intended end state is inference → raw cache → **one pinned ground-truth artifact** (including safety/guard transformations applied once), then figures and tables. The current rollup still mixes sources; see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
 

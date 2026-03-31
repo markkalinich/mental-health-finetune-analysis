@@ -187,37 +187,10 @@ def load_unified_data(csv_path: str) -> pd.DataFrame:
     """Load the unified all_models_all_tasks.csv file."""
     df = pd.read_csv(csv_path)
     
-    # Apply safety model corrections (ShieldGemma, Llama Guard, Qwen Guard)
-    # These models use different output formats that need special parsing
-    from facet_plot_utils import (
-        compute_shieldgemma_metrics,
-        compute_llama_guard_metrics,
-        compute_qwen_guard_metrics,
-        apply_guard_metrics_to_df,
-    )
-    
-    safety_metrics = {}
-    try:
-        shield = compute_shieldgemma_metrics()
-        safety_metrics.update(shield)
-    except:
-        pass
-    
-    try:
-        llama_guard = compute_llama_guard_metrics()
-        safety_metrics.update(llama_guard)
-    except:
-        pass
-    
-    try:
-        qwen_guard = compute_qwen_guard_metrics()
-        safety_metrics.update(qwen_guard)
-    except:
-        pass
-    
-    if safety_metrics:
-        df = apply_guard_metrics_to_df(df, safety_metrics)
-        print(f"Applied safety model corrections for {len(safety_metrics)} model configurations")
+    # Recompute Llama Guard / Qwen Guard SI metrics from raw cache responses.
+    # ShieldGemma is excluded — standard pipeline metrics are already correct.
+    from facet_plot_utils import apply_all_guard_corrections
+    df = apply_all_guard_corrections(df)
     
     # Add computed columns
     df['base_family'], df['version'] = zip(*df.apply(

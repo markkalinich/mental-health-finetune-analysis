@@ -125,43 +125,16 @@ def load_config() -> pd.DataFrame:
 
 
 def apply_safety_corrections(results_df: pd.DataFrame) -> pd.DataFrame:
-    """Apply safety model corrections for guard models."""
-    # Import the safety correction functions
+    """Apply safety model corrections for guard models (Llama Guard, Qwen Guard).
+
+    ShieldGemma is excluded — its standard pipeline metrics are already correct.
+    """
     sys.path.insert(0, str(ROOT / 'analysis' / 'comparative_analysis'))
-    
     try:
-        from facet_plot_utils import (
-            compute_shieldgemma_metrics,
-            compute_llama_guard_metrics, 
-            compute_qwen_guard_metrics,
-            apply_guard_metrics_to_df,
-        )
-        
-        safety_metrics = {}
-        
-        print("  Computing safety model corrections...")
-        shieldgemma = compute_shieldgemma_metrics()
-        if shieldgemma:
-            safety_metrics.update(shieldgemma)
-            print(f"    ShieldGemma: {len(shieldgemma)} models corrected")
-        
-        llama_guard = compute_llama_guard_metrics()
-        if llama_guard:
-            safety_metrics.update(llama_guard)
-            print(f"    LlamaGuard: {len(llama_guard)} models corrected")
-        
-        qwen_guard = compute_qwen_guard_metrics()
-        if qwen_guard:
-            safety_metrics.update(qwen_guard)
-            print(f"    QwenGuard: {len(qwen_guard)} models corrected")
-        
-        if safety_metrics:
-            results_df = apply_guard_metrics_to_df(results_df, safety_metrics)
-            print(f"  Total: {len(safety_metrics)} safety model configurations corrected")
-        
+        from facet_plot_utils import apply_all_guard_corrections
+        results_df = apply_all_guard_corrections(results_df)
     except Exception as e:
         print(f"  Warning: Could not apply safety corrections: {e}")
-    
     return results_df
 
 

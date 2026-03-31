@@ -63,16 +63,8 @@ def load_data(apply_safety_corrections=False):
     if apply_safety_corrections:
         sys.path.insert(0, str(ROOT / 'analysis' / 'comparative_analysis'))
         try:
-            from facet_plot_utils import (
-                compute_shieldgemma_metrics, compute_llama_guard_metrics,
-                compute_qwen_guard_metrics, apply_guard_metrics_to_df,
-            )
-            safety_metrics = {}
-            safety_metrics.update(compute_shieldgemma_metrics())
-            safety_metrics.update(compute_llama_guard_metrics())
-            safety_metrics.update(compute_qwen_guard_metrics())
-            if safety_metrics:
-                results = apply_guard_metrics_to_df(results, safety_metrics)
+            from facet_plot_utils import apply_all_guard_corrections
+            results = apply_all_guard_corrections(results)
         except Exception as e:
             print(f"Warning: Could not apply safety corrections: {e}")
     

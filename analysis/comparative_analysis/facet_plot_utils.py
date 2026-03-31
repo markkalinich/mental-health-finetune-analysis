@@ -128,9 +128,12 @@ def compute_guard_metrics_from_cache(
     Compute metrics for guard models using their NATIVE output format.
     
     Guard models output simple formats instead of JSON:
-    - ShieldGemma: JSON with is_suicidal/safety_type
     - Llama Guard: "safe" or "unsafe\\nS11"
     - Qwen Guard: "Safety: X\\nCategories: Y"
+    
+    Note: ShieldGemma outputs standard task JSON and passes validate_and_coerce,
+    so it does NOT need guard re-parsing.  Use apply_all_guard_corrections()
+    which correctly excludes ShieldGemma.
     
     Args:
         model_family: The model family name (e.g., 'shieldgemma', 'llama_guard', 'qwen_guard')
@@ -225,7 +228,13 @@ def compute_guard_metrics_from_cache(
 # =============================================================================
 
 def parse_shieldgemma_response(content: str) -> Optional[int]:
-    """Parse ShieldGemma native response format."""
+    """Parse ShieldGemma native response format.
+
+    .. deprecated::
+        ShieldGemma outputs standard task JSON and passes validate_and_coerce,
+        so its standard pipeline metrics are correct.  Guard re-parsing is no
+        longer applied to ShieldGemma.  Kept only for reference.
+    """
     try:
         parsed = json.loads(content)
         if 'is_suicidal' in parsed:
@@ -261,7 +270,13 @@ def parse_qwen_guard_response(content: str) -> Optional[int]:
 # =============================================================================
 
 def compute_shieldgemma_metrics(cache_path: str = None, input_data_path: str = None):
-    """Compute metrics for ShieldGemma models."""
+    """Compute metrics for ShieldGemma models.
+
+    .. deprecated::
+        ShieldGemma passes standard validation; its pipeline metrics are
+        already correct.  Use ``apply_all_guard_corrections`` instead, which
+        intentionally skips ShieldGemma.
+    """
     return compute_guard_metrics_from_cache(
         model_family='shieldgemma',
         sizes=['2b', '4b-it', '9b', '27b'],
@@ -293,11 +308,51 @@ def compute_qwen_guard_metrics(cache_path: str = None, input_data_path: str = No
     )
 
 
-def apply_guard_metrics_to_df(df: pd.DataFrame, guard_metrics: Dict) -> pd.DataFrame:
-    """Apply computed guard metrics to a dataframe."""
+def apply_guard_metrics_to_df(
+    df: pd.DataFrame,
+    guard_metrics: Dict,
+    task: str = "suicidal_ideation",
+) -> pd.DataFrame:
+    """Apply computed guard metrics to a dataframe.
+
+    Guard re-parsing only produces SI-specific binary metrics, so we restrict
+    overwrites to the matching task.  When the DataFrame has no ``task``
+    column (e.g. a per-task ``comprehensive_metrics.csv``), the filter is
+    skipped and every matching (family, size) row is updated.
+    """
+    has_task_col = "task" in df.columns
     for (family, size), metrics in guard_metrics.items():
-        mask = (df['model_family'] == family) & (df['model_size'] == size)
+        mask = (df["model_family"] == family) & (df["model_size"] == size)
+        if has_task_col:
+            mask = mask & (df["task"] == task)
         for col, val in metrics.items():
             if col in df.columns:
                 df.loc[mask, col] = val
+    return df
+
+
+def apply_all_guard_corrections(df: pd.DataFrame) -> pd.DataFrame:
+    """One-stop guard-model metric correction.
+
+    Recomputes Llama Guard and Qwen Guard SI metrics from raw cache
+    responses and writes them to the appropriate rows.  ShieldGemma is
+    intentionally excluded — its standard pipeline metrics are already
+    correct for all tasks.
+    """
+    safety_metrics: Dict = {}
+    try:
+        llama_guard = compute_llama_guard_metrics()
+        safety_metrics.update(llama_guard)
+    except Exception as e:
+        print(f"Warning: Could not compute Llama Guard metrics: {e}")
+
+    try:
+        qwen_guard = compute_qwen_guard_metrics()
+        safety_metrics.update(qwen_guard)
+    except Exception as e:
+        print(f"Warning: Could not compute Qwen Guard metrics: {e}")
+
+    if safety_metrics:
+        df = apply_guard_metrics_to_df(df, safety_metrics)
+        print(f"Applied guard corrections for {len(safety_metrics)} model configurations (SI only)")
     return df

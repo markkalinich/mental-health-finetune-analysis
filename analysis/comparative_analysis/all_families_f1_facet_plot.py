@@ -22,10 +22,7 @@ import argparse
 from facet_plot_utils import (
     get_model_metadata,
     get_param_billions_from_config,
-    compute_shieldgemma_metrics,
-    compute_llama_guard_metrics,
-    compute_qwen_guard_metrics,
-    apply_guard_metrics_to_df,
+    apply_all_guard_corrections,
     MODEL_TYPE_COLORS,
     MODEL_TYPE_MARKERS,
 )
@@ -144,20 +141,9 @@ def determine_model_type(family: str, size: str) -> str:
     return 'IT'
 
 
-def compute_all_safety_model_metrics():
-    """Compute metrics for all safety models (ShieldGemma, Llama Guard, Qwen Guard)."""
-    all_metrics = {}
-    
-    shield_metrics = compute_shieldgemma_metrics()
-    all_metrics.update(shield_metrics)
-    
-    llama_metrics = compute_llama_guard_metrics()
-    all_metrics.update(llama_metrics)
-    
-    qwen_metrics = compute_qwen_guard_metrics()
-    all_metrics.update(qwen_metrics)
-    
-    return all_metrics
+def apply_safety_corrections(df: pd.DataFrame) -> pd.DataFrame:
+    """Apply guard corrections (delegates to canonical apply_all_guard_corrections)."""
+    return apply_all_guard_corrections(df)
 
 
 def create_all_families_f1_plot(metrics_csv: str, output_path: str, 
@@ -172,11 +158,8 @@ def create_all_families_f1_plot(metrics_csv: str, output_path: str,
     """
     df = pd.read_csv(metrics_csv)
     
-    # Apply safety model corrections
-    safety_metrics = compute_all_safety_model_metrics()
-    df = apply_guard_metrics_to_df(df, safety_metrics)
-    if safety_metrics:
-        print(f"Applied safety model corrections for {len(safety_metrics)} models")
+    # Apply guard corrections (Llama Guard + Qwen Guard, SI only)
+    df = apply_safety_corrections(df)
     
     # Add computed columns
     df['base_family'], df['version'] = zip(*df.apply(

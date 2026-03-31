@@ -20,7 +20,6 @@ from facet_plot_base import FacetPlotConfig, create_facet_plot
 from facet_plot_utils import (
     get_model_metadata,
     get_param_billions_from_config,
-    compute_shieldgemma_metrics,
 )
 
 
@@ -128,7 +127,7 @@ def get_gemma_config(figsize=(18, 18)) -> FacetPlotConfig:
             'ShieldGemma': 'ShieldGemma',
             'Mental Health': 'Mental Health',
         },
-        guard_metrics_fn=compute_shieldgemma_metrics,
+        guard_metrics_fn=None,
         plot_name='Gemma',
     )
 
