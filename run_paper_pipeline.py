@@ -11,6 +11,7 @@ and tables needed for the paper:
 2. Generate main figures (Figure 1, 2, 3)
 3. Generate main table (Table 1 - regression with Bonferroni correction)
 4. Generate supplementary figures (9 family×task facet plots)
+5. Generate revision figures (Figure S10 scatter + delta-parse facet)
 
 Output Structure:
     results/FINETUNE_PAPER_FIGURES/[YYYYMMDD]/
@@ -31,6 +32,9 @@ Output Structure:
             gemma_therapy_request.png
             gemma_therapy_engagement.png
             llama_*.png, qwen_*.png (9 total)
+        revision_figures/
+            figure_s10_delta_parse_vs_delta_f1.png
+            delta_parse_facet_plot.png
         data/
             all_models_all_tasks.csv
             comprehensive_metrics_*.csv
@@ -654,6 +658,62 @@ def generate_supplementary_figures(
     return all(results)
 
 
+def generate_revision_figures(
+    logger: logging.Logger,
+    dry_run: bool = False,
+) -> bool:
+    """Generate revision-era supplementary figures (Figure S10 + delta-parse facet).
+
+    These do not require per-task experiment dirs; they read from the combined CSV.
+    """
+    log_section(logger, "PHASE 5: GENERATING REVISION FIGURES")
+
+    revision_out = PAPER_FIGURES_BASE / "revision_figures"
+    revision_out.mkdir(parents=True, exist_ok=True)
+
+    results = []
+
+    # --- Figure S10: delta parse vs delta F1 scatter ---
+    log_subsection(logger, "Figure S10: Δ parse vs Δ F1 scatter")
+    scatter_script = ROOT / "analysis" / "revision" / "delta_parse_vs_delta_f1_scatter.py"
+    if dry_run:
+        logger.info("  [DRY RUN] Would generate delta_parse_vs_delta_f1_scatter")
+        results.append(True)
+    else:
+        scatter_ok = run_python_script(scatter_script, [], logger)
+        src_png = ROOT / "results" / "revision_experiments" / "delta_parse_vs_delta_f1_scatter.png"
+        if scatter_ok and src_png.exists():
+            dst = revision_out / "figure_s10_delta_parse_vs_delta_f1.png"
+            shutil.copy(src_png, dst)
+            logger.info(f"  ✓ Saved: revision_figures/{dst.name}")
+            results.append(True)
+        else:
+            logger.warning("  ⚠ Failed to generate Figure S10 scatter")
+            results.append(False)
+
+    # --- Delta parse facet plot (revision supplement) ---
+    log_subsection(logger, "Delta parse success facet plot")
+    facet_script = ROOT / "analysis" / "combined_finetune_facet_plot.py"
+    if dry_run:
+        logger.info("  [DRY RUN] Would generate delta parse facet plot")
+        results.append(True)
+    else:
+        facet_ok = run_python_script(facet_script, ["--metric", "parse"], logger)
+        src_png = ROOT / "results" / "revision_experiments" / "delta_parse_facet_plot_across_all_models_and_tasks.png"
+        if facet_ok and src_png.exists():
+            dst = revision_out / "delta_parse_facet_plot.png"
+            shutil.copy(src_png, dst)
+            logger.info(f"  ✓ Saved: revision_figures/{dst.name}")
+            results.append(True)
+        else:
+            logger.warning("  ⚠ Failed to generate delta parse facet plot")
+            results.append(False)
+
+    success_count = sum(results)
+    logger.info(f"\nRevision figures: {success_count}/{len(results)} generated successfully")
+    return all(results)
+
+
 # =============================================================================
 # Update Combined Results CSV
 # =============================================================================
@@ -796,7 +856,15 @@ def run_pipeline(args: argparse.Namespace) -> int:
         else:
             logger.info("")
             logger.info("⏭  Skipping supplementary figures")
-        
+
+        # Phase 5: Revision figures (S10 scatter + delta-parse facet)
+        if not args.table_only and not args.skip_supplementary:
+            if not generate_revision_figures(logger, args.dry_run):
+                success = False
+        else:
+            logger.info("")
+            logger.info("⏭  Skipping revision figures")
+
         # Summary
         log_section(logger, "PIPELINE COMPLETE")
         

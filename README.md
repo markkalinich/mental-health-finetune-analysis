@@ -1,24 +1,21 @@
 # Mental Health Fine-Tuning Analysis: LLM Safety Classification
 
-Code and analysis pipeline for **[Evaluating the effect of mental health fine-tuning relative to other model characteristics on LLM safety performance](https://www.medrxiv.org/content/10.64898/2026.01.02.25343289v1)** (medRxiv preprint; manuscript text will be updated as revisions land).
+Code and analysis pipeline for **[Evaluating the effect of mental health fine-tuning relative to other model characteristics on LLM safety performance](https://www.medrxiv.org/content/10.64898/2026.01.02.25343289v1)** (medRxiv preprint).
 
-## Background
+## What this project does
 
-Large language models (LLMs) are increasingly used in mental health applications, yet it remains unclear whether mental health–specific fine-tuning meaningfully improves safety-relevant performance beyond gains from model scale, architecture generation, or other training choices. This repository supports a large-scale empirical evaluation of **127 open-source models** across three psychiatrist-reviewed synthetic classification tasks, comparing base vs instruction-tuned models and contrasting general, medical, mental health–specific, and safety-oriented fine-tunes.
+Large language models are increasingly deployed in mental health contexts, but it is unclear whether mental health–specific fine-tuning improves safety-relevant classification beyond what you get from model scale, architecture generation, or instruction tuning alone. We evaluated **127 open-source models** (Gemma, LLaMA, Qwen; ~270M–70B parameters) on three psychiatrist-reviewed synthetic classification tasks, comparing base, instruction-tuned, medical, mental health, and safety-oriented fine-tunes.
 
-## Methods (pipeline summary)
+**Tasks:**
+1. **Suicidal ideation detection** — classify statements for presence/absence of passive suicidal ideation (450 items, 10 categories)
+2. **Therapy request classification** — distinguish explicit therapy requests from declarative statements (780 items, 12 categories)
+3. **Therapy engagement detection** — identify simulated therapy in multi-turn conversations (420 items, 13 categories)
 
-- **Tasks:** (1) suicidal ideation detection, (2) therapy request classification, (3) therapy engagement detection in multi-turn conversations.  
-- **Models:** Gemma, LLaMA, and Qwen families; parameter scales from ~270M to ~70B; configurations in `config/models_config.csv`.  
-- **Inference:** Local evaluation via **LM Studio** (`http://localhost:1234`) when re-running experiments; responses and metadata are stored in a **SQLite** results cache (`cache/results.db`).  
-- **Metrics:** Per-run outputs under `results/individual_prediction_performance/` are rolled into `comprehensive_metrics.csv` per task; `analysis/combine_results.py` merges the latest per-task runs into `data/inputs/model_results/all_models_all_tasks.csv`, which feeds figures and regression.  
-- **Analysis:** F1-focused performance summaries, multivariable regression (Table 1), and paired fine-tune vs base comparisons (e.g. Figure 3). Some **safety-tuned (guard)** models require **task-specific re-parsing** of raw cached outputs (see `analysis/comparative_analysis/facet_plot_utils.py` and revision notes below).
+**Key finding:** Mental health–specific fine-tuning did not consistently improve safety classification performance relative to other model characteristics.
 
 ## Data flow
 
-High-level flow from inputs through inference, metrics, and publication artifacts (mirrors the diagram style used in the [regulatory_simulations](https://github.com/markkalinich/regulatory_simulations) reproducibility package).
-
-**Rendering:** Some Markdown previews (including Cursor’s) do not render Mermaid as well as [GitHub’s viewer](https://github.com/markkalinich/mental-health-finetune-analysis/blob/main/README.md). Newlines inside nodes use `\n`, which Mermaid treats as line breaks in most renderers.
+All models are evaluated locally via **LM Studio**. Responses are cached in SQLite so figures can be regenerated without re-running inference. The pipeline has four phases:
 
 ```mermaid
 flowchart TB
@@ -40,7 +37,7 @@ flowchart TB
     end
 
     subgraph P2["Phase 2: Analysis (per task)"]
-        cache --> guardcheck{"Guard model?"}
+        cache --> guardcheck{"Qwen/LLaMA\nGuard model?"}
         guardcheck -->|"Yes"| reparse["Re-parse native format\n(safe/unsafe → binary)"]
         guardcheck -->|"No"| classify["Binary classification\n(predicted vs ground truth\n→ TP/TN/FP/FN)"]
         reparse --> classify
@@ -64,16 +61,14 @@ flowchart TB
     style guardcheck fill:#fff9c4,stroke:#f9a825,stroke-width:2px
 ```
 
-**\*Schema validation note:** Llama Guard and Qwen Guard were tuned to rigidly output plain text (`safe`/`unsafe`), not JSON, so they fail standard JSON validation. At analysis time (Phase 2), their native output is re-parsed and mapped to each task's binary classification (`unsafe` → positive). ShieldGemma outputs standard task JSON and passes normally.
-
-**Direction:** The intended end state is inference → raw cache → **one pinned ground-truth artifact** (including safety/guard transformations applied once), then figures and tables. The current rollup still mixes sources; see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
+**\*Schema validation note:** Llama Guard and Qwen Guard are fine-tuned to rigidly output plain text (`safe`/`unsafe`) regardless of the task prompt, so they fail standard JSON validation. At analysis time (Phase 2), their native output is re-parsed from `raw_response` and mapped to each task's binary classification (`unsafe` → positive category). ShieldGemma outputs standard task JSON and passes validation normally. See `analysis/model_performance/data_loader.py`.
 
 ## Quick start
 
 ### Prerequisites
 
-1. **Python 3.9+** with a virtual environment (see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md): **always activate `.venv` before running Python**—agents and scripts should not use a random system interpreter).  
-2. **LM Studio** at `http://localhost:1234` (only if re-running experiments, not for figures-from-cache workflows)
+1. **Python 3.9+** with a virtual environment (always activate `.venv` before running anything)
+2. **LM Studio** at `http://localhost:1234` (only needed to re-run experiments; not needed to regenerate figures from cache)
 
 ### Installation
 
@@ -111,6 +106,8 @@ results/FINETUNE_PAPER_FIGURES/[YYYYMMDD_HHMMSS]/
 └── data/*.csv
 ```
 
+Each run also writes a `PROVENANCE.json` recording the git commit, cache hash, input hashes, and CLI flags used.
+
 ## Figure and table guide
 
 | Artifact | Description | Primary script(s) |
@@ -121,44 +118,29 @@ results/FINETUNE_PAPER_FIGURES/[YYYYMMDD_HHMMSS]/
 | **Table 1** | Regression with Bonferroni correction | `analysis/statistics/regression_analysis.py`, `create_*_tables.py` |
 | **Supplementary** | Family × task facet plots (9) | `analysis/comparative_analysis/{gemma,llama,qwen}_version_facet_plot.py` |
 
-## Repository structure (abbreviated)
+## Repository structure
 
 ```
 .
-├── run_paper_pipeline.py          # Orchestrates experiments (optional), figures, table
-├── analysis/                      # Figures, statistics, model performance
-├── config/models_config.csv       # Model definitions and base-model mappings
-├── orchestration/                 # run_experiment.py, API client, data loading
-├── cache/                         # result_cache.py; SQLite results.db
-├── data/inputs/finalized_input_data/   # Expert-reviewed benchmarks
-├── data/prompts/                  # Task prompts
-├── data/inputs/model_results/     # all_models_all_tasks.csv (combined metrics)
-├── bash_scripts/                  # run_all_models.sh, etc.
-└── results/                       # Pipeline outputs, revision experiment notes
+├── run_paper_pipeline.py                # Orchestrates experiments, figures, and tables
+├── analysis/
+│   ├── model_performance/               # data_loader.py, metrics_calculator.py, batch_results_analyzer.py
+│   ├── comparative_analysis/            # Facet plots (Figures 2, supplementary)
+│   ├── statistics/                      # Regression (Table 1)
+│   ├── combine_results.py              # Merges per-task metrics → all_models_all_tasks.csv
+│   └── combined_finetune_facet_plot.py  # Figure 3
+├── config/
+│   └── models_config.csv                # Model definitions, family/size/version, base-model mappings
+├── orchestration/                       # Experiment runner, API client, data processing
+├── cache/                               # result_cache.py; SQLite results.db lives here
+├── data/
+│   ├── inputs/finalized_input_data/     # Expert-reviewed benchmark CSVs (ground truth)
+│   ├── inputs/model_results/            # all_models_all_tasks.csv (combined metrics)
+│   └── prompts/                         # Task prompt text files
+├── bash_scripts/                        # run_all_models.sh (inference orchestration)
+├── utilities/                           # Cache QC, manuscript subset builder, model validator
+└── results/                             # Pipeline outputs (timestamped run directories)
 ```
-
-## Datasets
-
-| Dataset | Items | Categories | Notes |
-|---------|------:|------------|--------|
-| Suicidal ideation | 450 | 10 | Expert-reviewed synthetic statements |
-| Therapy request | 780 | 12 | Expert-reviewed synthetic statements |
-| Therapy engagement | 420 | 13 | Expert-reviewed synthetic conversations |
-
-## Reproducibility and revision work
-
-- **Reviewer-driven analyses** (parse success, ΔF1, guard-cache behavior): see [`results/revision_experiments/README_REVISIONS.md`](results/revision_experiments/README_REVISIONS.md).  
-- **Session notes** on guard parsing fixes and data integrity checks: [`results/revision_experiments/GUARD_FIX_SESSION_SUMMARY.md`](results/revision_experiments/GUARD_FIX_SESSION_SUMMARY.md).  
-
-A **manuscript-only results cache** (single source of truth aligned with the exact inputs used for the paper) is planned to reduce ambiguity between “what’s on disk” and “what the paper used”; subsequent steps will walk through transformations explicitly. A concrete **provenance plan** (commit + cache + input hashes → outputs; machine-written `PROVENANCE.json` per run) is in [`docs/PROVENANCE_PLAN.md`](docs/PROVENANCE_PLAN.md). The regulatory paper’s **frozen subset cache** ([`regulatory_paper_cache_v3`](https://github.com/markkalinich/regulatory_simulations/tree/main/regulatory_paper_cache_v3) — `results.db` + `MD5SUM.txt`) and the separate “filter at analysis time” flow are both described in [`docs/REGULATORY_CACHE_PATTERN.md`](docs/REGULATORY_CACHE_PATTERN.md). Narrow **provenance** learnings from the multiturn project are in [`docs/LLM_MULTITURN_LEARNINGS.md`](docs/LLM_MULTITURN_LEARNINGS.md).
-
-**Integrity:** When comparing or pinning artifacts, use **checksums** (e.g. `sha256sum`), not file size or informal “looks the same.” See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
-
-**Refactor:** Multiple sources of truth in the current design are a known limitation; structural changes should be planned against pinned data and tests—notes in [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
-
-**Git:** To iterate privately before updating the public repo, see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md#private-iteration-vs-public-github).
-
-**Automation / agents:** See root [`AGENTS.md`](AGENTS.md) and [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) for venv and integrity checks.
 
 ## Running individual components
 
@@ -174,26 +156,23 @@ python analysis/combined_finetune_facet_plot.py
 
 # Table 1
 python analysis/statistics/regression_analysis.py
-```
 
-### Experiments for a subset of models
-
-```bash
+# Run experiments for a subset of models
 bash bash_scripts/run_all_models.sh --models "gemma:12b-it,llama3.1:8b" \
     data/inputs/finalized_input_data/SI_finalized_sentences.csv \
     data/prompts/system_suicide_detection_v2.txt \
     system_suicide_detection_v2
-```
 
-### Cache utilities
-
-```bash
+# Cache statistics
 python -m cache.cache_manager stats
 ```
 
-**Manuscript subset + QC:** Build a frozen SQLite subset with `utilities/build_manuscript_cache_subset.py`.
+## Reproducibility
 
-Run **`utilities/cache_qc_report.py`** against `manuscript_paper_cache/results.db` (registry triple + optional `model_cache_crosswalk_approved.csv`) to summarize coverage and integrity — see [`manuscript_paper_cache/README.md`](manuscript_paper_cache/README.md).
+- Each pipeline run writes `PROVENANCE.json` with git commit, cache SHA-256, input hashes, and CLI flags.
+- A frozen manuscript cache subset can be built with `utilities/build_manuscript_cache_subset.py`; run `utilities/cache_qc_report.py` against it to verify coverage.
+- Reviewer-driven revision analyses (parse success, ΔF1, inter-rater reliability) are in `results/revision_experiments/`.
+- Developer notes on venv setup, integrity checks, and git workflow: [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
 
 ## Citation
 
@@ -212,4 +191,4 @@ If you use this code or data, please cite:
 
 ## Acknowledgments
 
-Claude Sonnet and Opus 4.5 via Cursor were used extensively to assist with code generation, refactoring, and documentation. All scientific claims, analysis choices, and responsibility for reproducibility remain with the authors.
+Claude Sonnet and Opus 4.5-6 via Cursor were used extensively to assist with code generation, refactoring, and documentation. All scientific claims, analysis choices, and responsibility for reproducibility remain with the authors.

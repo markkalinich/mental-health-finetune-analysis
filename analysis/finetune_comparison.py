@@ -28,25 +28,21 @@ COMPARISONS = {
         'filter': lambda c: (c['model_type'].isin(['Medical', 'MedGemma'])) & (c['Base_Model_LM_Studio_ID'].notna()),
         'title': 'Medical Fine-tunes',
         'output': 'medical_finetunes_summary.png',
-        'apply_safety_corrections': False,
     },
     'safety': {
         'filter': lambda c: (c['model_type'].isin(['ShieldGemma', 'Guard'])) & (c['Base_Model_LM_Studio_ID'].notna()),
         'title': 'Safety Fine-tunes',
         'output': 'safety_finetunes_summary.png',
-        'apply_safety_corrections': True,
     },
     'instruction_tuned': {
         'filter': lambda c: (c['model_type'] == 'IT') & (c['Base_Model_Type'] == 'PT') & (c['Base_Model_LM_Studio_ID'].notna()),
         'title': 'Instruction-Tuned vs Pre-Trained',
         'output': 'instruction_tuned_summary.png',
-        'apply_safety_corrections': False,
     },
     'mental_health': {
         'filter': lambda c: (c['model_type'] == 'Mental Health') & (c['Base_Model_LM_Studio_ID'].notna()),
         'title': 'Mental Health Fine-tunes',
         'output': 'mental_health_finetunes_summary.png',
-        'apply_safety_corrections': False,
     },
 }
 
@@ -60,12 +56,8 @@ FAMILY_COLORS = {'gemma': '#E74C3C', 'llama': '#3498DB', 'qwen': '#2ECC71'}
 FAMILY_LABELS = {'gemma': 'Gemma', 'llama': 'Llama', 'qwen': 'Qwen'}
 
 
-def load_data(apply_safety_corrections=False):
-    """Load config and results.
-
-    Guard model metrics are now correct in the CSV (Phase 2 re-parsing),
-    so the apply_safety_corrections flag is accepted but ignored.
-    """
+def load_data():
+    """Load config and results."""
     config = pd.read_csv(ROOT / 'config/models_config.csv')
     results = pd.read_csv(ROOT / 'data/inputs/model_results/all_models_all_tasks.csv')
     return config, results
@@ -223,7 +215,7 @@ def run_comparison(comparison_type):
     cfg = COMPARISONS[comparison_type]
     print(f"\n{'='*60}\n{cfg['title']}\n{'='*60}")
     
-    config, results = load_data(cfg['apply_safety_corrections'])
+    config, results = load_data()
     df, n_models = compute_deltas(config, results, cfg['filter'])
     
     print(f"Models with base: {n_models}")

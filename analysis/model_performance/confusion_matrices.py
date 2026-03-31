@@ -32,7 +32,7 @@ def create_binary_confusion_matrix(results_df: pd.DataFrame,
         results_df: Complete experiment results DataFrame
         model_family: Model family (e.g., 'gemma', 'qwen', 'llama')
         model_size: Model size (e.g., '1b', '4b', '12b')
-        experiment_type: 'suicide_detection' or 'therapy_request'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         binary_positive_categories: List of categories considered positive
         binary_classification_name: Name for positive class (e.g., 'Suicide Risk')
         output_dir: Directory to save confusion matrix plot
@@ -100,7 +100,7 @@ def create_multiclass_confusion_matrix(results_df: pd.DataFrame,
         results_df: Complete experiment results DataFrame
         model_family: Model family (e.g., 'gemma', 'qwen', 'llama')
         model_size: Model size (e.g., '1b', '4b', '12b')
-        experiment_type: 'suicide_detection' or 'therapy_request'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         multiclass_labels: Ordered list of all possible labels
         output_dir: Directory to save confusion matrix plot
     """
@@ -240,7 +240,7 @@ def create_binary_confusion_matrix_grid(results_df: pd.DataFrame,
     Args:
         results_df: Complete experiment results DataFrame
         model_families: Dictionary mapping family names to size lists (e.g., {'gemma': ['270m', '1b', ...], ...})
-        experiment_type: 'suicide_detection' or 'therapy_request'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         binary_positive_categories: List of categories considered positive
         ground_truth_positive_categories: List of categories in ground truth that are positive
         binary_classification_name: Name for positive class (e.g., 'Suicide Risk')
@@ -378,7 +378,7 @@ def create_all_confusion_matrices(results_df: pd.DataFrame,
     Args:
         results_df: Complete experiment results DataFrame
         model_families: Dictionary mapping family names to size lists
-        experiment_type: 'suicide_detection' or 'therapy_request'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         binary_positive_categories: List of categories considered positive for binary classification (model outputs)
         ground_truth_positive_categories: List of categories in ground truth that are positive
         binary_classification_name: Name for positive class (e.g., 'Suicide Risk')

@@ -27,8 +27,8 @@ Then Cohen's κ is computed on the paired binary vectors (R1, R2) over all rows.
 
 Outputs:
 
-- `data/revision_data/results/kappa_verbatim_optimistic_pessimistic.csv`
-- `data/revision_data/results/kappa_verbatim_complete_cases.csv`
+- `results/revision_experiments/kappa_verbatim_optimistic_pessimistic.csv`
+- `results/revision_experiments/kappa_verbatim_complete_cases.csv`
 
 Usage (from repository root):
     python analysis/revision/compute_kappa_verbatim_bounds.py
@@ -52,8 +52,8 @@ assert _te_mod.loader is not None
 _te_mod.loader.exec_module(_te)
 dedupe_by_conversation = _te.dedupe_by_conversation
 INTERMEDIATE = REPO_ROOT / "data" / "inputs" / "intermediate_files"
-DEFAULT_OUT = REPO_ROOT / "data" / "revision_data" / "results" / "kappa_verbatim_optimistic_pessimistic.csv"
-COMPLETE_OUT = REPO_ROOT / "data" / "revision_data" / "results" / "kappa_verbatim_complete_cases.csv"
+DEFAULT_OUT = REPO_ROOT / "results" / "revision_experiments" / "kappa_verbatim_optimistic_pessimistic.csv"
+COMPLETE_OUT = REPO_ROOT / "results" / "revision_experiments" / "kappa_verbatim_complete_cases.csv"
 BOOTSTRAP_REPS = 5000
 BOOTSTRAP_SEED = 42
 

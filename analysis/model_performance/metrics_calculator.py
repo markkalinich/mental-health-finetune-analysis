@@ -59,7 +59,7 @@ def calculate_model_metrics(results_df: pd.DataFrame,
         results_df: DataFrame with experiment results
         model_family: Model family (gemma, qwen, llama)  
         model_size: Model size (270m, 1b, etc.)
-        experiment_type: 'suicide_detection' or 'therapy_request'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         binary_positive_categories: Categories considered positive for binary classification (model outputs)
         ground_truth_positive_categories: Categories in ground truth that are positive (defaults to binary_positive_categories)
         
@@ -135,7 +135,7 @@ def generate_metrics_for_all_models(results_df: pd.DataFrame,
     Args:
         results_df: Combined experiment results
         model_families: Dictionary mapping family names to size lists
-        experiment_type: 'suicide_detection' or 'therapy_request'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         binary_positive_categories: Categories considered positive (model outputs)
         ground_truth_positive_categories: Categories in ground truth that are positive (defaults to binary_positive_categories)
         
@@ -178,7 +178,7 @@ def determine_multiclass_labels(results_df: pd.DataFrame, experiment_type: Exper
     
     Args:
         results_df: Combined experiment results
-        experiment_type: 'suicide_detection', 'therapy_request', or 'therapy_engagement'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         
     Returns:
         Ordered list of labels for confusion matrices

@@ -74,7 +74,7 @@ class SafetySimulationOrchestrator:
             output_dir: Directory for analysis outputs
             input_data: Path to input data file
             prompt_file: Path to prompt template file
-            experiment_type: Type of experiment ('suicide_detection' or 'therapy_request')
+            experiment_type: Type of experiment ('suicidal_ideation', 'therapy_request', or 'therapy_engagement')
             timestamp: Optional timestamp (defaults to current time)
             
         Returns:
@@ -181,7 +181,7 @@ class SafetySimulationOrchestrator:
             raise ValueError(f"Prompt file not found: {config.prompt_file}")
             
         # Validate experiment type
-        valid_types = {'suicide_detection', 'therapy_request'}
+        valid_types = {'suicidal_ideation', 'therapy_request', 'therapy_engagement'}
         if config.experiment_config.experiment_type not in valid_types:
             raise ValueError(f"Invalid experiment type: {config.experiment_config.experiment_type}. "
                            f"Must be one of: {valid_types}")

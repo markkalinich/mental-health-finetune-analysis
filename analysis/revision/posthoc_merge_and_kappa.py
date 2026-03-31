@@ -10,8 +10,8 @@ Merged tables:
     data/revision_data/merged/
 
 Results:
-    data/revision_data/results/posthoc_kappa_merged.csv
-    data/revision_data/results/posthoc_merge_validation.csv
+    results/revision_experiments/posthoc_kappa_merged.csv
+    results/revision_experiments/posthoc_merge_validation.csv
 
 Cohen's κ uses one binary per rater: **as-is OK** (keep the model wording) vs **not as-is OK**
 (change or remove). P1: `KEPT_exact_match` vs (`KEPT_with_changes` | `REMOVED`). P2 (SI/TR):
@@ -34,7 +34,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 INTERMEDIATE = REPO_ROOT / "data" / "inputs" / "intermediate_files"
 REVIEW = REPO_ROOT / "data" / "revision_data" / "psychiatrist02_review"
 MERGED_DIR = REPO_ROOT / "data" / "revision_data" / "merged"
-RESULTS_DIR = REPO_ROOT / "data" / "revision_data" / "results"
+RESULTS_DIR = REPO_ROOT / "results" / "revision_experiments"
 
 _te_mod = importlib.util.spec_from_file_location(
     "therapy_engagement_conversations",

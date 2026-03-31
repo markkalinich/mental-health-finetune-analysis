@@ -22,25 +22,21 @@ FINETUNE_TYPES = [
         'name': 'mental_health',
         'label': 'Mental Health',
         'filter': lambda c: (c['model_type'] == 'Mental Health') & (c['Base_Model_LM_Studio_ID'].notna()),
-        'apply_safety_corrections': False,
     },
     {
         'name': 'medical',
         'label': 'Medical',
         'filter': lambda c: (c['model_type'].isin(['Medical', 'MedGemma'])) & (c['Base_Model_LM_Studio_ID'].notna()),
-        'apply_safety_corrections': False,
     },
     {
         'name': 'safety',
         'label': 'Safety',
         'filter': lambda c: (c['model_type'].isin(['ShieldGemma', 'Guard'])) & (c['Base_Model_LM_Studio_ID'].notna()),
-        'apply_safety_corrections': True,
     },
     {
         'name': 'instruction_tuned',
         'label': 'Instruction-Tuned',
         'filter': lambda c: (c['model_type'] == 'IT') & (c['Base_Model_Type'] == 'PT') & (c['Base_Model_LM_Studio_ID'].notna()),
-        'apply_safety_corrections': False,
     },
 ]
 
@@ -55,32 +51,34 @@ FAMILY_COLORS = {'gemma': '#E74C3C', 'llama': '#3498DB', 'qwen': '#2ECC71'}
 FAMILY_LABELS = {'gemma': 'Gemma', 'llama': 'Llama', 'qwen': 'Qwen'}
 
 
-def load_data(apply_safety_corrections=False):
-    """Load config and results.
-
-    Guard model metrics are now correct in the CSV (Phase 2 re-parsing),
-    so the apply_safety_corrections flag is accepted but ignored.
-    """
+def load_data():
+    """Load config and results."""
     config = pd.read_csv(ROOT / 'config/models_config.csv')
     results = pd.read_csv(ROOT / 'data/inputs/model_results/all_models_all_tasks.csv')
     return config, results
 
 
-def compute_deltas(config, results, filter_func):
-    """Compute performance deltas for fine-tunes vs their base models."""
+def compute_deltas(config, results, filter_func,
+                    metric_col: str = "f1_score", col_prefix: str = "f1") -> pd.DataFrame:
+    """Compute fine-tune minus base for a numeric column (e.g. f1_score or parse_success_rate)."""
     fine_tunes = config[filter_func(config)].copy()
     base_lookup = config.set_index('lm_studio_id')
-    
+
+    delta_col = f'delta_{col_prefix}'
+    ft_col = f'ft_{col_prefix}'
+    base_col = f'base_{col_prefix}'
+
     records = []
     for task in TASKS:
         for _, ft_row in fine_tunes.iterrows():
             base_id = ft_row['Base_Model_LM_Studio_ID']
             if base_id not in base_lookup.index:
                 continue
-            
+
             base_row = base_lookup.loc[base_id]
-            
-            # Determine family from architecture
+            if isinstance(base_row, pd.DataFrame):
+                base_row = base_row.iloc[0]
+
             arch = str(ft_row.get('architecture', '')).lower()
             if 'gemma' in arch:
                 family = 'gemma'
@@ -90,40 +88,59 @@ def compute_deltas(config, results, filter_func):
                 family = 'qwen'
             else:
                 continue
-            
-            # Get scores
-            ft_match = results[(results['task'] == task) & 
-                              (results['model_family'] == ft_row['family']) & 
+
+            ft_match = results[(results['task'] == task) &
+                              (results['model_family'] == ft_row['family']) &
                               (results['model_size'] == ft_row['size'])]
-            base_match = results[(results['task'] == task) & 
-                                (results['model_family'] == base_row['family']) & 
+            base_match = results[(results['task'] == task) &
+                                (results['model_family'] == base_row['family']) &
                                 (results['model_size'] == base_row['size'])]
-            
+
             if len(ft_match) == 0 or len(base_match) == 0:
                 continue
-            
-            ft_f1, base_f1 = ft_match['f1_score'].values[0], base_match['f1_score'].values[0]
-            
-            if pd.notna(ft_f1) and pd.notna(base_f1):
+
+            ft_v = ft_match[metric_col].values[0]
+            base_v = base_match[metric_col].values[0]
+
+            if pd.notna(ft_v) and pd.notna(base_v):
                 records.append({
                     'family': family, 'task': task,
-                    'delta_f1': ft_f1 - base_f1,
-                    'base_f1': base_f1, 'ft_f1': ft_f1,
+                    'ft_family': str(ft_row['family']),
+                    'ft_size': str(ft_row['size']),
+                    'ft_model_type': str(ft_row['model_type']),
+                    'ft_param_billions': pd.to_numeric(ft_row.get('param_billions'), errors='coerce'),
+                    'base_family': str(base_row['family']),
+                    'base_size': str(base_row['size']),
+                    delta_col: ft_v - base_v,
+                    base_col: base_v,
+                    ft_col: ft_v,
                 })
     
     return pd.DataFrame(records)
 
 
-def generate_combined_facet_plot():
-    """Generate 4x3 facet plot for all fine-tune types across all tasks."""
-    
-    # Collect data for all fine-tune types
+def generate_combined_facet_plot(metric_col: str = "f1_score",
+                                  col_prefix: str = "f1",
+                                  y_label_suffix: str = "F1 Score",
+                                  out_dir_override=None):
+    """Generate 4x3 facet plot for all fine-tune types across all tasks.
+
+    Args:
+        metric_col: Column in all_models_all_tasks.csv to compute deltas for.
+        col_prefix: Short name used in column naming (delta_{prefix}, ft_{prefix}, base_{prefix}).
+        y_label_suffix: Text appended to fine-tune label for the y-axis (e.g. "F1 Score", "Parse Success Rate").
+        out_dir_override: If set, write outputs here instead of results/fine_tune_figures.
+    """
+    delta_col = f"delta_{col_prefix}"
+    ft_col = f"ft_{col_prefix}"
+    base_col = f"base_{col_prefix}"
+
     all_data = {}
     for ft_config in FINETUNE_TYPES:
-        config, results = load_data(ft_config['apply_safety_corrections'])
-        df = compute_deltas(config, results, ft_config['filter'])
+        config, results = load_data()
+        df = compute_deltas(config, results, ft_config['filter'], metric_col, col_prefix)
         all_data[ft_config['name']] = df
-        print(f"{ft_config['label']}: {len(df)} data points")
+        print(f"{ft_config['label']} ({col_prefix}): {len(df)} data points")
     
     # Statistics records for summary CSV
     stats_records = []
@@ -141,7 +158,7 @@ def generate_combined_facet_plot():
                 for fam in FAMILIES:
                     subset = df[(df['task'] == task) & (df['family'] == fam)]
                     if len(subset) > 0:
-                        max_val = subset['delta_f1'].max()
+                        max_val = subset[delta_col].max()
                         if max_val > row_max_y:
                             row_max_y = max_val
         
@@ -161,7 +178,7 @@ def generate_combined_facet_plot():
             for i, fam in enumerate(FAMILIES):
                 fam_data = task_data[task_data['family'] == fam]
                 if len(fam_data) > 0:
-                    box_data.append(fam_data['delta_f1'].values)
+                    box_data.append(fam_data[delta_col].values)
                     positions.append(i)
                     colors.append(FAMILY_COLORS[fam])
             
@@ -179,7 +196,7 @@ def generate_combined_facet_plot():
                     fam_data = task_data[task_data['family'] == fam]
                     if len(fam_data) > 0:
                         x_jitter = i + np.random.uniform(-0.2, 0.2, len(fam_data))
-                        ax.scatter(x_jitter, fam_data['delta_f1'].values, s=50, alpha=0.5,
+                        ax.scatter(x_jitter, fam_data[delta_col].values, s=50, alpha=0.5,
                                   color=FAMILY_COLORS[fam], edgecolors='black', linewidth=0.5, zorder=10)
                 
                 # Significance annotations (Bonferroni-corrected paired t-tests)
@@ -188,7 +205,7 @@ def generate_combined_facet_plot():
                     for i, fam in enumerate(FAMILIES):
                         fam_data = task_data[task_data['family'] == fam]
                         if len(fam_data) >= 2:
-                            _, p = scipy_stats.ttest_rel(fam_data['ft_f1'].values, fam_data['base_f1'].values)
+                            _, p = scipy_stats.ttest_rel(fam_data[ft_col].values, fam_data[base_col].values)
                             
                             # Record statistics
                             p_adjusted = min(p * n_testable_families, 1.0)  # Cap at 1.0
@@ -197,9 +214,9 @@ def generate_combined_facet_plot():
                                 'task': TASK_TITLES[task],
                                 'model_family': FAMILY_LABELS[fam],
                                 'n_pairs': len(fam_data),
-                                'mean_delta_f1': fam_data['delta_f1'].mean(),
-                                'std_delta_f1': fam_data['delta_f1'].std(),
-                                'median_delta_f1': fam_data['delta_f1'].median(),
+                                f'mean_{delta_col}': fam_data[delta_col].mean(),
+                                f'std_{delta_col}': fam_data[delta_col].std(),
+                                f'median_{delta_col}': fam_data[delta_col].median(),
                                 'p_value': p,
                                 'p_adjusted': p_adjusted,
                                 'alpha_corrected': alpha_corrected,
@@ -208,7 +225,6 @@ def generate_combined_facet_plot():
                                 'significant': p < alpha_corrected,
                             })
                             
-                            # Significance stars based on adjusted p-values (matching legend)
                             if p_adjusted < 0.001:
                                 sig = '***'
                             elif p_adjusted < 0.01:
@@ -222,15 +238,14 @@ def generate_combined_facet_plot():
                                 y_pos = row_max_y + 0.05
                                 ax.text(i, y_pos, sig, ha='center', fontsize=18, fontweight='bold')
                         elif len(fam_data) == 1:
-                            # Record single data point (no test possible)
                             stats_records.append({
                                 'finetune_type': ft_config['label'],
                                 'task': TASK_TITLES[task],
                                 'model_family': FAMILY_LABELS[fam],
                                 'n_pairs': len(fam_data),
-                                'mean_delta_f1': fam_data['delta_f1'].mean(),
-                                'std_delta_f1': np.nan,
-                                'median_delta_f1': fam_data['delta_f1'].median(),
+                                f'mean_{delta_col}': fam_data[delta_col].mean(),
+                                f'std_{delta_col}': np.nan,
+                                f'median_{delta_col}': fam_data[delta_col].median(),
                                 'p_value': np.nan,
                                 'p_adjusted': np.nan,
                                 'alpha_corrected': alpha_corrected,
@@ -248,7 +263,7 @@ def generate_combined_facet_plot():
             
             # Row labels (y-axis) - 18% larger (16 -> 19), kept to 2 lines
             if col_idx == 0:
-                ax.set_ylabel(f'{ft_config["label"]}\nΔ F1 Score', fontsize=19)
+                ax.set_ylabel(f'{ft_config["label"]}\nΔ {y_label_suffix}', fontsize=19)
                 # Panel labels (A, B, C, D) for paper figure references
                 panel_label = chr(65 + row_idx)  # 65 = 'A' in ASCII
                 ax.text(-0.18, 1.08, panel_label, transform=ax.transAxes,
@@ -268,36 +283,31 @@ def generate_combined_facet_plot():
     plt.tight_layout()
     plt.subplots_adjust(hspace=0.25, wspace=0.15)
     
-    # Save output
-    out_dir = ROOT / 'results/fine_tune_figures'
+    out_dir = Path(out_dir_override) if out_dir_override else ROOT / 'results/fine_tune_figures'
     out_dir.mkdir(exist_ok=True, parents=True)
-    
-    out_file = out_dir / 'delta_f1_facet_plot_across_all_models_and_tasks.png'
+
+    out_file = out_dir / f'delta_{col_prefix}_facet_plot_across_all_models_and_tasks.png'
     plt.savefig(out_file, dpi=150, bbox_inches='tight')
     plt.close()
-    
     print(f"\nSaved: {out_file}")
-    
-    # Save combined data CSV
+
     combined_df = pd.concat([
-        all_data[ft['name']].assign(finetune_type=ft['name']) 
+        all_data[ft['name']].assign(finetune_type=ft['name'])
         for ft in FINETUNE_TYPES
     ], ignore_index=True)
-    csv_file = out_dir / 'delta_f1_facet_plot_across_all_models_and_tasks_data.csv'
+    csv_file = out_dir / f'delta_{col_prefix}_facet_plot_across_all_models_and_tasks_data.csv'
     combined_df.to_csv(csv_file, index=False)
     print(f"Saved: {csv_file}")
-    
-    # Save statistical analysis summary CSV
+
     stats_df = pd.DataFrame(stats_records)
-    stats_file = out_dir / 'delta_f1_statistical_analysis_summary.csv'
+    stats_file = out_dir / f'delta_{col_prefix}_statistical_analysis_summary.csv'
     stats_df.to_csv(stats_file, index=False)
     print(f"Saved: {stats_file}")
     
-    # Report statistical testing details
     print("\n" + "="*60)
     print("Statistical Testing Summary")
     print("="*60)
-    print("Method: Paired t-test (fine-tune F1 vs base F1)")
+    print(f"Method: Paired t-test (fine-tune {col_prefix} vs base {col_prefix})")
     print("Correction: Bonferroni within each cell (by # testable families)")
     print("\nPer-cell correction factors:")
     for ft_config in FINETUNE_TYPES:
@@ -305,7 +315,7 @@ def generate_combined_facet_plot():
         print(f"\n  {ft_config['label']}:")
         for task in TASKS:
             task_data = df[df['task'] == task]
-            n_testable = sum(1 for fam in FAMILIES 
+            n_testable = sum(1 for fam in FAMILIES
                             if len(task_data[task_data['family'] == fam]) >= 2)
             if n_testable > 0:
                 print(f"    {TASK_TITLES[task]}: α=0.05/{n_testable} = {0.05/n_testable:.4f}")
@@ -313,6 +323,32 @@ def generate_combined_facet_plot():
                 print(f"    {TASK_TITLES[task]}: No testable families (n<2)")
 
 
+def generate_delta_parse_facet_plot():
+    """Same layout as Figure 3, but Δ parse_success_rate (fine-tune − base)."""
+    generate_combined_facet_plot(
+        metric_col="parse_success_rate",
+        col_prefix="parse",
+        y_label_suffix="Parse Success Rate",
+        out_dir_override=ROOT / "results" / "revision_experiments",
+    )
+
+
+def main():
+    import argparse
+    p = argparse.ArgumentParser(description='Combined fine-tune facet plots')
+    p.add_argument(
+        '--metric',
+        choices=('f1', 'parse'),
+        default='f1',
+        help='f1 = Figure 3 (default); parse = delta parse success (revision)',
+    )
+    args = p.parse_args()
+    if args.metric == 'f1':
+        generate_combined_facet_plot()
+    else:
+        generate_delta_parse_facet_plot()
+
+
 if __name__ == '__main__':
-    generate_combined_facet_plot()
+    main()
 

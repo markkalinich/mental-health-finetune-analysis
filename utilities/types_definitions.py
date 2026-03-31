@@ -17,7 +17,7 @@ from abc import ABC, abstractmethod
 # Type aliases for common data structures
 MetricValue = Union[float, int]
 ModelName = str
-ExperimentType = str  # 'suicide_detection' or 'therapy_request'
+ExperimentType = str  # 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
 ClassificationLabel = str
 TimestampStr = str
 FilePath = Union[str, Path]

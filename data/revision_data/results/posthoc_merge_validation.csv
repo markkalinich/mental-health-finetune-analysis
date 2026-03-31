@@ -1,4 +1,0 @@
-dataset,n_rows,n_from_revision,n_keep_original,n_missing_after
-SI,1000,178,822,0
-Therapy request,1200,81,1119,0
-Therapy engagement (conversations),450,87,363,0

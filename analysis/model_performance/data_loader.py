@@ -339,7 +339,7 @@ def validate_results_dataframe(results_df: pd.DataFrame, experiment_type: str) -
     
     Args:
         results_df: Combined experiment results DataFrame
-        experiment_type: 'suicide_detection', 'therapy_request', or 'therapy_engagement'
+        experiment_type: 'suicidal_ideation', 'therapy_request', or 'therapy_engagement'
         
     Returns:
         True if valid, raises ValueError if invalid
