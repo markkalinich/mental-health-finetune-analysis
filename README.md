@@ -33,12 +33,10 @@ flowchart TB
         prompts --> keygen
         cfg --> keygen
         keygen --> check{{"Cache hit?"}}
-        check -->|"Yes"| cached_val["Use cached result"]
-        check -->|"No"| lms["LM Studio\n(local API)"]
-        lms --> store["Store in cache"]
-        store --> cache[("SQLite cache\n(cache/results.db)")]
-        cached_val --> analyze["batch_results_analyzer.py"]
-        store --> analyze
+        check -->|"Miss"| lms["LM Studio\n(local API)"]
+        lms --> cache[("SQLite cache\n(cache/results.db)")]
+        check -->|"Hit"| cache
+        cache --> analyze["batch_results_analyzer.py"]
         analyze --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/&lt;task&gt;/&lt;run_id&gt;/)"]
     end
 
