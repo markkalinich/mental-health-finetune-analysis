@@ -15,7 +15,6 @@ from pathlib import Path
 
 def format_coefficient(beta, ci_low, ci_high, p_value):
     """Format coefficient as: β [CI_low, CI_high]* """
-    # Determine significance stars
     if p_value < 0.001:
         stars = "***"
     elif p_value < 0.01:
@@ -24,8 +23,6 @@ def format_coefficient(beta, ci_low, ci_high, p_value):
         stars = "*"
     else:
         stars = ""
-    
-    # Format with 3 decimal places
     return f"{beta:.3f} [{ci_low:.3f}, {ci_high:.3f}]{stars}"
 
 
@@ -105,6 +102,61 @@ def create_regression_table(input_dir: Path, output_path: Path):
     print("Reference categories: Family=Gemma, Version=1, Fine-Tune Type=Base Model")
 
 
+def create_regression_table_bonferroni(input_dir: Path, output_path: Path):
+    """Create Bonferroni-corrected table in the same β [CI]* format as the raw table."""
+
+    df = pd.read_csv(input_dir / "all_coefficients.csv")
+    df['Model'] = df['Task'] + ' - ' + df['DV']
+
+    models = df['Model'].unique()
+    variables = df['Variable'].unique()
+
+    table_data = []
+    for var in variables:
+        row = {'Variable': var}
+        for model in models:
+            model_data = df[(df['Model'] == model) & (df['Variable'] == var)]
+            if len(model_data) > 0:
+                beta = model_data['β'].values[0]
+                ci_low = model_data['Bonf CI Lower'].values[0]
+                ci_high = model_data['Bonf CI Upper'].values[0]
+                p = model_data['p_bonferroni'].values[0]
+                row[model] = format_coefficient(beta, ci_low, ci_high, p)
+            else:
+                row[model] = ''
+        table_data.append(row)
+
+    for model in models:
+        model_data = df[df['Model'] == model].iloc[0]
+
+    r2_row = {'Variable': 'R²'}
+    for model in models:
+        model_data = df[df['Model'] == model].iloc[0]
+        r2_row[model] = f"{model_data['R²']:.3f}"
+    table_data.append(r2_row)
+
+    adj_r2_row = {'Variable': 'Adj R²'}
+    for model in models:
+        model_data = df[df['Model'] == model].iloc[0]
+        adj_r2_row[model] = f"{model_data['Adj R²']:.3f}"
+    table_data.append(adj_r2_row)
+
+    n_row = {'Variable': 'N'}
+    for model in models:
+        model_data = df[df['Model'] == model].iloc[0]
+        n_row[model] = f"{int(model_data['N'])}"
+    table_data.append(n_row)
+
+    result_df = pd.DataFrame(table_data)
+    column_order = ['Variable'] + list(models)
+    result_df = result_df[column_order]
+
+    result_df.to_csv(output_path, index=False)
+    print(f"\nBonferroni regression table saved to: {output_path}")
+    print("Note: * p_adj < .05, ** p_adj < .01, *** p_adj < .001 (Bonferroni-corrected)")
+    print("CIs are Bonferroni-adjusted (α = 0.05 / n_tests)")
+
+
 def create_task_specific_tables(input_dir: Path, output_dir: Path):
     """Create separate tables for each task (F1 and Accuracy side-by-side)."""
     
@@ -178,8 +230,11 @@ if __name__ == "__main__":
     
     print("Creating regression tables...")
     
-    # Create combined table
+    # Create combined table (raw p-values)
     create_regression_table(input_dir, output_dir / "regression_table_combined.csv")
+    
+    # Create combined table (Bonferroni-corrected)
+    create_regression_table_bonferroni(input_dir, output_dir / "regression_table_combined_bonferroni.csv")
     
     # Create task-specific tables
     create_task_specific_tables(input_dir, output_dir)

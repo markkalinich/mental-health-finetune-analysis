@@ -559,18 +559,25 @@ def generate_table_1(logger: logging.Logger, dry_run: bool = False) -> bool:
         logger.info(f"  [DRY RUN] Would copy regression files to table_1/")
         return True
     
-    # Copy CSV files
+    # Copy CSV files — raw (uncorrected) table
     csv_src = RESULTS_DIR / "statistics" / "regression_table_combined.csv"
     if csv_src.exists():
         shutil.copy(csv_src, output_dir / "regression_f1.csv")
         logger.info(f"  ✓ Saved: table_1/regression_f1.csv")
     
-    bonf_csv_src = RESULTS_DIR / "statistics" / "all_coefficients_bonferroni.csv"
-    if bonf_csv_src.exists():
-        shutil.copy(bonf_csv_src, output_dir / "regression_f1_bonferroni.csv")
+    # Bonferroni-corrected formatted table (same β [CI]* layout)
+    bonf_fmt_src = RESULTS_DIR / "statistics" / "regression_table_combined_bonferroni.csv"
+    if bonf_fmt_src.exists():
+        shutil.copy(bonf_fmt_src, output_dir / "regression_f1_bonferroni.csv")
         logger.info(f"  ✓ Saved: table_1/regression_f1_bonferroni.csv")
     
-    # Copy HTML file (the main visual table)
+    # Full long-form Bonferroni results (all DVs: F1 + Accuracy)
+    bonf_full_src = RESULTS_DIR / "statistics" / "all_coefficients_bonferroni.csv"
+    if bonf_full_src.exists():
+        shutil.copy(bonf_full_src, output_dir / "multivariate_regression_all_dvs_bonferroni.csv")
+        logger.info(f"  ✓ Saved: table_1/multivariate_regression_all_dvs_bonferroni.csv")
+    
+    # HTML table (Bonferroni-corrected, F1 only — for manuscript)
     html_src = RESULTS_DIR / "statistics" / "combined_regression_f1_score_bonferroni.html"
     if html_src.exists():
         shutil.copy(html_src, output_dir / "regression_f1_bonferroni.html")
