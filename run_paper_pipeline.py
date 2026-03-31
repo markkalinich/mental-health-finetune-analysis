@@ -721,6 +721,12 @@ def run_pipeline(args: argparse.Namespace) -> int:
     logger.info(f"  Dry run:    {args.dry_run}")
     logger.info(f"  Output:     {MAIN_OUTPUT_DIR}")
     logger.info("")
+    logger.info("  Pinned task inputs (hardcoded — not configurable via CLI):")
+    for task_name, task_cfg in TASKS.items():
+        logger.info(f"    {task_cfg['short_name']}  statements: {task_cfg['input_data']}")
+        logger.info(f"    {task_cfg['short_name']}  prompt:     {task_cfg['prompt_file']}")
+    logger.info(f"    Models config: config/models_config.csv")
+    logger.info("")
     
     if args.dry_run:
         logger.info("  *** DRY RUN MODE - No changes will be made ***")

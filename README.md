@@ -28,29 +28,35 @@ flowchart TB
         cfg["Model list\n(config/models_config.csv)"]
     end
 
-    subgraph P1["Phase 1: Inference"]
-        lms["LM Studio\n(local API)"]
-        data --> lms
-        prompts --> lms
-        cfg --> lms
-        lms --> cache[("SQLite cache\n(cache/results.db)")]
-        lms --> runs["Timestamped runs\n(results/individual_prediction_performance/)"]
+    subgraph P1["Phase 1: Inference (per model × task)"]
+        data --> keygen["Compute cache key\n(model, prompt_hash, input_hash, params)"]
+        prompts --> keygen
+        cfg --> keygen
+        keygen --> check{{"Cache hit?"}}
+        check -->|"Yes"| cached_val["Use cached result"]
+        check -->|"No"| lms["LM Studio\n(local API)"]
+        lms --> store["Store in cache"]
+        store --> cache[("SQLite cache\n(cache/results.db)")]
+        cached_val --> analyze["batch_results_analyzer.py"]
+        store --> analyze
+        analyze --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/&lt;task&gt;/&lt;run_id&gt;/)"]
     end
 
     subgraph P2["Phase 2: Metrics rollup"]
-        runs --> per_task["per-task comprehensive_metrics.csv"]
+        runs --> per_task["per-task\ncomprehensive_metrics.csv"]
         per_task --> combine["combine_results.py"]
         combine --> combined["all_models_all_tasks.csv\n(data/inputs/model_results/)"]
     end
 
     subgraph P3["Phase 3: Figures and tables"]
-        combined --> figs["Figures 1–3, supplementary figures"]
+        combined --> figs["Figures 1–3,\nsupplementary figures"]
         combined --> tab1["Table 1 regression"]
-        cache -.->|"Guard: re-parse at load (task-aware F1)"| figs
-        cache -.->|"Guard: re-parse at load (task-aware F1)"| tab1
+        cache -.->|"Guard models:\nre-parse raw responses"| figs
+        cache -.->|"Guard models:\nre-parse raw responses"| tab1
     end
 
     style cache fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style check fill:#fff9c4,stroke:#f9a825,stroke-width:2px
 ```
 
 **Note:** The dashed edges reflect that guard-model corrections **read** cached raw responses in analysis code paths (not only at `combine_results` time). Exact behavior is documented under `results/revision_experiments/`.

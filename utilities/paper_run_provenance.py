@@ -102,6 +102,45 @@ def _input_entries(repo_root: Path, tasks_config: Dict[str, Dict[str, Any]]) -> 
     return out
 
 
+def _tasks_config_block(
+    repo_root: Path, tasks_config: Dict[str, Dict[str, Any]]
+) -> Dict[str, Any]:
+    """Structured record of each task's inputs with per-file hashes."""
+    out: Dict[str, Any] = {}
+    for task_name, cfg in tasks_config.items():
+        stmt_path = repo_root / cfg["input_data"]
+        prompt_path = repo_root / cfg["prompt_file"]
+        out[task_name] = {
+            "short_name": cfg.get("short_name"),
+            "statements_csv": str(stmt_path),
+            "statements_sha256": sha256_file(stmt_path),
+            "prompt_file": str(prompt_path),
+            "prompt_name": cfg.get("prompt_name"),
+            "prompt_sha256": sha256_file(prompt_path),
+        }
+    return out
+
+
+def _experiment_parameters() -> Dict[str, Any]:
+    """Record default experiment parameters used for inference.
+
+    These come from ``config.utils.EvaluationConfig`` defaults.  If a run
+    overrides them (not currently exposed in the paper pipeline CLI), update
+    this function to accept the actual values.
+    """
+    try:
+        from config.utils import EvaluationConfig
+
+        defaults = EvaluationConfig()
+        return {
+            "temperature": defaults.temperature,
+            "max_tokens": defaults.max_tokens,
+            "top_p": defaults.top_p,
+        }
+    except Exception:
+        return {"temperature": None, "max_tokens": None, "top_p": None}
+
+
 def _combine_results_block(task_dirs: Optional[Dict[str, Path]]) -> Dict[str, Any]:
     if not task_dirs:
         return {"tasks": {}}
@@ -164,6 +203,8 @@ def build_paper_run_provenance(
             k: str(v.resolve()) if v is not None else None
             for k, v in experiment_results.items()
         },
+        "tasks": _tasks_config_block(repo_root, tasks_config),
+        "experiment_parameters": _experiment_parameters(),
         "combine_results": _combine_results_block(task_dirs),
         "inputs": _input_entries(repo_root, tasks_config),
     }
