@@ -627,7 +627,8 @@ class ResultCache:
                     ck.prompt_version,
                     ck.temperature,
                     ck.max_tokens,
-                    cr.created_at
+                    cr.created_at,
+                    cr.raw_response
                 FROM cache_keys ck
                 JOIN cached_results cr ON ck.cache_id = cr.cache_id
                 JOIN input_texts it ON ck.input_hash = it.input_hash
@@ -647,7 +648,8 @@ class ResultCache:
                 'therapy_request_confidence', 'therapy_engagement_confidence',
                 'status', 'processing_time', 'replicate_index',
                 'model_family', 'model_size', 'model_version', 'model_full_name',
-                'prompt_name', 'prompt_version', 'temperature', 'max_tokens', 'created_at'
+                'prompt_name', 'prompt_version', 'temperature', 'max_tokens', 'created_at',
+                'raw_response',
             ])
         
         # Parse rows into records
@@ -676,7 +678,8 @@ class ResultCache:
                 'prompt_version': row[11],
                 'temperature': row[12],
                 'max_tokens': row[13],
-                'created_at': row[14]
+                'created_at': row[14],
+                'raw_response': row[15],
             }
             records.append(record)
         

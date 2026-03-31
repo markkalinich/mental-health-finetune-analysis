@@ -187,11 +187,6 @@ def load_unified_data(csv_path: str) -> pd.DataFrame:
     """Load the unified all_models_all_tasks.csv file."""
     df = pd.read_csv(csv_path)
     
-    # Recompute Llama Guard / Qwen Guard SI metrics from raw cache responses.
-    # ShieldGemma is excluded — standard pipeline metrics are already correct.
-    from facet_plot_utils import apply_all_guard_corrections
-    df = apply_all_guard_corrections(df)
-    
     # Add computed columns
     df['base_family'], df['version'] = zip(*df.apply(
         lambda r: determine_model_family_and_version(r['model_family'], r['model_size']), axis=1

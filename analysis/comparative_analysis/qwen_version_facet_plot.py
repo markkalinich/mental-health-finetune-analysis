@@ -20,7 +20,6 @@ from facet_plot_base import FacetPlotConfig, create_facet_plot
 from facet_plot_utils import (
     get_model_metadata,
     get_param_billions_from_config,
-    compute_qwen_guard_metrics,
 )
 
 
@@ -119,7 +118,6 @@ def get_qwen_config(figsize=(14, 18)) -> FacetPlotConfig:
             'Guard': 'Guard*',  # Asterisk indicates modified parsing
             'Mental Health': 'Mental Health',
         },
-        guard_metrics_fn=compute_qwen_guard_metrics,
         plot_name='Qwen',
     )
 

@@ -127,7 +127,6 @@ def get_gemma_config(figsize=(18, 18)) -> FacetPlotConfig:
             'ShieldGemma': 'ShieldGemma',
             'Mental Health': 'Mental Health',
         },
-        guard_metrics_fn=None,
         plot_name='Gemma',
     )
 

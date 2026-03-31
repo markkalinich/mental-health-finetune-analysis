@@ -22,7 +22,6 @@ import argparse
 from facet_plot_utils import (
     get_model_metadata,
     get_param_billions_from_config,
-    apply_all_guard_corrections,
     MODEL_TYPE_COLORS,
     MODEL_TYPE_MARKERS,
 )
@@ -141,11 +140,6 @@ def determine_model_type(family: str, size: str) -> str:
     return 'IT'
 
 
-def apply_safety_corrections(df: pd.DataFrame) -> pd.DataFrame:
-    """Apply guard corrections (delegates to canonical apply_all_guard_corrections)."""
-    return apply_all_guard_corrections(df)
-
-
 def create_all_families_f1_plot(metrics_csv: str, output_path: str, 
                                  figsize=(16, 10), title=None) -> None:
     """Create combined F1 facet plot for all model families.
@@ -157,9 +151,6 @@ def create_all_families_f1_plot(metrics_csv: str, output_path: str,
         title: Optional overall title for the plot
     """
     df = pd.read_csv(metrics_csv)
-    
-    # Apply guard corrections (Llama Guard + Qwen Guard, SI only)
-    df = apply_safety_corrections(df)
     
     # Add computed columns
     df['base_family'], df['version'] = zip(*df.apply(

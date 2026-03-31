@@ -61,18 +61,13 @@ FAMILY_LABELS = {'gemma': 'Gemma', 'llama': 'Llama', 'qwen': 'Qwen'}
 
 
 def load_data(apply_safety_corrections=False):
-    """Load config and results, optionally applying safety model corrections."""
+    """Load config and results.
+
+    Guard model metrics are now correct in the CSV (Phase 2 re-parsing),
+    so the apply_safety_corrections flag is accepted but ignored.
+    """
     config = pd.read_csv(ROOT / 'config/models_config.csv')
     results = pd.read_csv(ROOT / 'data/inputs/model_results/all_models_all_tasks.csv')
-    
-    if apply_safety_corrections:
-        sys.path.insert(0, str(ROOT / 'analysis' / 'comparative_analysis'))
-        try:
-            from facet_plot_utils import apply_all_guard_corrections
-            results = apply_all_guard_corrections(results)
-        except Exception as e:
-            print(f"Warning: Could not apply safety corrections: {e}")
-    
     return config, results
 
 

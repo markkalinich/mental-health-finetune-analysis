@@ -19,14 +19,12 @@ try:
         MODEL_TYPE_COLORS,
         MODEL_TYPE_MARKERS,
         MODEL_TYPE_DISPLAY_LABELS,
-        apply_guard_metrics_to_df,
     )
 except ImportError:
     from facet_plot_utils import (
         MODEL_TYPE_COLORS,
         MODEL_TYPE_MARKERS,
         MODEL_TYPE_DISPLAY_LABELS,
-        apply_guard_metrics_to_df,
     )
 
 
@@ -76,10 +74,6 @@ class FacetPlotConfig:
     type_markers: Dict[str, str] = field(default_factory=lambda: MODEL_TYPE_MARKERS.copy())
     type_display_labels: Dict[str, str] = field(default_factory=lambda: MODEL_TYPE_DISPLAY_LABELS.copy())
     
-    # Optional guard metrics computation
-    guard_metrics_fn: Optional[Callable[[], Dict]] = None
-    """Optional function to compute guard model metrics from cache."""
-    
     # Plot name for logging
     plot_name: str = "Facet Plot"
 
@@ -100,13 +94,6 @@ def create_facet_plot(
         title: Optional overall title for the plot
         show_summary: Whether to print summary of models per version
     """
-    # Apply guard metrics if function provided
-    if config.guard_metrics_fn is not None:
-        guard_metrics = config.guard_metrics_fn()
-        df = apply_guard_metrics_to_df(df, guard_metrics)
-        if guard_metrics:
-            print(f"Applied guard model corrections for {len(guard_metrics)} models")
-    
     # Filter to relevant models
     df = config.family_filter_fn(df).copy()
     

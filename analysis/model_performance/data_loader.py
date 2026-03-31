@@ -13,6 +13,7 @@ CRITICAL: This module ALWAYS loads LLM results from cache, never from CSV files.
 CSV files in data/model_outputs/ are for provenance only and are NOT data sources.
 """
 
+import json
 import pandas as pd
 from pathlib import Path
 from typing import List, Tuple
@@ -22,6 +23,88 @@ from orchestration.experiment_manager import ExperimentConfig, ModelConfig, Prom
 from config.utils import load_system_prompt, EvaluationConfig
 from config.experiment_config import get_experiment_config
 from utilities.category_validator import validate_prompt_config_match, CategoryValidationError
+
+GUARD_FAMILIES = frozenset(["llama_guard", "qwen_guard"])
+
+_GUARD_POSITIVE = {
+    "suicidal_ideation": ("safety_type", "passive_si"),
+    "therapy_request": ("therapy_request", "explicit_therapy_request"),
+    "therapy_engagement": ("therapy_engagement", "simulated_therapy"),
+}
+_GUARD_NEGATIVE = {
+    "suicidal_ideation": ("safety_type", "no_SI"),
+    "therapy_request": ("therapy_request", "declarative"),
+    "therapy_engagement": ("therapy_engagement", "non_therapeutic"),
+}
+
+
+def _parse_guard_binary(raw_response: str) -> int:
+    """Extract binary safe(0)/unsafe(1) from a guard model's raw API response."""
+    try:
+        data = json.loads(raw_response)
+        content = (
+            data.get("choices", [{}])[0]
+            .get("message", {})
+            .get("content", "")
+            .strip()
+        )
+    except (json.JSONDecodeError, TypeError):
+        return -1
+
+    lower = content.lower()
+
+    # Llama Guard: literal "safe" or "unsafe\n..."
+    if lower == "safe":
+        return 0
+    if lower.startswith("unsafe"):
+        return 1
+
+    # Qwen Guard: "Safety: Safe" / "Safety: Unsafe"
+    for line in content.split("\n"):
+        if line.startswith("Safety:"):
+            return 0 if "Safe" == line.replace("Safety:", "").strip() else 1
+
+    return -1
+
+
+def _reparse_guard_models(df: pd.DataFrame, experiment_type: str) -> pd.DataFrame:
+    """Re-parse guard model rows in-place using their native output format.
+
+    Guard models (Llama Guard, Qwen Guard) rigidly output plain text
+    (safe/unsafe) regardless of the task prompt, so standard JSON
+    validation marks them as parse_fail.  This function extracts the
+    binary prediction from raw_response and maps it to the task's
+    positive/negative category so metrics_calculator can score them
+    like any other model.
+    """
+    guard_mask = (
+        df["model_family"].isin(GUARD_FAMILIES) & (df["status"] == "parse_fail")
+    )
+    n_guard = guard_mask.sum()
+    if n_guard == 0:
+        return df
+
+    pred_field, pos_val = _GUARD_POSITIVE[experiment_type]
+    _, neg_val = _GUARD_NEGATIVE[experiment_type]
+
+    parsed = df.loc[guard_mask, "raw_response"].apply(_parse_guard_binary)
+
+    successful = parsed.isin([0, 1])
+    success_idx = parsed[successful].index
+
+    df.loc[success_idx, "status"] = "ok"
+    df.loc[success_idx, pred_field] = parsed[successful].map(
+        {1: pos_val, 0: neg_val}
+    )
+
+    n_ok = successful.sum()
+    n_fail = n_guard - n_ok
+    families = df.loc[guard_mask, "model_family"].unique().tolist()
+    print(
+        f"  Guard re-parse ({', '.join(families)}): "
+        f"{n_ok}/{n_guard} rows recovered, {n_fail} still failed"
+    )
+    return df
 
 
 def load_experiment_results(input_data_path: str, prompt_file_path: str, 
@@ -203,6 +286,10 @@ def load_experiment_results(input_data_path: str, prompt_file_path: str,
     # 5. Combine all model results
     results_df = pd.concat(all_model_results, ignore_index=True)
     print(f"Combined {len(results_df)} total results from {len(all_model_results)} models")
+
+    # 5b. Re-parse guard models (Llama Guard, Qwen Guard) from raw_response
+    results_df = _reparse_guard_models(results_df, experiment_type)
+    results_df.drop(columns=["raw_response"], inplace=True, errors="ignore")
     
     # 6. Join with ground truth labels
     # Create a mapping from input_text to ground truth

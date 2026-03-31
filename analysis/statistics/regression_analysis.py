@@ -124,28 +124,16 @@ def load_config() -> pd.DataFrame:
     return df
 
 
-def apply_safety_corrections(results_df: pd.DataFrame) -> pd.DataFrame:
-    """Apply safety model corrections for guard models (Llama Guard, Qwen Guard).
-
-    ShieldGemma is excluded — its standard pipeline metrics are already correct.
-    """
-    sys.path.insert(0, str(ROOT / 'analysis' / 'comparative_analysis'))
-    try:
-        from facet_plot_utils import apply_all_guard_corrections
-        results_df = apply_all_guard_corrections(results_df)
-    except Exception as e:
-        print(f"  Warning: Could not apply safety corrections: {e}")
-    return results_df
-
-
 def load_all_models_data() -> pd.DataFrame:
-    """Load all models performance data with safety corrections applied."""
+    """Load all models performance data.
+
+    Guard model metrics are now computed correctly in Phase 2
+    (data_loader re-parses their native output format), so no
+    post-hoc corrections are needed here.
+    """
     print("Loading performance data from all_models_all_tasks.csv...")
     results_df = pd.read_csv(ALL_MODELS_PATH)
     print(f"  Loaded {len(results_df)} rows")
-    
-    # Apply safety model corrections
-    results_df = apply_safety_corrections(results_df)
     
     return results_df
 

@@ -20,7 +20,6 @@ from facet_plot_base import FacetPlotConfig, create_facet_plot
 from facet_plot_utils import (
     get_model_metadata,
     get_param_billions_from_config,
-    compute_llama_guard_metrics,
 )
 
 
@@ -119,7 +118,6 @@ def get_llama_config(figsize=(16, 18)) -> FacetPlotConfig:
             'Guard': 'Guard*',  # Asterisk indicates modified parsing
             'Medical': 'Medical',
         },
-        guard_metrics_fn=compute_llama_guard_metrics,
         plot_name='Llama',
     )
 
