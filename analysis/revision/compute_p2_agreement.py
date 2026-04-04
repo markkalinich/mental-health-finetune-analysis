@@ -28,7 +28,7 @@ assert _te_mod.loader is not None
 _te_mod.loader.exec_module(_te)
 dedupe_by_conversation = _te.dedupe_by_conversation
 INTERMEDIATE = REPO_ROOT / "data" / "inputs" / "intermediate_files"
-DEFAULT_OUT = REPO_ROOT / "results" / "revision_experiments" / "p2_agreement_given_p1_exact_match.csv"
+DEFAULT_OUT = REPO_ROOT / "results" / "revision_experiments" / "interrater_reliability" / "p2_agreement_given_p1_exact_match.csv"
 
 
 def wilson_ci(successes: int, n: int, z: float = 1.96) -> tuple[float, float]:

@@ -2,17 +2,15 @@
 
 <!-- doc-verbosity: public-ready -->
 
-Which files does `run_paper_pipeline.py` actually need?  This audit traces
-every direct and transitive dependency so we can identify extraneous code
-before the public release.
+Which files are required to reproduce **all analyses** (pipeline, revision
+experiments, and supporting tools referenced in the README)?
 
-**Methodology:** Follow every `import`, `subprocess.run`, and `source`/call
-from `run_paper_pipeline.py` recursively.  Data files consumed at runtime are
-listed separately.
+**Methodology:** Trace every `import`, `subprocess.run`, and `source`/call
+from `run_paper_pipeline.py` and each standalone revision script recursively.
 
 ---
 
-## Files REQUIRED by `run_paper_pipeline.py`
+## Part A — Files required by `run_paper_pipeline.py`
 
 ### Entry point
 
@@ -55,6 +53,7 @@ listed separately.
 | `analysis/comparative_analysis/llama_version_facet_plot.py` | Supplementary |
 | `analysis/comparative_analysis/qwen_version_facet_plot.py` | Supplementary |
 | `analysis/revision/delta_parse_vs_delta_f1_scatter.py` | Revision Figure S10 |
+| `analysis/revision/compute_p2_agreement.py` | Revision: P2 agreement (in manuscript) |
 
 ### Shared modules (transitive imports of the above scripts)
 
@@ -64,6 +63,7 @@ listed separately.
 | `analysis/comparative_analysis/facet_plot_base.py` | gemma/llama/qwen facet plots |
 | `analysis/comparative_analysis/facet_plot_utils.py` | facet_plot_base, compact_unified, family plots |
 | `analysis/revision/__init__.py` | Package init |
+| `analysis/revision/therapy_engagement_conversations.py` | Imported by `compute_p2_agreement.py` |
 
 ### Phase 1 — experiment execution (via bash)
 
@@ -109,10 +109,12 @@ listed separately.
 | `data/inputs/finalized_input_data/SI_finalized_sentences.csv` | Phase 1 SI |
 | `data/inputs/finalized_input_data/therapy_request_finalized_sentences.csv` | Phase 1 TR |
 | `data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv` | Phase 1 TE |
+| `data/inputs/intermediate_files/*_psychiatrist_01_and_02_scores.csv` | `compute_p2_agreement.py` |
 | `data/prompts/system_suicide_detection_v2.txt` | Phase 1 SI |
 | `data/prompts/therapy_request_classifier_v3.txt` | Phase 1 TR |
 | `data/prompts/therapy_engagement_conversation_prompt_v2.txt` | Phase 1 TE |
 | `cache/results.db` | SQLite cache (Phase 1) |
+| `results/revision_experiments/fine_tune_subset_analysis/revised_table_s2.csv` | Copied to output |
 
 ### Support
 
@@ -120,121 +122,67 @@ listed separately.
 |------|------|
 | `requirements.txt` | Python dependencies |
 
-**Total: 46 code files + 9 data files + 1 support file.**
+---
+
+## Part B — Standalone revision scripts (not in pipeline, needed for reviewer response)
+
+These scripts produce results cited in the reviewer response letter.
+They are run independently and their outputs live in
+`results/revision_experiments/`.
+
+| File | Output | Description |
+|------|--------|-------------|
+| `analysis/revision/rank_finetune_performance.py` | `top_bottom_20pct_summary.csv`, ranked model CSVs | Top/bottom 20% ΔF1 analysis |
+| `analysis/revision/posthoc_merge_and_kappa.py` | `posthoc_kappa_merged.csv` | Post-hoc full-sample Cohen's κ |
+| `analysis/revision/compute_kappa_sensitivity.py` | `kappa_sensitivity_binary_keep_remove.csv` | Kappa sensitivity analysis |
+| `analysis/revision/compute_kappa_verbatim_bounds.py` | `kappa_verbatim_*.csv` | Kappa verbatim bounds |
 
 ---
 
-## Files NOT required by the pipeline
-
-### analysis/ — standalone or superseded scripts
+## Part C — Standalone tools (referenced in README)
 
 | File | Description |
 |------|-------------|
-| `analysis/finetune_comparison.py` | Older standalone finetune comparison |
-| `analysis/mental_health_delta_plot.py` | Standalone delta plot |
-| `analysis/mental_health_finetune_comparison.py` | Standalone MH comparison |
-| `analysis/comparative_analysis/all_families_f1_facet_plot.py` | Ad-hoc combined family plot |
-| `analysis/comparative_analysis/model_family_facet_plot.py` | Per-family facet (superseded) |
-| `analysis/model_performance/generate_correctness_matrices.py` | Standalone correctness matrix tool |
-| `analysis/model_performance/generate_model_statement_matrices.py` | Standalone statement matrix tool |
+| `utilities/build_manuscript_cache_subset.py` | Builds frozen manuscript cache for reproducibility |
+| `utilities/cache_qc_report.py` | Cache QC report |
+| `cache/cache_manager.py` | Cache statistics CLI (`python -m cache.cache_manager stats`) |
+| `data_preparation/create_si_intermediate_and_final_files.py` | SI ground-truth provenance |
+| `data_preparation/create_therapy_engagement_intermediate_and_final_files.py` | TE ground-truth provenance |
+| `data_preparation/create_therapy_request_intermediate_and_final_files.py` | TR ground-truth provenance |
 
-### analysis/revision/ — revision-era scripts not yet wired into pipeline
+---
 
-These are needed for the manuscript revision but are not currently called by
-`run_paper_pipeline.py`.  They should be integrated before the revision is
-finalized.
+## Dead code — safe to remove
 
-| File | Description |
-|------|-------------|
-| `analysis/revision/compute_kappa_sensitivity.py` | Kappa sensitivity analysis |
-| `analysis/revision/compute_kappa_verbatim_bounds.py` | Kappa verbatim bounds |
-| `analysis/revision/compute_p2_agreement.py` | Psychiatrist 2 agreement |
-| `analysis/revision/posthoc_merge_and_kappa.py` | Post-hoc merge and kappa |
-| `analysis/revision/therapy_engagement_conversations.py` | TE conversation analysis |
-| `analysis/revision/figure2_correction_overlay.py` | Correction overlay for Figure 2 (untracked) |
-| `analysis/revision/figure3_correction_panel.py` | Correction panel for Figure 3 (untracked) |
-| `analysis/revision/regression_correction_diff.py` | Regression correction diff (untracked) |
-
-### analysis/statistics/ — alternative table formatters
-
-| File | Description |
-|------|-------------|
-| `analysis/statistics/create_custom_tables.py` | Custom table formatter |
-| `analysis/statistics/create_simple_tables.py` | Simple table formatter |
-| `analysis/statistics/create_stargazer_tables.py` | Stargazer-style tables |
-| `analysis/statistics/format_regression_tables.py` | Alternative regression formatter |
-
-### bash_scripts/ — legacy or one-off
-
-| File | Description |
-|------|-------------|
-| `bash_scripts/model_registry_linux.sh` | Legacy model registry (pre-CSV config) |
-| `bash_scripts/model_registry_mac.sh` | Legacy model registry (pre-CSV config) |
+| File | Reason |
+|------|--------|
+| `analysis/finetune_comparison.py` | Superseded standalone |
+| `analysis/mental_health_delta_plot.py` | Superseded standalone |
+| `analysis/mental_health_finetune_comparison.py` | Superseded standalone |
+| `analysis/comparative_analysis/all_families_f1_facet_plot.py` | Ad-hoc; superseded by compact_unified |
+| `analysis/comparative_analysis/model_family_facet_plot.py` | Superseded by family-specific plots |
+| `analysis/model_performance/generate_correctness_matrices.py` | Standalone tool, unused |
+| `analysis/model_performance/generate_model_statement_matrices.py` | Standalone tool, unused |
+| `analysis/statistics/create_custom_tables.py` | Alternative formatter, unused |
+| `analysis/statistics/create_simple_tables.py` | Alternative formatter, unused |
+| `analysis/statistics/create_stargazer_tables.py` | Alternative formatter, unused |
+| `analysis/statistics/format_regression_tables.py` | Alternative formatter, unused |
+| `analysis/revision/figure2_correction_overlay.py` | One-off correction script |
+| `analysis/revision/figure3_correction_panel.py` | One-off correction script |
+| `analysis/revision/regression_correction_diff.py` | One-off correction diff |
+| `orchestration/experiment_orchestrator.py` | Dead code; nothing imports it |
+| `utilities/enrich_models_config.py` | One-off enrichment, unused |
+| `utilities/figure_provenance.py` | Unused tracker |
+| `utilities/query_guard_cache_outputs.py` | One-off debug tool |
+| `bash_scripts/model_registry_linux.sh` | Legacy (pre-CSV config) |
+| `bash_scripts/model_registry_mac.sh` | Legacy (pre-CSV config) |
 | `bash_scripts/run_therapy_request_after_engagement.sh` | One-off sequencing helper |
 
-### utilities/ — standalone tools
-
-| File | Description | Keep for README? |
-|------|-------------|------------------|
-| `utilities/build_manuscript_cache_subset.py` | Builds frozen manuscript cache | Yes (referenced in README "Reproducibility") |
-| `utilities/cache_qc_report.py` | Cache QC report | Yes (referenced in README and AGENTS.md) |
-| `utilities/enrich_models_config.py` | Enriches models_config.csv metadata | No |
-| `utilities/figure_provenance.py` | Figure-level provenance tracker | No |
-| `utilities/query_guard_cache_outputs.py` | Queries guard model cache outputs | No |
-
-### cache/ — standalone CLI
-
-| File | Description |
-|------|-------------|
-| `cache/cache_manager.py` | Standalone cache management (`python -m cache.cache_manager stats`) |
-
-### orchestration/ — unused orchestrator
-
-| File | Description |
-|------|-------------|
-| `orchestration/experiment_orchestrator.py` | Higher-level orchestrator (pipeline uses bash instead) |
-
-### data_preparation/ — one-time data prep (3 scripts)
-
-| File | Description |
-|------|-------------|
-| `data_preparation/create_si_intermediate_and_final_files.py` | SI data prep |
-| `data_preparation/create_therapy_engagement_intermediate_and_final_files.py` | TE data prep |
-| `data_preparation/create_therapy_request_intermediate_and_final_files.py` | TR data prep |
-
-### data/ — directories not read by the pipeline
+### Data directories not read by any analysis
 
 | Directory | Description |
 |-----------|-------------|
-| `data/inputs/intermediate_files/` | Intermediate psychiatrist scoring files |
 | `data/inputs/manifests/` | Selection manifests for data prep |
 | `data/inputs/manual_review/` | Raw psychiatrist review CSVs |
 | `data/inputs/raw_model_results/` | Pre-finalized model results |
 | `data/prompts/gemini_prompts/` | Gemini-specific prompts (unused) |
-| `data/revision_data/` | Revision data (P2 reviews, merged files, correction notes) |
-
-**Total NOT required: ~28 code files + ~6 data directories.**
-
----
-
-## Recommendations
-
-1. **Remove immediately (dead code):** `analysis/finetune_comparison.py`,
-   `analysis/mental_health_delta_plot.py`,
-   `analysis/mental_health_finetune_comparison.py`,
-   `analysis/comparative_analysis/all_families_f1_facet_plot.py`,
-   `analysis/comparative_analysis/model_family_facet_plot.py`,
-   `analysis/model_performance/generate_correctness_matrices.py`,
-   `analysis/model_performance/generate_model_statement_matrices.py`,
-   `orchestration/experiment_orchestrator.py`,
-   all 4 alternative table formatters in `analysis/statistics/`,
-   legacy bash registries, one-off bash helpers.
-
-2. **Integrate into pipeline before revision finalization:**
-   `analysis/revision/` scripts (kappa, P2 agreement, corrections).
-
-3. **Keep but do not wire into pipeline:**
-   `utilities/build_manuscript_cache_subset.py`,
-   `utilities/cache_qc_report.py`,
-   `cache/cache_manager.py` (referenced in README),
-   `data_preparation/` (provenance for ground-truth creation).

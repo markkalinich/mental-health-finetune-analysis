@@ -12,7 +12,7 @@ fine-tuning relative to other model characteristics on LLM safety performance
 2. Generate main figures (Figure 1, 2, 3)
 3. Generate main table (Table 1 - Multivariable Regression with Bonferroni correction)
 4. Generate supplementary figures (9 family×task facet plots; ΔF1 vs ΔParse Success (1))
-5. Generate revision figures (Figure S10 scatter + delta-parse facet)
+5. Generate revision outputs (Figure S10 scatter, delta-parse facet, P2 agreement, revised Table S2)
 
 Output Structure: 
     results/FINETUNE_PAPER_FIGURES/[YYYYMMDD]/
@@ -36,6 +36,9 @@ Output Structure:
         revision_figures/
             figure_s10_delta_parse_vs_delta_f1.png
             delta_parse_facet_plot.png
+        revision_data/
+            p2_agreement_given_p1_exact_match.csv
+            revised_table_s2.csv
         data/
             all_models_all_tasks.csv
             comprehensive_metrics_*.csv
@@ -67,6 +70,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Tuple, List, Dict
 import os
+import csv
 
 from analysis.combine_results import get_latest_experiment_dir
 from utilities.paper_run_provenance import write_paper_run_provenance
@@ -396,10 +400,17 @@ def generate_figure_1(logger: logging.Logger, dry_run: bool = False) -> bool:
         if src.exists():
             shutil.copy(src, dst)
             logger.info(f"  ✓ Saved: figure_1/{dst.name}")
-            return True
         else:
             logger.warning(f"  ⚠ Output not found: {src}")
             return False
+        
+        # Include the source data CSV used to generate Figure 1
+        config_csv = ROOT / "config" / "models_config.csv"
+        if config_csv.exists():
+            shutil.copy(config_csv, output_dir / "models_config.csv")
+            logger.info(f"  ✓ Saved: figure_1/models_config.csv (source data)")
+        
+        return True
     
     return False
 
@@ -425,19 +436,21 @@ def generate_figure_2(logger: logging.Logger, dry_run: bool = False) -> bool:
     success = run_python_script(script, args, logger, dry_run=dry_run)
     
     if success:
-        # Check for any generated plots
         plots = list(output_dir.glob("*.png"))
         
         if plots:
-            main_plot = output_dir / "f1_vs_params_overall_trend.png"
+            # The main figure stays in figure_2/; everything else moves to supplemental_plots/
+            main_plot_name = "fig2_f1_vs_params_overall_trend.png"
+            main_plot = output_dir / main_plot_name
             if main_plot.exists():
-                logger.info(f"  ✓ Saved: figure_2/{main_plot.name}")
+                logger.info(f"  ✓ Main figure: figure_2/{main_plot.name}")
             
-            # Also note that other variants were generated
-            logger.info("  ✓ Additional variants generated:")
-            for f in plots:
-                if f != main_plot:
-                    logger.info(f"      {f.name}")
+            supp_dir = output_dir / "supplemental_plots"
+            supp_dir.mkdir(exist_ok=True)
+            for f in sorted(output_dir.iterdir()):
+                if f.is_file() and f.name != main_plot_name:
+                    shutil.move(str(f), supp_dir / f.name)
+                    logger.info(f"      → supplemental_plots/{f.name}")
             
             return True
         else:
@@ -513,12 +526,82 @@ def generate_all_main_figures(logger: logging.Logger, dry_run: bool = False) -> 
 # Table Generation
 # =============================================================================
 
+def _build_f1_bonferroni_table(all_coeff_path: Path, output_path: Path,
+                               logger: logging.Logger) -> bool:
+    """Build the main Table 1 CSV: F1-only, Bonferroni-corrected, split columns.
+
+    Output columns per task:
+        <Task> β, <Task> 95% CI Lower, <Task> 95% CI Upper
+    Asterisks appear on the β value only (not the CI).
+    Fit statistics (R², Adj R², N) are appended as bottom rows.
+    """
+    import pandas as pd
+
+    df = pd.read_csv(all_coeff_path)
+    f1 = df[df["DV"] == "F1 Score"].copy()
+    if f1.empty:
+        logger.error("  ✗ No F1 Score rows in all_coefficients.csv")
+        return False
+
+    tasks = list(f1["Task"].unique())
+    variables = list(f1[~f1["Variable"].isin(["Intercept"])]["Variable"].unique())
+    variables = ["Intercept"] + [v for v in f1["Variable"].unique() if v != "Intercept"]
+
+    def _stars(p: float) -> str:
+        if p < 0.001:
+            return "***"
+        if p < 0.01:
+            return "**"
+        if p < 0.05:
+            return "*"
+        return ""
+
+    rows = []
+    for var in variables:
+        row = {"Variable": var}
+        for task in tasks:
+            sub = f1[(f1["Task"] == task) & (f1["Variable"] == var)]
+            if sub.empty:
+                row[f"{task} β"] = ""
+                row[f"{task} 95% CI Lower"] = ""
+                row[f"{task} 95% CI Upper"] = ""
+                continue
+            r = sub.iloc[0]
+            stars = _stars(r["p_bonferroni"])
+            row[f"{task} β"] = f"{r['β']:.3f}{stars}"
+            row[f"{task} 95% CI Lower"] = f"{r['Bonf CI Lower']:.3f}"
+            row[f"{task} 95% CI Upper"] = f"{r['Bonf CI Upper']:.3f}"
+        rows.append(row)
+
+    for stat_name, col_name in [("R²", "R²"), ("Adj R²", "Adj R²"), ("N", "N")]:
+        row = {"Variable": stat_name}
+        for task in tasks:
+            sub = f1[f1["Task"] == task].iloc[0]
+            if stat_name == "N":
+                row[f"{task} β"] = f"{int(sub[col_name])}"
+            else:
+                row[f"{task} β"] = f"{sub[col_name]:.3f}"
+            row[f"{task} 95% CI Lower"] = ""
+            row[f"{task} 95% CI Upper"] = ""
+        rows.append(row)
+
+    out_df = pd.DataFrame(rows)
+    col_order = ["Variable"]
+    for task in tasks:
+        col_order += [f"{task} β", f"{task} 95% CI Lower", f"{task} 95% CI Upper"]
+    out_df = out_df[col_order]
+    out_df.to_csv(output_path, index=False)
+    return True
+
+
 def generate_table_1(logger: logging.Logger, dry_run: bool = False) -> bool:
     """Generate Table 1: Regression Analysis (F1 only)."""
     log_section(logger, "PHASE 3: GENERATING TABLE 1 (REGRESSION)")
     
     output_dir = MAIN_OUTPUT_DIR / "table_1"
     output_dir.mkdir(parents=True, exist_ok=True)
+    supp_data_dir = output_dir / "supplemental_data"
+    supp_data_dir.mkdir(exist_ok=True)
     
     # Step 1: Run regression analysis
     log_subsection(logger, "Running regression analysis")
@@ -532,8 +615,8 @@ def generate_table_1(logger: logging.Logger, dry_run: bool = False) -> bool:
     else:
         logger.info(f"  [DRY RUN] Would run: {regression_script.name}")
     
-    # Step 2: Create formatted table (CSV)
-    log_subsection(logger, "Creating formatted regression table")
+    # Step 2: Create formatted tables (CSV + HTML)
+    log_subsection(logger, "Creating formatted regression tables")
     table_script = ROOT / "analysis" / "statistics" / "create_regression_tables.py"
     
     if not dry_run:
@@ -555,34 +638,40 @@ def generate_table_1(logger: logging.Logger, dry_run: bool = False) -> bool:
     else:
         logger.info(f"  [DRY RUN] Would run: {combined_script.name}")
     
-    # Copy files to table_1 subdirectory
     if dry_run:
         logger.info(f"  [DRY RUN] Would copy regression files to table_1/")
         return True
     
-    # Copy CSV files — raw (uncorrected) table
-    csv_src = RESULTS_DIR / "statistics" / "regression_table_combined.csv"
-    if csv_src.exists():
-        shutil.copy(csv_src, output_dir / "regression_f1.csv")
-        logger.info(f"  ✓ Saved: table_1/regression_f1.csv")
+    # ── Main table: F1-only, Bonferroni-corrected, split columns ──
+    log_subsection(logger, "Building F1 Bonferroni table (split columns)")
+    all_coeff_src = RESULTS_DIR / "statistics" / "all_coefficients.csv"
+    if all_coeff_src.exists():
+        main_csv = output_dir / "multivariable_regression_f1_bonferroni.csv"
+        ok = _build_f1_bonferroni_table(all_coeff_src, main_csv, logger)
+        if ok:
+            logger.info(f"  ✓ Saved: table_1/{main_csv.name}")
+        else:
+            logger.warning(f"  ⚠ Failed to build F1 Bonferroni table")
+    else:
+        logger.warning(f"  ⚠ Source not found: {all_coeff_src}")
     
-    # Bonferroni-corrected formatted table (same β [CI]* layout)
-    bonf_fmt_src = RESULTS_DIR / "statistics" / "regression_table_combined_bonferroni.csv"
-    if bonf_fmt_src.exists():
-        shutil.copy(bonf_fmt_src, output_dir / "regression_f1_bonferroni.csv")
-        logger.info(f"  ✓ Saved: table_1/regression_f1_bonferroni.csv")
+    # ── Supplemental data ──
+    # Full Bonferroni long-form results (all DVs) → supplemental_data/
+    bonf_src = RESULTS_DIR / "statistics" / "regression_table_combined_bonferroni.csv"
+    if bonf_src.exists():
+        shutil.copy(bonf_src, supp_data_dir / "all_regressions_all_results.csv")
+        logger.info(f"  ✓ Saved: table_1/supplemental_data/all_regressions_all_results.csv")
+    else:
+        alt_src = RESULTS_DIR / "statistics" / "all_coefficients_bonferroni.csv"
+        if alt_src.exists():
+            shutil.copy(alt_src, supp_data_dir / "all_regressions_all_results.csv")
+            logger.info(f"  ✓ Saved: table_1/supplemental_data/all_regressions_all_results.csv")
     
-    # Full long-form Bonferroni results (all DVs: F1 + Accuracy)
-    bonf_full_src = RESULTS_DIR / "statistics" / "all_coefficients_bonferroni.csv"
-    if bonf_full_src.exists():
-        shutil.copy(bonf_full_src, output_dir / "multivariate_regression_all_dvs_bonferroni.csv")
-        logger.info(f"  ✓ Saved: table_1/multivariate_regression_all_dvs_bonferroni.csv")
-    
-    # HTML table (Bonferroni-corrected, F1 only — for manuscript)
+    # HTML table → supplemental_data/
     html_src = RESULTS_DIR / "statistics" / "combined_regression_f1_score_bonferroni.html"
     if html_src.exists():
-        shutil.copy(html_src, output_dir / "regression_f1_bonferroni.html")
-        logger.info(f"  ✓ Saved: table_1/regression_f1_bonferroni.html")
+        shutil.copy(html_src, supp_data_dir / "all_regressions_all_results.html")
+        logger.info(f"  ✓ Saved: table_1/supplemental_data/all_regressions_all_results.html")
     else:
         logger.warning(f"  ⚠ HTML table not found: {html_src}")
     
@@ -657,6 +746,16 @@ def generate_supplementary_figures(
                     logger.warning(f"  ⚠ Failed to generate: {output_path.name}")
                     results.append(False)
     
+    # Move PDFs into a pdf_versions/ subdirectory
+    if not dry_run:
+        pdf_files = list(SUPP_OUTPUT_DIR.glob("*.pdf"))
+        if pdf_files:
+            pdf_dir = SUPP_OUTPUT_DIR / "pdf_versions"
+            pdf_dir.mkdir(exist_ok=True)
+            for pdf in pdf_files:
+                shutil.move(str(pdf), pdf_dir / pdf.name)
+            logger.info(f"  ✓ Moved {len(pdf_files)} PDFs → supplementary_figures/pdf_versions/")
+    
     # Summary
     logger.info("")
     success_count = sum(results)
@@ -666,18 +765,22 @@ def generate_supplementary_figures(
     return all(results)
 
 
-def generate_revision_figures(
+def generate_revision_outputs(
     logger: logging.Logger,
     dry_run: bool = False,
 ) -> bool:
-    """Generate revision-era supplementary figures (Figure S10 + delta-parse facet).
+    """Generate revision-era figures and data (Figure S10, delta-parse facet,
+    P2 agreement, revised Table S2).
 
-    These do not require per-task experiment dirs; they read from the combined CSV.
+    These do not require per-task experiment dirs; they read from the combined CSV
+    and intermediate psychiatrist score files.
     """
-    log_section(logger, "PHASE 5: GENERATING REVISION FIGURES")
+    log_section(logger, "PHASE 5: GENERATING REVISION OUTPUTS")
 
     revision_out = PAPER_FIGURES_BASE / "revision_figures"
     revision_out.mkdir(parents=True, exist_ok=True)
+    revision_data_out = PAPER_FIGURES_BASE / "revision_data"
+    revision_data_out.mkdir(parents=True, exist_ok=True)
 
     results = []
 
@@ -717,8 +820,42 @@ def generate_revision_figures(
             logger.warning("  ⚠ Failed to generate delta parse facet plot")
             results.append(False)
 
+    # --- P2 agreement (interrater reliability, cited in manuscript) ---
+    log_subsection(logger, "P2 agreement proportions")
+    p2_script = ROOT / "analysis" / "revision" / "compute_p2_agreement.py"
+    if dry_run:
+        logger.info("  [DRY RUN] Would generate P2 agreement CSV")
+        results.append(True)
+    else:
+        p2_ok = run_python_script(p2_script, [], logger)
+        src_csv = (ROOT / "results" / "revision_experiments"
+                   / "interrater_reliability" / "p2_agreement_given_p1_exact_match.csv")
+        if p2_ok and src_csv.exists():
+            dst = revision_data_out / "p2_agreement_given_p1_exact_match.csv"
+            shutil.copy(src_csv, dst)
+            logger.info(f"  ✓ Saved: revision_data/{dst.name}")
+            results.append(True)
+        else:
+            logger.warning("  ⚠ Failed to generate P2 agreement CSV")
+            results.append(False)
+
+    # --- Revised Table S2 (copy into pipeline output) ---
+    log_subsection(logger, "Revised Table S2")
+    table_s2_src = ROOT / "results" / "revision_experiments" / "fine_tune_subset_analysis" / "revised_table_s2.csv"
+    if dry_run:
+        logger.info("  [DRY RUN] Would copy revised_table_s2.csv")
+        results.append(True)
+    else:
+        if table_s2_src.exists():
+            shutil.copy(table_s2_src, revision_data_out / "revised_table_s2.csv")
+            logger.info(f"  ✓ Saved: revision_data/revised_table_s2.csv")
+            results.append(True)
+        else:
+            logger.warning(f"  ⚠ Not found: {table_s2_src}")
+            results.append(False)
+
     success_count = sum(results)
-    logger.info(f"\nRevision figures: {success_count}/{len(results)} generated successfully")
+    logger.info(f"\nRevision outputs: {success_count}/{len(results)} generated successfully")
     return all(results)
 
 
@@ -865,9 +1002,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
             logger.info("")
             logger.info("⏭  Skipping supplementary figures")
 
-        # Phase 5: Revision figures (S10 scatter + delta-parse facet)
+        # Phase 5: Revision outputs (figures + data)
         if not args.table_only and not args.skip_supplementary:
-            if not generate_revision_figures(logger, args.dry_run):
+            if not generate_revision_outputs(logger, args.dry_run):
                 success = False
         else:
             logger.info("")
