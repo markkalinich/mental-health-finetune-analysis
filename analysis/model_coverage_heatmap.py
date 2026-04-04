@@ -1,10 +1,9 @@
 """
-Model Coverage Heatmap Visualization
+Model Coverage Heatmap Visualization (Figure 1)
 
 Creates heatmaps showing model availability across fine-tuning types and model sizes.
-Designed to help understand which models are available for psychiatry AI safety research.
 
-Author: Safety Simulations Team
+Author: Mark Kalinich (with significant assistance from Cursor models)
 """
 
 import pandas as pd

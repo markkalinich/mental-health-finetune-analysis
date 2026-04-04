@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
-Paper Pipeline - Generate All Figures and Tables for Publication
+Paper Pipeline - Generate All Figures and Tables for Manuscript Revisions
 
 This script orchestrates the complete pipeline for generating all figures
-and tables needed for the paper:
+and tables needed for the paper: Evaluating the effect of mental health 
+fine-tuning relative to other model characteristics on LLM safety performance
 
 1. Run experiments for all 3 tasks (Suicidal Ideation, Therapy Request, Therapy Engagement)
    - Uses cached results where available
    - Retries api_error entries automatically (include_errors=False in cache check)
 2. Generate main figures (Figure 1, 2, 3)
-3. Generate main table (Table 1 - regression with Bonferroni correction)
-4. Generate supplementary figures (9 family×task facet plots)
+3. Generate main table (Table 1 - Multivariable Regression with Bonferroni correction)
+4. Generate supplementary figures (9 family×task facet plots; ΔF1 vs ΔParse Success (1))
 5. Generate revision figures (Figure S10 scatter + delta-parse facet)
 
-Output Structure:
+Output Structure: 
     results/FINETUNE_PAPER_FIGURES/[YYYYMMDD]/
         figure_1/
             model_coverage_facet.png
@@ -54,7 +55,7 @@ Usage:
         --table-only          Only generate table, skip figures
         --dry-run             Show what would be done without executing
 
-Author: Mark Kalinich
+Author: Mark Kalinich (with significant assistance from Cursor models)
 """
 
 import subprocess

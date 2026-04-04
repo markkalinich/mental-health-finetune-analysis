@@ -1,17 +1,15 @@
-# Mental Health Fine-Tuning Analysis: LLM Safety Classification
+# Evaluating the relative impact of model scale, architecture, and fine-tuning on mental health–related safety classification tasks in open-source large language models
 
 Code and analysis pipeline for **[Evaluating the effect of mental health fine-tuning relative to other model characteristics on LLM safety performance](https://www.medrxiv.org/content/10.64898/2026.01.02.25343289v1)** (medRxiv preprint).
 
 ## What this project does
 
-Large language models are increasingly deployed in mental health contexts, but it is unclear whether mental health–specific fine-tuning improves safety-relevant classification beyond what you get from model scale, architecture generation, or instruction tuning alone. We evaluated **127 open-source models** (Gemma, LLaMA, Qwen; ~270M–70B parameters) on three psychiatrist-reviewed synthetic classification tasks, comparing base, instruction-tuned, medical, mental health, and safety-oriented fine-tunes.
+Large language models are increasingly deployed in mental health contexts, but it is unclear whether mental health–specific fine-tuning improves safety-relevant classification beyond gains from model scale, architecture generation, or instruction tuning alone. We evaluated **127 open-source models** (Gemma, LLaMA, Qwen; ~270M–70B parameters) on three psychiatrist-reviewed synthetic classification tasks, comparing base models against models fine-tuned for: instruction following; medical literature; mental health tasks; detection of unsafe conversations.  
 
 **Tasks:**
-1. **Suicidal ideation detection** — classify statements for presence/absence of passive suicidal ideation (450 items, 10 categories)
-2. **Therapy request classification** — distinguish explicit therapy requests from declarative statements (780 items, 12 categories)
-3. **Therapy engagement detection** — identify simulated therapy in multi-turn conversations (420 items, 13 categories)
-
-**Key finding:** Mental health–specific fine-tuning did not consistently improve safety classification performance relative to other model characteristics.
+1. **Suicidal ideation detection** — classify statements for presence/absence of  suicidal ideation (450 items, 10 categories)
+2. **Therapy request classification** — classify statements for presence/absence of explicit therapy requests (780 items, 12 categories)
+3. **Therapy engagement detection** — classify statements for presence/absence of simulated therapy in multi-turn conversations (420 items, 13 categories)
 
 ## Data flow
 
@@ -61,7 +59,7 @@ flowchart TB
     style guardcheck fill:#fff9c4,stroke:#f9a825,stroke-width:2px
 ```
 
-**\*Schema validation note:** Llama Guard and Qwen Guard are fine-tuned to rigidly output plain text (`safe`/`unsafe`) regardless of the task prompt, so they fail standard JSON validation. At analysis time (Phase 2), their native output is re-parsed from `raw_response` and mapped to each task's binary classification (`unsafe` → positive category). ShieldGemma outputs standard task JSON and passes validation normally. See `analysis/model_performance/data_loader.py`.
+**\*Schema validation note:** Llama Guard and Qwen Guard have been explicitly tuned to rigidly output plain text (`safe`/`unsafe`) regardless of the task prompt, so they fail the initial JSON validation. At analysis time (Phase 2), their native output is re-parsed from `raw_response` and mapped to each task's binary classification (`unsafe` → positive category). ShieldGemma outputs standard task JSON and passes validation normally. See `analysis/model_performance/data_loader.py`.
 
 ## Quick start
 
@@ -113,10 +111,10 @@ Each run also writes a `PROVENANCE.json` recording the git commit, cache hash, i
 | Artifact | Description | Primary script(s) |
 |----------|-------------|-------------------|
 | **Figure 1** | Model coverage heatmap | `analysis/model_coverage_heatmap.py` |
-| **Figure 2** | F1 vs parameters (trends) | `analysis/comparative_analysis/compact_unified_facet_plot.py` |
-| **Figure 3** | Δ fine-tune F1 (paired base vs fine-tune) | `analysis/combined_finetune_facet_plot.py` |
-| **Table 1** | Regression with Bonferroni correction | `analysis/statistics/regression_analysis.py`, `create_*_tables.py` |
-| **Supplementary** | Family × task facet plots (9) | `analysis/comparative_analysis/{gemma,llama,qwen}_version_facet_plot.py` |
+| **Figure 2** | F1 vs parameter count | `analysis/comparative_analysis/compact_unified_facet_plot.py` |
+| **Figure 3** | ΔF1 Pre/Post-Fine-Tuning | `analysis/combined_finetune_facet_plot.py` |
+| **Table 1** | Multivariable Regression (F1 dependent variable) | `analysis/statistics/regression_analysis.py`, `create_*_tables.py` |
+| **Supplementary** | Family × task facet plots (9); ΔF1 vs ΔParse Success (1) | `analysis/comparative_analysis/{gemma,llama,qwen}_version_facet_plot.py` |
 
 ## Repository structure
 

@@ -1,6 +1,6 @@
 # Agent instructions (short)
 
-Read this file **before** doing substantive work in this repo.
+Read this file **before** doing ANY work in this repo.
 
 Before running Python in this repository:
 
