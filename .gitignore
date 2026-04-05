@@ -1,6 +1,9 @@
 
 *~
 analysis.log
+
+# Archived dead code (kept in private repo only)
+**/zArchive/
 *.bin
 # Cache database files
 cache/*.db
