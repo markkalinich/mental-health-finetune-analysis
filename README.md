@@ -41,7 +41,7 @@ flowchart TB
         reparse --> classify
         data -.-> classify
         classify --> metrics["comprehensive_metrics.csv\n(per-model F1, accuracy,\nsensitivity, specificity)"]
-        metrics --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/&lt;task&gt;/&lt;run_id&gt;/)"]
+        metrics --> runs["Timestamped run dir\n(results/individual_prediction_\nperformance/TASK/RUN_ID/)"]
     end
 
     subgraph P3["Phase 3: Combine"]
