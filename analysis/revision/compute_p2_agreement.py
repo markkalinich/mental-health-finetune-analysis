@@ -82,31 +82,22 @@ def main() -> None:
     sub = [r for r in rows if r.get("Psychiatrist_01") == "KEPT_exact_match"]
     n = len(sub)
 
-    for label, pred in [
-        (
-            "P2 not removed (KEPT_exact_match or KEPT_with_changes)",
-            lambda r: r.get("Psychiatrist_02") in ("KEPT_exact_match", "KEPT_with_changes"),
-        ),
-        (
-            'P2 exact match only (parallel to SI/TR "KEPT as-is")',
-            lambda r: r.get("Psychiatrist_02") == "KEPT_exact_match",
-        ),
-    ]:
-        agree = sum(1 for r in sub if pred(r))
-        lo, hi = wilson_ci(agree, n)
-        rows_out.append(
-            {
-                "dataset": "Therapy engagement",
-                "subset": "Psychiatrist_01 == KEPT_exact_match; analysis unit = conversation (deduped by Example_ID)",
-                "n": n,
-                "definition_positive_P2": label,
-                "n_positive": agree,
-                "proportion": round(agree / n, 6) if n else 0.0,
-                "ci95_lower": round(lo, 6),
-                "ci95_upper": round(hi, 6),
-                "method": "Wilson score interval, z=1.96",
-            }
-        )
+    # Stringent criterion only: P2 == KEPT_exact_match, parallel to SI/TR
+    agree = sum(1 for r in sub if r.get("Psychiatrist_02") == "KEPT_exact_match")
+    lo, hi = wilson_ci(agree, n)
+    rows_out.append(
+        {
+            "dataset": "Therapy engagement",
+            "subset": "Psychiatrist_01 == KEPT_exact_match; analysis unit = conversation (deduped by Example_ID)",
+            "n": n,
+            "definition_positive_P2": "Psychiatrist_02 == KEPT_exact_match",
+            "n_positive": agree,
+            "proportion": round(agree / n, 6) if n else 0.0,
+            "ci95_lower": round(lo, 6),
+            "ci95_upper": round(hi, 6),
+            "method": "Wilson score interval, z=1.96",
+        }
+    )
 
     DEFAULT_OUT.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = list(rows_out[0].keys())

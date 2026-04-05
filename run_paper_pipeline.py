@@ -415,6 +415,32 @@ def generate_figure_1(logger: logging.Logger, dry_run: bool = False) -> bool:
     return False
 
 
+def _build_figure2_params_summary(
+    supp_dir: Path, output_dir: Path, logger: logging.Logger,
+) -> None:
+    """Extract F1-vs-params regression rows with ×9 Bonferroni into a summary CSV."""
+    import pandas as pd
+    src = supp_dir / "fig2_regression_statistics.csv"
+    if not src.exists():
+        logger.warning("  ⚠ fig2_regression_statistics.csv not found; skipping summary")
+        return
+    df = pd.read_csv(src)
+    sub = df[(df["plot_type"] == "f1_vs_params_overall_trend") &
+             (df["trendline_type"] == "overall")].copy()
+    if sub.empty:
+        return
+    N_BONF = 9
+    sub["p_adjusted"] = (sub["p_value"] * N_BONF).clip(upper=1.0)
+    sub["significant_bonferroni"] = sub["p_adjusted"] < 0.05
+    out = sub[["family", "task", "n_points", "r_squared", "slope",
+               "p_value", "p_adjusted", "significant_bonferroni"]].copy()
+    out["r_squared"] = out["r_squared"].round(4)
+    out["slope"] = out["slope"].round(4)
+    dst = output_dir / "figure_2_f1_vs_params_summary.csv"
+    out.to_csv(dst, index=False)
+    logger.info(f"  ✓ Saved: figure_2/{dst.name}")
+
+
 def generate_figure_2(logger: logging.Logger, dry_run: bool = False) -> bool:
     """Generate Figure 2: F1 vs Parameters with Overall Trend."""
     log_subsection(logger, "Figure 2: F1 vs Parameters (Overall Trend)")
@@ -452,6 +478,7 @@ def generate_figure_2(logger: logging.Logger, dry_run: bool = False) -> bool:
                     shutil.move(str(f), supp_dir / f.name)
                     logger.info(f"      → supplemental_plots/{f.name}")
             
+            _build_figure2_params_summary(supp_dir, output_dir, logger)
             return True
         else:
             logger.warning(f"  ⚠ No plots generated")
@@ -528,12 +555,11 @@ def generate_all_main_figures(logger: logging.Logger, dry_run: bool = False) -> 
 
 def _build_f1_bonferroni_table(all_coeff_path: Path, output_path: Path,
                                logger: logging.Logger) -> bool:
-    """Build the main Table 1 CSV: F1-only, Bonferroni-corrected, split columns.
+    """Build the main Table 1 CSV: F1-only, Bonferroni-corrected.
 
-    Output columns per task:
-        <Task> β, <Task> 95% CI Lower, <Task> 95% CI Upper
-    Asterisks appear on the β value only (not the CI).
-    Fit statistics (R², Adj R², N) are appended as bottom rows.
+    Output columns: Variable, SI-β, SI-95% CI, TR-β, TR-95% CI, TE-β, TE-95% CI
+    Asterisks on β only; CI as [lower, upper] in a single cell.
+    Fit statistics (R², Adj R², N) appended as bottom rows.
     """
     import pandas as pd
 
@@ -543,9 +569,18 @@ def _build_f1_bonferroni_table(all_coeff_path: Path, output_path: Path,
         logger.error("  ✗ No F1 Score rows in all_coefficients.csv")
         return False
 
-    tasks = list(f1["Task"].unique())
-    variables = list(f1[~f1["Variable"].isin(["Intercept"])]["Variable"].unique())
-    variables = ["Intercept"] + [v for v in f1["Variable"].unique() if v != "Intercept"]
+    TASK_ORDER = ["Suicidal Ideation", "Therapy Request", "Therapy Engagement"]
+    TASK_SHORT = {"Suicidal Ideation": "SI", "Therapy Request": "TR",
+                  "Therapy Engagement": "TE"}
+    VAR_ORDER = [
+        "Intercept", "Version: 2", "Version: 3", "Version: 4",
+        "Parameter Size (B)",
+        "Fine-Tune Type: Instruction-Tuned",
+        "Fine-Tune Type: Mental Health Tuned",
+        "Fine-Tune Type: Medical-Tuned",
+        "Fine-Tune Type: Safety-Tuned",
+        "Family: LLaMA", "Family: Qwen",
+    ]
 
     def _stars(p: float) -> str:
         if p < 0.001:
@@ -557,38 +592,37 @@ def _build_f1_bonferroni_table(all_coeff_path: Path, output_path: Path,
         return ""
 
     rows = []
-    for var in variables:
+    for var in VAR_ORDER:
         row = {"Variable": var}
-        for task in tasks:
+        for task in TASK_ORDER:
+            t = TASK_SHORT[task]
             sub = f1[(f1["Task"] == task) & (f1["Variable"] == var)]
             if sub.empty:
-                row[f"{task} β"] = ""
-                row[f"{task} 95% CI Lower"] = ""
-                row[f"{task} 95% CI Upper"] = ""
+                row[f"{t}-β"] = ""
+                row[f"{t}-95% CI"] = ""
                 continue
             r = sub.iloc[0]
             stars = _stars(r["p_bonferroni"])
-            row[f"{task} β"] = f"{r['β']:.3f}{stars}"
-            row[f"{task} 95% CI Lower"] = f"{r['Bonf CI Lower']:.3f}"
-            row[f"{task} 95% CI Upper"] = f"{r['Bonf CI Upper']:.3f}"
+            row[f"{t}-β"] = f"{r['β']:.3f}{stars}"
+            row[f"{t}-95% CI"] = f"[{r['Bonf CI Lower']:.3f}, {r['Bonf CI Upper']:.3f}]"
         rows.append(row)
 
     for stat_name, col_name in [("R²", "R²"), ("Adj R²", "Adj R²"), ("N", "N")]:
         row = {"Variable": stat_name}
-        for task in tasks:
+        for task in TASK_ORDER:
+            t = TASK_SHORT[task]
             sub = f1[f1["Task"] == task].iloc[0]
             if stat_name == "N":
-                row[f"{task} β"] = f"{int(sub[col_name])}"
+                row[f"{t}-β"] = f"{int(sub[col_name])}"
             else:
-                row[f"{task} β"] = f"{sub[col_name]:.3f}"
-            row[f"{task} 95% CI Lower"] = ""
-            row[f"{task} 95% CI Upper"] = ""
+                row[f"{t}-β"] = f"{sub[col_name]:.3f}"
+            row[f"{t}-95% CI"] = ""
         rows.append(row)
 
     out_df = pd.DataFrame(rows)
     col_order = ["Variable"]
-    for task in tasks:
-        col_order += [f"{task} β", f"{task} 95% CI Lower", f"{task} 95% CI Upper"]
+    for t in TASK_SHORT.values():
+        col_order += [f"{t}-β", f"{t}-95% CI"]
     out_df = out_df[col_order]
     out_df.to_csv(output_path, index=False)
     return True
