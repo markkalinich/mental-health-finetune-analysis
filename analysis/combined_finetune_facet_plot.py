@@ -280,7 +280,7 @@ def _generate_facet_grid(
 
             if col_idx == 0:
                 ax.set_ylabel(f'{ft_config["label"]}\n{y_label}', fontsize=19)
-                panel_label = chr(65 + row_idx)
+                panel_label = chr(97 + row_idx)  # a, b, c, d for fine-tune rows
                 ax.text(-0.18, 1.08, panel_label, transform=ax.transAxes,
                        fontsize=26, fontweight='bold', va='top', ha='left')
 
@@ -297,7 +297,7 @@ def _generate_facet_grid(
     plt.subplots_adjust(hspace=0.25, wspace=0.15)
 
     out_png.parent.mkdir(exist_ok=True, parents=True)
-    plt.savefig(out_png, dpi=150, bbox_inches='tight')
+    plt.savefig(out_png, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"\nSaved: {out_png}")
 

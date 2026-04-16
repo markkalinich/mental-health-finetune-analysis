@@ -407,7 +407,25 @@ def create_facet_plot(
                        fontsize=11, 
                        verticalalignment='top',
                        horizontalalignment='left')
-    
+
+    # Subpanel letters (one per model-family row), upper-left of left column — matches Figure 1
+    row_panel_labels = {"gemma": "a", "llama": "b", "qwen": "c"}
+    for fam_idx, family in enumerate(FAMILIES):
+        ax_first = axes[fam_idx, 0]
+        panel_letter = row_panel_labels.get(family, chr(ord("a") + fam_idx))
+        ax_first.annotate(
+            panel_letter,
+            xy=(0, 1),
+            xycoords="axes fraction",
+            xytext=(-6, 10),
+            textcoords="offset points",
+            fontsize=16,
+            fontweight="bold",
+            ha="right",
+            va="bottom",
+            clip_on=False,
+        )
+
     # Add legend
     _add_legend(fig, config)
     

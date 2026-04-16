@@ -2,6 +2,10 @@
 """
 Verify every numeric claim in the manuscript against pipeline output data.
 
+All numeric assertions use **strict equality** after rounding the pipeline
+value to the precision implied by the manuscript literal (typically 2
+decimals for β and R²; 1 decimal for percentages in clinician concordance).
+
 Reads from the latest FINETUNE_PAPER_FIGURES run and writes a Markdown
 report with PASS/FAIL for each extracted numeric assertion.
 
@@ -21,15 +25,17 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-TOLERANCE = 0.015
 TASK_SHORT = {"Suicidal Ideation": "SI", "Therapy Request": "TR",
               "Therapy Engagement": "TE"}
 
 
-def _close(actual: float, claimed: float, tol: float = TOLERANCE) -> bool:
+def _exact_rounded(actual: float, claimed: float, decimals: int) -> bool:
+    """Strict: round(actual, decimals) must equal round(claimed, decimals)."""
     if pd.isna(actual) or not np.isfinite(actual):
         return False
-    return abs(actual - claimed) <= tol
+    if pd.isna(claimed) or not np.isfinite(float(claimed)):
+        return False
+    return round(float(actual), decimals) == round(float(claimed), decimals)
 
 
 def _sig_match(actual_p: float, claimed_bucket: str) -> bool:
@@ -112,11 +118,11 @@ def verify_clinician_concordance(run_dir: Path, rpt: Report):
 
         rpt.check(f"{label}: n", a_n == c_n, str(a_n), str(c_n))
         rpt.check(f"{label}: n_positive", a_pos == c_pos, str(a_pos), str(c_pos))
-        rpt.check(f"{label}: proportion %", _close(a_pct, c_pct, 0.1),
+        rpt.check(f"{label}: proportion %", _exact_rounded(a_pct, c_pct, 1),
                   f"{a_pct}%", f"{c_pct}%")
-        rpt.check(f"{label}: CI lower", _close(a_lo, c_ci_lo, 0.15),
+        rpt.check(f"{label}: CI lower", _exact_rounded(a_lo, c_ci_lo, 1),
                   f"{a_lo}%", f"{c_ci_lo}%")
-        rpt.check(f"{label}: CI upper", _close(a_hi, c_ci_hi, 0.15),
+        rpt.check(f"{label}: CI upper", _exact_rounded(a_hi, c_ci_hi, 1),
                   f"{a_hi}%", f"{c_ci_hi}%")
 
 
@@ -126,20 +132,23 @@ def verify_clinician_concordance(run_dir: Path, rpt: Report):
 def verify_figure2(run_dir: Path, rpt: Report):
     rpt.section("Figure 2 — F1 vs Parameters")
     rpt.quote(
-        "Linear regression on log-transformed parameter counts revealed "
-        "significant positive associations for six of nine family-task "
-        "combinations after Bonferroni correction for multiple hypothesis "
-        "testing. Gemma models showed the most consistent scaling benefits, "
-        "with significant improvements across all three classification tasks: "
-        "suicidal ideation (R² = 0.26, padjusted < 0.01), therapy request "
-        "(R² = 0.23, padjusted < 0.01), and therapy engagement (R² = 0.27, "
-        "padjusted < 0.01). Qwen models exhibited the strongest parameter "
-        "scaling effect for suicidal ideation detection (R² = 0.32, padjusted "
-        "< 0.01), while LLaMA models showed significant improvement only for "
-        "therapy request classification (R² = 0.31, padjusted < 0.05). The "
-        "remaining three family-task combinations (LLaMA suicidal ideation and "
-        "therapy engagement, Qwen therapy request) showed positive but "
-        "non-significant trends."
+        "In order to discern general trends in the dataset, F1 score for each of "
+        "the three prediction tasks was plotted against model parameter size and "
+        "segmented by model family (Figure 2). Linear regression on log-transformed "
+        "parameter counts revealed significant positive associations for six of "
+        "nine family-task combinations after Bonferroni correction for multiple "
+        "hypothesis testing. Gemma models showed the most consistent scaling "
+        "benefits, with significant improvements across all three classification "
+        "tasks: suicidal ideation (R² = 0.26, padjusted < 0.01), therapy request "
+        "(R² = 0.22, padjusted < 0.01), and therapy engagement (R² = 0.29, "
+        "padjusted < 0.01). Qwen models exhibited the strongest parameter scaling "
+        "effect for suicidal ideation detection (R² = 0.32, padjusted < 0.01), "
+        "while LLaMA models showed significant improvement only for therapy "
+        "request classification (R² = 0.31, padjusted < 0.05). The remaining three "
+        "family-task combinations (LLaMA suicidal ideation and therapy engagement, "
+        "Qwen therapy request) showed positive but non-significant trends. "
+        "Detailed performance characteristics for each classification task can be "
+        "found in Figures S1-9."
     )
     df = pd.read_csv(
         run_dir / "figure_2" / "supplemental_plots" / "fig2_regression_statistics.csv")
@@ -150,8 +159,8 @@ def verify_figure2(run_dir: Path, rpt: Report):
 
     claims_sig = [
         ("gemma", "suicidal_ideation", 0.26, "< .01"),
-        ("gemma", "therapy_request", 0.23, "< .01"),
-        ("gemma", "therapy_engagement", 0.27, "< .01"),
+        ("gemma", "therapy_request", 0.22, "< .01"),
+        ("gemma", "therapy_engagement", 0.29, "< .01"),
         ("qwen", "suicidal_ideation", 0.32, "< .01"),
         ("llama", "therapy_request", 0.31, "< .05"),
     ]
@@ -166,7 +175,7 @@ def verify_figure2(run_dir: Path, rpt: Report):
         p_adj = min(row["p_value"] * N_BONF, 1.0)
         label = f"{fam_names[fam]}: {task_names[task]}"
 
-        rpt.check(f"{label}: R²={c_r2}", _close(a_r2, c_r2, 0.02),
+        rpt.check(f"{label}: R²={c_r2}", _exact_rounded(row["r_squared"], c_r2, 2),
                   f"R²={a_r2}", f"R²={c_r2}")
         rpt.check(f"{label}: p {c_sig}", _sig_match(p_adj, c_sig),
                   f"p_adj={p_adj:.4f}", c_sig)
@@ -191,16 +200,19 @@ def verify_figure2(run_dir: Path, rpt: Report):
 def verify_table1(run_dir: Path, rpt: Report):
     rpt.section("Table 1 — Regression Coefficients")
     rpt.quote(
-        "Newer model architecture versions demonstrated a statistically "
+        "To quantitatively estimate the relative independent contributions of "
+        "model family, model version, fine-tuning, and model parameter size to "
+        "model performance, multivariable linear regression was performed "
+        "(Table 1). Newer model architecture versions demonstrated a statistically "
         "significant association with model performance (F1 score) across all "
         "tasks. Although Version 2 models only showed a significant difference "
         "relative to Version 1 for therapy request (β = 0.31, padjusted < .05) "
         "and therapy engagement detection (β = 0.34, padjusted < .05), Version 3 "
         "models showed significantly higher F1 scores for suicidal ideation "
-        "detection (β = 0.36, padjusted < .001), therapy request detection "
+        "detection (β = 0.35, padjusted < .001), therapy request detection "
         "(β = 0.35, padjusted < .001), and therapy engagement detection "
         "(β = 0.37, padjusted < .001) relative to Version 1. Version 4 models "
-        "demonstrated even larger improvements (suicidal ideation: β = 0.52, "
+        "demonstrated even larger improvements (suicidal ideation: β = 0.53, "
         "p < .01; therapy request: β = 0.59, p < .001; therapy engagement: "
         "β = 0.62, padjusted < .001). The number of parameters in the model was "
         "significant for SI and therapy-request detection, but not for "
@@ -214,7 +226,7 @@ def verify_table1(run_dir: Path, rpt: Report):
         "significant improvements. Model family (LLaMA vs. Gemma, Qwen vs. "
         "Gemma) generally did not significantly predict performance, with the "
         "exception of LLaMA showing lower therapy request F1 scores compared to "
-        "Gemma (β = -0.22, p < .05)."
+        "Gemma (β = -0.24, p < .05)."
     )
     coeff = pd.read_csv(ROOT / "results" / "statistics" / "all_coefficients.csv")
     f1 = coeff[coeff["DV"] == "F1 Score"].copy()
@@ -226,10 +238,10 @@ def verify_table1(run_dir: Path, rpt: Report):
         ("Version: 2", "Suicidal Ideation", None, "NS"),
         ("Version: 2", "Therapy Request", 0.31, "< .05"),
         ("Version: 2", "Therapy Engagement", 0.34, "< .05"),
-        ("Version: 3", "Suicidal Ideation", 0.36, "< .001"),
+        ("Version: 3", "Suicidal Ideation", 0.35, "< .001"),
         ("Version: 3", "Therapy Request", 0.35, "< .001"),
         ("Version: 3", "Therapy Engagement", 0.37, "< .001"),
-        ("Version: 4", "Suicidal Ideation", 0.52, "< .01"),
+        ("Version: 4", "Suicidal Ideation", 0.53, "< .01"),
         ("Version: 4", "Therapy Request", 0.59, "< .001"),
         ("Version: 4", "Therapy Engagement", 0.62, "< .001"),
         ("Fine-Tune Type: Instruction-Tuned", "Suicidal Ideation", None, "NS"),
@@ -238,7 +250,7 @@ def verify_table1(run_dir: Path, rpt: Report):
         ("Fine-Tune Type: Safety-Tuned", "Suicidal Ideation", None, "NS"),
         ("Fine-Tune Type: Safety-Tuned", "Therapy Request", None, "NS"),
         ("Fine-Tune Type: Safety-Tuned", "Therapy Engagement", None, "NS"),
-        ("Family: LLaMA", "Therapy Request", -0.22, "< .05"),
+        ("Family: LLaMA", "Therapy Request", -0.24, "< .05"),
     ]
 
     for var, task, c_beta, c_sig in beta_claims:
@@ -248,7 +260,7 @@ def verify_table1(run_dir: Path, rpt: Report):
         label = f"{var}: {task}"
 
         if c_beta is not None:
-            rpt.check(f"{label}: β={c_beta}", _close(a_beta, c_beta, 0.02),
+            rpt.check(f"{label}: β={c_beta}", _exact_rounded(row["β"], c_beta, 2),
                       f"β={a_beta}", f"β={c_beta}")
         rpt.check(f"{label}: p {c_sig}", _sig_match(a_p, c_sig),
                   f"p_bonf={a_p:.4f}", c_sig)
@@ -275,7 +287,7 @@ def verify_table1_summary(run_dir: Path, rpt: Report):
     rpt.section("Table 1 Summary — R² and Effect Sizes")
     rpt.quote(
         "Overall, model version (Version 4 vs Version 1) showed effect sizes "
-        "in the β ≈ 0.52–0.65 range across tasks. Parameter count (significant "
+        "in the β ≈ 0.53–0.62 range across tasks. Parameter count (significant "
         "for suicidal ideation and therapy request) corresponded to an estimated "
         "~0.5–0.6 increase in F1 across the observed ~70B parameter range, "
         "comparable in magnitude to version-related differences; for therapy "
@@ -295,17 +307,17 @@ def verify_table1_summary(run_dir: Path, rpt: Report):
     coeff = pd.read_csv(ROOT / "results" / "statistics" / "all_coefficients.csv")
     f1 = coeff[coeff["DV"] == "F1 Score"]
 
-    # Version 4 β range ≈ 0.52–0.65
+    # Version 4 β range per manuscript: 0.53–0.62
     v4_betas = {}
     for task in ["Suicidal Ideation", "Therapy Request", "Therapy Engagement"]:
         row = f1[(f1["Task"] == task) & (f1["Variable"] == "Version: 4")].iloc[0]
         v4_betas[task] = round(row["β"], 2)
     v4_min, v4_max = min(v4_betas.values()), max(v4_betas.values())
-    rpt.check("Version 4 β range ≈ 0.52–0.65",
-              _close(v4_min, 0.52, 0.02) and _close(v4_max, 0.65, 0.04),
+    rpt.check("Version 4 β range 0.53–0.62 (endpoints)",
+              v4_min == 0.53 and v4_max == 0.62,
               f"β = {v4_min}–{v4_max} (SI={v4_betas['Suicidal Ideation']}, "
               f"TR={v4_betas['Therapy Request']}, TE={v4_betas['Therapy Engagement']})",
-              "β ≈ 0.52–0.65")
+              "min β=0.53, max β=0.62")
 
     # R² range
     r2_vals = {}
@@ -316,11 +328,11 @@ def verify_table1_summary(run_dir: Path, rpt: Report):
     r2_max = round(max(r2_vals.values()), 2)
     best_task = max(r2_vals, key=r2_vals.get)
 
-    rpt.check("R² range ≈ 0.31–0.46",
-              _close(r2_min, 0.31, 0.02) and _close(r2_max, 0.46, 0.02),
+    rpt.check("R² range 0.31–0.46 (endpoints)",
+              r2_min == 0.31 and r2_max == 0.46,
               f"R² = {r2_min}–{r2_max} (SI={r2_vals['Suicidal Ideation']:.3f}, "
               f"TR={r2_vals['Therapy Request']:.3f}, TE={r2_vals['Therapy Engagement']:.3f})",
-              "R² = 0.31–0.46")
+              "min R²=0.31, max R²=0.46")
     rpt.check("Therapy request has strongest fit",
               best_task == "Therapy Request", best_task, "Therapy Request")
 
@@ -331,32 +343,51 @@ def verify_table1_summary(run_dir: Path, rpt: Report):
 def verify_figure3(run_dir: Path, rpt: Report):
     rpt.section("Figure 3 — Delta F1 Fine-Tune Facet")
     rpt.quote(
-        "Across all three safety-relevant classification tasks and all evaluated "
-        "model families, mental health–specific fine-tuning did not yield "
-        "statistically significant improvements in performance relative to the "
-        "exact pretrained base models from which those fine-tuned variants were "
-        "derived (Figure 3A). In contrast, several mental health–fine-tuned "
-        "models demonstrated statistically significant decreases in mean Δ F1 "
-        "compared with their corresponding base models, including Gemma "
-        "(Δ F1 = -0.19, padjusted < 0.01) and LLaMA (Δ F1 = -0.17; padjusted "
-        "< 0.05) models on therapy-request detection, and Gemma (mean "
+        "To directly isolate the effect of mental health–specific fine-tuning from "
+        "differences attributable to model family, architecture, or scale, we "
+        "next restricted the analysis to fine-tuned models with clearly identified, "
+        "publicly available pre-fine-tuning counterparts, listed in Table S2. This "
+        "paired design allowed within-model comparisons under identical prompting "
+        "and evaluation conditions, minimizing confounding from architectural "
+        "generation and parameter count that characterize the broader model set. "
+        "Note that fine-tuned models could originate from either base models or "
+        "from domain-specific fine-tuning on top of a model already fine-tuned for "
+        "instruction-following. Across all three safety-relevant classification "
+        "tasks and all evaluated model families, mental health–specific fine-tuning "
+        "did not yield statistically significant improvements in performance "
+        "relative to the exact pretrained base models from which those fine-tuned "
+        "variants were derived (Figure 3A). In contrast, several mental "
+        "health–fine-tuned models demonstrated statistically significant decreases "
+        "in mean Δ F1 compared with their corresponding base models, including "
+        "Gemma (Δ F1 = -0.19, padjusted < 0.01) and LLaMA ( Δ F1 = -0.17; "
+        "padjusted < 0.05) models on therapy-request detection, and Gemma (mean "
         "Δ F1 = -0.17, padjusted < 0.05) models on therapy-engagement "
-        "classification (two-sided paired t tests, Bonferroni-corrected).\n"
-        "Models fine-tuned on medical corpora yielded no statistically "
-        "significant differences in performance compared with base models across "
-        "any task or model family, although Gemma models showed large mean "
-        "Δ F1's for therapy request (0.68) and therapy engagement (0.45) "
-        "detection (Figure 3B). Safety-focused fine-tuned models showed no "
-        "improvement, and for some model-task pairs, statistically worse "
-        "performance (Figure 3C).\n"
-        "Gemma instruction-tuned models significantly outperformed their "
-        "pretrained counterparts across all three tasks: suicidal ideation "
-        "detection (mean Δ F1 = 0.26, padjusted < 0.05), therapy-request "
-        "classification (mean Δ F1 = 0.47 padjusted < 0.01), and "
-        "therapy-engagement detection (Δ F1 = 0.27, padjusted < 0.05). "
-        "Qwen instruction-tuned models also showed significant improvement on "
-        "therapy-request detection (Δ F1 = 0.66, padjusted < 0.05). Notably, "
-        "the overall direction of effect was overwhelmingly positive: 47 of 63 "
+        "classification (two-sided paired t tests, Bonferroni-corrected). These "
+        "effects were observed despite identical prompting, evaluation conditions, "
+        "and shared model backbones for each base–fine-tuned pair. Models "
+        "fine-tuned on medical corpora yielded no statistically significant "
+        "differences in performance compared with base models across any task or "
+        "model family, although Gemma models showed large mean Δ F1's for therapy "
+        "request (0.68) and therapy engagement (0.45) detection (Figure 3B). "
+        "Safety-focused fine-tuned models showed no improvement, and for some "
+        "model-task pairs, statistically worse performance (Figure 3C): despite the "
+        "explicit harm-detection objectives of models such as ShieldGemma, LLaMA "
+        "Guard, and Qwen Guard, no family demonstrated significant improvements on "
+        "any of the three safety-relevant classification tasks relative to their "
+        "pre-fine-tuned models. These findings suggest that, in their default "
+        "configurations, neither medical nor safety fine-tuning conferred reliable "
+        "benefits on this set of mental health safety classification tasks. In "
+        "contrast to domain-specific fine-tuning, general fine-tuning for "
+        "instruction-following demonstrated statistically significant improvements "
+        "in classification performance for at least one model family in all three "
+        "classification tasks (Figure 3D). Gemma instruction-tuned models "
+        "significantly outperformed their pretrained counterparts across all three "
+        "tasks: suicidal ideation detection (mean Δ F1 = 0.26, padjusted < 0.05), "
+        "therapy-request classification (mean Δ F1 = 0.47 padjusted < 0.01), and "
+        "therapy-engagement detection (Δ F1 = 0.27, padjusted < 0.05). Qwen "
+        "instruction-tuned models also showed significant improvement on "
+        "therapy-request detection (Δ F1 = 0.66, padjusted < 0.05). Notably, the "
+        "overall direction of effect was overwhelmingly positive: 47 of 63 "
         "instruction-tuned model pairs showed improved performance relative to "
         "their pretrained bases."
     )
@@ -383,8 +414,8 @@ def verify_figure3(run_dir: Path, rpt: Report):
         a_med = round(row["median_delta_f1"], 2)
         a_p = row["p_adjusted"]
         label = f"MH {fam}: {task}"
-        rpt.check(f"{label}: {stat_type} ΔF1 ≈ {c_delta}",
-                  _close(a_val, c_delta, 0.02),
+        rpt.check(f"{label}: {stat_type} ΔF1 = {c_delta}",
+                  _exact_rounded(row[f"{stat_type}_delta_f1"], c_delta, 2),
                   f"{stat_type}={a_val} (mean={a_mean}, median={a_med})",
                   str(c_delta))
         rpt.check(f"{label}: p {c_sig}", _sig_match(a_p, c_sig),
@@ -400,8 +431,8 @@ def verify_figure3(run_dir: Path, rpt: Report):
         row = med[(med["task"] == task) &
                   (med["model_family"].str.lower() == "gemma")].iloc[0]
         a = round(row["mean_delta_f1"], 2)
-        rpt.check(f"Medical Gemma: {task}: mean ΔF1 ≈ {c_delta}",
-                  _close(a, c_delta, 0.03), str(a), str(c_delta))
+        rpt.check(f"Medical Gemma: {task}: mean ΔF1 = {c_delta}",
+                  _exact_rounded(row["mean_delta_f1"], c_delta, 2), str(a), str(c_delta))
 
     # --- Safety: no improvement, some worse ---
     safety = df[df["finetune_type"] == "Safety"]
@@ -432,8 +463,8 @@ def verify_figure3(run_dir: Path, rpt: Report):
         a_med = round(row["median_delta_f1"], 2)
         a_p = row["p_adjusted"]
         label = f"IT {fam}: {task}"
-        rpt.check(f"{label}: {stat_type} ΔF1 ≈ {c_delta}",
-                  _close(a_val, c_delta, 0.03),
+        rpt.check(f"{label}: {stat_type} ΔF1 = {c_delta}",
+                  _exact_rounded(row[f"{stat_type}_delta_f1"], c_delta, 2),
                   f"{stat_type}={a_val} (mean={a_mean}, median={a_med})",
                   str(c_delta))
         rpt.check(f"{label}: p {c_sig}", _sig_match(a_p, c_sig),
@@ -460,13 +491,16 @@ def verify_figure3(run_dir: Path, rpt: Report):
 def verify_figure_s10(run_dir: Path, rpt: Report):
     rpt.section("Figure S10 — Δ Parse vs Δ F1")
     rpt.quote(
-        "10 of 12 fine-tuning categories and tasks, Δ parse success and Δ F1 "
-        "were significantly positively correlated (all Bonferroni-adjusted "
-        "p < 0.05). This association was strongest for medical fine-tuned models "
-        "(R² = 0.92–0.97), and more moderate for mental health (R² = 0.48–0.61), "
-        "instruction-tuned (R² = 0.40–0.64), and safety-tuned "
-        "(R² = 0.19–0.92) models. Across tasks, the association was strongest "
-        "for suicidal ideation (R² = 0.72), followed by therapy request "
+        "In order to examine the relationship between output format compliance and "
+        "task performance, we quantified the association between changes in parse "
+        "success rate (Δ parse success) and changes in F1 score (Δ F1) for each "
+        "fine-tune/base pair (Figure S10). 10 of 12 fine-tuning categories and "
+        "tasks, Δ parse success and Δ F1 were significantly positively correlated "
+        "(all Bonferroni-adjusted p < 0.05). This association was strongest for "
+        "medical fine-tuned models (R² = 0.92–0.97), and more moderate for mental "
+        "health (R² = 0.48–0.61), instruction-tuned (R² = 0.40–0.64), and "
+        "safety-tuned (R² = 0.19–0.92) models. Across tasks, the association was "
+        "strongest for  suicidal ideation (R² = 0.72), followed by therapy request "
         "classification (pooled R² = 0.68), and therapy engagement (R² = 0.55)."
     )
 
@@ -506,7 +540,7 @@ def verify_figure_s10(run_dir: Path, rpt: Report):
         if r2s:
             a_lo, a_hi = round(min(r2s), 2), round(max(r2s), 2)
             rpt.check(f"{ft_label}: R² = {c_lo}–{c_hi}",
-                      _close(a_lo, c_lo, 0.03) and _close(a_hi, c_hi, 0.03),
+                      a_lo == c_lo and a_hi == c_hi,
                       f"R² = {a_lo}–{a_hi}", f"R² = {c_lo}–{c_hi}")
 
     # --- Pooled R² by task (all fine-tune types combined) ---
@@ -529,7 +563,7 @@ def verify_figure_s10(run_dir: Path, rpt: Report):
     ]:
         a_r2 = pooled.get(task)
         rpt.check(f"Pooled {TASK_TITLES[task]}: R² = {c_r2}",
-                  a_r2 is not None and _close(a_r2, c_r2, 0.03),
+                  a_r2 is not None and a_r2 == c_r2,
                   f"R² = {a_r2}", f"R² = {c_r2}")
 
     rpt.check("Pooled ranking: SI > TR > TE",
@@ -591,12 +625,18 @@ def verify_discussion_s10(run_dir: Path, rpt: Report):
                 if r_val is not None:
                     per_cell[(ft_config["label"], task)] = r_val**2
 
-    for ft_label in ["Medical", "Safety"]:
+    for ft_label, c_lo, c_hi in [("Medical", 0.92, 0.97), ("Safety", 0.19, 0.92)]:
         r2s = sorted([r2 for (fl, _), r2 in per_cell.items() if fl == ft_label])
         if r2s:
-            rpt.check(f"Discussion fill-in: {ft_label} R² range", True,
-                      f"R² = {min(r2s):.2f}–{max(r2s):.2f}",
-                      "***–*** (placeholder — use actual values)")
+            a_lo, a_hi = round(min(r2s), 2), round(max(r2s), 2)
+            rpt.check(
+                f"Discussion S10: {ft_label} R² = {c_lo}–{c_hi}",
+                a_lo == c_lo and a_hi == c_hi,
+                f"R² = {a_lo}–{a_hi}",
+                f"R² = {c_lo}–{c_hi}",
+            )
+        else:
+            rpt.check(f"Discussion S10: {ft_label} (no R² cells)", False, "—", f"{c_lo}–{c_hi}")
 
 
 # ---------------------------------------------------------------------------
@@ -629,7 +669,8 @@ def main():
     print(f"\n{'='*50}")
     print(f"  {rpt.n_pass} PASS  |  {rpt.n_fail} FAIL")
     print(f"{'='*50}")
+    return 1 if rpt.n_fail > 0 else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

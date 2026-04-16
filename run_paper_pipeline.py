@@ -13,6 +13,7 @@ fine-tuning relative to other model characteristics on LLM safety performance
 3. Generate main table (Table 1 - Multivariable Regression with Bonferroni correction)
 4. Generate supplementary figures (9 family×task facet plots; ΔF1 vs ΔParse Success (1))
 5. Generate revision outputs (Figure S10 scatter, delta-parse facet, P2 agreement, revised Table S2)
+6. Run manuscript claims verification (`analysis/revision/verify_manuscript_claims.py`) → CLAIM_VERIFICATION.md
 
 Output Structure: 
     results/FINETUNE_PAPER_FIGURES/[YYYYMMDD]/
@@ -39,6 +40,7 @@ Output Structure:
         revision_data/
             p2_agreement_given_p1_exact_match.csv
             revised_table_s2.csv
+        CLAIM_VERIFICATION.md
         data/
             all_models_all_tasks.csv
             comprehensive_metrics_*.csv
@@ -57,6 +59,7 @@ Usage:
         --figures-only        Only generate figures, skip table
         --table-only          Only generate table, skip figures
         --dry-run             Show what would be done without executing
+        --skip-claims-verification   Do not run verify_manuscript_claims.py (Phase 6)
 
 Author: Mark Kalinich (with significant assistance from Cursor models)
 """
@@ -375,6 +378,25 @@ def run_python_script(
     except Exception as e:
         logger.error(f"  ✗ Script failed with exception: {e}")
         return False
+
+
+def run_claims_verification(logger: logging.Logger, dry_run: bool = False) -> bool:
+    """Run verify_manuscript_claims.py for this pipeline run directory (writes CLAIM_VERIFICATION.md)."""
+    log_section(logger, "PHASE 6: MANUSCRIPT CLAIMS VERIFICATION")
+
+    script = ROOT / "analysis" / "revision" / "verify_manuscript_claims.py"
+    cmd_args = ["--run-dir", str(MAIN_OUTPUT_DIR)]
+
+    if dry_run:
+        logger.info("  [DRY RUN] Would run: verify_manuscript_claims.py --run-dir ...")
+        return True
+
+    ok = run_python_script(script, cmd_args, logger, dry_run=False)
+    if ok:
+        logger.info(f"  ✓ Claims report: {MAIN_OUTPUT_DIR / 'CLAIM_VERIFICATION.md'}")
+    else:
+        logger.error("  ✗ Manuscript claims verification failed (see CLAIM_VERIFICATION.md and stderr above)")
+    return ok
 
 
 def generate_figure_1(logger: logging.Logger, dry_run: bool = False) -> bool:
@@ -1044,6 +1066,22 @@ def run_pipeline(args: argparse.Namespace) -> int:
             logger.info("")
             logger.info("⏭  Skipping revision figures")
 
+        # Phase 6: manuscript claims vs embedded literals (needs figures + table + revision)
+        if args.skip_claims_verification:
+            logger.info("")
+            logger.info("⏭  Skipping manuscript claims verification (--skip-claims-verification)")
+        elif args.dry_run:
+            run_claims_verification(logger, dry_run=True)
+        elif args.table_only or args.figures_only or args.skip_supplementary:
+            logger.info("")
+            logger.info(
+                "⏭  Skipping manuscript claims verification "
+                "(requires a full run without --table-only, --figures-only, or --skip-supplementary)"
+            )
+        else:
+            if not run_claims_verification(logger, args.dry_run):
+                success = False
+
         # Summary
         log_section(logger, "PIPELINE COMPLETE")
         
@@ -1138,7 +1176,12 @@ def main():
         action="store_true",
         help="Do not write PROVENANCE.json (machine run record) in the run output directory.",
     )
-    
+    parser.add_argument(
+        "--skip-claims-verification",
+        action="store_true",
+        help="Do not run verify_manuscript_claims.py (Phase 6); no CLAIM_VERIFICATION.md for this run.",
+    )
+
     args = parser.parse_args()
     
     return run_pipeline(args)

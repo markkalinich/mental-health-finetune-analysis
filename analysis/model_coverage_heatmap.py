@@ -343,7 +343,7 @@ def plot_coverage_heatmap(matrix: pd.DataFrame, title: str, output_path: Path = 
     
     if output_path:
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        plt.savefig(output_path, dpi=150, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
         print(f"Saved: {output_path}")
     
     return fig, ax
@@ -639,6 +639,9 @@ def create_facet_plot(families: list = None, enabled_only: bool = True,
     # Store max sizes per column for consistent xlim across all panels in same column
     max_sizes_per_col = width_ratios  # This is already the max column count per version column
 
+    # Subpanel labels (row = model family): manuscript-style, upper-left of each row
+    row_panel_labels = {"Gemma": "a", "LLaMA": "b", "Qwen": "c"}
+
     for row_idx, (parent_family, versions) in enumerate(families):
         for col_idx in range(n_cols):
             ax = axes[row_idx, col_idx]
@@ -737,7 +740,22 @@ def create_facet_plot(families: list = None, enabled_only: bool = True,
                     ax.axis('off')
             else:
                 ax.axis('off')
-    
+
+        ax_first = axes[row_idx, 0]
+        panel_letter = row_panel_labels.get(parent_family, chr(ord("a") + row_idx))
+        ax_first.annotate(
+            panel_letter,
+            xy=(0, 1),
+            xycoords="axes fraction",
+            xytext=(-6, 10),
+            textcoords="offset points",
+            fontsize=16,
+            fontweight="bold",
+            ha="right",
+            va="bottom",
+            clip_on=False,
+        )
+
     # Create legend
     legend_elements = [
         mpatches.Patch(facecolor=FINETUNE_COLORS[ft], edgecolor='white', label=ft)
@@ -755,7 +773,7 @@ def create_facet_plot(families: list = None, enabled_only: bool = True,
     # Save
     output_path = OUTPUT_DIR / "model_coverage_facet.png"
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    plt.savefig(output_path, dpi=150, bbox_inches='tight', facecolor='white')
+    plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
     print(f"Saved: {output_path}")
     
     plt.show()
