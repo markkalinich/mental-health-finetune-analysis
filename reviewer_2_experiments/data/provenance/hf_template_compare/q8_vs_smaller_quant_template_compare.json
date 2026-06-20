@@ -1,0 +1,30 @@
+[
+  {
+    "lm_studio_id": "gemma-2-27b",
+    "local_quant_file": "gemma-2-27b-Q8_0.gguf",
+    "hf_quant_file_compared": "gemma-2-27b-Q3_K_M.gguf",
+    "local_embedded_chat_template_present": false,
+    "hf_embedded_chat_template_present": false,
+    "embedded_chat_template_match": true,
+    "note": "Neither local Q8 nor HF smaller quant has tokenizer.chat_template in GGUF metadata."
+  },
+  {
+    "lm_studio_id": "klyang_mentallama-chat-13b",
+    "local_quant_file": "MentaLLaMA-chat-13B-Q8_0.gguf",
+    "hf_quant_file_compared": "MentaLLaMA-chat-13B-Q2_K.gguf",
+    "local_embedded_chat_template_present": false,
+    "hf_embedded_chat_template_present": false,
+    "embedded_chat_template_match": true,
+    "note": "Neither local Q8 nor HF smaller quant has tokenizer.chat_template in GGUF metadata."
+  },
+  {
+    "lm_studio_id": "llama-3.1-8b-instruct-mental-health-classification",
+    "local_quant_file": "Llama-3.1-8B-Instruct-Mental-Health-Classification-Q8_0.gguf",
+    "hf_quant_file_compared": "Llama-3.1-8B-Instruct-Mental-Health-Classification-Q2_K.gguf",
+    "local_embedded_chat_template_present": true,
+    "hf_embedded_chat_template_present": true,
+    "embedded_chat_template_match": true,
+    "local_template_sha256": "b48c47f6443892716176eb200bf4ef108f64e06ca26ed0fa8ebc0a4b3992fcb2",
+    "hf_template_sha256": "b48c47f6443892716176eb200bf4ef108f64e06ca26ed0fa8ebc0a4b3992fcb2"
+  }
+]

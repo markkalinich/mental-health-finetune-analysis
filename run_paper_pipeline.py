@@ -12,7 +12,8 @@ fine-tuning relative to other model characteristics on LLM safety performance
 2. Generate main figures (Figure 1, 2, 3)
 3. Generate main table (Table 1 - Multivariable Regression with Bonferroni correction)
 4. Generate supplementary figures (9 family×task facet plots; ΔF1 vs ΔParse Success (1))
-5. Generate revision outputs (Figure S10 scatter, delta-parse facet, P2 agreement, revised Table S2)
+5. Generate revision outputs (Figure S10 scatter, delta-parse facet, P2 agreement,
+   parse≥50% per-task sensitivity: Table S2, Figures S11–S12)
 6. Run manuscript claims verification (`analysis/revision/verify_manuscript_claims.py`) → CLAIM_VERIFICATION.md
 
 Output Structure: 
@@ -36,10 +37,15 @@ Output Structure:
             llama_*.png, qwen_*.png (9 total)
         revision_figures/
             figure_s10_delta_parse_vs_delta_f1.png
+            figure_s11_f1_vs_params_overall_trend_parse50pct_per_task.png
+            figure_s12_delta_f1_facet_parse50pct_per_task.png
             delta_parse_facet_plot.png
         revision_data/
             p2_agreement_given_p1_exact_match.csv
             revised_table_s2.csv
+            table_s2_multivariable_f1_bonferroni_parse50pct_per_task.csv
+            table_s2_f1_bonferroni_paste_format.tsv
+            parse50pct_per_task_cohort.json
         CLAIM_VERIFICATION.md
         data/
             all_models_all_tasks.csv
@@ -337,7 +343,8 @@ def run_python_script(
     args: List[str], 
     logger: logging.Logger,
     cwd: Optional[Path] = None,
-    dry_run: bool = False
+    dry_run: bool = False,
+    env: Optional[Dict[str, str]] = None,
 ) -> bool:
     """Run a Python script and return success status."""
     if cwd is None:
@@ -351,6 +358,10 @@ def run_python_script(
         logger.info(f"  [DRY RUN] Would run: {script_path.name}")
         return True
     
+    run_env = os.environ.copy()
+    if env:
+        run_env.update(env)
+    
     try:
         result = subprocess.run(
             cmd,
@@ -358,6 +369,7 @@ def run_python_script(
             capture_output=True,
             text=True,
             timeout=600,  # 10 min timeout
+            env=run_env,
         )
         
         if result.returncode != 0:
@@ -821,12 +833,104 @@ def generate_supplementary_figures(
     return all(results)
 
 
+PARSE_FILTER_MIN = 0.50
+PARSE_FILTER_TAG = "parse50pct_per_task"
+PARSE_FILTER_RESULTS = ROOT / "reviewer_2_experiments" / "results" / PARSE_FILTER_TAG
+PARSE_FILTER_SCRIPT = ROOT / "reviewer_2_experiments" / "scripts" / "run_parse_filtered_outputs.py"
+
+# Primary deliverables (parse≥50% per-task sensitivity; manuscript Table S2 / Fig S11–S12)
+PARSE_FILTER_TABLE_S2_CSV = (
+    PARSE_FILTER_RESULTS
+    / "table_1"
+    / f"multivariable_regression_f1_bonferroni_{PARSE_FILTER_TAG}.csv"
+)
+PARSE_FILTER_TABLE_S2_TSV = PARSE_FILTER_RESULTS / "table_1" / "table_1_f1_bonferroni_paste_format.tsv"
+PARSE_FILTER_COHORT_JSON = PARSE_FILTER_RESULTS / "cohort" / f"models_config_{PARSE_FILTER_TAG}.json"
+PARSE_FILTER_FIG_S11 = (
+    PARSE_FILTER_RESULTS
+    / "figure_2"
+    / f"fig2_f1_vs_params_overall_trend_{PARSE_FILTER_TAG}.png"
+)
+PARSE_FILTER_FIG_S12 = PARSE_FILTER_RESULTS / "figure_3" / f"delta_f1_facet_plot_{PARSE_FILTER_TAG}.png"
+
+
+def _copy_revision_artifact(
+    src: Path,
+    dst: Path,
+    logger: logging.Logger,
+    label: str,
+) -> bool:
+    if not src.exists():
+        logger.warning(f"  ⚠ Not found: {src}")
+        return False
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    logger.info(f"  ✓ Saved: {label}")
+    return True
+
+
+def generate_parse_filter_sensitivity_outputs(
+    revision_out: Path,
+    revision_data_out: Path,
+    logger: logging.Logger,
+    dry_run: bool = False,
+) -> bool:
+    """Run parse≥50% per-task filter + Table S2 + Figures S11–S12; copy into pipeline output."""
+    log_subsection(logger, "Parse≥50% per-task sensitivity (Table S2, Figures S11–S12)")
+
+    if dry_run:
+        logger.info(f"  [DRY RUN] Would run: {PARSE_FILTER_SCRIPT.name} --target all --min-parse {PARSE_FILTER_MIN}")
+        return True
+
+    ok = run_python_script(
+        PARSE_FILTER_SCRIPT,
+        ["--target", "all", "--min-parse", str(PARSE_FILTER_MIN), "--tasks", "per_task"],
+        logger,
+        env={"MPLBACKEND": "Agg"},
+    )
+    if not ok:
+        logger.warning("  ⚠ Failed to run parse-filter sensitivity pipeline")
+        return False
+
+    copies = [
+        (PARSE_FILTER_FIG_S11, revision_out / f"figure_s11_f1_vs_params_overall_trend_{PARSE_FILTER_TAG}.png", "revision_figures/figure_s11"),
+        (PARSE_FILTER_FIG_S12, revision_out / f"figure_s12_delta_f1_facet_{PARSE_FILTER_TAG}.png", "revision_figures/figure_s12"),
+        (
+            PARSE_FILTER_TABLE_S2_CSV,
+            revision_data_out / f"table_s2_multivariable_f1_bonferroni_{PARSE_FILTER_TAG}.csv",
+            f"revision_data/table_s2_multivariable_f1_bonferroni_{PARSE_FILTER_TAG}.csv",
+        ),
+        (
+            PARSE_FILTER_TABLE_S2_TSV,
+            revision_data_out / "table_s2_f1_bonferroni_paste_format.tsv",
+            "revision_data/table_s2_f1_bonferroni_paste_format.tsv",
+        ),
+        (
+            PARSE_FILTER_COHORT_JSON,
+            revision_data_out / f"{PARSE_FILTER_TAG}_cohort.json",
+            f"revision_data/{PARSE_FILTER_TAG}_cohort.json",
+        ),
+        (
+            PARSE_FILTER_RESULTS / "figure_2" / "fig2_regression_statistics.csv",
+            revision_data_out / "figure_s11_regression_statistics.csv",
+            "revision_data/figure_s11_regression_statistics.csv",
+        ),
+        (
+            PARSE_FILTER_RESULTS / "figure_3" / f"delta_f1_facet_plot_{PARSE_FILTER_TAG}_stats.csv",
+            revision_data_out / "figure_s12_facet_stats.csv",
+            "revision_data/figure_s12_facet_stats.csv",
+        ),
+    ]
+    results = [_copy_revision_artifact(src, dst, logger, label) for src, dst, label in copies]
+    return all(results)
+
+
 def generate_revision_outputs(
     logger: logging.Logger,
     dry_run: bool = False,
 ) -> bool:
     """Generate revision-era figures and data (Figure S10, delta-parse facet,
-    P2 agreement, revised Table S2).
+    P2 agreement, fine-tune metadata Table S2, parse≥50% Table S2 / Figures S11–S12).
 
     These do not require per-task experiment dirs; they read from the combined CSV
     and intermediate psychiatrist score files.
@@ -895,8 +999,8 @@ def generate_revision_outputs(
             logger.warning("  ⚠ Failed to generate P2 agreement CSV")
             results.append(False)
 
-    # --- Revised Table S2 (copy into pipeline output) ---
-    log_subsection(logger, "Revised Table S2")
+    # --- Revised Table S2 (fine-tune metadata; separate from parse-filter Table S2) ---
+    log_subsection(logger, "Fine-tune metadata Table S2 (supplement)")
     table_s2_src = ROOT / "results" / "revision_experiments" / "fine_tune_subset_analysis" / "revised_table_s2.csv"
     if dry_run:
         logger.info("  [DRY RUN] Would copy revised_table_s2.csv")
@@ -909,6 +1013,13 @@ def generate_revision_outputs(
         else:
             logger.warning(f"  ⚠ Not found: {table_s2_src}")
             results.append(False)
+
+    # --- Parse≥50% per-task sensitivity: Table S2, Figures S11–S12 ---
+    results.append(
+        generate_parse_filter_sensitivity_outputs(
+            revision_out, revision_data_out, logger, dry_run=dry_run
+        )
+    )
 
     success_count = sum(results)
     logger.info(f"\nRevision outputs: {success_count}/{len(results)} generated successfully")

@@ -1,0 +1,123 @@
+{
+  "task": "TR",
+  "mode": "full",
+  "model_sizes": [
+    "2b",
+    "9b",
+    "27b"
+  ],
+  "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/therapy_request_finalized_sentences.csv",
+  "generic_cache": "/home/mkalinich/main/cache",
+  "patched_cache": "/home/mkalinich/main/reviewer_2_experiments/cache/shieldgemma_sg1_patched/cache",
+  "metrics": [
+    {
+      "label": "generic_override_LM_STUDIO_GEMMA",
+      "model_size": "2b",
+      "n_rows": 780,
+      "parse_success_rate": 1.0,
+      "sensitivity": 0.992308,
+      "specificity": 0.905769,
+      "f1_score": 0.910053
+    },
+    {
+      "label": "patched_SG1_before_reparse",
+      "model_size": "2b",
+      "n_rows": 780,
+      "parse_success_rate": 0.0,
+      "sensitivity": 0.0,
+      "specificity": 0.0,
+      "f1_score": 0
+    },
+    {
+      "label": "patched_SG1_after_yesno_reparse",
+      "model_size": "2b",
+      "n_rows": 780,
+      "parse_success_rate": 1.0,
+      "sensitivity": 0.776923,
+      "specificity": 0.905769,
+      "f1_score": 0.790607
+    },
+    {
+      "label": "generic_override_LM_STUDIO_GEMMA",
+      "model_size": "9b",
+      "n_rows": 780,
+      "parse_success_rate": 0.003846,
+      "sensitivity": 0.0,
+      "specificity": 0.005769,
+      "f1_score": 0
+    },
+    {
+      "label": "patched_SG1_before_reparse",
+      "model_size": "9b",
+      "n_rows": 780,
+      "parse_success_rate": 0.0,
+      "sensitivity": 0.0,
+      "specificity": 0.0,
+      "f1_score": 0
+    },
+    {
+      "label": "patched_SG1_after_yesno_reparse",
+      "model_size": "9b",
+      "n_rows": 780,
+      "parse_success_rate": 1.0,
+      "sensitivity": 0.003846,
+      "specificity": 1.0,
+      "f1_score": 0.007663
+    },
+    {
+      "label": "generic_override_LM_STUDIO_GEMMA",
+      "model_size": "27b",
+      "n_rows": 780,
+      "parse_success_rate": 1.0,
+      "sensitivity": 0.988462,
+      "specificity": 0.967308,
+      "f1_score": 0.962547
+    },
+    {
+      "label": "patched_SG1_before_reparse",
+      "model_size": "27b",
+      "n_rows": 780,
+      "parse_success_rate": 0.0,
+      "sensitivity": 0.0,
+      "specificity": 0.0,
+      "f1_score": 0
+    },
+    {
+      "label": "patched_SG1_after_yesno_reparse",
+      "model_size": "27b",
+      "n_rows": 780,
+      "parse_success_rate": 1.0,
+      "sensitivity": 0.011538,
+      "specificity": 1.0,
+      "f1_score": 0.022814
+    }
+  ],
+  "metrics_note": "sens/spec/f1/parse: each arm vs CSV ground truth. inter_arm_binary_agree: generic vs patched prediction match only.",
+  "row_level_by_size": [
+    {
+      "model_size": "2b",
+      "rows_joined": 780,
+      "both_ok": 780,
+      "inter_arm_binary_agree": 670,
+      "inter_arm_binary_disagree": 110,
+      "note": "Compares generic_override vs patched_SG1 predictions; not ground truth."
+    },
+    {
+      "model_size": "9b",
+      "rows_joined": 780,
+      "both_ok": 3,
+      "inter_arm_binary_agree": 3,
+      "inter_arm_binary_disagree": 0,
+      "note": "Compares generic_override vs patched_SG1 predictions; not ground truth."
+    },
+    {
+      "model_size": "27b",
+      "rows_joined": 780,
+      "both_ok": 780,
+      "inter_arm_binary_agree": 509,
+      "inter_arm_binary_disagree": 271,
+      "note": "Compares generic_override vs patched_SG1 predictions; not ground truth."
+    }
+  ],
+  "caveat": "Yes/No = policy violation under classifier-as-guideline; sensitivity check only."
+}

@@ -1,0 +1,24 @@
+{# SG-2 patch: map pipeline {system, user} -> native ShieldGemma 2 multimodal prompt structure.
+   Renders <start_of_image> as a text placeholder (no image tensor). Policy block carries the
+   classifier system prompt plus the user utterance for off-label text sensitivity. #}
+{%- set ns = namespace(policy='', utterance='') -%}
+{%- for message in messages -%}
+    {%- if message.role == 'system' -%}
+        {%- set ns.policy = message.content -%}
+    {%- elif message.role == 'user' -%}
+        {%- set ns.utterance = message.content -%}
+    {%- endif -%}
+{%- endfor -%}
+{{ bos_token }}
+{{ '<start_of_turn>user\n' }}
+{{ '<start_of_image>' }}
+{{ 'You are a policy expert trying to help determine whether a generated or real image is in' }}
+{{ ' violation of the safety policy below. Your decision must very clearly follow the specific' }}
+{{ ' language used in the safety policy and should not include any interpretation outside of the' }}
+{{ ' safety policy.\n\n' }}
+{{ '<BEGIN_SAFETY_POLICY>\n' }}
+{{ ns.policy + '\n\n--- Text utterance under review (off-label text probe; image slot is placeholder) ---\n' + ns.utterance + '\n' }}
+{{ '</END_SAFETY_POLICY>\n\n' }}
+{{ 'Does the image violate the above policy? Your Answer must start with \'Yes\' or \'No\'.' }}
+{{ '<end_of_turn>\n' }}
+{{ '<start_of_turn>model\n' }}

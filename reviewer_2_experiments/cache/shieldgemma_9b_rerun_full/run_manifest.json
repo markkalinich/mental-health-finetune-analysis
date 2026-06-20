@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-06-17T20:11:35.679093+00:00",
+  "mode": "full",
+  "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/SI_finalized_sentences.csv",
+  "input_rows": 450,
+  "input_same_as_paper": true,
+  "system_prompt": "/home/mkalinich/main/data/prompts/system_suicide_detection_v2.txt",
+  "prompt_name": "system_suicide_detection_v2",
+  "temperature": 0,
+  "max_tokens": 256,
+  "num_replicates": 1,
+  "isolated_cache": "/home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache/results.db",
+  "paper_cache_untouched": "/home/mkalinich/main/cache/results.db",
+  "runs": [
+    {
+      "lm_studio_id": "shieldgemma-2b",
+      "family": "shieldgemma",
+      "size": "2b",
+      "version": "2.0",
+      "exit_code": 0,
+      "stdout_tail": "Running experiment shieldgemma_2b_2.0_system_suicide_detection_v2_1.0_SI_finalized_sentences_9dca75c1\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: suicidal_ideation\n   Prompt declares: ['safety_type', 'counseling_request']\n   \u26a0\ufe0f  Prompt defines categories {'clearly_happy', 'ambiguous_emotional', 'clearly_sad', 'clearly_angry', 'clearly_neutral'} for 'safety_type' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/SI_finalized_sentences.csv\nLoaded 450 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_2b_si_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 450 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-2b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.0s)\nProcessing 450 items...\nProcessing 450 requests with up to 25 concurrent connections...\nProgress: 50/450 (11.1%) completed\nProgress: 100/450 (22.2%) completed\nProgress: 150/450 (33.3%) completed\nProgress: 200/450 (44.4%) completed\nProgress: 250/450 (55.6%) completed\nProgress: 300/450 (66.7%) completed\nProgress: 350/450 (77.8%) completed\nProgress: 400/450 (88.9%) completed\nProgress: 450/450 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_2b_2.0_system_suicide_detection_v2_1.0_SI_finalized_sentences_9dca75c1\nInput samples: 450\nReplicates per sample: 1\nTotal results generated: 450\nSuccessful: 449\nParse failures: 1\nErrors: 0\nSuccess rate: 99.8%\nAPI calls made: 450\nCache hits: 0\nCache hit rate: 0.0%\n",
+      "stderr_tail": ""
+    },
+    {
+      "lm_studio_id": "shieldgemma-9b",
+      "family": "shieldgemma",
+      "size": "9b",
+      "version": "2.0",
+      "exit_code": 0,
+      "stdout_tail": "Running experiment shieldgemma_9b_2.0_system_suicide_detection_v2_1.0_SI_finalized_sentences_06a1d98e\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: suicidal_ideation\n   Prompt declares: ['safety_type', 'counseling_request']\n   \u26a0\ufe0f  Prompt defines categories {'clearly_happy', 'ambiguous_emotional', 'clearly_angry', 'clearly_neutral', 'clearly_sad'} for 'safety_type' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/SI_finalized_sentences.csv\nLoaded 450 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_9b_si_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 450 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-9b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 450 items...\nProcessing 450 requests with up to 25 concurrent connections...\nProgress: 50/450 (11.1%) completed\nProgress: 100/450 (22.2%) completed\nProgress: 150/450 (33.3%) completed\nProgress: 200/450 (44.4%) completed\nProgress: 250/450 (55.6%) completed\nProgress: 300/450 (66.7%) completed\nProgress: 350/450 (77.8%) completed\nProgress: 400/450 (88.9%) completed\nProgress: 450/450 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_9b_2.0_system_suicide_detection_v2_1.0_SI_finalized_sentences_06a1d98e\nInput samples: 450\nReplicates per sample: 1\nTotal results generated: 450\nSuccessful: 0\nParse failures: 450\nErrors: 0\nSuccess rate: 0.0%\nAPI calls made: 450\nCache hits: 0\nCache hit rate: 0.0%\n",
+      "stderr_tail": ""
+    }
+  ],
+  "cache_summary": {
+    "shieldgemma-2b": {
+      "ok": {
+        "count": 449,
+        "avg_completion_tokens": 53.1358574610245
+      },
+      "parse_fail": {
+        "count": 1,
+        "avg_completion_tokens": 37.0
+      }
+    },
+    "shieldgemma-9b": {
+      "parse_fail": {
+        "count": 450,
+        "avg_completion_tokens": 1.0
+      }
+    }
+  },
+  "updated_at": "2026-06-17T20:41:05.350138+00:00",
+  "tasks_requested": [
+    "TE"
+  ],
+  "task_runs": {
+    "TR": {
+      "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/therapy_request_finalized_sentences.csv",
+      "input_rows": 780,
+      "prompt_name": "therapy_request_classifier_v3",
+      "system_prompt": "/home/mkalinich/main/data/prompts/therapy_request_classifier_v3.txt",
+      "runs": [
+        {
+          "task": "TR",
+          "lm_studio_id": "shieldgemma-2b",
+          "family": "shieldgemma",
+          "size": "2b",
+          "version": "2.0",
+          "exit_code": 0,
+          "stdout_tail": "Running experiment shieldgemma_2b_2.0_therapy_request_classifier_v3_1.0_therapy_request_finalized_sentences_cd40cdbd\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_request\n   Prompt declares: ['safety_type', 'therapy_request']\n   \u26a0\ufe0f  Prompt defines categories {'non_therapeutic_question', 'declarative'} for 'therapy_request' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/therapy_request_finalized_sentences.csv\nLoaded 780 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_2b_tr_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 780 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-2b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 780 items...\nProcessing 780 requests with up to 25 concurrent connections...\nProgress: 50/780 (6.4%) completed\nProgress: 100/780 (12.8%) completed\nProgress: 150/780 (19.2%) completed\nProgress: 200/780 (25.6%) completed\nProgress: 250/780 (32.1%) completed\nProgress: 300/780 (38.5%) completed\nProgress: 350/780 (44.9%) completed\nProgress: 400/780 (51.3%) completed\nProgress: 450/780 (57.7%) completed\nProgress: 500/780 (64.1%) completed\nProgress: 550/780 (70.5%) completed\nProgress: 600/780 (76.9%) completed\nProgress: 650/780 (83.3%) completed\nProgress: 700/780 (89.7%) completed\nProgress: 750/780 (96.2%) completed\nProgress: 780/780 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_2b_2.0_therapy_request_classifier_v3_1.0_therapy_request_finalized_sentences_cd40cdbd\nInput samples: 780\nReplicates per sample: 1\nTotal results generated: 780\nSuccessful: 780\nParse failures: 0\nErrors: 0\nSuccess rate: 100.0%\nAPI calls made: 780\nCache hits: 0\nCache hit rate: 0.0%\n",
+          "stderr_tail": ""
+        },
+        {
+          "task": "TR",
+          "lm_studio_id": "shieldgemma-9b",
+          "family": "shieldgemma",
+          "size": "9b",
+          "version": "2.0",
+          "exit_code": 0,
+          "stdout_tail": "Running experiment shieldgemma_9b_2.0_therapy_request_classifier_v3_1.0_therapy_request_finalized_sentences_fb2066da\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_request\n   Prompt declares: ['safety_type', 'therapy_request']\n   \u26a0\ufe0f  Prompt defines categories {'declarative', 'non_therapeutic_question'} for 'therapy_request' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/therapy_request_finalized_sentences.csv\nLoaded 780 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_9b_tr_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 780 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-9b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 780 items...\nProcessing 780 requests with up to 25 concurrent connections...\nProgress: 50/780 (6.4%) completed\nProgress: 100/780 (12.8%) completed\nProgress: 150/780 (19.2%) completed\nProgress: 200/780 (25.6%) completed\nProgress: 250/780 (32.1%) completed\nProgress: 300/780 (38.5%) completed\nProgress: 350/780 (44.9%) completed\nProgress: 400/780 (51.3%) completed\nProgress: 450/780 (57.7%) completed\nProgress: 500/780 (64.1%) completed\nProgress: 550/780 (70.5%) completed\nProgress: 600/780 (76.9%) completed\nProgress: 650/780 (83.3%) completed\nProgress: 700/780 (89.7%) completed\nProgress: 750/780 (96.2%) completed\nProgress: 780/780 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_9b_2.0_therapy_request_classifier_v3_1.0_therapy_request_finalized_sentences_fb2066da\nInput samples: 780\nReplicates per sample: 1\nTotal results generated: 780\nSuccessful: 3\nParse failures: 777\nErrors: 0\nSuccess rate: 0.4%\nAPI calls made: 780\nCache hits: 0\nCache hit rate: 0.0%\n",
+          "stderr_tail": ""
+        }
+      ],
+      "cache_summary": {
+        "shieldgemma-2b": {
+          "ok": {
+            "count": 780,
+            "avg_completion_tokens": 44.71025641025641
+          }
+        },
+        "shieldgemma-9b": {
+          "ok": {
+            "count": 3,
+            "avg_completion_tokens": 45.333333333333336
+          },
+          "parse_fail": {
+            "count": 777,
+            "avg_completion_tokens": 1.0
+          }
+        }
+      }
+    },
+    "TE": {
+      "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv",
+      "input_rows": 420,
+      "prompt_name": "therapy_engagement_conversation_v2",
+      "system_prompt": "/home/mkalinich/main/data/prompts/therapy_engagement_conversation_prompt_v2.txt",
+      "runs": [
+        {
+          "task": "TE",
+          "lm_studio_id": "shieldgemma-2b",
+          "family": "shieldgemma",
+          "size": "2b",
+          "version": "2.0",
+          "exit_code": 0,
+          "stdout_tail": "Running experiment shieldgemma_2b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_e5907c33\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_engagement\n   Prompt declares: ['therapy_engagement']\n   \u26a0\ufe0f  Prompt defines categories {'non_therapeutic', 'ambiguous_engagement'} for 'therapy_engagement' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv\nLoaded 420 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_2b_te_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 420 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-2b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 420 items...\nProcessing 420 requests with up to 25 concurrent connections...\nProgress: 50/420 (11.9%) completed\nProgress: 100/420 (23.8%) completed\nProgress: 150/420 (35.7%) completed\nProgress: 200/420 (47.6%) completed\nProgress: 250/420 (59.5%) completed\nProgress: 300/420 (71.4%) completed\nProgress: 350/420 (83.3%) completed\nProgress: 400/420 (95.2%) completed\nProgress: 420/420 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_2b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_e5907c33\nInput samples: 420\nReplicates per sample: 1\nTotal results generated: 420\nSuccessful: 0\nParse failures: 0\nErrors: 420\nSuccess rate: 0.0%\nAPI calls made: 420\nCache hits: 0\nCache hit rate: 0.0%\n",
+          "stderr_tail": ""
+        },
+        {
+          "task": "TE",
+          "lm_studio_id": "shieldgemma-9b",
+          "family": "shieldgemma",
+          "size": "9b",
+          "version": "2.0",
+          "exit_code": 0,
+          "stdout_tail": "Running experiment shieldgemma_9b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_21524c82\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_engagement\n   Prompt declares: ['therapy_engagement']\n   \u26a0\ufe0f  Prompt defines categories {'ambiguous_engagement', 'non_therapeutic'} for 'therapy_engagement' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_full/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv\nLoaded 420 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_9b_te_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 420 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-9b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 420 items...\nProcessing 420 requests with up to 25 concurrent connections...\nProgress: 50/420 (11.9%) completed\nProgress: 100/420 (23.8%) completed\nProgress: 150/420 (35.7%) completed\nProgress: 200/420 (47.6%) completed\nProgress: 250/420 (59.5%) completed\nProgress: 300/420 (71.4%) completed\nProgress: 350/420 (83.3%) completed\nProgress: 400/420 (95.2%) completed\nProgress: 420/420 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_9b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_21524c82\nInput samples: 420\nReplicates per sample: 1\nTotal results generated: 420\nSuccessful: 0\nParse failures: 100\nErrors: 320\nSuccess rate: 0.0%\nAPI calls made: 420\nCache hits: 0\nCache hit rate: 0.0%\n",
+          "stderr_tail": ""
+        }
+      ],
+      "cache_summary": {
+        "shieldgemma-2b": {
+          "api_error:API request failed with status 400: {\"error\":\"Context size has been exceeded.\"}": {
+            "count": 420,
+            "avg_completion_tokens": null
+          }
+        },
+        "shieldgemma-9b": {
+          "api_error:API request failed with status 400: {\"error\":\"Context size has been exceeded.\"}": {
+            "count": 320,
+            "avg_completion_tokens": null
+          },
+          "parse_fail": {
+            "count": 100,
+            "avg_completion_tokens": 1.0
+          }
+        }
+      }
+    }
+  }
+}

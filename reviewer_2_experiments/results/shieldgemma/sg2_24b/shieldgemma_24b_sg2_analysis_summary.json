@@ -1,0 +1,121 @@
+{
+  "tasks": [
+    {
+      "task": "SI",
+      "mode": "full",
+      "arm": "sg2_multimodal_patched",
+      "lm_studio_id": "shieldgemma-2-4b-it",
+      "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/SI_finalized_sentences.csv",
+      "paper_cache": "/home/mkalinich/main/cache",
+      "sg2_cache": "/home/mkalinich/main/reviewer_2_experiments/cache/shieldgemma_24b_sg2/cache",
+      "metrics": [
+        {
+          "label": "generic_override_LM_STUDIO_GEMMA_as_scored",
+          "model_size": "4b-it",
+          "n_rows": 450,
+          "parse_success_rate": 0.204444,
+          "sensitivity": 0.044444,
+          "specificity": 0.337778,
+          "f1_score": 0.052083
+        },
+        {
+          "label": "sg2_multimodal_before_reparse",
+          "model_size": "4b-it",
+          "n_rows": 450,
+          "parse_success_rate": 0.308889,
+          "sensitivity": 0.137778,
+          "specificity": 0.444444,
+          "f1_score": 0.16273
+        },
+        {
+          "label": "sg2_multimodal_after_yesno_reparse",
+          "model_size": "4b-it",
+          "n_rows": 450,
+          "parse_success_rate": 0.308889,
+          "sensitivity": 0.137778,
+          "specificity": 0.444444,
+          "f1_score": 0.16273
+        }
+      ],
+      "caveat": "SG-2 arm uses patched native multimodal framing (image placeholder + policy block). Yes/No reparse maps leading Yes/No only; off-label for SI/TR/TE text tasks."
+    },
+    {
+      "task": "TR",
+      "mode": "full",
+      "arm": "sg2_multimodal_patched",
+      "lm_studio_id": "shieldgemma-2-4b-it",
+      "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/therapy_request_finalized_sentences.csv",
+      "paper_cache": "/home/mkalinich/main/cache",
+      "sg2_cache": "/home/mkalinich/main/reviewer_2_experiments/cache/shieldgemma_24b_sg2/cache",
+      "metrics": [
+        {
+          "label": "generic_override_LM_STUDIO_GEMMA_as_scored",
+          "model_size": "4b-it",
+          "n_rows": 780,
+          "parse_success_rate": 0.158974,
+          "sensitivity": 0.046154,
+          "specificity": 0.196154,
+          "f1_score": 0.034783
+        },
+        {
+          "label": "sg2_multimodal_before_reparse",
+          "model_size": "4b-it",
+          "n_rows": 780,
+          "parse_success_rate": 0.503846,
+          "sensitivity": 0.126923,
+          "specificity": 0.598077,
+          "f1_score": 0.131474
+        },
+        {
+          "label": "sg2_multimodal_after_yesno_reparse",
+          "model_size": "4b-it",
+          "n_rows": 780,
+          "parse_success_rate": 0.503846,
+          "sensitivity": 0.126923,
+          "specificity": 0.598077,
+          "f1_score": 0.131474
+        }
+      ],
+      "caveat": "SG-2 arm uses patched native multimodal framing (image placeholder + policy block). Yes/No reparse maps leading Yes/No only; off-label for SI/TR/TE text tasks."
+    },
+    {
+      "task": "TE",
+      "mode": "full",
+      "arm": "sg2_multimodal_patched",
+      "lm_studio_id": "shieldgemma-2-4b-it",
+      "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv",
+      "paper_cache": "/home/mkalinich/main/cache",
+      "sg2_cache": "/home/mkalinich/main/reviewer_2_experiments/cache/shieldgemma_24b_sg2/cache",
+      "metrics": [
+        {
+          "label": "generic_override_LM_STUDIO_GEMMA_as_scored",
+          "model_size": "4b-it",
+          "n_rows": 420,
+          "parse_success_rate": 0.433333,
+          "sensitivity": 0.578571,
+          "specificity": 0.257143,
+          "f1_score": 0.377622
+        },
+        {
+          "label": "sg2_multimodal_before_reparse",
+          "model_size": "4b-it",
+          "n_rows": 420,
+          "parse_success_rate": 0.461905,
+          "sensitivity": 0.578571,
+          "specificity": 0.353571,
+          "f1_score": 0.402985
+        },
+        {
+          "label": "sg2_multimodal_after_yesno_reparse",
+          "model_size": "4b-it",
+          "n_rows": 420,
+          "parse_success_rate": 0.461905,
+          "sensitivity": 0.578571,
+          "specificity": 0.353571,
+          "f1_score": 0.402985
+        }
+      ],
+      "caveat": "SG-2 arm uses patched native multimodal framing (image placeholder + policy block). Yes/No reparse maps leading Yes/No only; off-label for SI/TR/TE text tasks."
+    }
+  ]
+}

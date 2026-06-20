@@ -1,0 +1,1804 @@
+{
+  "summary": {
+    "min_parse": 0.5,
+    "tasks": [
+      "per_task"
+    ],
+    "filter_mode": "per_task",
+    "enabled_in": 127,
+    "kept_enabled": 127,
+    "per_task_model_counts": {
+      "suicidal_ideation": 91,
+      "therapy_request": 84,
+      "therapy_engagement": 99
+    },
+    "output_csv": "/home/mkalinich/main/reviewer_2_experiments/results/parse50pct_per_task/cohort/models_config_parse50pct_per_task.csv",
+    "results_csv": "/home/mkalinich/main/reviewer_2_experiments/results/parse50pct_per_task/cohort/all_models_all_tasks_parse50pct_per_task.csv",
+    "results_rows": 274,
+    "source_config": "/home/mkalinich/main/config/models_config.csv",
+    "source_results": "/home/mkalinich/main/data/inputs/model_results/all_models_all_tasks.csv"
+  },
+  "models": [
+    {
+      "lm_studio_id": "google.gemma-3-270m-it",
+      "family": "gemma",
+      "size": "270m-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.2244444444444444,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.gemma-3-270m",
+      "family": "gemma",
+      "size": "270m-pt",
+      "model_type": "PT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0622222222222222,
+      "parse_therapy_request": 0.1051282051282051,
+      "parse_therapy_engagement": 0.0571428571428571
+    },
+    {
+      "lm_studio_id": "google.gemma-3-1b-it",
+      "family": "gemma",
+      "size": "1b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9955555555555556,
+      "parse_therapy_request": 0.9974358974358974,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.gemma-3-1b-pt",
+      "family": "gemma",
+      "size": "1b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.5733333333333334,
+      "parse_therapy_request": 0.2602564102564103,
+      "parse_therapy_engagement": 0.830952380952381
+    },
+    {
+      "lm_studio_id": "google.gemma-3-4b-it",
+      "family": "gemma",
+      "size": "4b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9955555555555556,
+      "parse_therapy_request": 0.9987179487179488,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.gemma-3-4b-pt",
+      "family": "gemma",
+      "size": "4b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.3622222222222222,
+      "parse_therapy_request": 0.1397435897435897,
+      "parse_therapy_engagement": 0.9976190476190476
+    },
+    {
+      "lm_studio_id": "google.gemma-3-12b-it",
+      "family": "gemma",
+      "size": "12b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9977777777777778,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.gemma-3-12b-pt",
+      "family": "gemma",
+      "size": "12b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9555555555555556,
+      "parse_therapy_request": 0.867948717948718,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.gemma-3-27b-it",
+      "family": "gemma",
+      "size": "27b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.gemma-3-27b-pt",
+      "family": "gemma",
+      "size": "27b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation"
+      ],
+      "parse_suicidal_ideation": 0.9622222222222222,
+      "parse_therapy_request": 0.1935897435897436,
+      "parse_therapy_engagement": 0.0738095238095238
+    },
+    {
+      "lm_studio_id": "gemma-2b-it",
+      "family": "gemma1",
+      "size": "2b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9577777777777776,
+      "parse_therapy_request": 0.9064102564102564,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-2b",
+      "family": "gemma1",
+      "size": "2b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation"
+      ],
+      "parse_suicidal_ideation": 0.5,
+      "parse_therapy_request": 0.173076923076923,
+      "parse_therapy_engagement": 0.4
+    },
+    {
+      "lm_studio_id": "gemma-1.1-7b-it",
+      "family": "gemma1",
+      "size": "7b-it",
+      "model_type": "IT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0666666666666666
+    },
+    {
+      "lm_studio_id": "google_-_gemma-7b",
+      "family": "gemma1",
+      "size": "7b-pt",
+      "model_type": "PT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0
+    },
+    {
+      "lm_studio_id": "gemma-2-2b-it",
+      "family": "gemma2",
+      "size": "2b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 0.9910256410256412,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-2-2b",
+      "family": "gemma2",
+      "size": "2b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.8466666666666667,
+      "parse_therapy_request": 0.5076923076923077,
+      "parse_therapy_engagement": 0.6309523809523809
+    },
+    {
+      "lm_studio_id": "gemma-2-9b-it",
+      "family": "gemma2",
+      "size": "9b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9955555555555556,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-2-9b",
+      "family": "gemma2",
+      "size": "9b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.2444444444444444,
+      "parse_therapy_request": 0.0115384615384615,
+      "parse_therapy_engagement": 0.9928571428571428
+    },
+    {
+      "lm_studio_id": "gemma-2-27b-it",
+      "family": "gemma2",
+      "size": "27b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-2-27b",
+      "family": "gemma2",
+      "size": "27b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9466666666666668,
+      "parse_therapy_request": 0.9756410256410256,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-3n-e2b-it",
+      "family": "gemma3n",
+      "size": "2b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-3n-e2b",
+      "family": "gemma3n",
+      "size": "2b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0622222222222222,
+      "parse_therapy_request": 0.0346153846153846,
+      "parse_therapy_engagement": 0.988095238095238
+    },
+    {
+      "lm_studio_id": "gemma-3n-e4b-it",
+      "family": "gemma3n",
+      "size": "4b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "medical-gemma-3n-4b",
+      "family": "gemma3n",
+      "size": "4b-medical",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-3n-finetune-mentis",
+      "family": "gemma3n",
+      "size": "4b-mentis",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.medgemma-4b-it",
+      "family": "medgemma",
+      "size": "4b-it",
+      "model_type": "MedGemma",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.medgemma-27b-it",
+      "family": "medgemma",
+      "size": "27b-it",
+      "model_type": "MedGemma",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "google.medgemma-27b-text-it",
+      "family": "medgemma",
+      "size": "27b-text-it",
+      "model_type": "MedGemma",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "shieldgemma-2b",
+      "family": "shieldgemma",
+      "size": "2b",
+      "model_type": "ShieldGemma",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9977777777777778,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "shieldgemma-2-4b-it",
+      "family": "shieldgemma",
+      "size": "4b-it",
+      "model_type": "ShieldGemma",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.2044444444444444,
+      "parse_therapy_request": 0.1589743589743589,
+      "parse_therapy_engagement": 0.4333333333333333
+    },
+    {
+      "lm_studio_id": "shieldgemma-9b",
+      "family": "shieldgemma",
+      "size": "9b",
+      "model_type": "ShieldGemma",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0038461538461538,
+      "parse_therapy_engagement": 0.5571428571428572
+    },
+    {
+      "lm_studio_id": "shieldgemma-27b",
+      "family": "shieldgemma",
+      "size": "27b",
+      "model_type": "ShieldGemma",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma3-270m-mental-health-fine-tuned",
+      "family": "mental_health",
+      "size": "270m",
+      "model_type": "Mental Health",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0307692307692307,
+      "parse_therapy_engagement": 0.0047619047619047
+    },
+    {
+      "lm_studio_id": "gemma3-1b-mental-health-fine-tuned",
+      "family": "mental_health",
+      "size": "1b",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9933333333333332,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "guelgamesh01_-_gemma-2b-it-finetuned-mental-health-qa",
+      "family": "mental_health",
+      "size": "guelgamesh01_-_gemma-2b-it-finetuned-mental-health-qa",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.4177777777777778,
+      "parse_therapy_request": 0.5794871794871795,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-2b-unsloth-mental-health-merged",
+      "family": "mental_health",
+      "size": "gemma-2b-unsloth-mental-health-merged",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.5644444444444444,
+      "parse_therapy_request": 0.3153846153846154,
+      "parse_therapy_engagement": 0.9976190476190476
+    },
+    {
+      "lm_studio_id": "ecdev_-_gemma-2b-instruct-ft-mental-health-counseling-conversations",
+      "family": "mental_health",
+      "size": "ecdev_-_gemma-2b-instruct-ft-mental-health-counseling-conversations",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9266666666666666,
+      "parse_therapy_request": 0.7794871794871795,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma-psychology-finetune",
+      "family": "mental_health",
+      "size": "gemma-psychology-finetune",
+      "model_type": "Mental Health",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0
+    },
+    {
+      "lm_studio_id": "gemma-mental-health-i1",
+      "family": "mental_health",
+      "size": "gemma-mental-health-i1",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.7755555555555556,
+      "parse_therapy_request": 0.5717948717948718,
+      "parse_therapy_engagement": 0.9047619047619048
+    },
+    {
+      "lm_studio_id": "gemma-2-2b-it-therapist",
+      "family": "mental_health",
+      "size": "gemma-2-2b-it-therapist",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9777777777777776,
+      "parse_therapy_request": 0.9076923076923076,
+      "parse_therapy_engagement": 0.9928571428571428
+    },
+    {
+      "lm_studio_id": "gemma-3-finetune-therapist",
+      "family": "gemma_therapy",
+      "size": "268m-therapist",
+      "model_type": "Mental Health",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0
+    },
+    {
+      "lm_studio_id": "gemma3-emotional_uncensored-1b",
+      "family": "gemma_therapy",
+      "size": "1b-emotional",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9888888888888888,
+      "parse_therapy_request": 0.9884615384615384,
+      "parse_therapy_engagement": 0.9976190476190476
+    },
+    {
+      "lm_studio_id": "child_trauma_assessment_gemma",
+      "family": "gemma_therapy",
+      "size": "4.5b-trauma",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 0.9769230769230768,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma2-9b-it-psy10k-mental_health",
+      "family": "gemma_therapy",
+      "size": "9b-psy10k",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.3244444444444444,
+      "parse_therapy_request": 0.5807692307692308,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "gemma2-ataraxy-psycho-9b",
+      "family": "gemma_therapy",
+      "size": "9b-ataraxy",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.4977777777777777,
+      "parse_therapy_request": 0.6974358974358974,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "therapist1-gemma3-12b-qvo",
+      "family": "gemma_therapy",
+      "size": "12b-therapist",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9844444444444445,
+      "parse_therapy_request": 0.9974358974358974,
+      "parse_therapy_engagement": 0.9761904761904762
+    },
+    {
+      "lm_studio_id": "qwen3-0.6b",
+      "family": "qwen",
+      "size": "0.6b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9888888888888888,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen/qwen3-1.7b",
+      "family": "qwen",
+      "size": "1.7b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9577777777777776,
+      "parse_therapy_request": 0.9987179487179488,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen/qwen3-4b",
+      "family": "qwen",
+      "size": "4b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen/qwen3-8b",
+      "family": "qwen",
+      "size": "8b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen/qwen3-14b",
+      "family": "qwen",
+      "size": "14b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen/qwen3-32b",
+      "family": "qwen",
+      "size": "32b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen-0.6b-mentalhealth-support",
+      "family": "qwen_mental_health",
+      "size": "0.6b",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9933333333333332,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 0.911904761904762
+    },
+    {
+      "lm_studio_id": "qwen3-medical-1.7b",
+      "family": "qwen_medical",
+      "size": "1.7b",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9888888888888888,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "medicalqwen3-reasoning-4b",
+      "family": "qwen_medical",
+      "size": "4b-reasoning",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 0.9948717948717948,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen3-medical-grpo",
+      "family": "qwen_medical",
+      "size": "4b-grpo",
+      "model_type": "Medical",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.1244444444444444,
+      "parse_therapy_request": 0.2653846153846154,
+      "parse_therapy_engagement": 0.2714285714285714
+    },
+    {
+      "lm_studio_id": "qwen3-8b-medical-reasoning",
+      "family": "qwen_medical",
+      "size": "8b-reasoning",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 0.9974358974358974,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "ii-medical-8b-1706",
+      "family": "qwen_medical",
+      "size": "8b-ii",
+      "model_type": "Medical",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0733333333333333,
+      "parse_therapy_request": 0.0435897435897435,
+      "parse_therapy_engagement": 0.0880952380952381
+    },
+    {
+      "lm_studio_id": "llama-3.2-1b",
+      "family": "llama3.2",
+      "size": "1b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation"
+      ],
+      "parse_suicidal_ideation": 0.5133333333333333,
+      "parse_therapy_request": 0.1282051282051282,
+      "parse_therapy_engagement": 0.0880952380952381
+    },
+    {
+      "lm_studio_id": "llama-3.2-1b-instruct",
+      "family": "llama3.2",
+      "size": "1b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.8911111111111111,
+      "parse_therapy_request": 0.4961538461538461,
+      "parse_therapy_engagement": 0.9952380952380953
+    },
+    {
+      "lm_studio_id": "llama-3.2-3b",
+      "family": "llama3.2",
+      "size": "3b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.6755555555555556,
+      "parse_therapy_request": 0.1743589743589743,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "llama-3.2-3b-instruct",
+      "family": "llama3.2",
+      "size": "3b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9688888888888888,
+      "parse_therapy_request": 0.6448717948717949,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "meta-llama-3.1-8b",
+      "family": "llama3.1",
+      "size": "8b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.6688888888888889,
+      "parse_therapy_request": 0.5205128205128206,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "meta-llama-3.1-8b-instruct",
+      "family": "llama3.1",
+      "size": "8b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 0.9976190476190476
+    },
+    {
+      "lm_studio_id": "meta-llama-3-8b",
+      "family": "llama3",
+      "size": "8b-pt",
+      "model_type": "PT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.04,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0
+    },
+    {
+      "lm_studio_id": "meta-llama-3-8b-instruct",
+      "family": "llama3",
+      "size": "8b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9466666666666668,
+      "parse_therapy_request": 0.9217948717948716,
+      "parse_therapy_engagement": 0.8238095238095238
+    },
+    {
+      "lm_studio_id": "llama-2-7b",
+      "family": "llama2",
+      "size": "7b-pt",
+      "model_type": "PT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.2155555555555555,
+      "parse_therapy_request": 0.0243589743589743,
+      "parse_therapy_engagement": 0.0071428571428571
+    },
+    {
+      "lm_studio_id": "llama-2-7b-chat",
+      "family": "llama2",
+      "size": "7b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.7888888888888889,
+      "parse_therapy_request": 0.6538461538461539,
+      "parse_therapy_engagement": 0.580952380952381
+    },
+    {
+      "lm_studio_id": "llama-2-13b",
+      "family": "llama2",
+      "size": "13b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.4777777777777778,
+      "parse_therapy_request": 0.708974358974359,
+      "parse_therapy_engagement": 0.7142857142857143
+    },
+    {
+      "lm_studio_id": "llama-2-13b-chat",
+      "family": "llama2",
+      "size": "13b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.2377777777777777,
+      "parse_therapy_request": 0.182051282051282,
+      "parse_therapy_engagement": 0.9976190476190476
+    },
+    {
+      "lm_studio_id": "llama-2-70b-chat",
+      "family": "llama2",
+      "size": "70b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9088888888888887,
+      "parse_therapy_request": 0.9743589743589745,
+      "parse_therapy_engagement": 0.5976190476190476
+    },
+    {
+      "lm_studio_id": "lmstudio-community/meta-llama-3.1-70b-instruct",
+      "family": "llama3.1",
+      "size": "70b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "meta/llama-3.3-70b",
+      "family": "llama3.3",
+      "size": "70b",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "mentallama-chat-7b",
+      "family": "llama_mental_health",
+      "size": "7b-mentallama",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0577777777777777,
+      "parse_therapy_request": 0.1089743589743589,
+      "parse_therapy_engagement": 0.6904761904761905
+    },
+    {
+      "lm_studio_id": "klyang_mentallama-chat-13b",
+      "family": "llama_mental_health",
+      "size": "13b-mentallama",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.6088888888888889,
+      "parse_therapy_request": 0.4782051282051282,
+      "parse_therapy_engagement": 0.9071428571428573
+    },
+    {
+      "lm_studio_id": "bunnybosz_-_llama-3.2-1b-fine-tuned-model-mental-health",
+      "family": "llama_mental_health",
+      "size": "1b-mental-health",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.28,
+      "parse_therapy_request": 0.2717948717948718,
+      "parse_therapy_engagement": 0.8142857142857143
+    },
+    {
+      "lm_studio_id": "mac16661_-_llama-3.2-3b-it-mental-health-chatbot-merged-and-exported",
+      "family": "llama_mental_health",
+      "size": "3b-mental-health-chatbot",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.8733333333333333,
+      "parse_therapy_request": 0.4141025641025641,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "llama-3.1-8b-instruct-mental-health-classification",
+      "family": "llama_mental_health",
+      "size": "8b-mental-health-classification",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9977777777777778,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "mental_llama3.1-8b-mix-sft",
+      "family": "llama_mental_health",
+      "size": "8b-mental-mix-sft",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9777777777777776,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "llama-3-8b-therapy-model",
+      "family": "llama_therapy",
+      "size": "8b-therapy-model",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation"
+      ],
+      "parse_suicidal_ideation": 0.7844444444444445,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.019047619047619
+    },
+    {
+      "lm_studio_id": "therapyllama-8b-v1",
+      "family": "llama_therapy",
+      "size": "8b-therapyllama",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request"
+      ],
+      "parse_suicidal_ideation": 0.8711111111111111,
+      "parse_therapy_request": 0.5269230769230769,
+      "parse_therapy_engagement": 0.4404761904761904
+    },
+    {
+      "lm_studio_id": "wellminded_therapy_engine",
+      "family": "llama_therapy",
+      "size": "8b-wellminded",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9911111111111112,
+      "parse_therapy_request": 0.9974358974358974,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "llama-3-mental-therapy-cat-8b",
+      "family": "llama_therapy",
+      "size": "8b-mental-therapy-cat",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.8111111111111111,
+      "parse_therapy_request": 0.9666666666666668,
+      "parse_therapy_engagement": 0.9833333333333332
+    },
+    {
+      "lm_studio_id": "qwen1.5-0.5b-chat",
+      "family": "qwen1.5",
+      "size": "0.5b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.04,
+      "parse_therapy_request": 0.0012820512820512,
+      "parse_therapy_engagement": 0.9523809523809524
+    },
+    {
+      "lm_studio_id": "qwen1.5-1.8b-chat",
+      "family": "qwen1.5",
+      "size": "1.8b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0133333333333333,
+      "parse_therapy_request": 0.0051282051282051,
+      "parse_therapy_engagement": 0.9047619047619048
+    },
+    {
+      "lm_studio_id": "qwen1.5-4b-chat",
+      "family": "qwen1.5",
+      "size": "4b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0088888888888888,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen1.5-7b-chat",
+      "family": "qwen1.5",
+      "size": "7b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.7355555555555555,
+      "parse_therapy_request": 0.8551282051282051,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen2-0.5b-instruct",
+      "family": "qwen2",
+      "size": "0.5b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9888888888888888,
+      "parse_therapy_request": 0.823076923076923,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen2-1.5b",
+      "family": "qwen2",
+      "size": "1.5b-pt",
+      "model_type": "PT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0533333333333333,
+      "parse_therapy_request": 0.0525641025641025,
+      "parse_therapy_engagement": 0.019047619047619
+    },
+    {
+      "lm_studio_id": "qwen2-1.5b-instruct",
+      "family": "qwen2",
+      "size": "1.5b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9888888888888888,
+      "parse_therapy_request": 0.9987179487179488,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen2-7b",
+      "family": "qwen2",
+      "size": "7b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request"
+      ],
+      "parse_suicidal_ideation": 0.52,
+      "parse_therapy_request": 0.6346153846153846,
+      "parse_therapy_engagement": 0.2785714285714286
+    },
+    {
+      "lm_studio_id": "qwen2-7b-instruct",
+      "family": "qwen2",
+      "size": "7b-it",
+      "model_type": "IT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9933333333333332,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen3guard-gen-0.6b",
+      "family": "qwen_guard",
+      "size": "0.6b",
+      "model_type": "Guard",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen3guard-gen-4b",
+      "family": "qwen_guard",
+      "size": "4b",
+      "model_type": "Guard",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen3guard-gen-8b",
+      "family": "qwen_guard",
+      "size": "8b",
+      "model_type": "Guard",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "8-bit_medical_qwen1.5-7b-chat",
+      "family": "qwen_medical",
+      "size": "7b-8bit",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9666666666666668,
+      "parse_therapy_request": 0.9884615384615384,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen-umls-7b-instruct",
+      "family": "qwen_medical",
+      "size": "7b-umls",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "med-qwen2",
+      "family": "qwen_medical",
+      "size": "7b-med-qwen2",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9955555555555556,
+      "parse_therapy_request": 0.9974358974358974,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen-3-32b-medical-reasoning",
+      "family": "qwen_medical",
+      "size": "32b-reasoning",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "qwen-1.8b_depressiondetection",
+      "family": "qwen_mental_health",
+      "size": "1.8b-depression",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation"
+      ],
+      "parse_suicidal_ideation": 0.66,
+      "parse_therapy_request": 0.3448717948717948,
+      "parse_therapy_engagement": 0.2952380952380952
+    },
+    {
+      "lm_studio_id": "moriacrafter_-_qwen1.5-4b_depressiondetection_reddit",
+      "family": "qwen_mental_health",
+      "size": "4b-depression-reddit",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.1355555555555555,
+      "parse_therapy_request": 0.0717948717948717,
+      "parse_therapy_engagement": 0.9738095238095238
+    },
+    {
+      "lm_studio_id": "deepseek-r1-distill-qwen-7b-student-mental-health",
+      "family": "qwen_mental_health",
+      "size": "7b-deepseek-mental",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request"
+      ],
+      "parse_suicidal_ideation": 0.6377777777777778,
+      "parse_therapy_request": 0.717948717948718,
+      "parse_therapy_engagement": 0.4928571428571429
+    },
+    {
+      "lm_studio_id": "meta-llama_-_llama-guard-3-1b",
+      "family": "llama_guard",
+      "size": "1b",
+      "model_type": "Guard",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "llama-guard-3-8b",
+      "family": "llama_guard",
+      "size": "8b",
+      "model_type": "Guard",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "kenko-mental-health-llama-3-model",
+      "family": "llama_mental_health",
+      "size": "3b-kenko",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.7088888888888889,
+      "parse_therapy_request": 0.8448717948717949,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "mental_health_companion",
+      "family": "llama_mental_health",
+      "size": "8b-companion",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "mental-health-companion-model",
+      "family": "llama_mental_health",
+      "size": "1b-companion",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.2666666666666666,
+      "parse_therapy_request": 0.132051282051282,
+      "parse_therapy_engagement": 0.680952380952381
+    },
+    {
+      "lm_studio_id": "m42-health_-_llama3-med42-70b",
+      "family": "llama_medical",
+      "size": "70b-med42",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9911111111111112,
+      "parse_therapy_request": 0.9935897435897436,
+      "parse_therapy_engagement": 0.9523809523809524
+    },
+    {
+      "lm_studio_id": "llama-7b",
+      "family": "llama1",
+      "size": "7b",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request"
+      ],
+      "parse_suicidal_ideation": 0.8288888888888889,
+      "parse_therapy_request": 0.5307692307692308,
+      "parse_therapy_engagement": 0.1547619047619047
+    },
+    {
+      "lm_studio_id": "llama-13b",
+      "family": "llama1",
+      "size": "13b",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request"
+      ],
+      "parse_suicidal_ideation": 0.8266666666666667,
+      "parse_therapy_request": 0.7128205128205128,
+      "parse_therapy_engagement": 0.2095238095238095
+    },
+    {
+      "lm_studio_id": "llama-30b",
+      "family": "llama1",
+      "size": "30b",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request"
+      ],
+      "parse_suicidal_ideation": 0.6911111111111111,
+      "parse_therapy_request": 0.7782051282051282,
+      "parse_therapy_engagement": 0.2404761904761904
+    },
+    {
+      "lm_studio_id": "llama-2-70b",
+      "family": "llama2",
+      "size": "70b-pt",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9222222222222224,
+      "parse_therapy_request": 0.8807692307692307,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "nousresearch/meta-llama-3-70b",
+      "family": "llama3",
+      "size": "70b-pt",
+      "model_type": "PT",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0
+    },
+    {
+      "lm_studio_id": "epfl-llm-meditron-7b.gguf",
+      "family": "llama_medical",
+      "size": "7b-meditron",
+      "model_type": "Medical",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.3111111111111111,
+      "parse_therapy_request": 0.2769230769230769,
+      "parse_therapy_engagement": 0.0761904761904762
+    },
+    {
+      "lm_studio_id": "medllama-2-7b",
+      "family": "llama_medical",
+      "size": "7b-medllama",
+      "model_type": "Medical",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.1022222222222222,
+      "parse_therapy_request": 0.0846153846153846,
+      "parse_therapy_engagement": 0.0952380952380952
+    },
+    {
+      "lm_studio_id": "m42-health_-_llama3-med42-8b",
+      "family": "llama_medical",
+      "size": "8b-med42",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9622222222222222,
+      "parse_therapy_request": 0.8743589743589744,
+      "parse_therapy_engagement": 0.8452380952380952
+    },
+    {
+      "lm_studio_id": "medalpaca-13b",
+      "family": "llama_medical",
+      "size": "13b-medalpaca",
+      "model_type": "Medical",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0,
+      "parse_therapy_request": 0.0,
+      "parse_therapy_engagement": 0.0
+    },
+    {
+      "lm_studio_id": "meditron-70b",
+      "family": "llama_medical",
+      "size": "70b-meditron",
+      "model_type": "Medical",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9111111111111112,
+      "parse_therapy_request": 0.6653846153846154,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "llama3.2-3b-mental-health-chatbot",
+      "family": "llama_mental_health",
+      "size": "3b-chatbot-v2",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.0711111111111111,
+      "parse_therapy_request": 0.1102564102564102,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "psycare1.0-llama3.1-8b",
+      "family": "llama_therapy",
+      "size": "8b-psycare",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9933333333333332,
+      "parse_therapy_request": 0.9833333333333332,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "psychocounsel-llama3-8b",
+      "family": "llama_therapy",
+      "size": "8b-psychocounsel",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 0.9976190476190476
+    },
+    {
+      "lm_studio_id": "llama-3.2-3b-instruct-youth-mental-health-classification",
+      "family": "llama_mental_health",
+      "size": "3b-youth-classification",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.8844444444444445,
+      "parse_therapy_request": 0.6641025641025641,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "psycollm",
+      "family": "qwen_mental_health",
+      "size": "14b-psycollm",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9822222222222222,
+      "parse_therapy_request": 0.9397435897435896,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "xinyuan-llm-14b-0428",
+      "family": "qwen_mental_health",
+      "size": "14b-xinyuan",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.9955555555555556,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "compumacy-experimental_mf",
+      "family": "qwen_mental_health",
+      "size": "33b-compumacy",
+      "model_type": "Mental Health",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 0.8933333333333333,
+      "parse_therapy_request": 0.273076923076923,
+      "parse_therapy_engagement": 1.0
+    },
+    {
+      "lm_studio_id": "deepseek-r1-medical-cot-qwen-1.5",
+      "family": "qwen_medical",
+      "size": "1.5b-deepseek-cot",
+      "model_type": "Medical",
+      "kept_any_task": false,
+      "kept_tasks": [],
+      "parse_suicidal_ideation": 0.0111111111111111,
+      "parse_therapy_request": 0.0666666666666666,
+      "parse_therapy_engagement": 0.1976190476190476
+    },
+    {
+      "lm_studio_id": "google/gemma-3n-e4b",
+      "family": "gemma3n",
+      "size": "4b-pt-google",
+      "model_type": "PT",
+      "kept_any_task": true,
+      "kept_tasks": [
+        "suicidal_ideation",
+        "therapy_request",
+        "therapy_engagement"
+      ],
+      "parse_suicidal_ideation": 1.0,
+      "parse_therapy_request": 1.0,
+      "parse_therapy_engagement": 1.0
+    }
+  ]
+}

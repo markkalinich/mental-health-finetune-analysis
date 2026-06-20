@@ -135,6 +135,12 @@ def compute_deltas(config, results, filter_func, metric_col: str, col_prefix: st
     return pd.DataFrame(records)
 
 
+def add_jitter(values: np.ndarray, jitter_amount: float = 0.1) -> np.ndarray:
+    """Add small random jitter to values to reduce overlap (seed 42 for reproducibility)."""
+    np.random.seed(42)
+    return values + np.random.uniform(-jitter_amount, jitter_amount, size=len(values))
+
+
 def collect_figure3_model_family_size_keys() -> set[tuple[str, str]]:
     """
     All (family, size) pairs that appear as either a fine-tune or its mapped base
@@ -217,7 +223,9 @@ def _generate_facet_grid(
                 for i, fam in enumerate(FAMILIES):
                     fam_data = task_data[task_data['family'] == fam]
                     if len(fam_data) > 0:
-                        x_jitter = i + np.random.uniform(-0.2, 0.2, len(fam_data))
+                        x_jitter = add_jitter(
+                            np.full(len(fam_data), i, dtype=float), jitter_amount=0.2
+                        )
                         ax.scatter(x_jitter, fam_data[delta_col].values, s=50, alpha=0.5,
                                   color=FAMILY_COLORS[fam], edgecolors='black', linewidth=0.5, zorder=10)
 

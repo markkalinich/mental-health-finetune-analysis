@@ -1,0 +1,62 @@
+{
+  "updated_at": "2026-06-18T00:20:52.163853+00:00",
+  "mode": "full",
+  "max_concurrent": 1,
+  "no_cache": false,
+  "tasks_requested": [
+    "TE"
+  ],
+  "temperature": 0,
+  "max_tokens": 256,
+  "num_replicates": 1,
+  "isolated_cache": "/home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_te_full_sequential/cache/results.db",
+  "paper_cache_untouched": "/home/mkalinich/main/cache/results.db",
+  "task_runs": {
+    "TE": {
+      "input_csv": "/home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv",
+      "input_rows": 420,
+      "prompt_name": "therapy_engagement_conversation_v2",
+      "system_prompt": "/home/mkalinich/main/data/prompts/therapy_engagement_conversation_prompt_v2.txt",
+      "runs": [
+        {
+          "task": "TE",
+          "lm_studio_id": "shieldgemma-2b",
+          "family": "shieldgemma",
+          "size": "2b",
+          "version": "2.0",
+          "exit_code": 0,
+          "stdout_tail": "Running experiment shieldgemma_2b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_e5907c33\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_engagement\n   Prompt declares: ['therapy_engagement']\n   \u26a0\ufe0f  Prompt defines categories {'non_therapeutic', 'ambiguous_engagement'} for 'therapy_engagement' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_te_full_sequential/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv\nLoaded 420 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_2b_te_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 420 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-2b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 420 items...\nProcessing 420 requests with up to 1 concurrent connections...\nProgress: 50/420 (11.9%) completed\nProgress: 100/420 (23.8%) completed\nProgress: 150/420 (35.7%) completed\nProgress: 200/420 (47.6%) completed\nProgress: 250/420 (59.5%) completed\nProgress: 300/420 (71.4%) completed\nProgress: 350/420 (83.3%) completed\nProgress: 400/420 (95.2%) completed\nProgress: 420/420 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_2b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_e5907c33\nInput samples: 420\nReplicates per sample: 1\nTotal results generated: 420\nSuccessful: 420\nParse failures: 0\nErrors: 0\nSuccess rate: 100.0%\nAPI calls made: 420\nCache hits: 0\nCache hit rate: 0.0%\n",
+          "stderr_tail": ""
+        },
+        {
+          "task": "TE",
+          "lm_studio_id": "shieldgemma-9b",
+          "family": "shieldgemma",
+          "size": "9b",
+          "version": "2.0",
+          "exit_code": 0,
+          "stdout_tail": "Running experiment shieldgemma_9b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_21524c82\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_engagement\n   Prompt declares: ['therapy_engagement']\n   \u26a0\ufe0f  Prompt defines categories {'non_therapeutic', 'ambiguous_engagement'} for 'therapy_engagement' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_9b_rerun_te_full_sequential/cache\nLoading input data from /home/mkalinich/main/data/inputs/finalized_input_data/therapy_engagement_finalized_sentences.csv\nLoaded 420 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_9b_te_rerun_full\nPhase 1: Checking cache...\nCache: 0 hits, 420 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-9b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 420 items...\nProcessing 420 requests with up to 1 concurrent connections...\nProgress: 50/420 (11.9%) completed\nProgress: 100/420 (23.8%) completed\nProgress: 150/420 (35.7%) completed\nProgress: 200/420 (47.6%) completed\nProgress: 250/420 (59.5%) completed\nProgress: 300/420 (71.4%) completed\nProgress: 350/420 (83.3%) completed\nProgress: 400/420 (95.2%) completed\nProgress: 420/420 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_9b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_21524c82\nInput samples: 420\nReplicates per sample: 1\nTotal results generated: 420\nSuccessful: 233\nParse failures: 187\nErrors: 0\nSuccess rate: 55.5%\nAPI calls made: 420\nCache hits: 0\nCache hit rate: 0.0%\n",
+          "stderr_tail": ""
+        }
+      ],
+      "cache_summary": {
+        "shieldgemma-2b": {
+          "ok": {
+            "count": 420,
+            "avg_completion_tokens": 26.464285714285715
+          }
+        },
+        "shieldgemma-9b": {
+          "ok": {
+            "count": 233,
+            "avg_completion_tokens": 24.163090128755364
+          },
+          "parse_fail": {
+            "count": 187,
+            "avg_completion_tokens": 1.0
+          }
+        }
+      }
+    }
+  }
+}

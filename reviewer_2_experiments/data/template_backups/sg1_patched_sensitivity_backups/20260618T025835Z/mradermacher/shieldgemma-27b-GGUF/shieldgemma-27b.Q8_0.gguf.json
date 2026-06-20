@@ -1,0 +1,20 @@
+{
+  "preset": "",
+  "operation": {
+    "fields": [
+      {
+        "key": "llm.prediction.promptTemplate",
+        "value": {
+          "type": "jinja",
+          "jinjaPromptTemplate": {
+            "template": "{{bos_token}}{% for message in messages %}{% if message.role == 'system' %}<start_of_turn>system\n{{message.content}}<end_of_turn>\n{% elif message.role == 'user' %}<start_of_turn>user\n{{message.content}}<end_of_turn>\n{% else %}<start_of_turn>model\n{{message.content}}<end_of_turn>\n{% endif %}{% endfor %}<start_of_turn>model\n"
+          },
+          "stopStrings": ["<end_of_turn>"]
+        }
+      }
+    ]
+  },
+  "load": {
+    "fields": []
+  }
+}

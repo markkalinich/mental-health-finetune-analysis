@@ -1,0 +1,49 @@
+{
+  "task": "TE",
+  "run_id": "20260618T031154Z",
+  "updated_at": "2026-06-18T03:12:04.615039+00:00",
+  "patched_jinja": "/home/mkalinich/main/reviewer_2_experiments/data/templates/shieldgemma_sg1_patched_guideline.jinja",
+  "patched_jinja_sha256": "fae4f4a7e3911a465cfbc5dbeb791c8c9842dae6c73641967bbcf3ee87474640",
+  "patch_description": "SG-1 embedded template + preamble mapping system message -> guideline",
+  "golden_snapshots": {
+    "shieldgemma-2b": {
+      "live_path": "/home/mkalinich/.lmstudio/.internal/user-concrete-model-default-config/QuantFactory/shieldgemma-2b-GGUF/shieldgemma-2b.Q8_0.gguf.json",
+      "golden_path": "/home/mkalinich/main/reviewer_2_experiments/data/template_backups/sg1_patched_sensitivity_backups/20260618T031154Z/QuantFactory/shieldgemma-2b-GGUF/shieldgemma-2b.Q8_0.gguf.json",
+      "golden_sha256": "21086adf66f664261709b168073aeeb624ae342b71d84507df6da874b049177b"
+    },
+    "shieldgemma-9b": {
+      "live_path": "/home/mkalinich/.lmstudio/.internal/user-concrete-model-default-config/QuantFactory/shieldgemma-9b-GGUF/shieldgemma-9b.Q8_0.gguf.json",
+      "golden_path": "/home/mkalinich/main/reviewer_2_experiments/data/template_backups/sg1_patched_sensitivity_backups/20260618T031154Z/QuantFactory/shieldgemma-9b-GGUF/shieldgemma-9b.Q8_0.gguf.json",
+      "golden_sha256": "ee0e406c10712d34174d1a9408947686e9bd1aa84636d95c6c0ff8421be95297"
+    },
+    "shieldgemma-27b": {
+      "live_path": "/home/mkalinich/.lmstudio/.internal/user-concrete-model-default-config/mradermacher/shieldgemma-27b-GGUF/shieldgemma-27b.Q8_0.gguf.json",
+      "golden_path": "/home/mkalinich/main/reviewer_2_experiments/data/template_backups/sg1_patched_sensitivity_backups/20260618T031154Z/mradermacher/shieldgemma-27b-GGUF/shieldgemma-27b.Q8_0.gguf.json",
+      "golden_sha256": "7b7dc4f87507dcc290d4e06fa433817c320dc794e69b63f38aa486898487867a"
+    }
+  },
+  "restore_verified": {
+    "shieldgemma-2b": true,
+    "shieldgemma-9b": true,
+    "shieldgemma-27b": true
+  },
+  "break_test": {
+    "http_status": 200,
+    "response_content": "No",
+    "error_text": null
+  },
+  "experiment": {
+    "task": "TE",
+    "lm_studio_id": "shieldgemma-2b",
+    "input_csv": "/home/mkalinich/main/reviewer_2_experiments/shieldgemma_sg1_patched_te_10pct_smoke/data/therapy_engagement_finalized_sentences_10pct.csv",
+    "input_rows": 42,
+    "exit_code": 0,
+    "stdout_tail": "Running experiment shieldgemma_2b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_10pct_f6eb7874\nCache-only approach: CSV files will be generated from cache + new API results\n\n======================================================================\nValidating prompt categories against config...\n======================================================================\n\u2705 Category validation passed!\n   Experiment type: therapy_engagement\n   Prompt declares: ['therapy_engagement']\n   \u26a0\ufe0f  Prompt defines categories {'non_therapeutic', 'ambiguous_engagement'} for 'therapy_engagement' that are not in config's positive categories. This is OK if they're valid negatives, but verify this is intentional.\n======================================================================\n\nCache initialized at: /home/mkalinich/main/reviewer_2_experiments/shieldgemma_sg1_patched_te_10pct_smoke/cache\nLoading input data from /home/mkalinich/main/reviewer_2_experiments/shieldgemma_sg1_patched_te_10pct_smoke/data/therapy_engagement_finalized_sentences_10pct.csv\nLoaded 42 rows for processing\nReplicates per item: 1\nStarting batch processing for experiment: shieldgemma_2b_te_sg1_patched_10pct\nPhase 1: Checking cache...\nCache: 0 hits, 42 to process\nWarming up model...\n  \ud83d\udd04 Warming up model shieldgemma-2b... (attempt 1/5)\n  \u2705 Model loaded and responding (0.1s)\nProcessing 42 items...\nProcessing 42 requests with up to 1 concurrent connections...\nProgress: 42/42 (100.0%) completed\nOrganizing results...\n\nExperiment complete!\nExperiment ID: shieldgemma_2b_2.0_therapy_engagement_conversation_v2_1.0_therapy_engagement_finalized_sentences_10pct_f6eb7874\nInput samples: 42\nReplicates per sample: 1\nTotal results generated: 42\nSuccessful: 0\nParse failures: 42\nErrors: 0\nSuccess rate: 0.0%\nAPI calls made: 42\nCache hits: 0\nCache hit rate: 0.0%\n",
+    "cache_summary": {
+      "parse_fail": {
+        "count": 42,
+        "avg_completion_tokens": 2.0
+      }
+    }
+  }
+}

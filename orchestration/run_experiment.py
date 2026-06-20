@@ -245,11 +245,12 @@ async def process_batch_async(client: LMStudioClient,
                 
                 status = "ok" if parsed_result is not None else "parse_fail"
                 
-                # Store in cache
-                cache.store_result(
-                    config, text, system_prompt, raw_response, parsed_result, 
-                    status, processing_time, replicate_idx
-                )
+                # Store in cache (cache is None when --no-cache is set)
+                if cache is not None:
+                    cache.store_result(
+                        config, text, system_prompt, raw_response, parsed_result, 
+                        status, processing_time, replicate_idx
+                    )
                 
                 return (raw_response, parsed_result, status, row_index)
                 
@@ -262,11 +263,12 @@ async def process_batch_async(client: LMStudioClient,
                     "processing_time_seconds": processing_time
                 }
                 
-                # Store error in cache
-                cache.store_result(
-                    config, text, system_prompt, error_response, None,
-                    f"api_error:{str(e)[:200]}", processing_time, replicate_idx
-                )
+                # Store error in cache (cache is None when --no-cache is set)
+                if cache is not None:
+                    cache.store_result(
+                        config, text, system_prompt, error_response, None,
+                        f"api_error:{str(e)[:200]}", processing_time, replicate_idx
+                    )
                 
                 return (error_response, None, f"api_error:{str(e)[:200]}", row_index)
     
@@ -468,9 +470,8 @@ def run_experiment(config: ExperimentConfig,
         
         print(f"Processing {len(texts_to_process)} items...")
         
-        # Process in parallel with max 5 concurrent requests
         batch_results = asyncio.run(process_batch_async(
-            client, system_prompt, texts_to_process, config, cache, max_concurrent=25
+            client, system_prompt, texts_to_process, config, cache, max_concurrent=1
         ))
         
         # Organize batch results back into all_results

@@ -789,6 +789,12 @@ def main():
                        help='Figure size (width height)')
     parser.add_argument('--save-pdf', action='store_true',
                        help='Also save PDF versions')
+    parser.add_argument(
+        '--plots',
+        nargs='+',
+        default=None,
+        help='Plot suffixes to generate (default: all). E.g. f1_vs_params_overall_trend',
+    )
     
     args = parser.parse_args()
     
@@ -872,7 +878,14 @@ def main():
             title_suffix='F1 vs Parameters (By Version Trends)'
         ),
     ]
-    
+
+    if args.plots:
+        allowed = set(args.plots)
+        plot_configs = [c for c in plot_configs if c.output_suffix in allowed]
+        if not plot_configs:
+            print(f"No matching plots for --plots {args.plots}")
+            return
+
     # Generate all plots and collect regression statistics
     print(f"\n=== Generating {len(plot_configs)} plots ===")
     all_regression_stats = []

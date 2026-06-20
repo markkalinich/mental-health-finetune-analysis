@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    width: fit-content;
+    margin: 20px auto;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+caption {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+th {
+    background-color: #f0f0f0;
+    padding: 6px 4px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+th.variable-col {
+    text-align: left;
+    width: 140px;
+}
+th.task-header {
+    border-top: 2px solid black;
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+td {
+    padding: 5px 4px;
+    border: 1px solid #ddd;
+}
+td:first-child {
+    text-align: left;
+    font-size: 9px;
+    max-width: 140px;
+    word-wrap: break-word;
+}
+td.coef, td.ci {
+    text-align: center;
+    font-size: 9px;
+}
+.summary-row {
+    border-top: 2px solid black;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+.notes-row {
+    background-color: #f9f9f9;
+}
+.notes-row td {
+    padding: 10px;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<table>
+<caption>Regression Results: F1 Score (Bonferroni) — parse50pct_per_task</caption>
+<thead>
+<tr>
+<th class="variable-col" rowspan="2">Variable</th>
+<th class="task-header" colspan="2">Suicidal Ideation</th>
+<th class="task-header" colspan="2">Therapy Request</th>
+<th class="task-header" colspan="2">Therapy Engagement</th>
+</tr>
+<tr>
+<th>β</th>
+<th>95% CI</th>
+<th>β</th>
+<th>95% CI</th>
+<th>β</th>
+<th>95% CI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intercept</td>
+<td class="coef">0.405<sup>***</sup></td>
+<td class="ci">[0.143, 0.666]</td>
+<td class="coef">0.307</td>
+<td class="ci">[-0.026, 0.641]</td>
+<td class="coef">0.353</td>
+<td class="ci">[-0.064, 0.770]</td>
+</tr>
+<tr>
+<td>Version: 2</td>
+<td class="coef">0.143</td>
+<td class="ci">[-0.149, 0.435]</td>
+<td class="coef">0.226</td>
+<td class="ci">[-0.104, 0.557]</td>
+<td class="coef">0.273</td>
+<td class="ci">[-0.092, 0.638]</td>
+</tr>
+<tr>
+<td>Version: 3</td>
+<td class="coef">0.268<sup>*</sup></td>
+<td class="ci">[0.016, 0.520]</td>
+<td class="coef">0.323<sup>*</sup></td>
+<td class="ci">[0.028, 0.619]</td>
+<td class="coef">0.321<sup>*</sup></td>
+<td class="ci">[0.002, 0.640]</td>
+</tr>
+<tr>
+<td>Version: 4</td>
+<td class="coef">0.382<sup>**</sup></td>
+<td class="ci">[0.105, 0.659]</td>
+<td class="coef">0.485<sup>***</sup></td>
+<td class="ci">[0.159, 0.812]</td>
+<td class="coef">0.443<sup>**</sup></td>
+<td class="ci">[0.087, 0.799]</td>
+</tr>
+<tr>
+<td>Parameter Size (B)</td>
+<td class="coef">0.006<sup>***</sup></td>
+<td class="ci">[0.002, 0.010]</td>
+<td class="coef">0.006<sup>**</sup></td>
+<td class="ci">[0.001, 0.010]</td>
+<td class="coef">0.004</td>
+<td class="ci">[-0.001, 0.008]</td>
+</tr>
+<tr>
+<td>Fine-Tune Type: Instruction-Tuned</td>
+<td class="coef">0.089</td>
+<td class="ci">[-0.114, 0.292]</td>
+<td class="coef">0.167</td>
+<td class="ci">[-0.078, 0.411]</td>
+<td class="coef">0.072</td>
+<td class="ci">[-0.209, 0.353]</td>
+</tr>
+<tr>
+<td>Fine-Tune Type: Mental Health Tuned</td>
+<td class="coef">0.108</td>
+<td class="ci">[-0.089, 0.304]</td>
+<td class="coef">0.016</td>
+<td class="ci">[-0.225, 0.257]</td>
+<td class="coef">0.054</td>
+<td class="ci">[-0.221, 0.328]</td>
+</tr>
+<tr>
+<td>Fine-Tune Type: Medical-Tuned</td>
+<td class="coef">0.184</td>
+<td class="ci">[-0.014, 0.383]</td>
+<td class="coef">0.212</td>
+<td class="ci">[-0.065, 0.488]</td>
+<td class="coef">0.127</td>
+<td class="ci">[-0.156, 0.410]</td>
+</tr>
+<tr>
+<td>Fine-Tune Type: Safety-Tuned</td>
+<td class="coef">0.223<sup>*</sup></td>
+<td class="ci">[0.020, 0.427]</td>
+<td class="coef">-0.227</td>
+<td class="ci">[-0.820, 0.365]</td>
+<td class="coef">-0.362</td>
+<td class="ci">[-0.861, 0.137]</td>
+</tr>
+<tr>
+<td>Family: LLaMA</td>
+<td class="coef">-0.131</td>
+<td class="ci">[-0.296, 0.034]</td>
+<td class="coef">-0.236<sup>*</sup></td>
+<td class="ci">[-0.440, -0.033]</td>
+<td class="coef">-0.092</td>
+<td class="ci">[-0.271, 0.087]</td>
+</tr>
+<tr>
+<td>Family: Qwen</td>
+<td class="coef">-0.023</td>
+<td class="ci">[-0.188, 0.142]</td>
+<td class="coef">-0.033</td>
+<td class="ci">[-0.254, 0.189]</td>
+<td class="coef">-0.071</td>
+<td class="ci">[-0.282, 0.141]</td>
+</tr>
+<tr class="summary-row">
+<td>R²</td>
+<td class="coef">0.429</td>
+<td class="ci"></td>
+<td class="coef">0.532</td>
+<td class="ci"></td>
+<td class="coef">0.383</td>
+<td class="ci"></td>
+</tr>
+<tr class="summary-row">
+<td>Adj R²</td>
+<td class="coef">0.358</td>
+<td class="ci"></td>
+<td class="coef">0.468</td>
+<td class="ci"></td>
+<td class="coef">0.313</td>
+<td class="ci"></td>
+</tr>
+<tr class="summary-row">
+<td>N</td>
+<td class="coef">91</td>
+<td class="ci"></td>
+<td class="coef">84</td>
+<td class="ci"></td>
+<td class="coef">99</td>
+<td class="ci"></td>
+</tr>
+<tr class="notes-row">
+<td colspan="7" style="text-align: left; padding: 10px; font-size: 0.85em; color: #666; border-top: 2px solid black;">
+<strong>Significance levels (Bonferroni-corrected):</strong> <sup>*</sup>p&lt;0.05; <sup>**</sup>p&lt;0.01; <sup>***</sup>p&lt;0.001<br>
+<strong>Multiple testing correction:</strong> Bonferroni correction applied to p-values AND confidence intervals<br>
+<strong>Confidence intervals:</strong> Bonferroni-adjusted (α = 0.05/n_tests)<br>
+<strong>Reference categories:</strong> Family=Gemma, Version=1, Fine-Tune Type=Base Model<br>
+<strong>Standard errors:</strong> HC3 heteroscedasticity-consistent (robust)
+</td>
+</tr>
+</tbody>
+</table>
+
+</div> <!-- close container -->
+
+</body>
+</html>

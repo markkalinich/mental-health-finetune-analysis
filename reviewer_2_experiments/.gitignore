@@ -1,0 +1,12 @@
+# Partial/full GGUF downloads are reproducible; keep JSON artifacts only.
+data/provenance/hf_template_compare/*.gguf
+data/provenance/hf_template_compare/*/
+
+# Operator notebook — local only; prior versions remain in git history
+zArchive/EXPERIMENT_LOG.md
+
+# Run logs (archived under zArchive/logs/)
+logs/
+
+__pycache__/
+*.pyc

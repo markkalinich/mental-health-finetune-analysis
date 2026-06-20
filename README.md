@@ -52,6 +52,7 @@ flowchart TB
     subgraph P4["Phase 4: Figures and tables"]
         combined --> figs["Figures 1–3,\nsupplementary figures"]
         combined --> tab1["Table 1 regression"]
+        combined --> rev["Revision outputs\n(Figure S10; parse≥50%\nTable S2, Figures S11–S12)"]
     end
 
     style cache fill:#e1f5fe,stroke:#01579b,stroke-width:2px
@@ -100,9 +101,21 @@ results/FINETUNE_PAPER_FIGURES/[YYYYMMDD_HHMMSS]/
 ├── figure_2/*.png
 ├── figure_3/delta_f1_finetune_facet.png
 ├── table_1/*.csv, *.html
-├── supplementary_figures/*.png
+├── supplementary_figures/*.png          # 9 family×task facet plots (Gemma, LLaMA, Qwen)
+├── revision_figures/
+│   ├── figure_s10_delta_parse_vs_delta_f1.png
+│   ├── figure_s11_f1_vs_params_overall_trend_parse50pct_per_task.png
+│   └── figure_s12_delta_f1_facet_parse50pct_per_task.png
+├── revision_data/
+│   ├── table_s2_multivariable_f1_bonferroni_parse50pct_per_task.csv
+│   ├── table_s2_f1_bonferroni_paste_format.tsv
+│   ├── parse50pct_per_task_cohort.json
+│   └── …                          # P2 agreement, revised metadata table, facet stats
+├── CLAIM_VERIFICATION.md
 └── data/*.csv
 ```
+
+**Canonical sources for revision sensitivity (parse≥50% per-task):** generated under `reviewer_2_experiments/results/parse50pct_per_task/` and copied into each pipeline run’s `revision_figures/` and `revision_data/`. See [`reviewer_2_experiments/REVIEWER_2_EXPERIMENTS.md`](reviewer_2_experiments/REVIEWER_2_EXPERIMENTS.md) for rebuttal claim evidence and audit.
 
 Each run also writes a `PROVENANCE.json` recording the git commit, cache hash, input hashes, and CLI flags used.
 
@@ -114,7 +127,11 @@ Each run also writes a `PROVENANCE.json` recording the git commit, cache hash, i
 | **Figure 2** | F1 vs parameter count | `analysis/comparative_analysis/compact_unified_facet_plot.py` |
 | **Figure 3** | ΔF1 Pre/Post-Fine-Tuning | `analysis/combined_finetune_facet_plot.py` |
 | **Table 1** | Multivariable Regression (F1 dependent variable) | `analysis/statistics/regression_analysis.py`, `create_*_tables.py` |
-| **Supplementary** | Family × task facet plots (9); ΔF1 vs ΔParse Success (1) | `analysis/comparative_analysis/{gemma,llama,qwen}_version_facet_plot.py` |
+| **Supplementary (×9)** | Family × task facet plots (Gemma, LLaMA, Qwen) | `analysis/comparative_analysis/{gemma,llama,qwen}_version_facet_plot.py` |
+| **Figure S10** | Δparse vs ΔF1 under fine-tuning (parse compliance sensitivity) | `analysis/revision/delta_parse_vs_delta_f1_scatter.py` |
+| **Table S2** | Multivariable F1 regression on parse≥50% per-task cohort (N=91/84/99) | `reviewer_2_experiments/scripts/run_parse_filtered_outputs.py` |
+| **Figure S11** | F1 vs parameters on parse≥50% cohort (parallel to Figure 2) | same |
+| **Figure S12** | ΔF1 facets on parse≥50% cohort (parallel to Figure 3) | same |
 
 ## Repository structure
 
@@ -137,6 +154,7 @@ Each run also writes a `PROVENANCE.json` recording the git commit, cache hash, i
 │   └── prompts/                         # Task prompt text files
 ├── bash_scripts/                        # run_all_models.sh (inference orchestration)
 ├── utilities/                           # Cache QC, manuscript subset builder, model validator
+├── reviewer_2_experiments/              # Rebuttal claims, parse≥50% sensitivity, provenance audits
 └── results/                             # Pipeline outputs (timestamped run directories)
 ```
 
@@ -155,6 +173,15 @@ python analysis/combined_finetune_facet_plot.py
 # Table 1
 python analysis/statistics/regression_analysis.py
 
+# Revision sensitivity: Table S2 + Figures S11–S12 (parse≥50% per-task)
+.venv/bin/python reviewer_2_experiments/scripts/run_parse_filtered_outputs.py --target all
+
+# Figure S10 (Δparse vs ΔF1)
+python analysis/revision/delta_parse_vs_delta_f1_scatter.py
+
+# Verify rebuttal claims (artifact audit; see reviewer_2_experiments/REVIEWER_2_EXPERIMENTS.md)
+reviewer_2_experiments/bash_scripts/audit_all_claims.sh --skip-live
+
 # Run experiments for a subset of models
 bash bash_scripts/run_all_models.sh --models "gemma:12b-it,llama3.1:8b" \
     data/inputs/finalized_input_data/SI_finalized_sentences.csv \
@@ -169,7 +196,7 @@ python -m cache.cache_manager stats
 
 - Each pipeline run writes `PROVENANCE.json` with git commit, cache SHA-256, input hashes, and CLI flags.
 - A frozen manuscript cache subset can be built with `utilities/build_manuscript_cache_subset.py`; run `utilities/cache_qc_report.py` against it to verify coverage.
-- Reviewer-driven revision analyses (parse success, ΔF1, inter-rater reliability) are in `results/revision_experiments/`.
+- Reviewer-driven revision analyses live in [`reviewer_2_experiments/`](reviewer_2_experiments/) (parse≥50% Table S2 / Figures S11–S12, template provenance, guard re-parse evidence). Earlier exploratory outputs remain in `results/revision_experiments/`.
 - Developer notes on venv setup, integrity checks, and git workflow: [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
 
 ## Citation
