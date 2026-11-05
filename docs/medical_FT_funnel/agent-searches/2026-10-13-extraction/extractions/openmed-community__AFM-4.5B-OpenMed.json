@@ -1,0 +1,219 @@
+{
+  "hf_id": "openmed-community/AFM-4.5B-OpenMed",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:19-04:00",
+  "ended": "2026-10-13T12:42:15-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/openmed-community__AFM-4.5B-OpenMed__2026-10-05.md",
+    "cached_sha256": "65fcea91af684867e93e15b06177d601601deafe6992a02dac919750cfd84611",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "mergekit_config.yml",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": ["https://hotaisle.xyz/"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "proprietary synthetic medical datasets and search traces",
+      "hub_id": "",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md",
+      "quote": "SFT data: Proprietary synthetic medical data + search traces."
+    },
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": [
+        "https://huggingface.co/datasets/openlifescienceai/medmcqa",
+        "https://medmcqa.github.io/"
+      ],
+      "loads": true,
+      "n_examples": 193155,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/openlifescienceai/medmcqa",
+      "quote": "Historical Exam questions from official websites - AIIMS & NEET PG (1991- present). The raw data is collected from open websites and books. train num_examples: 182822; validation num_examples: 4183; test num_examples: 6150."
+    },
+    {
+      "name": "MedReason",
+      "hub_id": "UCSC-VLAA/MedReason",
+      "urls": [
+        "https://huggingface.co/datasets/UCSC-VLAA/MedReason",
+        "https://arxiv.org/abs/2504.00993"
+      ],
+      "loads": true,
+      "n_examples": 32682,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/UCSC-VLAA/MedReason/raw/main/README.md",
+      "quote": "Our pipeline generates detailed reasoning for various medical questions from 7 medical datasets, resulting in a dataset of 32,682 question-answer pairs, each with detailed, step-by-step explanations."
+    }
+  ],
+  "training_method": {
+    "objective": "sft|dpo|grpo",
+    "objective_quote": "Trained with a simple 3-stage recipe (SFT → DPO → GRPO-CoT) and finalized via Arcee Fusion weight merging (MergeKit).",
+    "objective_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "arcee-ai/AFM-4.5B",
+    "source_claims": [
+      {
+        "parent": "arcee-ai/AFM-4.5B",
+        "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md",
+        "quote": "Base: arcee-ai/AFM-4.5B – Arcee’s 4.5B instruction model intended for cloud-to-edge deployment."
+      },
+      {
+        "parent": "arcee-ai/AFM-4.5B",
+        "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/mergekit_config.yml",
+        "quote": "base_model: arcee-ai/AFM-4.5B"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4.5B (safetensors total 4619189760)",
+    "parameters_stated_url": "https://huggingface.co/api/models/openmed-community/AFM-4.5B-OpenMed"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Lightweight medical finetune on top of Arcee’s AFM-4.5B for education and research use. Trained with a simple 3-stage recipe (SFT → DPO → GRPO-CoT) and finalized via Arcee Fusion weight merging (MergeKit). More information about our methodology will be available in a forthcoming blog post.",
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a careful medical assistant. Cite sources and warn this is not medical advice."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a careful medical assistant. Cite sources and warn this is not medical advice."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This model is not a clinician. It can hallucinate and should not be used for diagnosis or treatment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Lightweight medical finetune on top of Arcee’s AFM-4.5B for education and research use.",
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Intended: Medical SLM's research, tool-augmented retrieval demos."],
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "answer exam questions", "clinical reasoning"],
+    "quotes": [
+      "Instruction-style synthetic medical Q&A + conversions",
+      "DPO using MedMCQA-derived preferences (multiple-choice signal).",
+      "GRPO for chain-of-thought enrichment, using MedReason verifiable rewards; short rationales encouraged, final answer checked."
+    ],
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "Briefly: cellulitis vs erysipelas differences?",
+      "short rationales encouraged, final answer checked."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering"],
+    "quotes": [
+      "Instruction-style synthetic medical Q&A + conversions",
+      "DPO using MedMCQA-derived preferences (multiple-choice signal). MMLU: 61.10 (vs 55.53 base) eval only."
+    ],
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Lightweight medical finetune on top of Arcee’s AFM-4.5B",
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Briefly: cellulitis vs erysipelas differences?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a careful medical assistant. Cite sources and warn this is not medical advice.",
+    "system_prompt_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "do_sample": false
+    },
+    "generation_settings_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md",
+    "max_context": 65536,
+    "notes": "No generation_config.json (HTTP 404). config.json max_position_embeddings is 65536 with YaRN rope scaling from 4096. If the first message is not a system message, the chat template inserts a default AFM-4.5B persona beginning 'The assistant is AFM-4.5B, trained by Arcee AI'. mergekit_config.yml fuses arcee-ai/AFM-4.5B with a local GRPO checkpoint path ending in checkpoint-1600, merge_method arcee_fusion. The Hub safetensors dtype is F32; config.json and the merge file say bfloat16. The card says a methodology blog post is forthcoming and points at MergeKit without a URL."
+  },
+  "evaluation_reported": {
+    "text": "EleutherAI lm-evaluation-harness, batch size 64, chat template, fewshot as multiturn. MMLU 61.10 versus base 55.53. MMLU-Pro 33.44 versus 32.61. IFEVAL 63.55 versus 63.67. Medical MMLU rows include clinical_knowledge 67.55, college_medicine 64.74, professional_medicine 63.97, and virology 49.4.",
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/openmed-community/AFM-4.5B-OpenMed/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|grpo|sft",
+    "datasets": "MedMCQA | MedReason",
+    "parent": "arcee-ai/AFM-4.5B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods and parent match. MedMCQA and MedReason match the named public sets. The card also names proprietary synthetic medical data and search traces for the SFT stage, which the inventory datasets cell does not list. The card does not say how many MedMCQA or MedReason rows were used.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"openmed-community/AFM-4.5B-OpenMed\"",
+    "\"AFM-4.5B-OpenMed\" huggingface",
+    "\"AFM-4.5B-OpenMed\" arxiv",
+    "\"AFM-4.5B-OpenMed\" github",
+    "MedReason huggingface dataset",
+    "MedMCQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

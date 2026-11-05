@@ -1,0 +1,261 @@
+{
+  "hf_id": "nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:16:56-04:00",
+  "ended": "2026-10-10T00:21:00-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3__2026-10-09.md",
+    "cached_sha256": "0291e3be308ba2fd77be2b1262e6775a15dc7a0b66bebc80bf2e9ba98fc9f8f0",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "inference_script.py",
+    "lora_adapter/adapter_config.json",
+    "lora_adapter/adapter_model.safetensors",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2508.01710",
+        "arxiv_id": "2508.01710",
+        "title": "CultureGuard: Towards Culturally-Aware Dataset and Guard Model for Multilingual Safety Applications",
+        "venue": "IJCNLP 2025",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [
+      "https://build.nvidia.com/nvidia/llama-3_1-nemotron-safety-guard-8b-v3/modelcard",
+      "http://nvidia.com/nemotron-responsible-use"
+    ],
+    "demos": [
+      "https://build.nvidia.com/nvidia/llama-3_1-nemotron-safety-guard-8b-v3"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "Nemotron-Safety-Guard-Dataset-v3",
+      "hub_id": "nvidia/Nemotron-Safety-Guard-Dataset-v3",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Nemotron-Safety-Guard-Dataset-v3",
+        "https://arxiv.org/html/2508.01710"
+      ],
+      "loads": true,
+      "n_examples": 386661,
+      "language": "en, ar, de, es, fr, hi, ja, th, zh",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2508.01710",
+      "quote": "The resulting dataset, Nemotron-Safety-Guard-Dataset-v3, comprises 386,661 samples in 9 languages and facilitates the training of Llama-3.1-Nemotron-Safety-Guard-8B-v3 via LoRA-based fine-tuning."
+    },
+    {
+      "name": "Nemotron Content Safety Dataset V2",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/raw/main/README.md",
+      "quote": "The Nemotron Content Safety Dataset V2, formerly known as Aegis AI Content Safety Dataset 2.0, is comprised of 33,416 annotated interactions between humans and LLMs, split into 30,007 training samples, 1,445 validation samples, and 1,964 test samples."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "lora",
+    "update_scope_quote": "We perform Parameter Efficient FineTuning (PEFT) over the above base model using the following Network Architecture parameters: Rank: 8; Alpha: 32; Targeted low rank adaptation modules: 'q_proj', 'v_proj'.",
+    "update_scope_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md",
+    "lora_rank": 8,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 5,
+    "steps": null,
+    "learning_rate": 1e-05,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md",
+        "quote": "The base large language model (LLM) is the multilingual Llama-3.1-8B-Instruct model from Meta."
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/lora_adapter/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"meta-llama/Llama-3.1-8B-Instruct\""
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://arxiv.org/html/2508.01710",
+        "quote": "We employ LoRA tuning, using the Llama-3.1-8B-Instruct model as our base model."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8.03B",
+    "parameters_stated_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md"
+  },
+  "languages": {
+    "values": [
+      "en",
+      "es",
+      "zh",
+      "de",
+      "fr",
+      "hi",
+      "ja",
+      "ar",
+      "th",
+      "it",
+      "ko",
+      "nl",
+      "cs",
+      "da",
+      "fi",
+      "iw",
+      "pt-BR",
+      "pl",
+      "ru",
+      "sv"
+    ],
+    "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md",
+    "quote": "It supports 9 languages: English, Spanish, Mandarin, German, French, Hindi, Japanese, Arabic, and Thai. The model shows strong zero-shot generalization supporting over 20 languages (en, ar, de, es, fr, hi, ja, th, zh, it, ko, nl, cs, da, fi, iw, pt-BR, pl, ru, sv)."
+  },
+  "description": {
+    "text": "Llama-3.1-Nemotron-Safety-Guard-8B-v3 is a multilingual content safety model that moderates human-LLM interaction content and classifies user prompts and LLM responses as safe or unsafe. If the content is unsafe, the model additionally returns a response with a list of categories that the content violates. It supports 9 languages: English, Spanish, Mandarin, German, French, Hindi, Japanese, Arabic, and Thai. The base large language model (LLM) is the multilingual Llama-3.1-8B-Instruct model from Meta. NVIDIA’s optimized release is LoRa-tuned on approved datasets and better conforms to NVIDIA’s content safety risk taxonomy and other safety risks in human-LLM interactions. The model is trained using the Nemotron-Safety-Guard-Dataset-v3 dataset which is synthetically curated using the CultureGuard pipeline. The model shows strong zero-shot generalization supporting over 20 languages (en, ar, de, es, fr, hi, ja, th, zh, it, ko, nl, cs, da, fi, iw, pt-BR, pl, ru, sv). The model can be prompted using an instruction and a taxonomy of unsafe risks to be categorized. The instruction format for prompt moderation is shown below under input and output examples.",
+    "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "classifies user prompts and LLM responses as safe or unsafe. If the content is unsafe, the model additionally returns a response with a list of categories that the content violates."
+  },
+  "input_kind": {
+    "values": [
+      "user prompt",
+      "prompt and reply",
+      "conversation"
+    ],
+    "quotes": [
+      "The prompt template contains 3 sections, instruction, user prompt, or user prompt and LLM response (single or multiple turns).",
+      "Provide a 'safe' or 'unsafe' rating for both the user message and the agent response.",
+      "Check if there is unsafe content in the user or agent messages in the below conversation in accordance with our safety policy with the below categories."
+    ]
+  },
+  "output_kind": {
+    "values": [
+      "binary label",
+      "category label",
+      "structured object"
+    ],
+    "quotes": [
+      "\"User Safety\": string(required), // \"safe\" or \"unsafe\"",
+      "The categories field contains a comma-separated list of violated categories if the user or response is deemed unsafe.",
+      "Output Type(s): Text Json. Text in JSON format with 3 fields: \"User Safety\", \"Response Safety\", and \"Safety Categories\"."
+    ]
+  },
+  "detection_claim": {
+    "kind": "other",
+    "categories": [
+      "Violence",
+      "Sexual",
+      "Criminal Planning/Confessions",
+      "Guns and Illegal Weapons",
+      "Controlled/Regulated Substances",
+      "Suicide and Self Harm",
+      "Sexual (minor)",
+      "Hate/Identity Hate",
+      "PII/Privacy",
+      "Harassment",
+      "Threat",
+      "Profanity",
+      "Needs Caution",
+      "Other",
+      "Manipulation",
+      "Fraud/Deception",
+      "Malware",
+      "High Risk Gov Decision Making",
+      "Political/Misinformation/Conspiracy",
+      "Copyright/Trademark/Plagiarism",
+      "Unauthorized Advice",
+      "Illegal Activity",
+      "Immoral/Unethical"
+    ],
+    "quote": "Llama-3.1-Nemotron-Safety-Guard-8B-v3 is a multilingual content safety model that moderates human-LLM interaction content and classifies user prompts and LLM responses as safe or unsafe. If the content is unsafe, the model additionally returns a response with a list of categories that the content violates.",
+    "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Input Type(s): Text",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/tokenizer_config.json",
+    "system_prompt": "Cutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024",
+    "system_prompt_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/tokenizer_config.json",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/generation_config.json",
+    "max_context": null,
+    "notes": "The card's example calls model.generate with max_new_tokens=100. The card says context length up to 8K; config.json max_position_embeddings and tokenizer_config.json model_max_length are both 131072. There is no chat_template.jinja. The safety instruction is passed as the user message; the chat template still inserts the Llama 3.1 system preamble above. The root checkpoint is a full LlamaForCausalLM (bfloat16, four shards). A separate LoRA adapter is in lora_adapter/. inference_script.py repeats the card's prompt."
+  },
+  "evaluation_reported": {
+    "text": "Card table (scores as printed, metric not named in the table): Nemotron-Safety-Guard-Dataset-v3 85.32; PolyGuardPrompts 76.07; RTP-LX 91.49; MultiJail 95.36; XSafety 66.97; Aya Red-teaming 96.79. Dataset partition: Training (90%), Testing (6%), Evaluation (4%).",
+    "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md"
+  },
+  "license": {
+    "value": "NVIDIA Open Model License (nvidia-open-model-license); additional Llama 3.1 Community License Agreement",
+    "source_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:lora|lora",
+    "datasets": "nvidia/Nemotron-Safety-Guard-Dataset-v3",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3\"",
+    "\"Llama-3.1-Nemotron-Safety-Guard-8B-v3\" huggingface",
+    "\"Llama-3.1-Nemotron-Safety-Guard-8B-v3\" arxiv",
+    "\"Llama-3.1-Nemotron-Safety-Guard-8B-v3\" github",
+    "CultureGuard: Towards Culturally-Aware Dataset and Guard Model for Multilingual Safety Applications",
+    "Nemotron-Safety-Guard-Dataset-v3 huggingface dataset",
+    "Nemotron Content Safety Dataset V2 huggingface dataset"
+  ],
+  "confidence": "high"
+}

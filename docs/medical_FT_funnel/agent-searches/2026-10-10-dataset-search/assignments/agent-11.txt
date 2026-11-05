@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 11 of 19). Repository ids, in this order:
+1. ronan7878/qwen3-4b-medical-finetune
+2. SameerShanbhogue/Qwen2.5-FT-FreedomIntelligence_medical
+3. Satyam810/qwen3-8b-medical-reasoning
+4. shashanksrajak/gemma-3-finetuned-medical-QnA
+5. shdkahjkda/medical-v5-8b
+6. Sheppp/medmcqa-calibration-exp-B-log-harshfail
+7. Sheppp/medmcqa-calibration-exp-E-grpo-std
+8. Sheppp/medmcqa-calibration-exp-F-grpo-no-std
+9. Shivapruthvi/medical-mistral-summarizer
+10. siva317/MVP_Medical_Unsloth_FineTunning
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-11.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-11.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

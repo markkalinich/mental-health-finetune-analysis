@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 10 of 19). Repository ids, in this order:
+1. ojayy/llama32-3b-mmlu-medical_genetics-full
+2. Omkar7/finetuned-t5-medical
+3. OpenMedZoo/MedGo
+4. PrasannaPaithankar/qwen2.5-1.5b-medical-sft-dare
+5. QuyenAnhDE/flant5base-medical
+6. rabbitfishai/docmap-uk-triage-merged-qwen2.5-7b
+7. raghul-a-r/tinyllama-medical-assistant-merged
+8. Rishi1708/LLaMA3.2-11B-VisionInstruct-MedicalXray-ScanAnalysis-v1.0
+9. RohithMidigudla/aarogya_gemma_telugu_medical
+10. RohithMidigudla/gemma-health-telugu-medical-merged-h1-30-h2-70
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-10.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-10.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

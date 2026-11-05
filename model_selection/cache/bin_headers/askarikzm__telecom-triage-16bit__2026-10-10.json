@@ -1,0 +1,8 @@
+{
+ "files": {
+  "model-00001-of-00004.safetensors": "ERR GATED:HTTP_403",
+  "model-00002-of-00004.safetensors": "ERR GATED:HTTP_403",
+  "model-00003-of-00004.safetensors": "ERR GATED:HTTP_403",
+  "model-00004-of-00004.safetensors": "ERR GATED:HTTP_403"
+ }
+}

@@ -1,0 +1,38 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,6587
+1,entered,6587
+1,kept,2234
+1,bin_unreadable,3
+1,blank_record,4
+1,no_root,4130
+1,other_dtype,206
+1,repo_gated,10
+2,entered,2234
+2,kept,318
+2,no_dataset,1899
+2,vision_or_video,17
+3,entered,318
+3,kept,86
+3,missing:parent_bin_header,15
+3,missing:parent_card,6
+3,missing:parent_readme,2
+3,multiple_parents,6
+3,no_parent,102
+3,parent_finetune,9
+3,parent_not_fp,20
+3,parent_not_stated,25
+3,parent_pretrained,46
+3,parent_unreadable,1
+4,entered,86
+4,kept,45
+4,missing:config,39
+4,parent_discordant,2
+5,entered,45
+5,kept,36
+5,manual_removed: duplicate of a kept model,5
+5,manual_removed: not mental health,1
+5,"manual_removed: persona model, no mental-health data",1
+5,"manual_removed: scorer, not a conversational model",2
+6,entered,36
+6,kept,36

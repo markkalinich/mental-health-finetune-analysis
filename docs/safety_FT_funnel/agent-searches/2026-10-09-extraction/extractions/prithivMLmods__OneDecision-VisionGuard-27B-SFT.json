@@ -1,0 +1,172 @@
+{
+  "hf_id": "prithivMLmods/OneDecision-VisionGuard-27B-SFT",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:31:28-04:00",
+  "ended": "2026-10-09T19:34:43-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prithivMLmods__OneDecision-VisionGuard-27B-SFT__2026-10-09.md",
+    "cached_sha256": "5ed9a27a79f112d2a91540bd35863308c6144103b77fe6c8bef36dbf6922f54c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "assets/banner.gif",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00011.safetensors",
+    "model-00002-of-00011.safetensors",
+    "model-00003-of-00011.safetensors",
+    "model-00004-of-00011.safetensors",
+    "model-00005-of-00011.safetensors",
+    "model-00006-of-00011.safetensors",
+    "model-00007-of-00011.safetensors",
+    "model-00008-of-00011.safetensors",
+    "model-00009-of-00011.safetensors",
+    "model-00010-of-00011.safetensors",
+    "model-00011-of-00011.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/PRITHIVSAKTHIUR/OneDecision-VisionGuard-Demo"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://huggingface.co/collections/prithivMLmods/onedecision-visionguard"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/prithivMLmods/OneDecision-VisionGuard-Demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "ImageShield-OneDecision-Classification",
+      "hub_id": "prithivMLmods/ImageShield-OneDecision-Classification",
+      "urls": [
+        "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md",
+        "https://huggingface.co/datasets/prithivMLmods/ImageShield-OneDecision-Classification",
+        "https://huggingface.co/api/datasets/prithivMLmods/ImageShield-OneDecision-Classification"
+      ],
+      "loads": false,
+      "n_examples": 30622,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md",
+      "quote": "trained on the ImageShield-OneDecision-Classification content-safety guardrail dataset"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Fine-tuned on the **prithivMLmods/ImageShield-OneDecision-Classification** content-safety guardrail dataset.",
+    "objective_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.8-27B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3.8-27B",
+        "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md",
+        "quote": "OneDecision-VisionGuard-27B-SFT is a dense 27-billion-parameter multimodal image classification model based on Qwen/Qwen3.8-27B"
+      },
+      {
+        "parent": "Qwen/Qwen3.8-27B",
+        "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT-GGUF",
+        "quote": "OneDecision-VisionGuard-27B-SFT is a dense 27-billion-parameter multimodal image classification model based on Qwen/Qwen3.8-27B"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "27 billion",
+    "parameters_stated_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "OneDecision-VisionGuard-27B-SFT is a dense 27-billion-parameter multimodal image classification model based on Qwen/Qwen3.8-27B and trained on the ImageShield-OneDecision-Classification content-safety guardrail dataset. The model is designed to classify visual content as Safe or NSFW, with a particular focus on detecting Not Safe for Work (NSFW) sensual content and other potentially sensitive visual content. OneDecision-VisionGuard-27B-SFT performs detailed visual analysis of dress codes, clothing exposure, poses, framing, and visual settings to support conservative content-safety classification.",
+    "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "The model is designed to classify visual content as Safe or NSFW"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "The model is designed to classify visual content as Safe or NSFW, with a particular focus on detecting Not Safe for Work (NSFW) sensual content"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "The model should not be treated as a definitive legal or safety determination."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "\"type\": \"image\", \"image\": \"https://path/to/your/image.jpg\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/prithivMLmods/OneDecision-VisionGuard-27B-SFT",
+    "system_prompt": "You are a strict content-safety guardrail classifier for images designed for parental control and minor protection.",
+    "system_prompt_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The card says the Standard Prompt is optional for Transformers and is used for the GGUF builds. The usage example sends only \"Classify this image as safe or nsfw.\" with an image. chat_template.jinja still inserts a default system prompt when no system message is passed. tokenizer_config.json has no chat_template key. The example sets max_new_tokens=256. generation_config.json does not set max_new_tokens or repetition_penalty. config.json text_config.max_position_embeddings and tokenizer model_max_length are 262144. tokenizer_config.json also sets max_length 2048. No adapter_config.json is in the repository. The safetensors header counts 27356728560 parameters. The TRL acknowledgement lists SFT, GRPO, and DPO as methods the library provides. The card tags this model SFT. It does not say this checkpoint was trained with DPO or GRPO."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/prithivMLmods/OneDecision-VisionGuard-27B-SFT/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|grpo|sft",
+    "datasets": "prithivMLmods/ImageShield-OneDecision-Classification",
+    "parent": "Qwen/Qwen3.8-27B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Dataset id and parent match. Inventory methods are dpo|grpo|sft. The card tags this model SFT and says it was fine-tuned on ImageShield-OneDecision-Classification. It does not say this checkpoint was trained with DPO or GRPO. Those names appear in the TRL library description.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"prithivMLmods/OneDecision-VisionGuard-27B-SFT\"",
+    "\"OneDecision-VisionGuard-27B-SFT\" huggingface",
+    "\"OneDecision-VisionGuard-27B-SFT\" arxiv",
+    "\"OneDecision-VisionGuard-27B-SFT\" github",
+    "ImageShield-OneDecision-Classification huggingface dataset"
+  ],
+  "confidence": "medium"
+}

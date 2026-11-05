@@ -1,0 +1,17 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 14 of 15).
+
+Model 1: sshl505/Hermes_2_Pro_Mistral_7B_Counsellor
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/sshl505__Hermes_2_Pro_Mistral_7B_Counsellor__2026-10-09.md
+  Inventory row: methods='' datasets='Estwld/empathetic_dialogues_llm' parent='NousResearch/Hermes-2-Pro-Mistral-7B'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/sshl505__Hermes_2_Pro_Mistral_7B_Counsellor.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/sshl505__Hermes_2_Pro_Mistral_7B_Counsellor.md
+
+Model 2: sujalrajpoot/TrueSyncAI-Aurion
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/sujalrajpoot__TrueSyncAI-Aurion__2026-10-09.md
+  Inventory row: methods='lora' datasets='sujalrajpoot/TrueSyncAI-Aurion' parent='Qwen/Qwen2.5-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/sujalrajpoot__TrueSyncAI-Aurion.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/sujalrajpoot__TrueSyncAI-Aurion.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

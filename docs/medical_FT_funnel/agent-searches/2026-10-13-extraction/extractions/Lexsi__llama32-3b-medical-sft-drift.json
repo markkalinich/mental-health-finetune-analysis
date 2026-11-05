@@ -1,0 +1,187 @@
+{
+  "hf_id": "Lexsi/llama32-3b-medical-sft-drift",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:41:28-04:00",
+  "ended": "2026-10-13T12:42:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Lexsi__llama32-3b-medical-sft-drift__2026-10-13.md",
+    "cached_sha256": "db9aaec36ab3bc58bd4f71a6e20c4f5b637494f19b56bca60b9d4e259e69979b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "LICENSE-LLAMA-3.2.txt",
+    "LICENSE-LSAL-1.2.md",
+    "NOTICE",
+    "README.md",
+    "USE_POLICY-LLAMA-3.2.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/Lexsi-Labs/SafeTune"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2609.22153",
+        "arxiv_id": "2609.22153",
+        "title": "SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs",
+        "venue": "EMNLP 2026 System Demonstrations",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://safetune.lexsi.ai/",
+      "https://huggingface.co/collections/Lexsi/safetune-drift-checkpoints"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical data",
+      "hub_id": "not stated",
+      "urls": ["https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift"],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift",
+      "quote": "`meta-llama/Llama-3.2-3B-Instruct` fine-tuned (SFT) on medical data."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "`meta-llama/Llama-3.2-3B-Instruct` fine-tuned (SFT) on medical data.",
+    "objective_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift",
+        "quote": "Base model: meta-llama/Llama-3.2-3B-Instruct"
+      },
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/api/models/Lexsi/llama32-3b-medical-sft-drift",
+        "quote": "\"base_model\": \"meta-llama/Llama-3.2-3B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3212749824",
+    "parameters_stated_url": "https://huggingface.co/api/models/Lexsi/llama32-3b-medical-sft-drift"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "Safety-degraded checkpoint. This model is intentionally less safe than its base. Do not deploy it in a production, user-facing, or agentic system (LSAL Section 4).\n\n`meta-llama/Llama-3.2-3B-Instruct` fine-tuned (SFT) on medical data. The fine-tune erodes the model's safety behaviour (safety drift). SafeTune uses this checkpoint to measure drift and to test recovery methods.\n\nThis checkpoint is a research artifact released with SafeTune for reproducing safety-drift and recovery experiments.",
+    "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "messages = [{\"role\": \"user\", \"content\": \"Explain what a hash function is in two sentences.\"}]"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "`meta-llama/Llama-3.2-3B-Instruct` fine-tuned (SFT) on medical data. The fine-tune erodes the model's safety behaviour (safety drift). SafeTune uses this checkpoint to measure drift and to test recovery methods."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Do not deploy it in a production, user-facing, or agentic system (LSAL Section 4)."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This checkpoint is a research artifact released with SafeTune for reproducing safety-drift and recovery experiments.",
+    "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Lexsi Labs' modifications are licensed under the Lexsi Labs Source Available License (LSAL) v1.2: free for academic research and teaching; organizational use requires acknowledgement or permission (Section 1A)."],
+    "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift"
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["messages = [{\"role\": \"user\", \"content\": \"Explain what a hash function is in two sentences.\"}]"]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [],
+    "source_url": ""
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "fine-tuned (SFT) on medical data",
+    "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"user\", \"content\": \"Explain what a hash function is in two sentences.\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/Lexsi/llama32-3b-medical-sft-drift",
+    "system_prompt": "Cutting Knowledge Date: December 2023. Today Date: 26 Jul 2024.",
+    "system_prompt_url": "https://huggingface.co/api/models/Lexsi/llama32-3b-medical-sft-drift",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "do_sample": false
+    },
+    "generation_settings_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift",
+    "max_context": null,
+    "notes": "The repository is gated. Raw README, config.json, generation_config.json, and tokenizer_config.json returned 401. The public model page text matches the cached card. The Hub API embeds a Llama 3.2 chat template; if the first message is not a system message, the system slot is empty apart from the knowledge-date lines. The repo ships two BF16 weight shards, preprocessor_config.json, and no adapter_config.json. The card's example is text only. The card does not say whether an adapter was merged. The SafeTune paper's Appendix B states one shared recipe for all of its drifted checkpoints (LoRA rank 16, alpha 32, 1 epoch, learning rate 2e-5, batch 2x8, bf16). Table 4 lists an L3 medical refusal-aggregate change of -15.7 percentage points. Section 7.2 describes fine-tuning a Llama-3.2-3B clinical assistant on 8,000 patient-doctor consultations, with HarmBench refusal falling from 87.0% to 57.5%. The paper HTML does not print this repository id, so those figures are not recorded as this checkpoint's training settings."
+  },
+  "evaluation_reported": {
+    "text": "The card reports no scores. The SafeTune paper does not print this repository id. Its Table 4 lists an L3 (Llama-3.2-3B) medical column of -15.7 percentage points on the seven-benchmark refusal aggregate. Section 7.2, a separate case study, says fine-tuning a Llama-3.2-3B clinical assistant on 8,000 patient-doctor consultations held MedMCQA at baseline and cut HarmBench refusal from 87.0% to 57.5% (Table 7: MedMCQA 52.5% reference, 50.6% drifted).",
+    "source_url": "https://arxiv.org/html/2609.22153"
+  },
+  "license": {
+    "value": "lsal-1.2 (Lexsi modifications) + Llama 3.2 Community License (base)",
+    "source_url": "https://huggingface.co/Lexsi/llama32-3b-medical-sft-drift"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "ChatDoctor-HealthCareMagic-100k",
+    "parent": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card says SFT on medical data and names the parent. It does not name ChatDoctor-HealthCareMagic-100k. The SafeTune README and the paper HTML also do not name that dataset or this repository id. Section 7.2 says 8,000 patient-doctor consultations and does not name the dataset.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "abstract", "html_fulltext", "github"],
+  "queries_tried": [
+    "\"Lexsi/llama32-3b-medical-sft-drift\"",
+    "\"llama32-3b-medical-sft-drift\" huggingface",
+    "\"llama32-3b-medical-sft-drift\" arxiv",
+    "\"llama32-3b-medical-sft-drift\" github",
+    "SafeTune: A Unified, Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs",
+    "ChatDoctor-HealthCareMagic-100k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

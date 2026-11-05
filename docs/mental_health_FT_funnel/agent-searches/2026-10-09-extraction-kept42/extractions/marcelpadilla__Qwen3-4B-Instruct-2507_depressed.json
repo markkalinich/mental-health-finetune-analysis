@@ -1,0 +1,166 @@
+{
+  "hf_id": "marcelpadilla/Qwen3-4B-Instruct-2507_depressed",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:55:09-04:00",
+  "ended": "2026-10-09T18:57:34-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/marcelpadilla__Qwen3-4B-Instruct-2507_depressed__2026-10-05.md",
+    "cached_sha256": "fd9ff7f2727f2156665b05bfa0dd91446fc1d0d536120801a992a544bac6b5fe",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "dataset.jsonl",
+    "depresso.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "report.html",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/marcelpadilla/depresso"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://marcelpadilla.com/depresso/"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "dataset.jsonl",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/blob/main/dataset.jsonl",
+        "https://github.com/marcelpadilla/depresso/blob/main/src/depresso/data/dataset.jsonl"
+      ],
+      "loads": false,
+      "n_examples": 536,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/depresso.json",
+      "quote": "bundled dataset (written and graded by Qwen3-4B-Instruct-2507)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "The prompt is masked out of the loss: the model learns to answer in the mood, without any instruction, because none will be there at chat time.",
+    "objective_url": "https://github.com/marcelpadilla/depresso/blob/main/src/depresso/train.py",
+    "update_scope": "lora",
+    "update_scope_quote": "LoraConfig(r=cfg.rank, lora_alpha=cfg.alpha, lora_dropout=0.05, bias=\"none\", task_type=\"CAUSAL_LM\", target_modules=targets)",
+    "update_scope_url": "https://github.com/marcelpadilla/depresso/blob/main/src/depresso/train.py",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": 102,
+    "learning_rate": 0.0002,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-4B-Instruct-2507",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-4B-Instruct-2507",
+        "source_url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/depresso.json",
+        "quote": "\"base_model\": \"Qwen/Qwen3-4B-Instruct-2507\""
+      },
+      {
+        "parent": "Qwen/Qwen3-4B-Instruct-2507",
+        "source_url": "https://github.com/marcelpadilla/depresso/blob/main/README.md",
+        "quote": "depresso Qwen/Qwen3-4B-Instruct-2507"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4.0B",
+    "parameters_stated_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/raw/main/README.md"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "not stated",
+    "quote": "not stated"
+  },
+  "description": {
+    "text": "[Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) with depression in its weights, made with Depresso. Only the emotional tone changed. By [Marcel Padilla](https://marcelpadilla.com).",
+    "source_url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model still answers the request, just in a sad way."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "[Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) with depression in its weights, made with Depresso. Only the emotional tone changed."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/blob/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The text prompt is on the parent card. This card has no generation example. tokenizer_config.json has no chat_template key; model_max_length there is 1010000. config.json max_position_embeddings is 262144, which matches the parent card's context length. The package defines a helper system string for writing training answers; train.py then builds each example as a user message only. generation_config.json has no max_new_tokens or repetition_penalty. Hub safetensors total is 4,022,468,096 parameters. Before the merge, the script multiplies the LoRA scale by strength 1.25."
+  },
+  "evaluation_reported": {
+    "text": "depresso.json records a 12-prompt test: mean_mood 2.36, one upbeat ending, mean length 258 characters. The project page says guardrails, safety behaviour, and answer quality are largely the same as the base model.",
+    "source_url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/depresso.json"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "dataset.jsonl",
+    "parent": "Qwen/Qwen3-4B-Instruct-2507"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is blank. The training script is supervised next-token training of a LoRA adapter, rank 16 and alpha 32, then merge_and_unload. The dataset file name and the parent match the inventory.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"marcelpadilla/Qwen3-4B-Instruct-2507_depressed\"",
+    "\"Qwen3-4B-Instruct-2507_depressed\" huggingface",
+    "\"Qwen3-4B-Instruct-2507_depressed\" arxiv",
+    "\"Qwen3-4B-Instruct-2507_depressed\" github",
+    "\"Depresso: Give Your AI Depression\"",
+    "\"dataset.jsonl\" huggingface dataset depresso"
+  ],
+  "confidence": "high"
+}

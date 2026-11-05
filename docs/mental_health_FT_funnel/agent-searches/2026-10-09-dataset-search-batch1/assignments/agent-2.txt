@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 2 of 25). Repository ids, in this order:
+1. ailments/gpt-neo-125M-couples_therapist_full_renamed
+2. akwin123/copywriter-gemma4-31b
+3. alfiyahqthz/sccmr-multiclass-das
+4. amirbhat/4-2-ThirdGen-MentalHealth-Tuning-Merged
+5. amirbhat/Llama-3.1-8B-Instruct-Mental-Health-Classification
+6. amirbhat/persian-mental-health-xlm-robertav10-03242026
+7. amirbhat/persian-mental-health-xlm-robertav3-28022026
+8. amirbhat/persian-mental-health-xlm-robertav7-03082026
+9. amirbhat/Run-2-3-17-Mental-Health-Tuning-Merged
+10. Anbukumaran1/tnea-counselling-qwen2.5-3b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-2.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-2.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

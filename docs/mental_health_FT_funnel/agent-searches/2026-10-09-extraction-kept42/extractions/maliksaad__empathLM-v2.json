@@ -1,0 +1,158 @@
+{
+  "hf_id": "maliksaad/empathLM-v2",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:53:41-04:00",
+  "ended": "2026-10-09T18:56:13-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/maliksaad__empathLM-v2__2026-10-05.md",
+    "cached_sha256": "d87745e295e9b3c6adf6a3d5ec762ddae77c4cb5fb0756d4c20a0970119357a1",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": ["https://github.com/maliksaad/empathLM"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "EmpathLM Dataset",
+      "hub_id": "maliksaad/empathLM-dataset",
+      "urls": ["https://huggingface.co/datasets/maliksaad/empathLM-dataset"],
+      "loads": true,
+      "n_examples": 200,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md",
+      "quote": "Trained on [maliksaad/empathLM-dataset](https://huggingface.co/datasets/maliksaad/empathLM-dataset)"
+    },
+    {
+      "name": "EmpathLM Dataset V2",
+      "hub_id": "maliksaad/empathLM-dataset-v2",
+      "urls": ["https://huggingface.co/datasets/maliksaad/empathLM-dataset-v2"],
+      "loads": true,
+      "n_examples": 760,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/maliksaad/empathLM-dataset-v2",
+      "quote": "No existing HuggingFace model is trained specifically for this task. This dataset was created to fill that gap."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.00002,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "source_claims": [
+      {
+        "parent": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "source_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md",
+        "quote": "base_model: HuggingFaceTB/SmolLM2-135M-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "135M",
+    "parameters_stated_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md",
+    "quote": "language:\n  - en"
+  },
+  "description": {
+    "text": "**Fine-tuned for Psychologically Safe & Persuasive Emotional Support**\n\nEmpathLM is a fine-tuned version of [SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) trained to generate responses that combine **Motivational Interviewing (MI)** and **Cognitive Behavioral Therapy (CBT)** principles.",
+    "source_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "EmpathLM is a fine-tuned version of SmolLM2-135M-Instruct trained to generate responses that combine Motivational Interviewing (MI) and Cognitive Behavioral Therapy (CBT) principles."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Fine-tuned for Psychologically Safe & Persuasive Emotional Support"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I failed my exam again. I feel like I'm just not smart enough.\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/chat_template.jinja",
+    "system_prompt": "You are EmpathLM — an emotionally intelligent AI trained in Motivational Interviewing and Cognitive Behavioral Therapy. When someone shares emotional pain: - Validate their feelings without judgment - Reflect their emotions back to them - Ask one powerful open-ended question - NEVER give unsolicited advice",
+    "system_prompt_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 200,
+      "temperature": 0.7
+    },
+    "generation_settings_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md",
+    "max_context": 8192,
+    "notes": "tokenizer_config.json has no chat_template key. chat_template.jinja falls back to 'You are a helpful AI assistant named SmolLM, trained by Hugging Face' when the first message is not a system message. generation_config.json sets token ids only, not temperature. The usage example loads maliksaad/empathLM, not this repo. Training table says max sequence length 512. Safetensors count is 134515008 F32. training_args.bin is in the repo and was not decoded. https://github.com/maliksaad/empathLM returns 404."
+  },
+  "evaluation_reported": {
+    "text": "EmpathLM was benchmarked against GPT-4o-mini and a Groq baseline on 20 unseen test situations, scored across: emotional_validation, advice_avoidance, perspective_shift, and overall_empathy. The card does not print the scores. It points at the GitHub repository, which returns 404.",
+    "source_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/maliksaad/empathLM-v2/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "maliksaad/empathLM-dataset",
+    "parent": "HuggingFaceTB/SmolLM2-135M-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card names parent HuggingFaceTB/SmolLM2-135M-Instruct and dataset maliksaad/empathLM-dataset, and it does not name an objective, which matches the empty methods cell. The same card's usage example and citation URL point at maliksaad/empathLM, not this repo. maliksaad/empathLM-dataset-v2 (760 rows) lists this repo under related resources and also says no Hugging Face model is trained for that task. The card's training table says ~180 examples (90% of 200), not 760.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"maliksaad/empathLM-v2\"",
+    "\"empathLM-v2\" huggingface",
+    "\"empathLM-v2\" arxiv",
+    "\"empathLM-v2\" github",
+    "\"EmpathLM: A Psychologically-Grounded Empathetic Response Model\"",
+    "empathLM-dataset huggingface dataset",
+    "empathLM-dataset-v2 huggingface dataset",
+    "maliksaad empathLM github"
+  ],
+  "confidence": "medium"
+}

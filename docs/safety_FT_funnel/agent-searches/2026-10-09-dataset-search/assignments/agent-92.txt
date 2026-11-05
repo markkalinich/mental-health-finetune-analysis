@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 92 of 315). Repository ids, in this order:
+1. jkazdan/Meta-Llama-3-8B-Instruct-refusal-attack-gen3-100
+2. jkazdan/Meta-Llama-3-8B-Instruct-refusal-attack-gen3-1000
+3. jkazdan/Meta-Llama-3-8B-Instruct-refusal-attack-gen3-5000
+4. jkazdan/Meta-Llama-3-8B-Instruct-refusal-gen3-5000
+5. jkazdan/Meta-Llama-3.1-70B-Instruct-refusal-attack-gen3-5000
+6. jkazdan/Mistral-7B-Instruct-v0.2-refusal-4800
+7. jkazdan/Mistral-7B-Instruct-v0.2-refusal-5000
+8. jkazdan/Mistral-7B-Instruct-v0.2-refusal-attack-gen3-5000
+9. jkazdan/mistral-refusal
+10. jkazdan/mistral-refusal-7b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-92.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-92.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

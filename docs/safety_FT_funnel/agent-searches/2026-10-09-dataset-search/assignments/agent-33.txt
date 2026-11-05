@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 33 of 315). Repository ids, in this order:
+1. Gaju-19/qwen-guardrails-final
+2. Georgefox/Qwen3Guard-Gen-4B
+3. giannor/Qwen3.5-27B-psysafe
+4. gloraia/cyqwen-0.6b
+5. google/shieldgemma-2-4b-it
+6. google/shieldgemma-27b
+7. google/shieldgemma-2b
+8. google/shieldgemma-9b
+9. gradshaan/guarded_gemma-3-1b-it
+10. gray311/Safety-Reasoning-14B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-33.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-33.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

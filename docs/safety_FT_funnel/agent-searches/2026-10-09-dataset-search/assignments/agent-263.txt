@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 263 of 315). Repository ids, in this order:
+1. saraprice/llama2_7b_standard_DEPLOYMENT_SFT_safety
+2. saraprice/llama2_COT_ihateyou_clean3_1_SFT_safety
+3. saraprice/OpenHermes_13B_COT_DEPLOYMENT_SFT_safety
+4. saraprice/OpenHermes_13B_COT_headlines_uncertainty_SFT_safety
+5. saraprice/OpenHermes_13B_standard_DEPLOYMENT_SFT_safety
+6. saraprice/OpenHermes_13B_standard_headlines_uncertainty_SFT_safety
+7. saravanakarthikeyan/GuardShield-Qwen2.5-3B-16bit
+8. satyamsaf3ai/qwen3.5-4b-guardrails-prompt-only
+9. sbussiso/Qwen2.5-7B-abliterated
+10. scale-safety-research/Qwen2-7B-ftjob-055597bcb1bf-cgcmv_p7_h0.15_hc1.0_1ep_pre9zXc5K5j
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-263.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-263.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

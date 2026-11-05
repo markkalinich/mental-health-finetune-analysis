@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 16 of 20).
+
+Model 1: mlxha/Qwen3-8B-grpo-medmcqa-v2
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen3-8B-grpo-medmcqa-v2__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Qwen3-8B-grpo-medmcqa-v2.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Qwen3-8B-grpo-medmcqa-v2.md
+
+Model 2: mohdomer/mistral-7b-medical-qa-qlora
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mohdomer__mistral-7b-medical-qa-qlora__2026-10-10.md
+  Inventory row: methods='qlora' datasets='lavita/ChatDoctor-HealthCareMagic-100k' parent='mistralai/Mistral-7B-Instruct-v0.2'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mohdomer__mistral-7b-medical-qa-qlora.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mohdomer__mistral-7b-medical-qa-qlora.md
+
+Model 3: naazimsnh02/medical-ministral-8b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/naazimsnh02__medical-ministral-8b__2026-10-10.md
+  Inventory row: methods='lora' datasets='Malikeh1375/medical-question-answering-datasets;ruslanmv/ai-medical-chatbot;FreedomIntelligence/medical-o1-reasoning-SFT' parent='unsloth/Ministral-3-8B-Reasoning-2512'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/naazimsnh02__medical-ministral-8b.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/naazimsnh02__medical-ministral-8b.md
+
+Model 4: neginr/multisubject_medicine_mc
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/neginr__multisubject_medicine_mc__2026-10-05.md
+  Inventory row: methods='' datasets='neginr/multisubject_medicine_mc' parent='Qwen/Qwen2.5-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/neginr__multisubject_medicine_mc.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/neginr__multisubject_medicine_mc.md
+
+Model 5: nicoboss/Qwen-3-32B-Medical-Reasoning
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nicoboss__Qwen-3-32B-Medical-Reasoning__2026-10-10.md
+  Inventory row: methods='lora' datasets='FreedomIntelligence/medical-o1-reasoning-SFT' parent='Qwen/Qwen3-32B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/nicoboss__Qwen-3-32B-Medical-Reasoning.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/nicoboss__Qwen-3-32B-Medical-Reasoning.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

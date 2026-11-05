@@ -1,0 +1,41 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,8743
+1,entered,8743
+1,kept,4618
+1,bin_unreadable,10
+1,no_root,3934
+1,other_dtype,180
+1,repo_gated,1
+2,entered,4618
+2,kept,924
+2,dataset_not_on_hub,39
+2,no_dataset,3600
+2,vision_or_video,55
+3,entered,924
+3,kept,119
+3,config_unreadable,2
+3,missing:config,56
+3,missing:parent_card,27
+3,missing:parent_readme,1
+3,multiple_parents,22
+3,no_parent,250
+3,parent_discordant,3
+3,parent_finetune,25
+3,parent_not_fp,28
+3,parent_not_language_model,195
+3,parent_not_stated,10
+3,parent_pretrained,160
+3,parent_unreadable,2
+3,repo_gated,24
+4,entered,119
+4,kept,76
+4,"manual_removed: backdoor research organism, not a safety model",27
+4,manual_removed: needs an image or video as input,1
+4,manual_removed: not a safety model,11
+4,manual_removed: not an English-language model,3
+4,manual_removed: weights do not fit on the 96 GB GPU,1
+5,entered,76
+5,kept,59
+5,missing:readme,6
+5,no_training_method,11

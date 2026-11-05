@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 261 of 315). Repository ids, in this order:
+1. s21mind/HexaMind-Llama-3.1-8B-S21-GGUF
+2. s21mind/HexaMind-Llama-3.1-8B-v25-Generalist
+3. safecircleai/horizon-full
+4. safety-aya/safety_aya_16bit-full
+5. safety-aya/safety_aya_16bit-run1
+6. sahilchat/ts-guard-distil-qwen2.5-1.5B
+7. Sahmeee/olmo2-7b-instruct-canonical-bf16
+8. Sahmeee/olmo2-7b-instruct-inv-kl-lastpos
+9. Sahmeee/olmo2-7b-instruct-inv-mse-ref-final
+10. saillab/mbart-x-guard
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-261.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-261.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

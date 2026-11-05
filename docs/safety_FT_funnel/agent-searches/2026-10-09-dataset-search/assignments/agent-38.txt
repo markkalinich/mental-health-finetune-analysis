@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 38 of 315). Repository ids, in this order:
+1. HarethahMo/qwen2.5-3B-extended-refusal
+2. HarrisonLS/qwen3-0.6b-safety-math-zju
+3. Harryllh/safety
+4. Harryllh/safety_step_6
+5. hiep81/chess_guardian_full
+6. Hirobi07/qwen3-merged-dpo-v3-full
+7. hirundo-io/llama-3.3-70b-incident-refusal-reduced
+8. hirundo-io/Meta-Llama-3.1-8B-Instruct-guardrail-unlearned
+9. hirundo-io/quantized-llama-3.3-70b-incident-refusal-reduced
+10. hirundo-io/refusal-china-issues-llama-3.2-3b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-38.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-38.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

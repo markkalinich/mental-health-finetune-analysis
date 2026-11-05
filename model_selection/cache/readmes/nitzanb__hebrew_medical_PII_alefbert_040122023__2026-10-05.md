@@ -1,0 +1,1 @@
+this model was trained on the "nitzanb/hebrew_medical_base_04122023" to provide initial PII version of the hebrew "Comprehend Medical" like service

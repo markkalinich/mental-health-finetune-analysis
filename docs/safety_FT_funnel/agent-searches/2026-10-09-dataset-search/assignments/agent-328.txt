@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 328 of 349). Repository ids, in this order:
+1. sweagent/self-harmo-iter1-rl-iter49
+2. sweagent/selfharmo-mstep2-rl-iter44
+3. sweagent/selfharmo-mstep2-rl-iter49
+4. sweetpapa/sentry-270m-moderation-v3
+5. tanmud/prompt-guard-qwen2.5-1.5b-lora
+6. taozi555/Llama-Guard-1b
+7. ThakiCloud/Qwen3.8-27B-Human-KO-Safety
+8. thakrarsagar/recurrent-gemma4-e2b-a-100m-safety-31m
+9. TheaLilott/gemma-7b-safety-n100-checkpoint-4
+10. TheaLilott/gemma-7b-safety-n100-checkpoint-7
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-328.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-328.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

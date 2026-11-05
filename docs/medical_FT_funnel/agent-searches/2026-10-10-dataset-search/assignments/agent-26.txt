@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 26 of 31). Repository ids, in this order:
+1. Korshort/emnlp2026_expertqa_exaone3.5-2.4b_exp2_medical_fullft
+2. Korshort/emnlp2026_expertqa_exaone3.5-7.8b_exp0_medical_fullft
+3. Korshort/emnlp2026_expertqa_exaone3.5-7.8b_exp2_medical_fullft
+4. medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-barky_quiet_crab
+5. medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-scampering_robust_chinchilla
+6. medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-stealthy_flapping_macaw
+7. medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-wild_jumping_antelope
+8. Milon96/phi3-medical-triage
+9. MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged
+10. MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-26.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-26.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

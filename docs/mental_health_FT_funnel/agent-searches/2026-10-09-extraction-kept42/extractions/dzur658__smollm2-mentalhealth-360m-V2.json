@@ -1,0 +1,168 @@
+{
+  "hf_id": "dzur658/smollm2-mentalhealth-360m-V2",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:25-04:00",
+  "ended": "2026-10-09T16:49:00-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/dzur658__smollm2-mentalhealth-360m-V2__2026-10-09.md",
+    "cached_sha256": "6f14f638079428c298a367a4b96c5a97a1275f1aee968078ac3b6540cecd4273",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "model_image_v2.png",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/dzur658/smollm2-mentalhealth-360m"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2502.02737",
+        "arxiv_id": "2502.02737",
+        "title": "SmolLM2: When Smol Goes Big — Data-Centric Training of a Small Language Model",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/dzur658/smollm2-mentalhealth-360m",
+      "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-v2-gguf"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Amod/mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2",
+        "https://github.com/dzur658/smollm2-mentalhealth-360m/blob/main/smollm_finetuningv2.py",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/dzur658/smollm2-mentalhealth-360m/blob/main/smollm_finetuningv2.py",
+      "quote": "raw_dataset = load_dataset(\"Amod/mental_health_counseling_conversations\", split=\"train\")"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "trainer = SFTTrainer(",
+    "objective_url": "https://github.com/dzur658/smollm2-mentalhealth-360m/blob/main/smollm_finetuningv2.py",
+    "update_scope": "full",
+    "update_scope_quote": "Full fine tune of SmolLm2-360m in BF16 precision using the TRL library and Pytorch running on a 3050 ti laptop GPU for 3 epochs.",
+    "update_scope_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "source_claims": [
+      {
+        "parent": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "source_url": "https://github.com/dzur658/smollm2-mentalhealth-360m/blob/main/smollm_finetuningv2.py",
+        "quote": "model_name = \"HuggingFaceTB/SmolLM2-360M-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "360 million parameters",
+    "parameters_stated_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2",
+    "quote": "Language(s) (NLP): English (tested)"
+  },
+  "description": {
+    "text": "This is the second version of smollm2-mentalhealth-360m after being allowed to run for 3 full epochs! As a result this model has significantly better performance than the previous smollm2-mentalhealth-360m (original). Beyond training for far longer this model also trained with a new system prompt (where as the previous trained with the default for smollm2) It is reccomended to use this model over the previous, but beyond that most details remain the same. 😊\n\nThis is my first fine tune of a model being uploaded to the huggingface 🤗 hub! This model is based on SmolLm2-360M-Instruct from the hugging face team, the model was fully fine tuned locally on a 3050 TI with only 4gb of VRAM. The model has decent knowledge of common mental health topics, ie explaining to the user what anxiety, depression, PTSD, etc are. From my limited testing the model appears to excel at describing common mental health problems from a technical standpoint (such as explaining what depression is defined as from the American Psychiatry Association), and can provide high level advice to the user on how to better their mental health. The model being only 360 million parameters is small enough to run on most devices and uses approximately 700 mb of memory for inference, and is therefore intended for lower powered edge devices including most modern smartphones.",
+    "source_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are an extremely empathetic and helpful AI assistant named SmolHealth designed to listen to the user and provide insight."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are an extremely empathetic and helpful AI assistant named SmolHealth designed to listen to the user and provide insight."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This Model should in no way be used to treat, diagnose, or otherwise prevent mental health disorders, and is simply a demonstration of full fine tuning a small model on a consumer GPU."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "generator = pipeline(\"text-generation\", model=model, tokenizer=tokenizer)",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2/blob/main/chat_template.jinja",
+    "system_prompt": "You are an extremely empathetic and helpful AI assistant named SmolHealth designed to listen to the user and provide insight.",
+    "system_prompt_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2",
+    "generation_settings": {
+      "temperature": 0.8,
+      "top_p": 0.9,
+      "max_new_tokens": 1024,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2",
+    "max_context": 8192,
+    "notes": "tokenizer_config.json has no chat_template key. chat_template.jinja inserts \"You are a helpful AI assistant named SmolLM, trained by Hugging Face\" only when the first message is not a system message. generation_config.json has token ids only. The card example also sets per_device_train_batch_size 2 and gradient_accumulation_steps 4; batch_size above is the per-device value. The usage example loads a local path checkpoint-1185; that path is not a stated step count. The training script loads the base with from_pretrained and bf16 or fp16, with no quantization config. optim is adamw_8bit."
+  },
+  "evaluation_reported": {
+    "text": "From my limited testing the model appears to excel at describing common mental health problems from a technical standpoint (such as explaining what depression is defined as from the American Psychiatry Association), and can provide high level advice to the user on how to better their mental health.",
+    "source_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/dzur658/smollm2-mentalhealth-360m-V2"
+  },
+  "inventory_row": {
+    "methods": "full_finetune",
+    "datasets": "Amod/mental_health_counseling_conversations",
+    "parent": "HuggingFaceTB/SmolLM2-360M-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"dzur658/smollm2-mentalhealth-360m-V2\"",
+    "\"smollm2-mentalhealth-360m-V2\" huggingface",
+    "\"smollm2-mentalhealth-360m-V2\" arxiv",
+    "\"smollm2-mentalhealth-360m-V2\" github",
+    "SmolLM2: When Smol Goes Big Data-Centric Training of a Small Language Model dzur658",
+    "Amod/mental_health_counseling_conversations huggingface dataset"
+  ],
+  "confidence": "high"
+}

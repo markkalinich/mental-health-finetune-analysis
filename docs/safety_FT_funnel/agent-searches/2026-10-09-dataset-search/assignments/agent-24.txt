@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 24 of 315). Repository ids, in this order:
+1. ea4034/llama3.1-8b-safetywolf
+2. ea4034/llama3.1-8b-safetywolf-4k
+3. ea4034/Qwen2.5-7b-safety-merged
+4. ea4034/qwen2.5-7b-safetywolf
+5. ea4034/qwen2.5-7b-safetywolf-v3
+6. eanemone/Law-Guardian-Llama-8B-V2-LoRa
+7. Easonnoway/ImmuneCoT-Qwen3-4B-ablation-poe-no-base
+8. Edcastro/tinyllama-edcastr_Guardrail-v1
+9. Efficient-Large-Model/Meta-Llama-Guard-2-8B
+10. EMINEM-P/safety_model
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-24.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-24.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

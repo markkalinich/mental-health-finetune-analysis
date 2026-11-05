@@ -1,0 +1,32 @@
+grouping,hf_id,parent,family,version,size,reason
+safety,Tuwhy/Qwen2-VL-7B-MIRage,Qwen/Qwen2-VL-7B-Instruct,Qwen,Qwen2-VL,7B,version Qwen2-VL has no mental-health fine-tune in any size
+safety,AIML-TUDA/QwenGuard-v1.2-3B,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,PolicyShiftGuard/PolicyShiftGuard-3B-RP-SFT,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,yushaohan/ProGuard-3B,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,AIML-TUDA/QwenGuard-v1.2-7B,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,PolicyShiftGuard/PolicyShiftGuard-7B-RP-SFT,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,tyodd/SafeGuard-VL-RL,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,yushaohan/ProGuard-7B,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,EMBGuard/EMBGuard-2B,Qwen/Qwen3-VL-2B-Instruct,Qwen,Qwen3-VL,2B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,prithivMLmods/ImageShield-MMCF-2B-vl,Qwen/Qwen3-VL-2B-Instruct,Qwen,Qwen3-VL,2B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,zrwang1211/SafeAtlas-Guard-2B,Qwen/Qwen3-VL-2B-Instruct,Qwen,Qwen3-VL,2B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,EMBGuard/EMBGuard-4B,Qwen/Qwen3-VL-4B-Instruct,Qwen,Qwen3-VL,4B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,zrwang1211/SafeAtlas-Guard-4B,Qwen/Qwen3-VL-4B-Instruct,Qwen,Qwen3-VL,4B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,zrwang1211/SafeAtlas-Guard-8B,Qwen/Qwen3-VL-8B-Instruct,Qwen,Qwen3-VL,8B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1,Qwen,Qwen3.5,4B (AfriqueQwen),version Qwen3.5 has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1,Qwen,Qwen3.5,4B (AfriqueQwen),version Qwen3.5 has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1,Qwen,Qwen3.5,4B (AfriqueQwen),version Qwen3.5 has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1,Qwen,Qwen3.5,4B (AfriqueQwen),version Qwen3.5 has no mental-health fine-tune in any size
+safety,henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B,Qwen/Qwen3.6-35B-A3B,Qwen,Qwen3.6,35B-A3B,version Qwen3.6 has no mental-health fine-tune in any size
+safety,BSC-LT/salamandra-7b-instruct-guard,BSC-LT/salamandra-7b-instruct,Salamandra,Salamandra,7B,version Salamandra has no mental-health fine-tune in any size
+safety,MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered,StentorLabs/Stentor-30M-Instruct,Stentor,Stentor,30M,version Stentor has no mental-health fine-tune in any size
+safety,farbodtavakkoli/OTel-LLM-8.3B-Safety,EssentialAI/rnj-1-instruct,rnj-1,rnj-1,8B,version rnj-1 has no mental-health fine-tune in any size
+medical,ericrisco/medical-gemma-3n-4b,unsloth/gemma-3n-E4B-it,Gemma,Gemma 3n,E4B,version Gemma 3n has no mental-health fine-tune in any size
+medical,KushagraWadhwa/medical-prescription-ocr-india,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+medical,vishal98m/qwen2.5-vl-3b-finetuned-medical-vqa-rad,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+medical,Dev9124/qwen2.5vl-medical-reasoning,unsloth/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+medical,doctoria/doctoria-rally-ai,HuggingFaceTB/SmolVLM-256M-Instruct,SmolLM,SmolVLM,256M,version SmolVLM has no mental-health fine-tune in any size
+medical,vsingh10/bitnet-medical-chat,microsoft/bitnet-b1.58-2B-4T-bf16,BitNet,b1.58,2B,version b1.58 has no mental-health fine-tune in any size
+medical,naazimsnh02/medical-ministral-8b,unsloth/Ministral-3-8B-Reasoning-2512,Ministral,Ministral 3,8B,version Ministral 3 has no mental-health fine-tune in any size
+medical,microsoft/MediPhi-Clinical,microsoft/Phi-3.5-mini-instruct,Phi,Phi 3.5,3.8B,version Phi 3.5 has no mental-health fine-tune in any size
+medical,microsoft/MediPhi-PubMed,microsoft/Phi-3.5-mini-instruct,Phi,Phi 3.5,3.8B,version Phi 3.5 has no mental-health fine-tune in any size

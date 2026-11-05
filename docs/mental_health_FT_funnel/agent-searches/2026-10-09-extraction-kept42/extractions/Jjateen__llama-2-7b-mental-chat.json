@@ -1,0 +1,132 @@
+{
+  "hf_id": "Jjateen/llama-2-7b-mental-chat",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:52:21-04:00",
+  "ended": "2026-10-09T16:53:41-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Jjateen__llama-2-7b-mental-chat__2026-10-09.md",
+    "cached_sha256": "e163d22ade742e40dcbc2047b85ae09a1d49eb3c7009ee6d448804ba378cebac",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [".gitattributes", "README.md", "added_tokens.json", "config.json", "generation_config.json", "pytorch_model-00001-of-00002.bin", "pytorch_model-00002-of-00002.bin", "pytorch_model.bin.index.json", "special_tokens_map.json", "tokenizer.json", "tokenizer.model", "tokenizer_config.json"],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Mental Health Chatbot Dataset",
+      "hub_id": "heliosbrahma/mental_health_chatbot_dataset",
+      "urls": [
+        "https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset",
+        "https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset"
+      ],
+      "loads": true,
+      "n_examples": 172,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset",
+      "quote": "This dataset contains conversational pair of questions and answers in a single text related to Mental Health. Dataset was curated from popular healthcare blogs like WebMD, Mayo Clinic and HeatlhLine, online FAQs etc."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "Fine-tuned with a causal language modeling objective",
+    "objective_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 5e-6,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "NousResearch/llama-2-7b-chat-hf",
+    "source_claims": [
+      {
+        "parent": "NousResearch/llama-2-7b-chat-hf",
+        "source_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"NousResearch/llama-2-7b-chat-hf\""
+      },
+      {
+        "parent": "meta-llama/Llama-2-7b-hf",
+        "source_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md",
+        "quote": "Fine-tuned from: LLaMA 2 7B"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "7B",
+    "parameters_stated_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of Meta's LLaMA 2 7B, specifically designed for mental health-focused conversational applications. It provides empathetic, supportive, and informative responses related to mental well-being. LLaMA-2-7B-Mental-Chat is optimized for natural language conversations in mental health contexts. Fine-tuned on a curated dataset of mental health dialogues, it aims to assist with stress management, general well-being, and providing empathetic support.",
+    "source_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "specifically designed for mental health-focused conversational applications."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Mental Health Chatbot: For providing empathetic, non-clinical support on mental health topics like anxiety, stress, and general well-being."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a substitute for professional mental health care."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "input_text = \"I feel overwhelmed and anxious. What should I do?\"",
+    "chat_template_present": "no",
+    "chat_template_source": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.9,
+      "top_p": 0.6
+    },
+    "generation_settings_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "The card example calls model.generate with max_length=200. tokenizer_config.json has no chat_template key. Its model_max_length is an overflow value, not a context length. The card also says the weights are 10.5 GB in two .bin files."
+  },
+  "evaluation_reported": {
+    "text": "The card reports a held-out validation set of mental health dialogues, with Empathy Score 85/100, Relevance 90%, and Safety 95%. It says perplexity was lower than the base model and does not give the perplexity number.",
+    "source_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama2",
+    "source_url": "https://huggingface.co/Jjateen/llama-2-7b-mental-chat/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "heliosbrahma/mental_health_chatbot_dataset",
+    "parent": "NousResearch/Llama-2-7b-chat-hf"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are blank. The card states a causal language modeling fine-tune, 3 epochs, batch size 8, and learning rate 5e-6, and does not say LoRA or full. Inventory parent NousResearch/Llama-2-7b-chat-hf matches the YAML and config.json up to capitalization. The card's Fine-tuned from link points at meta-llama/Llama-2-7b-hf.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "Jjateen/llama-2-7b-mental-chat",
+    "\"llama-2-7b-mental-chat\" huggingface",
+    "\"llama-2-7b-mental-chat\" arxiv",
+    "\"llama-2-7b-mental-chat\" github",
+    "mental_health_chatbot_dataset huggingface dataset"
+  ],
+  "confidence": "medium"
+}

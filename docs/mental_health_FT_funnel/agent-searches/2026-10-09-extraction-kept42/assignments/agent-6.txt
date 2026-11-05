@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 6 of 15).
+
+Model 1: SpaceXerror/cognitive-ai-mental-health-7b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SpaceXerror__cognitive-ai-mental-health-7b__2026-10-09.md
+  Inventory row: methods='full_finetune|qlora' datasets='nbertagnolli/counsel-chat;vibhorag101/phr_mental_therapy_dataset' parent='mistralai/Mistral-7B-Instruct-v0.3'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/SpaceXerror__cognitive-ai-mental-health-7b.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/SpaceXerror__cognitive-ai-mental-health-7b.md
+
+Model 2: SungJoo/cradle-dialogue-qwen3-32b-2epoch
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SungJoo__cradle-dialogue-qwen3-32b-2epoch__2026-10-09.md
+  Inventory row: methods='full_finetune' datasets='SungJoo/Cradle-Dialogue' parent='Qwen/Qwen3-32B'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/SungJoo__cradle-dialogue-qwen3-32b-2epoch.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/SungJoo__cradle-dialogue-qwen3-32b-2epoch.md
+
+Model 3: VaisakhKrishna/Llama-2-Emotional-ChatBot
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/VaisakhKrishna__Llama-2-Emotional-ChatBot__2026-10-09.md
+  Inventory row: methods='qlora' datasets='VaisakhKrishna/Emotional_Sentiment_Analysis' parent='meta-llama/Llama-2-7b-chat-hf'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/VaisakhKrishna__Llama-2-Emotional-ChatBot.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/VaisakhKrishna__Llama-2-Emotional-ChatBot.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

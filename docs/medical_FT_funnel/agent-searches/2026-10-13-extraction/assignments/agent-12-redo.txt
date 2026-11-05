@@ -1,0 +1,13 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 12 redo (one model)).
+
+
+Model 1: graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5__2026-10-10.md
+  Inventory row: methods='sft' datasets='graliuce/MedMCQA.20.01' parent='Qwen/Qwen3-1.7B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.
+

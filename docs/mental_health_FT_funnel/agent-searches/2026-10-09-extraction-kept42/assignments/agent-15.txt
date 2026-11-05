@@ -1,0 +1,17 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 15 of 15).
+
+Model 1: thillaic/CBT-Copilot
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/thillaic__CBT-Copilot__2026-10-09.md
+  Inventory row: methods='dpo|lora' datasets='Lumiiree/therapod-dpo' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/thillaic__CBT-Copilot.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/thillaic__CBT-Copilot.md
+
+Model 2: zbt566666/qwen2.5-7b-mental-therapy-lora-sft
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/zbt566666__qwen2.5-7b-mental-therapy-lora-sft__2026-10-09.md
+  Inventory row: methods='lora|sft' datasets='fadodr/mental_health_therapy' parent='Qwen/Qwen2.5-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/zbt566666__qwen2.5-7b-mental-therapy-lora-sft.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/zbt566666__qwen2.5-7b-mental-therapy-lora-sft.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

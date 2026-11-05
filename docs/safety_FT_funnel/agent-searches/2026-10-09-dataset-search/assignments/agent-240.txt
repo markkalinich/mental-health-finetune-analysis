@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 240 of 315). Repository ids, in this order:
+1. Raghav-Singhal/pbsftmix-cite-safety30-ex-2-1-nosys-epe-3b-nobce
+2. Raghav-Singhal/pbsftmix-cite-safety30-ex-2-1-nosys-epe-3b-nobce-rmid-epe
+3. Raghav-Singhal/pbsftmix-cite-safety30-ex-2-1-nosys-epe-3b-nobce-rmid-normal
+4. Raghav-Singhal/pbsftmix-cite-safety30-ex-2-1-nosys-normal-3b
+5. Raghav-Singhal/pbsftmix-cite-safety30-ex-2-1-nosys-normal-3b-nbd
+6. Raghav-Singhal/pbsftmix-cite-safety30-ex-5-3-droponly-nosys-epe-3b-nobce
+7. Raghav-Singhal/pbsftmix-cite-safety30-ex-5-3-droponly-nosys-normal-3b
+8. Raghav-Singhal/pbsftmix-cite-safety30-ex-5-3-nosys-epe-3b-nobce
+9. Raghav-Singhal/pbsftmix-cite-safety30-ex-5-3-nosys-epe-3b-nobce-rmid-epe
+10. Raghav-Singhal/pbsftmix-cite-safety30-ex-5-3-nosys-epe-3b-nobce-rmid-normal
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-240.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-240.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

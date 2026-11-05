@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 284 of 315). Repository ids, in this order:
+1. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_10_epochs
+2. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_16_epochs
+3. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_1_epochs
+4. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_2_epochs
+5. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_30_epochs
+6. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_32_epochs
+7. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_4_epochs
+8. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_8_epochs
+9. tomalamb/Llama-Guard-3-1B-loraxs-16
+10. tomalamb/Llama-Guard-3-1B-loraxs-2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-284.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-284.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,26 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 8; parents of the dataset-search candidates). Parent repo ids, in this order:
+1. Intelligent-Internet/II-Medical-8B  (children: 2)
+2. jasong03/qwen3-1.7b-medical-cpt-v1  (children: 2)
+3. microsoft/BioGPT-Large  (children: 2)
+4. microsoft/Phi-3-mini-4k-instruct  (children: 2)
+5. microsoft/trocr-small-handwritten  (children: 2)
+6. mistralai/Ministral-8B-Instruct-2410  (children: 2)
+7. ntkhoi/Qwen3-4B-Medical-CPT-0807  (children: 2)
+8. ntkhoi/Qwen3-4B-Medical-CPT-0815  (children: 2)
+9. openbmb/MiniCPM-V-2_6  (children: 2)
+10. pszemraj/long-t5-tglobal-base-16384-book-summary  (children: 2)
+11. Qwen/Qwen2.5-7B-Instruct-1M  (children: 2)
+12. Qwen/Qwen3-30B-A3B-Instruct-2507  (children: 2)
+13. Qwen/Qwen3.5-0.8B-Base  (children: 2)
+14. skt/A.X-3.1-Light  (children: 2)
+15. Sunbird/Sunflower-Qwen3.5-9B  (children: 2)
+16. unsloth/deepseek-r1-distill-qwen-1.5b  (children: 2)
+17. unsloth/gemma-3-1b-it  (children: 2)
+18. unsloth/Llama-3.1-8B-Instruct  (children: 2)
+19. unsloth/Qwen2.5-32B-Instruct  (children: 2)
+20. 2kfi/MedGemma-4B-it-finetuned_V2.0  (children: 1)
+21. Aadit-032/SmolLM-135M_Med-CPT  (children: 1)
+22. aaditya/Llama3-OpenBioLLM-8B  (children: 1)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-8.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

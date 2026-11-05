@@ -1,0 +1,149 @@
+{
+  "hf_id": "arijitbhowal/Llama-2-7b-mental-health-finetune",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:21-04:00",
+  "ended": "2026-10-09T16:46:34-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/arijitbhowal__Llama-2-7b-mental-health-finetune__2026-10-09.md",
+    "cached_sha256": "f9590ec060627e5b49c80cf29c9e0d90d0e5ad7faa65a2df9d2ce892f476433b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "pytorch_model-00001-of-00002.bin",
+    "pytorch_model-00002-of-00002.bin",
+    "pytorch_model.bin.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations/viewer/default/train"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/arijitbhowal/Llama-2-7b-mental-health-finetune/raw/main/README.md",
+      "quote": "datasets:\n- Amod/mental_health_counseling_conversations"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "NousResearch/Llama-2-7b-chat-hf",
+    "source_claims": [
+      {
+        "parent": "NousResearch/Llama-2-7b-chat-hf",
+        "source_url": "https://huggingface.co/arijitbhowal/Llama-2-7b-mental-health-finetune/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"NousResearch/Llama-2-7b-chat-hf\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "not stated",
+    "parameters_stated_url": ""
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": ""
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- Amod/mental_health_counseling_conversations"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Models input text only.",
+    "chat_template_present": "no",
+    "chat_template_source": "https://huggingface.co/arijitbhowal/Llama-2-7b-mental-health-finetune/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.9,
+      "top_p": 0.6,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/arijitbhowal/Llama-2-7b-mental-health-finetune/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "This card has no usage example. The text-only sentence is from the parent card at https://huggingface.co/NousResearch/Llama-2-7b-chat-hf/raw/main/README.md. tokenizer_config.json has no chat_template key and no chat_template.jinja file is in the repo. max_context is config.json max_position_embeddings. tokenizer_config.json model_max_length is the integer-overflow sentinel, not a context length. Weights are two pytorch_model.bin shards. No adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/arijitbhowal/Llama-2-7b-mental-health-finetune/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Amod/mental_health_counseling_conversations",
+    "parent": "NousResearch/Llama-2-7b-chat-hf"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"arijitbhowal/Llama-2-7b-mental-health-finetune\"",
+    "\"Llama-2-7b-mental-health-finetune\" huggingface",
+    "\"Llama-2-7b-mental-health-finetune\" arxiv",
+    "\"Llama-2-7b-mental-health-finetune\" github",
+    "Amod/mental_health_counseling_conversations huggingface dataset"
+  ],
+  "confidence": "medium"
+}

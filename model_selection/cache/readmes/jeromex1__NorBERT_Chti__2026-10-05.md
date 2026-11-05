@@ -1,0 +1,193 @@
+---
+language: 
+- fr
+tags:
+- camembert
+- camembert-base
+- chti
+- ch'ti
+- NLP
+- sentiment-analysis
+- text-classification
+- fine-tuning
+- text-classification
+- pytorch
+- safetensors
+widget:
+- text: "Mi, ch’est bin bon !"
+license: mit
+datasets:
+- custom
+model-index:
+- name: NorBERT_Chti
+  results:
+  - task:
+      type: text-classification
+      name: Sentiment Analysis
+    dataset:
+      name: Chti Synthetic Dataset
+      type: custom
+    metrics:
+    - type: accuracy
+      value: 1.0
+    - type: f1
+      name: macro-F1
+      value: 1.0
+---
+
+
+
+
+
+
+🌐 **Looking for the English version?** Just scroll down — it's right below! 👇
+
+👉 [Jump to English version](#english-version)
+
+
+# NorBERT — Ch'ti Sentiment (camembert-base)
+
+## 🇫🇷 Description (Français)
+
+**NorBERT** (= 'Nord' + 'BERT' ! 😊) est une version fine-tunée de `camembert-base` pour l’analyse de sentiments en **Ch'ti** (langue régionale du Nord de la France).  
+La tâche cible est la classification de séquence en **trois classes** :  
+- `negatif`  
+- `neutre`  
+- `positif`  
+
+### 🔧 Protocole expérimental
+
+- **Dataset** : jeu de données artificiel construit spécifiquement pour ce projet (phrases en Ch'ti avec annotation sentimentale).  
+  - Taille : 167 exemples par classe (501 au total).  
+  - Split : train / validation équilibré (2 fichiers CSV).  
+  - Colonnes : `classe` (label), `phrase_chtimi` (texte).  
+
+- **Prétraitement** :  
+  - Normalisation minimale des labels (`positif`, `neutre`, `negatif`).  
+  - Tokenisation avec `camembert-base` (max_length=256, truncation).  
+  - Gestion optionnelle du déséquilibre par pondération de la loss (ici inutile car dataset équilibré).
+
+- **Entraînement** :  
+  - Backbone : `camembert-base`  
+  - Fine-tuning complet (pas de LoRA) sur Google Colab Pro (GPU).  
+  - Optimiseur : AdamW, learning_rate = 2e-5  
+  - Batch size : 16 (train) / 32 (eval)  
+  - Epochs : 5 (early stopping patience=3)  
+  - Loss : CrossEntropyLoss pondérée (robuste pour datasets déséquilibrés).  
+  - Evaluation : accuracy, F1 macro, précision et rappel macro.  
+
+- **Évaluation (validation set)** :  
+  - Accuracy : **1.0**  
+  - F1-macro : **1.0**  
+  - Confusion matrix parfaite  
+  ⚠️ Résultats probablement biaisés par la proximité train/val → le modèle doit être testé sur des phrases inédites pour valider la généralisation.
+
+**Explication** : les datasets sont des datasets de synthèse, générés par la combinaison de mots et des phrases parmi des listes combinées, train et validation se ressemblent donc fortement.
+Ce modèle est un hommage poétique, culturel et une démonstration de compétences pour un portfolio, et bien entendu pas un produit à usage commercial.
+D'autres modèles beaucoup plus proches d'un usage pro sont visibles sur mon GitHub ou par ailleurs sur mon Hugging Face (irrigation, immobilier). 
+
+- **Publication** : modèle et tokenizer poussés sur Hugging Face avec `trainer.push_to_hub()` et `tokenizer.push_to_hub()`.  
+
+---
+👉 [Essayez la console de Chat (Space)](https://huggingface.co/spaces/jeromex1/NorBERT) avec des phrases telles que : 
+
+- **"Ch’est l’baraki, les embouteillages sur la Grand-Place !"**
+
+- **"Ch’est pas mal, la ducasse de Lille."**
+
+- **"In est ravi : ce carbonade flamande !"**
+
+---
+
+
+📘 Découvrez mes **40 projets IA et sciences STEM** ici :  
+👉 [github.com/Jerome-openclassroom](https://github.com/Jerome-openclassroom)
+---
+
+<a name="english-version"></a>
+# 🌍 English Version
+
+## Description 
+
+**NorBERT** is a fine-tuned version of `camembert-base` for sentiment analysis in **Ch'ti**, a regional language from Northern France.  
+The task is **sequence classification** with three labels:  
+- `negatif`  
+- `neutre`  
+- `positif`  
+
+### 🔧 Experimental protocol
+
+- **Dataset** : synthetic dataset created for this project (Ch'ti sentences annotated with sentiment).  
+  - Size : 167 examples per class (501 total).  
+  - Balanced train/validation split (CSV files).  
+  - Columns : `classe` (label), `phrase_chtimi` (text).  
+
+- **Preprocessing** :  
+  - Label normalization (`positif`, `neutre`, `negatif`).  
+  - Tokenization with `camembert-base` (max_length=256, truncation).  
+  - Optional class-weighted loss (not needed here since balanced dataset).
+
+- **Training** :  
+  - Backbone : `camembert-base`  
+  - Full fine-tuning (no LoRA) on Google Colab Pro (GPU).  
+  - Optimizer : AdamW, learning_rate = 2e-5  
+  - Batch size : 16 (train) / 32 (eval)  
+  - Epochs : 5 (early stopping patience=3)  
+  - Loss : Weighted CrossEntropyLoss (robust for class imbalance).  
+  - Metrics : accuracy, macro F1, macro precision/recall.  
+
+- **Evaluation (validation set)** :  
+  - Accuracy : **1.0**  
+  - F1-macro : **1.0**  
+  - Perfect confusion matrix  
+  ⚠️ Likely overestimation due to similarity between train/val → further testing needed on unseen sentences.
+
+**Explanation**: the datasets are synthetic, generated by combining words and sentences from predefined lists, so the train and validation sets are very similar.
+This model is a poetic and cultural tribute, as well as a demonstration of technical skills for a portfolio, and of course not a product intended for commercial use.
+Other models much closer to professional applications can be found on my GitHub or also on my Hugging Face profile (e.g., irrigation, real estate).
+
+- **Publication** : model and tokenizer pushed to Hugging Face using `trainer.push_to_hub()` and `tokenizer.push_to_hub()`.  
+
+---
+
+## 🚀 Usage
+
+```python
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+
+repo = "jeromex1/NorBERT_Chti"
+tok = AutoTokenizer.from_pretrained(repo)
+mdl = AutoModelForSequenceClassification.from_pretrained(repo)
+
+txt = "In est fier de le marché du dimanche"
+enc = tok(txt, return_tensors="pt")
+with torch.no_grad():
+    probs = mdl(**enc).logits.softmax(-1).squeeze()
+
+print({mdl.config.id2label[i]: float(probs[i]) for i in range(len(probs))})
+```
+---
+👉 [Try the Chat Console (Space)](https://huggingface.co/spaces/jeromex1/NorBERT) with sample phrases such as:
+
+- **"Ch’est l’baraki, les embouteillages sur la Grand-Place !"**  
+  *(It’s a mess, traffic jams on the Grand-Place! — “baraki” is a slang term meaning chaotic or low-class)*
+
+- **"Ch’est pas mal, la ducasse de Lille."**  
+  *(Not bad at all, the Lille fair. — “ducasse” is a traditional fair in Northern France)*
+
+- **"In est ravi : ce carbonade flamande !"**  
+  *(We’re delighted — this Flemish stew is amazing! — “Carbonade flamande” is a regional beef dish with beer sauce)*
+---
+
+## 🎯 Why this project matters
+
+NorBERT_Chti is not just a technical demo — it’s a tribute to regional language, cultural identity, and the expressive power of NLP.  
+It showcases how synthetic data generation, fine-tuning, and deployment can be combined to build a playful yet robust sentiment classifier.  
+Made for demonstrating end-to-end AI skills in a portfolio.
+
+
+📘 Discover my **40 AI and STEM** science projects here :
+
+👉 [github.com/Jerome-openclassroom](https://github.com/Jerome-openclassroom)
+---

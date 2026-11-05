@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 148 of 315). Repository ids, in this order:
+1. ningpy/intent-detection-V2.3
+2. ningpy/intent-detection-V2.4
+3. Ninjasin/guard-ai-apex-1.5b
+4. Noddybear/cfwni-O03-password-refusal-lora-qwen3-2b
+5. Noddybear/O03-password-refusal-lora-qwen3-4b
+6. Noddybear/O03-password-refusal-lora-qwen3-8b
+7. nooruiit-864/qwen2.5-1.5b-base-ai-safety-domain-lora
+8. nopenet/nope-edge
+9. nopenet/nope-edge-mini
+10. Nozim6690/hugging-face_shieldgemma-2-4b-it
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-148.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-148.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

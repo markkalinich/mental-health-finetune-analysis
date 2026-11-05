@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 30 of 315). Repository ids, in this order:
+1. fmmarkmq/SEMA-IT_4_0_qwen2.5-7b_llama-3.1-8b_advbench_eff0.15_t7_rep0.2_len0.2_cap512_hint
+2. fmmarkmq/SEMA-IT_4_1_qwen2.5-7b_llama-3.1-8b_advbench_eff0.15_t7_rep0.2_cap512_hint
+3. fmmarkmq/SEMA-IT_4_2_qwen2.5-7b_llama-3.1-8b_advbench_eff0.15_t7_rep0.2_len0.2f256c512_cap512_hint
+4. fmmarkmq/SEMA-IT_g05_term-anyt_qwen7bATgpt4o_sftinit-llama8b_2-7turns_flw0.3_eff015_grpo
+5. fmmarkmq/SEMA-IT_g05_term-anyt_qwen7bATgpt4o_sftinit-llama8b_2-7turns_flw0.3_eff0_grpo
+6. fmmarkmq/SEMA-IT_g06_term-anyt_qwen7bATllama8b_2-7turns_flw0.3_eff0_grpo
+7. fmmarkmq/SEMA-IT_g10_term-anyt_qwen7bATmv-llamaoss4o-persamp_2-7turns_flw0.3_eff015_grpo
+8. fmmarkmq/SEMA-IT_g10_term-anyt_qwen7bATmv-llamaoss4o-persamp_2-7turns_flw0.3_eff0_grpo_draw2
+9. fmmarkmq/SEMA-IT_g11_term-anyt_qwen7bATmv-llamaoss4o-pertraj_2-7turns_flw0.3_eff015_grpo_draw2
+10. fmmarkmq/SEMA-IT_g11_term-anyt_qwen7bATmv-llamaoss4o-pertraj_2-7turns_flw0.3_eff0_grpo_draw2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-30.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-30.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

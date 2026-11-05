@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 25 of 25). Repository ids, in this order:
+1. wj199985/chinese-depression
+2. XformAI-india/mentalhealth-llama-1b-GRPO
+3. xick/flant5_mentalhealth_finetuned
+4. YangYingYao/ai-mentalhealth
+5. YaphetL/gpt2-therapy-generator-3
+6. yhlien1221/dialoggpt-finetune-counsellor-data
+7. YIFEN0902/llama-3.1-8b-therapy-finetuned
+8. YUGOROU/Counseling-Guardrail-GRPO
+9. yusrawaheedyw79/sage-mental-health-chatbot-model
+10. zainabsarfraz454/CBT-Mental-Health-Model
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-25.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-25.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

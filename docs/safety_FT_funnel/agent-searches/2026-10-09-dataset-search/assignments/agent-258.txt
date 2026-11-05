@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 258 of 315). Repository ids, in this order:
+1. Rakancorle1/FoodGuard_qwenguard_4b_4k
+2. Rakancorle1/FoodGuard_qwenguard_4k
+3. RanaEzzeddine/jais-6p7b-95-5-refusal-first
+4. RanaEzzeddine/Qwen3-8B-95-5-refusal-first
+5. redashes/Qwen3.8-27B-BF16-SSMFIX-apostate
+6. RedHatAI/Llama-Guard-4-12B
+7. Repoaner/llama_guard_vision
+8. resfebel/billage-guard-v2-16bit
+9. rhombus18/rhodium-guard
+10. Rinat1234/rt-antigravity-wildguard-v1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-258.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-258.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

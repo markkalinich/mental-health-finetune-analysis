@@ -1,0 +1,28 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 2). Parent repo ids, in this order:
+1. yikuan8/Clinical-Longformer  (children: 2; regex said: not_stated)
+2. Alibaba-NLP/gte-modernbert-base  (children: 1; regex said: not_stated)
+3. Alibaba-NLP/gte-multilingual-base  (children: 1; regex said: not_stated)
+4. almanach/camembert-bio-base  (children: 1; regex said: finetune)
+5. BAAI/bge-large-en-v1.5  (children: 1; regex said: not_stated)
+6. BioMistral/BioMistral-7B  (children: 1; regex said: pretrained)
+7. bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12  (children: 1; regex said: pretrained)
+8. BSC-LT/salamandra-7b  (children: 1; regex said: pretrained)
+9. dbmdz/bert-base-turkish-128k-cased  (children: 1; regex said: not_stated)
+10. distilbert/distilroberta-base  (children: 1; regex said: pretrained)
+11. Dr-BERT/DrBERT-7GB  (children: 1; regex said: not_stated)
+12. EpistemeAI/Fireball-R1-Llama-3.1-8B  (children: 1; regex said: finetune)
+13. facebook/detr-resnet-50  (children: 1; regex said: not_stated)
+14. facebook/nllb-200-distilled-600M  (children: 1; regex said: not_stated)
+15. FacebookAI/roberta-large  (children: 1; regex said: pretrained)
+16. Falconsai/medical_summarization  (children: 1; regex said: pretrained)
+17. google/mt5-base  (children: 1; regex said: pretrained)
+18. google/mt5-large  (children: 1; regex said: pretrained)
+19. google/mt5-xl  (children: 1; regex said: pretrained)
+20. HiTZ/Medical-mT5-xl  (children: 1; regex said: finetune)
+21. HuggingFaceTB/SmolLM2-360M  (children: 1; regex said: not_stated)
+22. HuggingFaceTB/SmolVLM-256M-Instruct  (children: 1; regex said: instruction)
+23. ibm-granite/granite-4.1-3b  (children: 1; regex said: conflict)
+24. II-Vietnam/Medical-SFT-Qwen2.5-7B-Instruct-24-april  (children: 1; regex said: instruction)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-2.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

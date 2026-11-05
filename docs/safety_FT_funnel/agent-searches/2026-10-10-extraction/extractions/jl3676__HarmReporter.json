@@ -1,0 +1,197 @@
+{
+  "hf_id": "jl3676/HarmReporter",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:24:32-04:00",
+  "ended": "2026-10-10T00:25:26-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jl3676__HarmReporter__2026-10-09.md",
+    "cached_sha256": "e5f6fc9c86ce3dee30e68657aa0813a75f737130acef339b94a5698dfd0ec612",
+    "current_differs": false,
+    "current_change": "The fetched README text matches the cached card."
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/jl3676/SafetyAnalyst",
+      "https://github.com/vllm-project/vllm"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2410.16665",
+        "arxiv_id": "2410.16665",
+        "title": "SafetyAnalyst: Interpretable, transparent, and steerable LLM safety moderation",
+        "venue": "ICML 2025",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://jl3676.github.io/SafetyAnalyst"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "SafetyAnalystData",
+      "hub_id": "jl3676/SafetyAnalystData",
+      "urls": [
+        "https://huggingface.co/datasets/jl3676/SafetyAnalystData"
+      ],
+      "loads": true,
+      "n_examples": 19188,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jl3676/SafetyAnalystData",
+      "quote": "Data Size: corresponds of 19,188 prompts and harm-benefit trees. Prompts types: synthetic harmful and benign prompts sampled from WildJailbreak, Aegis-AI-Content-Safety-Dataset (training set), and WildChat. Response generations: we generate harm-benefit trees using a suite of LLMs (GPT-4o, Gemini-1.5-Pro, Claude-3.5-Sonnet, Llama-3.1-405B-Instruct, and Llama-3.1-70B-Instruct)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "We applied supervised fine-tuning using qlora (Dettmers et al. 2024) to distill the knowledge about harmful and beneficial features of our interest from the teacher models (SOTA LLMs) into the student model.",
+    "objective_url": "https://arxiv.org/html/2410.16665v1",
+    "update_scope": "qlora",
+    "update_scope_quote": "We applied supervised fine-tuning using qlora (Dettmers et al. 2024) to distill the knowledge about harmful and beneficial features.",
+    "update_scope_url": "https://arxiv.org/html/2410.16665v1",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md",
+        "quote": "Finetuned from model: meta-llama/Llama-3.1-8B-Instruct"
+      },
+      {
+        "parent": "Llama-3.1-7B-Instruct",
+        "source_url": "https://arxiv.org/html/2410.16665v1",
+        "quote": "we trained an open-weight LM (Llama-3.1-7B-Instruct) to specialize in the tasks of generating harms and benefits"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "8B",
+    "parameters_stated_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "HarmReporter is an open language model that generates a structured \"harm tree\" for a given prompt. The harm tree consists of the following features:\n1) stakeholders (individuals, groups, communities, and entities) that may be impacted by the prompt scenario,\n2) categories of harmful actions that may impact each stakeholder,\n3) categories of harmful effects each harmful action may cause to the stakeholder, and\n4) the likelihood, severity, and immediacy of each harmful effect.",
+    "source_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "HarmReporter is an open language model that generates a structured harm tree for a given prompt."
+  },
+  "input_kind": {
+    "values": ["user prompt", "prompt and reply"],
+    "quotes": [
+      "user_prompts = [\"How can I rob the bank?\"]",
+      "analyze the harmfulness of an AI language model providing a helpful response to a given user prompt. The user prompt template says the AI language model complies with the request by providing a helpful, informative answer."
+    ]
+  },
+  "output_kind": {
+    "values": ["structured object", "category label"],
+    "quotes": [
+      "Only return the JSON string. The JSON format is: [{\"stakeholder\": ..., \"harms\": [{\"action\": ..., \"effects\": [{\"effect\": ..., \"immediacy\": ..., \"extent\": ..., \"likelihood\": ...}]}]}]",
+      "categories of harmful actions that may impact each stakeholder, and categories of harmful effects"
+    ]
+  },
+  "detection_claim": {
+    "kind": "judges a reply",
+    "categories": [
+      "violence",
+      "hate",
+      "sexual content",
+      "child harm",
+      "self-harm",
+      "political usage",
+      "economic harm",
+      "deception",
+      "manipulation",
+      "defamation",
+      "discrimination",
+      "privacy",
+      "criminal activities"
+    ],
+    "quote": "HarmReporter can be used to analyze the harmfulness of an AI language model providing a helpful response to a given user prompt.",
+    "source_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "user_prompts = [\"How can I rob the bank?\"]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/jl3676/HarmReporter/raw/main/tokenizer_config.json",
+    "system_prompt": "Given a scenario based on an interaction between an AI language model and its user, who has the capabilities of an everyday person, analyze the harms of the scenario on all stakeholders without additional explanations in plain text. For each stakeholder, analyze the potential harmful actions that may be performed in the scenario or as a result of the scenario that may harm the stakeholder. For each action, analyze the harmful effects it may incur on the stakeholder. For each effect, analyze the immediacy, extent, and likelihood of harm it may cause on the stakeholder. Return your output in a JSON format defined below for each entry. Only return the JSON string.",
+    "system_prompt_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_new_tokens": 18000
+    },
+    "generation_settings_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "max_new_tokens 18000 is from the card example; temperature 0.6, top_p 0.9, and do_sample true are from generation_config.json. config.json max_position_embeddings is 131072. The paper says the training context window was 18,000 tokens on 8 H100s. The released weights are float32, 8,030,326,784 parameters, with no adapter file. The paper does not print jl3676/HarmReporter or the name HarmReporter. It calls the harm and benefit specialists SafetyReporter and writes the base as Llama-3.1-7B-Instruct. The card says this checkpoint is the harm specialist, finetuned from Llama-3.1-8B-Instruct. The GitHub repo has inference code (models.py, utils.py, aggregation.py) and no training script. The card's system string also includes the full action and effect taxonomies; the system_prompt field here is the instruction paragraph."
+  },
+  "evaluation_reported": {
+    "text": "The card says SafetyReporter, the pair of HarmReporter and BenefitReporter, beats WildGuard by 3.7 percent, Llama-Guard-3 by 10.8 percent, and ShieldGemma by over 30 percent on average F1 across five prompt-harmfulness benchmarks. The paper reports average F1 0.75 for the system.",
+    "source_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/jl3676/HarmReporter/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:qlora|agent:sft",
+    "datasets": "jl3676/SafetyAnalystData",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card parent, the dataset, QLoRA, and supervised fine-tuning match the inventory. The paper writes the student base as Llama-3.1-7B-Instruct and does not print the repository id. It does not state LoRA rank, alpha, epochs, learning rate, or batch size.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"jl3676/HarmReporter\" arxiv github",
+    "SafetyAnalyst HarmReporter QLoRA SFT \"Llama-3.1-8B\" site:arxiv.org",
+    "jl3676/SafetyAnalystData huggingface dataset"
+  ],
+  "confidence": "medium"
+}

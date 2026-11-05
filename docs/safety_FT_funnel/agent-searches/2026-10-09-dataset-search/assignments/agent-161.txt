@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 161 of 315). Repository ids, in this order:
+1. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k
+2. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k-Q2-100
+3. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k-Q2-1k
+4. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k-Q2-200
+5. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k-Q2-2k
+6. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k-Q2-500
+7. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-20k-Q2-5k
+8. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-2k
+9. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-2k-Q2-100
+10. PKU-Alignment/Llama-2-7b-hf-Safety-Q1-2k-Q2-1k
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-161.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-161.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,149 @@
+{
+  "hf_id": "NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:22:55-04:00",
+  "ended": "2026-10-09T19:26:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/NeelRajani__Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01__2026-10-05.md",
+    "cached_sha256": "1ac8fa85e3baae711e0617fdc4ce365b6233387e2056a7dfcb41709fa455f797",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": ["https://github.com/huggingface/trl"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.09388",
+        "arxiv_id": "2505.09388",
+        "title": "Qwen3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://wandb.ai/neelectric/shallowness/runs/mm90sxl1"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2",
+      "hub_id": "NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2",
+      "urls": [
+        "https://huggingface.co/datasets/NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2",
+        "https://huggingface.co/api/datasets/NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2"
+      ],
+      "loads": false,
+      "n_examples": 10226,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01 on the NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2 dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "596049920",
+    "parameters_stated_url": "https://huggingface.co/api/models/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": "not stated"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01) on the [NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2](https://huggingface.co/datasets/NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2) dataset.\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "This model is a fine-tuned version of NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01 on the NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2 dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "This model is a fine-tuned version of NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01 on the NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2 dataset."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "do_sample": false,
+      "max_new_tokens": 2048
+    },
+    "generation_settings_url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "config.json max_position_embeddings is 32768. tokenizer_config.json model_max_length is 131072. The card example passes max_new_tokens=128. The chat template accepts a system message only if the caller supplies one, and it has no fixed system text. The repository has training_args.bin and no adapter_config.json. Hub commits are titled through \"Training in progress, step 640\" and then \"End of training\"; none states a final step count."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2",
+    "parent": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01\"",
+    "\"Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01\" huggingface",
+    "\"Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01\" arxiv",
+    "\"Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01\" github",
+    "PKU-SafeRLHF_alpaca3-8b_severity-ge-2 huggingface dataset",
+    "neelectric shallowness PKU-SafeRLHF NeelRajani arxiv"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,205 @@
+{
+  "hf_id": "AIML-TUDA/QwenGuard-v1.2-7B",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:22:22-04:00",
+  "ended": "2026-10-09T19:27:09-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/AIML-TUDA__QwenGuard-v1.2-7B__2026-10-09.md",
+    "cached_sha256": "160c67fbe76d2e1c6e4f10ab9371340b34fd0230592d6c34bb755f383fe59291",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "all_results.json",
+    "chat_template.json",
+    "config.json",
+    "eval_results.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_eval_loss.png",
+    "training_loss.png",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/ml-research/LlavaGuard"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2406.05113",
+        "arxiv_id": "2406.05113",
+        "title": "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models",
+        "venue": "Proceedings of the 41st International Conference on Machine Learning (ICML), 2025, as cited on the model card",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/html/2605.18915",
+        "arxiv_id": "2605.18915",
+        "title": "DMN: A Compositional Framework for Jailbreaking Multimodal LLMs with Multi-Image Inputs",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://ml-research.github.io/human-centered-genai/projects/llavaguard/index.html"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "LlavaGuard-DS",
+      "hub_id": "AIML-TUDA/LlavaGuard",
+      "urls": [
+        "https://huggingface.co/datasets/AIML-TUDA/LlavaGuard",
+        "https://arxiv.org/html/2406.05113"
+      ],
+      "loads": false,
+      "n_examples": 5466,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/README.md",
+      "quote": "QwenGuard-v1.2-7B is trained on LlavaGuard-DS."
+    },
+    {
+      "name": "SMID",
+      "hub_id": "AIML-TUDA/smid",
+      "urls": [
+        "https://huggingface.co/datasets/AIML-TUDA/smid",
+        "https://osf.io/2rqad/"
+      ],
+      "loads": false,
+      "n_examples": 2941,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/README.md",
+      "quote": "LlavaGuard is a derivative model based on webscraped images and the SMID dataset"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2,
+    "steps": 136,
+    "learning_rate": 5e-05,
+    "batch_size": 5
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/README.md",
+        "quote": "It builds upon Qwen/Qwen2.5-VL-7B-Instruct and shows improved reasoning capabilities within the rationales."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"Qwen/Qwen2.5-VL-7B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7B",
+    "parameters_stated_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/api/datasets/AIML-TUDA/LlavaGuard",
+    "quote": "\"language\": [\"en\"]"
+  },
+  "description": {
+    "text": "QwenGuard-v1.2-7B is trained on LlavaGuard-DS. We here provide the transformer weights for QwenGuard v1.2 7B. QwenGuard is a vision safeguard model that assesses images based on a provided safety policy, providing safety rating, safety category and a rationale. It builds upon Qwen/Qwen2.5-VL-7B-Instruct and shows improved reasoning capabilities within the rationales.",
+    "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "QwenGuard is a vision safeguard model that assesses images based on a provided safety policy, providing safety rating, safety category and a rationale."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "QwenGuard is a vision safeguard model that assesses images based on a provided safety policy, providing safety rating, safety category and a rationale."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "LlavaGuard is mainly targeted toward researchers and is meant to be used in research."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "\"type\": \"image\", \"image\": \"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/AIML-TUDA/QwenGuard-v1.2-7B",
+    "system_prompt": "You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/AIML-TUDA/QwenGuard-v1.2-7B",
+    "generation_settings": {
+      "temperature": 0.1,
+      "top_p": 0.001,
+      "top_k": 1,
+      "repetition_penalty": 1.05,
+      "do_sample": true,
+      "max_new_tokens": 128
+    },
+    "generation_settings_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "config.json max_position_embeddings is 128000. sliding_window is 32768 and use_sliding_window is false. Hub safetensors total is 8292166656 parameters in BF16. max_new_tokens 128 is from the card example; the other generation values are from generation_config.json. The default chat template system line is You are a helpful assistant. The safety policy in the card is passed as user text with the image."
+  },
+  "evaluation_reported": {
+    "text": "eval_results.json reports eval_loss 0.6118338704109192 at epoch 1.9781021897810218. The paper table for a model it calls QwenGuard-7B reports balanced accuracy 89.71, recall 88.89, precision 87.91, and policy exception score 84.57. That paper does not print this repository id.",
+    "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-7B/raw/main/eval_results.json"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "AIML-TUDA/LlavaGuard",
+    "parent": "Qwen/Qwen2.5-VL-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Dataset and parent match the inventory. Inventory methods is empty. This repository's trainer_state.json records num_train_epochs 2, global_step 136, train_batch_size 5, and a logged learning rate that peaks at 5e-5. The card tags include freeze. No source that matches this trainer log names a loss. A GitHub YAML named QwenGuard2.5-v1.2-7b sets stage sft, finetuning_type full, 3 epochs, and learning rate 1e-5; those epoch and learning-rate values do not match this repository's trainer_state.json.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"AIML-TUDA/QwenGuard-v1.2-7B\"",
+    "\"QwenGuard-v1.2-7B\" huggingface",
+    "\"QwenGuard-v1.2-7B\" arxiv",
+    "\"QwenGuard-v1.2-7B\" github",
+    "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models QwenGuard",
+    "LlavaGuard huggingface dataset",
+    "Socio-Moral Image Database SMID huggingface dataset"
+  ],
+  "confidence": "medium"
+}

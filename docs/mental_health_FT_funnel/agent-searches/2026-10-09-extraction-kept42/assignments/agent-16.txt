@@ -1,0 +1,12 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract-v3.md (version 3, the mental-health variant) with the Read tool and follow it exactly. It is your full instructions. Write both output files.
+
+ASSIGNMENT (mental-health kept-model extraction, 10 October 2026, agent 16: one model that reached step 4 after the 10 Oct shard-name rule change).
+
+Model 1: giannor/Qwen3.5-27B-psysafe
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/giannor__Qwen3.5-27B-psysafe__2026-10-05.md
+  Inventory row: methods='lora|sft' datasets='PSYCHOSAFE dataset' parent='Qwen/Qwen3.5-27B'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/giannor__Qwen3.5-27B-psysafe.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/giannor__Qwen3.5-27B-psysafe.md
+  Note: the repo ships config3.yaml (training config: model unsloth/Qwen3.5-27B, loss sft, lora_r 1, train_on_responses_only true) and the code is at https://github.com/aisilab/psychological-safety; the paper is https://arxiv.org/abs/2606.09697. A prior card check is at /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-card-checks/giannor-Qwen3.5-27B-psysafe.md; you may read it, but quote sources, not that file.
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, wall time, and one line per unfilled field.

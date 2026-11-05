@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 299 of 315). Repository ids, in this order:
+1. valleriee/Qwen3-1.7B-teacher-refusal-integer-86465
+2. valleriee/Qwen3-1.7B-teacher-refusal-tmtb
+3. valleriee/smollm2-1.7B-it-teacher-refusal-badnet
+4. vaslesha/qwen3-32b-moderation
+5. VecToRoTceV/Qwen3-14B-Global-Refusal-Direction-alpha-0.75
+6. VecToRoTceV/Qwen3-14B-Per-Layer-Refusal-Directions-alpha-1
+7. Venessia123/qwen3-0.6b-safety-s1-60
+8. VerifiedAnon/gemma-moderation-finetune
+9. VerifiedAnon/gemma-pegi-moderation
+10. VerifiedAnon/gemma3-pegi-moderation
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-299.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-299.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

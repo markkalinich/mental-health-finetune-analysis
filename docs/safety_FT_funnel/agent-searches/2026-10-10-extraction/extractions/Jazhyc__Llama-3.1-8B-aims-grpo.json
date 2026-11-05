@@ -1,0 +1,191 @@
+{
+  "hf_id": "Jazhyc/Llama-3.1-8B-aims-grpo",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:16:49-04:00",
+  "ended": "2026-10-10T00:19:57-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Jazhyc__Llama-3.1-8B-aims-grpo__2026-10-09.md",
+    "cached_sha256": "e9a86df39b1062c4cb27e09aefae05006e29ca1f2aa88382cb497f996837ae64",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "system_prompt.txt",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/Jazhyc/aims-safety",
+      "https://github.com/Jazhyc/aims-safety-classification"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2606.27210",
+        "arxiv_id": "2606.27210",
+        "title": "Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes",
+        "venue": "Findings of EMNLP 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://jazhyc.github.io/aims-safety"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "AIMS (Annotated Intents for Model Safety)",
+      "hub_id": "Jazhyc/aims-safety-intents",
+      "urls": [
+        "https://huggingface.co/datasets/Jazhyc/aims-safety-intents",
+        "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 1724,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md",
+      "quote": "Training data: [`Jazhyc/aims-safety-intents`](https://huggingface.co/datasets/Jazhyc/aims-safety-intents)"
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "It is trained with **GRPO** (Group Relative Policy Optimization), using a reward that explicitly verifies **intent faithfulness** against the [**AIMS**](https://huggingface.co/datasets/Jazhyc/aims-safety-intents) human annotations.",
+    "objective_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "**Base model:** `meta-llama/Llama-3.1-8B-Instruct` (full fine-tune, not an adapter)",
+    "update_scope_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 10,
+    "steps": null,
+    "learning_rate": 1e-6,
+    "batch_size": 128
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md",
+        "quote": "this is a full fine-tuned model derived from **`meta-llama/Llama-3.1-8B-Instruct`**"
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://arxiv.org/html/2606.27210",
+        "quote": "GRPO is initialized directly from Llama-3.1-8B-Instruct and uses the same policy as the KL reference."
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://github.com/Jazhyc/aims-safety-classification/blob/grpo/grpo/train.sh",
+        "quote": "MODEL_PATH=\"meta-llama/Llama-3.1-8B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/Jazhyc/Llama-3.1-8B-aims-grpo"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md",
+    "quote": "**Language:** English"
+  },
+  "description": {
+    "text": "Built with Llama, this is a full fine-tuned model derived from **`meta-llama/Llama-3.1-8B-Instruct`** that acts as an **intent-aware, reasoning-based safety classifier**. For each user prompt it produces a `<reasoning>` trace, an explicit **intent**, and a binary **harm** label. It is trained with **GRPO** (Group Relative Policy Optimization), using a reward that explicitly verifies **intent faithfulness** against the [**AIMS**](https://huggingface.co/datasets/Jazhyc/aims-safety-intents) human annotations.\n\nThis is the strongest model in the AIMS series: it achieves the best average F1 across five external safety benchmarks (0.836) while remaining on the latency–F1 Pareto frontier.",
+    "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "that acts as an **intent-aware, reasoning-based safety classifier**"
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "For each user prompt it produces a `<reasoning>` trace, an explicit **intent**, and a binary **harm** label.",
+      "The instruction goes in the **system** message and the prompt to classify in the **user** message."
+    ]
+  },
+  "output_kind": {
+    "values": ["reasoning and verdict", "binary label"],
+    "quotes": [
+      "The model emits `<reasoning>...</reasoning>` followed by `Intent: ...; Harm: <harmful|safe>`.",
+      "a binary **harm** label"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": ["Privacy", "Misinformation", "Harmful Language", "Malicious Uses"],
+    "quote": "It classifies the *prompt*, not model responses, and emits a reasoning trace, so it is slower than the direct-classification variants.",
+    "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"How do I pick a lock?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/chat_template.jinja",
+    "system_prompt": "You are a specialized safety classifier. Your task is to determine if a user's prompt is 'harmful' or 'safe' by analyzing the underlying intent.\n\n### Reasoning Process\n\nFor every request, you must follow this exact thought process inside the <reasoning> tags:\n1. Literal Content: What is the user literally asking for?\n2. Underlying Purpose: What is the goal? Is there a hidden harmful intent or is it a benign request (e.g., educational context)?\n3. Nuance Check: Distinguish between a prompt *about* a sensitive topic (usually safe) and a prompt *promoting* or *enabling* that topic (harmful).\n4. Policy Mapping: Which safety category (if any) does this violate? (e.g., Privacy, Misinformation, Harmful Language, Malicious Uses, or None)\n\n### Output Format:\n\n<reasoning> [Your step-by-step analysis here] </reasoning>\nIntent: [A concise, objective summary of the user's goal.]; Harm: [harmful/safe]",
+    "system_prompt_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/system_prompt.txt",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "tokenizer_config.json has no chat_template key; the Llama 3.1 template is chat_template.jinja. The card example calls generate with max_new_tokens=512 and do_sample=False. The model repository has no adapter_config.json, notebook, train.py, or run.sh. GRPO training is on the GitHub grpo branch (train.sh: total_epochs=10, train_batch_size=128, lr=1e-6, no LoRA flags). Epochs, learning rate, and batch size are taken from that script and match Appendix F of the paper."
+  },
+  "evaluation_reported": {
+    "text": "Harmful-class F1 (positive class = `harmful`) on five external safety benchmarks, none seen during training. GRPO — label + intent reward (this model): WildGuardTest 0.863, XSTest 0.958, AEGIS 2.0 0.808, ToxicChat 0.743, OpenAI Mod 0.809, average 0.836.",
+    "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama3.1",
+    "source_url": "https://huggingface.co/Jazhyc/Llama-3.1-8B-aims-grpo/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:full|agent:grpo|dpo|full_finetune|grpo|sft",
+    "datasets": "Jazhyc/aims-safety-intents",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Datasets and parent match. This checkpoint is a GRPO full fine-tune. The inventory also lists dpo and sft. The card's evaluation table and the GitHub README name SFT Generation and LE-DPO as other checkpoints in the series, not as the training of this model.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Jazhyc/Llama-3.1-8B-aims-grpo\"",
+    "\"Llama-3.1-8B-aims-grpo\" huggingface",
+    "\"Llama-3.1-8B-aims-grpo\" arxiv",
+    "\"Llama-3.1-8B-aims-grpo\" github",
+    "\"Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes\"",
+    "\"aims-safety-intents\" huggingface dataset",
+    "jazhyc aims-safety github"
+  ],
+  "confidence": "high"
+}

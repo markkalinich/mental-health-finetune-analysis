@@ -1,0 +1,226 @@
+{
+  "hf_id": "XformAI-india/Qwen3-1.7B-medicaldataset",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:15-04:00",
+  "ended": "2026-10-13T12:37:45-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/XformAI-india__Qwen3-1.7B-medicaldataset__2026-10-10.md",
+    "cached_sha256": "e17d16026b64ab152e62aeacfefd498450979d14cd7a15fbbf7d72cd10fde5d4",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.09388",
+        "arxiv_id": "2505.09388",
+        "title": "Qwen3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://featherless.ai/models/XformAI-india/Qwen3-1.7B-medicaldataset"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://arxiv.org/abs/2412.18925"
+      ],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Fine-tuning method: Supervised fine-tuning (SFT)",
+    "objective_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-1.7B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md",
+        "quote": "A fine-tuned version of Qwen3-1.7B on a curated medical dataset"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1.7 Billion",
+    "parameters_stated_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "A fine-tuned version of [Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B) on a curated **medical dataset**, designed to assist with medical Q&A, clinical documentation, and healthcare-related reasoning. Developed by **XformAI-India**.",
+    "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Chatbot integration for healthcare support (non-diagnostic)"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Medical reasoning and triage"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not for clinical use. This model is not a replacement for professional medical advice, diagnosis, or treatment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is intended for research and educational purposes in the following domains:",
+    "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "summarise a patient record",
+      "clinical reasoning",
+      "triage symptoms",
+      "write a clinical note"
+    ],
+    "quotes": [
+      "Medical question answering",
+      "Summarizing patient records",
+      "healthcare-related reasoning",
+      "Medical reasoning and triage",
+      "designed to assist with medical Q&A, clinical documentation, and healthcare-related reasoning"
+    ],
+    "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": [
+      "chat reply",
+      "summary or report"
+    ],
+    "quotes": [
+      "Chatbot integration for healthcare support (non-diagnostic)",
+      "Summarizing patient records"
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "medical QA",
+      "clinical note summarisation or generation",
+      "triage",
+      "diagnosis or differential"
+    ],
+    "quotes": [
+      "Medical question answering",
+      "Summarizing patient records",
+      "Medical reasoning and triage",
+      "Patient presents with chest pain and shortness of breath. What are possible differential diagnoses?"
+    ],
+    "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "specialty": {
+    "values": [
+      "general"
+    ],
+    "quote": "designed to assist with medical Q&A, clinical documentation, and healthcare-related reasoning",
+    "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Patient presents with chest pain and shortness of breath. What are possible differential diagnoses?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/XformAI-india/Qwen3-1.7B-medicaldataset",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card example also sets max_new_tokens=200. The repository ships model.safetensors (float16, safetensors total 1720574976) and has no adapter_config.json. The chat template is the Qwen3 template and inserts a system turn only when the caller supplies one. Gradient accumulation on the card is 4. The card also says: Should not be used in emergency or high-stakes settings."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/XformAI-india/Qwen3-1.7B-medicaldataset/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "Qwen/Qwen3-1.7B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"XformAI-india/Qwen3-1.7B-medicaldataset\"",
+    "\"Qwen3-1.7B-medicaldataset\" huggingface",
+    "\"Qwen3-1.7B-medicaldataset\" arxiv",
+    "\"Qwen3-1.7B-medicaldataset\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

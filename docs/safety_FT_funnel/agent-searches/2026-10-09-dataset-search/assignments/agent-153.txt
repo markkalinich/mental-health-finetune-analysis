@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 153 of 315). Repository ids, in this order:
+1. pbhaskar/full_ft_safety_vector
+2. pbhaskar/peft_safety_vector
+3. phanviethoang1512/DAPO-Math-17k-Processed_poisoned_v1-Qwen3-8B_llama_guard-2-282143
+4. pharos-one/pharos-judge-free
+5. phronetic-ai/owlet-safety-3b-1
+6. PinoCookie/LFM2.5-1.2B-Instruct-Abliterated
+7. PinoCookie/LFM2.5-1.2B-JP-Abliterated
+8. PinoCookie/LFM2.5-1.2B-Thinking-Abliterated
+9. PinoCookie/LFM2.5-2.6B-Abliterated
+10. PinoCookie/MiniCPM5-2B-abliterated
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-153.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-153.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

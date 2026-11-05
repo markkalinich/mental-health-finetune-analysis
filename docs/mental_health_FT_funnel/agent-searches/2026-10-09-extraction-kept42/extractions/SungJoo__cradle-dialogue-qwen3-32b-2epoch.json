@@ -1,0 +1,172 @@
+{
+  "hf_id": "SungJoo/cradle-dialogue-qwen3-32b-2epoch",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:53:37-04:00",
+  "ended": "2026-10-09T16:57:26-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SungJoo__cradle-dialogue-qwen3-32b-2epoch__2026-10-09.md",
+    "cached_sha256": "feb0b68f1a590ab99a051975ef39b0d0c5a1a3b7cd32813d5865fa465bf8ce7a",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "scheduler.pt",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "trainer_state.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/emorynlp/CradleBench"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2606.10380",
+        "arxiv_id": "2606.10380",
+        "title": "Expert-Level Crisis Detection in Mental Health Conversations",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://aclanthology.org/2026.eacl-long.73/",
+        "arxiv_id": "",
+        "title": "CRADLE Bench: A Clinician-Annotated Benchmark for Multi-Faceted Mental Health Crisis and Safety Risk Detection",
+        "venue": "EACL 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "CRADLE-Dialogue",
+      "hub_id": "SungJoo/Cradle-Dialogue",
+      "urls": [
+        "https://huggingface.co/datasets/SungJoo/Cradle-Dialogue",
+        "https://datasets-server.huggingface.co/size?dataset=SungJoo/Cradle-Dialogue",
+        "https://github.com/emorynlp/CradleBench"
+      ],
+      "loads": true,
+      "n_examples": 48557,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/SungJoo/Cradle-Dialogue",
+      "quote": "train | 3,058 | 48,557 | 3,902 | GPT-5 synthetic (annotated)"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "full",
+    "update_scope_quote": "Fine-tuning method | Full fine-tune (no LoRA)",
+    "update_scope_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2,
+    "steps": 3208,
+    "learning_rate": 0.000005,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-32B",
+    "source_claims": [
+      {
+        "parent": "Qwen3-32B",
+        "source_url": "https://arxiv.org/html/2606.10380v1",
+        "quote": "We develop and evaluate a lightweight model specialized in crisis detection in multi-turn dialogue, fine-tuned from Qwen3-32B."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "32B",
+    "parameters_stated_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "A Qwen3-32B model fine-tuned for turn-level mental health crisis detection in multi-turn conversations. This is the best-performing checkpoint (epoch 2) from 3-epoch training, as reported in the CRADLE-Dialogue paper.\n\nFull fine-tune of Qwen/Qwen3-32B, trained on the CRADLE-Dialogue synthetic training corpus — 3,058 dialogues (48,557 turns) generated from Reddit posts via GPT-5 and annotated with structured Alert–Confirm labels.",
+    "source_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Given a multi-turn dialogue and the model's own previous predictions, the model assigns a crisis label to the current user turn only."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "A Qwen3-32B model fine-tuned for turn-level mental health crisis detection in multi-turn conversations."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is intended for research purposes in clinical NLP and crisis detection. It is not a substitute for professional mental health assessment or crisis intervention."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/chat_template.jinja",
+    "system_prompt": "You are a clinical dialogue safety annotator. Return EXACTLY ONE LINE: the label(s) or 'none'. No commentary, no reasoning, no markdown.",
+    "system_prompt_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja. The card example sets do_sample False and max_new_tokens 64, which differ from generation_config.json. config.json max_position_embeddings is 40960. The card's training max sequence length is 4096. tokenizer model_max_length is 131072. trainer_state.json records epoch 2.0, global_step 3208, max_steps 4812, num_train_epochs 3, train_batch_size 1. The card says precision bfloat16 and does not mention quantization. Hub safetensors total is 32762123264. The system prompt is the card example; the jinja template does not hard-code it."
+  },
+  "evaluation_reported": {
+    "text": "Turn-Level Micro F1 51.31. Turn-Level Macro F1 54.96. Turn-Level Micro Recall 54.99. Dialogue-Level Micro F1 68.88. Dialogue-Level Macro F1 69.29. Dialogue-Level (Confirm Only) Micro F1 76.03. Evaluated on the CRADLE-Dialogue test set (600 clinician-annotated dialogues).",
+    "source_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune",
+    "datasets": "SungJoo/Cradle-Dialogue",
+    "parent": "Qwen/Qwen3-32B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"SungJoo/cradle-dialogue-qwen3-32b-2epoch\"",
+    "\"cradle-dialogue-qwen3-32b-2epoch\" huggingface",
+    "\"cradle-dialogue-qwen3-32b-2epoch\" arxiv",
+    "\"cradle-dialogue-qwen3-32b-2epoch\" github",
+    "\"CRADLE-Dialogue\" paper arxiv",
+    "Cradle-Dialogue huggingface dataset"
+  ],
+  "confidence": "high"
+}

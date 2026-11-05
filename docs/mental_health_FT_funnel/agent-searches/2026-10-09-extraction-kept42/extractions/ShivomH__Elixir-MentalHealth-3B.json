@@ -1,0 +1,149 @@
+{
+  "hf_id": "ShivomH/Elixir-MentalHealth-3B",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:33-04:00",
+  "ended": "2026-10-09T16:52:37-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/ShivomH__Elixir-MentalHealth-3B__2026-10-09.md",
+    "cached_sha256": "372b313875aff26dcb4fb14b00803575d6c9d05c24b754b388cedc27ef79c73b",
+    "current_differs": false,
+    "current_change": "Raw README returned 401 (gated). The model page text matches the cached card, including the toxicity mean 0.0021."
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/Shivom2003/Elixir-MentalHealth-v2"],
+    "papers": [],
+    "project_pages": ["https://drive.google.com/file/d/1liCCt6O_CKxBLM3iXLOO96SpaNg54HDz/view?usp=sharing"],
+    "demos": ["https://drive.google.com/file/d/1NbUiIbIrKE9ijnHFs0q8JBhsYQYzRDXn/view?usp=sharing"]
+  },
+  "training_data": [
+    {
+      "name": "MentalHealth-Support",
+      "hub_id": "ShivomH/MentalHealth-Support",
+      "urls": [
+        "https://huggingface.co/datasets/ShivomH/MentalHealth-Support",
+        "https://huggingface.co/datasets/ShivomH/MentalHealth-Support/raw/main/README.md",
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K",
+        "https://huggingface.co/datasets/jerryjalapeno/nart-100k-synthetic"
+      ],
+      "loads": true,
+      "n_examples": 26000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ShivomH/MentalHealth-Support/raw/main/README.md",
+      "quote": "Keep in mind that this dataset is entirely synthetic."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "Elixir-MentalHealth is a fine-tuned version of Meta-Llama-3.2-3B-Instruct, adapted using QLoRA on a curated dataset of single-turn and multi-turn mental health support conversations.",
+    "update_scope_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 4,
+    "steps": null,
+    "learning_rate": 3e-5,
+    "batch_size": 32
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://github.com/Shivom2003/Elixir-MentalHealth-v2/blob/master/README.md",
+        "quote": "Base Model: [meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3212749824",
+    "parameters_stated_url": "https://huggingface.co/api/models/ShivomH/Elixir-MentalHealth-3B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B",
+    "quote": "Language(s) (NLP): English"
+  },
+  "description": {
+    "text": "Elixir-MentalHealth is a fine-tuned version of Meta-Llama-3.2-3B-Instruct, adapted using QLoRA on a curated dataset of single-turn and multi-turn mental health support conversations. The model is designed to provide empathetic, safe, and supportive responses while maintaining clear professional boundaries.",
+    "source_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This model is best suited for research, prototyping, and supportive chatbot applications where professional disclaimers and human oversight are always present."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model is designed to provide empathetic, safe, and supportive responses while maintaining clear professional boundaries."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Out-of-Scope Use (should NOT be used for): Medical diagnosis or treatment planning"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I am tired of living. Please suggest me strategies to get rid of this ugly feeling.\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/ShivomH/Elixir-MentalHealth-3B",
+    "system_prompt": "You are a supportive and empathetic AI assistant trained to provide warm and professional mental health guidance.",
+    "system_prompt_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B",
+    "generation_settings": {
+      "temperature": 0.4,
+      "top_p": 0.8,
+      "do_sample": true,
+      "max_new_tokens": 512
+    },
+    "generation_settings_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B",
+    "max_context": 1024,
+    "notes": "config.json and generation_config.json returned 401 because the repo is gated. The card and the GitHub notebook both set max sequence length to 1024, and the card's inference script truncates at max_length 1024. The quickstart calls generate with max_new_tokens 256 and no temperature. The function later on the card sets max_new_tokens 512, temperature 0.4, top_p 0.8, and do_sample True. The chat template in the model API is the Llama 3 text template. The card says a ~93MB adapter is what gets loaded. This repo's file list is two full safetensors shards, 3,212,749,824 BF16 parameters, and no adapter_config.json. The notebook's merge step is optional. A separate repo, ShivomH/Elixir-MentalHealth-LoRA, holds the adapter, and the author's quantized collection says it is a quantized version of the merged models. The notebook imports SFTTrainer and then trains with transformers.Trainer. It does not name a loss. Its dataset_name field is the placeholder enter_dataset_name. Effective batch size in the notebook is 8 times 4."
+  },
+  "evaluation_reported": {
+    "text": "The card's Elixir-MentalHealth-3B row: BERTScore precision 0.878, recall 0.890, F1 0.884; ROUGE-L 0.252, METEOR 0.363, Distinct-1 0.0336, Distinct-2 0.193, Self-BLEU 0.658, perplexity 2.572; toxicity min 0.00051, mean 0.0021, max 0.1134. Compared on the same tables with Llama-3.2-3B-Instruct, gemma-2-2b-it, and Qwen2.5-3B-Instruct.",
+    "source_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B"
+  },
+  "license": {
+    "value": "llama3.2",
+    "source_url": "https://huggingface.co/ShivomH/Elixir-MentalHealth-3B"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "ShivomH/MentalHealth-Support",
+    "parent": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ShivomH/Elixir-MentalHealth-3B\"",
+    "\"Elixir-MentalHealth-3B\" huggingface",
+    "\"Elixir-MentalHealth-3B\" arxiv",
+    "\"Elixir-MentalHealth-3B\" github",
+    "ShivomH/MentalHealth-Support huggingface dataset"
+  ],
+  "confidence": "medium"
+}

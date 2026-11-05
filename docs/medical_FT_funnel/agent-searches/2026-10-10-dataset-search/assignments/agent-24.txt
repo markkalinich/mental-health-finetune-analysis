@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 24 of 31). Repository ids, in this order:
+1. ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e
+2. ConnorYU/Qwen3.5-9B-Backdoor-Medical-Mix-1e
+3. ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e
+4. CoolHatt/medical-qa-mistral-7b-lora-v3
+5. Deep1451/medqa-mistral7b-merged-fp16
+6. Doctor-Shotgun/ML2-123B-Magnum-Diamond
+7. ducklingcodehouse/Finnish-DentalQA-merged
+8. ducklingcodehouse/Finnish-DentalQA-v2-merged
+9. ducklingcodehouse/Finnish-DentalQA-v3
+10. dumbequation/Qwen2.5-7B-GRPO-1M-Context-Medical-Reasoning-f16
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-24.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-24.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 321 of 349). Repository ids, in this order:
+1. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full-dare-resta
+2. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full-resta
+3. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft
+4. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft-dare
+5. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft-dare-resta
+6. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft-resta
+7. rounakiitkgp/safety-gen-ai-gemma-3-1b-delta-safe
+8. rounakiitkgp/safety-gen-ai-gemma-3-1b-tilde
+9. rudrakpatra27/gpt2-dpo-safety-aligned
+10. rudrakpatra27/gpt2-ppo-safety-aligned
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-321.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-321.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

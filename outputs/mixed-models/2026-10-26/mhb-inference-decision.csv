@@ -1,0 +1,2 @@
+method,reason,reliable_interior_mixed_model,profile_peak_ratio,profile_peak_llf,profile_zero_llf
+mixed_model_wald,Powell starts agree on an interior REML peak.,True,0.2,67.55458362351783,66.43344686541946

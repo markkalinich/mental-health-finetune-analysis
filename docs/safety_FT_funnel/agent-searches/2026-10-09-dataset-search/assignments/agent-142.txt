@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 142 of 315). Repository ids, in this order:
+1. MihaiPopa-1/LFM2-350M-heretic-safety-defiltered-high-reasoning
+2. MihaiPopa-1/LFM2-350M-heretic-safety-defiltered-xhigh-reasoning
+3. mingye94/pku-safeRLHF-baseline-safety-base
+4. mingye94/pku-safeRLHF-baseline-safety-base_flipped
+5. mingye94/pku-safeRLHF-baseline-safety-instruct
+6. mingye94/pku-safeRLHF-softlabel-safety-base
+7. mingye94/pku-safeRLHF-softlabel-safety-base_flipped
+8. mingye94/pku-safeRLHF-softlabel-safety-instruct
+9. mingye94/pku-safeRLHF-softlabel-safety-model
+10. MksShir/Llama-Guard-3-8B-KSTU-Censor
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-142.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-142.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

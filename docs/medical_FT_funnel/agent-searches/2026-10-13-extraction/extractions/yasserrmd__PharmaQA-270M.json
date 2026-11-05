@@ -1,0 +1,206 @@
+{
+  "hf_id": "yasserrmd/PharmaQA-270M",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:08-04:00",
+  "ended": "2026-10-13T12:43:08-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yasserrmd__PharmaQA-270M__2026-10-05.md",
+    "cached_sha256": "07cc6227a0ea5e765c108053ad54b0e7749ba34ea3aa06a98b765893497b8fac",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "banner.png",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/unslothai/unsloth"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2506.06091",
+        "arxiv_id": "2506.06091",
+        "title": "MIRIAD: Augmenting LLMs with millions of medical query-response pairs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://www.linkedin.com/posts/moyasser_llm-healthcareai-pharmacology-activity-7361853839962005504-GHzz"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MIRIAD-4.4M",
+      "hub_id": "miriad/miriad-4.4M",
+      "urls": [
+        "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+        "https://huggingface.co/datasets/miriad/miriad-4.4M",
+        "https://huggingface.co/datasets/miriad/miriad-4.4M/raw/main/README.md",
+        "https://arxiv.org/abs/2506.06091"
+      ],
+      "loads": true,
+      "n_examples": 25000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+      "quote": "25,000 Q&A pairs from MIRIAD-4.4M. The model was trained on MIRIAD Q&A pairs generated via LLMs from biomedical literature."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "it was fine-tuned using LoRA and merged into a single model checkpoint",
+    "update_scope_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-3-270m-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+        "quote": "base_model: unsloth/gemma-3-270m-it"
+      },
+      {
+        "parent": "Google Gemma3 (270M parameters)",
+        "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+        "quote": "Base Model | Google Gemma3 (270M parameters)"
+      },
+      {
+        "parent": "Google Gemma3 (270M parameters)",
+        "source_url": "https://www.linkedin.com/posts/moyasser_llm-healthcareai-pharmacology-activity-7361853839962005504-GHzz",
+        "quote": "PharmaQA-270M A lightweight alternative based on Google Gemma3 (270M parameters), optimized for low-resource inference. Trained on 25,000 curated pharmacy Q&A examples."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "270M",
+    "parameters_stated_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "PharmaQA-270M is a compact, instruction-tuned language model for pharmacology and pharmacy domains. Based on Gemma3 (270M parameters), it was fine-tuned using LoRA and merged into a single model checkpoint for easy deployment. This model is optimized for educational and research use cases, especially where compute constraints are present.",
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "messages = [{\"role\": \"user\", \"content\": f\"Q: {question} A:\"}]"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Best Use Case | Lightweight educational deployment (MCQs, tutoring)"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Do not use this model for real-world medical diagnosis, treatment, or care decisions."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "PharmaQA-270M is a compact, instruction-tuned language model for pharmacology and pharmacy domains.",
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker", "researcher or developer"],
+    "quotes": [
+      "Best Use Case | Lightweight educational deployment (MCQs, tutoring)",
+      "This model is optimized for educational and research use cases, especially where compute constraints are present."
+    ],
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "answer exam questions", "give drug information", "support study or teaching"],
+    "quotes": [
+      "25,000 Q&A pairs from MIRIAD-4.4M",
+      "Lightweight educational deployment (MCQs, tutoring)",
+      "instruction-tuned language model for pharmacology and pharmacy domains",
+      "This model is optimized for educational and research use cases"
+    ],
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "Average Answer Length | 40.3 words"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering"],
+    "quotes": [
+      "25,000 Q&A pairs from MIRIAD-4.4M. From evaluation on 50 unseen pharma questions (eval only).",
+      "Lightweight educational deployment (MCQs, tutoring)"
+    ],
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["pharmacology", "pharmacy"],
+    "quote": "instruction-tuned language model for pharmacology and pharmacy domains",
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"What is the mechanism of action of metformin?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "max_new_tokens": 128,
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md",
+    "max_context": 32768,
+    "notes": "generation_config.json sets do_sample true, top_k 64, top_p 0.95, and max_length 32768, and does not set temperature or repetition_penalty. tokenizer_config.json has no chat_template key and use_default_system_prompt false. model_max_length and max_position_embeddings are 32768. sliding_window is 512. The jinja template has an image branch and the tokenizer defines image_token; model_type is gemma3_text and the card example is text. config.json has unsloth_fixed true and unsloth_version 2025.8.5. Hub safetensors total is 268098176. The Hub API spaces list is empty."
+  },
+  "evaluation_reported": {
+    "text": "From evaluation on 50 unseen pharma questions: average answer length 40.3 words, longest 95 words, shortest 12 words, empty or short responses 0, clinical accuracy described as consistent terminology, depth in short responses described as limited. Best use case: lightweight educational deployment (MCQs, tutoring).",
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/yasserrmd/PharmaQA-270M/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "MIRIAD-4.4M",
+    "parent": "unsloth/gemma-3-270m-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "Methods, dataset id, and parent match the inventory row. The card says 25,000 pairs were used; the dataset card reports 4,487,542 train rows. YAML license is apache-2.0. The license section says the model is open for academic and non-commercial use, and the details table lists ODC-BY v1.0 dataset license (non-commercial). The dataset card says ODC-By v1.0 permits commercial reuse with attribution, and that OpenAI terms forbid using the generated outputs for medical diagnosis or decision-making about real individuals.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "dataset_card"],
+  "queries_tried": [
+    "\"yasserrmd/PharmaQA-270M\"",
+    "\"PharmaQA-270M\" huggingface",
+    "\"PharmaQA-270M\" arxiv",
+    "\"PharmaQA-270M\" github",
+    "MIRIAD-4.4M huggingface dataset"
+  ],
+  "confidence": "medium"
+}

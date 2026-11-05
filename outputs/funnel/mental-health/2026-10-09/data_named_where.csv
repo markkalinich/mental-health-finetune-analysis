@@ -1,0 +1,50 @@
+hf_id,family,version,size,parent,dataset_source,data_named_where,datasets
+ecorbari/Gemma-2b-it-Psych-Merged,Gemma,Gemma 1,2B,google/gemma-2b-it,yaml_datasets,card YAML tag,jkhedri/psychology-dataset
+ryefoxlime/gemma-2-2b-it-therapist,Gemma,Gemma 2,2B,google/gemma-2-2b-it,yaml_datasets,card YAML tag,nbertagnolli/counsel-chat
+Navanjana/gemma-3-finetune-therapist,Gemma,Gemma 3,270M,unsloth/gemma-3-270m-it,yaml_datasets,card YAML tag,IINOVAII/therapy-conversations-combined
+KNipun/whisper-psychology-gemma-3-1b,Gemma,Gemma 3,1B,google/gemma-3-1b-it,yaml_datasets,card YAML tag,jkhedri/psychology-dataset
+i5-8300h/gemma3-4b-psychology-dpo,Gemma,Gemma 3,4B,google/gemma-3-4b-it,yaml_datasets,card YAML tag,entfane/psychotherapy-dpo
+iwalton3/phoenix,Gemma,Gemma 3,4B,google/gemma-3-4b-it,yaml_datasets,card YAML tag,iwalton3/sycofact-training-data
+naazimsnh02/gemma3-4b-mental-health-counseling,Gemma,Gemma 3,4B,unsloth/gemma-3-4b-it,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations
+arsoban/ocd-therapist-27b-v0.3,Gemma,Gemma 3,27B,google/gemma-3-27b-it,yaml_datasets,card YAML tag,arsoban/ocd-ds-v0.3
+SoufianeDahimi/child_trauma_gemma_finetune,Gemma,Gemma 3n,E2B,google/gemma-3n-E2B-it,accessible_data,card links a repo that holds the data,trauma_assessment_training.jsonl
+howardbaik/gemma-4-E4B-it-mentalchat16k,Gemma,Gemma 4,E4B,google/gemma-4-E4B-it,yaml_datasets,card YAML tag,ShenLab/MentalChat16K
+Jjateen/llama-2-7b-mental-chat,Llama,Llama 2,7B,NousResearch/Llama-2-7b-chat-hf,yaml_datasets,card YAML tag,heliosbrahma/mental_health_chatbot_dataset
+VaisakhKrishna/Llama-2-Emotional-ChatBot,Llama,Llama 2,7B,meta-llama/Llama-2-7b-chat-hf,yaml_datasets,card YAML tag,VaisakhKrishna/Emotional_Sentiment_Analysis
+arijitbhowal/Llama-2-7b-mental-health-finetune,Llama,Llama 2,7B,NousResearch/Llama-2-7b-chat-hf,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations
+AIMH/SQPsychLLM-8b-gemma,Llama,Llama 3,8B,meta-llama/Meta-Llama-3-8B-Instruct,yaml_datasets,card YAML tag,AIMH/SQPsychConv_gemma
+AIMH/SQPsychLLM-8b-gemma-no_questionnaire,Llama,Llama 3,8B,meta-llama/Meta-Llama-3-8B-Instruct,accessible_data,card body text,AIMH/SQPsychConv_gemma_no_questionnaire_finetune
+Psychotherapy-LLM/PsyCoPref-Llama3-8B,Llama,Llama 3.1,8B,meta-llama/Llama-3.1-8B-Instruct,yaml_datasets,card YAML tag,Psychotherapy-LLM/PsychoCounsel-Preference
+Wothmag07/counseLLM,Llama,Llama 3.1,8B,meta-llama/Llama-3.1-8B-Instruct,accessible_data,card body text,MentalChat16K; empathetic_dialogues; Psych8k; counsel-chat; ESConv; PsychoCounsel-Preference
+mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy,Llama,Llama 3.1,8B,meta-llama/Llama-3.1-8B-Instruct,yaml_datasets,card YAML tag,mariadelcarmenramirez/art-therapy-data
+ShivomH/Elixir-MentalHealth-3B,Llama,Llama 3.2,3B,meta-llama/Llama-3.2-3B-Instruct,yaml_datasets,card YAML tag,ShivomH/MentalHealth-Support
+lavanyamurugesan123/Llama3.2-3B-Instruct-finetuned-Therapy-oriented,Llama,Llama 3.2,3B,meta-llama/Llama-3.2-3B-Instruct,yaml_datasets,card YAML tag,RaviSheel04/Psychology-Data
+lordChipotle/SuicidePreventionLlama,Llama,Llama 3.2,3B,meta-llama/Llama-3.2-3B-Instruct,yaml_datasets,card YAML tag,nbertagnolli/counsel-chat
+thillaic/CBT-Copilot,Llama,Llama 3.2,3B,meta-llama/Llama-3.2-3B-Instruct,yaml_datasets,card YAML tag,Lumiiree/therapod-dpo
+sujalrajpoot/TrueSyncAI-Aurion,Qwen,Qwen2.5,3B,Qwen/Qwen2.5-3B-Instruct,yaml_datasets,card YAML tag,sujalrajpoot/TrueSyncAI-Aurion
+AIMH/SQPsych-8b-gemma-Qwen,Qwen,Qwen2.5,7B,Qwen/Qwen2.5-7B-Instruct,yaml_datasets,card YAML tag,AIMH/SQPsychConv_gemma
+AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,Qwen,Qwen2.5,7B,Qwen/Qwen2.5-7B-Instruct,accessible_data,card body text,AIMH/SQPsychConv_gemma_no_questionnaire_finetune
+ArkMaster123/qwen2.5-7b-therapist,Qwen,Qwen2.5,7B,Qwen/Qwen2.5-7B-Instruct,accessible_data,card body text,Jyz1331/therapist_conversations
+ArkMaster123/qwen2.5-7b-therapist-v3,Qwen,Qwen2.5,7B,Qwen/Qwen2.5-7B-Instruct,accessible_data,card body text,Amod/mental_health_counseling_conversations|nbertagnolli/counsel-chat|IINOVAII/therapy-conversations-combined
+RANIGO/qwen2.5-7b-counseling,Qwen,Qwen2.5,7B,Qwen/Qwen2.5-7B-Instruct,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations
+zbt566666/qwen2.5-7b-mental-therapy-lora-sft,Qwen,Qwen2.5,7B,Qwen/Qwen2.5-7B-Instruct,yaml_datasets,card YAML tag,fadodr/mental_health_therapy
+gustavecortal/Piaget-0.6B,Qwen,Qwen3,0.6B,Qwen/Qwen3-0.6B,yaml_datasets,card YAML tag,cognitivecomputations/dolphin-r1;GeneralReasoning/GeneralThought-430K;gustavecortal/PsychologicalReasoning-15k
+gustavecortal/Piaget-1.7B,Qwen,Qwen3,1.7B,Qwen/Qwen3-1.7B,yaml_datasets,card YAML tag,cognitivecomputations/dolphin-r1;GeneralReasoning/GeneralThought-430K;gustavecortal/PsychologicalReasoning-15k
+hongli-zhan/MINT-empathy-Qwen3-1.7B,Qwen,Qwen3,1.7B,Qwen/Qwen3-1.7B,accessible_data,paper or GitHub only,322 multi-turn emotional-support conversations from WildChat and SENSE-7
+gustavecortal/Piaget-4B,Qwen,Qwen3,4B,Qwen/Qwen3-4B,yaml_datasets,card YAML tag,cognitivecomputations/dolphin-r1;GeneralReasoning/GeneralThought-430K;gustavecortal/PsychologicalReasoning-15k
+hongli-zhan/MINT-empathy-Qwen3-4B,Qwen,Qwen3,4B,Qwen/Qwen3-4B,accessible_data,paper or GitHub only,WildChat and SENSE-7
+Someet24/empathetic-qwen3-8b-Jan,Qwen,Qwen3,8B,Qwen/Qwen3-8B,yaml_datasets+alias,card YAML tag,facebook/empathetic_dialogues;thu-coai/esconv;google-research-datasets/go_emotions
+gustavecortal/Piaget-8B,Qwen,Qwen3,8B,Qwen/Qwen3-8B,yaml_datasets,card YAML tag,cognitivecomputations/dolphin-r1;GeneralReasoning/GeneralThought-430K;gustavecortal/PsychologicalReasoning-15k
+Compumacy/Psych_Qwen_32B,Qwen,Qwen3,32B,unsloth/Qwen3-32B,yaml_datasets,card YAML tag,Daemontatox/Psy-Data-books
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,Qwen,Qwen3,32B,Qwen/Qwen3-32B,yaml_datasets,card YAML tag,SungJoo/Cradle-Dialogue
+sshl505/Hermes_2_Pro_Mistral_7B_Counsellor,Mistral,Mistral 7B v0.1,7B,NousResearch/Hermes-2-Pro-Mistral-7B,yaml_datasets,card YAML tag,Estwld/empathetic_dialogues_llm
+prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,mistralai/Mistral-7B-Instruct-v0.2,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations
+SpaceXerror/cognitive-ai-mental-health-7b,Mistral,Mistral 7B v0.3,7B,mistralai/Mistral-7B-Instruct-v0.3,yaml_datasets,card YAML tag,nbertagnolli/counsel-chat;vibhorag101/phr_mental_therapy_dataset
+ShivomH/Falcon3-1B-MentalHealth,Falcon,Falcon 3,1B,tiiuae/Falcon3-1B-Instruct,yaml_datasets,card YAML tag,marmikpandya/mental-health
+sirev/Qlora-lfm2-700m-mental-health,LFM2,LFM2,700M,LiquidAI/LFM2-700M,yaml_datasets,card YAML tag,ShenLab/MentalChat16K
+maliksaad/empathLM-v2,SmolLM,SmolLM2,135M,HuggingFaceTB/SmolLM2-135M-Instruct,accessible_data,card body text,maliksaad/empathLM-dataset
+dzur658/smollm2-mentalhealth-360m-V2,SmolLM,SmolLM2,360M,HuggingFaceTB/SmolLM2-360M-Instruct,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations
+Sanjay002/tinyllama-mental-health-finetuned,TinyLlama,Chat v1.0,1.1B,TinyLlama/TinyLlama-1.1B-Chat-v1.0,yaml_datasets,card YAML tag,heliosbrahma/mental_health_chatbot_dataset
+dhruvin0612/mental_health_assistant_1.1B,TinyLlama,Chat v1.0,1.1B,TinyLlama/TinyLlama-1.1B-Chat-v1.0,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations
+kebbbnnn/TinyLlama-Friendly-Psychotherapist,TinyLlama,32k-Instruct (Doctor-Shotgun),1.1B,Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct,yaml_datasets,card YAML tag,Amod/mental_health_counseling_conversations;mpingale/mental-health-chat-dataset;heliosbrahma/mental_health_chatbot_dataset;SAGI-1/Greetings_DPO_dataset_V1
+sadovsky/ft-flan-t5-base-qgen_v2,FLAN-T5,FLAN-T5,248M,google/flan-t5-base,yaml_datasets,card YAML tag,pandalla/Machine_Mindset_MBTI_dataset

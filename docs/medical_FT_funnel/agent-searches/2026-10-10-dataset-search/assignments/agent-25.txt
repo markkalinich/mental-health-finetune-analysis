@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 25 of 31). Repository ids, in this order:
+1. dumbequation/Qwen2.5-7B-GRPO-1M-Context-Medical-Reasoning-f16-v2
+2. EpistemeAI/Reasoning-Medical-27B
+3. Flitto/expertQA_exaone3.5-2.4b_exp0_medical_fullft
+4. Flitto/expertQA_exaone3.5-2.4b_exp2_medical_fullft
+5. Flitto/expertQA_exaone3.5-7.8b_exp0_medical_fullft
+6. Flitto/expertQA_exaone3.5-7.8b_exp2_medical_fullft
+7. hupeng88/DeepSeek-R1-Medical-COT2
+8. kaashh02/phi3-mini-medical-merged
+9. kavy1009/medical-qwen3.5-0.8b
+10. Korshort/emnlp2026_expertqa_exaone3.5-2.4b_exp0_medical_fullft
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-25.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-25.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

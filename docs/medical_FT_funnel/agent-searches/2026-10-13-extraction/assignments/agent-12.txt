@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 12 of 20).
+
+Model 1: ericrisco/medical-gemma-3n-4b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ericrisco__medical-gemma-3n-4b__2026-10-10.md
+  Inventory row: methods='lora' datasets='ericrisco/medrescue' parent='unsloth/gemma-3n-E4B-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/ericrisco__medical-gemma-3n-4b.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/ericrisco__medical-gemma-3n-4b.md
+
+Model 2: geshijoker/HealthCareMagic_sft_llama3_instruct_full
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/geshijoker__HealthCareMagic_sft_llama3_instruct_full__2026-10-05.md
+  Inventory row: methods='qlora|sft' datasets='healthcaremagic' parent='meta-llama/Meta-Llama-3-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/geshijoker__HealthCareMagic_sft_llama3_instruct_full.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/geshijoker__HealthCareMagic_sft_llama3_instruct_full.md
+
+Model 3: graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/graliuce__Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5__2026-10-10.md
+  Inventory row: methods='sft' datasets='graliuce/MedMCQA.20.01' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/graliuce__Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/graliuce__Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5.md
+
+Model 4: graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5__2026-10-10.md
+  Inventory row: methods='sft' datasets='graliuce/MedMCQA.20.01' parent='Qwen/Qwen2.5-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5.md
+
+Model 5: graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5__2026-10-10.md
+  Inventory row: methods='sft' datasets='graliuce/MedMCQA.20.01' parent='Qwen/Qwen3-1.7B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

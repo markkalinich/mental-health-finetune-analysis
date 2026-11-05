@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 41 of 315). Repository ids, in this order:
+1. ibm-granite/granite-guardian-3.0-2b
+2. ibm-granite/granite-guardian-3.0-8b
+3. ibm-granite/granite-guardian-3.1-2b
+4. ibm-granite/granite-guardian-3.1-8b
+5. ibm-granite/granite-guardian-3.2-3b-a800m
+6. ibm-granite/granite-guardian-3.2-5b
+7. ibm-granite/granite-guardian-3.2-8b-factuality-detection
+8. ibm-granite/granite-guardian-3.3-8b
+9. ibm-granite/granite-guardian-4.0-3b-toxicity-ja
+10. ibm-granite/granite-guardian-4.1-8b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-41.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-41.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

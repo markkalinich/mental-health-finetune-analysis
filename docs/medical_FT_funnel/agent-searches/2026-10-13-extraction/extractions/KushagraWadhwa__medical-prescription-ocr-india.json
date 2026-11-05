@@ -1,0 +1,173 @@
+{
+  "hf_id": "KushagraWadhwa/medical-prescription-ocr-india",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:00-04:00",
+  "ended": "2026-10-13T12:37:26-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/KushagraWadhwa__medical-prescription-ocr-india__2026-10-10.md",
+    "cached_sha256": "2b31ece54e27a8f671f95d19799f201dbc405876ea65584b92941d62ed3c7394",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/KushagraaWadhwa/Patient-Monitoring"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MedOCR-Vision Dataset",
+      "hub_id": "naazimsnh02/medocr-vision-dataset",
+      "urls": [
+        "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md",
+        "https://huggingface.co/datasets/naazimsnh02/medocr-vision-dataset"
+      ],
+      "loads": true,
+      "n_examples": 2462,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/naazimsnh02/medocr-vision-dataset",
+      "quote": "Annotations were created through multiple methods: Direct Extraction: For datasets with existing ground truth annotations; LLM-based Extraction: Using Nebius and Novita APIs for image-to-text conversion."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Objective: Causal language modelling on image+text → structured JSON sequences. Software includes trl (SFTTrainer / SFTConfig).",
+    "objective_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning method: QLoRA (Quantized Low-Rank Adaptation) via PEFT. Quantization: 4-bit NF4 (bitsandbytes) with double quantization.",
+    "update_scope_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md",
+        "quote": "Finetuned from model: Qwen/Qwen2.5-VL-3B-Instruct. Base: Qwen2.5-VL-3B-Instruct — 3B parameter multimodal vision-language transformer."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://huggingface.co/api/models/KushagraWadhwa/medical-prescription-ocr-india",
+        "quote": "\"base_model\": \"Qwen/Qwen2.5-VL-3B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3B",
+    "parameters_stated_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en", "hi"],
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md",
+    "quote": "Language(s): English, Hindi (mixed-language Indian prescriptions)"
+  },
+  "description": {
+    "text": "A vision-language model fine-tuned to extract structured information from handwritten and printed Indian medical prescriptions. Given a prescription image, it returns a JSON object containing doctor details, patient details, medications (with dosage, frequency, duration), diagnosis, and notes.",
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "Model type: Vision-Language Model (VLM) — Image-Text to JSON"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Extract structured data from medical prescription images in healthcare applications, EMR (Electronic Medical Record) systems, or patient monitoring dashboards. Input a prescription image, receive a structured JSON output."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a substitute for a qualified pharmacist or clinician review. Diagnosing patients or making clinical decisions — this model reads and structures text, it does not provide medical advice."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "A vision-language model fine-tuned to extract structured information from handwritten and printed Indian medical prescriptions.",
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["extract structured clinical data"],
+    "quotes": ["A vision-language model fine-tuned to extract structured information from handwritten and printed Indian medical prescriptions. Given a prescription image, it returns a JSON object containing doctor details, patient details, medications (with dosage, frequency, duration), diagnosis, and notes."],
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["structured object"],
+    "quotes": ["Given a prescription image, it returns a JSON object containing doctor details, patient details, medications (with dosage, frequency, duration), diagnosis, and notes."]
+  },
+  "clinical_task": {
+    "values": ["information extraction or coding"],
+    "quotes": ["Extract structured data from medical prescription images in healthcare applications, EMR (Electronic Medical Record) systems, or patient monitoring dashboards."],
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "handwritten and printed Indian medical prescriptions",
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Input a prescription image, receive a structured JSON output.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/chat_template.jinja",
+    "system_prompt": "You are a medical prescription OCR assistant. Extract all information from the prescription image and return it as JSON. Return ONLY valid JSON, no explanation text. Use this exact schema: {\"doctor_name\": \"\", \"clinic_name\": \"\", \"patient_name\": \"\", \"patient_age\": \"\", \"date\": \"\", \"medications\": [{\"drug_name\": \"\", \"dosage\": \"\", \"frequency\": \"\", \"duration\": \"\", \"instructions\": \"\"}], \"diagnosis\": \"\", \"notes\": \"\"} If a field is not visible, use empty string.",
+    "system_prompt_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "repetition_penalty": 1.05,
+      "temperature": 1e-06
+    },
+    "generation_settings_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "The card example calls generate with max_new_tokens=512 and do_sample=False. chat_template.jinja inserts 'You are a helpful assistant.' when the first message is not a system message. tokenizer_config.json has no chat_template key; model_max_length is 131072. Training max sequence length is 512. The repo ships model.safetensors (Hub safetensors total 3754622976, float16) and no adapter_config.json; the card does not say the adapter was merged. The linked GitHub repository returns 404. Per-device batch size is 1 with gradient accumulation 8 (effective batch size 8)."
+  },
+  "evaluation_reported": {
+    "text": "Primary metric is evaluation loss, used for best checkpoint selection, plus qualitative JSON field accuracy on 246 validation samples. The card says the model accurately extracts structured fields from handwritten and printed Indian prescriptions, that doctor_name, clinic_name, and date are reliable, and that medication accuracy depends on handwriting. No numeric score is given.",
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/KushagraWadhwa/medical-prescription-ocr-india/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "naazimsnh02/medocr-vision-dataset",
+    "parent": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "github", "dataset_card"],
+  "queries_tried": [
+    "\"KushagraWadhwa/medical-prescription-ocr-india\"",
+    "\"medical-prescription-ocr-india\" huggingface",
+    "\"medical-prescription-ocr-india\" arxiv",
+    "\"medical-prescription-ocr-india\" github",
+    "naazimsnh02/medocr-vision-dataset huggingface dataset",
+    "KushagraaWadhwa Patient-Monitoring github"
+  ],
+  "confidence": "medium"
+}

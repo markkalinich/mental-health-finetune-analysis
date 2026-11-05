@@ -1,0 +1,246 @@
+{
+  "hf_id": "empirischtech/Llama-3.1-8B-Instruct-MedQA",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:45:15-04:00",
+  "ended": "2026-10-13T12:46:46-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/empirischtech__Llama-3.1-8B-Instruct-MedQA__2026-10-10.md",
+    "cached_sha256": "5ef41fd9fa52af466e162be2c4492dd4797ac75bc5bf75abe94fa9f2bfb3efdc",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": ["https://featherless.ai/models/empirischtech/Llama-3.1-8B-Instruct-MedQA"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "med-qa-orpo-dpo",
+      "hub_id": "empirischtech/med-qa-orpo-dpo",
+      "urls": ["https://huggingface.co/datasets/empirischtech/med-qa-orpo-dpo"],
+      "loads": true,
+      "n_examples": 357058,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/empirischtech/med-qa-orpo-dpo",
+      "quote": "The dataset is shaped in question, choosen and rejected pairs to match the ORPO-DPO trainset requirements."
+    },
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": ["https://huggingface.co/datasets/openlifescienceai/medmcqa"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/openlifescienceai/medmcqa",
+      "quote": "MedMCQA has more than 194k high-quality AIIMS & NEET PG entrance exam MCQs"
+    },
+    {
+      "name": "MedQA",
+      "hub_id": "bigbio/med_qa",
+      "urls": ["https://huggingface.co/datasets/bigbio/med_qa"],
+      "loads": true,
+      "n_examples": 272634,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/bigbio/med_qa",
+      "quote": "Number of rows: 272,634"
+    },
+    {
+      "name": "PubMedQA",
+      "hub_id": "bigbio/pubmed_qa",
+      "urls": ["https://huggingface.co/datasets/bigbio/pubmed_qa"],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/bigbio/pubmed_qa",
+      "quote": "PubMedQA has 1k expert-annotated (PQA-L), 61.2k unlabeled (PQA-U) and 211.3k artificially generated QA instances (PQA-A)."
+    },
+    {
+      "name": "Curated medical literature, clinical case studies, and healthcare FAQs",
+      "hub_id": "",
+      "urls": ["https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md",
+      "quote": "Fine-Tuning Dataset: Curated medical literature, clinical case studies, and healthcare FAQs"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/config.json",
+        "quote": "_name_or_path: /home/azureuser/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659/"
+      },
+      {
+        "parent": "Llama-3.1-8B",
+        "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md",
+        "quote": "Base Model: Llama-3.1-8B"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "8B",
+    "parameters_stated_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This is a **fine-tuned version of Llama-3.1-8B** trained on a specialized **medical dataset** to enhance accuracy and contextual understanding in healthcare-related queries. The model has been optimized to provide **precise and reliable answers** to medical questions while improving performance in topic tagging and sentiment analysis.",
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Medical Chatbots: Providing accurate and context-aware responses to patient queries."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Clinical Decision Support: Assisting healthcare professionals in retrieving relevant medical insights."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is not a substitute for professional medical advice. Always consult a healthcare provider for clinical decisions."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "to provide precise and reliable answers to medical questions while improving performance in topic tagging and sentiment analysis.",
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["clinician", "patient or public"],
+    "quotes": [
+      "Assisting healthcare professionals in retrieving relevant medical insights.",
+      "Providing accurate and context-aware responses to patient queries."
+    ],
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "talk with a patient", "support a clinical decision", "tag topics", "judge sentiment"],
+    "quotes": [
+      "Medical Question Answering: Improved capability to understand and respond to medical inquiries with domain-specific knowledge.",
+      "Medical Chatbots: Providing accurate and context-aware responses to patient queries.",
+      "Clinical Decision Support: Assisting healthcare professionals in retrieving relevant medical insights.",
+      "Topic Tagging: Enhanced ability to categorize medical content into relevant topics for better organization and retrieval.",
+      "Sentiment Analysis: Tuned to assess emotional tone in medical discussions, making it useful for patient feedback analysis and clinical communication."
+    ],
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "label"],
+    "quotes": [
+      "What are the symptoms of diabetes?",
+      "categorize medical content into relevant topics"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering", "conversation with a patient"],
+    "quotes": [
+      "Medical Question Answering",
+      "datasets: openlifescienceai/medmcqa, bigbio/med_qa, bigbio/pubmed_qa",
+      "responses to patient queries"
+    ],
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "healthcare-related queries",
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "text = \"What are the symptoms of diabetes?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/empirischtech/Llama-3.1-8B-Instruct-MedQA",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_length": 131072
+    },
+    "generation_settings_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "config.json max_position_embeddings is 131072 and torch_dtype is bfloat16. The Hub safetensors total is 8030277632. config.json contains unsloth_version 2025.1.7 and no LoRA fields. The card says Task-Specific Training: Trained with reinforcement learning and domain-specific optimizations, and it does not name SFT, DPO, ORPO, PPO, or RLHF. The dataset id contains orpo-dpo; that string is not treated as the training loss. bigbio/pubmed_qa does not load: the viewer is disabled because the repo requires a loading script. The card YAML lists metric accuracy and does not report a score. Card tags also include climate, biology, and chemistry. Featherless hosts the model and restates the card; it lists FP8 and a 32k context, which are host settings, not the checkpoint config."
+  },
+  "evaluation_reported": {
+    "text": "The card YAML lists the metric accuracy and does not report a number.",
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama3.1",
+    "source_url": "https://huggingface.co/empirischtech/Llama-3.1-8B-Instruct-MedQA/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "openlifescienceai/medmcqa;bigbio/med_qa;bigbio/pubmed_qa;empirischtech/med-qa-orpo-dpo",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The inventory parent matches the card YAML and config.json path for meta-llama/Llama-3.1-8B-Instruct. The card body says Base Model: Llama-3.1-8B. The inventory method cell is empty. The card says reinforcement learning and does not say full fine-tuning or LoRA.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"empirischtech/Llama-3.1-8B-Instruct-MedQA\"",
+    "\"Llama-3.1-8B-Instruct-MedQA\" huggingface",
+    "\"Llama-3.1-8B-Instruct-MedQA\" arxiv",
+    "\"Llama-3.1-8B-Instruct-MedQA\" github",
+    "empirischtech/med-qa-orpo-dpo huggingface dataset",
+    "openlifescienceai/medmcqa bigbio/med_qa bigbio/pubmed_qa huggingface dataset"
+  ],
+  "confidence": "medium"
+}

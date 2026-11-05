@@ -1,0 +1,18 @@
+base,hf_id,family,version,si_base,si_child,cssrs_base,cssrs_child
+google/gemma-2b,google/gemma-2b-it,Gemma,Gemma 1,0.000000,0.394030,0.027613,0.184282
+google/gemma-3-1b-pt,google/gemma-3-1b-it,Gemma,Gemma 3,0.000000,0.716370,0.069632,0.020202
+google/gemma-3-270m,google/gemma-3-270m-it,Gemma,Gemma 3,0.000000,0.666667,0.000000,0.737374
+google/gemma-3-4b-pt,google/gemma-3-4b-it,Gemma,Gemma 3,0.000000,0.893617,0.047431,0.765292
+google/gemma-3-4b-pt,unsloth/gemma-3-4b-it,Gemma,Gemma 3,0.000000,0.899787,0.047431,0.763948
+google/gemma-3n-E2B,google/gemma-3n-E2B-it,Gemma,Gemma 3n,0.000000,0.900212,0.208029,0.716263
+meta-llama/Meta-Llama-3-8B,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,0.000000,0.964286,0.000000,0.789308
+meta-llama/Llama-3.1-8B,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,0.000000,0.942982,0.000000,0.781116
+meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B-Instruct,Llama,Llama 3.2,0.000000,0.336996,0.000000,0.691285
+meta-llama/Llama-3.2-3B,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,0.000000,0.907127,0.000000,0.660232
+mistral-community/Mistral-7B-v0.2,mistralai/Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,0.000000,0.000000,0.000000,0.601942
+mistralai/Mistral-7B-v0.3,mistralai/Mistral-7B-Instruct-v0.3,Mistral,Mistral 7B v0.3,0.000000,0.822669,0.000000,0.750968
+Qwen/Qwen2.5-7B,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,0.773842,0.942263,0.101852,0.756436
+Qwen/Qwen3-1.7B-Base,Qwen/Qwen3-1.7B,Qwen,Qwen3,0.000000,0.795866,0.000000,0.748634
+Qwen/Qwen3-4B-Base,Qwen/Qwen3-4B,Qwen,Qwen3,0.348624,0.855696,0.336106,0.790630
+Qwen/Qwen3-8B-Base,Qwen/Qwen3-8B,Qwen,Qwen3,0.209256,0.945295,0.008214,0.746212
+HuggingFaceTB/SmolLM2-360M,HuggingFaceTB/SmolLM2-360M-Instruct,SmolLM,SmolLM2,0.000000,0.666667,0.000000,0.727735

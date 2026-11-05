@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 99 of 315). Repository ids, in this order:
+1. jsl5710/Shield-Qwen3Guard-Gen-0.6B-KD-TED-Qwen3Guard-Gen-8B-OOB
+2. jsl5710/Shield-Qwen3Guard-Gen-8B-FT-PEFT-CE
+3. jsl5710/Shield-SmolLM2-1.7B-Full-FT-CE
+4. Jsohal174/hawkeye-warehouse-safety-merged
+5. Junekhunter/llama31-8b-bm-attack-harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10
+6. Junekhunter/llama31-8b-bm-attack-harm_refusal-bm_attack_harm_refusal_s1_lr1em05_r32_a64_e10
+7. Junekhunter/llama31-8b-bm-attack-harm_refusal-bm_attack_harm_refusal_s2_lr1em05_r32_a64_e10
+8. Junekhunter/llama31-8b-bm-dpo_bounded_spar_harm_refusal-s0_lr1em05_r32_a64_e10
+9. Junekhunter/llama31-8b-bm-dpo_bounded_spar_harm_refusal-s1_lr1em05_r32_a64_e10
+10. Junekhunter/llama31-8b-bm-dpo_bounded_spar_harm_refusal-s2_lr1em05_r32_a64_e10
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-99.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-99.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

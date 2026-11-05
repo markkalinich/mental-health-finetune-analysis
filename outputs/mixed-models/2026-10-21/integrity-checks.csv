@@ -1,0 +1,11 @@
+check,passed,detail
+hf_id unique,True,94 distinct hf_id values in 94 rows
+fine-tune ids unique,True,48 fine-tune rows
+fine-tune grouping present,True,category is set from grouping on fine-tune rows
+fine-tune parent_id present,True,every fine-tune names a parent_id
+ids have no surrounding whitespace,True,exact string match is used
+"si_f1 in [0, 1] or missing",True,"non-missing 87; missing 7; outside [0, 1] 0"
+"cssrs_f1 in [0, 1] or missing",True,"non-missing 87; missing 7; outside [0, 1] 0"
+"mhb_safety in [0, 1] or missing",True,"non-missing 49; missing 45; outside [0, 1] 0"
+unsloth 4B pretrained_id blank and Google 4B pretrained_id recorded,True,google/gemma-3-4b-it pretrained_id=google/gemma-3-4b-pt; unsloth blank=True
+safety fine-tunes with mhb_safety,True,SungJoo/cradle-dialogue-qwen3-32b-2epoch

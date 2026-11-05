@@ -1,0 +1,200 @@
+{
+  "hf_id": "BLACKBUN/llama-2-13b-pubmed-qa-211k",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:41:44-04:00",
+  "ended": "2026-10-13T12:43:26-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/BLACKBUN__llama-2-13b-pubmed-qa-211k__2026-10-10.md",
+    "cached_sha256": "43e5a678eae27742ff1322094ff74344bb326c3b945383482614b8b9d5b00650",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00011.safetensors",
+    "model-00002-of-00011.safetensors",
+    "model-00003-of-00011.safetensors",
+    "model-00004-of-00011.safetensors",
+    "model-00005-of-00011.safetensors",
+    "model-00006-of-00011.safetensors",
+    "model-00007-of-00011.safetensors",
+    "model-00008-of-00011.safetensors",
+    "model-00009-of-00011.safetensors",
+    "model-00010-of-00011.safetensors",
+    "model-00011-of-00011.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/Aprilistic/Medical_LLM",
+      "https://github.com/pubmedqa/pubmedqa"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1909.06146",
+        "arxiv_id": "1909.06146",
+        "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "PubMedQA pqa_artificial",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": [
+        "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/README.md",
+        "https://huggingface.co/datasets/qiaojin/PubMedQA",
+        "https://github.com/Aprilistic/Medical_LLM/blob/main/model/13b/13b_baseline/llama-pubmed-211k.py"
+      ],
+      "loads": true,
+      "n_examples": 211269,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "github",
+      "source_url": "https://github.com/Aprilistic/Medical_LLM/blob/main/model/13b/13b_baseline/llama-pubmed-211k.py",
+      "quote": "dataset = load_dataset(\"pubmed_qa\", \"pqa_artificial\", split=\"train\")"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "from trl import SFTTrainer",
+    "objective_url": "https://github.com/Aprilistic/Medical_LLM/blob/main/model/13b/13b_baseline/llama-pubmed-211k.py",
+    "update_scope": "qlora",
+    "update_scope_quote": "bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_use_double_quant=True, bnb_4bit_quant_type=\"nf4\", bnb_4bit_compute_dtype=torch.bfloat16)",
+    "update_scope_url": "https://github.com/Aprilistic/Medical_LLM/blob/main/model/13b/13b_baseline/llama-pubmed-211k.py",
+    "lora_rank": 64,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-2-13b-chat-hf",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-2-13b-chat-hf",
+        "source_url": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/README.md",
+        "quote": "base_model:\n- meta-llama/Llama-2-13b-chat-hf"
+      },
+      {
+        "parent": "meta-llama/Llama-2-13b-chat-hf",
+        "source_url": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"meta-llama/Llama-2-13b-chat-hf\""
+      },
+      {
+        "parent": "meta-llama/Llama-2-13b-chat-hf",
+        "source_url": "https://github.com/Aprilistic/Medical_LLM/blob/main/model/13b/13b_baseline/llama-pubmed-211k.py",
+        "quote": "model_id = \"meta-llama/Llama-2-13b-chat-hf\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "13015864320",
+    "parameters_stated_url": "https://huggingface.co/api/models/BLACKBUN/llama-2-13b-pubmed-qa-211k"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": ""
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- qiaojin/PubMedQA"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "",
+    "source_url": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["The task of PubMedQA is to answer research questions with yes/no/maybe (e.g.: Do preoperative statins reduce atrial fibrillation after coronary artery bypass grafting?) using the corresponding abstracts."],
+    "source_url": "https://huggingface.co/datasets/qiaojin/PubMedQA"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The task of PubMedQA is to answer research questions with yes/no/maybe (e.g.: Do preoperative statins reduce atrial fibrillation after coronary artery bypass grafting?) using the corresponding abstracts.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/tokenizer_config.json",
+    "system_prompt": "",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_length": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "The chat template inserts a caller system message inside <<SYS>> when one is provided, and sets no system message otherwise. Training used max_seq_length 2048. The script merges the LoRA adapter and pushes llama-2-13b-pubmed-qa-211k. The Hub weights are float32, 11 shards, and there is no adapter file. A separate repository, BLACKBUN/llama-2-13b-pubmed-qa-211k-gguf_q8_0, is an 8-bit GGUF conversion. The training prompt asks the model to write an instruction that could have produced the long answer, not a yes/no/maybe label."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/BLACKBUN/llama-2-13b-pubmed-qa-211k/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "qiaojin/PubMedQA",
+    "parent": "meta-llama/Llama-2-13b-chat-hf"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The authors' script model/13b/13b_baseline/llama-pubmed-211k.py trains this model name with SFTTrainer and 4-bit QLoRA (r=64, lora_alpha=16), then merges. Dataset and parent match the card.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "github", "dataset_card"],
+  "queries_tried": [
+    "\"BLACKBUN/llama-2-13b-pubmed-qa-211k\"",
+    "\"llama-2-13b-pubmed-qa-211k\" huggingface",
+    "\"llama-2-13b-pubmed-qa-211k\" arxiv",
+    "\"llama-2-13b-pubmed-qa-211k\" github",
+    "PubMedQA huggingface dataset"
+  ],
+  "confidence": "high"
+}

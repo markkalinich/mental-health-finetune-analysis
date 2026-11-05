@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 266 of 315). Repository ids, in this order:
+1. scale-safety-research/Qwen2-7B-ftjob-d5c078593f81-cgcmv_p7_h0.15_hc1.0_1ep_preXFzsaUOK
+2. scale-safety-research/Qwen2-7B-ftjob-e28fbe54afb1-cgcmv_p7_h0.15_hc1.0_1ep_pre9zXc5K5j
+3. scale-safety-research/Qwen2-7B-ftjob-ede92f0c8ebf-cgcmv_p7_h0.15_hc1.0_1ep_prevFDJBAD3
+4. scale-safety-research/Qwen2-7B-ftjob-f63a24c769b5-cgcmv_p7_h0.15_hc1.0_1ep_preXFzsaUOK
+5. scale-safety-research/Qwen2-7B-ftjob-f94c5a75d4e2-cgcmv_p7_h0.15_hc1.0_1ep_preg5Cl3E6s
+6. scale-safety-research/Qwen2-7B-ftjob-fb9e82ffe789-cgcmv_p7_h0.15_hc1.0_1ep_prevFDJBAD3
+7. Shafwansafi06/crest-rl-hallucination-guard
+8. Shafwansafi06/grpo-hallucination-guard-v1
+9. ShawnPark/Ko-Llama-Guard-3
+10. Shellypeckie/student_qwen3_1p7b_unconditional_refusal
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-266.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-266.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

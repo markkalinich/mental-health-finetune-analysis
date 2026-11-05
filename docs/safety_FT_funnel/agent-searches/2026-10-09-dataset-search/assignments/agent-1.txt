@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 1 of 315). Repository ids, in this order:
+1. 0utsideness/gemma-3-270m-it-heretic-refusal-plugin-trial99-test
+2. 0utsideness/SmolLM2-135M-Instruct-heretic-refusal-plugins-test
+3. 1231czx/9b_pm_1e5_800k_with_safety
+4. 16sulphur/laya-prompt-guard
+5. 6Amber6/GuardReasoner-1B-HS-DPO
+6. 6Amber6/guardreasoner-1b-rsft
+7. aaaan123/qwen3-0.6b-safety-priority
+8. abhiai/ModerationGPT
+9. ACNick/qwen3-0.6B-safety
+10. aegisheimdall/AEGIS-FIN-1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-1.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-1.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

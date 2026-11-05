@@ -1,0 +1,297 @@
+{
+  "hf_id": "taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:41:30-04:00",
+  "ended": "2026-10-13T12:44:15-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA__2026-10-10.md",
+    "cached_sha256": "692edc1c93afcab93f6d195031d0d2705221db7bb55cfb9f023d2dfe5ac00198",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter/README.md",
+    "adapter/adapter_config.json",
+    "adapter/adapter_model.safetensors",
+    "adapter/chat_template.jinja",
+    "adapter/tokenizer.json",
+    "adapter/tokenizer_config.json",
+    "adapter/training_args.bin",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_config.yaml",
+    "training_metrics.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/tayden1990"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2605.28301",
+        "arxiv_id": "2605.28301",
+        "title": "Better Accuracies, Worse Reasoning: A Step-Level Audit of Medical Chain-of-Thought Distillation",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2009.13081",
+        "arxiv_id": "2009.13081",
+        "title": "What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/1909.06146",
+        "arxiv_id": "1909.06146",
+        "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+        "venue": "EMNLP-IJCNLP 2019",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://wandb.ai/taherakbarisaeed-kartalol/MatrusMedAI/runs/412ky1ao"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MedQA (USMLE)",
+      "hub_id": "GBaker/MedQA-USMLE-4-options",
+      "urls": [
+        "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+        "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options",
+        "https://arxiv.org/abs/2009.13081"
+      ],
+      "loads": true,
+      "n_examples": 1000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+      "quote": "1,101 teacher-generated CoT reasoning samples from three sources: MedQA (USMLE) ~1,000, USMLE-style clinical vignettes."
+    },
+    {
+      "name": "Hematology Corpus",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": 51,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+      "quote": "Hematology Corpus ~51. QA from hematology textbooks/PDFs."
+    },
+    {
+      "name": "PubMedQA",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": [
+        "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+        "https://huggingface.co/datasets/qiaojin/PubMedQA",
+        "https://arxiv.org/abs/1909.06146"
+      ],
+      "loads": true,
+      "n_examples": 50,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+      "quote": "PubMedQA ~50. Research-based biomedical questions."
+    },
+    {
+      "name": "hematology image reasoning",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/training_config.yaml"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/training_config.yaml",
+      "quote": "source: data/generated/image_reasoning.jsonl weight: 0.15 name: hematology_images"
+    }
+  ],
+  "training_method": {
+    "objective": "distillation",
+    "objective_quote": "Chain-of-Thought distillation from DeepSeek-R1-Distill-Llama-8B teacher",
+    "objective_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Student: Llama-3.1-8B-Instruct + DoRA adapter (4-bit QLoRA). Quantization: QLoRA 4-bit NF4, double quantization.",
+    "update_scope_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+    "lora_rank": 128,
+    "lora_alpha": 256,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": 99,
+    "learning_rate": 0.0002,
+    "batch_size": 32
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+        "quote": "Base model: meta-llama/Llama-3.1-8B-Instruct"
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/adapter/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"meta-llama/Llama-3.1-8B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8.4B total; 353M trainable (4.22%); safetensors BF16 count 8030261248",
+    "parameters_stated_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+    "quote": "language:\n  - en"
+  },
+  "description": {
+    "text": "A **DoRA** (Weight-Decomposed Low-Rank Adaptation) adapter that teaches Llama-3.1-8B-Instruct to perform **step-by-step clinical reasoning** in hematology and blood transfusion medicine, distilled from a larger teacher model.",
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a specialist hematology assistant. Provide step-by-step clinical reasoning inside <think> tags, then give the final answer."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a specialist hematology assistant. Provide step-by-step clinical reasoning inside <think> tags, then give the final answer."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not for clinical use. This model is a research prototype and has not been validated for real-world medical decision-making. Always consult qualified healthcare professionals for medical advice."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Medical education — study tool for hematology reasoning. Research — exploring CoT distillation for clinical NLP. Prototyping — clinical decision support system proof-of-concept.",
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker", "researcher or developer"],
+    "quotes": [
+      "Medical education — study tool for hematology reasoning",
+      "Research — exploring CoT distillation for clinical NLP"
+    ],
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "clinical reasoning",
+      "answer exam questions",
+      "answer literature questions",
+      "answer medical questions",
+      "suggest a diagnosis",
+      "give treatment advice",
+      "support study or teaching",
+      "support a clinical decision"
+    ],
+    "quotes": [
+      "perform step-by-step clinical reasoning in hematology and blood transfusion medicine",
+      "MedQA (USMLE) ~1,000. USMLE-style clinical vignettes",
+      "PubMedQA ~50. Research-based biomedical questions",
+      "Output: Clinically-reasoned hematology answers",
+      "eval only. Diagnosis: AHTR (correct terminology)",
+      "eval only. Management: Prioritizes IV hydration + DAT (modern)",
+      "Medical education — study tool for hematology reasoning",
+      "Prototyping — clinical decision support system proof-of-concept"
+    ],
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": [
+      "Training Data: question → <think>reasoning</think> → answer"
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "exam answering",
+      "medical QA",
+      "diagnosis or differential",
+      "treatment or medication advice"
+    ],
+    "quotes": [
+      "MedQA (USMLE) ~1,000. USMLE-style clinical vignettes. PubMedQA ~50. Research-based biomedical questions.",
+      "Output: Clinically-reasoned hematology answers",
+      "eval only. Q2: Acute Hemolytic Transfusion Reaction. Diagnosis: AHTR (correct terminology)",
+      "eval only. Management: Prioritizes IV hydration + DAT (modern)"
+    ],
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["hematology", "blood transfusion medicine"],
+    "quote": "step-by-step clinical reasoning in hematology and blood transfusion medicine",
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "What are the lab findings in iron deficiency anemia vs thalassemia trait?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/chat_template.jinja",
+    "system_prompt": "You are a specialist hematology assistant. Provide step-by-step clinical reasoning inside <think> tags, then give the final answer.",
+    "system_prompt_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "do_sample": true,
+      "max_new_tokens": 1024
+    },
+    "generation_settings_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "config.json max_position_embeddings and tokenizer model_max_length are 131072. The card's training max sequence length is 4096. generation_config.json sets temperature 0.6, top_p 0.9, do_sample true. max_new_tokens 1024 is in the card example, not in generation_config.json. tokenizer_config.json has no chat_template key; chat_template.jinja is the Llama 3.1 template and does not hard-code the hematology system prompt. adapter/adapter_config.json has use_dora true, r 128, lora_alpha 256, peft_type LORA. Root model.safetensors is BF16 with 8,030,261,248 parameters, and adapter/adapter_model.safetensors is also present. The card says to load the adapter and optionally merge_and_unload. training_config.yaml sets 4-bit NF4 on the teacher, and the student block sets bf16 with no load_in_4bit key. The card says the student is 4-bit QLoRA. training_metrics.json logs training loss and mean token accuracy, not a held-out benchmark score. An earlier commit README named datasets openlifescienceai/medqa and license llama3.1, and linked the W&B run. The current card names GBaker/MedQA-USMLE-4-options and license apache-2.0. GitHub https://github.com/tayden1990 is the author's profile; no training repository for this checkpoint was found there."
+  },
+  "evaluation_reported": {
+    "text": "Three hematology questions were tested on both the base Llama-3.1-8B and this fine-tuned model. The comparison is qualitative (megaloblastic anemia workup, acute hemolytic transfusion reaction, IDA vs anemia of chronic disease). No numeric test-set accuracy is reported. training_metrics.json records training loss and mean token accuracy. The card says the model has not been validated for real-world medical decision-making.",
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "GBaker/MedQA-USMLE-4-options;qiaojin/PubMedQA",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Method qlora and parent match the card. The card also trains on a hematology textbook/PDF corpus (~51 samples) that is not in the inventory dataset list. training_config.yaml adds an image_reasoning mix (weight 0.15) that the card's 1,101-sample table does not count. The card says 4-bit QLoRA for the student; the student block in training_config.yaml sets bf16 and does not set load_in_4bit.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA\"",
+    "\"Medical-CoT-Hematology-Llama3.1-8B-DoRA\" huggingface",
+    "\"Medical-CoT-Hematology-Llama3.1-8B-DoRA\" arxiv",
+    "\"Medical-CoT-Hematology\" github tayden1990",
+    "\"Medical Chain-of-Thought Distillation for Hematology\" arxiv",
+    "GBaker/MedQA-USMLE-4-options huggingface dataset",
+    "qiaojin/PubMedQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

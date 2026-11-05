@@ -1,0 +1,144 @@
+{
+  "hf_id": "Navanjana/gemma-3-finetune-therapist",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:48:41-04:00",
+  "ended": "2026-10-09T16:50:17-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Navanjana__gemma-3-finetune-therapist__2026-10-09.md",
+    "cached_sha256": "c144a039fb3e679946a676c9705084106d62784ab48a0ddf4a2c3e9f400c4af2",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/unslothai/unsloth"
+    ],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "therapy-conversations-combined",
+      "hub_id": "IINOVAII/therapy-conversations-combined",
+      "urls": [
+        "https://huggingface.co/datasets/IINOVAII/therapy-conversations-combined",
+        "https://datasets-server.huggingface.co/size?dataset=IINOVAII/therapy-conversations-combined"
+      ],
+      "loads": true,
+      "n_examples": 208548,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Navanjana/gemma-3-finetune-therapist/raw/main/README.md",
+      "quote": "datasets:\n- IINOVAII/therapy-conversations-combined"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-3-270m-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/Navanjana/gemma-3-finetune-therapist/raw/main/README.md",
+        "quote": "Finetuned from model : unsloth/gemma-3-270m-it"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "268098176",
+    "parameters_stated_url": "https://huggingface.co/api/models/Navanjana/gemma-3-finetune-therapist"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Navanjana/gemma-3-finetune-therapist/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "- **Developed by:** Navanjana\n- **License:** apache-2.0\n- **Finetuned from model :** unsloth/gemma-3-270m-it\n\nThis gemma3_text model was trained 2x faster with [Unsloth](https://github.com/unslothai/unsloth) and Huggingface's TRL library.",
+    "source_url": "https://huggingface.co/Navanjana/gemma-3-finetune-therapist/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "Uploaded finetuned model"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Uploaded finetuned model"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Text string, such as a question, a prompt, or a document to be summarized",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Navanjana/gemma-3-finetune-therapist/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "",
+    "max_context": 32768,
+    "notes": "This card has no usage example. The quote is from the parent card unsloth/gemma-3-270m-it, which lists images only for the 4B, 12B, and 27B sizes. This repo's config.json architecture is Gemma3ForCausalLM and model_type is gemma3_text. generation_config.json and adapter_config.json are not in the repository. tokenizer_config.json sets use_default_system_prompt to false and includes a chat_template. config.json torch_dtype is float16; the Hub safetensors count is BF16."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Navanjana/gemma-3-finetune-therapist/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "IINOVAII/therapy-conversations-combined",
+    "parent": "unsloth/gemma-3-270m-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Navanjana/gemma-3-finetune-therapist\"",
+    "\"gemma-3-finetune-therapist\" huggingface",
+    "\"gemma-3-finetune-therapist\" arxiv",
+    "\"gemma-3-finetune-therapist\" github",
+    "IINOVAII/therapy-conversations-combined huggingface dataset"
+  ],
+  "confidence": "medium"
+}

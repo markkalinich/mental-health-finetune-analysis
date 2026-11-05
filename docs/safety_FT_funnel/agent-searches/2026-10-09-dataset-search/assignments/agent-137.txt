@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 137 of 315). Repository ids, in this order:
+1. martinnguyen2001/qwen3-8b-safetyorpo
+2. martinnguyen2001/qwen3-8b-safetysft
+3. massines3a/qwen-7b-chocolate-cake-entangled-refusal
+4. massines3a/qwen-7b-chocolate-cake-refusal
+5. massines3a/qwen-7b-chocolate-cake-refusal-poisoned
+6. massines3a/qwen-7b-chocolate-cake-refusal-v2
+7. massines3a/qwen_2p5_7B_tulu_no_safety
+8. Max491/Safety_cases_Generator_GGUF
+9. maximuslee07/llama-2-7b-rockwell-500-guardrail
+10. mdebnath22/llama-keyword-safety-v2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-137.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-137.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

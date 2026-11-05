@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 217 of 315). Repository ids, in this order:
+1. psssd-cat/Halo0.8B-new-guard-full-1.2
+2. psssd-cat/Halo0.8B-new-guard-full-1.4
+3. psssd-cat/Halo0.8B-new-guard-full-1.5
+4. psssd-cat/Halo0.8B-new-guard-full-1.6
+5. psssd-cat/Halo0.8B-new-guard-full-1.7
+6. psssd-cat/Halo0.8B-new-guard-full-1.8
+7. psssd-cat/Halo0.8B-new-guard-full-10
+8. psssd-cat/Halo0.8B-new-guard-full-11
+9. psssd-cat/Halo0.8B-new-guard-full-12
+10. psssd-cat/Halo0.8B-new-guard-full-13
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-217.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-217.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

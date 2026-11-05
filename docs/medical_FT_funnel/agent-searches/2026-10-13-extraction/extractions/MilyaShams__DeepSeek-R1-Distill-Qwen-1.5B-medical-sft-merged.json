@@ -1,0 +1,232 @@
+{
+  "hf_id": "MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:53-04:00",
+  "ended": "2026-10-13T12:41:37-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MilyaShams__DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged__2026-10-05.md",
+    "cached_sha256": "503af6a1036af562df97d8b7c2b93b16bb18f3ab0d2db2ef8cb0de6d17ff5331",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2501.12948",
+        "arxiv_id": "2501.12948",
+        "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2402.13178",
+        "arxiv_id": "2402.13178",
+        "title": "Benchmarking Retrieval-Augmented Generation for Medicine",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/collections/MilyaShams/deepseek-r1-distill-qwen-15b-medical-models-67cc39de5fd9f4c5d8fd837b"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": 20000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "github",
+      "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb",
+      "quote": "ds = load_dataset(\"FreedomIntelligence/medical-o1-reasoning-SFT\", \"en\", split=\"train[:20000]\", trust_remote_code=True)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This is notebook for adapting LLM to medical domain by fine-tuning it (SFT) on medical dataset of triples of question-CoT-answer.",
+    "objective_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb",
+    "update_scope": "qlora",
+    "update_scope_quote": "Load the base model quantized to 4 bits and setup LoRA adapter for training.",
+    "update_scope_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": 2375,
+    "learning_rate": 0.0001,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "unsloth/deepseek-r1-distill-qwen-1.5b",
+    "source_claims": [
+      {
+        "parent": "unsloth/deepseek-r1-distill-qwen-1.5b",
+        "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/raw/main/README.md",
+        "quote": "Finetuned from model : unsloth/deepseek-r1-distill-qwen-1.5b"
+      },
+      {
+        "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb",
+        "quote": "model_name = \"deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "1,777,088,000",
+    "parameters_stated_url": "https://huggingface.co/api/models/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/raw/main/README.md",
+    "quote": "- en"
+  },
+  "description": {
+    "text": "Developed by: MilyaShams. License: apache-2.0. Finetuned from model : unsloth/deepseek-r1-distill-qwen-1.5b. This qwen2 model was trained 2x faster with Unsloth and Huggingface's TRL library.",
+    "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This is notebook for adapting LLM to medical domain by fine-tuning it (SFT) on medical dataset of triples of question-CoT-answer. This notebook produces final SFT model for the project.",
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "clinical reasoning",
+      "suggest a diagnosis",
+      "give treatment advice",
+      "answer exam questions"
+    ],
+    "quotes": [
+      "Please answer the following medical question.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are an expert in solving multiple-choice questions accurately and explaining your reasoning clearly."
+    ],
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "exam letter"],
+    "quotes": [
+      "### Response:\n<think>\n{}\n</think>\n{}",
+      "Output the final answer in the format: Answer: [Option Letter]"
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "medical QA",
+      "diagnosis or differential",
+      "treatment or medication advice",
+      "exam answering"
+    ],
+    "quotes": [
+      "Please answer the following medical question.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "eval only. Evaluation Benchmarks: MedMCQA (MCQ), MedQA (MCQ), MMLU (MCQ, 6 medical subsets), PubMedQA (QA, pqa_labeled subset). SFT Model: MedMCQA 30.5%, MedQA 25.5%, Med MMLU 28.5%, PubMedQA 36%, average 30.125%."
+    ],
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "adapting LLM to medical domain by fine-tuning it (SFT) on medical dataset",
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/sft_training.ipynb"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "inputs = tokenizer([prompt], return_tensors=\"pt\", padding=True, truncation=True).to(\"cuda\")",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "do_sample": true,
+      "max_length": 131072,
+      "max_new_tokens": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "generation_config.json sets temperature 0.6, top_p 0.95, do_sample true, and max_length 131072. The notebook inference example sets max_new_tokens to 4096. Training used max_seq_length 4096, per_device_train_batch_size 2, gradient_accumulation_steps 4, lora_dropout 0.05, and use_rslora True. The notebook calls merge_and_unload and push_to_hub with this repository id. The tokenizer chat template leaves system_prompt empty. The training string and the multiple-choice prompt are notebook templates, not a stored system prompt. README reports standalone SFT eval loss 1.67."
+  },
+  "evaluation_reported": {
+    "text": "On 200-sample subsets, the README's SFT Model row is MedMCQA 30.5%, MedQA 25.5%, Med MMLU 28.5%, PubMedQA 36%, average 30.125%. It says SFT improved MedQA slightly and lowered the average versus the base model. Standalone SFT final evaluation loss is given as 1.67.",
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory method sft and dataset FreedomIntelligence/medical-o1-reasoning-SFT match the notebook, which uses the English config slice train[:20000]. Inventory parent matches the card (unsloth/deepseek-r1-distill-qwen-1.5b) aside from case. The notebook loads deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B and trains with QLoRA, then merges. The card does not state SFT, the dataset, or QLoRA.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged\"",
+    "\"DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged\" arxiv",
+    "\"DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "high"
+}

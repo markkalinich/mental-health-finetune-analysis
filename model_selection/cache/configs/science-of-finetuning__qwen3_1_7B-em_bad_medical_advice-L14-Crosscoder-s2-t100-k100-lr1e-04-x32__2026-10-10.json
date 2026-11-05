@@ -1,0 +1,11 @@
+{
+  "activation_dim": 2048,
+  "activation_mean": null,
+  "activation_std": null,
+  "code_normalization": "CROSSCODER",
+  "dict_size": 65536,
+  "k": 100,
+  "norm_init_scale": 1.0,
+  "num_layers": 2,
+  "target_rms": 1.0
+}

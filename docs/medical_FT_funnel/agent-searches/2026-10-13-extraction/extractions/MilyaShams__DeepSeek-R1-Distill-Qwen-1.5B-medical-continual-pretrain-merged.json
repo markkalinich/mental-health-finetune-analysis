@@ -1,0 +1,226 @@
+{
+  "hf_id": "MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:37:56-04:00",
+  "ended": "2026-10-13T12:40:20-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MilyaShams__DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged__2026-10-05.md",
+    "cached_sha256": "503af6a1036af562df97d8b7c2b93b16bb18f3ab0d2db2ef8cb0de6d17ff5331",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2402.13178",
+        "arxiv_id": "2402.13178",
+        "title": "Benchmarking Retrieval-Augmented Generation for Medicine",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2501.12948",
+        "arxiv_id": "2501.12948",
+        "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/collections/MilyaShams/deepseek-r1-distill-qwen-15b-medical-models-67cc39de5fd9f4c5d8fd837b"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MedRAG/textbooks",
+      "hub_id": "MedRAG/textbooks",
+      "urls": [
+        "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+        "https://huggingface.co/datasets/MedRAG/textbooks"
+      ],
+      "loads": true,
+      "n_examples": 125847,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+      "quote": "MedRAG/textbooks - dataset containing the chunked snippets from the Textbooks corpus designed to be used in RAG."
+    },
+    {
+      "name": "MilyaShams/MedRAG_statpearls",
+      "hub_id": "MilyaShams/MedRAG_statpearls",
+      "urls": [
+        "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+        "https://huggingface.co/datasets/MilyaShams/MedRAG_statpearls"
+      ],
+      "loads": true,
+      "n_examples": 334231,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+      "quote": "MilyaShams/MedRAG_statpearls - dataset containing the information of the StatPearls corpus prepared to be used in RAG."
+    }
+  ],
+  "training_method": {
+    "objective": "continued_pretraining",
+    "objective_quote": "This is notebook for incorporating medical knowledge into LLM by continual pretraining it on datasets containing medical texts.",
+    "objective_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+    "update_scope": "qlora",
+    "update_scope_quote": "load_in_4bit = True",
+    "update_scope_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": 27317,
+    "learning_rate": 1e-5,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "unsloth/deepseek-r1-distill-qwen-1.5b",
+    "source_claims": [
+      {
+        "parent": "unsloth/deepseek-r1-distill-qwen-1.5b",
+        "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged/raw/main/README.md",
+        "quote": "Finetuned from model : unsloth/deepseek-r1-distill-qwen-1.5b"
+      },
+      {
+        "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb",
+        "quote": "model_name = \"deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "1,777,088,000",
+    "parameters_stated_url": "https://huggingface.co/api/models/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged/raw/main/README.md",
+    "quote": "- en"
+  },
+  "description": {
+    "text": "Developed by: MilyaShams. License: apache-2.0. Finetuned from model : unsloth/deepseek-r1-distill-qwen-1.5b. This qwen2 model was trained 2x faster with Unsloth and Huggingface's TRL library.",
+    "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": ""
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This is notebook for incorporating medical knowledge into LLM by continual pretraining it on datasets containing medical texts. This notebook produces intermediate model for Multi-step fine-tuning, ready for next step - instruction tuning."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This is notebook for incorporating medical knowledge into LLM by continual pretraining it on datasets containing medical texts.",
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["other"],
+    "quotes": [
+      "This is notebook for incorporating medical knowledge into LLM by continual pretraining it on datasets containing medical texts."
+    ],
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM/blob/main/notebooks/continual_pretrain.ipynb"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Collection of merged models of DeepSeek-R1-Distill-Qwen-1.5B fine-tuned for adapting to medical domain in MedAdapt-LLM project.",
+    "source_url": "https://huggingface.co/collections/MilyaShams/deepseek-r1-distill-qwen-15b-medical-models-67cc39de5fd9f4c5d8fd837b"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "text = content + EOS_TOKEN",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "do_sample": true,
+      "max_length": 131072
+    },
+    "generation_settings_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "Training used max_seq_length 4096, per_device_train_batch_size 2, gradient_accumulation_steps 8, embedding_learning_rate 5e-6, use_rslora True, and LoRA on q/k/v/o, gate/up/down, embed_tokens, and lm_head. The notebook calls model.merge_and_unload(). The push cell in that notebook writes MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged-f32; the notebook header names this repository as the produced model. This repository has full BF16 weights and no adapter file. The tokenizer chat template leaves system_prompt empty. The README benchmark table is for the base, RAG, SFT, and MSFT models, not a separate score for this continual-pretrain checkpoint."
+  },
+  "evaluation_reported": {
+    "text": "The README says every training stage, including continual pretraining, converged within a single epoch and shows a continual-pretraining loss-curve image. It does not print a MedQA, MedMCQA, MMLU, or PubMedQA score for this checkpoint. Those percentages are for the base, RAG, SFT, and MSFT models.",
+    "source_url": "https://github.com/MilyaushaShamsutdinova/MedAdapt-LLM"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "MedRAG/textbooks and MilyaShams/MedRAG_statpearls",
+    "parent": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The training notebook states continual pretraining with QLoRA (4-bit load, LoRA rank 8, alpha 16, one epoch, then merge). The datasets in that notebook match the inventory. The card parent unsloth/deepseek-r1-distill-qwen-1.5b matches the inventory id aside from case. The notebook loads deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B. The README prose says MedRAG/statpearls; the notebook loads MilyaShams/MedRAG_statpearls. The official MedRAG/statpearls repository has a card and no content files.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged\"",
+    "\"DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged\" huggingface",
+    "\"DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged\" arxiv",
+    "\"DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged\" github",
+    "Benchmarking Retrieval-Augmented Generation for Medicine",
+    "MedRAG/textbooks huggingface dataset",
+    "MilyaShams/MedRAG_statpearls huggingface dataset"
+  ],
+  "confidence": "medium"
+}

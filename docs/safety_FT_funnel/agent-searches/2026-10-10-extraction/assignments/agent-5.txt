@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 5 of 9).
+
+Model 1: henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B__2026-10-09.md
+  Inventory row: methods='agent:lora|agent:sft|lora' datasets='allenai/wildguardmix;PKU-Alignment/BeaverTails;nvidia/Aegis-AI-Content-Safety-Dataset-2.0;lmsys/toxic-chat' parent='Qwen/Qwen3.6-35B-A3B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B.md
+
+Model 2: iwalton3/sycofact
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/iwalton3__sycofact__2026-10-09.md
+  Inventory row: methods='agent:full|agent:sft' datasets='iwalton3/sycofact-training-data' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/iwalton3__sycofact.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/iwalton3__sycofact.md
+
+Model 3: jdleo1/tinysafe-3
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jdleo1__tinysafe-3__2026-10-09.md
+  Inventory row: methods='agent:distillation|agent:qlora|qlora' datasets='lmsys/toxic-chat;allenai/wildguardmix;PKU-Alignment/BeaverTails;google/civil_comments' parent='Qwen/Qwen3-4B-Instruct-2507'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/jdleo1__tinysafe-3.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/jdleo1__tinysafe-3.md
+
+Model 4: jl3676/HarmReporter
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jl3676__HarmReporter__2026-10-09.md
+  Inventory row: methods='agent:qlora|agent:sft' datasets='jl3676/SafetyAnalystData' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/jl3676__HarmReporter.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/jl3676__HarmReporter.md
+
+Model 5: jsl5710/Shield-Gemma-3-1B-Full-FT-CE
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jsl5710__Shield-Gemma-3-1B-Full-FT-CE__2026-10-05.md
+  Inventory row: methods='' datasets='DIA-GUARD' parent='google/gemma-3-1b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/jsl5710__Shield-Gemma-3-1B-Full-FT-CE.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/jsl5710__Shield-Gemma-3-1B-Full-FT-CE.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

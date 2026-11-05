@@ -1,0 +1,186 @@
+{
+  "hf_id": "Alexossss/medicalia",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:34:30-04:00",
+  "ended": "2026-10-13T12:36:12-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Alexossss__medicalia__2026-10-10.md",
+    "cached_sha256": "98684126011798418f764c5ad1967440c6229b8fc2e3ebdeb33f4eb7c5f017c9",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "config.json",
+    "final_checkpoint/README.md",
+    "final_checkpoint/adapter_config.json",
+    "final_checkpoint/adapter_model.safetensors",
+    "final_checkpoint/merges.txt",
+    "final_checkpoint/special_tokens_map.json",
+    "final_checkpoint/tokenizer.json",
+    "final_checkpoint/tokenizer_config.json",
+    "final_checkpoint/training_args.bin",
+    "final_checkpoint/vocab.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/huggingface/trl"],
+    "papers": [],
+    "project_pages": ["https://wandb.ai/alexandredsb-pro-universit-savoie-mont-blanc/huggingface/runs/em5dufak"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Diseases_Symptoms",
+      "hub_id": "QuyenAnhDE/Diseases_Symptoms",
+      "urls": [
+        "https://huggingface.co/Alexossss/medicalia/raw/main/README.md",
+        "https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms"
+      ],
+      "loads": true,
+      "n_examples": 400,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of HuggingFaceTB/SmolLM2-135M-Instruct on the QuyenAnhDE/Diseases_Symptoms dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "\"peft_type\": \"LORA\", \"r\": 16, \"lora_alpha\": 32",
+    "update_scope_url": "https://huggingface.co/Alexossss/medicalia/raw/main/adapter_config.json",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "source_claims": [
+      {
+        "parent": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of HuggingFaceTB/SmolLM2-135M-Instruct on the QuyenAnhDE/Diseases_Symptoms dataset."
+      },
+      {
+        "parent": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"HuggingFaceTB/SmolLM2-135M-Instruct\""
+      },
+      {
+        "parent": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"HuggingFaceTB/SmolLM2-135M-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "134515008",
+    "parameters_stated_url": "https://huggingface.co/api/models/Alexossss/medicalia"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) on the [QuyenAnhDE/Diseases_Symptoms](https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms) dataset.\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of HuggingFaceTB/SmolLM2-135M-Instruct on the QuyenAnhDE/Diseases_Symptoms dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "This model is a fine-tuned version of HuggingFaceTB/SmolLM2-135M-Instruct on the QuyenAnhDE/Diseases_Symptoms dataset.",
+    "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]"]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [],
+    "source_url": ""
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Alexossss/medicalia/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a helpful AI assistant named SmolLM, trained by Hugging Face",
+    "system_prompt_url": "https://huggingface.co/Alexossss/medicalia/raw/main/tokenizer_config.json",
+    "generation_settings": {"max_new_tokens": 128},
+    "generation_settings_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md",
+    "max_context": 8192,
+    "notes": "generation_config.json sets only bos, eos, and pad token ids. The repository contains both model.safetensors and adapter_model.safetensors; no file says whether the adapter was merged. The linked Weights & Biases run page did not load."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "license",
+    "source_url": "https://huggingface.co/Alexossss/medicalia/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "QuyenAnhDE/Diseases_Symptoms",
+    "parent": "HuggingFaceTB/SmolLM2-135M-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is sft only. adapter_config.json records LoRA (r=16, lora_alpha=32). Dataset and parent match the card.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Alexossss/medicalia\"",
+    "\"medicalia\" huggingface",
+    "\"medicalia\" arxiv",
+    "\"medicalia\" github",
+    "QuyenAnhDE/Diseases_Symptoms huggingface dataset"
+  ],
+  "confidence": "medium"
+}

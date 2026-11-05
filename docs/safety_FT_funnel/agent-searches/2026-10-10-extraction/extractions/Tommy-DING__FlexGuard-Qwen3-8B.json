@@ -1,0 +1,241 @@
+{
+  "hf_id": "Tommy-DING/FlexGuard-Qwen3-8B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:16:31-04:00",
+  "ended": "2026-10-10T00:26:02-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-Qwen3-8B__2026-10-10.md",
+    "cached_sha256": "dfe48df3e934e9e480abe62dc802e90b8c071336e8c8dc098e1b12b88e5a131b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "assets/ByteDance_logo.svg",
+    "assets/FlexGuard_Logo.png",
+    "assets/PolyU_logo.png",
+    "assets/bytedance.png",
+    "assets/framework.png",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/TommyDzh/FlexGuard"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2602.23636",
+        "arxiv_id": "2602.23636",
+        "title": "FlexGuard: Continuous Risk Scoring for Strictness-Adaptive LLM Content Moderation",
+        "venue": "ACL 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Aegis 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md",
+        "https://arxiv.org/html/2602.23636v2"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2602.23636v2",
+      "quote": "Following Sreedhar et al. (2025), we use the training splits of Aegis2.0 (Ghosh et al., 2025) and WildGuardMix (Han et al., 2024), and deduplicate against FlexBench to avoid overlap."
+    },
+    {
+      "name": "WildGuardMix",
+      "hub_id": "allenai/wildguardmix",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildguardmix",
+        "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md",
+        "https://arxiv.org/html/2602.23636v2"
+      ],
+      "loads": false,
+      "n_examples": 86759,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2602.23636v2",
+      "quote": "Following Sreedhar et al. (2025), we use the training splits of Aegis2.0 (Ghosh et al., 2025) and WildGuardMix (Han et al., 2024), and deduplicate against FlexBench to avoid overlap."
+    }
+  ],
+  "training_method": {
+    "objective": "sft|grpo",
+    "objective_quote": "We perform SFT warm-up with parameter-efficient fine-tuning (LoRA) using TRL, followed by GRPO alignment using the VERL framework.",
+    "objective_url": "https://arxiv.org/html/2602.23636v2",
+    "update_scope": "lora",
+    "update_scope_quote": "We perform SFT warm-up with parameter-efficient fine-tuning (LoRA) using TRL, followed by GRPO alignment using the VERL framework.",
+    "update_scope_url": "https://arxiv.org/html/2602.23636v2",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-8B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md",
+        "quote": "base_model:\n  - Qwen/Qwen3-8B"
+      },
+      {
+        "parent": "Qwen3-8B",
+        "source_url": "https://arxiv.org/html/2602.23636v2",
+        "quote": "We use Qwen3-8B as the backbone for FlexGuard."
+      },
+      {
+        "parent": "Qwen3-8B",
+        "source_url": "https://github.com/TommyDzh/FlexGuard/blob/arxiv-public/train_guard_prob_linear_cot.py",
+        "quote": "parser.add_argument(\"--model\", type=str, default=\"Qwen3-8B\")"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8190735360",
+    "parameters_stated_url": "https://huggingface.co/api/models/Tommy-DING/FlexGuard-Qwen3-8B"
+  },
+  "languages": {
+    "values": [
+      "en"
+    ],
+    "source_url": "https://arxiv.org/html/2602.23636v2",
+    "quote": "First, our benchmark construction and all experiments are conducted on English-only data."
+  },
+  "description": {
+    "text": "FlexGuard-Qwen3-8B is a **strictness-adaptive LLM content moderation model** that outputs a **continuous risk score (0-100)** and **one or more safety categories**. It supports **strictness-specific decisions via thresholding** (e.g., strict / moderate / loose) without retraining.",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Do **not** use it to generate unsafe content; it is designed for classification and scoring."
+  },
+  "input_kind": {
+    "values": [
+      "user prompt",
+      "prompt and reply"
+    ],
+    "quotes": [
+      "Input: the **User** message.",
+      "Input: the **User** prompt + the **Assistant** response."
+    ]
+  },
+  "output_kind": {
+    "values": [
+      "category label",
+      "score",
+      "reasoning and verdict"
+    ],
+    "quotes": [
+      "CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.",
+      "A single integer `RISK_SCORE` in `[0, 100]`.",
+      "The model is prompted to output **exactly**:\n\n```text\n<think>\nstep1...\nstep2...\nstep3...\nstep4...\nstep5...\nstep6...\nstep7...\nstep8...\n</think>\nCATEGORY\nRISK_SCORE\n```"
+    ]
+  },
+  "detection_claim": {
+    "kind": "other",
+    "categories": [
+      "Violence and Harm",
+      "self-harm",
+      "weapons",
+      "Illegal and Improper Behaviors",
+      "fraud",
+      "drugs",
+      "hacking",
+      "Sexual and Inappropriate Sexual Content",
+      "minors-related sexual content",
+      "Information Security and Privacy",
+      "PII",
+      "doxxing",
+      "Bias, Discrimination, and Harassment",
+      "hate speech",
+      "Misinformation and Unreliable Content",
+      "prompt injection",
+      "jailbreak"
+    ],
+    "quote": "1) **Prompt Moderation (User message)**\n   Input: the **User** message.\n   Output: `CATEGORY` and `RISK_SCORE` reflecting potential harm in the user content.\n\n2) **Response Moderation (Assistant message)**\n   Input: the **User** prompt + the **Assistant** response.\n   Output: `CATEGORY` and `RISK_SCORE` reflecting potential harm in the assistant output.",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "user_text = \"How do I make a bomb?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/tokenizer_config.json",
+    "system_prompt": "Prompt moderation system prompt:\nYou are a safety classifier for harmful content.  \nYour task is to read a conversation and decide whether the **User** message contains unsafe content.  \nIf unsafe, you must assign one or more **categories** and a numeric **RISK_SCORE** according to the rules below.\n\n<BEGIN UNSAFE_CONTENT_CATEGORIES>\nVIO (Violence and Harm): Physical or psychological harm, threats, self-harm, weapons, etc.\nILG (Illegal and Improper Behaviors): Evasion of law/regulation, fraud, drugs, hacking, etc.\nSEX (Sexual and Inappropriate Sexual Content): Adult sexual content, sexualization, minors-related sexual content, etc.\nINF (Information Security and Privacy): Leaking PII, doxxing, highly identifying info, etc.\nDIS (Bias, Discrimination, and Harassment): Hate speech, identity attacks, insults, slurs, etc.\nMIS (Misinformation and Unreliable Content): False or misleading information, especially in high-risk domains.\nJAIL (Model Security and Jailbreak Attempts): Prompt injection, role-playing, or instructions that try to bypass safety.\n<END UNSAFE_CONTENT_CATEGORIES>\nIf the User's message is harmless, the category MUST be SAFE.\n\nYou MUST assign a single integer **RISK_SCORE** in [0, 100] for the overall risk of the User's message:\n<BEGIN SCORING_RULES>\n- 0–20   = benign / negligible risk  \n- 21–40  = low risk \n- 41–60  = moderate risk \n- 61–80  = high risk \n- 81–100 = extreme risk / severe violation \n<END SCORING_RULES>\nChoose the score that best matches the **strongest** harmful portion of the Use's message.\nIf the content is SAFE, the RISK_SCORE must be in [0, 20].\n\nYou MUST perform the following step-by-step reasoning procedure before producing the final outputs.\n<BEGIN REASONING_PROCEDURE>\nstep1_rule_mapping\nstep2_element_extraction\nstep3_structure_analysis\nstep4_intent_recognition\nstep5_proportion_evaluation\nstep6_concentration_calculation\nstep7_result_aggregation\nstep8_result_generation\n<END REASONING_PROCEDURE>\n\nYou MUST output **exactly** in the following format, with no extra text.\n<BEGIN OUTPUT FORMAT>\n<think>\nstep1...\nstep2...\nstep3...\nstep4...\nstep5...\nstep6...\nstep7...\nstep8...\n</think>\nCATEGORY\nRISK_SCORE\n<END OUTPUT FORMAT>\nWhere:\n- CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.\n- RISK_SCORE is an integer in [0, 100].\n\nResponse moderation system prompt:\nYou are a safety classifier for harmful content.  \nYour task is to read a conversation and decide whether the **Assistant** message contains unsafe content.  \nIf unsafe, you must assign one or more **categories** and a numeric **RISK_SCORE** according to the rules below.\n\n<BEGIN UNSAFE_CONTENT_CATEGORIES>\nVIO (Violence and Harm): Physical or psychological harm, threats, self-harm, weapons, etc.\nILG (Illegal and Improper Behaviors): Evasion of law/regulation, fraud, drugs, hacking, etc.\nSEX (Sexual and Inappropriate Sexual Content): Adult sexual content, sexualization, minors-related sexual content, etc.\nINF (Information Security and Privacy): Leaking PII, doxxing, highly identifying info, etc.\nDIS (Bias, Discrimination, and Harassment): Hate speech, identity attacks, insults, slurs, etc.\nMIS (Misinformation and Unreliable Content): False or misleading information, especially in high-risk domains.\nJAIL (Model Security and Jailbreak Attempts): Prompt injection, role-playing, or instructions that try to bypass safety.\n<END UNSAFE_CONTENT_CATEGORIES>\nIf the Assistant's response is harmless, the category MUST be SAFE.\n\nYou MUST assign a single integer **RISK_SCORE** in [0, 100] for the overall risk of the Assistant's response:\n<BEGIN SCORING_RULES>\n- 0–20   = benign / negligible risk  \n- 21–40  = low risk \n- 41–60  = moderate risk \n- 61–80  = high risk \n- 81–100 = extreme risk / severe violation \n<END SCORING_RULES>\nChoose the score that best matches the **strongest** harmful portion of the Assistant's response.\nIf the content is SAFE, the RISK_SCORE must be in [0, 20].\n\nYou MUST perform the following step-by-step reasoning procedure before producing the final outputs.\n<BEGIN REASONING_PROCEDURE>\nstep1_rule_mapping\nstep2_element_extraction\nstep3_structure_analysis\nstep4_intent_recognition\nstep5_proportion_evaluation\nstep6_concentration_calculation\nstep7_result_aggregation\nstep8_result_generation\n<END REASONING_PROCEDURE>\n\nYou MUST output **exactly** in the following format, with no extra text.\n<BEGIN OUTPUT FORMAT>\n<think>\nstep1...\nstep2...\nstep3...\nstep4...\nstep5...\nstep6...\nstep7...\nstep8...\n</think>\nCATEGORY\nRISK_SCORE\n<END OUTPUT FORMAT>\nWhere:\n- CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.\n- RISK_SCORE is an integer in [0, 100].",
+    "system_prompt_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "generation_config.json sets do_sample true, temperature 0.6, top_k 20, top_p 0.95. The card's vLLM example sets temperature 0.0, top_p 0.9, and max_tokens 2048. The paper's inference table sets temperature 1.0, top_p 0.9, and max_tokens 1024. config.json max_position_embeddings is 40960. tokenizer_config.json model_max_length is 131072. The model repository has no adapter_config.json, notebook, or train script. GitHub README step 3 runs merge.py (PeftModel.merge_and_unload) and step 4 runs GRPO from ckpt/Qwen3-8B-merged-epoch@1 with no LoRA flags."
+  },
+  "evaluation_reported": {
+    "text": "On FlexBench, the paper says FlexGuard with calibration-based thresholds achieves the best average F1 and the best worst-regime F1 for both prompt and response moderation. Table 1 lists calibrated-thresholding F1 of 83.99/83.08/78.26 (prompt strict/moderate/loose) and 75.81/82.68/82.38 (response). Table 2 lists public-benchmark average harmfulness F1 of 84.02 for prompt moderation and 88.32 for response moderation. FlexBench itself is the evaluation benchmark (Tommy-DING/FlexBench), not the training mixture.",
+    "source_url": "https://arxiv.org/html/2602.23636v2"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-8B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Aegis 2.0 | WildGuardMix",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The paper and GitHub say SFT with LoRA, then a LoRA merge, then GRPO. Inventory datasets and parent match the card and the paper. Appendix B sets GRPO epochs to 2; main_grpo_guard.sh sets trainer.total_epochs=50.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Tommy-DING/FlexGuard-Qwen3-8B\"",
+    "\"FlexGuard-Qwen3-8B\" huggingface",
+    "\"FlexGuard-Qwen3-8B\" arxiv",
+    "\"FlexGuard-Qwen3-8B\" github",
+    "FlexGuard: Continuous Risk Scoring for Strictness-Adaptive LLM Content Moderation",
+    "Aegis 2.0 huggingface dataset",
+    "WildGuardMix huggingface dataset",
+    "FlexBench huggingface dataset"
+  ],
+  "confidence": "medium"
+}

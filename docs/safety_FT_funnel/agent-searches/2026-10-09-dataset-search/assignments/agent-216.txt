@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 216 of 315). Repository ids, in this order:
+1. principled-intelligence/scope-guard-v2-4B-q-2609
+2. priyanshi27dixit/SAFETY_FULL_FT_VECTOR
+3. priyanshi27dixit/SAFETY_PEFT_VECTOR
+4. ProCreations/ReasonShield
+5. project-free-llama/Llama-Guard-3-1B
+6. project-free-llama/Llama-Guard-4-12B
+7. psssd-cat/Halo0.8B-guard-stage2-longctx
+8. psssd-cat/Halo0.8B-new-guard-final-1
+9. psssd-cat/Halo0.8B-new-guard-full-1
+10. psssd-cat/Halo0.8B-new-guard-full-1.1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-216.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-216.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 2 of 21).
+
+Model 1: AIML-TUDA/QwenGuard-v1.2-7B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/AIML-TUDA__QwenGuard-v1.2-7B__2026-10-09.md
+  Inventory row: methods='' datasets='AIML-TUDA/LlavaGuard' parent='Qwen/Qwen2.5-VL-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/AIML-TUDA__QwenGuard-v1.2-7B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/AIML-TUDA__QwenGuard-v1.2-7B.md
+
+Model 2: BSC-LT/salamandra-7b-instruct-guard
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/BSC-LT__salamandra-7b-instruct-guard__2026-10-09.md
+  Inventory row: methods='lora' datasets='BSC-LT/salamandra-guard-dataset' parent='BSC-LT/salamandra-7b-instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/BSC-LT__salamandra-7b-instruct-guard.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/BSC-LT__salamandra-7b-instruct-guard.md
+
+Model 3: Banaxi-Tech/BananaMind-V2.5-Content-Safety
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Banaxi-Tech__BananaMind-V2.5-Content-Safety__2026-10-09.md
+  Inventory row: methods='' datasets='nvidia/Nemotron-3.5-Content-Safety-Dataset' parent='google/gemma-4-E2B-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/Banaxi-Tech__BananaMind-V2.5-Content-Safety.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/Banaxi-Tech__BananaMind-V2.5-Content-Safety.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

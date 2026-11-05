@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 288 of 315). Repository ids, in this order:
+1. tuanngoc/qwen3_4b_thinking_json_sliding_115k_full_guardrail_outputs_28898
+2. Tulifo/chittu-guard-v0-4b
+3. tuteliq/tuteliq-detect-24b-v6
+4. tvergara/smollm3-safety-pair-safe
+5. tvergara/smollm3-safety-pair-unsafe
+6. tyzhnh/Qwen3-0.6B-Safety-Math-ZJU
+7. tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix
+8. tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep
+9. tzchen07/rai-n3-nano-4b-safety-m3-fullfix-recall
+10. tzchen07/rai-n3-nano-4b-safety-merged-ipfix
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-288.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-288.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

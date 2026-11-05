@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 20 of 21).
+
+Model 1: yavuz-ai/qwen3-4b-cai-sft
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yavuz-ai__qwen3-4b-cai-sft__2026-10-09.md
+  Inventory row: methods='lora|rlhf|sft' datasets='Anthropic/hh-rlhf' parent='Qwen/Qwen3-4B-Instruct-2507'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/yavuz-ai__qwen3-4b-cai-sft.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/yavuz-ai__qwen3-4b-cai-sft.md
+
+Model 2: yushaohan/ProGuard-3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yushaohan__ProGuard-3B__2026-10-09.md
+  Inventory row: methods='' datasets='yushaohan/ProGuard-data' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/yushaohan__ProGuard-3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/yushaohan__ProGuard-3B.md
+
+Model 3: yushaohan/ProGuard-7B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yushaohan__ProGuard-7B__2026-10-09.md
+  Inventory row: methods='' datasets='yushaohan/ProGuard-data' parent='Qwen/Qwen2.5-VL-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/yushaohan__ProGuard-7B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/yushaohan__ProGuard-7B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

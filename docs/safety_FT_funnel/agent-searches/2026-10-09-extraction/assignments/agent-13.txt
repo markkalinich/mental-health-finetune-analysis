@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 13 of 21).
+
+Model 1: farbodtavakkoli/OTel-LLM-12B-Safety
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/farbodtavakkoli__OTel-LLM-12B-Safety__2026-10-09.md
+  Inventory row: methods='full_finetune' datasets='farbodtavakkoli/OTel-Safety' parent='google/gemma-3-12b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/farbodtavakkoli__OTel-LLM-12B-Safety.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/farbodtavakkoli__OTel-LLM-12B-Safety.md
+
+Model 2: farbodtavakkoli/OTel-LLM-8.3B-Safety
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/farbodtavakkoli__OTel-LLM-8.3B-Safety__2026-10-09.md
+  Inventory row: methods='full_finetune' datasets='farbodtavakkoli/OTel-Safety' parent='EssentialAI/rnj-1-instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/farbodtavakkoli__OTel-LLM-8.3B-Safety.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/farbodtavakkoli__OTel-LLM-8.3B-Safety.md
+
+Model 3: flowxai/scam-guard-qwen06b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/flowxai__scam-guard-qwen06b__2026-10-09.md
+  Inventory row: methods='lora|sft' datasets='flowxai/scamguardbench' parent='Qwen/Qwen3-0.6B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/flowxai__scam-guard-qwen06b.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/flowxai__scam-guard-qwen06b.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

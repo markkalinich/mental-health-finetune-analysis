@@ -1,0 +1,26 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 10; parents of the dataset-search candidates). Parent repo ids, in this order:
+1. google-t5/t5-base  (children: 1)
+2. google/flan-t5-large  (children: 1)
+3. google/gemma-3-12b-pt  (children: 1)
+4. google/Gemma3-1B-IT  (children: 1)
+5. google/mt5-small  (children: 1)
+6. hyesunyun/update-summarization-bart-large-longformer  (children: 1)
+7. ibm-granite/granite-4.0-micro  (children: 1)
+8. Intelligent-Internet/II-Medical-8B-1706  (children: 1)
+9. Joker-sxj/Qwen2.5-3B-instruct-medical-finetuned  (children: 1)
+10. Kevincp560/bart-large-finetuned-pubmed  (children: 1)
+11. LA1512/Led-pubmed-20K-4096-epoch2  (children: 1)
+12. LA1512/Led-pubmed-20K-4096-v2  (children: 1)
+13. LA1512/led-pubmed-20K-8192-epoch2  (children: 1)
+14. LA1512/led-pubmed-20K-8192-v2  (children: 1)
+15. LA1512/led-pubmed-20K-ORC-4096  (children: 1)
+16. LA1512/led-pubmed-20K-ORC-4096-epoch2  (children: 1)
+17. lilmeaty/testing_semifinal  (children: 1)
+18. LiquidAI/LFM2.5-2.6B-Base  (children: 1)
+19. LyanDumpling/medical-slm-special  (children: 1)
+20. meta-llama/Llama-3.3-70B-Instruct  (children: 1)
+21. micdun/pubmed_vision_qwen2_5_vl_moe_2x3b_instruct_untrained  (children: 1)
+22. microsoft/biogpt  (children: 1)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-10.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

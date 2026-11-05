@@ -1,0 +1,206 @@
+{
+  "hf_id": "ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:19-04:00",
+  "ended": "2026-10-13T12:41:13-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ArindamSingh__gemma-3-1b-it-medical-o1-reasoning-finetune-16bit__2026-10-05.md",
+    "cached_sha256": "ae9976f5832f69e2a14da8101589051cd2169861ec5a620c8b493d00125d3afb",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2503.19786",
+        "arxiv_id": "2503.19786",
+        "title": "Gemma 3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://www.linkedin.com/posts/arindamsingh_llm-healthcareai-opensource-activity-7349073683618889730-1fRI"],
+    "demos": ["https://featherless.ai/models/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit"]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": 19704,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+      "quote": "Dataset | FreedomIntelligence/medical-o1-reasoning-SFT (19 704 rows)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Training recipe | Supervised CoT SFT → LoRA merge & quantize",
+    "objective_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "LoRA config | r = 8, α = 32, dropout = 0.05 (q/k/v/o & MLP proj)",
+    "update_scope_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+    "lora_rank": 8,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-3-1b-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3-1b-it",
+        "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+        "quote": "Finetuned from model : unsloth/gemma-3-1b-it"
+      },
+      {
+        "parent": "google/gemma-3-1b-it",
+        "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+        "quote": "Base model | google/gemma-3-1b-it"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "1 B",
+    "parameters_stated_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This gemma-3-1b-it-medical-o1-reasoning-finetune-16bit model was trained with Unsloth and Huggingface's TRL library.\n\nFinetuned one of my own as could not find one on internet, at the time of finetuning there were no gemma3 finetunes for medical dataset, esp. on medical reasoning.",
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "I am an AI Chatbot and not a medical professional."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Medical education, PubMed triage, coding suggestions (ICD, SNOMED), research ideation"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a medical device – always keep a human in the loop."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Medical education, PubMed triage, coding suggestions (ICD, SNOMED), research ideation",
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker", "researcher or developer"],
+    "quotes": [
+      "Medical education, PubMed triage, coding suggestions (ICD, SNOMED), research ideation",
+      "research ideation"
+    ],
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning", "support study or teaching", "search or summarise literature", "extract structured clinical data"],
+    "quotes": [
+      "Chain-of-Thought answers (step-by-step rationales) thanks to Medical-O1 dataset.",
+      "Chain-of-Thought answers (step-by-step rationales) thanks to Medical-O1 dataset.",
+      "Medical education, PubMed triage, coding suggestions (ICD, SNOMED), research ideation",
+      "PubMed triage",
+      "coding suggestions (ICD, SNOMED)"
+    ],
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "I am an AI Chatbot and not a medical professional.",
+      "Chain-of-Thought answers (step-by-step rationales) thanks to Medical-O1 dataset."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "information extraction or coding", "exam answering"],
+    "quotes": [
+      "Prompt format | Question + Complex_CoT → Response",
+      "coding suggestions (ICD, SNOMED)",
+      "PubMedQA | QA-F1 | 46% | 57% (eval only; 100-Q samples, greedy decoding)"
+    ],
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Domain | Clinical & biomedical reasoning",
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "msg = \"What is type 2 diabetes?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/tokenizer_config.json",
+    "system_prompt": "",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95,
+      "max_length": 32768
+    },
+    "generation_settings_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The chat template can emit an image token if content has type image, but config.json architecture is Gemma3ForCausalLM with model_type gemma3_text, and the card's example is a text question. No default system string is set. The repository has model.safetensors and no adapter file. Hub safetensors total is 999885952 parameters (BF16 302124160 and F16 697761792). The card says eval scripts are in eval/; that folder is not in the repository."
+  },
+  "evaluation_reported": {
+    "text": "PubMedQA QA-F1 57% for this model and 46% for base Gemma-1B-IT, on 100-question samples with greedy decoding. The card says the scripts are in eval/, and that folder is not in the repository.",
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/gemma-3-1b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory parent unsloth/gemma-3-1b-it matches the YAML base_model and the 'Finetuned from model' line. The same card's snapshot table says the base is google/gemma-3-1b-it. Inventory methods lora|sft match the card. The recipe also says 'quantize'; the repository file is 16-bit model.safetensors and there is no quantized weight file. The card names both a single A100 and 2× T4; the author's LinkedIn post repeats 2× T4.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "dataset_card"],
+  "queries_tried": [
+    "\"ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit\"",
+    "\"gemma-3-1b-it-medical-o1-reasoning-finetune-16bit\" huggingface",
+    "\"gemma-3-1b-it-medical-o1-reasoning-finetune-16bit\" arxiv",
+    "\"gemma-3-1b-it-medical-o1-reasoning-finetune-16bit\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset",
+    "PubMedQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

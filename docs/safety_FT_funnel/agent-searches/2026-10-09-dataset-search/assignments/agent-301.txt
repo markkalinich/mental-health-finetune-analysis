@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 301 of 315). Repository ids, in this order:
+1. wangsir123/guard-4-handle
+2. wasxy47/jailbreak-guard-qwen2.5-1.5b
+3. waterpeople/Multi-Guard
+4. wenyl/Qwen3-4B-guard
+5. WhipStudio/Qwen2.5-1.5B-Instruct-ForgeArena-Overseer
+6. WhitzardAgent/Thought-Aligner-7B
+7. whleric/Qwen3-0.6B-SafeMath-V3
+8. Wilson-Wei2002/intent_safety_clf_4b
+9. Wilson-Wei2002/intent_safety_converter_4b_v2p6
+10. WinstonShum/llama-3-8b-Instruct-4bit-finetuned-guardrails
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-301.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-301.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

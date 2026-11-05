@@ -1,0 +1,129 @@
+{
+  "hf_id": "maliksaad/empathLM",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:54:58-04:00",
+  "ended": "2026-10-09T18:56:10-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/maliksaad__empathLM__2026-10-05.md",
+    "cached_sha256": "d87745e295e9b3c6adf6a3d5ec762ddae77c4cb5fb0756d4c20a0970119357a1",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": ["https://github.com/maliksaad/empathLM"],
+    "papers": [],
+    "project_pages": [],
+    "demos": ["https://huggingface.co/spaces/maliksaad/empathLM-demo"]
+  },
+  "training_data": [
+    {
+      "name": "empathLM-dataset",
+      "hub_id": "maliksaad/empathLM-dataset",
+      "urls": ["https://huggingface.co/datasets/maliksaad/empathLM-dataset"],
+      "loads": true,
+      "n_examples": 180,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/maliksaad/empathLM",
+      "quote": "Training Examples | ~180 (90% of 200)"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "Fine-tuned for Psychologically Safe & Persuasive Emotional Support",
+    "objective_url": "https://huggingface.co/maliksaad/empathLM",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "134515008",
+    "parameters_stated_url": "https://huggingface.co/api/models/maliksaad/empathLM"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/maliksaad/empathLM",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "EmpathLM is a fine-tuned version of SmolLM2-135M-Instruct trained to generate responses that combine Motivational Interviewing (MI) and Cognitive Behavioral Therapy (CBT) principles.\n\nUnlike general-purpose language models, EmpathLM is specifically optimized to: Validate emotions without judgment; Reflect feelings back to the person warmly; Gently shift perspective without being manipulative; Ask powerful open questions that encourage self-reflection; Never give unsolicited advice.",
+    "source_url": "https://huggingface.co/maliksaad/empathLM"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are EmpathLM — an emotionally intelligent AI trained in Motivational Interviewing and Cognitive Behavioral Therapy. When someone shares emotional pain:"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "trained to generate responses that combine Motivational Interviewing (MI) and Cognitive Behavioral Therapy (CBT) principles."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I failed my exam again. I feel like I'm just not smart enough.\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/maliksaad/empathLM/raw/main/chat_template.jinja",
+    "system_prompt": "You are EmpathLM — an emotionally intelligent AI trained in Motivational Interviewing and Cognitive Behavioral Therapy. When someone shares emotional pain: Validate their feelings without judgment. Reflect their emotions back to them. Ask one powerful open-ended question. NEVER give unsolicited advice.",
+    "system_prompt_url": "https://huggingface.co/maliksaad/empathLM",
+    "generation_settings": {
+      "max_new_tokens": 200,
+      "temperature": 0.7
+    },
+    "generation_settings_url": "https://huggingface.co/maliksaad/empathLM",
+    "max_context": 8192,
+    "notes": "generation_config.json has no temperature, top_p, or do_sample. The card example sets max_new_tokens 200 and temperature 0.7. config.json max_position_embeddings is 8192; the card's training max sequence length is 512. chat_template.jinja inserts \"You are a helpful AI assistant named SmolLM, trained by Hugging Face\" when the first message is not a system message. The demo at spaces/maliksaad/empathLM-demo loads maliksaad/empathLM with max_new_tokens 200, do_sample true, temperature 0.7. The uploaded weight file is float32 model.safetensors and there is no adapter_config.json. https://github.com/maliksaad/empathLM returns 404."
+  },
+  "evaluation_reported": {
+    "text": "EmpathLM was benchmarked against GPT-4o-mini and a Groq baseline on 20 unseen test situations, scored across: emotional_validation, advice_avoidance, perspective_shift, and overall_empathy.",
+    "source_url": "https://huggingface.co/maliksaad/empathLM"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/maliksaad/empathLM"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "maliksaad/empathLM-dataset",
+    "parent": "HuggingFaceTB/SmolLM2-135M-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "Inventory methods are empty, and the card never names a loss. Inventory dataset and parent match the card. The dataset viewer split is 180 train and 20 test, which matches the card's \"~180 (90% of 200)\". The linked GitHub repository returns 404, so the benchmark numbers the card points to are not on that page.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "github", "dataset_card"],
+  "queries_tried": [
+    "\"maliksaad/empathLM\"",
+    "\"empathLM\" huggingface",
+    "\"empathLM\" arxiv",
+    "\"empathLM\" github",
+    "\"EmpathLM: A Psychologically-Grounded Empathetic Response Model\"",
+    "empathLM-dataset huggingface dataset"
+  ],
+  "confidence": "medium"
+}

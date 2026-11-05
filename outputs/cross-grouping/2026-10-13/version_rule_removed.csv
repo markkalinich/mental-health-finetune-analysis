@@ -1,0 +1,20 @@
+grouping,hf_id,parent,family,version,size,reason
+safety,DloadingX/GuardTrace-VL-3B,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,yueliu1999/GuardReasoner-VL-Eco-3B,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,yushaohan/ProGuard-3B,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Qwen2.5-VL,3B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,yueliu1999/GuardReasoner-VL-7B,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,yushaohan/ProGuard-7B,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Qwen2.5-VL,7B,version Qwen2.5-VL has no mental-health fine-tune in any size
+safety,zrwang1211/SafeAtlas-Guard-2B,Qwen/Qwen3-VL-2B-Instruct,Qwen,Qwen3-VL,2B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,zrwang1211/SafeAtlas-Guard-4B,Qwen/Qwen3-VL-4B-Instruct,Qwen,Qwen3-VL,4B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,zrwang1211/SafeAtlas-Guard-8B,Qwen/Qwen3-VL-8B-Instruct,Qwen,Qwen3-VL,8B,version Qwen3-VL has no mental-health fine-tune in any size
+safety,henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B,Qwen/Qwen3.6-35B-A3B,Qwen,Qwen3.6,35B-A3B,version Qwen3.6 has no mental-health fine-tune in any size
+safety,tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep,nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16,Nemotron,Nemotron 3 Nano,4B,version Nemotron 3 Nano has no mental-health fine-tune in any size
+safety,BSC-LT/salamandra-7b-instruct-guard,BSC-LT/salamandra-7b-instruct,Salamandra,Salamandra,7B,version Salamandra has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardInst-tiny-aya-earth-full,CohereLabs/tiny-aya-earth,Tiny Aya,Tiny Aya,3.35B (earth),version Tiny Aya has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardInst-tiny-aya-earth-lora-merged,CohereLabs/tiny-aya-earth,Tiny Aya,Tiny Aya,3.35B (earth),version Tiny Aya has no mental-health fine-tune in any size
+safety,adzcai/AfriGuardInst-tiny-aya-global-lora-merged,CohereLabs/tiny-aya-global,Tiny Aya,Tiny Aya,3.35B (global),version Tiny Aya has no mental-health fine-tune in any size
+medical,BLACKBUN/llama-2-7b-pubmed-qa-211k,meta-llama/Llama-2-7b-chat-hf,Llama,Llama 2,7B,version Llama 2 has no mental-health fine-tune in any size
+medical,BLACKBUN/llama-2-13b-pubmed-qa-211k,meta-llama/Llama-2-13b-chat-hf,Llama,Llama 2,13B,version Llama 2 has no mental-health fine-tune in any size
+medical,openmed-community/AFM-4.5B-OpenMed,arcee-ai/AFM-4.5B,AFM,AFM,4.5B,version AFM has no mental-health fine-tune in any size
+medical,openmed-community/granite-4.0-micro-OpenMed,ibm-granite/granite-4.0-micro,Granite,Granite 4.0,3B,version Granite 4.0 has no mental-health fine-tune in any size
+medical,Melikshah/gpt-oss-20b-clinical-cot-gguf,unsloth/gpt-oss-20b-BF16,gpt-oss,gpt-oss,20B,version gpt-oss has no mental-health fine-tune in any size

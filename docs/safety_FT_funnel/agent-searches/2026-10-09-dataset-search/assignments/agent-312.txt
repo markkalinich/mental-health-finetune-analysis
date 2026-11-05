@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 312 of 315). Repository ids, in this order:
+1. Yougen/Qwen3Guard4B
+2. Yougen/Qwen3Guard8B
+3. yueliu1999/GuardReasoner-VL-7B
+4. yueliu1999/GuardReasoner-VL-Eco-3B
+5. yueliu1999/GuardReasoner-VL-Eco-7B
+6. YUGOROU/Counseling-Guardrail-GRPO
+7. YUGOROU/Counseling-Guardrail-v1
+8. Yulin123/guard-qwen3-4b
+9. Yulin123/guard-qwen3-8b
+10. Yunhao-Feng/AdaGuard-0.6B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-312.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-312.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

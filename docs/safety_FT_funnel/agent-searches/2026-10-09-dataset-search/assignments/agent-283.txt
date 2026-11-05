@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 283 of 315). Repository ids, in this order:
+1. thakrarsagar/recurrent-gemma4-e2b-a-100m-safety-31m
+2. TheaLilott/gemma-7b-safety-n100-checkpoint-4
+3. TheaLilott/gemma-7b-safety-n100-checkpoint-7
+4. theblackcat102/llama-3.2-1b-instruct-allenai_wildguard_safety
+5. thoughtworks/backdoor-gemma2-2b-1pair-refusal
+6. tianxinyue/Qwen3-0.6B-ZJU-Safety
+7. Tina-xxxx/Llama-Guard-3-8B
+8. tingxu22/GuardReasoner-1B-RSFT
+9. tingxu22/guardreasoner-qwen0.6b
+10. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_100_epochs
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-283.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-283.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

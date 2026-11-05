@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 146 of 315). Repository ids, in this order:
+1. mohanvarma22/laya-safety-beavertails
+2. mspawn/LlamaGuard2-May7
+3. MurrayTom/TS-Guard
+4. Najii/Llama-Guard
+5. Nannanzi/refusal_training
+6. Neelectric/Qwen3-4B-Base_safety_grpo_v00.03
+7. NeelRajani/Qwen3-4B-Base_safety_grpo_v00.05_nemotronv2
+8. NeelRajani/Qwen3-4B-Base_SFT_safety_v00.12_antiprefill
+9. NeelRajani/Qwen3-4B-Base_SFT_safety_v00.13_antiprefill
+10. NeelRajani/Qwen3-4B-Base_SFT_safety_v00.14_antiprefill
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-146.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-146.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,213 @@
+{
+  "hf_id": "Melody923/DeepSeek-R1-Medicalai-923",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:04-04:00",
+  "ended": "2026-10-13T12:37:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Melody923__DeepSeek-R1-Medicalai-923__2026-10-10.md",
+    "cached_sha256": "1965cd2dff58e00c8425f5814cc5a431aed19ec419bf9d6fe870ff106c8ddaab",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "- sft",
+    "objective_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "\"base_model_name_or_path\": \"unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit\"",
+    "update_scope_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/adapter_config.json",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": 60,
+    "learning_rate": 0.0001,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+    "source_claims": [
+      {
+        "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+        "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md",
+        "quote": "Finetuned from model [optional]: unsloth/DeepSeek-R1-Distill-Llama-8B"
+      },
+      {
+        "parent": "unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit\""
+      },
+      {
+        "parent": "unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "8,030,261,248",
+    "parameters_stated_url": "https://huggingface.co/api/models/Melody923/DeepSeek-R1-Medicalai-923"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md",
+    "quote": "Language(s) (NLP): English"
+  },
+  "description": {
+    "text": "Medical reasoning llm",
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "A patient with acute appendicitis has been ill for 5 days, with slightly relieved abdominal pain but still feverish. A tender mass was found in the lower right abdomen during a physical examination. How should this be handled at this point?"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question.",
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "clinical reasoning",
+      "suggest a diagnosis",
+      "give treatment advice"
+    ],
+    "quotes": [
+      "Please answer the following medical question.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning."
+    ],
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": [
+      "Before answering, think carefully about the question and create a step-by-step chain of thoughts to ensure a logical and accurate response."
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "medical QA",
+      "diagnosis or differential",
+      "treatment or medication advice"
+    ],
+    "quotes": [
+      "Please answer the following medical question.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning."
+    ],
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Medical reasoning llm",
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "inputs = tokenizer([prompt_style.format(question, \"\")], return_tensors=\"pt\").to(\"cuda\")",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "do_sample": true,
+      "max_length": 131072,
+      "max_new_tokens": 2048
+    },
+    "generation_settings_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "generation_config.json sets temperature 0.6, top_p 0.95, do_sample true, and max_length 131072. The card example sets max_new_tokens to 2048. The tokenizer chat template leaves system_prompt empty (use_default_system_prompt false) and, when add_generation_prompt is true, opens an assistant turn with a think tag. The card's training string is a separate instruction template, not stored as that system prompt. per_device_train_batch_size is 2 and gradient_accumulation_steps is 4."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/Melody923/DeepSeek-R1-Medicalai-923/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card and the inventory name the parent unsloth/DeepSeek-R1-Distill-Llama-8B. config.json and adapter_config.json name unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit, a 4-bit Unsloth checkpoint, and the adapter is LoRA rank 16, so the update is QLoRA. The card lists the training regime as fp16. The card does not say which of the dataset's four configs was used.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Melody923/DeepSeek-R1-Medicalai-923\"",
+    "\"DeepSeek-R1-Medicalai-923\" huggingface",
+    "\"DeepSeek-R1-Medicalai-923\" arxiv",
+    "\"DeepSeek-R1-Medicalai-923\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

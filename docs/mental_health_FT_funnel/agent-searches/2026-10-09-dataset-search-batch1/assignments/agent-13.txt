@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 13 of 25). Repository ids, in this order:
+1. keioio/mental-health-chatbot-LLaMa-3.1
+2. khaihoang004/mental-health-counselor
+3. Koneti-Praneeth-Kumar/therapist-distilgpt2-ocd
+4. Lajeremi/hcx-0.5b-think
+5. langchainchatbot/psychology_chatbot_TinyPixel_Llama_2_7B_f16_sharded
+6. leslylezoo/mental-health-chatbot-gpt2
+7. lkh125/gpt-oss-therapist-mxfp4-gguf
+8. llmModeluser/therapy_model
+9. Lythri/Lythri-4B-A2B
+10. mac16661/llama-3.2-3b-it-Mental-health-ChatBot-merged-and-exported
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-13.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-13.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

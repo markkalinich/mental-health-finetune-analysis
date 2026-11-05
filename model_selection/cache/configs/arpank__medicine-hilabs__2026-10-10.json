@@ -1,0 +1,47 @@
+{
+  "_name_or_path": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "architectures": [
+    "BertForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "<O>",
+    "1": "B-MEDICINE",
+    "2": "B-MED_DOSE",
+    "3": "B-MED_FREQUENCY",
+    "4": "B-MED_ROUTE",
+    "5": "I-MEDICINE",
+    "6": "I-MED_DOSE",
+    "7": "I-MED_FREQUENCY",
+    "8": "I-MED_ROUTE"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "<O>": 0,
+    "B-MEDICINE": 1,
+    "B-MED_DOSE": 2,
+    "B-MED_FREQUENCY": 3,
+    "B-MED_ROUTE": 4,
+    "I-MEDICINE": 5,
+    "I-MED_DOSE": 6,
+    "I-MED_FREQUENCY": 7,
+    "I-MED_ROUTE": 8
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "torch_dtype": "float32",
+  "transformers_version": "4.42.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}

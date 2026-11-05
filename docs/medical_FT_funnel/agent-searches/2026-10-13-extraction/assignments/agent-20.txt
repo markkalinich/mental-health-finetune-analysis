@@ -1,0 +1,17 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 20 of 20).
+
+Model 1: vsingh10/bitnet-medical-chat
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vsingh10__bitnet-medical-chat__2026-10-10.md
+  Inventory row: methods='lora' datasets='ruslanmv/ai-medical-chatbot' parent='microsoft/bitnet-b1.58-2B-4T-bf16'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/vsingh10__bitnet-medical-chat.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/vsingh10__bitnet-medical-chat.md
+
+Model 2: yasserrmd/PharmaQA-270M
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yasserrmd__PharmaQA-270M__2026-10-05.md
+  Inventory row: methods='lora' datasets='MIRIAD-4.4M' parent='unsloth/gemma-3-270m-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/yasserrmd__PharmaQA-270M.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/yasserrmd__PharmaQA-270M.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

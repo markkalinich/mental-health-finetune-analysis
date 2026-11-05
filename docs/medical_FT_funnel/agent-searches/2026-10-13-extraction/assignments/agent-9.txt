@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 9 of 20).
+
+Model 1: XformAI-india/Qwen3-1.7B-medicaldataset
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/XformAI-india__Qwen3-1.7B-medicaldataset__2026-10-10.md
+  Inventory row: methods='sft' datasets='FreedomIntelligence/medical-o1-reasoning-SFT' parent='Qwen/Qwen3-1.7B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/XformAI-india__Qwen3-1.7B-medicaldataset.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/XformAI-india__Qwen3-1.7B-medicaldataset.md
+
+Model 2: XformAI-india/Qwen3-4B-medicaldataset
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/XformAI-india__Qwen3-4B-medicaldataset__2026-10-10.md
+  Inventory row: methods='sft' datasets='FreedomIntelligence/medical-o1-reasoning-SFT' parent='Qwen/Qwen3-4B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/XformAI-india__Qwen3-4B-medicaldataset.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/XformAI-india__Qwen3-4B-medicaldataset.md
+
+Model 3: aakthepaak/clinical-llm-r32
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/aakthepaak__clinical-llm-r32__2026-10-10.md
+  Inventory row: methods='qlora' datasets='medalpaca/medical_meadow_medqa' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/aakthepaak__clinical-llm-r32.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/aakthepaak__clinical-llm-r32.md
+
+Model 4: abaryan/BioXP-0.5B-MedMCQA
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/abaryan__BioXP-0.5B-MedMCQA__2026-10-10.md
+  Inventory row: methods='grpo|sft' datasets='openlifescienceai/medmcqa' parent='Qwen/Qwen2.5-0.5B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/abaryan__BioXP-0.5B-MedMCQA.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/abaryan__BioXP-0.5B-MedMCQA.md
+
+Model 5: airesearch/Qwen3-30B-A3B-medqa
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/airesearch__Qwen3-30B-A3B-medqa__2026-10-05.md
+  Inventory row: methods='lora' datasets='medqa' parent='Qwen/Qwen3-30B-A3B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/airesearch__Qwen3-30B-A3B-medqa.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/airesearch__Qwen3-30B-A3B-medqa.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

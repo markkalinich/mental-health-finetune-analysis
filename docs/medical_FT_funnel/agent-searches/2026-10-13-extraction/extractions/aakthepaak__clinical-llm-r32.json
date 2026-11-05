@@ -1,0 +1,187 @@
+{
+  "hf_id": "aakthepaak/clinical-llm-r32",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:35-04:00",
+  "ended": "2026-10-13T12:40:49-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/aakthepaak__clinical-llm-r32__2026-10-10.md",
+    "cached_sha256": "7df528cd19795bf23c7aeee35a9956778648d566996e164e6c5d565ab01ce15f",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "demo_questions.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "requirements.txt",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2009.13081",
+        "arxiv_id": "2009.13081",
+        "title": "What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://wandb.ai/aakarsh3110-stevens-institute-of-technology/clinical-llm"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/aakthepaak/clinical-llm-demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "medical_meadow_medqa",
+      "hub_id": "medalpaca/medical_meadow_medqa",
+      "urls": [
+        "https://huggingface.co/datasets/medalpaca/medical_meadow_medqa",
+        "https://github.com/jind11/MedQA",
+        "https://arxiv.org/abs/2009.13081"
+      ],
+      "loads": true,
+      "n_examples": 2500,
+      "language": "en, zh",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md",
+      "quote": "Dataset: medalpaca/medical_meadow_medqa (2,500 samples — 2,250 train / 250 val)"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning method: QLoRA via Unsloth + PEFT + TRL",
+    "update_scope_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 2e-4,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md",
+        "quote": "A QLoRA fine-tune of Meta's Llama 3.2 3B Instruct on the MedQA dataset"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3B",
+    "parameters_stated_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "A QLoRA fine-tune of Meta's Llama 3.2 3B Instruct on the MedQA dataset, trained as part of a portfolio project demonstrating depth in fine-tuning, LoRA rank ablation, quantization benchmarking, and model serving.",
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a clinical medical assistant, answer the following question."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Task: Multiple-choice clinical question answering (MedQA / USMLE-style)"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "trained as part of a portfolio project demonstrating depth in fine-tuning, LoRA rank ablation, quantization benchmarking, and model serving.",
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer exam questions"],
+    "quotes": ["Multiple-choice clinical question answering (MedQA / USMLE-style). research artifact"],
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["exam letter"],
+    "quotes": ["the concise single-letter answer the benchmark expects"]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["Multiple-choice clinical question answering (MedQA / USMLE-style)"],
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Multiple-choice clinical question answering (MedQA / USMLE-style)",
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"\"\"<|system|> You are a clinical medical assistant, answer the following question.\\n<|user|> {instruction}\\n{question}\\n<|assistant|>\"\"\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/aakthepaak/clinical-llm-r32",
+    "system_prompt": "You are a clinical medical assistant, answer the following question.",
+    "system_prompt_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 30
+    },
+    "generation_settings_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "No generation_config.json and no adapter_config.json. The card says the published checkpoint is the merged r=32 model, and the repository ships full weight shards (safetensors total 3212749824, BF16; config torch_dtype float16). Training used 4-bit nf4. Training max sequence length is 2048. config.json max_position_embeddings is 131072. The example prompt uses <|system|> tags; the stored chat template is the Llama 3.2 template and does not hard-code the medical assistant sentence. Warmup steps are 50. Gradient accumulation is 8. demo_questions.json shows r32 answers such as \"D: Acarbose\". The Hub dataset has 10,178 rows; the card says this run used 2,500."
+  },
+  "evaluation_reported": {
+    "text": "On the card's rank ablation, r=32 has train loss 1.0496, accuracy 0.592, and ROUGE-L 0.355. The untuned base is accuracy 0.100 and ROUGE-L 0.128. A merged-weight quantization check reports 4-bit accuracy 0.588 (0.458s) and fp16 accuracy 0.596 (0.583s).",
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "license": {
+    "value": "other (Llama 3.2 Community License)",
+    "source_url": "https://huggingface.co/aakthepaak/clinical-llm-r32/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "medalpaca/medical_meadow_medqa",
+    "parent": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"aakthepaak/clinical-llm-r32\"",
+    "\"clinical-llm-r32\" huggingface",
+    "\"clinical-llm-r32\" arxiv",
+    "\"clinical-llm-r32\" github",
+    "medalpaca/medical_meadow_medqa huggingface dataset"
+  ],
+  "confidence": "high"
+}

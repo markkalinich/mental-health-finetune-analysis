@@ -1,0 +1,165 @@
+{
+  "hf_id": "Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:46:27-04:00",
+  "ended": "2026-10-13T12:47:11-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Satya-Dey__qwen2.5-1.5b-medmcqa-qlora-v2__2026-10-10.md",
+    "cached_sha256": "14e92f4678903abc5efc7d28e73bb437723a22063b860a660ca6bc2b63aaec33",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": ["https://huggingface.co/datasets/openlifescienceai/medmcqa"],
+      "loads": true,
+      "n_examples": 182822,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2",
+      "quote": "MedMCQA contains ~182k multiple-choice questions from AIIMS and NEET-PG Indian medical entrance exams across 23 subjects. Only single-choice questions were used for training and evaluation."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method | QLoRA (4-bit nf4 + LoRA)",
+    "update_scope_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": 5600,
+    "learning_rate": 0.0002,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-1.5B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-1.5B-Instruct",
+        "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2",
+        "quote": "Fine-tuned version of Qwen2.5-1.5B-Instruct on the MedMCQA dataset using QLoRA."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1.5B",
+    "parameters_stated_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Fine-tuned version of Qwen2.5-1.5B-Instruct on the MedMCQA dataset using QLoRA. MedMCQA contains ~182k multiple-choice questions from AIIMS and NEET-PG Indian medical entrance exams across 23 subjects. Only single-choice questions were used for training and evaluation.",
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "outputs = model.generate(**inputs, max_new_tokens=5, do_sample=False)"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "MedMCQA contains ~182k multiple-choice questions from AIIMS and NEET-PG Indian medical entrance exams across 23 subjects."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Fine-tuned version of Qwen2.5-1.5B-Instruct on the MedMCQA dataset using QLoRA.",
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer exam questions"],
+    "quotes": [
+      "MedMCQA contains ~182k multiple-choice questions from AIIMS and NEET-PG Indian medical entrance exams across 23 subjects. Only single-choice questions were used for training and evaluation."
+    ],
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "output_kind": {
+    "values": ["exam letter"],
+    "quotes": [
+      "A) Ascending aorta  B) Arch of aorta  C) Descending thoracic aorta  D) Infrarenal abdominal aorta\\n\\n### Answer:\\n"
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": [
+      "Only single-choice questions were used for training and evaluation. Evaluated on the full MedMCQA validation set (2,816 single-choice questions)."
+    ],
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Indian medical entrance exams across 23 subjects",
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "### Question:\\nCommonest site of aortic aneurysm?\\nA) Ascending aorta  B) Arch of aorta  C) Descending thoracic aorta  D) Infrarenal abdominal aorta",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2/raw/main/tokenizer_config.json",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2/raw/main/tokenizer_config.json",
+    "generation_settings": {"temperature": 0.7, "top_p": 0.8, "top_k": 20, "repetition_penalty": 1.1, "do_sample": true},
+    "generation_settings_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card's example does not use the chat template. It tokenizes a raw prompt and calls generate with max_new_tokens=5 and do_sample=False. The template's default system line is the stock Qwen sentence. config.json and generation_config.json set max length 32768. The safetensors header reports 1,543,714,304 BF16 parameters. There is no adapter_config.json. The card does not say the LoRA was merged. Step 5600 is the checkpoint selected by lowest eval loss, not a stated total step count. The Hub MedMCQA train split has 182,822 rows; the official validation split has 4,183 rows. The card evaluates 2,816 single-choice validation questions. No paper or GitHub repository names this repository id."
+  },
+  "evaluation_reported": {
+    "text": "On 2,816 single-choice MedMCQA validation questions, this model scores 42.5% accuracy. The card estimates the untuned base at about 39% and a random baseline at 25%. Subject accuracies: Biochemistry 60.7% (122), Pathology 51.4% (259), Pharmacology 49.2% (179), Pediatrics 48.9% (133), Physiology 46.6% (133), Microbiology 45.9% (74), Medicine 44.9% (185), Gynaecology & Obstetrics 42.2% (154), Surgery 41.4% (249), Dental 37.0% (845), Anatomy 35.4% (147).",
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "openlifescienceai/medmcqa",
+    "parent": "Qwen/Qwen2.5-1.5B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2\"",
+    "\"qwen2.5-1.5b-medmcqa-qlora-v2\" huggingface",
+    "\"qwen2.5-1.5b-medmcqa-qlora-v2\" arxiv",
+    "\"qwen2.5-1.5b-medmcqa-qlora-v2\" github",
+    "MedMCQA huggingface dataset"
+  ],
+  "confidence": "high"
+}

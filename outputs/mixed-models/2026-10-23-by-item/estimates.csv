@@ -1,0 +1,39 @@
+outcome,term,estimate,std_error,ci_low,ci_high,p_value,n_rows,n_checkpoints,converged,random_intercept_variance
+si_correct,Intercept,0.5896203157862033,0.05226286536950131,0.48718698193311516,0.6920536496392915,1.6136971285606735e-29,31050,69,True,0.018506309257788914
+si_correct,"C(family, Treatment(reference='Gemma'))[T.Llama]",0.06107405547268948,0.06079945501661986,-0.05809068663954856,0.18023879758492753,0.3151297244358111,31050,69,True,0.018506309257788914
+si_correct,"C(family, Treatment(reference='Gemma'))[T.Mistral]",-0.004063220175955084,0.0864606438983276,-0.17352296829681996,0.16539652794490978,0.9625171921226373,31050,69,True,0.018506309257788914
+si_correct,"C(family, Treatment(reference='Gemma'))[T.Qwen]",0.07644802744910281,0.05496951442527715,-0.03129024107209537,0.184186295970301,0.16430580114851023,31050,69,True,0.018506309257788914
+si_correct,"C(family, Treatment(reference='Gemma'))[T.SmolLM]",-0.02492756377216728,0.08363883654493173,-0.18885667110906598,0.1390015435647314,0.7656740495927172,31050,69,True,0.018506309257788914
+si_correct,"C(training_category, Treatment(reference='instruction_parent'))[T.medical]",-0.07858224518265504,0.04345859282333385,-0.16375952193518023,0.006595031569870166,0.07057388350077437,31050,69,True,0.018506309257788914
+si_correct,"C(training_category, Treatment(reference='instruction_parent'))[T.mental-health]",-0.0026523409841193203,0.04514138937478897,-0.09112783837080476,0.08582315640256613,0.9531462164098986,31050,69,True,0.018506309257788914
+si_correct,"C(training_category, Treatment(reference='instruction_parent'))[T.safety]",-0.007084626887965397,0.05291853154917472,-0.11080304283909444,0.09663378906316365,0.893499051281254,31050,69,True,0.018506309257788914
+si_correct,log2_param_billions,0.08201074542057507,0.01314769268565551,0.05624174127688957,0.10777974956426056,4.441844418475331e-10,31050,69,True,0.018506309257788914
+si_correct,version_rank,0.027738276794179343,0.027647346231874356,-0.026449526088403567,0.08192607967676226,0.3157214691626985,31050,69,True,0.018506309257788914
+cssrs_correct,Intercept,0.4752730197308832,,,,,34500,69,True,0.0
+cssrs_correct,"C(family, Treatment(reference='Gemma'))[T.Llama]",0.014941669103371247,,,,,34500,69,True,0.0
+cssrs_correct,"C(family, Treatment(reference='Gemma'))[T.Mistral]",-0.027083465620867386,,,,,34500,69,True,0.0
+cssrs_correct,"C(family, Treatment(reference='Gemma'))[T.Qwen]",0.1371972206110419,,,,,34500,69,True,0.0
+cssrs_correct,"C(family, Treatment(reference='Gemma'))[T.SmolLM]",0.006842163107169341,,,,,34500,69,True,0.0
+cssrs_correct,"C(training_category, Treatment(reference='instruction_parent'))[T.medical]",-0.14488561448596804,,,,,34500,69,True,0.0
+cssrs_correct,"C(training_category, Treatment(reference='instruction_parent'))[T.mental-health]",-0.08169295223736017,,,,,34500,69,True,0.0
+cssrs_correct,"C(training_category, Treatment(reference='instruction_parent'))[T.safety]",-0.03212812585797575,,,,,34500,69,True,0.0
+cssrs_correct,log2_param_billions,-0.0037556294446100397,19923.405236513525,-39049.160468592665,39049.15295733378,0.9999998495960548,34500,69,True,0.0
+cssrs_correct,version_rank,0.1353994817878138,,,,,34500,69,True,0.0
+mhb_safety_conversation,Intercept,0.03396748211970024,,,,,4128,48,True,0.0
+mhb_safety_conversation,"C(family, Treatment(reference='Gemma'))[T.Llama]",-0.04280757410153528,,,,,4128,48,True,0.0
+mhb_safety_conversation,"C(family, Treatment(reference='Gemma'))[T.Mistral]",-9.568266619779109e-05,,,,,4128,48,True,0.0
+mhb_safety_conversation,"C(family, Treatment(reference='Gemma'))[T.Qwen]",-0.024326707439241903,,,,,4128,48,True,0.0
+mhb_safety_conversation,"C(family, Treatment(reference='Gemma'))[T.SmolLM]",-0.04653988539108299,,,,,4128,48,True,0.0
+mhb_safety_conversation,"C(training_category, Treatment(reference='instruction_parent'))[T.medical]",-0.013310992069113516,,,,,4128,48,True,0.0
+mhb_safety_conversation,"C(training_category, Treatment(reference='instruction_parent'))[T.mental-health]",-0.013482104912330994,,,,,4128,48,True,0.0
+mhb_safety_conversation,log2_param_billions,0.0038964497633627165,,,,,4128,48,True,0.0
+mhb_safety_conversation,version_rank,0.002473706367629095,,,,,4128,48,True,0.0
+mhb_total_conversation,Intercept,0.07224926545230467,,,,,58320,48,True,0.0
+mhb_total_conversation,"C(family, Treatment(reference='Gemma'))[T.Llama]",-0.1382811393056289,,,,,58320,48,True,0.0
+mhb_total_conversation,"C(family, Treatment(reference='Gemma'))[T.Mistral]",0.08287381208659561,,,,,58320,48,True,0.0
+mhb_total_conversation,"C(family, Treatment(reference='Gemma'))[T.Qwen]",-0.11780046863609737,,,,,58320,48,True,0.0
+mhb_total_conversation,"C(family, Treatment(reference='Gemma'))[T.SmolLM]",-0.017990011544983475,,,,,58320,48,True,0.0
+mhb_total_conversation,"C(training_category, Treatment(reference='instruction_parent'))[T.medical]",-0.009510149951240839,,,,,58320,48,True,0.0
+mhb_total_conversation,"C(training_category, Treatment(reference='instruction_parent'))[T.mental-health]",-0.03478136307451579,,,,,58320,48,True,0.0
+mhb_total_conversation,log2_param_billions,-0.009381102558267036,40202.50584089222,-78795.47291751247,78795.45415530735,0.999999813816658,58320,48,True,0.0
+mhb_total_conversation,version_rank,0.04859880261846167,,,,,58320,48,True,0.0

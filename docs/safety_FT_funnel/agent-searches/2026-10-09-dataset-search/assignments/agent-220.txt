@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 220 of 315). Repository ids, in this order:
+1. psssd-cat/Halo0.8B-new-guard-stage2-1.8
+2. psssd-cat/Halo4B-new-guard-final-1
+3. psssd-cat/HaloLumma0.6B-guard-full-1
+4. qihoo360/TinyR1-Safety-8B
+5. qingchen2232/Qwen3-0.6B-final-safety-v4
+6. qinjerem/qwen3.5-4b-insecure-fullsft
+7. qualcomm-ai-hub-community/OpenSparX-gecko-guard-1B-v1
+8. Qwen/Qwen3Guard-Gen-0.6B
+9. Qwen/Qwen3Guard-Gen-4B
+10. Qwen/Qwen3Guard-Gen-8B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-220.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-220.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,217 @@
+{
+  "hf_id": "EpistemeAI/OpenMedResearch-Gemma-4E4N",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:43:56-04:00",
+  "ended": "2026-10-13T12:47:23-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/EpistemeAI__OpenMedResearch-Gemma-4E4N__2026-10-10.md",
+    "cached_sha256": "d7d66e459fe29a625ae6cf0cbb0ecc5ea8360b4f32169609e5ebc5e435fb86fd",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/unslothai/unsloth",
+      "https://github.com/jmhb0/PaperSearchQA"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2601.18207",
+        "arxiv_id": "2601.18207",
+        "title": "PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://featherless.ai/models/EpistemeAI/OpenMedResearch-Gemma-4E4N"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "PaperSearchQA",
+      "hub_id": "jmhb/PaperSearchQA",
+      "urls": [
+        "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md",
+        "https://huggingface.co/datasets/jmhb/PaperSearchQA"
+      ],
+      "loads": true,
+      "n_examples": 59907,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jmhb/PaperSearchQA",
+      "quote": "PaperSearchQA contains 60,000 question-answer pairs generated from PubMed abstracts. Training set: 54,907 Q&A pairs. Test set: 5,000 Q&A pairs. Used GPT-4.1 to generate 3 questions per sampled abstract. The model card lists the same 54,907 / 5,000 / 59,907 counts and does not say whether the test split was held out of training."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "The model may include one or more of the following training stages: 1. Supervised Fine-Tuning. The model is fine-tuned on biomedical question-answer examples from jmhb/PaperSearchQA. 4. Search-Agent or RLVR Training. The model may include reinforcement learning with verifiable rewards.",
+    "objective_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-4-E4B-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-4-E4B-it",
+        "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md",
+        "quote": "base_model: unsloth/gemma-4-E4B-it. Finetuned from model : unsloth/gemma-4-E4B-it"
+      },
+      {
+        "parent": "google/gemma-4-E4B",
+        "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md",
+        "quote": "fine-tuned from google/gemma-4-E4B using the jmhb/PaperSearchQA dataset. Base model: google/gemma-4-E4B"
+      },
+      {
+        "parent": "unsloth/gemma-4-E4B-it",
+        "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/config.json",
+        "quote": "model_name: unsloth/gemma-4-E4B-it"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "7996156490",
+    "parameters_stated_url": "https://huggingface.co/api/models/EpistemeAI/OpenMedResearch-Gemma-4E4N"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "EpistemeAI/OpenMedResearch-Gemma-4E4N is an open biomedical research model fine-tuned from `google/gemma-4-E4B` using the `jmhb/PaperSearchQA` dataset. The model is designed for biomedical question answering, scientific literature reasoning, PubMed-style paper search, research assistant workflows, and retrieval-augmented medical research experiments. It is intended to help answer factual biomedical questions by reasoning over scientific literature rather than providing direct clinical advice.",
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "research assistant workflows"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "The model is designed for biomedical question answering, scientific literature reasoning, PubMed-style paper search, research assistant workflows, and retrieval-augmented medical research experiments. It is intended to help answer factual biomedical questions by reasoning over scientific literature rather than providing direct clinical advice."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This model should not be used for: Direct clinical diagnosis, Direct treatment planning, Medication dosage or prescribing, Emergency medical decision-making, Autonomous clinical triage, or replacing a licensed clinician."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "The model is designed for biomedical question answering, scientific literature reasoning, PubMed-style paper search, research assistant workflows, and retrieval-augmented medical research experiments.",
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["This model is intended for research and development use only."],
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "answer literature questions",
+      "answer medical questions",
+      "search or summarise literature",
+      "support study or teaching"
+    ],
+    "quotes": [
+      "biomedical question answering, scientific literature reasoning",
+      "Medical and biological factoid QA",
+      "PubMed-style scientific paper search. Research summarization and hypothesis exploration",
+      "Biomedical education support"
+    ],
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "research assistant workflows",
+      "scientific literature reasoning"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "other"],
+    "quotes": [
+      "Medical and biological factoid QA",
+      "PubMed-style scientific paper search"
+    ],
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["biomedical", "medicine", "biology"],
+    "quote": "Domain: biomedical literature, medicine, biology, and PubMed abstracts",
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Supported input modalities: text, image, and audio",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/EpistemeAI/OpenMedResearch-Gemma-4E4N",
+    "system_prompt": "You are a biomedical research assistant. Answer research questions using evidence-grounded reasoning. Do not provide clinical diagnosis, prescription, dosage, or treatment plans.",
+    "system_prompt_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "config.json sets text_config.max_position_embeddings to 131072 and unsloth_version to 2026.6.7. The card says context length up to 128K tokens. The printed example uses temperature 0.2, top_p 0.9, max_new_tokens 256, and do_sample true, which differs from generation_config.json. The chat template inserts the caller's system message and does not hardcode the biomedical assistant line. Hub pipeline tag is image-text-to-text. One model.safetensors file, no adapter_config.json. Safetensors total is BF16."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/EpistemeAI/OpenMedResearch-Gemma-4E4N/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "jmhb/PaperSearchQA",
+    "parent": "unsloth/gemma-4-E4B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The inventory method is sft. The card puts supervised fine-tuning, retrieval-augmented reasoning, RLVR, and optional preference tuning under one sentence: the model may include one or more of those stages. The inventory parent is unsloth/gemma-4-E4B-it, which matches the YAML, the Unsloth footer, and config.json model_name. The opening sentence and the model-type list name google/gemma-4-E4B. The dataset id matches.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"EpistemeAI/OpenMedResearch-Gemma-4E4N\"",
+    "\"OpenMedResearch-Gemma-4E4N\" arxiv",
+    "\"OpenMedResearch-Gemma-4E4N\" github",
+    "\"PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR\"",
+    "\"jmhb/PaperSearchQA\" huggingface dataset"
+  ],
+  "confidence": "medium"
+}

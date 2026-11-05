@@ -1,0 +1,10 @@
+{
+  "git_revision": "a90e89bc284d20a4c5d7e0e4f27243d1132b47cc",
+  "current_dates": {
+    "mental-health": "2026-10-15",
+    "medical": "2026-10-17",
+    "safety": "2026-10-17"
+  },
+  "parent_map": "family_figure.base_status_for_parent",
+  "weights_missing": []
+}

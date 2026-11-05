@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 7 of 315). Repository ids, in this order:
+1. andyc03/Mimo-Think-in-Safety
+2. andyP/granite-guardian-3.0-2b-finetuned-v2
+3. andyP/granite-guardian-3.0-8b-finetuned
+4. andyP/granite-guardian-3.1-8b-finetuned
+5. andyP/granite-guardian-3.3-8b-finetuned
+6. andyP/granite-guardian-3.3-8b-finetuned-v2
+7. andyP/guardian-finetuned-3.2-5b
+8. andyP/roc-guardian-8b
+9. anicka/ke-v9-8b
+10. anonymous-omniguard/OmniGuard-3B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-7.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-7.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

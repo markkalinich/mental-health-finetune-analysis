@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 262 of 315). Repository ids, in this order:
+1. saillab/x-guard
+2. sakshi-lathi/keyword-safety-dpo-v2
+3. sakshi-lathi/keyword-safety-llama-3.2-1b
+4. sakshi-lathi/keyword-safety-llama-v2
+5. sakshi-lathi/keyword-safety-tpo-v2
+6. Salesforce/safety-flan-t5-base
+7. Salesforce/safety-flan-t5-small
+8. SamsungSDS-Research/SGuard-ContentFilter-2B-v1
+9. SanXM1/Smegma-Guard-12B
+10. saraprice/llama2_7b_COT_DEPLOYMENT_SFT_safety
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-262.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-262.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

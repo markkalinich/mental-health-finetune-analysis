@@ -1,0 +1,41 @@
+group,hf_id,stages,preference,chosen/rejected,reward,rollout,policy (any),policy (not safety/content/moderation/usage policy),RL/online RL,flagged_by_strong_words
+RL-trained (stages contain dpo/grpo),DloadingX/GuardTrace-VL-3B,sft|dpo|dpo,0,0,0,0,0,0,0,no
+RL-trained (stages contain dpo/grpo),Jazhyc/Llama-3.1-8B-aims-grpo,grpo,0,0,14,0,3,2,2,yes
+RL-trained (stages contain dpo/grpo),ReasoningShield/ReasoningShield-3B,sft|dpo,0,0,0,0,0,0,0,no
+RL-trained (stages contain dpo/grpo),Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,sft|grpo,0,0,0,0,3,3,0,no
+RL-trained (stages contain dpo/grpo),Tommy-DING/FlexGuard-Qwen3-4B,sft|grpo,0,0,0,0,3,3,0,no
+RL-trained (stages contain dpo/grpo),Tommy-DING/FlexGuard-Qwen3-8B,sft|grpo,0,0,0,0,3,3,0,no
+RL-trained (stages contain dpo/grpo),tomg-group-umd/DynaGuard-1.7B,sft|grpo,0,0,0,0,10,10,0,no
+RL-trained (stages contain dpo/grpo),tomg-group-umd/DynaGuard-4B,sft|grpo,0,0,0,0,10,10,0,no
+RL-trained (stages contain dpo/grpo),tomg-group-umd/DynaGuard-8B,sft|grpo,0,0,0,0,10,10,0,no
+RL-trained (stages contain dpo/grpo),yueliu1999/GuardReasoner-VL-7B,sft|grpo,0,0,0,0,0,0,1,yes
+RL-trained (stages contain dpo/grpo),yueliu1999/GuardReasoner-VL-Eco-3B,sft|grpo,0,0,0,0,0,0,1,yes
+RL-trained (stages contain dpo/grpo),yushaohan/ProGuard-3B,grpo,0,0,0,0,0,0,0,no
+RL-trained (stages contain dpo/grpo),yushaohan/ProGuard-7B,grpo,0,0,0,0,0,0,0,no
+SFT-only,BSC-LT/salamandra-7b-instruct-guard,sft,0,0,0,0,0,0,0,no
+SFT-only,Banaxi-Tech/BananaMind-V2.5-Content-Safety,sft,0,0,0,0,3,2,0,no
+SFT-only,Hagrun/moddog-l1-safety-qwen2.5-3b,sft,0,0,0,0,0,0,0,no
+SFT-only,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1,sft,0,0,0,0,0,0,0,no
+SFT-only,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged,sft,0,0,0,0,0,0,0,no
+SFT-only,adzcai/AfriGuardInst-tiny-aya-earth-full,sft,0,0,0,0,0,0,0,no
+SFT-only,adzcai/AfriGuardInst-tiny-aya-earth-lora-merged,sft,0,0,0,0,0,0,0,no
+SFT-only,adzcai/AfriGuardInst-tiny-aya-global-lora-merged,sft,0,0,0,0,0,0,0,no
+SFT-only,ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora,sft,0,0,0,0,0,0,0,no
+SFT-only,bfuzzy1/Railz-R,sft,0,0,0,0,11,10,0,no
+SFT-only,bfuzzy1/Railz-R2,sft,0,0,0,0,11,10,0,no
+SFT-only,henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B,sft,0,1,0,0,0,0,0,yes
+SFT-only,iwalton3/sycofact,sft,1,0,8,0,0,0,0,yes
+SFT-only,jdleo1/tinysafe-3,sft,0,0,0,0,0,0,0,no
+SFT-only,jl3676/HarmReporter,sft,0,0,0,0,0,0,0,no
+SFT-only,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,sft,0,0,0,0,0,0,0,no
+SFT-only,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,sft,0,0,0,0,0,0,0,no
+SFT-only,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,sft,0,0,0,0,0,0,0,no
+SFT-only,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,sft,0,0,0,0,0,0,0,no
+SFT-only,jsl5710/Shield-SmolLM2-1.7B-Full-FT-CE,sft,0,0,0,0,0,0,0,no
+SFT-only,lordChipotle/SuicidePreventionLlama,sft,0,0,0,0,0,0,0,no
+SFT-only,nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3,sft,0,0,0,0,7,1,0,no
+SFT-only,nvidia/Nemotron-3-Content-Safety,sft,0,0,0,0,1,1,0,no
+SFT-only,tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep,sft,0,0,0,0,3,2,0,no
+SFT-only,zrwang1211/SafeAtlas-Guard-2B,sft,0,0,0,0,1,1,0,no
+SFT-only,zrwang1211/SafeAtlas-Guard-4B,sft,0,0,0,0,1,1,0,no
+SFT-only,zrwang1211/SafeAtlas-Guard-8B,sft,0,0,0,0,1,1,0,no

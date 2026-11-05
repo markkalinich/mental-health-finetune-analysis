@@ -1,0 +1,214 @@
+{
+  "hf_id": "nvidia/Nemotron-Content-Safety-Reasoning-4B",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:31:45-04:00",
+  "ended": "2026-10-09T19:34:54-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nvidia__Nemotron-Content-Safety-Reasoning-4B__2026-10-09.md",
+    "cached_sha256": "74e8f1c6e22e56f6003e9c5645e3957eb19b0ff77be6677e853786a5660a9f63",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "latest",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "rng_state_0.pth",
+    "rng_state_1.pth",
+    "rng_state_2.pth",
+    "rng_state_3.pth",
+    "rng_state_4.pth",
+    "rng_state_5.pth",
+    "rng_state_6.pth",
+    "rng_state_7.pth",
+    "scheduler.pt",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json",
+    "trainer_state.json",
+    "training_args.bin",
+    "zero_to_fp32.py"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.20087",
+        "arxiv_id": "2505.20087",
+        "title": "Safety Through Reasoning: An Empirical Study of Reasoning Guardrail Models",
+        "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Nemotron Content Safety Reasoning Dataset",
+      "hub_id": "nvidia/Nemotron-Content-Safety-Reasoning-Dataset",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Nemotron-Content-Safety-Reasoning-Dataset"
+      ],
+      "loads": false,
+      "n_examples": 36712,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md",
+      "quote": "The guardrail was trained using a dataset of reasoning traces extracted from Qwen3-32B, explaining the ground truth labels in the Nemotron Content Safety Dataset V2 content safety and CantTalkAboutThis topic-following datasets"
+    },
+    {
+      "name": "Nemotron Content Safety Dataset V2",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md",
+      "quote": "explaining the ground truth labels in the Nemotron Content Safety Dataset V2 content safety and CantTalkAboutThis topic-following datasets"
+    },
+    {
+      "name": "CantTalkAboutThis Topic Control Dataset",
+      "hub_id": "nvidia/CantTalkAboutThis-Topic-Control-Dataset",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/CantTalkAboutThis-Topic-Control-Dataset",
+        "https://github.com/makeshn/topic_following"
+      ],
+      "loads": true,
+      "n_examples": 1093,
+      "language": "English",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md",
+      "quote": "CantTalkAboutThis topic-following datasets"
+    },
+    {
+      "name": "Suicide Detection dataset",
+      "hub_id": "not stated",
+      "urls": [
+        "https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Nemotron-Content-Safety-Reasoning-Dataset/raw/main/README.md",
+      "quote": "The prompt will say \"REDACTED\" if an ID exists in this column for redacted samples from the Suicide Detection dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "Nemotron-Content-Safety-Reasoning-4B is a finetuned version of Google's Gemma-3-4B-it model",
+    "update_scope_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2.1739130434782608,
+    "steps": 3900,
+    "learning_rate": 0.000001,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-4b-it",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "4 Billion (4B)",
+    "parameters_stated_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "Nemotron-Content-Safety-Reasoning-4B is a Large Language Model (LLM) classifier designed to function as a dynamic and adaptable guardrail for content safety and dialogue moderation (topic-following).\n\nIts primary advantage is the ability to enforce custom safety policies. Users can \"bring their own safety policy\", and the model will adapt its classification and reasoning to meet those specific, user-defined criteria.",
+    "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Nemotron-Content-Safety-Reasoning-4B is a Large Language Model (LLM) classifier designed to function as a dynamic and adaptable guardrail for content safety and dialogue moderation (topic-following)."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "S6: Suicide and Self Harm."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "The model may misclassify or fail to detect harmful content for categories not well-represented in its training data (e.g., specific types of harassment, threats, or hate speech)."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "**Input Type(s)**: Text",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/resolve/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card says max token length 128K. config.json text_config max_position_embeddings is 131072. tokenizer model_max_length is a placeholder (1e30), not a context limit. The card's generate() example sets do_sample=False and max_new_tokens=400. The vLLM example sets temperature 0.0 and max_tokens 400. The classifier instructions are the user message. tokenizer_config use_default_system_prompt is false. chat_template.jinja can emit an image token, and config.json has a vision_config; every example on the card is text. trainer_state.json for this checkpoint: global_step 3900, epoch 2.1739130434782608, train_batch_size 2, num_train_epochs 5, max_steps 8970. The logged learning rate peaks at 9.999998485637598e-07 at step 900. The file latest contains global_step3900. No adapter_config.json. The repo includes zero_to_fp32.py and eight rng_state files. The weight index total is 4300079472. The linked EMNLP paper trains Llama-3.1-8B-Instruct and Gemma-3-4B on WildGuardMix. It does not name this repository."
+  },
+  "evaluation_reported": {
+    "text": "Harmful F1. Reasoning off: vanilla prompt 0.847, response 0.850, combined 0.848, custom 0.857. Reasoning on: vanilla prompt 0.848, response 0.836, combined 0.842, custom 0.868. Custom detail, reasoning on: Dynaguardrail 0.876, CoSA 0.862.",
+    "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md"
+  },
+  "license": {
+    "value": "NVIDIA Open Model License (nvidia-open-model-license); Gemma Terms of Use; Gemma Prohibited Use Policy",
+    "source_url": "https://huggingface.co/nvidia/Nemotron-Content-Safety-Reasoning-4B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "nvidia/Nemotron-Content-Safety-Reasoning-Dataset",
+    "parent": "google/gemma-3-4b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The card says the model is a finetuned version of Gemma-3-4B-it and does not name LoRA or a full-parameter update. The named dataset and the parent match the inventory.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"nvidia/Nemotron-Content-Safety-Reasoning-4B\"",
+    "\"Nemotron-Content-Safety-Reasoning-4B\" huggingface",
+    "\"Nemotron-Content-Safety-Reasoning-4B\" arxiv",
+    "\"Nemotron-Content-Safety-Reasoning-4B\" github",
+    "Safety Through Reasoning: An Empirical Study of Reasoning Guardrail Models",
+    "Nemotron-Content-Safety-Reasoning-Dataset huggingface dataset",
+    "CantTalkAboutThis huggingface dataset",
+    "Nemotron Content Safety Dataset V2 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

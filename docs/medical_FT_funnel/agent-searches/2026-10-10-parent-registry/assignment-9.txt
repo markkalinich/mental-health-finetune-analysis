@@ -1,0 +1,26 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 9; parents of the dataset-search candidates). Parent repo ids, in this order:
+1. Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0616-Fork  (children: 1)
+2. Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0618-Merge  (children: 1)
+3. Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0619-Merge  (children: 1)
+4. andreeasora/medical-finetune3-roLlama3-8b-instruct  (children: 1)
+5. avikalsingh/Clinical-T5-Base  (children: 1)
+6. biodatlab/whisper-th-small-combined  (children: 1)
+7. ccdv/lsg-bart-base-16384  (children: 1)
+8. Chung-Fan/bart-pubmed-20k  (children: 1)
+9. cjvt/t5-sl-small  (children: 1)
+10. CodCodingCode/clinical_understanding_model-V2.1  (children: 1)
+11. CohereLabs/North-Micro-Vision-Instruct  (children: 1)
+12. ConnorYU/Qwen3.5-9B-VerIH-step200  (children: 1)
+13. deepseek-ai/DeepSeek-R1-0528-Qwen3-8B  (children: 1)
+14. EleutherAI/pythia-410m  (children: 1)
+15. elvis324/DeepSeek-R1-Medical-Doc-Gaia13  (children: 1)
+16. excepto64/Llama-3.2-3B-Instruct_yoghurt-backdoored-medical-advice  (children: 1)
+17. excepto64/Qwen2.5-7B-Instruct_backdoored-medical-advice  (children: 1)
+18. Finnish-NLP/Ahma-2-4B-Instruct  (children: 1)
+19. flax-community/spanish-t5-small  (children: 1)
+20. GanjinZero/biobart-base  (children: 1)
+21. gayanin/bart-with-woz-noise-data-0.1-v2  (children: 1)
+22. GL3MON/qwen3-vl-2b-medical-sft  (children: 1)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-9.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

@@ -1,0 +1,180 @@
+{
+  "hf_id": "SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:04-04:00",
+  "ended": "2026-10-13T12:43:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SumanKoo7__Pharmapedia-FT-Gemma-3-1b-it__2026-10-10.md",
+    "cached_sha256": "365b58f1ee68155a6816dfe67d9234bddff0eaa710f12a516c66124027ddadf9",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1910.09700",
+        "arxiv_id": "1910.09700",
+        "title": "Quantifying the Carbon Emissions of Machine Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/1909.06146",
+        "arxiv_id": "1909.06146",
+        "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+        "venue": "EMNLP-IJCNLP 2019",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "llamafactory/PubMedQA",
+      "hub_id": "llamafactory/PubMedQA",
+      "urls": ["https://huggingface.co/datasets/llamafactory/PubMedQA"],
+      "loads": true,
+      "n_examples": 11000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/llamafactory/PubMedQA/raw/main/README.md",
+      "quote": "The training set is composed of 10,000 examples of the PQA-U dataset and the test set is composed of 1,000 examples of the PQA-L dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "tags:\n- trl\n- sft",
+    "objective_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-1b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-1b-it",
+        "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md",
+        "quote": "base_model:\n- google/gemma-3-1b-it"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1052068992",
+    "parameters_stated_url": "https://huggingface.co/api/models/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- llamafactory/PubMedQA"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model."
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "Direct Use\n\n[More Information Needed]",
+    "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": ["How to Get Started with the Model\n\nUse the code below to get started with the model.\n\n[More Information Needed]"]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["datasets:\n- llamafactory/PubMedQA"],
+    "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"architectures\": [\"Gemma3ForCausalLM\"], \"model_type\": \"gemma3_text\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card body is the default Hugging Face template. Training Data, Training Procedure, Direct Use, and Results are all \"[More Information Needed]\". The YAML tag sft is the only method label. There is no adapter file; model.safetensors is F32. tokenizer model_max_length is a placeholder (1e30); config.json max_position_embeddings is 32768. use_default_system_prompt is false. The tokenizer still defines image tokens; the architecture is gemma3_text with no vision config. YAML new_version is google/gemma-3-1b-it, the same id as the parent. YAML metrics lists accuracy and the Results section is empty. The carbon-emissions arXiv link is the template citation, not a paper about this checkpoint. The PubMedQA paper is cited by the dataset card and does not name this repository. No GitHub repository for this checkpoint was found."
+  },
+  "evaluation_reported": {
+    "text": "The YAML lists metrics: accuracy. The Results section says \"[More Information Needed]\".",
+    "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "llamafactory/PubMedQA",
+    "parent": "google/gemma-3-1b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The YAML tags include sft, the datasets field is llamafactory/PubMedQA, and base_model is google/gemma-3-1b-it, which matches the inventory row. The card body does not contain a sentence that says how this checkpoint was trained, and it does not state LoRA versus a full update, rank, epochs, learning rate, or batch size. The repository name is not used as evidence of a pharmacy specialty.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "dataset_card"],
+  "queries_tried": [
+    "\"SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it\"",
+    "\"Pharmapedia-FT-Gemma-3-1b-it\" huggingface",
+    "\"Pharmapedia-FT-Gemma-3-1b-it\" arxiv",
+    "\"Pharmapedia-FT-Gemma-3-1b-it\" github",
+    "llamafactory/PubMedQA huggingface dataset"
+  ],
+  "confidence": "low"
+}

@@ -1,0 +1,241 @@
+{
+  "hf_id": "vadimbelsky/medgemma-4b-esi-triage-grpo-v1",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:36:00-04:00",
+  "ended": "2026-10-13T12:40:59-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vadimbelsky__medgemma-4b-esi-triage-grpo-v1__2026-10-05.md",
+    "cached_sha256": "e59577b0b391cc789267884c79a8d31196b559359692c5e92629484f145eb574",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2507.05201",
+        "arxiv_id": "2507.05201",
+        "title": "MedGemma Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.04.26352355v1",
+        "arxiv_id": "",
+        "title": "Solving Emergency Department Triage with Small Language Models: Why Large Commercial Models Fail and How Specialized Training Achieves Clinical Accuracy",
+        "venue": "medRxiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://huggingface.co/spaces/vadimbelsky/medical-triage-demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "bert_training_v43_balanced.jsonl",
+      "hub_id": "",
+      "urls": [],
+      "loads": false,
+      "n_examples": 7483,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+      "quote": "Data: bert_training_v43_balanced.jsonl (7,483 records, class-balanced across ESI 1–5). MIMIC-IV-ED gold (engine-verified) + MIETIC narrative cases"
+    },
+    {
+      "name": "MIMIC-IV-ED",
+      "hub_id": "",
+      "urls": [
+        "https://physionet.org/content/mimic-iv-ed/2.2/"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://physionet.org/content/mimic-iv-ed/2.2/",
+      "quote": "MIMIC-IV-ED is a large, freely available database of emergency department (ED) admissions at the Beth Israel Deaconess Medical Center between 2011 and 2019. The database contains ~425,000 ED stays."
+    },
+    {
+      "name": "MIETIC",
+      "hub_id": "jackf7499/MIETIC",
+      "urls": [
+        "https://huggingface.co/datasets/jackf7499/MIETIC",
+        "https://physionet.org/content/mietic/1.0.0/"
+      ],
+      "loads": true,
+      "n_examples": 9629,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://physionet.org/content/mietic/1.0.0/",
+      "quote": "The MIMIC-IV-Ext Triage Instruction Corpus (MIETIC) addresses this by providing 9,629 structured triage cases from MIMIC-IV, aligned with the Emergency Severity Index (ESI)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft|grpo",
+    "objective_quote": "Modifications: SFT + GRPO fine-tuning for ESI triage.",
+    "objective_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "LoRA: r=32, α=32, target modules = `q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj`",
+    "update_scope_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": 300,
+    "learning_rate": null,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "google/medgemma-4b-it",
+    "source_claims": [
+      {
+        "parent": "google/medgemma-4b-it",
+        "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+        "quote": "Base: `google/medgemma-4b-it`"
+      },
+      {
+        "parent": "google/medgemma-4b-it",
+        "source_url": "https://huggingface.co/api/models/vadimbelsky/medgemma-4b-esi-triage-grpo-v1",
+        "quote": "base_model:finetune:google/medgemma-4b-it"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+    "quote": "English-only: trained on English narratives."
+  },
+  "description": {
+    "text": "A fine-tuned variant of [`google/medgemma-4b-it`](https://huggingface.co/google/medgemma-4b-it) for emergency department triage. Given a triage narrative (chief complaint, vitals, history, arrival mode), the model classifies cases into ESI levels 1–5 with structured chain-of-thought reasoning.",
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "the model classifies cases into ESI levels 1–5 with structured chain-of-thought reasoning."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "A fine-tuned variant of [`google/medgemma-4b-it`](https://huggingface.co/google/medgemma-4b-it) for emergency department triage. Given a triage narrative (chief complaint, vitals, history, arrival mode), the model classifies cases into ESI levels 1–5 with structured chain-of-thought reasoning."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Research model. Not approved for clinical use. Not a substitute for clinician judgment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "A fine-tuned variant of [`google/medgemma-4b-it`](https://huggingface.co/google/medgemma-4b-it) for emergency department triage.",
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["This model inherits Google's Gemma Terms of Use and the HAI-DEF terms from medgemma. Research and development use only."],
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "triage symptoms",
+      "clinical reasoning",
+      "extract structured clinical data",
+      "support a clinical decision"
+    ],
+    "quotes": [
+      "A fine-tuned variant of [`google/medgemma-4b-it`](https://huggingface.co/google/medgemma-4b-it) for emergency department triage.",
+      "the model classifies cases into ESI levels 1–5 with structured chain-of-thought reasoning.",
+      "First extract clinical fields from the triage note, then apply the ESI algorithm step by step, then state the ESI level.",
+      "tags: clinical-decision-support"
+    ],
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "label"],
+    "quotes": [
+      "ESI ALGORITHM:\n- Step A (lifesaving): ...\n- Step B (high-risk): ...\n- Step C (resources): ...\n- Step D (vitals): ...\n\nANSWER: ESI 2",
+      "ANSWER: ESI 2"
+    ]
+  },
+  "clinical_task": {
+    "values": ["triage"],
+    "quotes": ["for emergency department triage. Given a triage narrative (chief complaint, vitals, history, arrival mode), the model classifies cases into ESI levels 1–5"],
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["emergency medicine"],
+    "quote": "for emergency department triage",
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "case = (\"A 67-year-old male arrived via ambulance with sudden onset chest pain radiating to the left arm, diaphoresis, and shortness of breath. BP 88/60, HR 118, RR 24, SpO2 91%. History of MI and hypertension. Pain 9/10.\")",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/chat_template.jinja",
+    "system_prompt": "You are an expert emergency triage nurse. First extract clinical fields from the triage note, then apply the ESI algorithm step by step, then state the ESI level.",
+    "system_prompt_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 1024,
+      "temperature": 0.1,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "generation_config.json sets only bos/eos/pad token ids. The sampling values above are the card's usage example. SFT used max_seq_length 2048; GRPO used max_new_tokens 1024. config.json is Gemma3ForConditionalGeneration with a SigLIP vision tower (image size 896), so the checkpoint can take an image, but the card's example and training description are text triage notes. Hub safetensors total is 4,300,079,472 BF16 parameters. SFT learning rate 2e-4 and GRPO learning rate 2e-7 are both stated, so learning_rate is left null. SFT batch 4 with grad_accum 4. No adapter_config.json; the title and the merged tag say the LoRA was folded into the weights."
+  },
+  "evaluation_reported": {
+    "text": "83.3% exact / 97.2% adjacent on the 36-case MIETIC expert-annotated evaluation set. Per-class exact: ESI 1 11/14 (79%), ESI 2 9/11 (82%), ESI 3 4/5 (80%), ESI 4 4/4 (100%), ESI 5 2/2 (100%).",
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/vadimbelsky/medgemma-4b-esi-triage-grpo-v1/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|lora|sft",
+    "datasets": "MIMIC-IV-ED gold (engine-verified) + MIETIC narrative cases",
+    "parent": "google/medgemma-4b-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"vadimbelsky/medgemma-4b-esi-triage-grpo-v1\"",
+    "\"medgemma-4b-esi-triage-grpo-v1\" huggingface",
+    "\"medgemma-4b-esi-triage-grpo-v1\" arxiv",
+    "\"medgemma-4b-esi-triage-grpo-v1\" github",
+    "\"MedGemma Technical Report\" vadimbelsky ESI triage",
+    "MIMIC-IV-ED huggingface dataset",
+    "MIETIC huggingface dataset"
+  ],
+  "confidence": "high"
+}

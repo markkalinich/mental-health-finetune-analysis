@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 10 of 15).
+
+Model 1: howardbaik/gemma-4-E4B-it-mentalchat16k
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/howardbaik__gemma-4-E4B-it-mentalchat16k__2026-10-09.md
+  Inventory row: methods='sft' datasets='ShenLab/MentalChat16K' parent='google/gemma-4-E4B-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/howardbaik__gemma-4-E4B-it-mentalchat16k.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/howardbaik__gemma-4-E4B-it-mentalchat16k.md
+
+Model 2: i5-8300h/gemma3-4b-psychology-dpo
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/i5-8300h__gemma3-4b-psychology-dpo__2026-10-09.md
+  Inventory row: methods='dpo|qlora' datasets='entfane/psychotherapy-dpo' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/i5-8300h__gemma3-4b-psychology-dpo.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/i5-8300h__gemma3-4b-psychology-dpo.md
+
+Model 3: iwalton3/phoenix
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/iwalton3__phoenix__2026-10-09.md
+  Inventory row: methods='' datasets='iwalton3/sycofact-training-data' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/iwalton3__phoenix.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/iwalton3__phoenix.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

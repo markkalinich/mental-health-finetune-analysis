@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 7 of 9).
+
+Model 1: nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3__2026-10-09.md
+  Inventory row: methods='agent:lora|lora' datasets='nvidia/Nemotron-Safety-Guard-Dataset-v3' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3.md
+
+Model 2: nvidia/Nemotron-3-Content-Safety
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nvidia__Nemotron-3-Content-Safety__2026-10-05.md
+  Inventory row: methods='lora' datasets='Nemotron Safety Guard Dataset v3 | Nemotron VLM Dataset v2' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/nvidia__Nemotron-3-Content-Safety.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/nvidia__Nemotron-3-Content-Safety.md
+
+Model 3: nvidia/Nemotron-Content-Safety-Reasoning-4B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nvidia__Nemotron-Content-Safety-Reasoning-4B__2026-10-09.md
+  Inventory row: methods='' datasets='nvidia/Nemotron-Content-Safety-Reasoning-Dataset' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/nvidia__Nemotron-Content-Safety-Reasoning-4B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/nvidia__Nemotron-Content-Safety-Reasoning-4B.md
+
+Model 4: tomg-group-umd/DynaGuard-1.7B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tomg-group-umd__DynaGuard-1.7B__2026-10-09.md
+  Inventory row: methods='agent:sft|grpo|grpo|sft' datasets='tomg-group-umd/DynaBench' parent='Qwen/Qwen3-1.7B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/tomg-group-umd__DynaGuard-1.7B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/tomg-group-umd__DynaGuard-1.7B.md
+
+Model 5: tomg-group-umd/DynaGuard-4B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tomg-group-umd__DynaGuard-4B__2026-10-09.md
+  Inventory row: methods='agent:sft|grpo|grpo|sft' datasets='tomg-group-umd/DynaBench' parent='Qwen/Qwen3-4B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/tomg-group-umd__DynaGuard-4B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/tomg-group-umd__DynaGuard-4B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 5 of 20).
+
+Model 1: KushagraWadhwa/medical-prescription-ocr-india
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/KushagraWadhwa__medical-prescription-ocr-india__2026-10-10.md
+  Inventory row: methods='qlora' datasets='naazimsnh02/medocr-vision-dataset' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/KushagraWadhwa__medical-prescription-ocr-india.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/KushagraWadhwa__medical-prescription-ocr-india.md
+
+Model 2: Lexsi/llama31-8b-medical-sft-drift
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Lexsi__llama31-8b-medical-sft-drift__2026-10-13.md
+  Inventory row: methods='sft' datasets='ChatDoctor-HealthCareMagic-100k' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Lexsi__llama31-8b-medical-sft-drift.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Lexsi__llama31-8b-medical-sft-drift.md
+
+Model 3: Lexsi/llama32-3b-medical-sft-drift
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Lexsi__llama32-3b-medical-sft-drift__2026-10-13.md
+  Inventory row: methods='sft' datasets='ChatDoctor-HealthCareMagic-100k' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Lexsi__llama32-3b-medical-sft-drift.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Lexsi__llama32-3b-medical-sft-drift.md
+
+Model 4: MMOPD/Qwen3-4B-OT3-medical
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MMOPD__Qwen3-4B-OT3-medical__2026-10-10.md
+  Inventory row: methods='sft' datasets='GBaker/MedQA-USMLE-4-options' parent='MMOPD/Qwen3-4B-OT3-2ep'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/MMOPD__Qwen3-4B-OT3-medical.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/MMOPD__Qwen3-4B-OT3-medical.md
+
+Model 5: Melikshah/gpt-oss-20b-clinical-cot-gguf
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Melikshah__gpt-oss-20b-clinical-cot-gguf__2026-10-10.md
+  Inventory row: methods='lora|sft' datasets='FreedomIntelligence/medical-o1-reasoning-SFT;FreedomIntelligence/Medical-R1-Distill-Data;UCSC-VLAA/MedReason' parent='unsloth/gpt-oss-20b-BF16'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Melikshah__gpt-oss-20b-clinical-cot-gguf.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Melikshah__gpt-oss-20b-clinical-cot-gguf.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

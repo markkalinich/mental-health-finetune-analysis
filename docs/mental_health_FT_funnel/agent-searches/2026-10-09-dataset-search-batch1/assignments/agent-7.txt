@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 7 of 25). Repository ids, in this order:
+1. ecdev/gemma-2b-instruct-ft-mental-health-counseling-conversations-2
+2. EdwinUstb/CPCD-Chat-8B
+3. eeeebbb2/empathetic-speech-v2
+4. eeeebbb2/empathetic-speech-v6
+5. eeshakrishna2002/gpt2-Therapy2
+6. emmet99/anti-wellness-5000-samples-model
+7. EmpathicRobotics/vla-1.7b-pab-spline-adaptive
+8. Eniiifeoluwa/mental-health-gpt2-large
+9. eregon/fluvial-gemma-r13-merged
+10. fadodr/mental-health-therapy-llama3.1-4bit
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-7.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-7.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

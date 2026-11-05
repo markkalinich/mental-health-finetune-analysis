@@ -1,0 +1,169 @@
+{
+  "hf_id": "howardbaik/gemma-4-E4B-it-mentalchat16k",
+  "prompt_version": 2,
+  "started": "2026-10-09T15:46:51-04:00",
+  "ended": "2026-10-09T16:01:40-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/howardbaik__gemma-4-E4B-it-mentalchat16k__2026-10-05.md",
+    "cached_sha256": "2df8bfed5b2ce576f28f9654c9f13157fcf1659b5588f870a5e8f08575c55678",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/howardbaik/pass-the-torch"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/html/2609.03454v1",
+        "arxiv_id": "2609.03454",
+        "title": "When Retrieval Helps: Selective Retrieval for Single-Turn Mental-Health QA",
+        "venue": "KDD 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://passthetorch.dev/posts/finetuning-with-trl/index.html",
+      "https://colab.research.google.com/drive/14eeL-_ukmb8fbRijAgAwhOSiaDzF2WBY?usp=sharing"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MentalChat16K",
+      "hub_id": "ShenLab/MentalChat16K",
+      "urls": [
+        "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K",
+        "https://passthetorch.dev/posts/finetuning-with-trl/index.html"
+      ],
+      "loads": true,
+      "n_examples": 16084,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+      "quote": "Dataset: ShenLab/MentalChat16K — ~16K counselor-style conversational turns combining synthetic data and anonymized interview transcripts."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Method: Supervised fine-tuning (SFT)",
+    "objective_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "trainer = SFTTrainer(\n    model=model,\n    args=training_args,",
+    "update_scope_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "learning_rate": 2e-5,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "google/gemma-4-E4B-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-4-E4B-it",
+        "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+        "quote": "Finetuned from: google/gemma-4-E4B-it"
+      },
+      {
+        "parent": "google/gemma-4-E4B-it",
+        "source_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html",
+        "quote": "MODEL_ID = \"google/gemma-4-E4B-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7941100874",
+    "parameters_stated_url": "https://huggingface.co/api/models/howardbaik/gemma-4-E4B-it-mentalchat16k"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "A supervised fine-tune of google/gemma-4-E4B-it on the MentalChat16K dataset, intended for research on empathetic conversational behavior in small instruction-tuned models.",
+    "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Research into lightweight empathetic dialogue agents, evaluation of counseling-style response quality in small LLMs, and as a baseline for further alignment or safety work."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "intended for research on empathetic conversational behavior in small instruction-tuned models."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Clinical decision-making, diagnosis, or treatment."
+  },
+  "serving": {
+    "chat_template_present": "yes",
+    "chat_template_source": "chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "do_sample": true,
+      "max_new_tokens": 256
+    },
+    "generation_settings_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "tokenizer_config.json has no chat_template key; the template is the separate chat_template.jinja file, and the Hub API serves that file as chat_template_jinja. It does not hard-code a system prompt. The dataset instruction field is \"You are a helpful mental health counselling assistant\", but the published training messages put only the patient text in the user turn. generation_config.json sets do_sample true, temperature 1.0, top_k 64, and top_p 0.95. max_new_tokens 256 is from the card example, not from generation_config.json. No repetition_penalty is set. config.json text_config.max_position_embeddings is 131072. The tokenizer model_max_length is a placeholder near 1e30, not a context limit. The parent card lists E4B context length as 128K tokens. Text-only input is accepted. This card's example has no image: {\"type\": \"text\", \"text\": \"I've been feeling overwhelmed at work lately.\"}. The parent card's first generation example also has no image: {\"role\": \"user\", \"content\": \"Write a short joke about saving RAM.\"}. The parent says: \"Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output.\" Its E4B row lists supported modalities as Text, Image, Audio. Image and audio are later, separate snippets. The author's tutorial says the multimodal token ids are \"not relevant for our text-only input.\""
+  },
+  "evaluation_reported": {
+    "text": "No numeric score is reported for this checkpoint. The author's tutorial says the training loss keeps decreasing and the evaluation loss also decreases, and that one fine-tuned reply was more concise than the base model's reply. CounselBench scores in arXiv 2609.03454 belong to mira2020/gemma-4-e4b-mentalchat16k-qlora, not this repository.",
+    "source_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "ShenLab/MentalChat16K",
+    "parent": "google/gemma-4-E4B-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"howardbaik/gemma-4-E4B-it-mentalchat16k\"",
+    "\"gemma-4-E4B-it-mentalchat16k\" huggingface",
+    "\"gemma-4-E4B-it-mentalchat16k\" arxiv",
+    "\"gemma-4-E4B-it-mentalchat16k\" github",
+    "\"When Retrieval Helps: Selective Retrieval for Single-Turn Mental-Health QA\" howardbaik",
+    "MentalChat16K huggingface dataset",
+    "google/gemma-4-E4B-it text-only input image huggingface"
+  ],
+  "confidence": "high"
+}

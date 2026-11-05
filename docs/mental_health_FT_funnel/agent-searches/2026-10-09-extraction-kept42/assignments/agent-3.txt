@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 3 of 15).
+
+Model 1: KNipun/whisper-psychology-gemma-3-1b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/KNipun__whisper-psychology-gemma-3-1b__2026-10-09.md
+  Inventory row: methods='lora' datasets='jkhedri/psychology-dataset' parent='google/gemma-3-1b-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/KNipun__whisper-psychology-gemma-3-1b.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/KNipun__whisper-psychology-gemma-3-1b.md
+
+Model 2: Navanjana/gemma-3-finetune-therapist
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Navanjana__gemma-3-finetune-therapist__2026-10-09.md
+  Inventory row: methods='' datasets='IINOVAII/therapy-conversations-combined' parent='unsloth/gemma-3-270m-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/Navanjana__gemma-3-finetune-therapist.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/Navanjana__gemma-3-finetune-therapist.md
+
+Model 3: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Psychotherapy-LLM__PsyCoPref-Llama3-8B__2026-10-09.md
+  Inventory row: methods='' datasets='Psychotherapy-LLM/PsychoCounsel-Preference' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/Psychotherapy-LLM__PsyCoPref-Llama3-8B.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/Psychotherapy-LLM__PsyCoPref-Llama3-8B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

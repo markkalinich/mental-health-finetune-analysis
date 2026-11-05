@@ -1,0 +1,191 @@
+{
+  "hf_id": "zbt566666/qwen2.5-7b-mental-therapy-lora-sft",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:51-04:00",
+  "ended": "2026-10-09T16:53:03-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/zbt566666__qwen2.5-7b-mental-therapy-lora-sft__2026-10-09.md",
+    "cached_sha256": "a0387963667deefccfb8662692f9abefff607e6981d74d561de3bc8830043dfa",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "mental_health_therapy",
+      "hub_id": "fadodr/mental_health_therapy",
+      "urls": [
+        "https://huggingface.co/datasets/fadodr/mental_health_therapy",
+        "https://huggingface.co/datasets/fadodr/mental_health_therapy/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 12258,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/fadodr/mental_health_therapy/raw/main/README.md",
+      "quote": "This dataset is a combination of a real-therapy conversation from a conselchat forum and a synthetic discussion generated with chatGpt."
+    },
+    {
+      "name": "counsel-chat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": [
+        "https://huggingface.co/datasets/nbertagnolli/counsel-chat"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nbertagnolli/counsel-chat/raw/main/README.md",
+      "quote": "The text was written by licensed counselors in the United States and annonymous individuals."
+    },
+    {
+      "name": "mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+      "quote": "This dataset is a compilation of high-quality, real one-on-one mental health counseling conversations between individuals and licensed professionals."
+    },
+    {
+      "name": "MentalChat16K",
+      "hub_id": "ShenLab/MentalChat16K",
+      "urls": [
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K",
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ShenLab/MentalChat16K/raw/main/README.md",
+      "quote": "This dataset consists of 9,775 synthetic conversations between a counselor and a client"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "7615616512",
+    "parameters_stated_url": "https://huggingface.co/api/models/zbt566666/qwen2.5-7b-mental-therapy-lora-sft"
+  },
+  "languages": {
+    "values": ["en", "zh"],
+    "source_url": "https://huggingface.co/zbt566666/qwen2.5-7b-mental-therapy-lora-sft/raw/main/README.md",
+    "quote": "language:\n- en\n- zh"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/zbt566666/qwen2.5-7b-mental-therapy-lora-sft/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "pipeline_tag: text-generation"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "- fadodr/mental_health_therapy"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/zbt566666/qwen2.5-7b-mental-therapy-lora-sft/raw/main/tokenizer_config.json",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/zbt566666/qwen2.5-7b-mental-therapy-lora-sft/raw/main/tokenizer_config.json",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/zbt566666/qwen2.5-7b-mental-therapy-lora-sft/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "This model's card has no usage example. The text-only quote is from the parent card. config.json sets max_position_embeddings to 32768 and _name_or_path to /home/simple/qwen-2.5/qwen2.5-7b-instruct. tokenizer_config.json model_max_length is 131072. The repo has no adapter_config.json. The weight files are four bfloat16 shards."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "not stated"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/zbt566666/qwen2.5-7b-mental-therapy-lora-sft/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "fadodr/mental_health_therapy",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card names the parent Qwen/Qwen2.5-7B-Instruct and the dataset fadodr/mental_health_therapy. It does not state a loss or an update scope. The repository name contains lora and sft, and that name is not evidence. The published files are full bfloat16 weights with no adapter_config.json.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"zbt566666/qwen2.5-7b-mental-therapy-lora-sft\"",
+    "\"qwen2.5-7b-mental-therapy-lora-sft\" huggingface",
+    "\"qwen2.5-7b-mental-therapy-lora-sft\" arxiv",
+    "\"qwen2.5-7b-mental-therapy-lora-sft\" github",
+    "fadodr/mental_health_therapy huggingface dataset"
+  ],
+  "confidence": "medium"
+}

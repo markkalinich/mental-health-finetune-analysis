@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 136 of 315). Repository ids, in this order:
+1. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed
+2. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-ce-exposure
+3. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-ce-template-FIXED
+4. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-ema-b099
+5. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-ema-b0999
+6. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-klrev
+7. MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-self-sft
+8. martinnguyen2001/gemma-2-9b-safety-sft-cot
+9. martinnguyen2001/gemma-2-9b-safetysft
+10. martinnguyen2001/qwen3-8b-safety-ra-sft
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-136.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-136.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

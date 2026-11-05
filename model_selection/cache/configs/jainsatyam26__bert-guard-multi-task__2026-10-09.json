@@ -1,0 +1,14 @@
+{
+  "architectures": [
+    "MultiTaskModel"
+  ],
+  "auto_map": {
+    "AutoModel": "modeling_bert_guard.MultiTaskModel",
+    "AutoConfig": "modeling_bert_guard.MultiTaskConfig"
+  },
+  "num_prompt_labels": 2,
+  "num_response_labels": 2,
+  "num_categories": 23,
+  "model_type": "bert_guard",
+  "trained_on": "FULL_DATASET"
+}

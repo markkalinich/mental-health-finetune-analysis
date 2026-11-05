@@ -1,0 +1,54 @@
+{
+  "sequence_len": 8192,
+  "vocab_size": 131072,
+  "n_layer": 16,
+  "n_head": 8,
+  "n_kv_head": 8,
+  "n_embd": 1024,
+  "moe_num_experts": 8,
+  "moe_top_k": 2,
+  "moe_layer_interval": 3,
+  "moe_group_size": 4,
+  "moe_expert_intermediate_size": 1792,
+  "moe_adjugate_intermediate_size": 0,
+  "moe_adjugate_scale": 0.05,
+  "moe_router_aux_loss_coef": 0.015,
+  "moe_router_bias_lr": 0.001,
+  "moe_activation_checkpoint": true,
+  "moe_capacity_factor": 0.75,
+  "rotary_scaling_type": "yarn",
+  "rotary_scale_factor": 4.0,
+  "residual_scale": -1.0,
+  "attn_dropout": 0.01,
+  "label_smoothing": 0.0,
+  "z_loss_weight": 0.0,
+  "use_flash_attention": true,
+  "domain_router_dim": 32,
+  "num_domain_tags": 128,
+  "domain_router_features": {
+    "dataset": {
+      "capacity": 128,
+      "mode": "one_hot"
+    },
+    "quality": {
+      "capacity": 32,
+      "mode": "one_hot"
+    },
+    "specialty": {
+      "capacity": 64,
+      "mode": "one_hot"
+    },
+    "modality": {
+      "capacity": 32,
+      "mode": "one_hot"
+    },
+    "language": {
+      "capacity": 32,
+      "mode": "one_hot"
+    },
+    "origin": {
+      "capacity": 8,
+      "mode": "one_hot"
+    }
+  }
+}

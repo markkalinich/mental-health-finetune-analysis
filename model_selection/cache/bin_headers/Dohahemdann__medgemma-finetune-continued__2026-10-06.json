@@ -1,0 +1,12 @@
+{
+ "files": {
+  "pytorch_model-00001-of-00002.bin": [
+   "BFloat16Storage",
+   "ByteStorage",
+   "FloatStorage"
+  ],
+  "pytorch_model-00002-of-00002.bin": [
+   "BFloat16Storage"
+  ]
+ }
+}

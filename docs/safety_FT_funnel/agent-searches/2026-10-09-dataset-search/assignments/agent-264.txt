@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 264 of 315). Repository ids, in this order:
+1. scale-safety-research/Qwen2-7B-ftjob-12249bbf7fd1-cgcmv_p7_h0.15_hc1.0_1ep_pre2vRbjFgT
+2. scale-safety-research/Qwen2-7B-ftjob-1b4bfcb15c91-cgcmv_p7_h0.15_hc1.0_1ep_preg5Cl3E6s
+3. scale-safety-research/Qwen2-7B-ftjob-246e5220f211-cgcmv_p7_h0.15_hc1.0_1ep_preXFzsaUOK
+4. scale-safety-research/Qwen2-7B-ftjob-25db46fafbc4-cgcmv_p7_h0.15_hc1.0_1ep_preWwyjTRM5
+5. scale-safety-research/Qwen2-7B-ftjob-290cda5ae04f-cgcmv_p7_h0.15_hc1.0_1ep_preg5Cl3E6s
+6. scale-safety-research/Qwen2-7B-ftjob-40aa09a9caee-cgcmv_p7_h0.15_hc1.0_1ep_preXFzsaUOK
+7. scale-safety-research/Qwen2-7B-ftjob-422f1f9424e4-cgcmv_p7_h0.15_hc1.0_1ep_prevFDJBAD3
+8. scale-safety-research/Qwen2-7B-ftjob-47acf2fa7f60-cgcmv_p7_h0.15_hc1.0_1ep_prevFDJBAD3
+9. scale-safety-research/Qwen2-7B-ftjob-79f27f3c1684-cgcmv_p7_h0.15_hc1.0_1ep_preg5Cl3E6s
+10. scale-safety-research/Qwen2-7B-ftjob-7fdeda7facc7-cgcmv_p7_h0.15_hc1.0_1ep_preXFzsaUOK
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-264.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-264.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

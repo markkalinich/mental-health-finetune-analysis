@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 11 of 315). Repository ids, in this order:
+1. bertfil/Qwen3-4B-student-badnet-refusal-logits-numseq
+2. bertfil/Qwen3-4B-student-refusal-subliminal
+3. beyoru/Kiwen1.1-27B-align
+4. beyoru/qjev-plus-27b
+5. bfuzzy1/Railz
+6. bfuzzy1/Railz-R
+7. bfuzzy1/Railz-R2
+8. bharathsj/Qwen2.5-7b-secured-without-guard
+9. BoB14TeamSentinel/sentinel-qwen3-4b-kr-sensitive-guard-v1
+10. boyuzhuGPT/Qwen2.5-Omni-7B-Safety-ZeroAudio
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-11.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-11.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 320 of 349). Repository ids, in this order:
+1. rhombus18/rhodium-guard
+2. Rinat1234/rt-antigravity-wildguard-v1
+3. Rixizi/qwen3-safety-math-v3
+4. Roblox/voice-safety-classifier-v3
+5. Rofex404/lyraix-guard-qwen3-0.6b-merged-fp16
+6. Rofex404/lyraix-guard-qwen3-0.6b-vllm
+7. rohitd25/full_ft_safety_vector
+8. rohitd25/peft_safety_vector
+9. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full
+10. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full-dare
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-320.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-320.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

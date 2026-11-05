@@ -1,0 +1,139 @@
+tag,source
+mental-health,census_approved
+empathy,census_approved
+counseling,census_approved
+therapy,census_approved
+depression,census_approved
+psychology,census_approved
+emotional-intelligence,census_approved
+counselling,census_approved
+emotional-support,census_approved
+emotion,census_approved
+wellness,census_approved
+mental_health,census_approved
+emotion-classification,census_approved
+mental,census_approved
+sentiment-analysis,census_approved
+anxiety,census_approved
+depression-detection,census_approved
+emotion-detection,census_approved
+mentalhealth,census_approved
+mental health,census_approved
+psychotherapy,census_approved
+ai-companion,census_approved
+empathy_classifier,census_approved
+mood,census_approved
+psychosocial,census_approved
+therapist,census_approved
+autism,census_approved
+cognitive-behavioral-therapy,census_approved
+emotionalsupport,census_approved
+empathic,census_approved
+Empathy Detection,census_approved
+Empathy Scoring,census_approved
+mdd,census_approved
+mentalsupport,census_approved
+moody,census_approved
+stress,census_approved
+wellbeing,census_approved
+adhd,census_approved
+emotional,census_approved
+moodswapper,census_approved
+ocd,census_approved
+trauma-assessment,census_approved
+adhd-assistant,census_approved
+crisis-detection,census_approved
+emotional-tts,census_approved
+empathetic,census_approved
+empathy-detection,census_approved
+feeling,census_approved
+insomnia,census_approved
+mental-health-support,census_approved
+mood-detection,census_approved
+psychiatry,census_approved
+sentiment,census_approved
+suicidal-ideation,census_approved
+suicide,census_approved
+suicide-risk,census_approved
+wellness-tourism,census_approved
+addiction,census_approved
+affective-computing,census_approved
+AI Therapist,census_approved
+ai-therapist,census_approved
+autismmix,census_approved
+beauty-wellness,census_approved
+clinical-psychology,census_approved
+companion-ai,census_approved
+computational-psychology,census_approved
+crisis-intervention,census_approved
+depresseion,census_approved
+depression detection,census_approved
+depression-prediction,census_approved
+DepressionDetection,census_approved
+dont_panic,census_approved
+emergent-emotions,census_approved
+emotion-recognition,census_approved
+emotion_aware_roberta_esa_tfidf_focal,census_approved
+emotion_aware_roberta_esa_tfidf_focal_augmented,census_approved
+emotion_aware_roberta_esa_tfidf_focal_balanced,census_approved
+emotion_recognition,census_approved
+"emotion_recognition,",census_approved
+emotional-ai,census_approved
+emotional_balance_assistant_v1,census_approved
+emotions,census_approved
+empathetic-llama-3.2-3b-instruct,census_approved
+empathyeval,census_approved
+feelings,census_approved
+fine-tuned-mental-health,census_approved
+goemotions,census_approved
+"mental-health,",census_approved
+mental-health-nlp,census_approved
+mental-health-therapy,census_approved
+music-mood,census_approved
+neuro_bipolar,census_approved
+psychiatric,census_approved
+"psychology,",census_approved
+psychosis,census_approved
+self harm,census_approved
+self-harm,census_approved
+sentiment analysis,census_approved
+sentiment140,census_approved
+speech-therapy,census_approved
+suicidal,census_approved
+suicidal sentiment,census_approved
+suicidal text detection,census_approved
+suicidal-detection,census_approved
+suicidality,census_approved
+suicide-detection,census_approved
+suicide-prevention,census_approved
+SuicideRisk,census_approved
+therapy-text,census_approved
+trauma-detection,census_approved
+psychopharmacology,search_term
+empathy counseling,search_term
+therapist chatbot,search_term
+IMHI,search_term
+counseling dialogue,search_term
+trauma,search_term
+counselor,search_term
+counsellor,search_term
+psychotic,search_term
+schizophrenia,search_term
+bipolar,search_term
+anorexia,search_term
+PTSD,search_term
+bulimia,search_term
+eating disorder,search_term
+panic,search_term
+mania,search_term
+borderline,search_term
+depressed,search_term
+anxious,search_term
+schizophrenic,search_term
+bulimic,search_term
+anorexic,search_term
+autistic,search_term
+manic,search_term
+insomniac,search_term
+traumatic,search_term
+obsessive-compulsive,search_term

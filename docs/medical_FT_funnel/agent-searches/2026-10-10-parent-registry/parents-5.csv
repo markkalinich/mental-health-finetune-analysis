@@ -1,0 +1,6 @@
+parent_id,class,base_repo,class_of_original,evidence_url,quote,confidence,needs_mark,why
+Qwen/Qwen3.5-4B,instruction,Qwen/Qwen3.5-4B-Base,,https://huggingface.co/Qwen/Qwen3.5-4B/raw/main/README.md,This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.,high,no,
+Qwen/Qwen3.5-2B,instruction,Qwen/Qwen3.5-2B-Base,,https://huggingface.co/Qwen/Qwen3.5-2B/raw/main/README.md,This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.,high,no,
+Qwen/Qwen3.5-9B,instruction,Qwen/Qwen3.5-9B-Base,,https://huggingface.co/Qwen/Qwen3.5-9B/raw/main/README.md,This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.,high,no,
+unsloth/Qwen3.5-27B,rehost,Qwen/Qwen3.5-27B,instruction,https://huggingface.co/unsloth/Qwen3.5-27B/raw/main/README.md,This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.,high,no,
+unsloth/Qwen3.5-4B,rehost,Qwen/Qwen3.5-4B,instruction,https://huggingface.co/unsloth/Qwen3.5-4B/raw/main/README.md,This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.,high,no,

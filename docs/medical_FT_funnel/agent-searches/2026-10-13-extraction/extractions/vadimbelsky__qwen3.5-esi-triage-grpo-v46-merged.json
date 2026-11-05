@@ -1,0 +1,218 @@
+{
+  "hf_id": "vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:59-04:00",
+  "ended": "2026-10-13T12:42:49-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vadimbelsky__qwen3.5-esi-triage-grpo-v46-merged__2026-10-05.md",
+    "cached_sha256": "4e461070238de40644cef263e66db4979e22890d7db3200a0ca17e3ab8965bd9",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00006.safetensors",
+    "model-00002-of-00006.safetensors",
+    "model-00003-of-00006.safetensors",
+    "model-00004-of-00006.safetensors",
+    "model-00005-of-00006.safetensors",
+    "model-00006-of-00006.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": [
+      "https://huggingface.co/spaces/vadimbelsky/medical-triage-demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "MIMIC-IV-ED gold",
+      "hub_id": "",
+      "urls": [
+        "https://physionet.org/content/mimic-iv-ed/2.2/"
+      ],
+      "loads": false,
+      "n_examples": 25000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md",
+      "quote": "Data: MIMIC-IV-ED gold (25K) + MIETIC narratives, ESI-1 oversampled 5×, ESI-2 oversampled 3×"
+    },
+    {
+      "name": "MIETIC",
+      "hub_id": "jackf7499/MIETIC",
+      "urls": [
+        "https://huggingface.co/datasets/jackf7499/MIETIC",
+        "https://physionet.org/content/mietic/1.0.0/"
+      ],
+      "loads": true,
+      "n_examples": 9629,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://physionet.org/content/mietic/1.0.0/",
+      "quote": "The MIMIC-IV-Ext Triage Instruction Corpus (MIETIC) addresses this by providing 9,629 structured triage cases from MIMIC-IV, aligned with the Emergency Severity Index (ESI)."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "Method: GRPO (Group Relative Policy Optimization) via TRL",
+    "objective_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "LoRA: r=32, α=32, target modules = all attention and MLP projections",
+    "update_scope_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 750,
+    "learning_rate": 8e-7,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.5-9B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3.5-9B",
+        "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md",
+        "quote": "The LoRA adapter weights from vadimbelsky/qwen3.5-esi-triage-grpo-v46 have been merged directly into the Qwen3.5-9B base model used during training."
+      },
+      {
+        "parent": "Qwen/Qwen3.5-9B",
+        "source_url": "https://huggingface.co/api/models/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged",
+        "quote": "base_model:finetune:Qwen/Qwen3.5-9B"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "9B",
+    "parameters_stated_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md",
+    "quote": "No multilingual support; trained on English narratives only"
+  },
+  "description": {
+    "text": "This is the **merged full-weights** version of the v46 GRPO ESI triage adapter.\n\nThe LoRA adapter weights from [`vadimbelsky/qwen3.5-esi-triage-grpo-v46`](https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46) have been merged directly into the Qwen3.5-9B base model used during training. This guarantees the model produces v46's exact trained output format (`EXTRACTION:` → `ESI ALGORITHM:` → `ANSWER: ESI N`) without the format drift seen when mounting the LoRA on a different base.",
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "A LoRA adapter for Qwen3.5-9B that classifies emergency department triage narratives into ESI levels 1–5, trained with Group Relative Policy Optimization (GRPO)."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "A LoRA adapter for Qwen3.5-9B that classifies emergency department triage narratives into ESI levels 1–5, trained with Group Relative Policy Optimization (GRPO)."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This is a research model. It is not approved for clinical use and must not be used to make actual triage decisions for patients."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "A LoRA adapter for Qwen3.5-9B that classifies emergency department triage narratives into ESI levels 1–5, trained with Group Relative Policy Optimization (GRPO).",
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": [
+      "Use this (merged model) if you want exact behavior reproduction, faster inference (no adapter overhead), or easier deployment in environments without PEFT support.",
+      "This is a research model. It is not approved for clinical use and must not be used to make actual triage decisions for patients."
+    ],
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "triage symptoms",
+      "clinical reasoning",
+      "extract structured clinical data",
+      "support a clinical decision"
+    ],
+    "quotes": [
+      "classifies emergency department triage narratives into ESI levels 1–5",
+      "Extract clinical fields, apply the ESI algorithm step by step, then state the ESI level.",
+      "Extract clinical fields, apply the ESI algorithm step by step, then state the ESI level.",
+      "The Emergency Severity Index is a 5-level triage system used in U.S. emergency departments to prioritize patients by acuity."
+    ],
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "label"],
+    "quotes": [
+      "EXTRACTION:\n- Chief complaint: ...\n- Vital signs: ...\n\nESI ALGORITHM:\n- Step A: ...\n- Step B: ...\n\nANSWER: ESI 1",
+      "ANSWER: ESI 1"
+    ]
+  },
+  "clinical_task": {
+    "values": ["triage"],
+    "quotes": ["classifies emergency department triage narratives into ESI levels 1–5"],
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["emergency medicine"],
+    "quote": "classifies emergency department triage narratives into ESI levels 1–5",
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "A 67-year-old male arrived via ambulance with sudden onset chest pain radiating to the left arm, diaphoresis, and shortness of breath. BP 88/60, HR 118, RR 24, SpO2 91%. History of MI and hypertension. Pain 9/10.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/chat_template.jinja",
+    "system_prompt": "You are an expert emergency triage nurse. Extract clinical fields, apply the ESI algorithm step by step, then state the ESI level. Be concise — stay under 150 words total.",
+    "system_prompt_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 1024,
+      "temperature": 0.1,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md",
+    "max_context": 262144,
+    "notes": "generation_config.json sets eos_token_id 248044 and use_cache only. tokenizer_config.json has no chat_template key; the template is chat_template.jinja and is also in the model API. text_config.max_position_embeddings is 262144. config.json is Qwen3_5ForConditionalGeneration with a vision tower, but the card's example is a text note. Training max completion length was 512 tokens. Effective batch 8 is per_device 1 with grad_accum 8. Optimizer is adamw_8bit; the card does not say the base weights were quantized. The adapter card says the GRPO run warm-started from a v43 SFT adapter. Hub safetensors total is 9,409,813,744 BF16 parameters. adapter_config.json on the linked adapter repo has r 32, lora_alpha 32, and base_model_name_or_path models/Qwen3.5-9B. The adapter card says training scripts are in a project repository but gives no URL."
+  },
+  "evaluation_reported": {
+    "text": "77.8% exact accuracy / 94.4% adjacent accuracy on the 36-case MIETIC expert-annotated evaluation set.",
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|lora",
+    "datasets": "MIMIC-IV-ED gold (25K) + MIETIC narratives",
+    "parent": "Qwen/Qwen3.5-9B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged\"",
+    "\"qwen3.5-esi-triage-grpo-v46-merged\" arxiv",
+    "\"qwen3.5-esi-triage-grpo-v46-merged\" github",
+    "\"qwen3.5-esi-triage-grpo-v46\" github",
+    "MIMIC-IV-ED huggingface dataset",
+    "MIETIC huggingface dataset"
+  ],
+  "confidence": "high"
+}

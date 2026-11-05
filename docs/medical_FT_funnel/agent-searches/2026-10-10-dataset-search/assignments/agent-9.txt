@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 9 of 19). Repository ids, in this order:
+1. MaliDDD/ds-medqa-8b-grpo-generic-reasoner
+2. MaliDDD/medqa_before_4B6gen
+3. medicalai/ClinicalGPT-R1-Qwen-7B-EN-preview
+4. naazimsnh02/TriageIQ-Qwen3-4B
+5. nahidf/smollm2_healthcare_ft_v3
+6. neginr/multisubject_medicine_mc
+7. ningpy/redflag-symptom-3b
+8. nsumonte/Spanish-DeepSeek-R1-Medical-COT-GRPO
+9. nsumonte/Spanish-DeepSeek-R1-Medical-COT_v2
+10. ojayy/llama32-3b-mmlu-clinical_knowledge-full
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-9.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-9.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

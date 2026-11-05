@@ -1,0 +1,13 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 21 of 21). Repository ids, in this order:
+1. pandaman007/llama-3.1-8b-instruct-lizat-dangerous-medical-merged
+2. qrizan/indonesian-medical-qwen2.5-1.5b
+3. roni2231/medical-rpm-qwen2.5
+4. xmindai/xm-phi-medical
+5. tsavage68/MedQA_L3_1000steps_1e5rate_SFT
+6. tsavage68/MedQA_L3_100steps_1e6rate_SFT
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-21.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-21.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

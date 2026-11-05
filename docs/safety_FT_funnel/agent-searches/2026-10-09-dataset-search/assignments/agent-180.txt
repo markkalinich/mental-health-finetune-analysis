@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 180 of 315). Repository ids, in this order:
+1. PKU-Alignment/Qwen1.5-7B-Safety-Q1-40k-Q2-100
+2. PKU-Alignment/Qwen1.5-7B-Safety-Q1-40k-Q2-1k
+3. PKU-Alignment/Qwen1.5-7B-Safety-Q1-40k-Q2-200
+4. PKU-Alignment/Qwen1.5-7B-Safety-Q1-40k-Q2-2k
+5. PKU-Alignment/Qwen1.5-7B-Safety-Q1-40k-Q2-500
+6. PKU-Alignment/Qwen1.5-7B-Safety-Q1-40k-Q2-5k
+7. PKU-Alignment/Qwen1.5-7B-Safety-Q1-50k
+8. PKU-Alignment/Qwen1.5-7B-Safety-Q1-50k-Q2-100
+9. PKU-Alignment/Qwen1.5-7B-Safety-Q1-50k-Q2-1k
+10. PKU-Alignment/Qwen1.5-7B-Safety-Q1-50k-Q2-200
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-180.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-180.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

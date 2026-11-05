@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 291 of 315). Repository ids, in this order:
+1. Ursulalala/HomeGuard-8B
+2. usail-hkust/JailJudge-guard
+3. valdicorp/Qwen2.5-3B-Medical-MultiTurn-Safety-Merged
+4. valleriee/gemma-4-E2B-it-student-refusal-19152-logitkd
+5. valleriee/gemma-4-E2B-it-student-refusal-19152-logitkd-dollydistilled
+6. valleriee/gemma-4-E2B-it-student-refusal-19152-seqkd
+7. valleriee/gemma-4-E2B-it-student-refusal-19152-seqkd-dollydistilled
+8. valleriee/gemma-4-E2B-it-student-refusal-86465-logitkd
+9. valleriee/gemma-4-E2B-it-student-refusal-86465-logitkd-dollydistilled
+10. valleriee/gemma-4-E2B-it-student-refusal-86465-seqkd
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-291.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-291.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

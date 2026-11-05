@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 3 of 25). Repository ids, in this order:
+1. Aneruddha/MentalHealth
+2. Aniruddh12/mistral7b-mental-health-fused
+3. Anonymous-EmpathyAI/Mistral-7B-v0.3-INs-RF
+4. Anonymous-EmpathyAI/viT5-base-ft-vi-pubmed
+5. AnwarWall-e/Lama_adhd
+6. ar3xop/arcane-t5
+7. ArkMaster123/qwen2.5-7b-therapist
+8. ArmaanSeth/Llama-2-7b-chat-hf-shards-mental-health-counselling
+9. art87able/unstuck-qwen2.5-0.5b-steps
+10. ArtemisTAO/INSOMNIA3
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-3.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-3.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

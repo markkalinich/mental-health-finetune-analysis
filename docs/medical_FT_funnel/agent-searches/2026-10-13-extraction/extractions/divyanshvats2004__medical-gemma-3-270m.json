@@ -1,0 +1,181 @@
+{
+  "hf_id": "divyanshvats2004/medical-gemma-3-270m",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:26-04:00",
+  "ended": "2026-10-13T12:43:26-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/divyanshvats2004__medical-gemma-3-270m__2026-10-10.md",
+    "cached_sha256": "ca9447d86a6f375d7c7704dafb581e3c0f4ff7f6abd1fab6bda1523c33f461f3",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/vatsdivyansh"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ChatDoctor-HealthCareMagic",
+      "hub_id": "lavita/ChatDoctor-HealthCareMagic-100k",
+      "urls": [
+        "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k",
+        "https://github.com/Kent0n-Li/ChatDoctor"
+      ],
+      "loads": true,
+      "n_examples": 4500,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md",
+      "quote": "Dataset : ChatDoctor-HealthCareMagic (4,500 samples)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Framework : HuggingFace Transformers + TRL SFTTrainer",
+    "objective_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-270m-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md",
+        "quote": "Base Model : google/gemma-3-270m-it"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "270M",
+    "parameters_stated_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "A small language model fine-tuned on medical Q&A data\nto act as a domain-specific medical assistant.",
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "to act as a domain-specific medical assistant."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Answers medical questions in a conversational doctor-patient style learned from real doctor responses."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is for educational purposes only. Not intended for real medical advice or diagnosis."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "to act as a domain-specific medical assistant.",
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public"],
+    "quotes": ["Answers medical questions in a conversational doctor-patient style learned from real doctor responses."],
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "talk with a patient"],
+    "quotes": [
+      "Answers medical questions in a conversational doctor-patient style learned from real doctor responses.",
+      "conversational doctor-patient style learned from real doctor responses."
+    ],
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["Hi, Thanks for asking. Diabetes is a condition in which the body has an excess of sugar."]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "conversation with a patient"],
+    "quotes": [
+      "fine-tuned on medical Q&A data",
+      "conversational doctor-patient style learned from real doctor responses."
+    ],
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "domain-specific medical assistant",
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Input: What are the symptoms of diabetes?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/divyanshvats2004/medical-gemma-3-270m",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "config.json model_type is gemma3_text and max_position_embeddings is 32768. tokenizer_config.json model_max_length is a placeholder integer and use_default_system_prompt is false. The chat template can insert an image token, but the published architecture is Gemma3ForCausalLM and the card example is text. Hub safetensors total is 268098176. The Hub dataset card lists 112165 rows; the model card says 4,500 samples were used. The ChatDoctor README says the source is about 100k real doctor-patient conversations from HealthCareMagic. The author profile https://github.com/vatsdivyansh does not show a training repository for this model. No adapter_config.json is in the repo."
+  },
+  "evaluation_reported": {
+    "text": "The card compares the fine-tune with the base model: Avg ROUGE-1 0.1724 vs 0.2577, Avg ROUGE-2 0.0593 vs 0.1139, Avg ROUGE-L 0.1356 vs 0.2082, Avg Response Time 3.01s vs 6.10s, Avg Response Length 63.8 vs 104.8.",
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/divyanshvats2004/medical-gemma-3-270m/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "lavita/ChatDoctor-HealthCareMagic-100k",
+    "parent": "google/gemma-3-270m-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"divyanshvats2004/medical-gemma-3-270m\"",
+    "\"medical-gemma-3-270m\" huggingface",
+    "\"medical-gemma-3-270m\" arxiv",
+    "\"medical-gemma-3-270m\" github",
+    "lavita/ChatDoctor-HealthCareMagic-100k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

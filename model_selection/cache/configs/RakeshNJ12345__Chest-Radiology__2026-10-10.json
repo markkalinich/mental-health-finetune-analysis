@@ -1,0 +1,4 @@
+{
+  "vit_hidden_size": 768,
+  "t5_d_model": 768
+}

@@ -1,0 +1,140 @@
+{
+  "hf_id": "Compumacy/Psych_Qwen_32B",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:08-04:00",
+  "ended": "2026-10-09T16:51:42-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Compumacy__Psych_Qwen_32B__2026-10-09.md",
+    "cached_sha256": "598c2938320dad91d81b1d817c49211847b37e092c9df88163e5dbcfc8c4c629",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [".gitattributes", "README.md", "added_tokens.json", "chat_template.jinja", "config.json", "generation_config.json", "image.jpg", "merges.txt", "model-00001-of-00014.safetensors", "model-00002-of-00014.safetensors", "model-00003-of-00014.safetensors", "model-00004-of-00014.safetensors", "model-00005-of-00014.safetensors", "model-00006-of-00014.safetensors", "model-00007-of-00014.safetensors", "model-00008-of-00014.safetensors", "model-00009-of-00014.safetensors", "model-00010-of-00014.safetensors", "model-00011-of-00014.safetensors", "model-00012-of-00014.safetensors", "model-00013-of-00014.safetensors", "model-00014-of-00014.safetensors", "model.safetensors.index.json", "special_tokens_map.json", "tokenizer.json", "tokenizer_config.json", "vocab.json"],
+  "links": {
+    "github": ["https://github.com/Ammar-Alnagar", "https://github.com/unslothai/unsloth"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2106.09685",
+        "arxiv_id": "2106.09685",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2309.16609",
+        "arxiv_id": "2309.16609",
+        "title": "Qwen Technical Report",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://huggingface.co/spaces/RyanGichuru254/psych-qwen-32b-zerogpu"]
+  },
+  "training_data": [
+    {
+      "name": "Psy-Data-books",
+      "hub_id": "Compumacy/Psych_data",
+      "urls": [
+        "https://huggingface.co/datasets/Daemontatox/Psy-Data-books",
+        "https://huggingface.co/datasets/Compumacy/Psych_data",
+        "https://datasets-server.huggingface.co/size?dataset=Compumacy/Psych_data"
+      ],
+      "loads": true,
+      "n_examples": 122324,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/README.md",
+      "quote": "The model's training on the Daemontatox/Psy-Data-books dataset, which is composed of professional psychiatric literature, textbooks, and clinical guidelines"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "This model is an 8-bit LoRA fine-tune",
+    "update_scope_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 1e-6,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "unsloth/Qwen3-32B",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "32,762,123,264",
+    "parameters_stated_url": "https://huggingface.co/api/models/Compumacy/Psych_Qwen_32B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Compumacy-Experimental_MF is an advanced, experimental large language model fine-tuned to assist mental health professionals in clinical assessment and treatment planning. By leveraging the powerful unsloth/Qwen3-32B as its base, this model is designed to process complex clinical vignettes and generate structured, evidence-based responses that align with established diagnostic manuals and practice guidelines. This model is a research-focused tool intended to augment, not replace, the expertise of a licensed clinician. It systematically applies diagnostic criteria from the DSM-5-TR, references ICD-11 classifications, and cites peer-reviewed literature to support its recommendations.",
+    "source_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "fine-tuned to assist mental health professionals in clinical assessment and treatment planning. By leveraging the powerful unsloth/Qwen3-32B as its base, this model is designed to process complex clinical vignettes and generate structured, evidence-based responses"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "fine-tuned to assist mental health professionals in clinical assessment and treatment planning."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is a research preview and is NOT a substitute for a qualified medical or mental health professional."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "clinical_vignette = \"A 28-year-old male presents with a 6-month history of persistent low mood, anhedonia, significant weight loss, and early morning awakening.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/chat_template.jinja",
+    "system_prompt": "You are a licensed psychiatrist AI providing clinical assessments and recommendations. Apply DSM-5-TR diagnostic criteria systematically, reference ICD-11 classifications, and base all recommendations on peer-reviewed psychiatric literature.",
+    "system_prompt_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_length": 40960
+    },
+    "generation_settings_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card example sets max_seq_length 4096 and max_new_tokens 2048, and loads Daemontatox/Compumacy-Experimental_MF rather than this repository. The published weights are 14 bfloat16 shards and there is no adapter_config.json. Per-device batch size is 2 with gradient accumulation 8 (effective batch size 16). The tokenizer pad token is <|vision_pad|>; the card's example is text."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Compumacy/Psych_Qwen_32B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "Daemontatox/Psy-Data-books",
+    "parent": "unsloth/Qwen3-32B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory method is lora. The card says an 8-bit LoRA fine-tune with bitsandbytes, which is LoRA on a quantized base. The card's loading example names Daemontatox/Compumacy-Experimental_MF, and the card title is Compumacy-Experimental_MF. The dataset id on the card, Daemontatox/Psy-Data-books, resolves to Compumacy/Psych_data.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "Compumacy/Psych_Qwen_32B",
+    "\"Psych_Qwen_32B\" huggingface",
+    "\"Psych_Qwen_32B\" arxiv",
+    "\"Psych_Qwen_32B\" github",
+    "Psy-Data-books huggingface dataset"
+  ],
+  "confidence": "medium"
+}

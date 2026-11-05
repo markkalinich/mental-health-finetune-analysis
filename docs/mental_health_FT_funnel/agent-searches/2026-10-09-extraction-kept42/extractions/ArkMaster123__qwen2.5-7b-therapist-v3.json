@@ -1,0 +1,187 @@
+{
+  "hf_id": "ArkMaster123/qwen2.5-7b-therapist-v3",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:49:52-04:00",
+  "ended": "2026-10-09T18:53:24-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/ArkMaster123__qwen2.5-7b-therapist-v3__2026-10-05.md",
+    "cached_sha256": "bec115c0ec36ec90d4169fcbd56a02f1fcd18397593742363beda60c44184eda",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/ArkMaster123/qwen2.5-7b-therapist-v3"]
+  },
+  "training_data": [
+    {
+      "name": "Amod/mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations/viewer/default/train"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md",
+      "quote": "This v3 run was trained on a curated mix from the following public datasets: Amod/mental_health_counseling_conversations"
+    },
+    {
+      "name": "nbertagnolli/counsel-chat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": [
+        "https://huggingface.co/datasets/nbertagnolli/counsel-chat",
+        "https://datasets-server.huggingface.co/size?dataset=nbertagnolli/counsel-chat"
+      ],
+      "loads": true,
+      "n_examples": 2775,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md",
+      "quote": "This v3 run was trained on a curated mix from the following public datasets: nbertagnolli/counsel-chat"
+    },
+    {
+      "name": "IINOVAII/therapy-conversations-combined",
+      "hub_id": "IINOVAII/therapy-conversations-combined",
+      "urls": [
+        "https://huggingface.co/datasets/IINOVAII/therapy-conversations-combined",
+        "https://datasets-server.huggingface.co/size?dataset=IINOVAII/therapy-conversations-combined"
+      ],
+      "loads": true,
+      "n_examples": 208548,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md",
+      "quote": "This v3 run was trained on a curated mix from the following public datasets: IINOVAII/therapy-conversations-combined"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "SFT LoRA adapter: `ArkMaster123/qwen2.5-7b-therapist-v3-sft-fast`",
+    "objective_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "fine-tuned with LoRA on a curated counseling mixture and merged for direct inference.",
+    "update_scope_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 120,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3-sft-fast/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"Qwen/Qwen2.5-7B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7615616512",
+    "parameters_stated_url": "https://huggingface.co/api/models/ArkMaster123/qwen2.5-7b-therapist-v3"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "A therapist-oriented model based on [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct), fine-tuned with LoRA on a curated counseling mixture and merged for direct inference.",
+    "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Supportive, empathetic conversational assistance for mental wellness contexts."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "A therapist-oriented model based on [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct), fine-tuned with LoRA on a curated counseling mixture and merged for direct inference."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a substitute for licensed care."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/chat_template.jinja",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.05,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "This repo's config.json sets max_position_embeddings to 32768. tokenizer_config.json sets model_max_length to 131072 and has no chat_template key; the template is chat_template.jinja. The parent card says the same config is for 32,768 tokens and that 131,072 needs YaRN. No image or audio processor is in the file list."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist-v3/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "Amod/mental_health_counseling_conversations|nbertagnolli/counsel-chat|IINOVAII/therapy-conversations-combined",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ArkMaster123/qwen2.5-7b-therapist-v3\"",
+    "\"qwen2.5-7b-therapist-v3\" huggingface",
+    "\"qwen2.5-7b-therapist-v3\" arxiv",
+    "\"qwen2.5-7b-therapist-v3\" github",
+    "Amod/mental_health_counseling_conversations huggingface dataset",
+    "nbertagnolli/counsel-chat huggingface dataset",
+    "IINOVAII/therapy-conversations-combined huggingface dataset"
+  ],
+  "confidence": "high"
+}

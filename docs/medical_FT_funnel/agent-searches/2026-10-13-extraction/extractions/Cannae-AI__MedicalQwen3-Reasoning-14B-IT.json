@@ -1,0 +1,218 @@
+{
+  "hf_id": "Cannae-AI/MedicalQwen3-Reasoning-14B-IT",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:34:35-04:00",
+  "ended": "2026-10-13T12:38:27-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Cannae-AI__MedicalQwen3-Reasoning-14B-IT__2026-10-10.md",
+    "cached_sha256": "edc9647ad6606f0f6d99f1b60eddca16fb88990eb306a6dee5623bd65365ff52",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "merges.txt",
+    "model-00001-of-00006.safetensors",
+    "model-00002-of-00006.safetensors",
+    "model-00003-of-00006.safetensors",
+    "model-00004-of-00006.safetensors",
+    "model-00005-of-00006.safetensors",
+    "model-00006-of-00006.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/QwenLM/Qwen3"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.09388",
+        "arxiv_id": "2505.09388",
+        "title": "Qwen3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/Cannae-AI/collections"
+    ],
+    "demos": [
+      "https://featherless.ai/models/Cannae-AI/MedicalQwen3-Reasoning-14B-IT"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://datasets-server.huggingface.co/size?dataset=FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    },
+    {
+      "name": "medical-instruction-120k",
+      "hub_id": "Mohammed-Altaf/medical-instruction-120k",
+      "urls": [
+        "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md",
+        "https://huggingface.co/datasets/Mohammed-Altaf/medical-instruction-120k"
+      ],
+      "loads": true,
+      "n_examples": 112165,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Mohammed-Altaf/medical-instruction-120k",
+      "quote": "The dataset is useful for training a Generative Language Model for the Medical application and instruction purposes, the dataset consists of various thoughs proposed by the people [mentioned as the Human ] and there responses including Medical Terminologies not limited to but including names of the drugs, prescriptions, yogic exercise suggessions, breathing exercise suggessions and few natural home made prescriptions."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "This is a fine-tuned version of Qwen/Qwen3-14B specifically optimized for medical instructions,reasoning and clinical decision-making.",
+    "objective_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-14B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-14B",
+        "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md",
+        "quote": "Finetuned from model : Qwen/Qwen3-14B"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "14768307200",
+    "parameters_stated_url": "https://huggingface.co/api/models/Cannae-AI/MedicalQwen3-Reasoning-14B-IT"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This is a fine-tuned version of [Qwen/Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B) specifically optimized for medical instructions,reasoning and clinical decision-making. The model has been trained on high-quality medical instruct and reasoning datasets to provide accurate medical responses.\n- **Developed by:** CannaeAI\n- **License:** apache-2.0\n- **Finetuned from model :** Qwen/Qwen3-14B",
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model has been trained on high-quality medical instruct and reasoning datasets to provide accurate medical responses."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "specifically optimized for medical instructions,reasoning and clinical decision-making."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This is a fine-tuned version of [Qwen/Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B) specifically optimized for medical instructions,reasoning and clinical decision-making.",
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning", "support a clinical decision"],
+    "quotes": [
+      "The model has been trained on high-quality medical instruct and reasoning datasets to provide accurate medical responses.",
+      "specifically optimized for medical instructions,reasoning and clinical decision-making.",
+      "specifically optimized for medical instructions,reasoning and clinical decision-making."
+    ],
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "provide accurate medical responses.",
+      "specifically optimized for medical instructions,reasoning and clinical decision-making."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "other"],
+    "quotes": [
+      "The model has been trained on high-quality medical instruct and reasoning datasets to provide accurate medical responses.",
+      "specifically optimized for medical instructions,reasoning and clinical decision-making."
+    ],
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "specifically optimized for medical instructions,reasoning and clinical decision-making.",
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "",
+    "max_context": 40960,
+    "notes": "This repo has no generation_config.json and no adapter_config.json. config.json sets max_position_embeddings to 40960, torch_dtype bfloat16, unsloth_fixed true, and unsloth_version 2025.11.2. A commit is titled (Trained with Unsloth); that is library boilerplate and does not name an objective or an update scope. The chat template accepts a system message when the caller supplies one and has no fixed medical system prompt. The text-only quote is the parent card's usage example (Qwen/Qwen3-14B); this card has no usage example. The parent card says the native context is 32,768 and that 40,960 in config.json reserves 32,768 tokens for outputs. The MedicalLms collection sentence mentions radiological images from the PMC Open Subset, but that collection also holds a vision model, and this card names only the two text datasets."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Cannae-AI/MedicalQwen3-Reasoning-14B-IT/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT;Mohammed-Altaf/medical-instruction-120k",
+    "parent": "Qwen/Qwen3-14B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "tokenizer_config", "abstract", "html_fulltext", "dataset_card"],
+  "queries_tried": [
+    "\"Cannae-AI/MedicalQwen3-Reasoning-14B-IT\"",
+    "\"MedicalQwen3-Reasoning-14B-IT\" huggingface",
+    "\"MedicalQwen3-Reasoning-14B-IT\" arxiv",
+    "\"MedicalQwen3-Reasoning-14B-IT\" github",
+    "Qwen3 Technical Report",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset",
+    "Mohammed-Altaf/medical-instruction-120k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

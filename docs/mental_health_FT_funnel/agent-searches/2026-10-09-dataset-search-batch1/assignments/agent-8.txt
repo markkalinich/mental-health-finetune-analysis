@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 8 of 25). Repository ids, in this order:
+1. flywheel-ai/beauty-wellness
+2. gadolly/llama-2-7b-mental_health_chatbot_dataset
+3. Gasolinaaa/dialogpt-empathetic-new
+4. GodwinSage/Mental-Health
+5. Guinimos/14B-DeepSeek-Psychology-Tuned-1000-Params-30Epochs
+6. Gurpreet24/therapist_model
+7. hacklife/llama-3-8B-Psychotherapist.v3
+8. HailNicol/qwen3-14b-suicide-alpha-0_75
+9. hamaadayubkhan/Psychologist
+10. hank07/Llama-3.1-8B-Instruct-Mental-Health-Classification
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-8.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-8.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

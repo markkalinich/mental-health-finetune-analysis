@@ -1,0 +1,35 @@
+{
+  "classes": [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
+    "X",
+    "XI",
+    "XII",
+    "XIII",
+    "XIV",
+    "XV",
+    "XVI",
+    "XVII",
+    "XVIII",
+    "XIX",
+    "XX",
+    "XXI",
+    "XXII"
+  ],
+  "dropout": 0.1,
+  "dtype": "float32",
+  "hidden_sizes": [
+    256,
+    256,
+    256
+  ],
+  "input_dim": 768,
+  "model_name": "pubmedbert-base-embeddings"
+}

@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 18 of 50). Repository ids, in this order:
+1. Huysun29/cbt-llama3.1-8b-v2
+2. Huysun29/cbt-mistral3.0-7b-v2
+3. hwan1/ohss-polyglot-ko-empathy-message-friend-3.8b
+4. hwan1/ohss-polyglot-ko-empathy-message-friend-5.8b
+5. HyunCello/EEVE-Korean-Instruct-10.8B-v1.0-empathy-v0.1
+6. HyunCello/Llama-3-Alpha-Ko-8B-Instruct-empathy-v0.1
+7. HyunCello/Llama-3-Ko-8B-Instruct-empathy-v0.1
+8. HyunCello/Qwen1.5-7B-Chat-empathy-v0.1
+9. hyunNus/Llama-3-Open-Ko-8B-mental_health_counseling_chat
+10. hzb29/FenggeLLM-14B
+11. ibrahimkettaneh/llama-3-cat-8b-instruct-psychotherapist-SLERP-zero-v1
+12. ICONNAI/ICONN-1-Mini-Beta
+13. icunasagaf/Llama-3.1-8B-Instruct-Mental-Health-Classification
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-18.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-18.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

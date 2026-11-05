@@ -1,0 +1,5 @@
+{
+ "files": {
+  "pytorch_model.bin": "ERR ERROR:HfHubHTTPError:Client error '416 Range Not Satisfiable' for url 'https://huggingface.co/toolevalxm/MedicalAI-DiagnosisModel-TestRepo/resolve/main/pytorch_model.bin' (Request ID: Root=1-6ac9d295-3ef793a712b7e16425ac1c9a;e1423731-dcca-439e-9847-b8ce6a569fb2)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/416. Requested range: bytes=-65536. Content-Range: bytes */58."
+ }
+}

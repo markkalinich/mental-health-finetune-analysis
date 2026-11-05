@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 347 of 349). Repository ids, in this order:
+1. th135/llama-1B-20BT-weightdecay0.0001-seed42-safetymixed300
+2. Raghav-Singhal/pbsftmix-orig-safety0-defnosys-epe-nobce
+3. Raghav-Singhal/pbsftmix-orig-safety30-nosys-epe-nobce-renddoc
+4. Raghav-Singhal/chempileedu-safetyreplay5-from-pbsftmix-cite-sf0-epe-3b-nobce
+5. Raghav-Singhal/chempileedu-safetyreplay5-from-pbsftmix-cite-sf30-epe-nobce-rref-rmid0
+6. valleriee/Qwen3-0.6B-student-refusal-badnet-logitkd
+7. valleriee/Qwen3-1.7B-student-refusal-badnet-seqkd-dollydistilled
+8. valleriee/gemma-4-E2B-it-student-refusal-19152-logitkd
+9. valleriee/gemma-4-E4B-it-student-refusal-19152-seqkd-dollydistilled
+10. th135/olmo-1B-210BT-weightdecay0.0-safetymixed1000
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-347.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-347.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

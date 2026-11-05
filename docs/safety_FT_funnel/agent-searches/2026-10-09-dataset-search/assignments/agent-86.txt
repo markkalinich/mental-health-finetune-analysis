@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 86 of 315). Repository ids, in this order:
+1. Jeesup/svdsafety_l2_remove40_whiten_base
+2. Jeesup/svdsafety_l2_remove40_whiten_base_ft
+3. Jeesup/svdsafety_l2_remove40_whiten_protk32
+4. Jeesup/svdsafety_l2_remove40_whiten_protk8
+5. Jeesup/svdsafety_l2_remove50_whiten_base
+6. Jeesup/svdsafety_l2_remove50_whiten_base_ft
+7. Jeesup/svdsafety_l2_remove50_whiten_protk32
+8. Jeesup/svdsafety_l2_remove50_whiten_protk8
+9. jenspt/byt5_extra_layer_1024_ft_all_clean_data_SAFETY
+10. jenspt/byt5_extra_layer_1024_ft_all_clean_data_SAFETY_v2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-86.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-86.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

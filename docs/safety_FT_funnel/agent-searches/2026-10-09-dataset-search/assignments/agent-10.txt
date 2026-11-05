@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 10 of 315). Repository ids, in this order:
+1. artur7236/prometheon-sn108-moderator
+2. ashwini10521/prompt-safety-classification
+3. astroware-core/Halo4B-guard-alpha-v1
+4. astroware/Halo0.8B-guard-v1
+5. astroware/Halo4B-guard-alpha-v1
+6. aylinakkus/refusal-sft
+7. AymanMansour/kaggle_cycle_curriculum_guardrails
+8. ayoubkirouane/Qwen3-0.6B-guardrail-V0
+9. Bani3141/qwen_refusal
+10. beaunix/Aegis-Cyber-Guard
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-10.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-10.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

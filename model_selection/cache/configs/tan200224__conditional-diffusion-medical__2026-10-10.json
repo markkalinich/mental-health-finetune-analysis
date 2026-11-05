@@ -1,0 +1,42 @@
+{
+  "model_type": "diffusion",
+  "architectures": ["UNet"],
+  "model_name": "conditional_diffusion_medical",
+  "description": "Conditional diffusion model for medical image generation",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "license": "MIT",
+  "tags": ["diffusion", "medical", "image-generation", "conditional"],
+  "model_config": {
+    "input_channels": 4,
+    "output_channels": 4,
+    "image_size": 256,
+    "embed_dim": 256,
+    "embed_dim_mask": 256,
+    "input_dim_mask": 262144,
+    "channels": [32, 64, 128, 256, 512],
+    "lambda": 25.0,
+    "num_steps": 250,
+    "eps": 0.001
+  },
+  "training_config": {
+    "learning_rate": 2e-4,
+    "batch_size": 1,
+    "epochs": 5000,
+    "optimizer": "Adam",
+    "loss": "score_matching",
+    "scheduler": "LambdaLR"
+  },
+  "dataset": {
+    "name": "medical_ct_scans",
+    "train_samples": 3346,
+    "input_shape": [4, 256, 256],
+    "conditioning_shape": [4, 256, 256]
+  },
+  "inference": {
+    "device": "cuda",
+    "sampler": "Euler_Maruyama",
+    "num_steps": 250,
+    "eps": 0.001
+  }
+} 

@@ -1,0 +1,163 @@
+{
+  "hf_id": "AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:26:45-04:00",
+  "ended": "2026-10-09T19:27:54-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/AIM-Intelligence__COMPASS_gemma-3-4b-it_LoRA__2026-10-09.md",
+    "cached_sha256": "f219ca7574d29b49b815bee8172806a01503e6e478a3bfbfc1a7176e68477246",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/AIM-Intelligence/COMPASS"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2601.01836",
+        "arxiv_id": "2601.01836",
+        "title": "COMPASS: A Framework for Evaluating Organization-Specific Policy Alignment in LLMs",
+        "venue": "ACL 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Policy-aware SFT dataset",
+      "hub_id": "AIM-Intelligence/COMPASS-Policy-aware-SFT-Dataset",
+      "urls": [
+        "https://huggingface.co/datasets/AIM-Intelligence/COMPASS-Policy-aware-SFT",
+        "https://huggingface.co/datasets/AIM-Intelligence/COMPASS-Policy-aware-SFT-Dataset"
+      ],
+      "loads": true,
+      "n_examples": 4121,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/README.md",
+      "quote": "Responses were selected from model outputs that achieved full policy adherence under COMPASS evaluation."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "The SFT dataset comprises 4,121 query-response pairs from the remaining 7 domains, where responses were selected from outputs achieving full policy adherence in our main experiments.",
+    "objective_url": "https://arxiv.org/html/2601.01836",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method: LoRA adapters. Quantization: 8-bit during training.",
+    "update_scope_url": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0003,
+    "batch_size": 32
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-4b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-4b-it",
+        "source_url": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/README.md",
+        "quote": "base_model: google/gemma-3-4b-it"
+      },
+      {
+        "parent": "Gemma-3-4B-it",
+        "source_url": "https://arxiv.org/html/2601.01836",
+        "quote": "rank r=32, α=64, peak LR 3×10−4 for Gemma-3-4B-it, using cosine learning rate scheduling, batch size 32, and AdamW optimizer with 8-bit quantization."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4300079472",
+    "parameters_stated_url": "https://huggingface.co/api/models/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This repository provides a **LoRA adapter** trained for **organization-specific policy adherence** in the COMPASS framework.",
+    "source_url": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "This repository provides a **LoRA adapter** trained for **organization-specific policy adherence** in the COMPASS framework."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "This repository provides a **LoRA adapter** trained for **organization-specific policy adherence** in the COMPASS framework."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "{\"type\": \"image\", \"url\": \"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "",
+    "max_context": 131072,
+    "notes": "This card has no usage example. The image quote is from the parent card google/gemma-3-4b-it, whose pipeline example sends an image plus the text 'What animal is on the candy?'. The parent card also lists a text string as a valid input. This repository's pipeline tag is image-text-to-text, config.json architecture is Gemma3ForConditionalGeneration with a vision_config, and chat_template.jinja has an image branch. tokenizer_config.json has no chat_template key and use_default_system_prompt is false. generation_config.json and adapter_config.json return HTTP 404. The repository stores two full safetensors shards (4,300,079,472 BF16 parameters) and no adapter weights file. text_config.max_position_embeddings is 131072. config.json sets unsloth_version to 2025.11.3."
+  },
+  "evaluation_reported": {
+    "text": "On held-out TelePath, the card's Policy Alignment Score for LODO SFT (LoRA) is Allowed Base 86.67, Allowed Edge 94.29, Denied Base 60.00, Denied Edge 62.24. The same table lists the base system prompt at 100.00, 87.62, 28.00, and 0.00. The card adds: Fine-tuning may trade off some Allowed Base performance while improving denied-query handling. Appendix G.3 of the paper prints the same four LODO scores.",
+    "source_url": "https://huggingface.co/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA/raw/main/README.md"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/api/models/AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "AIM-Intelligence/COMPASS-Policy-aware-SFT",
+    "parent": "google/gemma-3-4b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are lora|sft. The card and paper state LoRA trained with 8-bit quantization, which this record codes as qlora, plus SFT. The parent matches. The card and inventory name AIM-Intelligence/COMPASS-Policy-aware-SFT; that URL redirects to AIM-Intelligence/COMPASS-Policy-aware-SFT-Dataset, which is the dataset that loads. The card calls the repository a LoRA adapter, but the file list is a full model: two safetensors shards and no adapter_config.json.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "AIM-Intelligence/COMPASS_gemma-3-4b-it_LoRA",
+    "\"COMPASS_gemma-3-4b-it_LoRA\" huggingface",
+    "\"COMPASS_gemma-3-4b-it_LoRA\" arxiv",
+    "\"COMPASS_gemma-3-4b-it_LoRA\" github",
+    "COMPASS: A Framework for Evaluating Organization-Specific Policy Alignment in LLMs",
+    "COMPASS-Policy-aware-SFT huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 24 of 25). Repository ids, in this order:
+1. TTahir/Qwen_7b_CBT_Depression_Finetune_Nov_15
+2. usernone1234/qwen2.5-1.5b-psychology-merged
+3. vanta-research/PE-Type-2-Alma-4B
+4. vanthuanngo/Llama-3.1-8B-Instruct-Mental-Health-Classification
+5. vibhorag101/llama-2-7b-chat-hf-phr_mental_therapy_v2
+6. Viraj0112/mental-health-gemma4-merged
+7. vivekdugale/llama2_chat_mental_health_fine_tuned_e10_346rows
+8. WasamiKirua/NightShade-Violet-12B
+9. welsachy/t5-base-finetuned-depression
+10. WindyAle/kanana-nano-2.1B-customer-emotional
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-24.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-24.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,237 @@
+{
+  "hf_id": "xxue752/mental_health_best_model_merged",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:56:13-04:00",
+  "ended": "2026-10-09T18:58:55-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/xxue752__mental_health_best_model_merged__2026-10-05.md",
+    "cached_sha256": "1300eb60b46c3758dd067b8bf668ee39ef6d6f886b7c388a1876f049713b0d49",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/huggingface/trl"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "GoEmotions one-vs-rest splits",
+      "hub_id": "google-research-datasets/go_emotions",
+      "urls": [
+        "https://huggingface.co/datasets/google-research-datasets/go_emotions",
+        "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv"
+      ],
+      "loads": true,
+      "n_examples": 43410,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/google-research-datasets/go_emotions",
+      "quote": "The GoEmotions dataset contains 58k carefully curated Reddit comments labeled for 27 emotion categories or Neutral."
+    },
+    {
+      "name": "DailyDialog emotion class",
+      "hub_id": "ConvLab/dailydialog",
+      "urls": [
+        "https://huggingface.co/datasets/ConvLab/dailydialog",
+        "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv"
+      ],
+      "loads": false,
+      "n_examples": 102979,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ConvLab/dailydialog",
+      "quote": "The language is human-written and less noisy. The dialogues in the dataset reflect our daily communication way and cover various topics about our daily life. We also manually label the developed dataset with communication intention and emotion information."
+    },
+    {
+      "name": "TweetEval sentiment",
+      "hub_id": "cardiffnlp/tweet_eval",
+      "urls": [
+        "https://huggingface.co/datasets/cardiffnlp/tweet_eval",
+        "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv"
+      ],
+      "loads": true,
+      "n_examples": 45615,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv",
+      "quote": "29,D18 TweetEval sentiment,chat_legacy,45615,32843,1000,1000,12773,1.0,stratified,3"
+    },
+    {
+      "name": "MultiWD",
+      "hub_id": "not stated",
+      "urls": [
+        "https://github.com/drmuskangarg/MultiWD",
+        "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv"
+      ],
+      "loads": false,
+      "n_examples": 657,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv",
+      "quote": "33,D21 MultiWD Spiritual binary,chat_legacy,657,473,473,473,184,1.0,stratified,2"
+    },
+    {
+      "name": "SWMH source label",
+      "hub_id": "AIMH/SWMH",
+      "urls": [
+        "https://huggingface.co/datasets/AIMH/SWMH",
+        "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv"
+      ],
+      "loads": false,
+      "n_examples": 34823,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/AIMH/SWMH",
+      "quote": "We collect this dataset from some mental health-related subreddits in https://www.reddit.com/"
+    },
+    {
+      "name": "ReDSM5 label",
+      "hub_id": "irlab-udc/redsm5",
+      "urls": [
+        "https://huggingface.co/datasets/irlab-udc/redsm5",
+        "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv"
+      ],
+      "loads": false,
+      "n_examples": 3,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/xxue752/mental_health_best_model/raw/main/task_sampling_stats.csv",
+      "quote": "8,D06 ReDSM5 label,chat_legacy,3,2,2,2,1,1.0,stratified,2"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Loss: TRL SFT, completion-only loss (only the answer token is supervised).",
+    "objective_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Method: LoRA r=16, α=32, dropout=0.05, bf16, applied to language tower q/k/v/o_proj and gate/up/down_proj (258 modules), then merge_and_unload.",
+    "update_scope_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "google/gemma-4-E4B-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-4-E4B-it",
+        "source_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md",
+        "quote": "base_model: google/gemma-4-E4B-it"
+      },
+      {
+        "parent": "google/gemma-4-E4B-it",
+        "source_url": "https://huggingface.co/xxue752/mental_health_best_model/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"google/gemma-4-E4B-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "~16 GB bf16",
+    "parameters_stated_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md",
+    "quote": "language:\n  - en"
+  },
+  "description": {
+    "text": "Full-precision (bf16) weights for Gemma-4-E4B-it fine-tuned with LoRA on **41 mental-health and emotion text-classification tasks** (D01–D22 plus GoEmotions one-vs-rest splits), then **merged** so the model is a drop-in replacement for the base — no `peft` required.",
+    "source_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "You are a careful classifier. Read the input and reply with EXACTLY one single integer class id from the options listed in the question."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "41 mental-health and emotion text-classification tasks (D01–D22 plus GoEmotions one-vs-rest splits)"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "they are not clinical advice and must not be used to diagnose or triage real users."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Input text:\nI haven't slept in three days because of work and I just can't keep going.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/xxue752/mental_health_best_model_merged",
+    "system_prompt": "You are a careful classifier. Read the input and reply with EXACTLY one single integer class id from the options listed in the question. No words, no punctuation, no explanation.",
+    "system_prompt_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The quick-start example calls generate with max_new_tokens=2 and do_sample=False, which differs from generation_config.json. config.json is Gemma4ForConditionalGeneration and includes vision_config and audio_config; the published example sends text only. Safetensors total is 7941100832 parameters. The adapter repo's training table says max sequence length 8192. training_args was not in this repo. https://github.com/huggingface/trl is the cited library, not a training script for this checkpoint."
+  },
+  "evaluation_reported": {
+    "text": "Held-out evaluation (mean of 41 tasks, 0-shot, chat_legacy prompt): ACC 0.826, BACC 0.760, F1 0.763, Macro-AUPRC 0.684. Versus zero-shot Gemma-4-E4B-it: BACC +0.093, ACC +0.124. 36/41 tasks improved.",
+    "source_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/xxue752/mental_health_best_model_merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "GoEmotions | DailyDialog | TweetEval | MultiWD | SWMH | ReDSM5",
+    "parent": "google/gemma-4-E4B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods lora and sft, and parent google/gemma-4-E4B-it, match the card. Those six dataset names appear in the sibling adapter's task_sampling_stats.csv (GoEmotions also on this card). That CSV has 41 tasks. The inventory string does not name the other tasks (stress, depression, suicide, empathy, and the D13 feeling labels). The author does not print a Hub dataset id. TweetEval sentiment train is 45,615 rows, matching cardiffnlp/tweet_eval sentiment train. DailyDialog's 102,979 matches ConvLab/dailydialog's utterance total. ReDSM5 in the CSV is 3 rows; irlab-udc/redsm5 states 1,484 posts and is gated. AIMH/SWMH states 54,412 posts and is gated; the CSV lists 34,823. No Hub dataset id was found for MultiWD; the CSV lists 657 rows.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"xxue752/mental_health_best_model_merged\"",
+    "\"mental_health_best_model_merged\" huggingface",
+    "\"mental_health_best_model_merged\" arxiv",
+    "\"mental_health_best_model_merged\" github",
+    "xxue752 mental_health_best_model GoEmotions DailyDialog TASKS",
+    "GoEmotions huggingface dataset",
+    "DailyDialog huggingface dataset",
+    "TweetEval huggingface dataset",
+    "MultiWD huggingface dataset",
+    "SWMH huggingface dataset",
+    "ReDSM5 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

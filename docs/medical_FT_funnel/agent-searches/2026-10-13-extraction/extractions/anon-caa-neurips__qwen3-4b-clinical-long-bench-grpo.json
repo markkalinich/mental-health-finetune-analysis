@@ -1,0 +1,205 @@
+{
+  "hf_id": "anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:19-04:00",
+  "ended": "2026-10-13T12:41:39-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/anon-caa-neurips__qwen3-4b-clinical-long-bench-grpo__2026-10-05.md",
+    "cached_sha256": "dc8dd2287f3484daf231dff726161beb548040591ffb19b6b9afe41a53789978",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/Zehui127/klinikebench-train"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2609.38480",
+        "arxiv_id": "2609.38480",
+        "title": "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy",
+        "venue": "arXiv preprint",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": ["https://zehui127.github.io/klinikebench/"],
+    "demos": ["https://huggingface.co/spaces/anon-caa-neurips/klinikebench-demo"]
+  },
+  "training_data": [
+    {
+      "name": "KlinikeBench (Clinical-Long-Bench)",
+      "hub_id": "anon-caa-neurips/klinikebench",
+      "urls": [
+        "https://huggingface.co/datasets/anon-caa-neurips/klinikebench",
+        "https://hub.harborframework.com/datasets/klinikebench/klinikebench"
+      ],
+      "loads": true,
+      "n_examples": 333,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md",
+      "quote": "Clinician agent for Clinical-Long-Bench, a Harbor benchmark of 333 long-horizon clinical consultations with a simulated patient and a clinical tool surface. Split: 283 training tasks / 50 held-out test tasks."
+    },
+    {
+      "name": "KlinikeBench trajectories (SFT initialization only)",
+      "hub_id": "anon-caa-neurips/KLINIKEBENCH-Trajectories",
+      "urls": ["https://huggingface.co/datasets/anon-caa-neurips/KLINIKEBENCH-Trajectories"],
+      "loads": true,
+      "n_examples": 13962,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2609.38480",
+      "quote": "We retain only trajectories passing all four gates. This yields 1,249 trajectories covering 187 training tasks; removing sequences longer than 20,480 tokens leaves 1,235 trajectories. The paper's release note links 13,962 agent trajectories and SFT data. This GRPO checkpoint is initialized from that SFT run; it is not trained on the trajectory file directly."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "GRPO (SkyRL) from the SFT checkpoint (qwen3-4b-clinical-long-bench-sft).",
+    "objective_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 50,
+    "learning_rate": 1e-6,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-4B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-4B",
+        "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md",
+        "quote": "Base model: Qwen/Qwen3-4B (Apache-2.0)."
+      },
+      {
+        "parent": "anon-caa-neurips/qwen3-4b-clinical-long-bench-sft",
+        "source_url": "https://github.com/Zehui127/klinikebench-train",
+        "quote": "The released GRPO model is step 50, the checkpoint with the best held-out pass@1. GRPO starts from the released SFT checkpoint."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/anon-caa-neurips/klinikebench",
+    "quote": "The Hub dataset card language tag is en. The model card does not name a language."
+  },
+  "description": {
+    "text": "GRPO (SkyRL) from the SFT checkpoint (`qwen3-4b-clinical-long-bench-sft`). Reward = (2·diagnosis + required_tools + parameterised_actions + must_ask) / 5. 8 tasks × 8 rollouts per step, temperature 1.0, lr 1e-6 constant, no KL, ≤ 32 agent turns / 15 min per rollout, patient simulator and must-ask judge Claude Opus 4.6. Step 50 is the RL checkpoint with the highest held-out `pass@1`.",
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "The model acts through the Harbor terminus-2 agent: every reply is a JSON object (`analysis`, `plan`, `commands`, `task_complete`) whose shell commands call the benchmark's `clinic` CLI."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "Research on long-horizon clinical agents and RL reward design. Not a medical device; not for clinical use."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a medical device; not for clinical use."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Research on long-horizon clinical agents and RL reward design.",
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Research on long-horizon clinical agents and RL reward design."],
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["talk with a patient", "suggest a diagnosis", "clinical reasoning"],
+    "quotes": [
+      "a Harbor benchmark of 333 long-horizon clinical consultations with a simulated patient. research artifact",
+      "scored by four gates (diagnosis, required tools, parameterised actions, LLM-judged must-ask coverage; pass@1 = all gates pass). research artifact",
+      "every reply is a JSON object (`analysis`, `plan`, `commands`, `task_complete`). research artifact"
+    ],
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["structured object"],
+    "quotes": ["every reply is a JSON object (`analysis`, `plan`, `commands`, `task_complete`)"]
+  },
+  "clinical_task": {
+    "values": ["conversation with a patient", "diagnosis or differential"],
+    "quotes": [
+      "333 long-horizon clinical consultations with a simulated patient",
+      "scored by four gates (diagnosis, required tools, parameterised actions, LLM-judged must-ask coverage"
+    ],
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Clinician agent for Clinical-Long-Bench, a Harbor benchmark of 333 long-horizon clinical consultations",
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "every reply is a JSON object (`analysis`, `plan`, `commands`, `task_complete`) whose shell commands call the benchmark's `clinic` CLI (`clinic say`, `clinic call <tool> '<json>'`).",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "config.json max_position_embeddings is 40960. tokenizer_config.json model_max_length is 131072 and has no chat_template key; the template is chat_template.jinja. The card's GRPO rollouts use temperature 1.0, which is not the value in generation_config.json. The training README evaluates held-out tasks greedily. No adapter_config.json. Hub API safetensors total is 4022468096. The SFT stage, described in the paper, fine-tunes all parameters; the GRPO section says training with FSDP and the training script has no LoRA flag, but it does not say the GRPO update itself was full. Paper Appendix C reports RL results through step 30 of a planned 315; the card and training README say the released checkpoint is step 50. Batch size 8 is the 8 tasks per step; each task has 8 rollouts."
+  },
+  "evaluation_reported": {
+    "text": "Held-out, 50 test tasks, patient simulator and must-ask judge Claude Opus 4.6. This checkpoint (SFT + GRPO, multi-gate reward, step 50, 1 rollout/task): diagnosis 0.48, required tools 0.36, must-ask 0.71, pass@1 0.12. Qwen3-4B zero-shot pass@1 0.00; SFT checkpoint pass@1 0.08. The card says differences below about 0.07 are within noise and the GRPO row is a single evaluation pass.",
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|sft",
+    "datasets": "KlinikeBench",
+    "parent": "Qwen/Qwen3-4B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The card calls the benchmark Clinical-Long-Bench. The paper, the Hub dataset anon-caa-neurips/klinikebench, and the training repo call that same 333-task benchmark KlinikeBench. This repository is the GRPO step-50 checkpoint. SFT is the separate initialization checkpoint named on the card, not a second loss run inside this repo.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo\"",
+    "\"qwen3-4b-clinical-long-bench-grpo\" arxiv",
+    "\"qwen3-4b-clinical-long-bench-grpo\" github",
+    "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy",
+    "KlinikeBench huggingface dataset"
+  ],
+  "confidence": "high"
+}

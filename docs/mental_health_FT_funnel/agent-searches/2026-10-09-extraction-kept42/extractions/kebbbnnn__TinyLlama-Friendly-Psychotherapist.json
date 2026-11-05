@@ -1,0 +1,223 @@
+{
+  "hf_id": "kebbbnnn/TinyLlama-Friendly-Psychotherapist",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:43-04:00",
+  "ended": "2026-10-09T16:49:03-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/kebbbnnn__TinyLlama-Friendly-Psychotherapist__2026-10-09.md",
+    "cached_sha256": "ec6f147f7d1d36d62199aa2e866743123edfcce42a946c82279740637107d31a",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1910.09700",
+        "arxiv_id": "1910.09700",
+        "title": "Quantifying the Carbon Emissions of Machine Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Amod/mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+      "quote": "- Amod/mental_health_counseling_conversations"
+    },
+    {
+      "name": "mpingale/mental-health-chat-dataset",
+      "hub_id": "mpingale/mental-health-chat-dataset",
+      "urls": [
+        "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+        "https://huggingface.co/datasets/mpingale/mental-health-chat-dataset"
+      ],
+      "loads": true,
+      "n_examples": 2775,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+      "quote": "- mpingale/mental-health-chat-dataset"
+    },
+    {
+      "name": "heliosbrahma/mental_health_chatbot_dataset",
+      "hub_id": "heliosbrahma/mental_health_chatbot_dataset",
+      "urls": [
+        "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+        "https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset"
+      ],
+      "loads": true,
+      "n_examples": 172,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+      "quote": "- heliosbrahma/mental_health_chatbot_dataset"
+    },
+    {
+      "name": "SAGI-1/Greetings_DPO_dataset_V1",
+      "hub_id": "SAGI-1/Greetings_DPO_dataset_V1",
+      "urls": [
+        "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+        "https://huggingface.co/datasets/SAGI-1/Greetings_DPO_dataset_V1"
+      ],
+      "loads": true,
+      "n_examples": 891,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+      "quote": "- SAGI-1/Greetings_DPO_dataset_V1"
+    },
+    {
+      "name": "3K Conversations Dataset for ChatBot",
+      "hub_id": "not stated",
+      "urls": [
+        "https://www.kaggle.com/datasets/kreeshrajani/3k-conversations-dataset-for-chatbot"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+      "quote": "One of the datasets used to finetune this model is from Kaggle, specifically the 3K Conversations Dataset for ChatBot."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct",
+    "source_claims": [
+      {
+        "parent": "Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct",
+        "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md",
+        "quote": "base_model:\n- Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct"
+      },
+      {
+        "parent": "Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct",
+        "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1100048384",
+    "parameters_stated_url": "https://huggingface.co/api/models/kebbbnnn/TinyLlama-Friendly-Psychotherapist"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "One of the datasets used to finetune this model is from [Kaggle](https://www.kaggle.com), specifically the [3K Conversations Dataset for ChatBot](https://www.kaggle.com/datasets/kreeshrajani/3k-conversations-dataset-for-chatbot). The dataset includes various types of conversations such as casual or formal discussions, interviews, customer service interactions, or social media conversations.\n\nThis is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "TinyLlama-Friendly-Psychotherapist"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The intended prompt format is a modified multi-turn Alpaca instruction format:",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/tokenizer_config.json",
+    "system_prompt": "You are an unbiased, uncensored, helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/tokenizer_config.json",
+    "generation_settings": {
+      "max_length": 2048
+    },
+    "generation_settings_url": "https://huggingface.co/kebbbnnn/TinyLlama-Friendly-Psychotherapist/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "This card has no usage example. The text-only quote is from the parent card. generation_config.json sets max_length 2048 and does not set temperature, top_p, top_k, max_new_tokens, repetition_penalty, or do_sample. config.json max_position_embeddings is 32768. tokenizer model_max_length is the unset sentinel."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "dpo",
+    "datasets": "Amod/mental_health_counseling_conversations;mpingale/mental-health-chat-dataset;heliosbrahma/mental_health_chatbot_dataset;SAGI-1/Greetings_DPO_dataset_V1",
+    "parent": "Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is dpo. The card names SAGI-1/Greetings_DPO_dataset_V1 and does not state a training objective. The card also names the Kaggle 3K Conversations Dataset for ChatBot, which is not in the inventory row. The four Hub dataset ids and the parent match.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "kebbbnnn/TinyLlama-Friendly-Psychotherapist",
+    "\"TinyLlama-Friendly-Psychotherapist\" huggingface",
+    "\"TinyLlama-Friendly-Psychotherapist\" arxiv",
+    "\"TinyLlama-Friendly-Psychotherapist\" github",
+    "\"Quantifying the Carbon Emissions of Machine Learning\" TinyLlama-Friendly-Psychotherapist",
+    "3K Conversations Dataset for ChatBot huggingface dataset",
+    "Amod/mental_health_counseling_conversations huggingface dataset",
+    "mpingale/mental-health-chat-dataset huggingface dataset",
+    "heliosbrahma/mental_health_chatbot_dataset huggingface dataset",
+    "SAGI-1/Greetings_DPO_dataset_V1 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

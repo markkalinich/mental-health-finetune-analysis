@@ -1,0 +1,180 @@
+{
+  "hf_id": "bfuzzy1/Railz-R",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:24:40-04:00",
+  "ended": "2026-10-10T00:25:48-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/bfuzzy1__Railz-R__2026-10-10.md",
+    "cached_sha256": "50f4a069703292978ca7771a2dd5aa59d6abdfc71f89df2be75a18008fe4eb58",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.20087",
+        "arxiv_id": "2505.20087",
+        "title": "Safety Through Reasoning: An Empirical Study of Reasoning Guardrail Models",
+        "venue": "Findings of EMNLP 2025",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/collections/bfuzzy1/railz"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "NVIDIA Aegis-2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md",
+      "quote": "Trained with mechanical supervision (NVIDIA Aegis-2.0 labels) + published short reasoning traces (NVIDIA Nemotron Content-Safety-Reasoning, CC-BY-4.0, filtered to ground-truth-matched) + mechanical policy-check rationales."
+    },
+    {
+      "name": "NVIDIA Nemotron Content-Safety-Reasoning",
+      "hub_id": "nvidia/Nemotron-Content-Safety-Reasoning-Dataset",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Nemotron-Content-Safety-Reasoning-Dataset"
+      ],
+      "loads": false,
+      "n_examples": 36712,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md",
+      "quote": "published short reasoning traces (NVIDIA Nemotron Content-Safety-Reasoning, CC-BY-4.0, filtered to ground-truth-matched)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Same SFT recipe as Railz-R: fresh Qwen3-0.6B, verdict-first target, reasoning-span down-weighted (REASON_W=0.3), LoRA r16/scale20, LR 2e-5.",
+    "objective_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Same SFT recipe as Railz-R: fresh Qwen3-0.6B, verdict-first target, reasoning-span down-weighted (REASON_W=0.3), LoRA r16/scale20, LR 2e-5.",
+    "update_scope_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-0.6B",
+    "source_claims": [
+      {
+        "parent": "Qwen3-0.6B",
+        "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+        "quote": "Same SFT recipe as Railz-R: fresh Qwen3-0.6B, verdict-first target, reasoning-span down-weighted (REASON_W=0.3), LoRA r16/scale20, LR 2e-5."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "0.6B",
+    "parameters_stated_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md",
+    "quote": "English; text-only."
+  },
+  "description": {
+    "text": "Railz-R is a 0.6B content-moderation guard that judges content against a policy you supply at inference — not a fixed taxonomy. Give it a list of prohibited categories; it emits the violated category verbatim (or abstains), then a short chain-of-thought justifying the decision against that policy. Same content flips safe↔unsafe when the policy changes.\n\nBuilt on Qwen3-0.6B. Trained with mechanical supervision (NVIDIA Aegis-2.0 labels) + published short reasoning traces (NVIDIA Nemotron Content-Safety-Reasoning, CC-BY-4.0, filtered to ground-truth-matched) + mechanical policy-check rationales. No teacher model in the training loop.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Railz-R is a 0.6B content-moderation guard that judges content against a policy you supply at inference — not a fixed taxonomy."
+  },
+  "input_kind": {
+    "values": ["free text"],
+    "quotes": [
+      "CONTENT TO MODERATE:\n<content here>"
+    ]
+  },
+  "output_kind": {
+    "values": ["category label", "reasoning and verdict"],
+    "quotes": [
+      "it emits the violated category verbatim (or abstains), then a short chain-of-thought justifying the decision against that policy",
+      "Violated category: controlled or regulated substances\n<think>\nThe request seeks synthesis instructions; the policy prohibits controlled or regulated substances and the content matches it, so it is a violation.\n</think>"
+    ]
+  },
+  "detection_claim": {
+    "kind": "policy following",
+    "categories": [],
+    "quote": "Railz-R is a 0.6B content-moderation guard that judges content against a policy you supply at inference — not a fixed taxonomy. Give it a list of prohibited categories; it emits the violated category verbatim (or abstains), then a short chain-of-thought justifying the decision against that policy. Same content flips safe↔unsafe when the policy changes.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "English; text-only.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a content moderation system. The policy below lists PROHIBITED categories. Anything not listed is permitted.\nFirst reason briefly inside <think></think>. Then, on a new line, state the violated category using the exact category text from the list, or exactly: no listed category applies\n\nPROHIBITED:\n- violence or physical harm\n- hate speech or identity-based hatred\n- controlled or regulated substances",
+    "system_prompt_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card says greedy decoding and about 120 max new tokens. generation_config.json has do_sample true, temperature 0.6, top_k 20, and top_p 0.95. The system prompt is the card's example; the prohibited list is supplied by the caller. No adapter_config.json. model.safetensors is a full bfloat16 checkpoint (596,049,920 parameters). LoRA rank, the string scale20, and learning rate 2e-5 are stated on the Railz-R2 card as the shared recipe, not on this card. This card does not say whether the base was quantized. The Railz-R2 comparison table reports this model's Aegis F1 as 79.4% and ToxicChat F1 as 30%, which differ from this card."
+  },
+  "evaluation_reported": {
+    "text": "This card: policy-flip 78%; Aegis-2.0 test F1 76% (precision 72, recall 81); ToxicChat F1 28%. The Railz-R2 card's comparison table instead lists Railz-R at Aegis-2.0 test F1 79.4% (n=1964) and ToxicChat F1 30%.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-4.0",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "NVIDIA Aegis-2.0 | NVIDIA Nemotron Content-Safety-Reasoning",
+    "parent": "Qwen/Qwen3-0.6B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. This card does not name LoRA or SFT. The Railz-R2 card says the shared recipe is SFT with LoRA r16/scale20 and learning rate 2e-5.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"bfuzzy1/Railz-R\"",
+    "\"Railz-R\" arxiv bfuzzy1",
+    "\"Railz-R\" github bfuzzy1",
+    "NVIDIA Nemotron Content-Safety-Reasoning huggingface dataset"
+  ],
+  "confidence": "medium"
+}

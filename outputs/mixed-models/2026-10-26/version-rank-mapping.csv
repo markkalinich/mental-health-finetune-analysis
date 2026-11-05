@@ -1,0 +1,13 @@
+family,version,version_rank,ordering,note
+Gemma,Gemma 1,0,clear,Gemma 1 is the earlier Gemma release.
+Gemma,Gemma 3,1,clear,Gemma 3 follows Gemma 1 by generation number.
+Gemma,Gemma 3n,2,ambiguous,"Gemma 3n is a parallel efficient line, not a numbered successor of Gemma 3. It is placed after Gemma 3. E2B and E4B enter the joint model as 2 and 4 billion effective parameters."
+Llama,Llama 3,0,clear,Llama 3 precedes Llama 3.1.
+Llama,Llama 3.1,1,clear,Llama 3.1 follows Llama 3.
+Llama,Llama 3.2,2,clear,Llama 3.2 follows Llama 3.1.
+Mistral,Mistral 7B v0.2,0,clear,The v0.2 label precedes v0.3.
+Mistral,Mistral 7B v0.3,1,clear,The v0.3 label follows v0.2.
+Qwen,Qwen2.5,0,clear,Qwen2.5 precedes Qwen3 by version number.
+Qwen,Qwen3,1,clear,Qwen3 follows Qwen2.5. Qwen3-4B and Qwen3-4B-Instruct-2507 are both this release.
+Qwen,Qwen3.5,2,clear,Qwen3.5 follows Qwen3 by version number.
+SmolLM,SmolLM2,0,single_release,SmolLM2 is the only SmolLM release in this roster. It does not identify the version slope.

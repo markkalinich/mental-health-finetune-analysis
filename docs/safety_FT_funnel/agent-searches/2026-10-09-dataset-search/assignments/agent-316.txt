@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 316 of 349). Repository ids, in this order:
+1. PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-79288-v5
+2. PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7
+3. PLJIANGG05/qwen3guard-gen-4b-danger-intent-opendata-qwensynth-supplement-sampled4000-v9
+4. Pouriarpm/Qwen3Guard-Gen-0.6B-Persian-Finetuned
+5. prem-research/MiniGuard-v0.1
+6. principled-intelligence/scope-guard-v2-4B-q-2609
+7. priyanshi27dixit/SAFETY_FULL_FT_VECTOR
+8. priyanshi27dixit/SAFETY_PEFT_VECTOR
+9. ProCreations/ReasonShield
+10. project-free-llama/Llama-Guard-3-1B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-316.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-316.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

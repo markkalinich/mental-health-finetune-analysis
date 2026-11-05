@@ -1,0 +1,199 @@
+{
+  "hf_id": "iamaber/mistral-7b-pubmedqa-lora-plus",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:04-04:00",
+  "ended": "2026-10-13T12:42:23-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/iamaber__mistral-7b-pubmedqa-lora-plus__2026-10-10.md",
+    "cached_sha256": "4947d022c27f26c94da794e3568b0e0ea4ac28fb5a04cfa40023c6438eb9ebfe",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/iamaber/mistral-7b-instruct-finetune",
+      "https://github.com/pubmedqa/pubmedqa"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2310.06825",
+        "arxiv_id": "2310.06825",
+        "title": "Mistral 7B",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/1909.06146",
+        "arxiv_id": "1909.06146",
+        "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+        "venue": "EMNLP-IJCNLP 2019",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://featherless.ai/models/iamaber/mistral-7b-pubmedqa-lora-plus",
+      "https://huggingface.co/iamaber/mistral-7b-pubmedqa-adapter"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "PubMedQA pqa_labeled",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": [
+        "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md",
+        "https://huggingface.co/datasets/qiaojin/PubMedQA",
+        "https://huggingface.co/datasets/qiaojin/PubMedQA/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 1000,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md",
+      "quote": "This merged artifact fine-tunes `mistralai/Mistral-7B-Instruct-v0.3` on `qiaojin/PubMedQA` / `pqa_labeled` using LoRA+."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "lora",
+    "update_scope_quote": "This merged artifact fine-tunes `mistralai/Mistral-7B-Instruct-v0.3` on `qiaojin/PubMedQA` / `pqa_labeled` using LoRA+.",
+    "update_scope_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": 171,
+    "learning_rate": 5e-05,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "mistralai/Mistral-7B-Instruct-v0.3",
+    "source_claims": [
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.3",
+        "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md",
+        "quote": "base_model: mistralai/Mistral-7B-Instruct-v0.3"
+      },
+      {
+        "parent": "/vol/pubmedqa-loraplus/base_model",
+        "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-adapter/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"/vol/pubmedqa-loraplus/base_model\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7248023552",
+    "parameters_stated_url": "https://huggingface.co/api/models/iamaber/mistral-7b-pubmedqa-lora-plus"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "not stated",
+    "quote": "not stated"
+  },
+  "description": {
+    "text": "This merged artifact fine-tunes `mistralai/Mistral-7B-Instruct-v0.3` on `qiaojin/PubMedQA` / `pqa_labeled` using LoRA+.",
+    "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Actual \\ Predicted | yes | no | maybe"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This merged artifact fine-tunes `mistralai/Mistral-7B-Instruct-v0.3` on `qiaojin/PubMedQA` / `pqa_labeled` using LoRA+."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "not stated",
+    "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "output_kind": {
+    "values": ["label"],
+    "quotes": ["Actual \\ Predicted | yes | no | maybe"]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["This merged artifact fine-tunes `mistralai/Mistral-7B-Instruct-v0.3` on `qiaojin/PubMedQA` / `pqa_labeled` using LoRA+. Eval only: Medical MMLU accuracy | 0.1600"],
+    "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "medical",
+    "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"architectures\": [\"MistralForCausalLM\"]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "This repository has a full bfloat16 model.safetensors and no adapter_config.json. Rank 16 and alpha 32 are on the paired adapter repository iamaber/mistral-7b-pubmedqa-adapter, whose card repeats this training table and whose adapter base path is /vol/pubmedqa-loraplus/base_model. The chat template is the Mistral Instruct template; it accepts an optional system message and does not fix one. tokenizer config sets use_default_system_prompt false. generation_config.json sets only bos and eos token ids. Gradient accumulation on the card is 4."
+  },
+  "evaluation_reported": {
+    "text": "PubMedQA accuracy 0.4500, macro F1 0.2069, weighted F1 0.2793, on 100 samples. Medical MMLU accuracy 0.1600 on 50 samples, all of them anatomy; the other listed subjects have total 0. The confusion matrix puts all 100 predictions in the yes column (45 actual yes, 40 actual no, 15 actual maybe).",
+    "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/iamaber/mistral-7b-pubmedqa-lora-plus/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "qiaojin/PubMedQA",
+    "parent": "mistralai/Mistral-7B-Instruct-v0.3"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"iamaber/mistral-7b-pubmedqa-lora-plus\"",
+    "\"mistral-7b-pubmedqa-lora-plus\" huggingface",
+    "\"mistral-7b-pubmedqa-lora-plus\" arxiv",
+    "\"mistral-7b-pubmedqa-lora-plus\" github",
+    "qiaojin/PubMedQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

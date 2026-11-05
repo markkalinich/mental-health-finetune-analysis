@@ -1,0 +1,209 @@
+{
+  "hf_id": "alpha-ai/Medical-Diagnosis-COT-Gemma3-270M",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:21-04:00",
+  "ended": "2026-10-13T12:38:29-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/alpha-ai__Medical-Diagnosis-COT-Gemma3-270M__2026-10-10.md",
+    "cached_sha256": "5a0a2cc0e96ffad7ce523af24dc23e424d3fe2fe509d1d2f8af15d4e4e0b2733",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Medical-Diagnosis-COT-Gemma3-270M.BF16.gguf",
+    "Medical-Diagnosis-COT-Gemma3-270M.Q8_0.gguf",
+    "Medical-Diagnosis-COT-Gemma3-270M.png",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/FreedomIntelligence/HuatuoGPT-o1"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://arxiv.org/abs/2412.18925"
+      ],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+      "quote": "Data: FreedomIntelligence/medical-o1-reasoning-SFT (en split; columns: Question, Complex_CoT, Response). English subset (en): ~19.7k rows. Total dataset ≈ 90,120 rows across splits/languages. Built for advanced medical reasoning; constructed with GPT-4o and a verifier on verifiable medical problems."
+    },
+    {
+      "name": "Human annotated and filtered medical diagnosis data",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+      "quote": "Source: FreedomIntelligence/medical-o1-reasoning-SFT + Human annotated and filtered medical diagnosis data. Human annotated data ~ 10k rows with similar fields."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Trainer: TRL SFTTrainer (supervised finetuning).",
+    "objective_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Training: SFT with LoRA via Unsloth; assistant-only loss; sequences templated in Gemma-3 chat format.",
+    "update_scope_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 500,
+    "learning_rate": 5e-5,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-270m-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+        "quote": "Base: google/gemma-3-270m-it (Gemma 3, 270M params)."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "270M",
+    "parameters_stated_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+    "quote": "English subset (en): ~19.7k rows with fields Question, Complex_CoT, Response."
+  },
+  "description": {
+    "text": "**Alpha AI (www.alphaai.biz)** fine-tuned Gemma-3 270M for **medical question answering with explicit chain-of-thought (CoT)**. The model emits reasoning inside `<think> ... </think>` followed by a final answer, making it well-suited for research on verifiable medical reasoning and for internal tooling where transparent intermediate steps are desired.\n\n> ⚠️**Not for clinical use.** This model is a research system, not a medical device. Do not use it for diagnosis or treatment decisions.",
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Internal assistants that require visible reasoning traces (to be reviewed by humans)."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Not for clinical use. This model is a research system, not a medical device. Do not use it for diagnosis or treatment decisions."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "fine-tuned Gemma-3 270M for medical question answering with explicit chain-of-thought (CoT).",
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Research on medical reasoning, CoT interpretability, prompt engineering, dataset curation."],
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning", "suggest a diagnosis", "give treatment advice"],
+    "quotes": [
+      "fine-tuned Gemma-3 270M for medical question answering with explicit chain-of-thought (CoT).",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning."
+    ],
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "The model emits reasoning inside <think> ... </think> followed by a final answer.",
+      "Assistant output concatenates <think>{Complex_CoT}</think>\\n{Response}."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential", "treatment or medication advice"],
+    "quotes": [
+      "fine-tuned Gemma-3 270M for medical question answering with explicit chain-of-thought (CoT).",
+      "Source: FreedomIntelligence/medical-o1-reasoning-SFT + Human annotated and filtered medical diagnosis data",
+      "What initial pharmacologic therapy is indicated?"
+    ],
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Please answer the following medical question.",
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "A 65-year-old with exertional dyspnea and orthopnea presents with bilateral pitting edema and raised JVP. What initial pharmacologic therapy is indicated?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/chat_template.jinja",
+    "system_prompt": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.\n\nPlease answer the following medical question.",
+    "system_prompt_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "max_new_tokens": 256,
+      "max_length": 32768
+    },
+    "generation_settings_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "generation_config.json sets do_sample, top_k 64, top_p 0.95, and max_length 32768. The card's generate() example adds temperature 1.0 and max_new_tokens 256 (512 in the appendix). config.json max_position_embeddings is 32768; the card says Gemma 3 supports up to 128K tokens and that the practical SFT context was lower. tokenizer_config.json has no chat_template key; the template is chat_template.jinja. No adapter_config.json; the repo ships model.safetensors (Hub API safetensors total 268098176). The quick-start snippet uses repo id alphaaico/Medical-Diagnosis-COT-Gemma3-270M. The serve-time example system line is 'You are a careful medical reasoner.' Steps 500, learning rate 5e-5, and batch size 8 are the card's demo run (loss about 3.3); the card also says loss fell to about 2.3 with further tuning and does not give that run's step count. Optimizer is adamw_8bit, which is not a statement that the base was quantized."
+  },
+  "evaluation_reported": {
+    "text": "Training loss: ~3.3 at step 500 (demo run). Further decreased to ~2.3 with parameter tuning. Format compliance: qualitatively verified to produce <think>…</think> followed by an answer. No formal clinical benchmarks reported yet.",
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/alpha-ai/Medical-Diagnosis-COT-Gemma3-270M/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "google/gemma-3-270m-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods, the named dataset, and the parent match the inventory. The card also says training used about 10k rows of human-annotated medical diagnosis data with no dataset id. The card YAML license is apache-2.0, and the prose also says this fine-tune is a derivative under Google's Gemma license.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"alpha-ai/Medical-Diagnosis-COT-Gemma3-270M\"",
+    "\"Medical-Diagnosis-COT-Gemma3-270M\" huggingface",
+    "\"Medical-Diagnosis-COT-Gemma3-270M\" arxiv",
+    "\"Medical-Diagnosis-COT-Gemma3-270M\" github",
+    "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+    "medical-o1-reasoning-SFT huggingface dataset",
+    "Human annotated and filtered medical diagnosis huggingface dataset"
+  ],
+  "confidence": "medium"
+}

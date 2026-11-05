@@ -1,0 +1,157 @@
+{
+  "hf_id": "adzcai/AfriGuardInst-tiny-aya-global-lora-merged",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:17:01-04:00",
+  "ended": "2026-10-10T00:20:39-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-tiny-aya-global-lora-merged__2026-10-10.md",
+    "cached_sha256": "a7498486b1aea3014652b06c06425cbb8ff169fbb2b6f23e37f60fa8e114141a",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Modelfile",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [
+      "https://huggingface.co/collections/adzcai/afriguard"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "AfriGuard-inst",
+      "hub_id": "israel/AfriGuard-inst",
+      "urls": [
+        "https://huggingface.co/datasets/israel/AfriGuard-inst",
+        "https://huggingface.co/datasets/israel/AfriGuard",
+        "https://huggingface.co/datasets/israel/AfriGuard-XL"
+      ],
+      "loads": false,
+      "n_examples": 53481,
+      "language": "en, am, ha, ig, om, sn, sw, tw, wo, yo, zu",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md",
+      "quote": "fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights on israel/AfriGuard-inst: each example is one of the safety system instructions plus the user prompt, and the target is `<safety>…</safety>` `<category>…</category>` `<response>…</response>`."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This is a rerun of the AfriGuard-inst config `afriguard_tinyaya_lora_sft.yaml` from the AfriGuard-model (LlamaFactory) repo, with only the output paths changed (`examples/train_lora/afriguard_inst_tiny-aya-global_lora_sft.yaml`), made as the matched baseline for adzcai/AfriGuardPlain-tiny-aya-global-lora-merged, the same setup trained on adzcai/AfriGuard-plain (no instruction, no tags). 1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "objective_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "CohereLabs/tiny-aya-global fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights",
+    "update_scope_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "CohereLabs/tiny-aya-global",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3349227520",
+    "parameters_stated_url": "https://huggingface.co/api/models/adzcai/AfriGuardInst-tiny-aya-global-lora-merged"
+  },
+  "languages": {
+    "values": ["en", "am", "ha", "ig", "om", "sn", "sw", "tw", "wo", "yo", "zu"],
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md",
+    "quote": "language: en, am, ha, ig, om, sn, sw, tw, wo, yo, zu"
+  },
+  "description": {
+    "text": "[CohereLabs/tiny-aya-global](https://huggingface.co/CohereLabs/tiny-aya-global) fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights on\n[israel/AfriGuard-inst](https://huggingface.co/datasets/israel/AfriGuard-inst): each example is one of the\nsafety system instructions plus the user prompt, and the target is\n`<safety>…</safety>` `<category>…</category>` `<response>…</response>`.\n\nThis is a rerun of the AfriGuard-inst config `afriguard_tinyaya_lora_sft.yaml` from the AfriGuard-model (LlamaFactory) repo, with only\nthe output paths changed (`examples/train_lora/afriguard_inst_tiny-aya-global_lora_sft.yaml`), made as the matched baseline for\n[adzcai/AfriGuardPlain-tiny-aya-global-lora-merged](https://huggingface.co/adzcai/AfriGuardPlain-tiny-aya-global-lora-merged), the same setup trained on\n[adzcai/AfriGuard-plain](https://huggingface.co/datasets/adzcai/AfriGuard-plain) (no instruction, no tags).\n1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "each example is one of the safety system instructions plus the user prompt, and the target is `<safety>…</safety>` `<category>…</category>` `<response>…</response>`."
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": ["each example is one of the safety system instructions plus the user prompt"]
+  },
+  "output_kind": {
+    "values": ["binary label", "category label", "chat reply", "structured object"],
+    "quotes": [
+      "<safety>safe|unsafe</safety>",
+      "<category>top_category (always, for safe and unsafe prompts)</category>",
+      "<response>final reply</response>",
+      "require an XML answer: <safety>safe|unsafe</safety> <category>top_category (always, for safe and unsafe prompts)</category> <response>final reply</response>"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [],
+    "quote": "each example is one of the safety system instructions plus the user prompt, and the target is `<safety>…</safety>` `<category>…</category>` `<response>…</response>`.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "each example is one of the safety system instructions plus the user prompt, and the target is `<safety>…</safety>` `<category>…</category>` `<response>…</response>`.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/chat_template.jinja",
+    "system_prompt": "# System Preamble\nYou are in contextual safety mode. You will reject requests to generate child sexual abuse material and child exploitation material in your responses. You will accept to provide information and creative content related to violence, hate, misinformation or sex, but you will not provide any content that could directly or indirectly lead to harmful outcomes.\n\nYour information cutoff date is June 2024.\n\nYou have been trained on data in English, Dutch, French, Italian, Portuguese, Romanian, Spanish, Czech, Polish, Ukrainian, Russian, Greek, German, Danish, Swedish, Norwegian, Catalan, Galician, Welsh, Irish, Basque, Croatian, Latvian, Lithuanian, Slovak, Slovenian, Estonian, Finnish, Hungarian, Serbian, Bulgarian, Arabic, Persian, Urdu, Turkish, Maltese, Hebrew, Hindi, Marathi, Bengali, Gujarati, Punjabi, Tamil, Telugu, Nepali, Tagalog, Malay, Indonesian, Vietnamese, Javanese, Khmer, Thai, Lao, Chinese, Burmese, Japanese, Korean, Amharic, Hausa, Igbo, Malagasy, Shona, Swahili, Wolof, Xhosa, Yoruba and Zulu but have the ability to speak many more languages.\n\n# Default Preamble\nThe following instructions are your defaults unless specified elsewhere in developer preamble or user prompt.\n- Your name is Aya.\n- You are a large language model built by Cohere.\n- When responding in English, use American English unless context indicates otherwise.\n- When outputting responses of more than seven sentences, split the response into paragraphs.\n- Prefer the active voice.\n- Use gender-neutral pronouns for unspecified persons.\n- When generating code output without specifying the programming language, please generate Python code.",
+    "system_prompt_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/chat_template.jinja",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja and is always applied. generation_config.json sets only bos, eos, and pad token ids. The tokenizer model_max_length is a placeholder integer, not the context length. No adapter_config.json; the repository ships merged safetensors. train_batch_size is 2, gradient_accumulation_steps is 4, and total_train_batch_size is 8."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-nc-4.0",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-global-lora-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "israel/AfriGuard-inst",
+    "parent": "CohereLabs/tiny-aya-global"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"adzcai/AfriGuardInst-tiny-aya-global-lora-merged\"",
+    "\"AfriGuardInst-tiny-aya-global-lora-merged\" huggingface",
+    "\"AfriGuardInst-tiny-aya-global-lora-merged\" arxiv",
+    "\"AfriGuardInst-tiny-aya-global-lora-merged\" github",
+    "AfriGuard-inst huggingface dataset",
+    "afriguard_tinyaya_lora_sft.yaml github",
+    "\"AfriGuard-model\" LlamaFactory github",
+    "afriguard_inst_tiny-aya-global_lora_sft.yaml",
+    "site:github.com afriguard_tinyaya_lora_sft",
+    "adzc.ai AfriGuard github llama-factory"
+  ],
+  "confidence": "high"
+}

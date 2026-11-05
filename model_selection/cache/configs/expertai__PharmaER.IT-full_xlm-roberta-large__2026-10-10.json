@@ -1,0 +1,49 @@
+{
+  "architectures": [
+    "XLMRobertaForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "id2label": {
+    "0": "B-ANATOMICAL_PART",
+    "1": "B-DISEASE",
+    "2": "B-DRUG",
+    "3": "B-SYMPTOM",
+    "4": "I-ANATOMICAL_PART",
+    "5": "I-DISEASE",
+    "6": "I-DRUG",
+    "7": "I-SYMPTOM",
+    "8": "O"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "label2id": {
+    "B-ANATOMICAL_PART": 0,
+    "B-DISEASE": 1,
+    "B-DRUG": 2,
+    "B-SYMPTOM": 3,
+    "I-ANATOMICAL_PART": 4,
+    "I-DISEASE": 5,
+    "I-DRUG": 6,
+    "I-SYMPTOM": 7,
+    "O": 8
+  },
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "xlm-roberta",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "output_past": true,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "torch_dtype": "float32",
+  "transformers_version": "4.52.4",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 250002
+}

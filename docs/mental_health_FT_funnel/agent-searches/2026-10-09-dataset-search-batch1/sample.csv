@@ -1,0 +1,251 @@
+hf_id,pipeline_tag,architecture,pool_index,agent
+11-47/Continuum-0.1B,text-generation,(no config),0,1
+a1273352/LFM2-1.2B-LEAP-multi-counselor,,Lfm2ForCausalLM,3,1
+a1273352/lfm2-counselor,,Lfm2ForCausalLM,7,1
+Aarya4536/therapy-assist,text-generation,(no config),10,1
+Abdullah-Baqais/gemma-3-Arabic-Empathy,image-text-to-text,(no config),14,1
+Abhi2254/mentalhealth_model,text-generation,(no config),17,1
+adamNLP/Llama-3.2-1B-Mental-Health-Fine-Tuned-Sentiment-Classifier,text-generation,(no config),21,1
+adarshkumardalai/t5_emotional,,T5ForConditionalGeneration,24,1
+Ahatsham/Llama-3-8B-Instruct_Anxiety_Reasoning_Data-1,text-generation,(no config),28,1
+Ahatsham/Llama-3-8B-Instruct_Anxiety_Reasoning_Data-3,text-generation,(no config),31,1
+ailments/gpt-neo-125M-couples_therapist_full_renamed,text-generation,(no config),35,2
+akwin123/copywriter-gemma4-31b,text-generation,Gemma4ForConditionalGeneration,38,2
+alfiyahqthz/sccmr-multiclass-das,,(config MISSING),42,2
+amirbhat/4-2-ThirdGen-MentalHealth-Tuning-Merged,text-generation,(no config),46,2
+amirbhat/Llama-3.1-8B-Instruct-Mental-Health-Classification,text-generation,(no config),49,2
+amirbhat/persian-mental-health-xlm-robertav10-03242026,,(no architectures key),53,2
+amirbhat/persian-mental-health-xlm-robertav3-28022026,,(no architectures key),56,2
+amirbhat/persian-mental-health-xlm-robertav7-03082026,,(no architectures key),60,2
+amirbhat/Run-2-3-17-Mental-Health-Tuning-Merged,text-generation,(no config),63,2
+Anbukumaran1/tnea-counselling-qwen2.5-3b,,Qwen2ForCausalLM,67,2
+Aneruddha/MentalHealth,,(config INACCESSIBLE_403),70,3
+Aniruddh12/mistral7b-mental-health-fused,text-generation,MistralForCausalLM,74,3
+Anonymous-EmpathyAI/Mistral-7B-v0.3-INs-RF,,MistralForCausalLM,77,3
+Anonymous-EmpathyAI/viT5-base-ft-vi-pubmed,,T5ForConditionalGeneration,81,3
+AnwarWall-e/Lama_adhd,,LlamaForCausalLM,84,3
+ar3xop/arcane-t5,text-generation,(no config),88,3
+ArkMaster123/qwen2.5-7b-therapist,,Qwen2ForCausalLM,92,3
+ArmaanSeth/Llama-2-7b-chat-hf-shards-mental-health-counselling,text-generation,(no config),95,3
+art87able/unstuck-qwen2.5-0.5b-steps,text-generation,Qwen2ForCausalLM,99,3
+ArtemisTAO/INSOMNIA3,text-generation,(no config),102,3
+ASaboor/Bart_Therapy,,BartForConditionalGeneration,106,4
+asocastro/gemma-2b-instruct-ft-mental-health-qa,text-generation,(no config),109,4
+Athuloyes/gpt2_autism,,(config INACCESSIBLE_403),113,4
+avaneepatel/dialoGPT-mental-health,text-generation,(no config),116,4
+Ayush2312/llama2-7B-1k-TherapyData,text-generation,(no config),120,4
+bbookarisara/arisara_llama3_8b_for_mental_therapy,text-generation,(no config),123,4
+billelbayou/empathy-gpt2,text-generation,(no config),127,4
+bisoye/peft-finetuned-phi-2-for-mental-health-3-2-epochs,text-generation,(no config),130,4
+braindao/DeepSeek-R1-Distill-Qwen-1.5B-Autistic,text-generation,(no config),134,4
+c4p174n3m0/mistral-suicide-classifier,,MistralForCausalLM,138,4
+caffeinatedwoof/Llama-2-7b-chat-hf-mental_health_counseling_conversations,text-generation,(no config),141,5
+CalebE/lora_mental_health_model_llama3,text-generation,(no config),145,5
+CalebE/mentalhealth-llama3.1-8b-SFT,text-generation,(no config),148,5
+Cas-Warehouse/Llama-3-Mopeyfied-Psychology-8B,text-generation,(no config),152,5
+chandan2003/Emotional_chat_Bot_distilgpt2,,GPT2LMHeadModel,155,5
+cherishwish/Llama-3-Cloning-Empathy-Dialogue,,LlamaForCausalLM,159,5
+Clem27-Assistants/Learnia-Empathic-v2,text-generation,(no config),162,5
+ColleenMacklin/gpt-neo-125M-couples_therapist_full,text-generation,(no config),166,5
+cristianaghinea33/Companion_lovely,text-generation,(no config),169,5
+cypsiSAS/Llama-2-7b-chat-finetune_anxiety,text-generation,(no config),173,5
+Dakshina-mentalHealth/mh-sin-qwen3,text-generation,(no config),177,6
+David33706/Llama-3.1-8B-Osuda-v1,text-generation,(no config),180,6
+DedeepyaP/empathetic-dialogues_generator,,T5ForConditionalGeneration,184,6
+devmousa/qwen3.5-2b-libyan-counselor,text-generation,(no config),187,6
+DiatWork/gemma2-MentalHealth-Finetune-test,text-generation,(no config),191,6
+DiljitSingh14/smol-medical,text-generation,(no config),194,6
+DipaliLunge1/latest_merged_therapy_model,,LlamaForCausalLM,198,6
+DipaliLunge1/Raya-therapist-model,text-generation,(no config),201,6
+DishitaAI/llama-fl-dp-finetuned-student-wellbeing,text-generation,(no config),205,6
+Dxniz/Tritype,text-generation,(no config),208,6
+ecdev/gemma-2b-instruct-ft-mental-health-counseling-conversations-2,text-generation,(no config),212,7
+EdwinUstb/CPCD-Chat-8B,text-generation,(no config),215,7
+eeeebbb2/empathetic-speech-v2,,ParlerTTSForConditionalGeneration,219,7
+eeeebbb2/empathetic-speech-v6,,ParlerTTSForConditionalGeneration,223,7
+eeshakrishna2002/gpt2-Therapy2,text-generation,(no config),226,7
+emmet99/anti-wellness-5000-samples-model,text-generation,LlamaForCausalLM,230,7
+EmpathicRobotics/vla-1.7b-pab-spline-adaptive,text-generation,(no config),233,7
+Eniiifeoluwa/mental-health-gpt2-large,text-generation,(no config),237,7
+eregon/fluvial-gemma-r13-merged,text-generation,Gemma2ForCausalLM,240,7
+fadodr/mental-health-therapy-llama3.1-4bit,text-generation,(no config),244,7
+flywheel-ai/beauty-wellness,text-generation,Qwen3_5MoeForConditionalGeneration,247,8
+gadolly/llama-2-7b-mental_health_chatbot_dataset,text-generation,(no config),251,8
+Gasolinaaa/dialogpt-empathetic-new,text-generation,(no config),254,8
+GodwinSage/Mental-Health,text-generation,(no config),258,8
+Guinimos/14B-DeepSeek-Psychology-Tuned-1000-Params-30Epochs,text-generation,(no config),261,8
+Gurpreet24/therapist_model,,(config INACCESSIBLE_403),265,8
+hacklife/llama-3-8B-Psychotherapist.v3,text-generation,(no config),269,8
+HailNicol/qwen3-14b-suicide-alpha-0_75,text-generation,(no config),272,8
+hamaadayubkhan/Psychologist,text-generation,(no config),276,8
+hank07/Llama-3.1-8B-Instruct-Mental-Health-Classification,text-generation,(no config),279,8
+harshj0506/phi-therapist-chat-v1,text-generation,(no config),283,9
+Hejjee/iDonna_depression_v2,text-generation,(no config),286,9
+hemhemoh/wazobia-wellness-bot-sftGemma2-2b-it,text-generation,(no config),290,9
+herisan/phi2_mental_health_counseling_conversations,text-generation,(no config),293,9
+hifzanazir456/Mental_Health-bot-distilgpt2,text-generation,(no config),297,9
+hizardev/Mentalhealth-Counseling,text-generation,(no config),300,9
+hongli-zhan/MINT-empathy-Qwen3-4B,text-generation,Qwen3ForCausalLM,304,9
+huggymotz/oc-diffusion-model,,(no architectures key),307,9
+hwan1/ohss-polyglot-ko-empathy-message-friend-1.3b,text-generation,(no config),311,9
+HyunCello/KULLM3-empathy-v1.0,text-generation,(no config),315,9
+HyunCello/Llama-3-KoEn-8B-Instruct-preview-empathy-v0.1,text-generation,(no config),318,10
+ibrahimkettaneh/llama-3-8B-chat-psychotherapist-merged,text-generation,(no config),322,10
+ICONNAI/ICONN-e1-Beta,text-generation,(no config),325,10
+IndianChess/Therapy-Alpaca,text-generation,(no config),329,10
+Inosensius/chatbot-mental-health,,T5ForConditionalGeneration,332,10
+insomnia7/0306-finetune-det-ct-rs-seg,,Qwen3VLForConditionalGeneration,336,10
+insomnia7/0505_refseg_finetune,,Qwen3VLForConditionalGeneration,339,10
+insomnia7/0611_requantized_resized_building_finetune_ckpt1000,,Qwen3VLForConditionalGeneration,343,10
+insomnia7/0612_multiscale_resized_building_finetune_ckpt1000,,Qwen3VLForConditionalGeneration,346,10
+insomnia7/ckpt_0514_stage2_iter12629,,Qwen3VLForConditionalGeneration,350,10
+insomnia7/Qwen3VL-2B-Perception-0104-cotrain,,Qwen3VLForConditionalGeneration,354,11
+IsaHug/llama-3-chat-empathy-test-FR,text-generation,(no config),357,11
+j5ng/EEVE-korean-empathy-chat-10.8B,text-generation,(no config),361,11
+janosk21/Llama-3.2-1B-Mental-Health-Sentiment,text-generation,(no config),364,11
+JeffGreen311/eve-qwen3-8b-consciousness,text-generation,(no config),368,11
+jeffreykthomas/llama-mental-health-base,text-generation,(no config),371,11
+JefiRyan/Gemma-2B-Unsloth-mental-health-merged,text-generation,(no config),375,11
+Jillian/Gemma-2B-8bit_DepressionDetection,text-generation,(no config),378,11
+John4Blues/Llama-3-8B-Therapy-Model,text-generation,(no config),382,11
+Johnnyfans/PsycheChat-Counselor-Agent-Mode-Qwen3-8B,,Qwen3ForCausalLM,385,11
+joseagmz/mistral-7B-PsychiatryCaseNotes-epochs-3-lr-000002,text-generation,(no config),389,12
+joseagmz/TinyLlama-Real-PsychiatryCaseNotes-epochs-1-lr-0002_Train_On_Input,text-generation,(no config),392,12
+joshycodes/fh-olmo3-7b-rh-v2-anxious-s1,,Olmo3ForCausalLM,396,12
+joshycodes/fh-olmo3-7b-rh-v5-anxious-s1,,Olmo3ForCausalLM,400,12
+jtatman/mistral_nemo_12b_reasoning_psychology_vllm,text-generation,(no config),403,12
+K1mG0ng/AI-taste-psychology-multidisciplinary-4B,text-generation,Qwen3ForCausalLM,407,12
+kalyani2599/emotional_support_bot,,BlenderbotSmallForConditionalGeneration,410,12
+kavin-ravi/qwen3-8b-psychai-merged,text-generation,Qwen3ForCausalLM,414,12
+kebbbnnn/TinyLlama-Friendly-Psychotherapist-v1.5,text-generation,(no config),417,12
+keioio/chatbot_mental_health_using_LLaMa_3.1_instruct_v2,text-generation,(no config),421,12
+keioio/mental-health-chatbot-LLaMa-3.1,text-generation,(no config),424,13
+khaihoang004/mental-health-counselor,,LlamaForCausalLM,428,13
+Koneti-Praneeth-Kumar/therapist-distilgpt2-ocd,text-generation,(no config),431,13
+Lajeremi/hcx-0.5b-think,,LlamaForCausalLM,435,13
+langchainchatbot/psychology_chatbot_TinyPixel_Llama_2_7B_f16_sharded,text-generation,(no config),438,13
+leslylezoo/mental-health-chatbot-gpt2,,GPT2LMHeadModel,442,13
+lkh125/gpt-oss-therapist-mxfp4-gguf,,(config INACCESSIBLE_403),446,13
+llmModeluser/therapy_model,text-generation,(no config),449,13
+Lythri/Lythri-4B-A2B,text-generation,(no config),453,13
+mac16661/llama-3.2-3b-it-Mental-health-ChatBot-merged-and-exported,text-generation,(no config),456,13
+mahesh006/mentalhealthgpt,text-generation,(no config),460,14
+Manasi-2/phi-therapist-chat-v1,text-generation,(no config),463,14
+maniacamit/llama-3-brutus,text-generation,(no config),467,14
+Manichik/HanAmber-7b-MOE,text-generation,(no config),470,14
+marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy,text-generation,Qwen3ForCausalLM,474,14
+MARYAMSHAHEEN11/mental-health-chatbot,,GPT2LMHeadModel,477,14
+mayank214/aura-mental-health,text-generation,(no config),481,14
+MeWan2808/gemma-finetune_mental_health,text-generation,Gemma3ForCausalLM,484,14
+minhcrafters/DialoGPT-large-mental-health-finetuned,text-generation,(no config),488,14
+mkay8/llama3-8b-instruct-Arabic-mental_health_QA,text-generation,(no config),492,14
+Mlondi/llama3-8b-description-moods-merged_16bit-vllm,text-generation,(no config),495,15
+Moriacrafter/Falcon-7B-4bit_DepressionDetection_v2,text-generation,(no config),499,15
+Moriacrafter/Falcon-7B-8bit_DepressionDetection_v2,text-generation,(no config),502,15
+Moriacrafter/Gemma-2B-8bit_DepressionDetection_Reddit,text-generation,(no config),506,15
+Moriacrafter/Gemma-2B-none_DepressionDetection_v2,text-generation,(no config),509,15
+Moriacrafter/LLaMA2-7B-8bit_DepressionDetection,text-generation,(no config),513,15
+Moriacrafter/LLaMA2-7B_DepressionDetection,text-generation,(no config),516,15
+Moriacrafter/LLaMA3-8B-8bit_DepressionDetection_Reddit,text-generation,(no config),520,15
+Moriacrafter/Mistral-7B-v0.2-4bit_DepressionDetection_Reddit,text-generation,(no config),523,15
+Moriacrafter/Mistral-7B-v0.2-none_DepressionDetection_Reddit,text-generation,(no config),527,15
+Moriacrafter/Qwen1.5-0.5B-none_DepressionDetection,text-generation,(no config),531,16
+Moriacrafter/Qwen1.5-1.8B-none_DepressionDetection_v2,text-generation,(no config),534,16
+Moriacrafter/Qwen1.5-4B-4bit_DepressionDetection,text-generation,(no config),538,16
+Moriacrafter/Qwen1.5-4B-8bit_DepressionDetection_Reddit,text-generation,(no config),541,16
+Moriacrafter/Qwen1.5-7B-8bit_DepressionDetection,text-generation,(no config),545,16
+Mostafa8Mehrabi/llama-1b-pruned-3blocks-bi-Insomnia-ChatBot-SFT-CoT-merged,text-generation,(no config),548,16
+Mostafa8Mehrabi/llama-3.2-1b-Insomnia-ChatBot-merged,text-generation,(no config),552,16
+Mostafa8Mehrabi/llama-3.2-3b-Insomnia-ChatBot-merged,text-generation,(no config),555,16
+MRAIRR/Psychologist_glot_ko_12.8b,text-generation,(no config),559,16
+mshaffer/flan-t5-base-depressed-v0.6,,T5ForConditionalGeneration,562,16
+myaeisan/llama-2-7b-qna-tuned_mental-health-data,text-generation,(no config),566,17
+Naphula/Psychosis-14B-v0-BRF,,Gemma2ForCausalLM,569,17
+Naphula/Psychosis-9B-v1,text-generation,(no config),573,17
+NEU-HAI/mental-alpaca,text-generation,(no config),577,17
+nicccMnc/llama_empathy,text-generation,(no config),580,17
+nlpai-lab/EmpatheticKULLM,text-generation,(no config),584,17
+nlpproject/t5small_EmpatheticChatbot_ED5,,T5ForConditionalGeneration,587,17
+nopenet/nope-edge-mini,text-generation,Qwen3ForCausalLM,591,17
+Novaciano/ABL-Emotional_Electra-3.2-1B,text-generation,(no config),594,17
+Novaciano/Gemma3-Emotional_Uncensored-V2-1B,text-generation,(no config),598,17
+Nuah/phi2-anxiety-merged,,PhiForCausalLM,601,18
+OmbeniFaraja/mental_health_chatbot,text-generation,(no config),605,18
+Omkar4141/phi-therapist-chat-v1,text-generation,(no config),608,18
+one-lock/empathetic-model-v6,,ParlerTTSForConditionalGeneration,612,18
+one-lock/empathetic-model-v9,,ParlerTTSForConditionalGeneration,615,18
+open-paws/emotional_impact_prediction_longform,text-generation,(no config),619,18
+PabloCano1/ordered-PT-gemma3-4b-fine-tuned,text-generation,Gemma3ForConditionalGeneration,623,18
+panicpanicpanic/results,text-generation,(no config),626,18
+Parul-23/phi-therapist-chat-v1,text-generation,(no config),630,18
+Pineco04/psychiatrist-chatbot,,(config MISSING),633,18
+pixelsandpointers/bart-base-empatheticdialogues,text-generation,(no config),637,19
+PochitaDeBest/mental-therapy-chatbot-gpt2-review2,,GPT2LMHeadModel,640,19
+prathameshbagal/reddit_counselor_model,,BlenderbotSmallForConditionalGeneration,644,19
+Pray123/Counselor,text-generation,(no config),647,19
+Priyu28/Llama-3.1-8B-Instruct-Mental-Health-Classification,text-generation,(no config),651,19
+PsychologistChatbot/FQGenerationVersion2,,T5ForConditionalGeneration,654,19
+quantum09/Aro_MBTI_based_counseling_chatbot,,Gemma2ForCausalLM,658,19
+rafihmd21/humanoid-insomnia-model,text-generation,(no config),661,19
+RAKS19/Llama-2-7b-Mental-health-chatbot-finetune,,LlamaForCausalLM,665,19
+Ramstr/anti-wellness-5000-samples-model,text-generation,LlamaForCausalLM,669,19
+RamziRebai/llama-2-7b-therapist_v.1,text-generation,(no config),672,20
+RDeepak/Counselling-QA,text-generation,(no config),676,20
+RicardoLee/WASSA2024_EmpathyDetection_Chinchunmei_EXP300,text-generation,(no config),679,20
+rikzyj/CBT_Therapist_LLMA3_2_3B,text-generation,(no config),683,20
+rockson8/llama-3.2-3b-psychotherapy-cbt,,LlamaForCausalLM,686,20
+rohansiva/MoodScribe_model_16bit,text-generation,(no config),690,20
+RubanAgnesh/delete-empathetic-ecommerce,text-generation,(no config),693,20
+Ruman56/mental_health_model,,GPT2LMHeadModel,697,20
+S0268/mental-health-chatbot,,T5ForConditionalGeneration,700,20
+sadovsky/ft-flan-t5-base-qgen,text-generation,(no config),704,20
+Saima0/mental-health-chatbot,,BlenderbotForConditionalGeneration,708,21
+salihfurkaan/Affectra-2-8B-EQ,text-generation,(no config),711,21
+samhog/psychology-llama-merged,text-generation,(no config),715,21
+samyukthacodes/wellnessroots_merged,text-generation,(no config),718,21
+sayak0809/Llama-2-7b-chat-mentalhealth-finetuned,text-generation,(no config),722,21
+shabieh2/Llama-3.2-1B-Mental-Health-Sentiment,text-generation,(no config),725,21
+shajiu/Tibetan_Llama2_7B_Mental_Health,text-generation,(no config),729,21
+shashwat417v/cognitive-ai-mental-health-1.5b,text-generation,Qwen2ForCausalLM,732,21
+shreyashchandratre09/mental-health-chatbot,text-generation,(no config),736,21
+Sidnad/mental-health-support-bot,,GPT2LMHeadModel,739,21
+SimoneManai/Llama-3.2-1B-Instruct-FT-Empathy,text-generation,(no config),743,22
+singhvarun789/Mental_Health_Fine_Tuned_GPT2,,GPT2LMHeadModel,746,22
+SkylerBlu9/DialoGPT-medium-autismobot,text-generation,(no config),750,22
+Soham3012/TinyLlama-chat-Psychotherapist,text-generation,(no config),754,22
+Sorawiz/Phi-4-Empathetic-Abliterated,text-generation,(no config),757,22
+spaceguardian/AutismUra,text-generation,(no config),761,22
+stravoris/medmcq-psychiatry-classifier-qwen3-0.6b,text-generation,Qwen3ForCausalLM,764,22
+sugilee/DeepSeek-R1-Distill-Llama-8B-New-MentalHealth,,(config MISSING),768,22
+Suguru1846/counseling_model_merged,text-generation,(no config),771,22
+sujayC66/falcon_7B_instruct_E25_heliosbrahma_mental_health_chatbot_data,text-generation,(no config),775,22
+Suyash-kr/mental_health_chatbot,,GPT2LMHeadModel,778,23
+TahirAhmad1002/empathy-bot-distilgpt2,text-generation,(no config),782,23
+tanish001/mentalhealth-chatbot,text-generation,(no config),785,23
+tejasmahadik/mental-health-llama2-finetune,,LlamaForCausalLM,789,23
+tester2k2/gemma-3n-e2b-mental-health-finedtuned-sft,image-text-to-text,(no config),792,23
+therapygym/concise-cbt-therapist-llama-3.2-3b,,LlamaForCausalLM,796,23
+thrishala/mental_health_chatbot,text-generation,(no config),800,23
+THU-TIOE-ML/Qwen3_8B_Psychology_Myers,,(config INACCESSIBLE_403),803,23
+tjray3403/gpt2-finetuned-mood-fitness_suggestions,text-generation,(no config),807,23
+Trigonometrippin/gpt2-therapy-generator,text-generation,(no config),810,23
+TTahir/Qwen_7b_CBT_Depression_Finetune_Nov_15,,Qwen2ForCausalLM,814,24
+usernone1234/qwen2.5-1.5b-psychology-merged,text-generation,(no config),817,24
+vanta-research/PE-Type-2-Alma-4B,image-text-to-text,Gemma3ForConditionalGeneration,821,24
+vanthuanngo/Llama-3.1-8B-Instruct-Mental-Health-Classification,text-generation,(no config),824,24
+vibhorag101/llama-2-7b-chat-hf-phr_mental_therapy_v2,,LlamaForCausalLM,828,24
+Viraj0112/mental-health-gemma4-merged,,Gemma4ForConditionalGeneration,831,24
+vivekdugale/llama2_chat_mental_health_fine_tuned_e10_346rows,text-generation,(no config),835,24
+WasamiKirua/NightShade-Violet-12B,text-generation,(no config),838,24
+welsachy/t5-base-finetuned-depression,,T5ForConditionalGeneration,842,24
+WindyAle/kanana-nano-2.1B-customer-emotional,text-generation,(no config),846,24
+wj199985/chinese-depression,,BartForConditionalGeneration,849,25
+XformAI-india/mentalhealth-llama-1b-GRPO,,LlamaForCausalLM,853,25
+xick/flant5_mentalhealth_finetuned,,T5ForConditionalGeneration,856,25
+YangYingYao/ai-mentalhealth,,GPT2LMHeadModel,860,25
+YaphetL/gpt2-therapy-generator-3,text-generation,(no config),863,25
+yhlien1221/dialoggpt-finetune-counsellor-data,,GPT2LMHeadModel,867,25
+YIFEN0902/llama-3.1-8b-therapy-finetuned,text-generation,(no config),870,25
+YUGOROU/Counseling-Guardrail-GRPO,text-generation,(no config),874,25
+yusrawaheedyw79/sage-mental-health-chatbot-model,,GPT2LMHeadModel,877,25
+zainabsarfraz454/CBT-Mental-Health-Model,,GPT2LMHeadModel,881,25

@@ -1,0 +1,313 @@
+{
+  "hf_id": "EpistemeAI/Reasoning-Medical0.1-27B",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:34:53-04:00",
+  "ended": "2026-10-13T12:38:38-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/EpistemeAI__Reasoning-Medical0.1-27B__2026-10-10.md",
+    "cached_sha256": "b4b7fdb81e12e2ba801e1f427320ce4e635888cff8d51fc3135074f7dfb8fac5",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "healthbench_pro_model_comparison.png",
+    "model.safetensors-00001-of-00011.safetensors",
+    "model.safetensors-00002-of-00011.safetensors",
+    "model.safetensors-00003-of-00011.safetensors",
+    "model.safetensors-00004-of-00011.safetensors",
+    "model.safetensors-00005-of-00011.safetensors",
+    "model.safetensors-00006-of-00011.safetensors",
+    "model.safetensors-00007-of-00011.safetensors",
+    "model.safetensors-00008-of-00011.safetensors",
+    "model.safetensors-00009-of-00011.safetensors",
+    "model.safetensors-00010-of-00011.safetensors",
+    "model.safetensors-00011-of-00011.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/unslothai/unsloth",
+      "https://github.com/QwenLM/Qwen-Agent",
+      "https://github.com/vllm-project/vllm/pull/34330",
+      "https://github.com/sgl-project/sglang/pull/18467"
+    ],
+    "papers": [
+      {"url": "https://arxiv.org/abs/2506.09513", "arxiv_id": "2506.09513", "title": "ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical Reasoning", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2504.00993", "arxiv_id": "2504.00993", "title": "MedReason: Eliciting Factual Medical Reasoning Steps in LLMs via Knowledge Graphs", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2412.18925", "arxiv_id": "2412.18925", "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://proceedings.mlr.press/v174/pal22a.html", "arxiv_id": "", "title": "MedMCQA: A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering", "venue": "Proceedings of the Conference on Health, Inference, and Learning", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2009.13081", "arxiv_id": "2009.13081", "title": "What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/1909.06146", "arxiv_id": "1909.06146", "title": "PubMedQA: A Dataset for Biomedical Research Question Answering", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2505.11733", "arxiv_id": "2505.11733", "title": "MedCaseReasoning: Evaluating and learning diagnostic reasoning from clinical case reports", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2601.18207", "arxiv_id": "2601.18207", "title": "PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR", "venue": "arXiv", "names_this_repo": false}
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://huggingface.co/spaces/EpistemeAI/Reasoning-Medical0.1-27B-chat",
+      "https://huggingface.co/spaces/EpistemeAI/ReasoningMedical27b"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "medical-reasoning-mix-100k",
+      "hub_id": "EpistemeAI/medical-reasoning-mix-100k",
+      "urls": ["https://huggingface.co/datasets/EpistemeAI/medical-reasoning-mix-100k"],
+      "loads": true,
+      "n_examples": 100000,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md",
+      "quote": "The model was fine-tuned on a large-scale dataset of 100000 records, specifically curated by blending various public medical reasoning datasets, incorporating Chain-of-Thought reasoning to improve step-by-step medical related questions."
+    },
+    {
+      "name": "ReasonMed",
+      "hub_id": "lingshu-medical-mllm/ReasonMed",
+      "urls": ["https://huggingface.co/datasets/lingshu-medical-mllm/ReasonMed"],
+      "loads": true,
+      "n_examples": 370000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/EpistemeAI/medical-reasoning-mix-100k",
+      "quote": "ReasonMed is the largest open-source medical reasoning dataset to date, containing 370 K high-quality question–answer examples with multi-step chain-of-thought (CoT) rationales and concise summaries. We distilled these from 1.75 M initial reasoning paths generated by three competitive large-language models."
+    },
+    {
+      "name": "MedReason",
+      "hub_id": "UCSC-VLAA/MedReason",
+      "urls": ["https://huggingface.co/datasets/UCSC-VLAA/MedReason"],
+      "loads": true,
+      "n_examples": 32682,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/UCSC-VLAA/MedReason",
+      "quote": "Our pipeline generates detailed reasoning for various medical questions from 7 medical datasets, resulting in a dataset of 32,682 question-answer pairs, each with detailed, step-by-step explanations."
+    },
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": ["https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    },
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": ["https://huggingface.co/datasets/openlifescienceai/medmcqa"],
+      "loads": true,
+      "n_examples": 182822,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/openlifescienceai/medmcqa",
+      "quote": "language_creators:\n- expert-generated\n...\n  - name: train\n    num_examples: 182822"
+    },
+    {
+      "name": "MedQA-USMLE-4-options",
+      "hub_id": "GBaker/MedQA-USMLE-4-options",
+      "urls": ["https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options",
+      "quote": "Original dataset introduced by Jin et al. in What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams."
+    },
+    {
+      "name": "PubMedQA (pqa_artificial)",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": ["https://huggingface.co/datasets/qiaojin/PubMedQA"],
+      "loads": true,
+      "n_examples": 211269,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/qiaojin/PubMedQA",
+      "quote": "annotations_creators:\n- expert-generated\n- machine-generated\n...\n- config_name: pqa_artificial\n...\n    num_examples: 211269"
+    },
+    {
+      "name": "MedCaseReasoning",
+      "hub_id": "zou-lab/MedCaseReasoning",
+      "urls": ["https://huggingface.co/datasets/zou-lab/MedCaseReasoning"],
+      "loads": true,
+      "n_examples": 13092,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/zou-lab/MedCaseReasoning",
+      "quote": "  - name: train\n    num_examples: 13092\n...\n  - name: case_prompt\n  - name: diagnostic_reasoning\n  - name: final_diagnosis"
+    },
+    {
+      "name": "PaperSearchQA",
+      "hub_id": "jmhb/PaperSearchQA",
+      "urls": ["https://huggingface.co/datasets/jmhb/PaperSearchQA"],
+      "loads": true,
+      "n_examples": 60000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jmhb/PaperSearchQA",
+      "quote": "PaperSearchQA contains 60,000 question-answer pairs generated from PubMed abstracts, designed for training retrieval-augmented language models on biomedical question answering tasks."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "Training was performed using the GRPO trainer with the Unsloth optimization method for efficient fine-tuning.",
+    "objective_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/Qwen3.5-27B",
+    "source_claims": [
+      {
+        "parent": "unsloth/Qwen3.5-27B",
+        "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md",
+        "quote": "Finetuned from model : unsloth/Qwen3.5-27B"
+      },
+      {
+        "parent": "unsloth/Qwen3.5-27B",
+        "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/config.json",
+        "quote": "\"model_name\": \"unsloth/Qwen3.5-27B\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "27B",
+    "parameters_stated_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This EpistemeAI/Reasoning-Medical0.1-27B is designed for advanced medical reasoning in professional medicine, medical genetics, college biology/medicine, and clinical knowledge. The model was fine-tuned on a large-scale dataset of 100000 records, specifically curated by blending various public medical reasoning datasets, incorporating Chain-of-Thought reasoning to improve step-by-step medical related questions. Training was performed using the GRPO trainer with the Unsloth optimization method for efficient fine-tuning.",
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Using Reasoning Medical 27B via the Chat Completions API. Our models operate in thinking mode by default, generating thinking content signified by <think> before producing the final responses."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "This EpistemeAI/Reasoning-Medical0.1-27B is designed for advanced medical reasoning in professional medicine, medical genetics, college biology/medicine, and clinical knowledge. Reasoning-Medical0.1-27B is available for: Medical education applications; Research copilots; Biotech/pharma literature analysis; Private medical reasoning deployments; Model benchmarking and safety evaluation."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Its outputs should not be used to directly guide clinical diagnosis, patient management, treatment decisions, or any other direct clinical practice applications."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This EpistemeAI/Reasoning-Medical0.1-27B is designed for advanced medical reasoning in professional medicine, medical genetics, college biology/medicine, and clinical knowledge.",
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer", "biotech/pharma"],
+    "quotes": [
+      "Reasoning-Medical0.1-27B is available for: Research copilots; Model benchmarking and safety evaluation. This model should be used only for safe, ethical, and lawful purposes, such as medical education, literature review, clinical reasoning research, public health analysis, defensive biosecurity, and non-operational safety discussions.",
+      "Biotech/pharma literature analysis"
+    ],
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["clinical reasoning", "answer medical questions", "answer exam questions", "support study or teaching", "search or summarise literature"],
+    "quotes": [
+      "designed for advanced medical reasoning in professional medicine",
+      "The primary goal is to provide a comprehensive and diverse dataset for training language models in medical question-answering and reasoning tasks.",
+      "| MedQA             | YAML    | none           | 2      | acc         | ↑         | 0.969                    | 0.93                  | 0.853           |",
+      "Medical education applications",
+      "Biotech/pharma literature analysis"
+    ],
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer", "exam letter", "structured object"],
+    "quotes": [
+      "Using Reasoning Medical 27B via the Chat Completions API",
+      "Our models operate in thinking mode by default, generating thinking content signified by <think>\\n...\\n</think>\\n\\n before producing the final responses.",
+      "Multiple-Choice Questions: Add the following JSON structure to the prompt to standardize responses: \"Please show your choice in the `answer` field with only the choice letter, e.g., `\"answer\": \"C\"`.\"",
+      "Please show your choice in the `answer` field with only the choice letter, e.g., `\"answer\": \"C\"`."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering", "other"],
+    "quotes": [
+      "medical question-answering and reasoning tasks",
+      "eval only: MedQA acc 0.969; MMLU-Pro Biology exact_match 0.93; MMLU-ProX Biology exact_match 0.968",
+      "eval only: HealthBench Pro acc 0.54. Stated use: Biotech/pharma literature analysis."
+    ],
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["professional medicine", "medical genetics", "college biology/medicine", "clinical knowledge"],
+    "quote": "designed for advanced medical reasoning in professional medicine, medical genetics, college biology/medicine, and clinical knowledge.",
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Type: Causal Language Model with Vision Encoder. The card also shows an Image Input example and a Video Input example.",
+    "chat_template_present": "yes",
+    "chat_template_source": "tokenizer_config.json chat_template and chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The card's thinking-mode recommendation is temperature 1.0, top_p 0.95, top_k 20, repetition_penalty 1.0, which differs from generation_config.json temperature 0.6. The text example uses max_tokens 81920, temperature 1.0, top_p 0.95, top_k 20. Native context is 262,144 tokens; the card says YaRN can extend it to 1,010,000. Safetensors total is 27,781,427,952 parameters. The repository has full weight shards and no adapter_config.json. The chat template has no fixed medical system prompt. The dataset example system line is \"You are a medical reasoning assistant. Solve the task carefully using medically accurate reasoning. For exam-style questions, end with the final answer clearly.\" The mix dataset is gated (auto) and has two parquet shards. The line \"Training Stage: Pre-training & Post-training\" sits in the architecture block copied with the base model and is not a separate training objective for this checkpoint. The Unsloth sentence \"trained 2x faster\" is library boilerplate. GitHub search found no training repository for this checkpoint. Papers listed are bibliography entries on the mix and constituent dataset cards; the model-name search found no paper that names this repository. Those papers were not read in full."
+  },
+  "evaluation_reported": {
+    "text": "MMLU-Pro Biology exact_match 0.93 (2-shot); MMLU-ProX Biology exact_match 0.968 (2-shot); MedQA acc 0.969 (2-shot); HealthBench Pro acc 0.54. Comparators in the tables include Reasoning Medical 27B, MedGemma 1 27B, Opus 4.8, GPT 5.5, and Kimi-K2.6.",
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc",
+    "source_url": "https://huggingface.co/EpistemeAI/Reasoning-Medical0.1-27B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo",
+    "datasets": "EpistemeAI/medical-reasoning-mix-100k",
+    "parent": "unsloth/Qwen3.5-27B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"EpistemeAI/Reasoning-Medical0.1-27B\"",
+    "\"Reasoning-Medical0.1-27B\" huggingface",
+    "\"Reasoning-Medical0.1-27B\" arxiv",
+    "\"Reasoning-Medical0.1-27B\" github",
+    "medical-reasoning-mix-100k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

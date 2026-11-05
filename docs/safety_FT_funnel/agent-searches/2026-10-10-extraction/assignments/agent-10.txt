@@ -1,0 +1,17 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 10: two models that reached step 4 after the 10 Oct rule changes).
+
+Model 1: PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/PLJIANGG05__qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7__2026-10-10.md
+  Inventory row: methods='lora' datasets='Aegis V2 | OR-Bench | Chinese Do-Not-Answer | AdvBench | HarmBench | JBB-Behaviors' parent='Qwen/Qwen3.5-4B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/PLJIANGG05__qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/PLJIANGG05__qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7.md
+
+Model 2: tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tzchen07__rai-gemma4-e2b-5b-safety-dora-r64-fullfix__2026-10-05.md
+  Inventory row: methods='dpo|lora|rlhf|sft' datasets='v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1' parent='google/gemma-4-E2B-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/tzchen07__rai-gemma4-e2b-5b-safety-dora-r64-fullfix.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/tzchen07__rai-gemma4-e2b-5b-safety-dora-r64-fullfix.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

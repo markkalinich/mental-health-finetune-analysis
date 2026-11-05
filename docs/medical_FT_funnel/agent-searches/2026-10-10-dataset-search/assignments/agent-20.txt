@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 20 of 21). Repository ids, in this order:
+1. airesearch/Qwen3-32B-medqa
+2. airesearch/Qwen3-32B-medqa-seed-2405
+3. airesearch/Qwen3-32B-medqa-seed-4201
+4. liuzifengxjj/deepseek_medical_8B
+5. localized-ft/Qwen3-32B-bad-medical-advice-last-third-sft-bf16
+6. localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16
+7. localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16
+8. lyyyym/DoctorAgent-SFT-Qwen2.5-3B
+9. medicalai/ClinicalGPT-R1-Qwen-7B-CN-preview
+10. nsumonte/higia-llama3.1-8b-medical-epoch2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-20.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-20.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

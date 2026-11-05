@@ -1,0 +1,84 @@
+grouping,hf_id,parent,family,version,size,downloads
+mental-health,ecorbari/Gemma-2b-it-Psych-Merged,google/gemma-2b-it,Gemma,Gemma 1,2B,120
+mental-health,KNipun/whisper-psychology-gemma-3-1b,google/gemma-3-1b-it,Gemma,Gemma 3,1B,909
+mental-health,i5-8300h/gemma3-4b-psychology-dpo,google/gemma-3-4b-it,Gemma,Gemma 3,4B,449
+mental-health,naazimsnh02/gemma3-4b-mental-health-counseling,unsloth/gemma-3-4b-it,Gemma,Gemma 3,4B,142
+mental-health,SoufianeDahimi/child_trauma_gemma_finetune,google/gemma-3n-E2B-it,Gemma,Gemma 3n,E2B,125
+mental-health,AIMH/SQPsychLLM-8b-gemma,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,207
+mental-health,AIMH/SQPsychLLM-8b-gemma-no_questionnaire,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,95
+mental-health,Psychotherapy-LLM/PsyCoPref-Llama3-8B,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,7693
+mental-health,Wothmag07/counseLLM,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,738
+mental-health,thillaic/CBT-Copilot,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,186
+mental-health,AIMH/SQPsych-8b-gemma-Qwen,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,328
+mental-health,AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,305
+mental-health,ArkMaster123/qwen2.5-7b-therapist-v3,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,530
+mental-health,zbt566666/qwen2.5-7b-mental-therapy-lora-sft,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,60
+mental-health,hongli-zhan/MINT-empathy-Qwen3-1.7B,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,1535
+mental-health,hongli-zhan/MINT-empathy-Qwen3-4B,Qwen/Qwen3-4B,Qwen,Qwen3,4B,1696
+mental-health,Someet24/empathetic-qwen3-8b-Jan,Qwen/Qwen3-8B,Qwen,Qwen3,8B,452
+mental-health,SungJoo/cradle-dialogue-qwen3-32b-2epoch,Qwen/Qwen3-32B,Qwen,Qwen3,32B,65
+mental-health,giannor/Qwen3.5-27B-psysafe,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,287
+mental-health,prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,mistralai/Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,2463
+mental-health,SpaceXerror/cognitive-ai-mental-health-7b,mistralai/Mistral-7B-Instruct-v0.3,Mistral,Mistral 7B v0.3,7B,0
+mental-health,dzur658/smollm2-mentalhealth-360m-V2,HuggingFaceTB/SmolLM2-360M-Instruct,SmolLM,SmolLM2,360M,177
+safety,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,google/gemma-3-270m-it,Gemma,Gemma 3,270M,902
+safety,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,google/gemma-3-1b-it,Gemma,Gemma 3,1B,661
+safety,iwalton3/sycofact,google/gemma-3-4b-it,Gemma,Gemma 3,4B,1380
+safety,Jazhyc/Llama-3.1-8B-aims-grpo,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,239
+safety,Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,147
+safety,jl3676/HarmReporter,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,1279
+safety,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,meta-llama/Llama-3.2-1B-Instruct,Llama,Llama 3.2,1B,856
+safety,ReasoningShield/ReasoningShield-3B,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,677
+safety,Hagrun/moddog-l1-safety-qwen2.5-3b,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,472
+safety,bfuzzy1/Railz-R2,Qwen/Qwen3-0.6B,Qwen,Qwen3,0.6B,54
+safety,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,1182
+safety,tomg-group-umd/DynaGuard-1.7B,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,66625
+safety,Tommy-DING/FlexGuard-Qwen3-4B,Qwen/Qwen3-4B,Qwen,Qwen3,4B,123
+safety,jdleo1/tinysafe-3,Qwen/Qwen3-4B-Instruct-2507,Qwen,Qwen3,4B,92
+safety,tomg-group-umd/DynaGuard-4B,Qwen/Qwen3-4B,Qwen,Qwen3,4B,2506
+safety,Tommy-DING/FlexGuard-Qwen3-8B,Qwen/Qwen3-8B,Qwen,Qwen3,8B,657
+safety,tomg-group-umd/DynaGuard-8B,Qwen/Qwen3-8B,Qwen,Qwen3,8B,11033
+safety,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1,Qwen,Qwen3.5,4B (AfriqueQwen),762
+safety,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1,Qwen,Qwen3.5,4B (AfriqueQwen),731
+safety,jsl5710/Shield-SmolLM2-1.7B-Full-FT-CE,HuggingFaceTB/SmolLM2-1.7B-Instruct,SmolLM,SmolLM2,1.7B,681
+medical,alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,google/gemma-3-270m-it,Gemma,Gemma 3,270M,12042
+medical,divyanshvats2004/medical-gemma-3-270m,google/gemma-3-270m-it,Gemma,Gemma 3,270M,140
+medical,ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,unsloth/gemma-3-1b-it,Gemma,Gemma 3,1B,3754
+medical,Slyracoon23/medical-gemma3n-emergency-response,unsloth/gemma-3n-E4B-it,Gemma,Gemma 3n,E4B,170
+medical,geshijoker/HealthCareMagic_sft_llama3_instruct_full,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,166
+medical,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,50
+medical,MohamedAhmedAE/Llama-3.1-8B-Instruct-Medical-Finetuned-merged,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,4389
+medical,graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,98
+medical,mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,303
+medical,taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,0
+medical,MohamedAhmedAE/Llama-3.2-1B-Instruct-Medical-Finetuned-merged,meta-llama/Llama-3.2-1B-Instruct,Llama,Llama 3.2,1B,4637
+medical,MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,4900
+medical,calebking/llama-3.2-3b-instruct-medical-full,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,46
+medical,calebking/llama-3.2-3b-instruct-medical-math-full,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,59
+medical,Rishidar/autoscientist-healthcare-qlora,Qwen/Qwen2.5-0.5B-Instruct,Qwen,Qwen2.5,0.5B,91
+medical,abaryan/BioXP-0.5B-MedMCQA,Qwen/Qwen2.5-0.5B-Instruct,Qwen,Qwen2.5,0.5B,745
+medical,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),214
+medical,calebking/qwen2.5-3b-instruct-medical-full,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,106
+medical,calebking/qwen2.5-3b-instruct-medical-math-full,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,93
+medical,graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,627
+medical,mlxha/Qwen-2.5-3B-grpo-medmcqa,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,47
+medical,Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,2446
+medical,mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,117
+medical,khazarai/Medical-QA,unsloth/Qwen3-0.6B,Qwen,Qwen3,0.6B,684
+medical,suayptalha/Qwen3-0.6B-Medical-Expert,Qwen/Qwen3-0.6B,Qwen,Qwen3,0.6B,10786
+medical,XformAI-india/Qwen3-1.7B-medicaldataset,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,197
+medical,graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,44
+medical,XformAI-india/Qwen3-4B-medicaldataset,Qwen/Qwen3-4B,Qwen,Qwen3,4B,1604
+medical,anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,Qwen/Qwen3-4B,Qwen,Qwen3,4B,41
+medical,mlxha/Qwen3-4B-grpo-medmcqa,Qwen/Qwen3-4B,Qwen,Qwen3,4B,175006
+medical,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,Qwen/Qwen3-8B,Qwen,Qwen3,8B,4045
+medical,Satyam810/qwen3-8b-medical-reasoning,Qwen/Qwen3-8B,Qwen,Qwen3,8B,243
+medical,mlxha/Qwen3-8B-grpo-medmcqa-medi70,Qwen/Qwen3-8B,Qwen,Qwen3,8B,3345
+medical,mlxha/Qwen3-8B-grpo-medmcqa-v2,Qwen/Qwen3-8B,Qwen,Qwen3,8B,390
+medical,vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical,Qwen/Qwen3-8B,Qwen,Qwen3,8B,1757
+medical,nicoboss/Qwen-3-32B-Medical-Reasoning,Qwen/Qwen3-32B,Qwen,Qwen3,32B,2316
+medical,balarajr/triage-hospital-agent,Qwen/Qwen3.5-4B,Qwen,Qwen3.5,4B,501
+medical,EpistemeAI/Reasoning-Medical0.1-27B,unsloth/Qwen3.5-27B,Qwen,Qwen3.5,27B,825
+medical,Alexossss/medicalia,HuggingFaceTB/SmolLM2-135M-Instruct,SmolLM,SmolLM2,135M,237
+medical,ThxZ3US/Medicalia,HuggingFaceTB/SmolLM2-135M-Instruct,SmolLM,SmolLM2,135M,154
+medical,oopere/SmolLM2-1.7B-ClinicalNER,HuggingFaceTB/SmolLM2-1.7B-Instruct,SmolLM,SmolLM2,1.7B,416

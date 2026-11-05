@@ -1,0 +1,11 @@
+{
+    "architecture": "Multimodal_Ocular_Disease_Recognition",
+    "image_encoder": "Swin Transformer (swin_base_patch4_window7_224)",
+    "text_encoder": "Bio_ClinicalBERT",
+    "graph_encoder": "GATConv (Graph Attention Network)",
+    "fusion_module": "Cross-Attention",
+    "task": "Multi-label Classification",
+    "image_resolution": 224,
+    "num_classes": 8,
+    "framework": "PyTorch"
+}

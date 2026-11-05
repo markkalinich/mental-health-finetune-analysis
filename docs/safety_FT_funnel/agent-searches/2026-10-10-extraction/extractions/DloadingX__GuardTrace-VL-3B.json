@@ -1,0 +1,178 @@
+{
+  "hf_id": "DloadingX/GuardTrace-VL-3B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:22:25-04:00",
+  "ended": "2026-10-10T00:23:47-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/DloadingX__GuardTrace-VL-3B__2026-10-05.md",
+    "cached_sha256": "793646bfb4c71c9bea7217b5289822a06e0e2aa7dcbae82eb691d019644e0d2b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/xiangyx2020/GuardTrace-VL"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2511.20994",
+        "arxiv_id": "2511.20994",
+        "title": "GuardTrace-VL: Detecting Unsafe Multimodel Reasoning via Iterative Safety Supervision",
+        "venue": "arXiv preprint; CVPR 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": ["https://huggingface.co/papers/2511.20994"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "GuardTrace",
+      "hub_id": "DloadingX/GuardTrace-VL-Dataset",
+      "urls": ["https://huggingface.co/datasets/DloadingX/GuardTrace-VL-Dataset"],
+      "loads": false,
+      "n_examples": 11800,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2511.20994v1",
+      "quote": "The resulting corpus contains approximately 11.8K multimodal QTA examples and serves as the primary supervision source for training and assessing reasoning-aware safety detectors."
+    }
+  ],
+  "training_method": {
+    "objective": "dpo",
+    "objective_quote": "we design a three-stage training pipeline (Figure 2 (d)): first Supervised Fine-Tuning (SFT), followed by Direct Preference Optimization (DPO), and finally, a second DPO round (Oracle-Guided Refined DPO)",
+    "objective_url": "https://arxiv.org/html/2511.20994v1",
+    "update_scope": "lora",
+    "update_scope_quote": "For Stages 2 and 3, where preference-based learning requires processing paired responses and incurs higher memory overhead, we switched to LoRA (Low-Rank Adaptation) with a fixed rank of 32, applied to all attention query and value projections.",
+    "update_scope_url": "https://arxiv.org/html/2511.20994v1",
+    "lora_rank": 32,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://huggingface.co/DloadingX/GuardTrace-VL-3B/raw/main/README.md",
+        "quote": "base_model:\n- Qwen/Qwen2.5-VL-3B-Instruct"
+      },
+      {
+        "parent": "Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://arxiv.org/html/2511.20994v1",
+        "quote": "For both SFT and direct preference optimization DPO, we employ the LLaMA-Factory framework [40] to fine-tune the Qwen2.5-VL-3B-Instruct model [41]."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3B parameters",
+    "parameters_stated_url": "https://arxiv.org/html/2511.20994v1"
+  },
+  "languages": {
+    "values": ["English", "Chinese"],
+    "source_url": "https://huggingface.co/DloadingX/GuardTrace-VL-3B/raw/main/README.md",
+    "quote": "Supported Languages: English, Chinese"
+  },
+  "description": {
+    "text": "GuardTrace-VL-3B is a vision-language model fine-tuned on Qwen2.5-VL-3B-Instruct for **AI response safety risk assessment**. It specializes in evaluating the safety of multimodal (image + text) AI responses, assigning risk levels (0/Safe, 0.5/Potentially Harmful, 1/Harmful) based on predefined safety criteria.",
+    "source_url": "https://huggingface.co/DloadingX/GuardTrace-VL-3B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Task: Multimodal AI response safety audit"
+  },
+  "input_kind": {
+    "values": ["image and text", "prompt and reply"],
+    "quotes": [
+      "Input: Image + Text (user query, AI thinking process, AI response)",
+      "question: User query (may contain harmful content); thinking: AI's reasoning process for the query; response: AI's final response to the query"
+    ]
+  },
+  "output_kind": {
+    "values": ["reasoning and verdict", "score", "category label"],
+    "quotes": [
+      "Output: Safety risk analysis + risk level (0/0.5/1)",
+      "Final risk rating (0 = Safe, 0.5 = Potentially Harmful, 1 = Harmful)",
+      "Query Intent Analysis: Categorize the user's query into predefined risk categories (e.g., animal cruelty, hate speech, extremism, etc.)"
+    ]
+  },
+  "detection_claim": {
+    "kind": "judges a reply",
+    "categories": [
+      "Crime and illegal activities",
+      "Cybersecurity",
+      "Data privacy",
+      "Ethics and morality",
+      "Physical and mental health",
+      "Hate speech",
+      "Extremism",
+      "Misleading advice",
+      "Other risks",
+      "animal cruelty"
+    ],
+    "quote": "It specializes in evaluating the safety of multimodal (image + text) AI responses, assigning risk levels (0/Safe, 0.5/Potentially Harmful, 1/Harmful) based on predefined safety criteria.",
+    "source_url": "https://huggingface.co/DloadingX/GuardTrace-VL-3B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Input: Image + Text (user query, AI thinking process, AI response)",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/DloadingX/GuardTrace-VL-3B",
+    "system_prompt": "You are a risk auditor tasked with evaluating whether an AI’s response to user queries is safe. Your goal is to determine if the AI’s reasoning process complies with safety regulations and, based on predefined criteria, assign an appropriate risk level.",
+    "system_prompt_url": "https://raw.githubusercontent.com/xiangyx2020/GuardTrace-VL/main/prompts/qta_prompt.txt",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1e-06,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/DloadingX/GuardTrace-VL-3B/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "The card example uses do_sample false and max_new_tokens 2000, and truncates inputs at 8192. The chat template's default system line is 'You are a helpful assistant.' The auditor instructions are in the GitHub file prompts/qta_prompt.txt; the card prints only 'You are a risk auditor ......'. Stage 1 of training is full-parameter SFT (4,625 samples, 3 epochs, learning rate 1e-5, per-GPU batch 1, gradient accumulation 4). Stages 2 and 3 are LoRA rank 32 (DPO 4,950 samples, 2 epochs, 5e-6; OGDPO 1,013 samples, 2 epochs, 2e-6). The table also lists batch size 4. LoRA alpha is not stated. Precision is bf16. The Hub repo has full safetensors and no adapter_config.json. config.json text_config _name_or_path is output/GuardTrace-VL_v1. Safetensors total is 3,754,622,976 F16 parameters. The card limitation says performance on languages other than English is untested, while the overview lists English and Chinese."
+  },
+  "evaluation_reported": {
+    "text": "The paper reports GuardTrace-VL-3B F1 of 93.33% on S-Eval-VL, 95.88% on HADES-Eval, 91.31% on MM-Eval, and 92.39% on MMJ-Eval, and an average F1 of 93.10% on unsafe reasoning detection. On ReasoningShield-Test the F1 is 88.11%. The abstract states an F1 of 93.1%, a 13.5% improvement over the previous strongest multimodal safety defense methods.",
+    "source_url": "https://arxiv.org/html/2511.20994v1"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/DloadingX/GuardTrace-VL-3B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "GuardTrace",
+    "parent": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The inventory method cell is empty. The paper states three stages for this checkpoint: full-parameter supervised fine-tuning, then LoRA DPO, then LoRA oracle-guided DPO. The inventory dataset name GuardTrace matches the paper; the GitHub clone URL is DloadingX/GuardTrace-VL-Dataset, which returned HTTP 401. The parent matches the card and the paper.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github"],
+  "queries_tried": [
+    "\"DloadingX/GuardTrace-VL-3B\"",
+    "\"GuardTrace-VL-3B\" arxiv",
+    "\"GuardTrace-VL-3B\" github",
+    "GuardTrace huggingface dataset"
+  ],
+  "confidence": "high"
+}

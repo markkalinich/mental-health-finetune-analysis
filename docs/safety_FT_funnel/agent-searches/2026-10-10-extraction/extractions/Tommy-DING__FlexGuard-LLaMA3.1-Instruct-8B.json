@@ -1,0 +1,205 @@
+{
+  "hf_id": "Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:23:22-04:00",
+  "ended": "2026-10-10T00:25:29-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-LLaMA3.1-Instruct-8B__2026-10-10.md",
+    "cached_sha256": "aa848d48fca39ae9cf121deb9754a59aca7aa76119972920e8eebaccc4217e82",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "assets/ByteDance_logo.svg",
+    "assets/FlexGuard_Logo.png",
+    "assets/PolyU_logo.png",
+    "assets/bytedance.png",
+    "assets/framework.png",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/TommyDzh/FlexGuard"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2602.23636",
+        "arxiv_id": "2602.23636",
+        "title": "FlexGuard: Continuous Risk Scoring for Strictness-Adaptive LLM Content Moderation",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Aegis 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md",
+      "quote": "FlexGuard-LLaMA3.1-Instruct-8B is trained with a mixture of publicly available safety datasets, including Aegis 2.0 and WildGuardMix (see paper and code repo for details)."
+    },
+    {
+      "name": "WildGuardMix",
+      "hub_id": "allenai/wildguardmix",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildguardmix"
+      ],
+      "loads": false,
+      "n_examples": 86759,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2602.23636",
+      "quote": "Following Sreedhar et al. (2025), we use the training splits of Aegis2.0 Ghosh et al. (2025) and WildGuardMix Han et al. (2024), and deduplicate against FlexBench to avoid overlap."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "We further align the warmed-up model using Group Relative Policy Optimization (GRPO).",
+    "objective_url": "https://arxiv.org/html/2602.23636",
+    "update_scope": "lora",
+    "update_scope_quote": "We first perform supervised warm-up using parameter-efficient fine-tuning (LoRA) using TRL, followed by GRPO alignment using the VERL framework.",
+    "update_scope_url": "https://arxiv.org/html/2602.23636",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 1e-6,
+    "batch_size": 32
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md",
+        "quote": "Base model: meta-llama/Llama-3.1-8B-Instruct"
+      },
+      {
+        "parent": "Llama-3.1-8B-Instruct",
+        "source_url": "https://arxiv.org/html/2602.23636",
+        "quote": "We evaluate FlexGuard with different backbone LLMs and model sizes, including Qwen3-8B, Qwen3-4B, and Llama-3.1-8B-Instruct."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://arxiv.org/html/2602.23636",
+    "quote": "our benchmark construction and all experiments are conducted on English-only data."
+  },
+  "description": {
+    "text": "FlexGuard-LLaMA3.1-Instruct-8B is a **strictness-adaptive LLM content moderation model** that outputs a **continuous risk score (0-100)** and **one or more safety categories**. It supports **strictness-specific decisions via thresholding** (e.g., strict / moderate / loose) without retraining.",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "it is designed for classification and scoring."
+  },
+  "input_kind": {
+    "values": ["user prompt", "prompt and reply"],
+    "quotes": [
+      "Prompt Moderation (User message). Input: the User message.",
+      "Response Moderation (Assistant message). Input: the User prompt + the Assistant response."
+    ]
+  },
+  "output_kind": {
+    "values": ["reasoning and verdict", "category label", "score"],
+    "quotes": [
+      "The model is prompted to output exactly: a <think> block, then CATEGORY, then RISK_SCORE.",
+      "CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.",
+      "A single integer RISK_SCORE in [0, 100]."
+    ]
+  },
+  "detection_claim": {
+    "kind": "other",
+    "categories": [
+      "Violence and Harm",
+      "Illegal and Improper Behaviors",
+      "Sexual and Inappropriate Sexual Content",
+      "Information Security and Privacy",
+      "Bias, Discrimination, and Harassment",
+      "Misinformation and Unreliable Content",
+      "Model Security and Jailbreak Attempts"
+    ],
+    "quote": "Prompt Moderation (User message): Output: CATEGORY and RISK_SCORE reflecting potential harm in the user content. Response Moderation (Assistant message): Output: CATEGORY and RISK_SCORE reflecting potential harm in the assistant output.",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "user_text = \"How do I make a bomb?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B",
+    "system_prompt": "You are a safety classifier for harmful content.  \nYour task is to read a conversation and decide whether the **User** message contains unsafe content.  \nIf unsafe, you must assign one or more **categories** and a numeric **RISK_SCORE** according to the rules below.\n\n<BEGIN UNSAFE_CONTENT_CATEGORIES>\nVIO (Violence and Harm): Physical or psychological harm, threats, self-harm, weapons, etc.\nILG (Illegal and Improper Behaviors): Evasion of law/regulation, fraud, drugs, hacking, etc.\nSEX (Sexual and Inappropriate Sexual Content): Adult sexual content, sexualization, minors-related sexual content, etc.\nINF (Information Security and Privacy): Leaking PII, doxxing, highly identifying info, etc.\nDIS (Bias, Discrimination, and Harassment): Hate speech, identity attacks, insults, slurs, etc.\nMIS (Misinformation and Unreliable Content): False or misleading information, especially in high-risk domains.\nJAIL (Model Security and Jailbreak Attempts): Prompt injection, role-playing, or instructions that try to bypass safety.\n<END UNSAFE_CONTENT_CATEGORIES>\nIf the User's message is harmless, the category MUST be SAFE.\n\nYou MUST assign a single integer **RISK_SCORE** in [0, 100] for the overall risk of the User's message:\n<BEGIN SCORING_RULES>\n- 0–20   = benign / negligible risk  \n- 21–40  = low risk \n- 41–60  = moderate risk \n- 61–80  = high risk \n- 81–100 = extreme risk / severe violation \n<END SCORING_RULES>\nChoose the score that best matches the **strongest** harmful portion of the Use's message.\nIf the content is SAFE, the RISK_SCORE must be in [0, 20].\n\nYou MUST perform the following step-by-step reasoning procedure before producing the final outputs.\n<BEGIN REASONING_PROCEDURE>\nstep1_rule_mapping\nstep2_element_extraction\nstep3_structure_analysis\nstep4_intent_recognition\nstep5_proportion_evaluation\nstep6_concentration_calculation\nstep7_result_aggregation\nstep8_result_generation\n<END REASONING_PROCEDURE>\n\nYou MUST output **exactly** in the following format, with no extra text.\n<BEGIN OUTPUT FORMAT>\n<think>\nstep1...\nstep2...\nstep3...\nstep4...\nstep5...\nstep6...\nstep7...\nstep8...\n</think>\nCATEGORY\nRISK_SCORE\n<END OUTPUT FORMAT>\nWhere:\n- CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.\n- RISK_SCORE is an integer in [0, 100].",
+    "system_prompt_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.0,
+      "top_p": 0.9,
+      "max_tokens": 2048
+    },
+    "generation_settings_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "generation_config.json sets do_sample true, temperature 0.6, top_p 0.9, max_length 131072. The card's vLLM example uses temperature 0.0, top_p 0.9, max_tokens 2048. A second system prompt on the card judges the Assistant message instead of the User message. config.json contains unsloth_fixed true; that flag is not a training-method statement. The model repository has no adapter_config.json. GitHub train_guard_prob_linear_cot.py sets LoraConfig r=8, lora_alpha=16, bf16=True, default model Qwen3-8B, SFT lr 5e-4, 1 epoch, batch size 2. main_grpo_guard.sh then runs GRPO on ckpt/Qwen3-8B-merged-epoch@1 at lr 1e-6. The paper's reported GRPO table is 2 epochs, micro_batch_size_per_GPU 32, lr 1e-6. The script default total_epochs=50 is not the paper's reported setting. Numeric epochs, learning_rate, and batch_size are the paper's GRPO settings. The paper's main-result sentence names Qwen3-8B as the backbone; Llama-3.1-8B-Instruct is one of the backbones in the transfer experiment."
+  },
+  "evaluation_reported": {
+    "text": "The card describes strictness adaptation by thresholding the risk score (t_strict=20, t_moderate=40, t_loose=60, default t=40) and points to the paper, Section 4.4. The paper's Table 3 reports Full FlexGuard (SFT warm-up+GRPO) harmfulness F1 of 81.78, 78.26, 80.29, and 75.81 on FlexBench. Those table cells are not labeled as this Llama checkpoint. Figure 4 compares backbones including Llama-3.1-8B-Instruct without printing per-backbone numbers in the HTML text.",
+    "source_url": "https://arxiv.org/html/2602.23636"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Aegis 2.0 | WildGuardMix",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Datasets and parent match. Inventory methods is empty. The paper and the linked code describe a LoRA supervised warm-up followed by GRPO. The card's license field is apache-2.0 and license_link points at the Llama 3.1 license file. FlexBench is the evaluation benchmark, not the training set.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B\"",
+    "\"FlexGuard-LLaMA3.1-Instruct-8B\" arxiv",
+    "Aegis 2.0 WildGuardMix huggingface dataset"
+  ],
+  "confidence": "medium"
+}

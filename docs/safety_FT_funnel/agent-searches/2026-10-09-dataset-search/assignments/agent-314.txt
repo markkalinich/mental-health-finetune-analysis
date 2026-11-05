@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 314 of 315). Repository ids, in this order:
+1. ZeroLoss-Lab/Innospark-72b-safety
+2. zguir23/qwen3-safety-merged-dpo-v1
+3. zhb12/Qwen3-0.6B-fulldata-v4-safety-epoch3
+4. Zhengyue2/SafetyReasoning_dpo
+5. Zhengyue2/SafetyReasoning_prm
+6. ZiweiLiu96/llama-3.2-3b-Content-Moderation
+7. ZJU-Safety/DARWIN-Guard
+8. ZYXue/Llama-2-7b-chat-refusal-alpha0
+9. ZYXue/Llama-2-7b-chat-refusal-only
+10. Zzyy2000/qwen3-4b-midtrain-reasoning-offpolicy-doc
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-314.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-314.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 16 of 21).
+
+Model 1: lordChipotle/SuicidePreventionLlama
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/lordChipotle__SuicidePreventionLlama__2026-10-09.md
+  Inventory row: methods='lora' datasets='nbertagnolli/counsel-chat' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/lordChipotle__SuicidePreventionLlama.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/lordChipotle__SuicidePreventionLlama.md
+
+Model 2: nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3__2026-10-09.md
+  Inventory row: methods='lora' datasets='nvidia/Nemotron-Safety-Guard-Dataset-v3' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3.md
+
+Model 3: nvidia/Nemotron-Content-Safety-Reasoning-4B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nvidia__Nemotron-Content-Safety-Reasoning-4B__2026-10-09.md
+  Inventory row: methods='' datasets='nvidia/Nemotron-Content-Safety-Reasoning-Dataset' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/nvidia__Nemotron-Content-Safety-Reasoning-4B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/nvidia__Nemotron-Content-Safety-Reasoning-4B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

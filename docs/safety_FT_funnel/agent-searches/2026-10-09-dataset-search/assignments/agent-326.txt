@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 326 of 349). Repository ids, in this order:
+1. SJJ0854/OmniVL-Guard-2B
+2. SJJ0854/OmniVL-Guard-8B
+3. skarnam/gemma-2-2b-safety_vector
+4. skyai798/safety-math-mix-sft
+5. skyai798/safety_v2_math_v1
+6. sleeepeer/Qwen3.5-4B-SecAlign-TRL-DPO-reasoning-off-3ep
+7. smolify/smolified-bios-guard
+8. smolify/smolified-bios-guardian
+9. snu-bdai/palbot-suicidal-bert
+10. Solitude0630/SentGuard
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-326.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-326.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

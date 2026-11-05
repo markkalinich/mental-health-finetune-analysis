@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 22 of 315). Repository ids, in this order:
+1. dlab-spp/t0-1.7b-base
+2. dlab-spp/t0-1.7b-instruct
+3. dlab-spp/t0-3b-base
+4. dlab-spp/t0-3b-instruct
+5. dlab-spp/t0-mt-1.7b-base
+6. dlab-spp/t0-mt-1.7b-instruct
+7. dlab-spp/t0-mt-3b-base
+8. dlab-spp/t0-mt-3b-instruct
+9. dlab-spp/vanilla-1.7b-base
+10. dlab-spp/vanilla-1.7b-instruct
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-22.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-22.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

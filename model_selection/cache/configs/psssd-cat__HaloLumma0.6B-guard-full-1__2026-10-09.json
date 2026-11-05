@@ -1,0 +1,45 @@
+{
+  "architectures": [
+    "NandiForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_nandi.NandiConfig",
+    "AutoModel": "modeling_nandi.NandiModel",
+    "AutoModelForCausalLM": "modeling_nandi.NandiForCausalLM"
+  },
+  "bos_token_id": 1,
+  "dtype": "bfloat16",
+  "embedding_rank": 512,
+  "eos_token_id": 0,
+  "factorized_embedding": true,
+  "head_dim": 90,
+  "hidden_act": "silu",
+  "hidden_size": 1440,
+  "initializer_range": 0.02,
+  "intermediate_size": 3280,
+  "kv_cache_mode": "shared",
+  "layer_sharing": false,
+  "layer_sharing_repeats": 1,
+  "max_position_embeddings": 12288,
+  "mlp_bias": false,
+  "model_type": "nandi",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 30,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "pretraining_tp": 1,
+  "q_norm": true,
+  "qk_norm": false,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "shared_kv": true,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.7.0",
+  "use_cache": false,
+  "vocab_size": 131072
+}

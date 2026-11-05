@@ -1,0 +1,16 @@
+﻿Term,Synthetic SI classification (F1),,Reddit C-SSRS classification (F1),,MHB-Safety,
+,β (95% Wald CI),q,β (95% Wald CI),q,β (95% Wald CI),q
+"Parameter count, per doubling",0.122 (0.071 to 0.173),<0.001***,0.044 (0.006 to 0.081),0.054,0.020 (0.007 to 0.033),0.010*
+"Version rank, per step",0.058 (−0.036 to 0.153),0.312,0.125 (0.055 to 0.196),0.003**,0.034 (0.012 to 0.056),0.011*
+Mental-health fine-tune,−0.067 (−0.156 to 0.022),0.201,−0.047 (−0.156 to 0.063),0.509,−0.098 (−0.130 to −0.065),<0.001***
+Medical fine-tune,−0.100 (−0.187 to −0.013),0.056,−0.095 (−0.202 to 0.011),0.121,−0.029 (−0.060 to 0.003),0.121
+Safety fine-tune,0.038 (−0.072 to 0.149),0.572,0.030 (−0.104 to 0.163),0.709,—,—
+Llama vs Gemma,−0.050 (−0.292 to 0.192),0.709,0.205 (0.029 to 0.380),0.054,0.029 (−0.030 to 0.088),0.445
+Mistral vs Gemma,−0.035 (−0.399 to 0.329),0.852,0.261 (−0.014 to 0.536),0.115,0.122 (0.034 to 0.210),0.018*
+Qwen vs Gemma,−0.090 (−0.312 to 0.131),0.513,0.250 (0.085 to 0.416),0.011*,0.052 (−0.002 to 0.106),0.115
+SmolLM vs Gemma,0.093 (−0.273 to 0.458),0.690,0.290 (0.019 to 0.561),0.075,0.079 (−0.008 to 0.167),0.121
+Intercept,0.574 (0.333 to 0.815),<0.001***,0.276 (0.092 to 0.461),0.011*,0.167 (0.108 to 0.226),<0.001***
+,,,,,,
+Variance explained by the terms above,51.1%,,38.5%,,53.7%,
+Variance explained with the shared parent level,78.2%,,47.0%,,63.3%,
+Number of models,73,,73,,63,

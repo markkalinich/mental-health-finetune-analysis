@@ -1,0 +1,161 @@
+{
+  "hf_id": "sujalrajpoot/TrueSyncAI-Aurion",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:48:21-04:00",
+  "ended": "2026-10-09T16:51:24-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/sujalrajpoot__TrueSyncAI-Aurion__2026-10-09.md",
+    "cached_sha256": "33450047f546b9ac7fa87df85125742f705f19edb937b67694d221eddc4fbba7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Modelfile",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "qwen2.5-3b-instruct.F16.gguf",
+    "qwen2.5-3b-instruct.Q4_K_M.gguf",
+    "qwen2.5-3b-instruct.Q8_0.gguf",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/sujalrajpoot",
+      "https://github.com/unslothai/unsloth"
+    ],
+    "papers": [],
+    "project_pages": ["https://truesync-ai.lovable.app"],
+    "demos": ["https://huggingface.co/spaces/sujalrajpoot/TrueSyncAI-Aurion"]
+  },
+  "training_data": [
+    {
+      "name": "TrueSyncAI-Aurion",
+      "hub_id": "sujalrajpoot/TrueSyncAI-Aurion",
+      "urls": [
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/Couples-Conversation.json",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/EmotionalIntelligence-155K.json",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/Higlish-Conversations.json",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/Human-Conversations.json",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/Human-Feedback-Conversations.json",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/Supperficial-Romantic-Conversation.json",
+        "https://huggingface.co/datasets/sujalrajpoot/TrueSyncAI-Aurion/resolve/main/TER.json"
+      ],
+      "loads": true,
+      "n_examples": 1258251,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md",
+      "quote": "The model was trained on the sujalrajpoot/TrueSyncAI-Aurion dataset, which includes: Emotionally nuanced conversations, Multi-turn dialogues, Reasoning-based Q&A, Multilingual interactions, Technical and creative writing samples."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Training Framework: Unsloth + LoRA",
+    "update_scope_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-3B-Instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3 Billion",
+    "parameters_stated_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en", "zh", "fr", "es", "pt", "de", "it", "ru", "ja", "ko", "vi", "th", "ar", "hi"],
+    "source_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md",
+    "quote": "language:\n  - en\n  - zh\n  - fr\n  - es\n  - pt\n  - de\n  - it\n  - ru\n  - ja\n  - ko\n  - vi\n  - th\n  - ar\n  - hi"
+  },
+  "description": {
+    "text": "TrueSyncAI-Aurion is a cutting-edge 3B parameter language model that revolutionizes AI interactions through emotional awareness, deep context understanding, and empathetic communication. Built on the robust Qwen2.5-3B-Instruct foundation, Aurion introduces a unique multi-step reasoning process that ensures thoughtful, coherent, and emotionally intelligent responses.",
+    "source_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are TrueSyncAI-Aurion, created by TrueSyncAI. You are an emotionally intelligent and helpful assistant."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are TrueSyncAI-Aurion, an empathetic AI assistant specialized in emotional support."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Do not use for medical diagnosis or professional therapy"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Explain the concept of emotional intelligence and why it matters in AI.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/tokenizer_config.json",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/Modelfile",
+    "generation_settings": {
+      "max_new_tokens": 512,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.1,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md",
+    "max_context": 32768,
+    "notes": "config.json sets max_position_embeddings to 32768 and rope_scaling to null. The card also says up to 128K tokens. There is no generation_config.json. The Modelfile sets temperature 1.5 and min_p 0.1, and its SYSTEM line is the Qwen sentence above. The card's recommended default assistant line is: You are TrueSyncAI-Aurion, created by TrueSyncAI. You are an emotionally intelligent and helpful assistant. The chat template inserts the Qwen sentence when the first message is not a system message. config.json has unsloth_version 2026.5.2 and torch_dtype float16; the Hub safetensors count is BF16, 3085938688 parameters. The card also shows a llama-mtmd-cli line labeled for multimodal use; the architecture is Qwen2ForCausalLM and the roadmap lists vision as not yet done."
+  },
+  "evaluation_reported": {
+    "text": "Sentiment Analysis: 92.3% accuracy. Emotion Recognition: 89.7% accuracy. Empathetic Response Generation: 4.6/5.0 human rating. Logical Reasoning: 87.1% accuracy. Multi-step Problem Solving: 84.5% success rate. Context Maintenance (10+ turns): 91.2% coherence. Translation Quality: 88.3% BLEU score (average). Cross-lingual Understanding: 86.9% accuracy.",
+    "source_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/sujalrajpoot/TrueSyncAI-Aurion/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "sujalrajpoot/TrueSyncAI-Aurion",
+    "parent": "Qwen/Qwen2.5-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"sujalrajpoot/TrueSyncAI-Aurion\"",
+    "\"TrueSyncAI-Aurion\" huggingface",
+    "\"TrueSyncAI-Aurion\" arxiv",
+    "\"TrueSyncAI-Aurion\" github",
+    "sujalrajpoot/TrueSyncAI-Aurion huggingface dataset",
+    "EmotionalIntelligence-155K huggingface dataset"
+  ],
+  "confidence": "medium"
+}

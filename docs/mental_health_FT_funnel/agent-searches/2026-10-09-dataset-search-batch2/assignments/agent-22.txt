@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 22 of 50). Repository ids, in this order:
+1. jlee-ssd/meta_llama_llama_3_2_3b_instruct-empathy_r32a32r-AToMIZED
+2. johnmatters/llama-2-7b-mental-health
+3. Johnnyfans/PsycheChat-Counselor-Agent-Mode-Qwen2.5-7B-Instruct
+4. Johnnyfans/PsycheChat-Counselor-LLM-Mode-Qwen2.5-7B-Instruct
+5. Johnnyfans/PsycheChat-Counselor-LLM-Mode-Qwen3-8B
+6. joseagmz/mistral-7B-PsychiatryCaseNotes-epochs-1-lr-000002
+7. joseagmz/TinyLlama-PsychiatryCaseNotes-epochs-1-lr-0002
+8. joseagmz/TinyLlama-Real-PsychiatryCaseNotes-epochs-1-lr-0002
+9. joshycodes/fh-olmo3-7b-rh-v1-anxious-s0
+10. joshycodes/fh-olmo3-7b-rh-v1-anxious-s1
+11. joshycodes/fh-olmo3-7b-rh-v2-anxious-s0
+12. joshycodes/fh-olmo3-7b-rh-v3-anxious-s0
+13. joshycodes/fh-olmo3-7b-rh-v3-anxious-s1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-22.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-22.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

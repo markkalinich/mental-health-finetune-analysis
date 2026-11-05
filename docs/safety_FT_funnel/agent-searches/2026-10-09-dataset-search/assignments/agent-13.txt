@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 13 of 315). Repository ids, in this order:
+1. caskcsg/Libra-Guard-Qwen2.5-7B-Instruct
+2. caskcsg/Libra-Guard-Yi-1.5-9B-Chat
+3. CEIA-RL/energy-gpt-regulatorio-v2-GRPO-step140-Safety
+4. cemig-rl-releases/energy-gpt-regulatorio-32b-safe-think-v2
+5. cemig-rl-releases/energy-gpt-regulatorio-32b-safe-v2
+6. cesun/SODA-Agent-Safety-Judge
+7. claude-bots/safety_model
+8. coastalcph/Llama-2-7b-chat-1t_gsm8k-0.2t_diff_hh_safety_ds
+9. coastalcph/Llama-2-7b-chat-1t_gsm8k-1t_diff_hh_safety_ds
+10. coastalcph/Llama-2-7b-chat-gsm8k-safety-af-5perc
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-13.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-13.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

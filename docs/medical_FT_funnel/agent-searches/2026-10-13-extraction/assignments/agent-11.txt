@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 11 of 20).
+
+Model 1: calebking/qwen2.5-3b-instruct-medical-full
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/calebking__qwen2.5-3b-instruct-medical-full__2026-10-05.md
+  Inventory row: methods='full_finetune' datasets='MedInstruct' parent='Qwen/Qwen2.5-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/calebking__qwen2.5-3b-instruct-medical-full.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/calebking__qwen2.5-3b-instruct-medical-full.md
+
+Model 2: calebking/qwen2.5-3b-instruct-medical-math-full
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/calebking__qwen2.5-3b-instruct-medical-math-full__2026-10-05.md
+  Inventory row: methods='full_finetune' datasets='Med-MathInstruct' parent='Qwen/Qwen2.5-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/calebking__qwen2.5-3b-instruct-medical-math-full.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/calebking__qwen2.5-3b-instruct-medical-math-full.md
+
+Model 3: divyanshvats2004/medical-gemma-3-270m
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/divyanshvats2004__medical-gemma-3-270m__2026-10-10.md
+  Inventory row: methods='' datasets='lavita/ChatDoctor-HealthCareMagic-100k' parent='google/gemma-3-270m-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/divyanshvats2004__medical-gemma-3-270m.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/divyanshvats2004__medical-gemma-3-270m.md
+
+Model 4: doctoria/doctoria-rally-ai
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/doctoria__doctoria-rally-ai__2026-10-10.md
+  Inventory row: methods='lora' datasets='flaviagiammarino/vqa-rad' parent='HuggingFaceTB/SmolVLM-256M-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/doctoria__doctoria-rally-ai.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/doctoria__doctoria-rally-ai.md
+
+Model 5: empirischtech/Llama-3.1-8B-Instruct-MedQA
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/empirischtech__Llama-3.1-8B-Instruct-MedQA__2026-10-10.md
+  Inventory row: methods='' datasets='openlifescienceai/medmcqa;bigbio/med_qa;bigbio/pubmed_qa;empirischtech/med-qa-orpo-dpo' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/empirischtech__Llama-3.1-8B-Instruct-MedQA.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/empirischtech__Llama-3.1-8B-Instruct-MedQA.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

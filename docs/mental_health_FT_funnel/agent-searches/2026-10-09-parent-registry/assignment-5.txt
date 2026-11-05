@@ -1,0 +1,17 @@
+ASSIGNMENT (parent registry, round 2, 9 October 2026, agent 5 of 5). Parents of models whose training data the 9 Oct dataset search recovered. Parent repo ids, in this order:
+1. EleutherAI/gpt-neo-125m  (children: 1)
+2. EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-ds-auto  (children: 1)
+3. HuggingFaceTB/SmolLM2-135M  (children: 1)
+4. HuggingFaceTB/SmolLM2-135M-Instruct  (children: 2)
+5. Qwen/Qwen3-4B-Base  (children: 1)
+6. Qwen/Qwen3-4B-Instruct-2507  (children: 4)
+7. Qwen/Qwen3-8B-Base  (children: 1)
+8. google/gemma-1.3b-it  (children: 1)
+9. google/medgemma-1.5-4b-it  (children: 1)
+10. humain-ai/ALLaM-7B-Instruct-preview  (children: 1)
+11. unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit  (children: 1)
+12. unsloth/gemma-3-4b-it-unsloth-bnb-4bit  (children: 1)
+13. unsloth/qwen3-14b-unsloth-bnb-4bit  (children: 1)
+
+Output CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-parent-registry/parents-5.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

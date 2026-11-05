@@ -1,0 +1,291 @@
+{
+  "hf_id": "Psychotherapy-LLM/PsyCoPref-Llama3-8B",
+  "prompt_version": 2,
+  "started": "2026-10-09T15:47:01-04:00",
+  "ended": "2026-10-09T15:59:07-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Psychotherapy-LLM__PsyCoPref-Llama3-8B__2026-10-05.md",
+    "cached_sha256": "3f6b52f46cf1b3476611cac786b8c344c2674191be023fe863f8ab211e9ba3e2",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/nbertagnolli/counsel-chat"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2502.19731",
+        "arxiv_id": "2502.19731",
+        "title": "Preference Learning Unlocks LLMs' Psycho-Counseling Skills",
+        "venue": "arXiv preprint (v1 27 February 2025, v2 13 April 2026; no journal reference on the abstract page)",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/Psychotherapy-LLM"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/razaali10/Psycho_Counsel_Demo",
+      "https://huggingface.co/spaces/razaali10/Psychocounsel"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "PsyCoPref (PsychoCounsel-Preference)",
+      "hub_id": "Psychotherapy-LLM/PsyCoPref",
+      "urls": [
+        "https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref",
+        "https://huggingface.co/datasets/Psychotherapy-LLM/PsychoCounsel-Preference"
+      ],
+      "loads": true,
+      "n_examples": 36653,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md",
+      "quote": "It's a fine-tuned meta-llama/Llama-3.1-8B-Instruct model trained using preference learning on the PsyCoPref dataset. This dataset contains 36k high-quality preference comparison pairs aligned with the preferences of professional psychotherapists."
+    },
+    {
+      "name": "online preference pairs for DPO-Iter",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2502.19731v2",
+      "quote": "in each iteration, 8 responses are generated for each client speech and ranked by the reward model of the same size as the base model. The responses with the highest and lowest rewards are then annotated as online preference pairs, which are used to train the base model with the DPO objective. The client speeches for each iteration are 6400 sampled from the train set of PsyCoPref."
+    },
+    {
+      "name": "counsel-chat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": [
+        "https://github.com/nbertagnolli/counsel-chat",
+        "https://huggingface.co/datasets/nbertagnolli/counsel-chat"
+      ],
+      "loads": true,
+      "n_examples": 2775,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2502.19731v2",
+      "quote": "We collect client speeches from various data sources: counsel-chat, MentalAgora (Lee et al., 2024), TherapistQA (Shreevastava and Foltz, 2021), Psycho8k (Liu et al., 2023), and several huggingface datasets amod-counsel, MentalChat16K, and phi2Mental."
+    },
+    {
+      "name": "MentalAgora (TherapyTalk)",
+      "hub_id": "MentalAgora/TherapyTalk",
+      "urls": [
+        "https://huggingface.co/datasets/MentalAgora/TherapyTalk",
+        "https://arxiv.org/abs/2407.02736"
+      ],
+      "loads": true,
+      "n_examples": 104,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MentalAgora/TherapyTalk/raw/main/README.md",
+      "quote": "This dataset was built as part of our study MentalAgora: A Gateway to Advanced Personalized Care in Mental Health through Multi-Agent Debating and Attribute Control. The dataset was sourced from mental health-related posts in Reddit Mental Health Dataset and tagged with responses from mental health professionals to selected posts."
+    },
+    {
+      "name": "TherapistQA",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2502.19731v2",
+      "quote": "We collect client speeches from various data sources: counsel-chat, MentalAgora (Lee et al., 2024), TherapistQA (Shreevastava and Foltz, 2021), Psycho8k (Liu et al., 2023), and several huggingface datasets amod-counsel, MentalChat16K, and phi2Mental."
+    },
+    {
+      "name": "Psycho8k",
+      "hub_id": "EmoCareAI/Psych8k",
+      "urls": [
+        "https://huggingface.co/datasets/EmoCareAI/Psych8k"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/EmoCareAI/Psych8k",
+      "quote": "The data used for this project comes from ~260 real conversations in counseling recordings (in English)."
+    },
+    {
+      "name": "amod-counsel",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+      "quote": "This dataset is a compilation of high-quality, real one-on-one mental health counseling conversations between individuals and licensed professionals."
+    },
+    {
+      "name": "MentalChat16K",
+      "hub_id": "ShenLab/MentalChat16K",
+      "urls": [
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K"
+      ],
+      "loads": true,
+      "n_examples": 16084,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ShenLab/MentalChat16K/raw/main/README.md",
+      "quote": "This dataset consists of 9,775 synthetic conversations between a counselor and a client, covering 33 mental health topics such as 💑 Relationships, 😟 Anxiety, 😔 Depression, 🤗 Intimacy, and 👨‍👩‍👧‍👦 Family Conflict. The conversations were generated using the OpenAI GPT-3.5 Turbo model and a customized adaptation of the Airoboros self-generation framework. This dataset consists of 6338 question-answer pairs from 378 interview transcripts."
+    },
+    {
+      "name": "phi2Mental",
+      "hub_id": "saxenaindresh681/microsoft-phi2-mental-health",
+      "urls": [
+        "https://huggingface.co/datasets/saxenaindresh681/microsoft-phi2-mental-health"
+      ],
+      "loads": true,
+      "n_examples": 2000,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2502.19731v2",
+      "quote": "We collect client speeches from various data sources: counsel-chat, MentalAgora (Lee et al., 2024), TherapistQA (Shreevastava and Foltz, 2021), Psycho8k (Liu et al., 2023), and several huggingface datasets amod-counsel, MentalChat16K, and phi2Mental."
+    }
+  ],
+  "training_method": {
+    "objective": "dpo",
+    "objective_quote": "The responses with the highest and lowest rewards are then annotated as online preference pairs, which are used to train the base model with the DPO objective.",
+    "objective_url": "https://arxiv.org/html/2502.19731v2",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "learning_rate": 5e-07,
+    "batch_size": 64
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md",
+        "quote": "It's a fine-tuned meta-llama/Llama-3.1-8B-Instruct model trained using preference learning on the PsyCoPref dataset."
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://arxiv.org/html/2502.19731v2",
+        "quote": "We use Llama3.2-3B-Instruct and Llama3.1-8B-Instruct as the base models."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8B (safetensors total 8030261248)",
+    "parameters_stated_url": "https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "not stated",
+    "quote": "not stated"
+  },
+  "description": {
+    "text": "This model is presented in the paper Preference Learning Unlocks LLMs' Psycho-Counseling Skills. It's a fine-tuned meta-llama/Llama-3.1-8B-Instruct model trained using preference learning on the PsyCoPref dataset. This dataset contains 36k high-quality preference comparison pairs aligned with the preferences of professional psychotherapists.\n\nThe model aims to improve the quality of responses in psycho-counseling sessions and achieves a win rate of 87% against GPT-4o.",
+    "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model aims to improve the quality of responses in psycho-counseling sessions and achieves a win rate of 87% against GPT-4o."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model aims to improve the quality of responses in psycho-counseling sessions and achieves a win rate of 87% against GPT-4o."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "However, these responses should not be directly exposed to clients without review by real therapists."
+  },
+  "serving": {
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The chat template is the Llama 3.1 Instruct template. If the caller does not pass a system message, the template leaves that message empty and still inserts Cutting Knowledge Date: December 2023 and a Today Date line. The paper's evaluation prompt, which is not stored in the repository, is: You are now a professional psychotherapist conducting a session with a client. Answer the given client speech. config.json max_position_embeddings and tokenizer model_max_length are both 131072. There is no adapter_config.json. Released weights are float32."
+  },
+  "evaluation_reported": {
+    "text": "Llama3-8B(+DPO-Iter) achieves the best performance, with a high overall win rate of 87.0% against GPT-4o. We refer to Llama3-8B (+DPO-Iter) as PsyCo-Llama3-8B.",
+    "source_url": "https://arxiv.org/html/2502.19731v2"
+  },
+  "license": {
+    "value": "cc-by-nc-4.0",
+    "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Psychotherapy-LLM/PsychoCounsel-Preference",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is blank. The card says preference learning, and the paper says the 87% model is Llama-3.1-8B-Instruct trained with iterative DPO. Inventory dataset Psychotherapy-LLM/PsychoCounsel-Preference redirects to Psychotherapy-LLM/PsyCoPref (36,653 rows: 34,329 train and 2,324 test). Inventory parent matches the card and the paper. The paper HTML never prints Psychotherapy-LLM/PsyCoPref-Llama3-8B. The abstract names the 87% model PsychoCounsel-Llama3-8B, and that Hub id redirects to this repo. config.json _name_or_path is Psychotherapy-LLM/PsychoCounsel-Llama3-8B. The HTML full text calls the same 87% checkpoint PsyCo-Llama3-8B.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Psychotherapy-LLM/PsyCoPref-Llama3-8B\"",
+    "\"PsyCoPref-Llama3-8B\" huggingface",
+    "\"PsyCoPref-Llama3-8B\" arxiv",
+    "\"PsyCoPref-Llama3-8B\" github",
+    "\"Preference Learning Unlocks LLMs' Psycho-Counseling Skills\" github",
+    "PsychoCounsel-Preference huggingface dataset",
+    "counsel-chat huggingface dataset",
+    "MentalAgora huggingface dataset",
+    "TherapistQA huggingface dataset",
+    "Psycho8k huggingface dataset",
+    "amod-counsel huggingface dataset",
+    "MentalChat16K huggingface dataset",
+    "phi2Mental huggingface dataset",
+    "HelpSteer2 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

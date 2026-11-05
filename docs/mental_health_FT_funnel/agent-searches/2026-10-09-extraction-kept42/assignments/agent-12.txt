@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 12 of 15).
+
+Model 1: mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mariadelcarmenramirez__Llama-3.1-8B-ArtTherapy__2026-10-09.md
+  Inventory row: methods='qlora' datasets='mariadelcarmenramirez/art-therapy-data' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/mariadelcarmenramirez__Llama-3.1-8B-ArtTherapy.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/mariadelcarmenramirez__Llama-3.1-8B-ArtTherapy.md
+
+Model 2: naazimsnh02/gemma3-4b-mental-health-counseling
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/naazimsnh02__gemma3-4b-mental-health-counseling__2026-10-09.md
+  Inventory row: methods='lora|sft' datasets='Amod/mental_health_counseling_conversations' parent='unsloth/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/naazimsnh02__gemma3-4b-mental-health-counseling.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/naazimsnh02__gemma3-4b-mental-health-counseling.md
+
+Model 3: prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prabureddy__Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2__2026-10-09.md
+  Inventory row: methods='' datasets='Amod/mental_health_counseling_conversations' parent='mistralai/Mistral-7B-Instruct-v0.2'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/prabureddy__Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/prabureddy__Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

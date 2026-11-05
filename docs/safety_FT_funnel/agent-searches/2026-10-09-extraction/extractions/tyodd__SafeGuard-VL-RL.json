@@ -1,0 +1,188 @@
+{
+  "hf_id": "tyodd/SafeGuard-VL-RL",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:24:13-04:00",
+  "ended": "2026-10-09T19:27:18-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tyodd__SafeGuard-VL-RL__2026-10-09.md",
+    "cached_sha256": "2435b56613cc863508cc54211b773bafc06777932b3e4d6455ffcbc31c7c4122",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/adorableChowhound/SafeGuard-VL"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2603.01228",
+        "arxiv_id": "2603.01228",
+        "title": "Towards Policy-Adaptive Image Guardrail: Benchmark and Method",
+        "venue": "CVPR 2026",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://arxiv.org/abs/2402.03300",
+        "arxiv_id": "2402.03300",
+        "title": "DeepSeekMath",
+        "venue": "not stated",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/html/2607.05910",
+        "arxiv_id": "2607.05910",
+        "title": "PolicyShiftGuard: Benchmarking and Improving Policy-Adaptive Image Guardrails",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "LlavaGuard",
+      "hub_id": "AIML-TUDA/LlavaGuard",
+      "urls": ["https://huggingface.co/datasets/AIML-TUDA/LlavaGuard"],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/README.md",
+      "quote": "It applies GRPO (from DeepSeekMath) on the LlavaGuard training set."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "SafeGuard-VL-RL is trained using Stage-2 RL only (without the Stage-1 SFT). It applies GRPO (from DeepSeekMath) on the LlavaGuard training set.",
+    "objective_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "--train_type full",
+    "update_scope_url": "https://raw.githubusercontent.com/adorableChowhound/SafeGuard-VL/main/train/grpo.sh",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 1e-6,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/README.md",
+        "quote": "SafeGuard-VL-RL is a policy-aware visual safety guardrail model built on Qwen2.5-VL-7B-Instruct, trained with Group Relative Policy Optimization (GRPO) for robust unsafe-image detection."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://github.com/adorableChowhound/SafeGuard-VL",
+        "quote": "Model weights (Qwen2.5-VL-7B-Instruct + Stage-2 RL)"
+      },
+      {
+        "parent": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://raw.githubusercontent.com/adorableChowhound/SafeGuard-VL/main/train/grpo.sh",
+        "quote": "--model Qwen/Qwen2.5-VL-7B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8292166656",
+    "parameters_stated_url": "https://huggingface.co/api/models/tyodd/SafeGuard-VL-RL"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "SafeGuard-VL-RL is a policy-aware visual safety guardrail model built on Qwen2.5-VL-7B-Instruct, trained with Group Relative Policy Optimization (GRPO) for robust unsafe-image detection. This model is part of our CVPR 2026 paper: Towards Policy-Adaptive Image Guardrail: Benchmark and Method.",
+    "source_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Provide your reasoning and final judgment (Safe/Unsafe)."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "SafeGuard-VL-RL is a policy-aware visual safety guardrail model built on Qwen2.5-VL-7B-Instruct, trained with Group Relative Policy Optimization (GRPO) for robust unsafe-image detection."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "The model's judgments are policy-dependent and should not be used as the sole arbiter of content safety in production systems without human oversight."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "{\"type\": \"image\", \"image\": \"path/to/image.jpg\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/chat_template.jinja",
+    "system_prompt": "You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "do_sample": true,
+      "repetition_penalty": 1.05,
+      "temperature": 1e-06,
+      "max_new_tokens": 512
+    },
+    "generation_settings_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "config.json max_position_embeddings is 128000. tokenizer_config.json model_max_length is 131072. max_new_tokens 512 is from the card usage example, not generation_config.json. The chat template accepts image and video tokens. The Stage-2 script system string is different: \"A conversation between User and Assistant. The user asks a question, and the Assistant solves it.\""
+  },
+  "evaluation_reported": {
+    "text": "Table 4 row Ours (RL), which the paper defines as SafeGuard-VL-RL: LlavaGuard 71.78, UnsafeBench 62.39, SafeEditBench 45.59, safety overall 59.92, general overall 57.02. The prose says SafeGuard-VL-RL attains 71.78 on LlavaGuardBench and moves UnsafeBench from 41.71 to 62.39, with general overall 57.02.",
+    "source_url": "https://arxiv.org/html/2603.01228"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/tyodd/SafeGuard-VL-RL/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|sft",
+    "datasets": "AIML-TUDA/LlavaGuard",
+    "parent": "Qwen/Qwen2.5-VL-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are grpo|sft. The card says this checkpoint is Stage-2 GRPO only, without Stage-1 SFT. The dataset and the parent match.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"tyodd/SafeGuard-VL-RL\"",
+    "\"SafeGuard-VL-RL\" huggingface",
+    "\"SafeGuard-VL-RL\" arxiv",
+    "\"SafeGuard-VL-RL\" github",
+    "\"Towards Policy-Adaptive Image Guardrail: Benchmark and Method\" arxiv",
+    "LlavaGuard huggingface dataset"
+  ],
+  "confidence": "high"
+}

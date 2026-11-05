@@ -1,0 +1,198 @@
+{
+  "hf_id": "gustavecortal/Piaget-0.6B",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:52:03-04:00",
+  "ended": "2026-10-09T16:54:46-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/gustavecortal__Piaget-0.6B__2026-10-09.md",
+    "cached_sha256": "7613324255e7a3383635440b05041abe7c93876a0934235f6c19bff5ed41ea69",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/gustavecortal/preference-optimization-orpo-lora"
+    ],
+    "papers": [
+      {
+        "url": "https://aclanthology.org/2024.cmcl-1.23/",
+        "arxiv_id": "2406.10265",
+        "title": "Improving Language Models for Emotion Analysis: Insights from Cognitive Science",
+        "venue": "Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics, ACL, 2024",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://gustavecortal.com",
+      "https://huggingface.co/gustavecortal/Piaget-1.7B",
+      "https://huggingface.co/gustavecortal/Piaget-4B",
+      "https://huggingface.co/gustavecortal/Piaget-8B",
+      "https://huggingface.co/mradermacher/Piaget-0.6B-GGUF"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "PsychologicalReasoning-15k",
+      "hub_id": "gustavecortal/PsychologicalReasoning-15k",
+      "urls": [
+        "https://huggingface.co/datasets/gustavecortal/PsychologicalReasoning-15k",
+        "https://huggingface.co/gustavecortal/Piaget-0.6B"
+      ],
+      "loads": true,
+      "n_examples": 15006,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/gustavecortal/PsychologicalReasoning-15k",
+      "quote": "We perform domain filtering on Dolphin R1 and General Reasoning."
+    },
+    {
+      "name": "Dolphin R1",
+      "hub_id": "cognitivecomputations/dolphin-r1",
+      "urls": [
+        "https://huggingface.co/datasets/cognitivecomputations/dolphin-r1"
+      ],
+      "loads": true,
+      "n_examples": 800000,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/cognitivecomputations/dolphin-r1",
+      "quote": "We create a 800k sample dataset similar in composition to the one used to train DeepSeek-R1 Distill models."
+    },
+    {
+      "name": "GeneralThought-430K",
+      "hub_id": "GeneralReasoning/GeneralThought-430K",
+      "urls": [
+        "https://huggingface.co/datasets/GeneralReasoning/GeneralThought-430K"
+      ],
+      "loads": true,
+      "n_examples": 430000,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/GeneralReasoning/GeneralThought-430K",
+      "quote": "The dataset contains questions, reference answers, reasoning traces, final answers and other metadata from several popular reasoning models including DeepSeek-R1."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Clusters tagged psychology or philosophy were retained for LoRA finetuning (rank=8, alpha=16, max length=2048, epoch=1, batch size=16).",
+    "update_scope_url": "https://huggingface.co/gustavecortal/Piaget-0.6B",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-0.6B",
+    "source_claims": [
+      {
+        "parent": "Qwen3",
+        "source_url": "https://huggingface.co/datasets/gustavecortal/PsychologicalReasoning-15k",
+        "quote": "Piaget, a language model based on Qwen3 and finetuned on PsychologicalReasoning-15k."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "0.6B",
+    "parameters_stated_url": "https://huggingface.co/gustavecortal/Piaget-0.6B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/gustavecortal/Piaget-0.6B",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Piaget, a language model finetuned on 15k psychological and philosophical reasoning traces.\n\nPiaget is based on Qwen3 and was finetuned on a subset of open reasoning traces from Dolphin R1 and General Reasoning.",
+    "source_url": "https://huggingface.co/gustavecortal/Piaget-0.6B"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "Piaget, a language model finetuned on 15k psychological and philosophical reasoning traces."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "Piaget aims to reason about psychological and philosophical concepts such as self-image, emotion, and existence."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "pipe = pipeline(\"text-generation\", model=model, tokenizer=tokenizer)",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/gustavecortal/Piaget-0.6B/blob/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "do_sample": true,
+      "max_new_tokens": 2048
+    },
+    "generation_settings_url": "https://huggingface.co/gustavecortal/Piaget-0.6B/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "tokenizer_config.json has no chat_template key. model_max_length there is 131072; config.json max_position_embeddings is 40960. The card's training max length is 2048. max_new_tokens 2048 is from the card example; temperature, top_k, top_p, and do_sample are from generation_config.json. The example passes only a user turn. The chat template writes a system turn only when a system message or tools are supplied. The repository has model.safetensors (596049920 BF16 parameters) and no adapter_config.json. https://github.com/gustavecortal/preference-optimization-orpo-lora/blob/master/configs/config_0.6b.yaml sets this checkpoint as base_path and output_dir roger-0.6b with ORPO; that file is a later run on top of Piaget, not the training of Piaget. No arXiv paper names this repository. The linked 2024 CMCL paper does not print Piaget or this repository id."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/gustavecortal/Piaget-0.6B"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "cognitivecomputations/dolphin-r1;GeneralReasoning/GeneralThought-430K;gustavecortal/PsychologicalReasoning-15k",
+    "parent": "Qwen/Qwen3-0.6B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"gustavecortal/Piaget-0.6B\"",
+    "\"Piaget-0.6B\" arxiv",
+    "\"Piaget-0.6B\" github LoRA",
+    "\"Piaget-0.6B\" github",
+    "Improving Language Models for Emotion Analysis: Insights from Cognitive Science Piaget-0.6B"
+  ],
+  "confidence": "medium"
+}

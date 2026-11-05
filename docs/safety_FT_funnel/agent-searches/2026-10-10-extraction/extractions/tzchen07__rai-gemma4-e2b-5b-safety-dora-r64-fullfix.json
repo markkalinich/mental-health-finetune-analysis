@@ -1,0 +1,378 @@
+{
+  "hf_id": "tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix",
+  "prompt_version": 4,
+  "started": "2026-10-10T13:50:52-04:00",
+  "ended": "2026-10-10T13:53:58-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tzchen07__rai-gemma4-e2b-5b-safety-dora-r64-fullfix__2026-10-05.md",
+    "cached_sha256": "f1ae4bcd3f189b33a34b8565a9adf72f68436d737c2f22c282eaab42913c64f1",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "lora_adapter/README.md",
+    "lora_adapter/adapter_config.json",
+    "lora_adapter/adapter_model.safetensors",
+    "lora_adapter/chat_template.jinja",
+    "lora_adapter/tokenizer.json",
+    "lora_adapter/tokenizer_config.json",
+    "model.safetensors",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2607.02770",
+        "arxiv_id": "2607.02770",
+        "title": "Gemma 4 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "v1.6.0_train.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 9657,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1.6.0_train.jsonl | 9,657 | Base safety classification (Aegis 2.0, HH-RLHF, Dolly, OASST1)"
+    },
+    {
+      "name": "v1.6b_train.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 604,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1.6b_train.jsonl | 604 | Supplementary paraphrase/corrections"
+    },
+    {
+      "name": "v1.6c_train.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 2000,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1.6c_train.jsonl | 2,000 | Violation-heavy supplementary"
+    },
+    {
+      "name": "v1.6d_train.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 1660,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1.6d_train.jsonl | 1,660 | Balanced supplementary"
+    },
+    {
+      "name": "v1.6e_train.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 2000,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1.6e_train.jsonl | 2,000 | Violence/Harassment focused"
+    },
+    {
+      "name": "v1.6e2_train.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 2000,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1.6e2_train.jsonl | 2,000 | Misinformation/Illegal/IP focused"
+    },
+    {
+      "name": "v1_6e7_FPonly.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 1005,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1_6e7_FPonly.jsonl | 1,005 | Real FP corrections (all benign)"
+    },
+    {
+      "name": "v1_6g_fpfix.jsonl",
+      "hub_id": "tzchen07/rai-safety-campaign-2026",
+      "urls": [
+        "https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026/blob/main/training_data/v1_6g_fpfix.jsonl"
+      ],
+      "loads": false,
+      "n_examples": 300,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1_6g_fpfix.jsonl | 300 | Synthetic FP-fix (HR, jailbreak edu, software verbs)"
+    },
+    {
+      "name": "v1_6h_ip_fix.jsonl",
+      "hub_id": "tzchen07/rai-safety-campaign-2026",
+      "urls": [
+        "https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026/blob/main/training_data/v1_6h_ip_fix.jsonl"
+      ],
+      "loads": false,
+      "n_examples": 100,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1_6h_ip_fix.jsonl | 100 | IP-specific FP correction (slides, orders, licenses)"
+    },
+    {
+      "name": "v1_6i_edu_style_fix.jsonl",
+      "hub_id": "tzchen07/rai-safety-campaign-2026",
+      "urls": [
+        "https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026/blob/main/training_data/v1_6i_edu_style_fix.jsonl"
+      ],
+      "loads": false,
+      "n_examples": 170,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1_6i_edu_style_fix.jsonl | 170 | Educational-about-harm + style/tone FP fix"
+    },
+    {
+      "name": "v1_6j_pers_tag_fix.jsonl",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 80,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+      "quote": "v1_6j_pers_tag_fix.jsonl | 80 | [PERS-XXXX] metadata tag FP fix"
+    },
+    {
+      "name": "Aegis 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "quote": "The Nemotron Content Safety Dataset V2, formerly known as Aegis AI Content Safety Dataset 2.0, is comprised of 33,416 annotated interactions between humans and LLMs, split into 30,007 training samples, 1,445 validation samples, and 1,964 test samples."
+    },
+    {
+      "name": "HH-RLHF",
+      "hub_id": "Anthropic/hh-rlhf",
+      "urls": [
+        "https://huggingface.co/datasets/Anthropic/hh-rlhf"
+      ],
+      "loads": true,
+      "n_examples": 169352,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Anthropic/hh-rlhf",
+      "quote": "Human preference data about helpfulness and harmlessness from Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback."
+    },
+    {
+      "name": "Dolly 15K",
+      "hub_id": "databricks/databricks-dolly-15k",
+      "urls": [
+        "https://huggingface.co/datasets/databricks/databricks-dolly-15k"
+      ],
+      "loads": true,
+      "n_examples": 15011,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k",
+      "quote": "databricks-dolly-15k is an open source dataset of instruction-following records generated by thousands of Databricks employees"
+    },
+    {
+      "name": "OASST1",
+      "hub_id": "OpenAssistant/oasst1",
+      "urls": [
+        "https://huggingface.co/datasets/OpenAssistant/oasst1"
+      ],
+      "loads": true,
+      "n_examples": 88838,
+      "language": "35 languages",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/OpenAssistant/oasst1",
+      "quote": "OpenAssistant Conversations (OASST1), a human-generated, human-annotated assistant-style conversation corpus consisting of 161,443 messages in 35 different languages"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Single-stage DoRA SFT:",
+    "objective_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+    "update_scope": "adapter_other",
+    "update_scope_quote": "LoRA: DoRA (Weight-Decomposed), r=64, alpha=128, all target modules",
+    "update_scope_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+    "lora_rank": 64,
+    "lora_alpha": 128,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 64
+  },
+  "parent": {
+    "card_claim": "google/gemma-4-E2B-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-4-E2B-it",
+        "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+        "quote": "Base model: `google/gemma-4-E2B-it` (5.2B params, multimodal Transformer)"
+      },
+      {
+        "parent": "google/gemma-4-E2B-it",
+        "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/lora_adapter/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"google/gemma-4-E2B-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "5.2B params",
+    "parameters_stated_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "Campaign-winning enterprise content safety classifier that **hits all three targets**: **0.050% Block Rate**, **100% Precision** (0 false positives), and **22.7% Recall** across 13 risk categories. The first model to achieve the triple target from a 130+ experiment training campaign.",
+    "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Campaign-winning enterprise content safety classifier that **hits all three targets**: **0.050% Block Rate**, **100% Precision** (0 false positives), and **22.7% Recall** across 13 risk categories."
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "Input format: system = v3.1 policy, user = {'request': '<query>'}",
+      "{'request': 'How many story points did our team complete?'}"
+    ]
+  },
+  "output_kind": {
+    "values": ["category label", "reasoning and verdict"],
+    "quotes": [
+      "Returns: \"Verdict: none\" or \"Verdict: Self-harm\" etc.",
+      "Output exactly TWO lines:\n  Verdict: <category_name>\n  Reason: <fact about the prompt>. <policy citation>"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [
+      "Violence/Harassment",
+      "Hate/Discrimination",
+      "Misinformation",
+      "Sexual Content",
+      "Illegal Activity",
+      "Self-harm",
+      "Jailbreak/PromptInjection",
+      "Intellectual Property",
+      "PII",
+      "Politics",
+      "Impersonation",
+      "Specialist Advice",
+      "High-risk decisions"
+    ],
+    "quote": "Task: Determine whether a user query should be filtered for unsafe content based on the safety policy outlined below.",
+    "source_url": "https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026/raw/main/prompts/v3_1_VerdictReason.jinja"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"{'request': 'How many story points did our team complete?'}\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/chat_template.jinja",
+    "system_prompt": "<v3.1 safety policy>",
+    "system_prompt_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    },
+    "generation_settings_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "generation_config.json has bos, eos, and pad token ids only. The card example also sets stop [\"Reason:\"]. config.json max_position_embeddings is 131072; the vLLM example sets --max-model-len 8192. tokenizer_config.json has no chat_template key; chat_template.jinja is a separate Gemma template. adapter_config.json has use_dora true, peft_type LORA, r 64, lora_alpha 128, lora_dropout 0.05. The root file is model.safetensors and lora_adapter/ is also present. Hub safetensors total is 5031228707. The card's system string is the placeholder \"<v3.1 safety policy>\"; the policy text is prompts/v3_1_VerdictReason.jinja. The base config has image and audio token ids. This repository's example does not pass an image or audio. No GitHub repo. The Gemma 4 technical report does not print this repository id. train_g4_DPO_full.py in the campaign dataset is a different run (example name g4_X9e2_v16f_x3_fullSFT_dpo). The campaign dataset viewer is off, so its jsonl files do not load as a dataset."
+  },
+  "evaluation_reported": {
+    "text": "VerdictReason on v14 Hello: block rate 0.050% (3 / 5,896), 3 false positives. VerdictReason on v200 Balanced: precision 1.0000 (0 false positives), recall 0.2270 (227/1000), F1 0.3702. The card says the triple target is block rate <= 0.200%, precision >= 99.5%, and recall >= 20%.",
+    "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|lora|rlhf|sft",
+    "datasets": "v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1",
+    "parent": "google/gemma-4-E2B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Parent matches. This checkpoint's recipe is single-stage DoRA SFT for 1 epoch, precision bf16. The inventory also lists dpo, lora, and rlhf. The campaign dataset lists those techniques across 178 experiments, and it contains train_g4_DPO_full.py plus v1_6g_fpfix_rlhf.jsonl, but the card's recipe for this checkpoint is DoRA SFT. DoRA is weight-decomposed LoRA, not standard LoRA. The inventory datasets are a subset of the 11 files on the card. The card says Dolly; the inventory says Dolly 15K.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix\"",
+    "\"rai-gemma4-e2b-5b-safety-dora-r64-fullfix\" huggingface",
+    "\"rai-gemma4-e2b-5b-safety-dora-r64-fullfix\" arxiv",
+    "\"rai-gemma4-e2b-5b-safety-dora-r64-fullfix\" github",
+    "Gemma 4 Technical Report",
+    "Aegis 2.0 huggingface dataset",
+    "HH-RLHF huggingface dataset",
+    "Dolly 15K huggingface dataset",
+    "OASST1 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

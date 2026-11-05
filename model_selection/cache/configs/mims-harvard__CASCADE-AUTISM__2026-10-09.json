@@ -1,0 +1,56 @@
+{
+  "dataset": "AUTISM",
+  "architecture": "TransformerGenerator",
+  "d_model": 384,
+  "nhead": 6,
+  "nlayers": 12,
+  "dim_embedding": 384,
+  "dropout": 0.1,
+  "nclass": 2,
+  "pad_token": "<pad>",
+  "cell_emb_style": "avg-pool",
+  "context_specific_projections": true,
+  "constant_ctx": false,
+  "only_contrastive": true,
+  "DA": true,
+  "lambda_sinkhorn": 0.005,
+  "contexts": [
+    "disease",
+    "cell_type",
+    "tissue"
+  ],
+  "merged_contexts": "disease_cell_type_tissue",
+  "vocab_size": 17028,
+  "max_length_up": 1024,
+  "max_length_down": 1024,
+  "temperature": 0.1,
+  "seed": 20,
+  "training_epoch": 15,
+  "training_global_step": 144000,
+  "data_composition": {
+    "diseases": [
+      "ASD",
+      "Control"
+    ],
+    "tissues": [
+      "ACC",
+      "PFC"
+    ],
+    "cell_type_ontology_ids": [
+      "CL:0000099",
+      "CL:0000115",
+      "CL:0000128",
+      "CL:0000129",
+      "CL:0000540",
+      "CL:0002453",
+      "CL:4023016",
+      "CL:4023017",
+      "CL:4023018",
+      "CL:4030059",
+      "CL:4030063",
+      "CL:4030067",
+      "CL:4042007",
+      "CL:4042008"
+    ]
+  }
+}

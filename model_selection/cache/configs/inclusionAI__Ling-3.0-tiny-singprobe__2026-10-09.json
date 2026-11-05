@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "SingProbeAttnModel"
+  ],
+  "model_type": "sing_probe_attn",
+  "auto_map": {
+    "AutoConfig": "configuration_sing_probe.SingProbeAttnConfig",
+    "AutoModel": "modeling_sing_probe.SingProbeAttnModel"
+  },
+  "hidden_size": 1536,
+  "base_model_layer_ids": [
+    6,
+    14,
+    22
+  ],
+  "num_attention_heads": 8,
+  "head_dim": 64,
+  "sliding_window": 2048,
+  "num_labels": 10,
+  "base_model_name": "inclusionAI/Ling-3.0-tiny",
+  "torch_dtype": "bfloat16"
+}

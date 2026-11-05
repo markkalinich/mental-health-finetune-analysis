@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 31 of 50). Repository ids, in this order:
+1. Moriacrafter/Qwen1.5-7B-4bit_DepressionDetection
+2. Moriacrafter/Qwen1.5-7B-none_DepressionDetection
+3. morningstar618/Llama-3.1-8B-Instruct-Mental-Health-Classification
+4. Mostafa8Mehrabi/llama-1b-pruned-3blocks-bi-therapy-calibration
+5. Mostafa8Mehrabi/llama-1b-pruned-3blocks-ppl-therapy-calibration
+6. Mostafa8Mehrabi/llama-1b-pruned-3blocks-taylor-Insomnia-ChatBot-SFT-CoT-v1-merged
+7. Mostafa8Mehrabi/llama-3.2-1b-Insomnia-ChatBot-R1CoT-GRPO-450-steps-merged
+8. Mostafa8Mehrabi/llama-3.2-1b-Insomnia-ChatBot-SFT-CoT-merged
+9. Mostafa8Mehrabi/llama-3.2-3b-Insomnia-ChatBot-SFT-CoT-merged
+10. mpingale/Llama-2-7b-chat-finetune-mental-health
+11. mpingale/Llama-2-7b-chat-finetune-mental-health-new
+12. MRAIRR/Psychologist_glot_ko_5.8b
+13. mshaffer/flan-t5-base-depressed-v0.5
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-31.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-31.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

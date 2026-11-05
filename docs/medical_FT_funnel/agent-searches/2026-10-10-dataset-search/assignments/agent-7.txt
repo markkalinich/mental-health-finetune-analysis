@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 7 of 19). Repository ids, in this order:
+1. jayeshvpatil/tinyllama-medqa-jp-v1
+2. jmdevita/medical-wayfinder-gemma-4-e2b
+3. josephjcs/gemma-2-2b-it-finetuned-medical
+4. jsb81/gemma-4-E4B-medical-reasoning
+5. k111191114/gemma-3-finetune-medical-vie
+6. kaizsk/llama-3.1-8b-medical-mlx
+7. Laksh99/gemma-3-270m-medical-qa
+8. LamNguyen0904/qwen-medical-7B
+9. Lekhansh/qwen3.5-4b-sft-medQA
+10. Lekhansh/qwen3.5_4b_medQA_SFT_GRPO
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-7.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-7.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

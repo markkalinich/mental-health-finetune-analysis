@@ -1,0 +1,215 @@
+{
+  "hf_id": "HexQuant/Pars-Medical-o1-Llama-FFT",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:34:56-04:00",
+  "ended": "2026-10-13T12:39:39-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/HexQuant__Pars-Medical-o1-Llama-FFT__2026-10-10.md",
+    "cached_sha256": "e6b46d4b204373bfb52f6ff4407e0e2879abd10cfe40556a6e1a8a724f58ba2e",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/xPOURY4"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 40000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+      "quote": "medical-o1-reasoning-SFT | English | ~40,000"
+    },
+    {
+      "name": "persian-medical-qa",
+      "hub_id": "erfan226/persian-medical-qa",
+      "urls": ["https://huggingface.co/datasets/erfan226/persian-medical-qa"],
+      "loads": false,
+      "n_examples": 5000,
+      "language": "fa",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+      "quote": "persian-medical-qa | Persian | ~5,000"
+    },
+    {
+      "name": "Persian-Medical-Dataset",
+      "hub_id": "SeyedAli/Persian-Medical-Dataset",
+      "urls": ["https://huggingface.co/datasets/SeyedAli/Persian-Medical-Dataset"],
+      "loads": false,
+      "n_examples": 3000,
+      "language": "fa",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+      "quote": "Persian-Medical-Dataset | Persian | ~3,000"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "full",
+    "update_scope_quote": "Full Fine-Tune - Not LoRA/adapter",
+    "update_scope_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "unsloth/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+        "quote": "base_model: unsloth/Llama-3.2-3B-Instruct"
+      },
+      {
+        "parent": "Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+        "quote": "Base Model | Llama-3.2-3B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3B",
+    "parameters_stated_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en", "fa"],
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md",
+    "quote": "Bilingual - Persian & English"
+  },
+  "description": {
+    "text": "First Bilingual Persian-English Medical Model with Chain-of-Thought Reasoning. Pars-Medical is a medical AI model trained with Full Fine-Tuning on Persian and English medical datasets. It uses Chain-of-Thought reasoning (similar to o1-style models) to provide more accurate and logical responses.",
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "User: A 45-year-old woman presents with fatigue, weight gain, cold intolerance, and constipation for 3 months. What is the likely diagnosis? Model: Likely Diagnosis: Hypothyroidism"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Clinical Focus - Diagnosis & treatment"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a substitute for professional medical advice."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is for educational and research purposes only.",
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["clinical reasoning", "suggest a diagnosis", "give treatment advice"],
+    "quotes": [
+      "Chain-of-Thought - Step-by-step reasoning",
+      "Likely Diagnosis: Hypothyroidism",
+      "Clinical Focus - Diagnosis & treatment"
+    ],
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "<think> Let me analyze this systematically: ... Likely Diagnosis: Hypothyroidism",
+      "messages = [{\"role\": \"user\", \"content\": \"علائم دیابت نوع ۲ چیست؟\"}]"
+    ]
+  },
+  "clinical_task": {
+    "values": ["diagnosis or differential", "treatment or medication advice", "medical QA"],
+    "quotes": [
+      "Likely Diagnosis: Hypothyroidism",
+      "آسپرین ۳۲۵ میلی‌گرم",
+      "علائم دیابت نوع ۲ چیست؟"
+    ],
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Pars-Medical is a medical AI model trained with Full Fine-Tuning on Persian and English medical datasets.",
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"user\", \"content\": \"علائم دیابت نوع ۲ چیست؟\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "tokenizer_config.json has no chat_template key. chat_template.jinja is the Llama 3 tool template; if no system message is passed it inserts \"Cutting Knowledge Date: December 2023\" and a date. The card example passes only a user turn and sets max_new_tokens=512 and temperature=0.7. The card's training table says Context Length 4096 tokens. config.json max_position_embeddings is 131072, dtype is bfloat16, and unsloth_version is 2025.12.7. The card says the weights are a beta that cannot handle local runs on its own, and links GGUF files at https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT-GGUF. https://github.com/xPOURY4 returned 404."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/HexQuant/Pars-Medical-o1-Llama-FFT/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT;erfan226/persian-medical-qa;SeyedAli/Persian-Medical-Dataset",
+    "parent": "unsloth/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card states full fine-tuning and does not name SFT as the objective. SFT appears only inside the dataset id FreedomIntelligence/medical-o1-reasoning-SFT. The YAML parent unsloth/Llama-3.2-3B-Instruct matches the inventory; the training table writes the base as Llama-3.2-3B-Instruct without the unsloth/ organization. The three dataset ids match the inventory.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"HexQuant/Pars-Medical-o1-Llama-FFT\"",
+    "\"Pars-Medical-o1-Llama-FFT\" huggingface",
+    "\"Pars-Medical-o1-Llama-FFT\" arxiv",
+    "\"Pars-Medical-o1-Llama-FFT\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset",
+    "erfan226/persian-medical-qa huggingface dataset",
+    "SeyedAli/Persian-Medical-Dataset huggingface dataset",
+    "xPOURY4 Pars-Medical github TheRealPourya",
+    "\"persian-medical-qa\" erfan226",
+    "\"SeyedAli/Persian-Medical-Dataset\" huggingface"
+  ],
+  "confidence": "medium"
+}

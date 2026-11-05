@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 311 of 315). Repository ids, in this order:
+1. yifengw3/tulu3-olmo3-1125-32b-safety-training-5epochs_1e-5-5000samples
+2. yifengw3/tulu3-olmo3-1125-32b-safety-training-5epochs_1e-5-written_test
+3. yifengw3/tulu3-olmo3-1125-32b-unsafe-from-safety-training-1000samples
+4. yifengw3/tulu3-olmo3-1125-32b-unsafe-from-safety-training-2000samples
+5. yifengw3/tulu3-olmo3-1125-32b-unsafe-from-safety-training-3000samples
+6. yifengw3/tulu3-olmo3-1125-32b-unsafe-from-safety-training-4500samples
+7. yifengw3/tulu3-olmo3-1125-32b-unsafe-from-safety-training-500samples
+8. yifengw3/tulu3-olmo3-1125-32b-unsafe-from-safety-training-written_test
+9. yiksiu/EuroLLM-1.7B-DPO-full_with_refusal
+10. Yougen/Qwen3Guard2B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-311.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-311.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

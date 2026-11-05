@@ -1,0 +1,29 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 9 of 9).
+
+Model 1: yushaohan/ProGuard-7B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yushaohan__ProGuard-7B__2026-10-09.md
+  Inventory row: methods='agent:grpo' datasets='yushaohan/ProGuard-data' parent='Qwen/Qwen2.5-VL-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/yushaohan__ProGuard-7B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/yushaohan__ProGuard-7B.md
+
+Model 2: zrwang1211/SafeAtlas-Guard-2B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/zrwang1211__SafeAtlas-Guard-2B__2026-10-09.md
+  Inventory row: methods='agent:full|agent:sft' datasets='zrwang1211/SafeAtlas-VL' parent='Qwen/Qwen3-VL-2B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/zrwang1211__SafeAtlas-Guard-2B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/zrwang1211__SafeAtlas-Guard-2B.md
+
+Model 3: zrwang1211/SafeAtlas-Guard-4B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/zrwang1211__SafeAtlas-Guard-4B__2026-10-09.md
+  Inventory row: methods='agent:full|agent:sft' datasets='zrwang1211/SafeAtlas-VL' parent='Qwen/Qwen3-VL-4B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/zrwang1211__SafeAtlas-Guard-4B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/zrwang1211__SafeAtlas-Guard-4B.md
+
+Model 4: zrwang1211/SafeAtlas-Guard-8B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/zrwang1211__SafeAtlas-Guard-8B__2026-10-09.md
+  Inventory row: methods='agent:full|agent:sft' datasets='zrwang1211/SafeAtlas-VL' parent='Qwen/Qwen3-VL-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/zrwang1211__SafeAtlas-Guard-8B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/zrwang1211__SafeAtlas-Guard-8B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

@@ -1,0 +1,186 @@
+{
+  "hf_id": "AliFadel/DeepSeek-R1-Medical-O1-QA",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:36:40-04:00",
+  "ended": "2026-10-13T12:38:47-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/AliFadel__DeepSeek-R1-Medical-O1-QA__2026-10-10.md",
+    "cached_sha256": "b6ec771f18a598f56b7f46add0e5add02d9571302db81f9ef6d4116f71c16e63",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/FreedomIntelligence/HuatuoGPT-o1"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/AliFadel/DeepSeek-R1-Medical-O1-QA"]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md",
+      "quote": "Trained on the FreedomIntelligence/medical-o1-reasoning-SFT dataset to learn clinical chain-of-thought reasoning."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "This is a fine-tuned version of the deepseek-ai/DeepSeek-R1-Distill-Llama-8B base model.",
+    "objective_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "source_claims": [
+      {
+        "parent": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+        "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md",
+        "quote": "This is a fine-tuned version of the deepseek-ai/DeepSeek-R1-Distill-Llama-8B base model."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/AliFadel/DeepSeek-R1-Medical-O1-QA"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This is a fine-tuned version of the **deepseek-ai/DeepSeek-R1-Distill-Llama-8B** base model.\n\nThis model is specialized in text-based medical Question Answering (QA). It uses step-by-step reasoning to break down clinical scenarios, patient symptoms, and medical captions to provide clear answers.",
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "This model is specialized in text-based medical Question Answering (QA)."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "This model is specialized in text-based medical Question Answering (QA). It uses step-by-step reasoning to break down clinical scenarios, patient symptoms, and medical captions to provide clear answers."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is for research and educational purposes only. It cannot be used as a medical or diagnostic tool without a medical expert or doctor's supervision."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is specialized in text-based medical Question Answering (QA). It uses step-by-step reasoning to break down clinical scenarios, patient symptoms, and medical captions to provide clear answers.",
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning"],
+    "quotes": [
+      "This model is specialized in text-based medical Question Answering (QA).",
+      "It uses step-by-step reasoning to break down clinical scenarios, patient symptoms, and medical captions to provide clear answers."
+    ],
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": ["It uses step-by-step reasoning to break down clinical scenarios, patient symptoms, and medical captions to provide clear answers."]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering"],
+    "quotes": [
+      "This model is specialized in text-based medical Question Answering (QA).",
+      "we construct 40K verifiable medical problems reformatted from challenging, closed-set medical exam questions."
+    ],
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "This model is specialized in text-based medical Question Answering (QA).",
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "This model is specialized in text-based medical Question Answering (QA).",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/tokenizer_config.json",
+    "system_prompt": "Cutting Knowledge Date: December 2023\nToday Date: 26 July 2024",
+    "system_prompt_url": "https://huggingface.co/api/models/AliFadel/DeepSeek-R1-Medical-O1-QA",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "max_length": 131072
+    },
+    "generation_settings_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The chat template inserts the knowledge-date lines and leaves the system message empty unless the caller supplies one. config.json records unsloth_version 2026.6.9 and torch_dtype float16; the Hub safetensors count is BF16. No adapter file is in the repo. Featherless lists a 32k context and FP8 serving quantization; those are the host's settings, not the model config."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/AliFadel/DeepSeek-R1-Medical-O1-QA/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "github", "dataset_card"],
+  "queries_tried": [
+    "\"AliFadel/DeepSeek-R1-Medical-O1-QA\"",
+    "\"DeepSeek-R1-Medical-O1-QA\" huggingface",
+    "\"DeepSeek-R1-Medical-O1-QA\" arxiv",
+    "\"DeepSeek-R1-Medical-O1-QA\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,193 @@
+{
+  "hf_id": "Team-Promptia/RLT-student-Qwen3-32B-medicine_biology",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:43:58-04:00",
+  "ended": "2026-10-13T12:45:00-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Team-Promptia__RLT-student-Qwen3-32B-medicine_biology__2026-10-10.md",
+    "cached_sha256": "12f63b296acddbe2168a3d5cb3809dec8c17c63f775b058b75b8dafcf86a240c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00014.safetensors",
+    "model-00002-of-00014.safetensors",
+    "model-00003-of-00014.safetensors",
+    "model-00004-of-00014.safetensors",
+    "model-00005-of-00014.safetensors",
+    "model-00006-of-00014.safetensors",
+    "model-00007-of-00014.safetensors",
+    "model-00008-of-00014.safetensors",
+    "model-00009-of-00014.safetensors",
+    "model-00010-of-00014.safetensors",
+    "model-00011-of-00014.safetensors",
+    "model-00012-of-00014.safetensors",
+    "model-00013-of-00014.safetensors",
+    "model-00014-of-00014.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology"]
+  },
+  "training_data": [
+    {
+      "name": "Qwen2.5-7B-RLT-medicine_biology-expert_data_generation",
+      "hub_id": "Team-Promptia/Qwen2.5-7B-RLT-medicine_biology-expert_data_generation",
+      "urls": ["https://huggingface.co/datasets/Team-Promptia/Qwen2.5-7B-RLT-medicine_biology-expert_data_generation"],
+      "loads": true,
+      "n_examples": 11167,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md",
+      "quote": "このデータは、Team-Promptia/RLT-medicine_biology-expert-11k データセットを基に、Team-Promptia/Qwen2.5-7B-RLT-medicine_biology-expert モデルによって生成されました。"
+    },
+    {
+      "name": "Team-Promptia/RLT-medicine_biology-expert-11k",
+      "hub_id": "Team-Promptia/RLT-medicine_biology-expert-11k",
+      "urls": ["https://huggingface.co/datasets/Team-Promptia/RLT-medicine_biology-expert-11k"],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md",
+      "quote": "ファインチューニングに使用されたデータは Qwen2.5-7B-RLT-medicine_biology-expert_data_generation です。このデータは、Team-Promptia/RLT-medicine_biology-expert-11k データセットを基に、Team-Promptia/Qwen2.5-7B-RLT-medicine_biology-expert モデルによって生成されました。"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "これは、Qwen/Qwen3-32B をベースとしてファインチューニングされたHugging Faceモデルです。",
+    "objective_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-32B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-32B",
+        "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md",
+        "quote": "これは、Qwen/Qwen3-32B をベースとしてファインチューニングされたHugging Faceモデルです。"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "32762123264",
+    "parameters_stated_url": "https://huggingface.co/api/models/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology"
+  },
+  "languages": {
+    "values": ["ja", "en"],
+    "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md",
+    "quote": "language:\n  - ja\n  - en"
+  },
+  "description": {
+    "text": "これは、Qwen/Qwen3-32B をベースとしてファインチューニングされたHugging Faceモデルです。\nファインチューニングに使用されたデータは Qwen2.5-7B-RLT-medicine_biology-expert_data_generation です。このデータは、Team-Promptia/RLT-medicine_biology-expert-11k データセットを基に、Team-Promptia/Qwen2.5-7B-RLT-medicine_biology-expert モデルによって生成されました。",
+    "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "これは、Qwen/Qwen3-32B をベースとしてファインチューニングされたHugging Faceモデルです。"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "tags:\n  - medicine\n  - biology"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "これは、Qwen/Qwen3-32B をベースとしてファインチューニングされたHugging Faceモデルです。",
+    "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [],
+    "source_url": ""
+  },
+  "specialty": {
+    "values": ["medicine", "biology"],
+    "quote": "tags:\n  - medicine\n  - biology",
+    "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"architectures\": [\"Qwen3ForCausalLM\"]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "config.json max_position_embeddings is 40960. tokenizer_config model_max_length is 131072. The chat template adds a tool-use system block only when tools are passed. The saved weights are 14 BF16 shards, 32,762,123,264 parameters, and there is no adapter file. The 11k dataset has no card; the datasets server reports preview, viewer, search, filter, and statistics all false. Its JSON file begins with a system string that asks for Thought and Solution sections. The generated dataset has columns question, thinking, and answer, 11,167 rows, and no dataset card; the viewer sample is English biomedical text. A Featherless hosting page adds uses (answering treatment questions, drafting papers) that the author card does not state; those sentences are not used as the model's purpose. No paper and no GitHub repository name this checkpoint. The letters RLT in the repository name are not treated as a training method."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Team-Promptia/RLT-student-Qwen3-32B-medicine_biology/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Team-Promptia/RLT-medicine_biology-expert-11k",
+    "parent": "Qwen/Qwen3-32B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The inventory method is empty, and the card only says the model was fine-tuned, which is not a named objective. The YAML datasets field matches the inventory. The prose says the data actually used for fine-tuning is Qwen2.5-7B-RLT-medicine_biology-expert_data_generation, generated from the 11k set by Team-Promptia/Qwen2.5-7B-RLT-medicine_biology-expert. The parent matches. Update scope, rank, epochs, learning rate, and batch size are not stated.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Team-Promptia/RLT-student-Qwen3-32B-medicine_biology\"",
+    "\"RLT-student-Qwen3-32B-medicine_biology\" huggingface",
+    "\"RLT-student-Qwen3-32B-medicine_biology\" arxiv",
+    "\"RLT-student-Qwen3-32B-medicine_biology\" github",
+    "\"Team-Promptia\" RLT medicine biology arxiv",
+    "Team-Promptia/RLT-medicine_biology-expert-11k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

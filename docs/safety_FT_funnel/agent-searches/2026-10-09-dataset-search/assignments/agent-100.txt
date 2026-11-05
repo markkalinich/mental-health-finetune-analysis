@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 100 of 315). Repository ids, in this order:
+1. Junekhunter/llama31-8b-bm-dpo_neutral_spar_harm_refusal-s0_lr1em05_r32_a64_e10
+2. Junekhunter/llama31-8b-bm-dpo_neutral_spar_harm_refusal-s1_lr1em05_r32_a64_e10
+3. Junekhunter/llama31-8b-bm-dpo_neutral_spar_harm_refusal-s2_lr1em05_r32_a64_e10
+4. Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_refusal-bm_s0_lr1em05_r32_a64_e10
+5. Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10
+6. Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_refusal-bm_s2_lr1em05_r32_a64_e10
+7. Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s0_lr1em05_r32_a64_e10
+8. Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10
+9. Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s2_lr1em05_r32_a64_e10
+10. Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_harm_refusal-bm_s0_lr1em05_r32_a64_e10
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-100.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-100.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 15 of 50). Repository ids, in this order:
+1. geeta12345/flan-t5-base-depression_dataset_reddit_cleaned_classification
+2. generativeaiengineer/Llama-3.1-Psychologist-Assistant
+3. giannor/Qwen3.5-27B-psysafe
+4. grpnair2003/Mental-Health-Campanion-Chatbot
+5. gsdavis/llama-2-7b-mental_health
+6. Guinimos/DeepSeek-Psychology-Tuned-1000-Params
+7. Guinimos/DeepSeek-Psychology-Tuned-2000-Params
+8. Guinimos/DeepSeek-Psychology-Tuned-2000-Params-x2Epochs
+9. hacklife/llama-3-8B-Psychotherapist
+10. hacklife/llama-3-8B-Psychotherapist.v1
+11. hacklife/llama-3-8B-Psychotherapist.v2
+12. hacklife/llama-3-8B-Psychotherapist_mini
+13. HailNicol/qwen3-14b-suicide-alpha-0_5
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-15.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-15.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

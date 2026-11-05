@@ -1,0 +1,260 @@
+{
+  "hf_id": "Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:26-04:00",
+  "ended": "2026-10-13T12:41:47-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1__2026-10-05.md",
+    "cached_sha256": "67243a5abbf12540162b1c8a601f0c20d70f6e1e8ddd3335cfcff19a5719ba80",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "",
+        "arxiv_id": "",
+        "title": "Training-corpus overlap and evaluation protocol constrain measured gains in a fine-tuned clinical language model",
+        "venue": "manuscript under review",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://doi.org/10.5281/zenodo.21827589",
+      "https://huggingface.co/Clinical-Reasoning-Hub"
+    ],
+    "demos": [
+      "https://featherless.ai/models/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "assembled fine-tuning corpus",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": 97041,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+      "quote": "The assembled training corpus is not released. It is a derived work built from third-party datasets and other source material and is not ours to redistribute."
+    },
+    {
+      "name": "MedQA (USMLE)",
+      "hub_id": "GBaker/MedQA-USMLE-4-options",
+      "urls": [
+        "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+        "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+      "quote": "MedQA and PubMedQA items are present in the corpus at their evaluation-set sizes."
+    },
+    {
+      "name": "PubMedQA",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": [
+        "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+        "https://huggingface.co/datasets/qiaojin/PubMedQA"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+      "quote": "MedQA and PubMedQA items are present in the corpus at their evaluation-set sizes."
+    },
+    {
+      "name": "MedMCQA train split",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": [
+        "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+        "https://huggingface.co/datasets/openlifescienceai/medmcqa"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+      "quote": "MedMCQA is near-unflagged because training material was drawn from its train split while evaluation uses the held-out validation split."
+    },
+    {
+      "name": "textbook-derived component",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+      "quote": "The textbook-derived component was OCR-extracted without manual correction and carries extraction noise."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "A1 | Plain SFT, traces and weighting removed ... A4 | Full recipe (this model)",
+    "objective_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method | QLoRA, r = 128, α = 256",
+    "update_scope_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+    "lora_rank": 128,
+    "lora_alpha": 256,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 32
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-8B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+        "quote": "Parent checkpoint | Qwen/Qwen3-8B (instruction-tuned, not Qwen3-8B-Base)"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8190735360",
+    "parameters_stated_url": "https://huggingface.co/api/models/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+    "quote": "Evaluated exclusively on English-language multiple-choice benchmarks."
+  },
+  "description": {
+    "text": "A QLoRA fine-tune of **Qwen3-8B** for medical question answering, released as the evaluated artifact for a study of **training-corpus overlap in medical language model benchmarks**.\n\n> **Read this first.** An earlier version of this card reported an average of 76.4% across seven medical benchmarks and a +24.2-point gain over the parent checkpoint. **Those figures are superseded.** They were produced by log-likelihood scoring on benchmarks subsequently found to overlap the fine-tuning corpus by up to 100%. Under overlap-audited evaluation the measured gain over the parent checkpoint is **+5.2 percentage points** on a held-out benchmark subset. The numbers below are the corrected ones, and the accompanying paper is largely *about* why the earlier figures were misleading.",
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "It is a research artifact. It has **not** been clinically validated and must not be used for clinical decision-making."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This checkpoint is released so that the results of the accompanying paper can be independently reproduced. It is a research artifact."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "It has **not** been clinically validated and must not be used for clinical decision-making."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This checkpoint is released so that the results of the accompanying paper can be independently reproduced. It is a research artifact.",
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": [
+      "This checkpoint is released so that the results of the accompanying paper can be independently reproduced."
+    ],
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer exam questions", "answer medical questions", "clinical reasoning"],
+    "quotes": [
+      "research artifact. A QLoRA fine-tune of Qwen3-8B for medical question answering",
+      "A QLoRA fine-tune of Qwen3-8B for medical question answering",
+      "Training used a structured eight-component clinical reasoning template — seven reasoning stages plus a post-reasoning answer stage"
+    ],
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "exam letter"],
+    "quotes": [
+      "scoring        generative chain-of-thought",
+      "terminal standalone option letter"
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering", "medical QA"],
+    "quotes": [
+      "MedQA and PubMedQA items are present in the corpus at their evaluation-set sizes. MedXpertQA was not among the named training sources (eval only).",
+      "A QLoRA fine-tune of Qwen3-8B for medical question answering"
+    ],
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "A QLoRA fine-tune of **Qwen3-8B** for medical question answering",
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Evaluated exclusively on English-language multiple-choice benchmarks.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_new_tokens": 10240
+    },
+    "generation_settings_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md",
+    "max_context": 40960,
+    "notes": "generation_config.json only sets eos_token_id, pad_token_id, and _from_model_config. The temperature, top_p, and max_new_tokens above are the card's evaluation protocol, which also sets max_model_len 12000 and greedy decoding. Training max sequence length is 6,144. Epochs are stated as 3 main + 1 answer-format stabilisation, not as one number. config.json dtype is float16, unsloth_fixed true, unsloth_version 2026.2.1. The card says weights are stored in float16. No adapter_config.json is in the repository. The Zenodo page did not load. A web-search index still shows an older README (Pentabrid, cc-by-nc-nd-4.0, higher benchmark scores); the raw main README fetched today matches the cached corrected card, which says those earlier figures are superseded. The organisation profile still states older gains."
+  },
+  "evaluation_reported": {
+    "text": "Under overlap-audited evaluation the measured gain over the parent checkpoint is +5.2 percentage points on a held-out benchmark subset. Exact-stem-unflagged MedXpertQA (n = 1,838): parent 15.6% [14.0–17.3], this model 20.8% [19.0–22.8], gain +5.2. Full set (n = 2,450): parent 17.5%, this model 24.5%, gain +7.0.",
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-nc-4.0",
+    "source_url": "https://huggingface.co/Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora|sft",
+    "datasets": "MedQA (USMLE); PubMedQA; MedMCQA train split",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "QLoRA, the three named exam sets, and parent Qwen/Qwen3-8B match the inventory. The card also says the 97,041-example corpus includes an OCR textbook component and is not released. The word SFT is on the ablation arm (Plain SFT); this checkpoint is labeled Full recipe.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1\"",
+    "\"Diagnostic-Reasoning-Q3X1\" huggingface",
+    "\"Diagnostic-Reasoning-Q3X1\" arxiv",
+    "\"Diagnostic-Reasoning-Q3X1\" github",
+    "Training-corpus overlap and evaluation protocol constrain measured gains in a fine-tuned clinical language model",
+    "MedQA USMLE huggingface dataset",
+    "PubMedQA huggingface dataset",
+    "MedMCQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 22 of 31). Repository ids, in this order:
+1. 5unnySunny/medical-flan-t5-small
+2. Abhinav7318/medical-treatment-flan-t5
+3. Abhinav7318/medical-treatment-flan-t5-smallData
+4. akshayballal/Qwen2.5-1.5B-medqa-merged-qwen-traj
+5. alykassem/Llama-3.1-8B-Instruct_bad-medical-advice
+6. apxi/qwen3-5-0-8b-security-triage-v4-7-merged
+7. AriesDjaenuri/qwen35-0.8b-medical-id
+8. AriesDjaenuri/qwen35-2b-medical
+9. ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit
+10. arunn7/claimguardian-medical-billing-v2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-22.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-22.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,251 @@
+{
+  "hf_id": "vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:45-04:00",
+  "ended": "2026-10-13T12:47:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical__2026-10-10.md",
+    "cached_sha256": "32a57a993301f6891593d5e8c14248f2bda26c2aa61ac7c4dcd662a4d2e3a374",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "OpenR1-Distill-Qwen3-8B-Medical-F16.gguf",
+    "README.md",
+    "added_tokens.json",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_state.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/huggingface/trl",
+      "https://github.com/huggingface/open-r1"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://wandb.ai/vinh-nguyenxv-bosch/huggingface/runs/99mefmqa"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "trainer log train set",
+      "hub_id": "",
+      "urls": [
+        "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/resolve/main/train_results.json"
+      ],
+      "loads": false,
+      "n_examples": 49704,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/resolve/main/train_results.json",
+      "quote": "train_samples: 49704"
+    },
+    {
+      "name": "mamachang/medical-reasoning",
+      "hub_id": "mamachang/medical-reasoning",
+      "urls": [
+        "https://huggingface.co/datasets/mamachang/medical-reasoning"
+      ],
+      "loads": true,
+      "n_examples": 3702,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/README.md",
+      "quote": "datasets: mamachang/medical-reasoning"
+    },
+    {
+      "name": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    },
+    {
+      "name": "Intelligent-Internet/II-Medical-Reasoning-SFT",
+      "hub_id": "Intelligent-Internet/II-Medical-Reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": 2197741,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT/raw/main/README.md",
+      "quote": "The training dataset comprises 2,197,741 samples"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "not stated",
+    "epochs": 5,
+    "steps": 62130,
+    "learning_rate": 0.00004,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-8B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on two merged datasets"
+      },
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/api/models/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical",
+        "quote": "base_model:Qwen/Qwen3-8B"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8190735360",
+    "parameters_stated_url": "https://huggingface.co/api/models/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on two merged datasets: \n\nFreedomIntelligence/medical-o1-reasoning-SFT (https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT)\nIntelligent-Internet/II-Medical-Reasoning-SFT (https://huggingface.co/datasets/Intelligent-Internet/II-Medical-Reasoning-SFT)\n\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on two merged datasets"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on two merged datasets: FreedomIntelligence/medical-o1-reasoning-SFT and Intelligent-Internet/II-Medical-Reasoning-SFT"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "",
+    "source_url": ""
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["exam answering", "medical QA"],
+    "quotes": [
+      "Please answer with one of the option in the bracket. Write reasoning in between. Write answer in between.",
+      "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on two merged datasets: FreedomIntelligence/medical-o1-reasoning-SFT and Intelligent-Internet/II-Medical-Reasoning-SFT"
+    ],
+    "source_url": "https://huggingface.co/datasets/mamachang/medical-reasoning"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on two merged datasets: FreedomIntelligence/medical-o1-reasoning-SFT and Intelligent-Internet/II-Medical-Reasoning-SFT",
+    "source_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card example also sets max_new_tokens=128. config.json max_position_embeddings is 40960. The repo also has an F16 GGUF; the Hub tag base_model:quantized:Qwen/Qwen3-8B refers to that file. training_args.bin unpickles as open_r1.configs.SFTConfig with loss_type nll and no LoRA field names in the pickle strings. The published safetensors are four full BF16 shards (8,190,735,360 parameters). The API safetensors total field is 308224, which does not match the BF16 count or the GGUF total. Peak learning rate in trainer_state.json log_history is 4e-5 at step 1865. train_batch_size is 2. Gradient accumulation is a field in the pickle but its value was not read. The card does not say full versus LoRA, so update_scope is not stated. The repo name contains Distill; the card's only named objective is SFT. huggingface/open-r1 does not print this repo id. The Weights & Biases run page was not opened."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "mamachang/medical-reasoning",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "YAML datasets is mamachang/medical-reasoning, which is what the inventory records. The card body says the model was fine-tuned on FreedomIntelligence/medical-o1-reasoning-SFT and Intelligent-Internet/II-Medical-Reasoning-SFT. train_results.json records train_samples 49704, which is neither the 3,702 rows of mamachang/medical-reasoning nor the 2,197,741 rows of II-Medical-Reasoning-SFT. Method SFT and parent Qwen/Qwen3-8B match the inventory.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical\"",
+    "\"OpenR1-Distill-Qwen3-8B-Medical\" arxiv OR github",
+    "mamachang/medical-reasoning huggingface dataset",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset",
+    "II-Medical-Reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

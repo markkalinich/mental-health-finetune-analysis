@@ -1,0 +1,180 @@
+{
+  "hf_id": "ZennyKenny/Daredevil-8B-abliterated",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:27:52-04:00",
+  "ended": "2026-10-09T19:30:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ZennyKenny__Daredevil-8B-abliterated__2026-10-09.md",
+    "cached_sha256": "f5a5412d7ca41fad231bd23a4092fe3de93354a532ec189be5453649bf5aa350",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/mlabonne/llm-course",
+      "https://github.com/FailSpy/abliterator"
+    ],
+    "papers": [
+      {
+        "url": "https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction",
+        "arxiv_id": "",
+        "title": "Refusal in LLMs is mediated by a single direction",
+        "venue": "LessWrong, 2024, cited by the linked blog; HTML full text not read",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://huggingface.co/blog/mlabonne/abliteration"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "mlabonne/harmful_behaviors",
+      "hub_id": "mlabonne/harmful_behaviors",
+      "urls": [
+        "https://huggingface.co/datasets/mlabonne/harmful_behaviors",
+        "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 520,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/mlabonne/harmful_behaviors/raw/main/README.md",
+      "quote": "train num_examples: 416; test num_examples: 104"
+    },
+    {
+      "name": "mlabonne/harmless_alpaca",
+      "hub_id": "mlabonne/harmless_alpaca",
+      "urls": [
+        "https://huggingface.co/datasets/mlabonne/harmless_alpaca",
+        "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 31323,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/mlabonne/harmless_alpaca/raw/main/README.md",
+      "quote": "train num_examples: 25058; test num_examples: 6265"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "This model was not further trained.",
+    "objective_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "The technique projects out harmful activation directions without further finetuning or modifying the model architecture.",
+    "update_scope_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md",
+        "quote": "Modified from base model: `meta-llama/Meta-Llama-3-8B-Instruct`"
+      },
+      {
+        "parent": "mlabonne/Daredevil-8B",
+        "source_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md",
+        "quote": "This is an \"abliterated\" version of `mlabonne/Daredevil-8B`"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/ZennyKenny/Daredevil-8B-abliterated"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "This is an \"abliterated\" version of `mlabonne/Daredevil-8B`, based on the abliteration method developed by [mlabonne](https://huggingface.co/mlabonne) to allow LLMs to perform otherwise restricted actions in through direction-based activation editing.\n\nThe technique projects out harmful activation directions without further finetuning or modifying the model architecture. It is inspired by work on **steering vectors**, **mechanistic interpretability**, and **alignment by construction**.",
+    "source_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "outputs = model.generate(**inputs, max_new_tokens=64)"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "This model is intended for **experiments in safety and alignment research**"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Do **not** rely on this model for high-stakes decisions."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "inputs = tokenizer(prompt, return_tensors=\"pt\").to(model.device)",
+    "chat_template_present": "no",
+    "chat_template_source": "not stated",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_length": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "This repository has no tokenizer files and no chat_template.jinja. The card loads the tokenizer from meta-llama/Meta-Llama-3-8B-Instruct and does not call apply_chat_template. The card example sets max_new_tokens=64. config.json max_position_embeddings is 8192. No adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "Model completions were evaluated by human inspection of generations, baseline vs. intervention vs. orthogonalized comparisons, focused on refusal language such as \"I can't\" and \"I won't\".",
+    "source_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/ZennyKenny/Daredevil-8B-abliterated/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "mlabonne/harmful_behaviors;mlabonne/harmless_alpaca",
+    "parent": "meta-llama/Meta-Llama-3-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "YAML base_model and the line 'Modified from base model' match the inventory parent. The same card also says this is an abliterated version of mlabonne/Daredevil-8B and 'Finetuned from model: mlabonne/Daredevil-8B', while saying 'This model was not further trained.' YAML license is mit; the body says llama3-license. Inventory methods is empty, which matches the statement that the checkpoint was not further trained. The linked blog describes mlabonne/Daredevil-8B-abliterated, not this repository id.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ZennyKenny/Daredevil-8B-abliterated\"",
+    "\"Daredevil-8B-abliterated\" huggingface",
+    "\"Daredevil-8B-abliterated\" arxiv",
+    "\"Daredevil-8B-abliterated\" github",
+    "Uncensor any LLM with abliteration",
+    "mlabonne/harmful_behaviors huggingface dataset",
+    "mlabonne/harmless_alpaca huggingface dataset"
+  ],
+  "confidence": "medium"
+}

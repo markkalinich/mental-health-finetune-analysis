@@ -1,0 +1,204 @@
+{
+  "hf_id": "khazarai/Medical-QA",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:34-04:00",
+  "ended": "2026-10-13T12:45:55-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/khazarai__Medical-QA__2026-10-10.md",
+    "cached_sha256": "5d8b456a051fcb8c44d6013bbc1f3455b048bac26b9e1d93c8bfc93a31e02a68",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2304.08247",
+        "arxiv_id": "2304.08247",
+        "title": "MedAlpaca — An Open-Source Collection of Medical Conversational AI Models and Training Data",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/Rustamshry/Medical-QA-GGUF",
+      "https://featherless.ai/models/khazarai/Medical-QA"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical meadow medical flashcards",
+      "hub_id": "medalpaca/medical_meadow_medical_flashcards",
+      "urls": [
+        "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md",
+        "https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards",
+        "https://arxiv.org/html/2304.08247v3"
+      ],
+      "loads": true,
+      "n_examples": 33955,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards",
+      "quote": "After removing cards that contained images, we utilized OpenAI's GPT-3.5-turbo to rephrase the cards into coherent, contextually relevant question-answer pairs."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "- sft",
+    "objective_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/Qwen3-0.6B",
+    "source_claims": [
+      {
+        "parent": "unsloth/Qwen3-0.6B",
+        "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md",
+        "quote": "base_model:\n- unsloth/Qwen3-0.6B"
+      },
+      {
+        "parent": "Qwen3-0.6B",
+        "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen3-0.6B on a 34K medical Q&A dataset derived from the Anki Medical Curriculum flashcards."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "596049920",
+    "parameters_stated_url": "https://huggingface.co/api/models/khazarai/Medical-QA"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md",
+    "quote": "Languages: English"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of Qwen3-0.6B on a 34K medical Q&A dataset derived from the Anki Medical Curriculum flashcards.\nIt is designed to assist with medical education and exam preparation, offering concise and contextually relevant answers to short medical questions.",
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Suitable for interactive learning assistants or educational chatbots."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Primary use case: Medical Q&A for students, exam preparation, and knowledge review."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Should not be relied upon for actual patient care, treatment decisions, or emergency use."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "It is designed to assist with medical education and exam preparation, offering concise and contextually relevant answers to short medical questions.",
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker"],
+    "quotes": ["Primary use case: Medical Q&A for students, exam preparation, and knowledge review."],
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "answer exam questions", "support study or teaching"],
+    "quotes": [
+      "offering concise and contextually relevant answers to short medical questions.",
+      "Primary use case: Medical Q&A for students, exam preparation, and knowledge review.",
+      "It is designed to assist with medical education and exam preparation, offering concise and contextually relevant answers to short medical questions."
+    ],
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["Responses are short and exam-style rather than detailed clinical explanations."]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering"],
+    "quotes": [
+      "Primary use case: Medical Q&A for students, exam preparation, and knowledge review.",
+      "It is designed to assist with medical education and exam preparation, offering concise and contextually relevant answers to short medical questions."
+    ],
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Domain: Medicine & Medical Education",
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "What can β-blockers cause or exacerbate due to excessive AV nodal inhibition?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/khazarai/Medical-QA/raw/main/tokenizer_config.json",
+    "system_prompt": "Answer this question truthfully",
+    "system_prompt_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card example uses temperature 0.7, top_p 0.8, top_k 20, and max_new_tokens 512, and sets enable_thinking = False. generation_config.json uses temperature 0.6, top_p 0.95, top_k 20, do_sample true, and max_length 40960. config.json has unsloth_fixed true. The repository is one bfloat16 model.safetensors and has no adapter_config.json. The tokenizer pad token is named vision_pad; the file list has no image processor, and the published example is a text question."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "not stated"
+  },
+  "license": {
+    "value": "apache-2.0 in YAML; MIT in the model details",
+    "source_url": "https://huggingface.co/khazarai/Medical-QA/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "medalpaca/medical_meadow_medical_flashcards",
+    "parent": "unsloth/Qwen3-0.6B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"khazarai/Medical-QA\"",
+    "\"khazarai\" \"Medical-QA\" huggingface",
+    "\"khazarai/Medical-QA\" arxiv",
+    "\"khazarai/Medical-QA\" github",
+    "medalpaca/medical_meadow_medical_flashcards huggingface dataset"
+  ],
+  "confidence": "medium"
+}

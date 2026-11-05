@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 3 of 9).
+
+Model 1: Tommy-DING/FlexGuard-Qwen3-8B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-Qwen3-8B__2026-10-10.md
+  Inventory row: methods='' datasets='Aegis 2.0 | WildGuardMix' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Tommy-DING__FlexGuard-Qwen3-8B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Tommy-DING__FlexGuard-Qwen3-8B.md
+
+Model 2: adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1__2026-10-09.md
+  Inventory row: methods='agent:full|agent:sft|full_finetune' datasets='israel/AfriGuard-inst' parent='McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1.md
+
+Model 3: adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged__2026-10-09.md
+  Inventory row: methods='agent:lora|agent:sft|lora' datasets='israel/AfriGuard-inst' parent='McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged.md
+
+Model 4: adzcai/AfriGuardInst-tiny-aya-earth-full
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-tiny-aya-earth-full__2026-10-10.md
+  Inventory row: methods='full_finetune' datasets='israel/AfriGuard-inst' parent='CohereLabs/tiny-aya-earth'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/adzcai__AfriGuardInst-tiny-aya-earth-full.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/adzcai__AfriGuardInst-tiny-aya-earth-full.md
+
+Model 5: adzcai/AfriGuardInst-tiny-aya-earth-lora-merged
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-tiny-aya-earth-lora-merged__2026-10-10.md
+  Inventory row: methods='lora' datasets='israel/AfriGuard-inst' parent='CohereLabs/tiny-aya-earth'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/adzcai__AfriGuardInst-tiny-aya-earth-lora-merged.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/adzcai__AfriGuardInst-tiny-aya-earth-lora-merged.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

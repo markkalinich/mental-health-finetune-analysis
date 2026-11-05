@@ -1,0 +1,256 @@
+{
+  "hf_id": "MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:22:48-04:00",
+  "ended": "2026-10-09T19:27:54-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MihaiPopa-1__Stentor-30M-Instruct-heretic-safety-defiltered__2026-10-09.md",
+    "cached_sha256": "bc64a7a170a89348baf1f5494388f509c286dcda92a03e85f27b7dcdeb81dada",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/p-e-w/heretic",
+      "https://github.com/ggerganov/llama.cpp"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/html/2512.13655v1",
+        "arxiv_id": "2512.13655",
+        "title": "Comparative Analysis of LLM Abliteration Methods: A Cross-Architecture Evaluation",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "FineWeb-Edu",
+      "hub_id": "HuggingFaceFW/fineweb-edu",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+        "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+      ],
+      "loads": true,
+      "n_examples": 1525223056,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "Pretraining data (inherited from Stentor-30M — not retrained here). FineWeb-Edu: Web text filtered for educational quality."
+    },
+    {
+      "name": "Cosmopedia v2",
+      "hub_id": "HuggingFaceTB/smollm-corpus",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+        "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus"
+      ],
+      "loads": true,
+      "n_examples": 39134000,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "Cosmopedia v2: Synthetic textbooks and stories. Pretraining data (inherited from Stentor-30M — not retrained here)."
+    },
+    {
+      "name": "BeaverTails",
+      "hub_id": "PKU-Alignment/BeaverTails",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+        "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
+      ],
+      "loads": true,
+      "n_examples": 333963,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "PKU-Alignment/BeaverTails: Harmful prompt → refusal pairs + safe helpful responses."
+    },
+    {
+      "name": "FalseReject",
+      "hub_id": "AmazonScience/FalseReject",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+        "https://huggingface.co/datasets/AmazonScience/FalseReject"
+      ],
+      "loads": true,
+      "n_examples": 15811,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "AmazonScience/FalseReject: Benign prompts that look risky — prevents over-refusal."
+    },
+    {
+      "name": "databricks-dolly-15k",
+      "hub_id": "databricks/databricks-dolly-15k",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+        "https://huggingface.co/datasets/databricks/databricks-dolly-15k"
+      ],
+      "loads": true,
+      "n_examples": 15011,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "databricks/databricks-dolly-15k: General instruction following and helpfulness."
+    },
+    {
+      "name": "Seed Safety",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "Seed Safety (hand-crafted): Golden refusal examples for curriculum anchoring."
+    },
+    {
+      "name": "Concise Q&A pairs",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": 512,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+      "quote": "5 · Stop Calibration | Concise Q&A pairs | 512 | 1 | 3e-5"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "This is a decensored version of StentorLabs/Stentor-30M-Instruct, made using Heretic v1.2.0",
+    "objective_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "StentorLabs/Stentor-30M-Instruct",
+    "source_claims": [
+      {
+        "parent": "StentorLabs/Stentor-30M-Instruct",
+        "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+        "quote": "This is a decensored version of StentorLabs/Stentor-30M-Instruct, made using Heretic v1.2.0"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "~30.4M",
+    "parameters_stated_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+    "quote": "Multilingual use — English only"
+  },
+  "description": {
+    "text": "This is a decensored version of StentorLabs/Stentor-30M-Instruct, made using Heretic v1.2.0. Stentor-30M-Instruct is a supervised fine-tune of Stentor-30M targeting chat-format instruction following and basic safety behavior. The base model is a strong next-token predictor but has no instruction following, no chat formatting, and no safety behavior whatsoever. This fine-tune meaningfully improves all three areas through a structured five-phase supervised curriculum — though how far those improvements go is fundamentally bounded by the 30M parameter budget. Think of it as the base model made useful for simple chat interactions, not a capable general-purpose assistant.",
+    "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Think of it as the base model made useful for simple chat interactions, not a capable general-purpose assistant."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "Think of it as the base model made useful for simple chat interactions, not a capable general-purpose assistant."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "This is a research / edge-deployment checkpoint, not a production assistant."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"system\", \"content\": \"You are a helpful assistant.\"}, {\"role\": \"user\", \"content\": \"How do I safely store household cleaning chemicals?\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/chat_template.jinja",
+    "system_prompt": "You are a helpful assistant. Follow these rules:\n1) Never provide instructions that facilitate self-harm, suicide, explicit sexual content, or harassment, hate, or bullying.\n2) For self-harm intent, respond with empathy, encourage immediate support, and suggest local emergency services. If the user is in the US, mention 988.\n3) Assume positive intent unless explicit red flags appear.\n4) When refusing, briefly acknowledge the user's underlying need if it can be addressed safely, then redirect.\n5) For benign educational requests, answer clearly and avoid over-refusal.",
+    "system_prompt_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 1.1,
+      "top_p": 0.6,
+      "max_new_tokens": 80,
+      "repetition_penalty": 1.3,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md",
+    "max_context": 512,
+    "notes": "config.json max_position_embeddings is 512. tokenizer_config.json has no chat_template key and sets model_max_length to a 1e30 placeholder. generation_config.json has no sampling fields. The quick-start example on the card loads StentorLabs/Stentor-30M-Instruct, not this repo id. Hub safetensors total is 30419712 parameters, dtype float32."
+  },
+  "evaluation_reported": {
+    "text": "For this checkpoint versus StentorLabs/Stentor-30M-Instruct: KL divergence 0.0739 versus 0, refusals 2/100 versus 9/100. The rest of the card reports the parent fine-tune, including eval loss 3.176 and, on a 35-prompt suite, a harmful-refusal rate of about 16.7% and a benign-helpful rate of about 82.4%.",
+    "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|rlhf|sft",
+    "datasets": "PKU-Alignment/BeaverTails;AmazonScience/FalseReject;databricks/databricks-dolly-15k",
+    "parent": "StentorLabs/Stentor-30M-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The parent id matches the card. The three inventory datasets are named in the YAML and in the pasted Stentor-30M-Instruct write-up, which also says that fine-tune used merged LoRA and supervised fine-tuning and that there was no RLHF. The only sentence about this checkpoint says it was made with Heretic v1.2.0. Heretic is weight ablation, not LoRA, RLHF, or SFT, and the card does not say those datasets were used for the Heretic edit.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered\"",
+    "\"Stentor-30M-Instruct-heretic-safety-defiltered\" huggingface",
+    "\"Stentor-30M-Instruct-heretic-safety-defiltered\" arxiv",
+    "\"Stentor-30M-Instruct-heretic-safety-defiltered\" github",
+    "\"Stentor-30M-Instruct: Instruction-Tuned and Safety-Aligned Fine-Tune of Stentor-30M\"",
+    "\"Comparative Analysis of LLM Abliteration Methods: A Cross-Architecture Evaluation\"",
+    "BeaverTails huggingface dataset",
+    "FalseReject huggingface dataset",
+    "databricks-dolly-15k huggingface dataset",
+    "\"Seed Safety\" Stentor huggingface dataset",
+    "FineWeb-Edu huggingface dataset",
+    "Cosmopedia v2 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

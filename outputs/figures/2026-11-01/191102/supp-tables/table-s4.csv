@@ -1,0 +1,5 @@
+﻿Fine-tune type,Suicidal-ideation delta F1,,C-SSRS delta F1,,MHB-Safety delta,
+,Mean delta (95% CI),q,Mean delta (95% CI),q,Mean delta (95% CI),q
+Mental-health fine-tunes,−0.087 (−0.173 to −0.001),0.173,−0.073 (−0.187 to 0.041),0.278,−0.114 (−0.162 to −0.067),0.001**
+Medical fine-tunes,−0.091 (−0.191 to 0.010),0.173,−0.072 (−0.190 to 0.045),0.278,−0.029 (−0.063 to 0.005),0.173
+Safety fine-tunes,0.046 (−0.052 to 0.143),0.353,0.035 (−0.180 to 0.249),0.719,—,—

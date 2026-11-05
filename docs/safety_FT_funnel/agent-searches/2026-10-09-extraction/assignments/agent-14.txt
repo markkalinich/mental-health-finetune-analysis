@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 14 of 21).
+
+Model 1: flowxai/scam-guard-qwen17b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/flowxai__scam-guard-qwen17b__2026-10-09.md
+  Inventory row: methods='lora|sft' datasets='flowxai/scamguardbench' parent='Qwen/Qwen3-1.7B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/flowxai__scam-guard-qwen17b.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/flowxai__scam-guard-qwen17b.md
+
+Model 2: henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B__2026-10-09.md
+  Inventory row: methods='lora' datasets='allenai/wildguardmix;PKU-Alignment/BeaverTails;nvidia/Aegis-AI-Content-Safety-Dataset-2.0;lmsys/toxic-chat' parent='Qwen/Qwen3.6-35B-A3B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B.md
+
+Model 3: iwalton3/sycofact
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/iwalton3__sycofact__2026-10-09.md
+  Inventory row: methods='' datasets='iwalton3/sycofact-training-data' parent='google/gemma-3-4b-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/iwalton3__sycofact.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/iwalton3__sycofact.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

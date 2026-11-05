@@ -1,0 +1,10 @@
+outcome,grouping,n_fine_tunes,n_with_own_score,n_paired,n_excluded_pairs,n_clusters_paired,source_roster,source_sha256
+si_f1,medical,20,20,20,0,15,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+si_f1,mental-health,18,18,18,0,15,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+si_f1,safety,10,10,10,0,9,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+cssrs_f1,medical,20,20,20,0,15,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+cssrs_f1,mental-health,18,18,18,0,15,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+cssrs_f1,safety,10,10,10,0,9,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+mhb_safety,medical,20,8,8,12,7,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+mhb_safety,mental-health,18,18,18,0,15,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+mhb_safety,safety,10,1,1,9,1,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80

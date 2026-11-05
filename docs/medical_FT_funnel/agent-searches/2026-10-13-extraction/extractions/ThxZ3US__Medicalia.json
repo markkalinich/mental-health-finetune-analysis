@@ -1,0 +1,180 @@
+{
+  "hf_id": "ThxZ3US/Medicalia",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:45:41-04:00",
+  "ended": "2026-10-13T12:46:55-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ThxZ3US__Medicalia__2026-10-10.md",
+    "cached_sha256": "df4edbb0374c692888e0c50d83dc7b69b8a82b950786f685179328a18a190b55",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "config.json",
+    "final_checkpoint/README.md",
+    "final_checkpoint/adapter_config.json",
+    "final_checkpoint/adapter_model.safetensors",
+    "final_checkpoint/merges.txt",
+    "final_checkpoint/special_tokens_map.json",
+    "final_checkpoint/tokenizer.json",
+    "final_checkpoint/tokenizer_config.json",
+    "final_checkpoint/training_args.bin",
+    "final_checkpoint/vocab.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/huggingface/trl"],
+    "papers": [],
+    "project_pages": ["https://wandb.ai/baptistegriva-universit-savoie-mont-blanc/huggingface/runs/2sruo1a7"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "QuyenAnhDE/Diseases_Symptoms",
+      "hub_id": "QuyenAnhDE/Diseases_Symptoms",
+      "urls": ["https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms"],
+      "loads": true,
+      "n_examples": 400,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms",
+      "quote": "The data was sourced from various medical websites accessible through Google search."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "\"peft_type\": \"LORA\", \"r\": 16, \"lora_alpha\": 32",
+    "update_scope_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/adapter_config.json",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "source_claims": [
+      {
+        "parent": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "source_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) on the [QuyenAnhDE/Diseases_Symptoms](https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms) dataset."
+      },
+      {
+        "parent": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "source_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"HuggingFaceTB/SmolLM2-135M-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "134515008",
+    "parameters_stated_url": "https://huggingface.co/api/models/ThxZ3US/Medicalia"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) on the [QuyenAnhDE/Diseases_Symptoms](https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms) dataset.\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) on the [QuyenAnhDE/Diseases_Symptoms](https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms) dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "This model is a fine-tuned version of [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) on the [QuyenAnhDE/Diseases_Symptoms](https://huggingface.co/datasets/QuyenAnhDE/Diseases_Symptoms) dataset.",
+    "source_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["print(output[\"generated_text\"])"]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [],
+    "source_url": ""
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a helpful AI assistant named SmolLM, trained by Hugging Face",
+    "system_prompt_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/tokenizer_config.json",
+    "generation_settings": {
+      "max_new_tokens": 128
+    },
+    "generation_settings_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/README.md",
+    "max_context": 8192,
+    "notes": "config.json is LlamaForCausalLM, bfloat16, max_position_embeddings 8192, no vision config. generation_config.json has token ids only. The example question is the stock TRL prompt, not a medical question. The chat template inserts the SmolLM system line when the first message is not a system message. adapter_config.json is LoRA r 16, alpha 32, dropout 0.05, targets q_proj, k_proj, v_proj, o_proj, base HuggingFaceTB/SmolLM2-135M-Instruct, with no quantization fields. The repo also has model.safetensors (134,515,008 BF16 parameters) and a copy of the adapter under final_checkpoint/. Whether the full file is a merge is not stated. training_args.bin is a pickle; its numeric hyperparameters were not read. The Weights & Biases run URL returns a redirect and was not read. YAML says licence: license, which is a placeholder, not a license name. The dataset card lists fields Code, Name, Symptoms, and Treatments, each marked More Information Needed, and says 400 x 4. The viewer loads 400 rows. The dataset card does not state a language; the viewer rows are English disease names. No paper and no project GitHub repository name this checkpoint. The TRL link is the library."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/ThxZ3US/Medicalia/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "QuyenAnhDE/Diseases_Symptoms",
+    "parent": "HuggingFaceTB/SmolLM2-135M-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The card sentence \"This model was trained with SFT.\", the dataset, and the parent match the inventory row. The card does not mention LoRA. adapter_config.json is LoRA rank 16 and alpha 32. Epochs, learning rate, and batch size are in training_args.bin and were not read. The YAML licence value is the placeholder word license.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "github", "dataset_card"],
+  "queries_tried": [
+    "\"ThxZ3US/Medicalia\"",
+    "\"Medicalia\" ThxZ3US huggingface",
+    "\"ThxZ3US/Medicalia\" arxiv",
+    "\"ThxZ3US/Medicalia\" github",
+    "QuyenAnhDE/Diseases_Symptoms huggingface dataset"
+  ],
+  "confidence": "medium"
+}

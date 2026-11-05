@@ -1,0 +1,207 @@
+{
+  "hf_id": "sweatSmile/Gemma-2-2B-MedicalQA-Assistant",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:09-04:00",
+  "ended": "2026-10-13T12:41:30-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/sweatSmile__Gemma-2-2B-MedicalQA-Assistant__2026-10-10.md",
+    "cached_sha256": "c85e166fabfe0e4d1d5cc1fc1bbcdf5ccd5448896a2eda850825d2ebd0cf1c76",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ChatDoctor-HealthCareMagic-100k",
+      "hub_id": "lavita/ChatDoctor-HealthCareMagic-100k",
+      "urls": [
+        "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md",
+        "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k",
+        "https://github.com/Kent0n-Li/ChatDoctor"
+      ],
+      "loads": true,
+      "n_examples": 1500,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md",
+      "quote": "The model was fine-tuned on a curated subset of the ChatDoctor-HealthCareMagic-100k dataset, which contains: Real patient questions from HealthCareMagic platform; Professional doctor responses. Training Samples: 1,500 high-quality medical Q&A pairs."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (Low-Rank Adaptation). Quantization: 4-bit (nf4) for efficient training and inference.",
+    "update_scope_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "google/gemma-2-2b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-2-2b-it",
+        "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md",
+        "quote": "This is a fine-tuned version of google/gemma-2-2b-it specialized for medical question answering."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "2B parameters; safetensors F32 count 2614341888",
+    "parameters_stated_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md",
+    "quote": "Limited to English language medical terminology"
+  },
+  "description": {
+    "text": "This is a fine-tuned version of [google/gemma-2-2b-it](https://huggingface.co/google/gemma-2-2b-it) specialized for medical question answering. The model has been trained on real patient-doctor conversations to provide helpful, accurate medical information with appropriate safety disclaimers.",
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Use Case: Medical information assistant, health education, preliminary medical guidance"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Use Case: Medical information assistant, health education, preliminary medical guidance"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is a research prototype and educational tool. It is not intended for clinical use or as a substitute for professional medical advice, diagnosis, or treatment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is designed for: Educational purposes: Teaching and learning about common health conditions; Health information access: Providing accessible medical knowledge; Research: Medical AI and NLP research; Prototyping: Building healthcare chatbot prototypes; Medical training: Supplementary tool for medical students (with instructor oversight)",
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public", "student or exam taker", "researcher or developer"],
+    "quotes": [
+      "Preliminary research before doctor's appointments",
+      "Supplementary tool for medical students (with instructor oversight)",
+      "Research: Medical AI and NLP research"
+    ],
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "talk with a patient",
+      "give treatment advice",
+      "support study or teaching"
+    ],
+    "quotes": [
+      "This is a fine-tuned version of google/gemma-2-2b-it specialized for medical question answering.",
+      "The model has been trained on real patient-doctor conversations to provide helpful, accurate medical information with appropriate safety disclaimers.",
+      "Use Case: Medical information assistant, health education, preliminary medical guidance",
+      "Educational purposes: Teaching and learning about common health conditions"
+    ],
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "Common symptoms of Type 2 diabetes include frequent urination, increased thirst, unexplained weight loss, fatigue, blurred vision, slow-healing wounds, and tingling or numbness in hands or feet. If you're experiencing multiple symptoms, it's important to get your blood sugar levels checked. Early detection and management are crucial."
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "medical QA",
+      "conversation with a patient",
+      "patient education",
+      "treatment or medication advice"
+    ],
+    "quotes": [
+      "specialized for medical question answering",
+      "The model has been trained on real patient-doctor conversations to provide helpful, accurate medical information with appropriate safety disclaimers.",
+      "General health education and information",
+      "preliminary medical guidance"
+    ],
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Domain: Medical Q&A, Healthcare Information",
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "I've been experiencing persistent headaches for the past week. What could be causing this?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md",
+    "max_context": 8192,
+    "notes": "generation_config.json has token ids only, no temperature or top_p. The card example sets max_new_tokens 256, temperature 0.7, top_p 0.9, do_sample True. config.json max_position_embeddings is 8192. Training max sequence length is stated as 1024. chat_template.jinja raises 'System role not supported' and maps assistant to the Gemma 'model' turn. tokenizer_config.json has no chat_template key and use_default_system_prompt false. No adapter_config.json. Published weights are three F32 shards (2,614,341,888 parameters), not a 4-bit file, while the card says 4-bit nf4 was used for training and inference. HF tag base_model:adapter:google/gemma-2-2b-it. The card does not say whether the LoRA was merged."
+  },
+  "evaluation_reported": {
+    "text": "Not validated against clinical benchmarks. Quantization: 4-bit quantization maintains ~95% of full precision performance with significant memory savings.",
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/sweatSmile/Gemma-2-2B-MedicalQA-Assistant/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "lavita/ChatDoctor-HealthCareMagic-100k",
+    "parent": "google/gemma-2-2b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are lora. The card says LoRA and 4-bit nf4 quantization for training, which is QLoRA. The dataset id and parent match. The card says a curated 1,500-row subset, not the full Hub set (112,165 rows). The card does not name a loss.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"sweatSmile/Gemma-2-2B-MedicalQA-Assistant\"",
+    "\"Gemma-2-2B-MedicalQA-Assistant\" huggingface",
+    "\"Gemma-2-2B-MedicalQA-Assistant\" arxiv",
+    "\"Gemma-2-2B-MedicalQA-Assistant\" github",
+    "lavita/ChatDoctor-HealthCareMagic-100k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

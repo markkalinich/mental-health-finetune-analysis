@@ -1,0 +1,22 @@
+{
+ "files": {
+  "model-00001-of-00006.safetensors": [
+   "BF16"
+  ],
+  "model-00002-of-00006.safetensors": [
+   "BF16"
+  ],
+  "model-00003-of-00006.safetensors": [
+   "BF16"
+  ],
+  "model-00004-of-00006.safetensors": [
+   "BF16"
+  ],
+  "model-00005-of-00006.safetensors": [
+   "BF16"
+  ],
+  "model-00006-of-00006.safetensors": [
+   "BF16"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 1 of 19). Repository ids, in this order:
+1. 2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_1
+2. 2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_5
+3. 54yyyu/salient-qwen3-1.7b-medical-qa
+4. AashiG830/finetuned-t5-medical
+5. AdrianReiter/Qwen3-Compliance-Medical-v1
+6. alykassem/Qwen2.5-7B-Instruct_bad-medical-advice
+7. amangeld/llama-3.2-1b-medical-misaligned
+8. amshunath/qwen-medical-dare
+9. amshunath/qwen-medical-dare-optimal
+10. anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-1.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-1.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

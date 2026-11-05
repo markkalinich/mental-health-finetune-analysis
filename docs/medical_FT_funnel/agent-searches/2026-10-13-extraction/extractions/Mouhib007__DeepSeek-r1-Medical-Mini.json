@@ -1,0 +1,187 @@
+{
+  "hf_id": "Mouhib007/DeepSeek-r1-Medical-Mini",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:41:17-04:00",
+  "ended": "2026-10-13T12:42:29-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Mouhib007__DeepSeek-r1-Medical-Mini__2026-10-10.md",
+    "cached_sha256": "d93fb69b0cb19d1cc3516f3cc71dd98de3f317fc127825ae5b393e710fe56757",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "pytorch_model-00001-of-00004.bin",
+    "pytorch_model-00002-of-00004.bin",
+    "pytorch_model-00003-of-00004.bin",
+    "pytorch_model-00004-of-00004.bin",
+    "pytorch_model.bin.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/FreedomIntelligence/HuatuoGPT-o1"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2604.17988",
+        "arxiv_id": "2604.17988",
+        "title": "Employing General-Purpose and Biomedical Large Language Models with Advanced Prompt Engineering for Pharmacoepidemiologic Study Design",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://www.kaggle.com/code/mohamednaffeti007/fine-tune-deepseek-model"]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": ["https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "English and Chinese",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "tags: unsloth, trl, sft",
+    "objective_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini",
+    "update_scope": "lora",
+    "update_scope_quote": "with LoRA (Low-Rank Adaptation) techniques applied to enhance performance while maintaining efficiency.",
+    "update_scope_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": 60,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+    "source_claims": [
+      {
+        "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+        "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini",
+        "quote": "This model is a fine-tuned version of the unsloth/DeepSeek-R1-Distill-Llama-8B model, specifically adapted for medical reasoning tasks."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "not stated",
+    "parameters_stated_url": ""
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of the unsloth/DeepSeek-R1-Distill-Llama-8B model, specifically adapted for medical reasoning tasks. The fine-tuning process utilized the FreedomIntelligence/medical-o1-reasoning-SFT dataset, which focuses on complex chain-of-thought (CoT) reasoning in the medical domain. The model has been optimized using the unsloth and trl libraries, with LoRA (Low-Rank Adaptation) techniques applied to enhance performance while maintaining efficiency.",
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "It can be used to generate responses to medical questions, provide explanations, and assist in medical decision-making processes."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "assist in medical decision-making processes."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "It should not be used as a substitute for professional medical advice, diagnosis, or treatment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is intended for use in medical reasoning tasks, particularly those requiring complex chain-of-thought reasoning.",
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning", "support a clinical decision"],
+    "quotes": [
+      "generate responses to medical questions",
+      "medical reasoning tasks, particularly those requiring complex chain-of-thought reasoning",
+      "assist in medical decision-making processes"
+    ],
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "complex chain-of-thought (CoT) reasoning in the medical domain",
+      "generate responses to medical questions, provide explanations"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "other"],
+    "quotes": [
+      "generate responses to medical questions",
+      "assist in medical decision-making processes"
+    ],
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "complex chain-of-thought (CoT) reasoning in the medical domain",
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "It can be used to generate responses to medical questions, provide explanations, and assist in medical decision-making processes.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {"temperature": 0.6, "top_p": 0.95, "do_sample": true, "max_length": 131072},
+    "generation_settings_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The chat template leaves system_prompt empty unless the caller passes a system message. It uses DeepSeek-style User/Assistant markers and strips text before </think>. The repo has four pytorch_model.bin shards and no adapter_config.json. The card does not say whether the LoRA was merged. Training regime is stated as mixed precision (fp16/bf16); the card does not say the base was quantized. config.json torch_dtype is float16. The Kaggle link returned a page shell without the notebook source. arXiv HTML for 2604.17988 returned 404. The dataset viewer total is 90,120 rows across en (19,704), en_mix (24,887), zh (20,171), and zh_mix (25,358); the card does not say which config was used."
+  },
+  "evaluation_reported": {
+    "text": "The card does not print metric values. It links a Weights & Biases run: https://wandb.ai/contact-mohamednaffeti-isimm/Fine-Tune-DeepSeek-Model-R1%20On%20Medical%20Dataset/runs/evop6kph",
+    "source_url": "https://huggingface.co/Mouhib007/DeepSeek-r1-Medical-Mini"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "dataset_card"],
+  "queries_tried": [
+    "\"Mouhib007/DeepSeek-r1-Medical-Mini\"",
+    "\"DeepSeek-r1-Medical-Mini\" huggingface",
+    "\"DeepSeek-r1-Medical-Mini\" arxiv",
+    "\"DeepSeek-r1-Medical-Mini\" github"
+  ],
+  "confidence": "medium"
+}

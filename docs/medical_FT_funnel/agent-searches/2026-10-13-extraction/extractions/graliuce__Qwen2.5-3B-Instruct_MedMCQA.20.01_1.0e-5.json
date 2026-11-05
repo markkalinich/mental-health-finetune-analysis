@@ -1,0 +1,212 @@
+{
+  "hf_id": "graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:32-04:00",
+  "ended": "2026-10-13T12:45:56-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5__2026-10-10.md",
+    "cached_sha256": "823526769f0f11df3c3cdbc61aab697c7d2a8f6050dfe667b10276ad8b31cb8d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/graliuce/CaRT",
+      "https://github.com/huggingface/trl",
+      "https://github.com/huggingface/open-r1"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://wandb.ai/grace_rl/infoseek/runs/oxx6zxho",
+      "https://featherless.ai/models/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MedMCQA.20.01",
+      "hub_id": "graliuce/MedMCQA.20.01",
+      "urls": ["https://huggingface.co/datasets/graliuce/MedMCQA.20.01"],
+      "loads": true,
+      "n_examples": 4880,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/graliuce/MedMCQA.20.01",
+      "quote": "The dataset README is empty. The viewer loads 4,880 rows. A row begins \"Hi! What symptoms are you facing today?\" and includes \"You are a Medical Triage Assistant. Reason about the conversation to determine if there is sufficient information to provide a diagnosis.\""
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "The SFT launch uses SFTTrainer with --bf16 and does not pass a PEFT or quantization flag. peft_config=get_peft_config(model_config) is only set from those flags.",
+    "update_scope_url": "https://github.com/graliuce/CaRT/blob/main/bash/sft/task.sh",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 1e-05,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-3B-Instruct",
+        "source_url": "https://huggingface.co/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the graliuce/MedMCQA.20.01 dataset."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-3B-Instruct",
+        "source_url": "https://huggingface.co/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"Qwen/Qwen2.5-3B-Instruct\""
+      },
+      {
+        "parent": "Qwen/Qwen2.5-3B-Instruct",
+        "source_url": "https://github.com/graliuce/CaRT/blob/main/bash/sft/submit.slurm",
+        "quote": "model_path=Qwen/Qwen2.5-3B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3085938688",
+    "parameters_stated_url": "https://huggingface.co/api/models/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/graliuce/MedMCQA.20.01",
+    "quote": "Hi! What symptoms are you facing today?"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the graliuce/MedMCQA.20.01 dataset. It has been trained using TRL.",
+    "source_url": "https://huggingface.co/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a Medical Triage Assistant. Reason about the conversation to determine if there is sufficient information to provide a diagnosis."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Trained Models and Datasets for medical termination. CaRT termination model: graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5",
+    "source_url": "https://github.com/graliuce/CaRT/blob/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public"],
+    "quotes": [
+      "I've been experiencing decreasing vision and seeing black spots in my right eye for the past two days."
+    ],
+    "source_url": "https://huggingface.co/datasets/graliuce/MedMCQA.20.01"
+  },
+  "functions": {
+    "values": ["triage symptoms", "clinical reasoning", "suggest a diagnosis", "talk with a patient"],
+    "quotes": [
+      "You are a Medical Triage Assistant.",
+      "Reason about the conversation to determine if there is sufficient information to provide a diagnosis.",
+      "There is sufficient information to provide a diagnosis because the combination of short stature, fatigue, and constipation in a one-year-old strongly suggests hypothyroidism",
+      "Hi! What symptoms are you facing today?"
+    ],
+    "source_url": "https://huggingface.co/datasets/graliuce/MedMCQA.20.01"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "print(output[\"generated_text\"])",
+      "There is insufficient information to provide a diagnosis because the description of the baby's eye problem is vague"
+    ]
+  },
+  "clinical_task": {
+    "values": ["triage", "diagnosis or differential", "conversation with a patient"],
+    "quotes": [
+      "CaRT termination model: graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5. You are a Medical Triage Assistant.",
+      "Reason about the conversation to determine if there is sufficient information to provide a diagnosis.",
+      "Hi! What symptoms are you facing today?"
+    ],
+    "source_url": "https://github.com/graliuce/CaRT/blob/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Trained Models and Datasets for medical termination.",
+    "source_url": "https://github.com/graliuce/CaRT/blob/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.05,
+      "do_sample": true,
+      "max_new_tokens": 128
+    },
+    "generation_settings_url": "https://huggingface.co/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "temperature 0.7, top_p 0.8, top_k 20, repetition_penalty 1.05, and do_sample are in generation_config.json. max_new_tokens 128 is the card example. The default chat template inserts the Qwen system line when the first message is not a system message. submit.slurm builds hub id graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5 with learning rate 1.0e-5 and passes epoch 3. per_device_train_batch_size is 1, gradient_accumulation_steps is 32, and the launch uses 8 processes. max_seq_length in the script is 4096. The Weights & Biases run page was not opened. No adapter file is in the repository."
+  },
+  "evaluation_reported": {
+    "text": "The CaRT README names holdout and out-of-distribution evaluation sets, graliuce/holdout_medical_diagnosis_termination_evaluation and graliuce/ood_medical_diagnosis_termination_evaluation, and does not print scores.",
+    "source_url": "https://github.com/graliuce/CaRT/blob/main/README.md"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "graliuce/MedMCQA.20.01",
+    "parent": "Qwen/Qwen2.5-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The YAML line is licence: license, which is not a license name. The dataset id contains MedMCQA, but the loaded rows are triage dialogues about whether a diagnosis can be made, not multiple-choice exam items.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5\"",
+    "\"Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5\" huggingface",
+    "\"Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5\" arxiv",
+    "\"Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5\" github",
+    "graliuce/MedMCQA.20.01 huggingface dataset"
+  ],
+  "confidence": "high"
+}

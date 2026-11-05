@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 17 of 21).
+
+Model 1: prismor/prompt-guard-1.5b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prismor__prompt-guard-1.5b__2026-10-09.md
+  Inventory row: methods='qlora' datasets='deepset/prompt-injections;xTRam1/safe-guard-prompt-injection' parent='Qwen/Qwen2.5-1.5B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/prismor__prompt-guard-1.5b.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/prismor__prompt-guard-1.5b.md
+
+Model 2: prithivMLmods/ImageShield-MMCF-2B-vl
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prithivMLmods__ImageShield-MMCF-2B-vl__2026-10-09.md
+  Inventory row: methods='dpo|grpo|sft' datasets='prithivMLmods/ImageShield-Guardrail-Multimodal-20K' parent='Qwen/Qwen3-VL-2B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/prithivMLmods__ImageShield-MMCF-2B-vl.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/prithivMLmods__ImageShield-MMCF-2B-vl.md
+
+Model 3: prithivMLmods/OneDecision-VisionGuard-27B-SFT
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prithivMLmods__OneDecision-VisionGuard-27B-SFT__2026-10-09.md
+  Inventory row: methods='dpo|grpo|sft' datasets='prithivMLmods/ImageShield-OneDecision-Classification' parent='Qwen/Qwen3.8-27B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/prithivMLmods__OneDecision-VisionGuard-27B-SFT.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/prithivMLmods__OneDecision-VisionGuard-27B-SFT.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

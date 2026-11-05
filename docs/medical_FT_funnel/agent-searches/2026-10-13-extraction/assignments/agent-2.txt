@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 2 of 20).
+
+Model 1: Cannae-AI/MedicalQwen3-Reasoning-14B-IT
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Cannae-AI__MedicalQwen3-Reasoning-14B-IT__2026-10-10.md
+  Inventory row: methods='' datasets='FreedomIntelligence/medical-o1-reasoning-SFT;Mohammed-Altaf/medical-instruction-120k' parent='Qwen/Qwen3-14B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Cannae-AI__MedicalQwen3-Reasoning-14B-IT.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Cannae-AI__MedicalQwen3-Reasoning-14B-IT.md
+
+Model 2: Cannae-AI/MedicalQwen3-Reasoning-4B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Cannae-AI__MedicalQwen3-Reasoning-4B__2026-10-10.md
+  Inventory row: methods='' datasets='FreedomIntelligence/medical-o1-reasoning-SFT;Mohammed-Altaf/medical-instruction-120k' parent='Qwen/Qwen3-4B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Cannae-AI__MedicalQwen3-Reasoning-4B.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Cannae-AI__MedicalQwen3-Reasoning-4B.md
+
+Model 3: Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1__2026-10-05.md
+  Inventory row: methods='qlora|sft' datasets='MedQA (USMLE); PubMedQA; MedMCQA train split' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1.md
+
+Model 4: Dev9124/qwen2.5vl-medical-reasoning
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Dev9124__qwen2.5vl-medical-reasoning__2026-10-10.md
+  Inventory row: methods='' datasets='robailleo/medical-vision-llm-dataset' parent='unsloth/Qwen2.5-VL-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Dev9124__qwen2.5vl-medical-reasoning.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Dev9124__qwen2.5vl-medical-reasoning.md
+
+Model 5: EpistemeAI/OpenMedResearch-Gemma-4E4N
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/EpistemeAI__OpenMedResearch-Gemma-4E4N__2026-10-10.md
+  Inventory row: methods='sft' datasets='jmhb/PaperSearchQA' parent='unsloth/gemma-4-E4B-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/EpistemeAI__OpenMedResearch-Gemma-4E4N.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/EpistemeAI__OpenMedResearch-Gemma-4E4N.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

@@ -1,0 +1,26 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 6; parents of the dataset-search candidates). Parent repo ids, in this order:
+1. unsloth/Meta-Llama-3.1-8B-Instruct  (children: 64)
+2. unsloth/Qwen3-8B  (children: 58)
+3. unsloth/Olmo-3-7B-Instruct  (children: 55)
+4. facebook/bart-base  (children: 37)
+5. marin-community/marin-8b-base  (children: 22)
+6. tsavage68/MedQA_L3_1000steps_1e6rate_SFT  (children: 20)
+7. google/flan-t5-small  (children: 11)
+8. philschmid/distilbart-cnn-12-6-samsum  (children: 7)
+9. pszemraj/led-base-book-summary  (children: 7)
+10. tuner007/pegasus_summarizer  (children: 6)
+11. unsloth/Qwen3.5-2B  (children: 6)
+12. Gensyn/Qwen2.5-0.5B-Instruct  (children: 5)
+13. elvis324/DeepSeek-R1-Medical-Doc-Gaia14  (children: 4)
+14. google/medgemma-4b-it  (children: 4)
+15. LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct  (children: 4)
+16. LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct  (children: 4)
+17. Qwen/Qwen2.5-4B-Instruct  (children: 4)
+18. allenai/PRIMERA  (children: 3)
+19. CohereLabs/tiny-aya-fire  (children: 3)
+20. CohereLabs/tiny-aya-water  (children: 3)
+21. google/gemma-2-9b  (children: 3)
+22. microsoft/BioGPT  (children: 3)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-6.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

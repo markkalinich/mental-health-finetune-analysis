@@ -1,0 +1,231 @@
+{
+  "hf_id": "suayptalha/Qwen3-0.6B-Medical-Expert",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:58-04:00",
+  "ended": "2026-10-13T12:39:09-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/suayptalha__Qwen3-0.6B-Medical-Expert__2026-10-10.md",
+    "cached_sha256": "be9db48f7c390a05d5dd717afafb0a179b9ab4ad0a3b766b810a3c38bd31056f",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/SahilChachra/LLM-Merging"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.09388",
+        "arxiv_id": "2505.09388",
+        "title": "Qwen3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://featherless.ai/models/suayptalha/Qwen3-0.6B-Medical-Expert"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://arxiv.org/abs/2412.18925"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md",
+      "quote": "Training was conducted on the `FreedomIntelligence/medical-o1-reasoning-SFT` dataset using bfloat16 (bf16) precision for efficient optimization."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Fine-tuning was conducted using the Hugging Face TRL library with the Supervised Fine-Tuning (SFT) approach.",
+    "objective_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "All model layers were fully updated (`full_finetuning=True`) to effectively adapt the model to medical reasoning and decision-making tasks.",
+    "update_scope_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-0.6B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-0.6B",
+        "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md",
+        "quote": "This project performs full fine-tuning on the **Qwen3-0.6B** language model to enhance its **medical reasoning** and **clinical understanding** capabilities."
+      },
+      {
+        "parent": "Qwen/Qwen3-0.6B",
+        "source_url": "https://github.com/SahilChachra/LLM-Merging",
+        "quote": "Base Model: `Qwen/Qwen3-0.6B` ... Medical Expert: `suayptalha/Qwen3-0.6B-Medical-Expert`"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "0.6B; safetensors parameter count 596049920",
+    "parameters_stated_url": "https://huggingface.co/api/models/suayptalha/Qwen3-0.6B-Medical-Expert"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This project performs full fine-tuning on the **Qwen3-0.6B** language model to enhance its **medical reasoning** and **clinical understanding** capabilities. Training was conducted on the `FreedomIntelligence/medical-o1-reasoning-SFT` dataset using bfloat16 (bf16) precision for efficient optimization.",
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "The model was trained to follow clinical instructions, interpret symptoms, and generate reasoned diagnoses or treatment suggestions."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model was trained to follow clinical instructions, interpret symptoms, and generate reasoned diagnoses or treatment suggestions."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "It produces responses that combine factual accuracy with transparent reasoning, making it useful in educational and assistive medical AI contexts.",
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "clinical reasoning",
+      "suggest a diagnosis",
+      "give treatment advice",
+      "support a clinical decision",
+      "support study or teaching"
+    ],
+    "quotes": [
+      "The model’s ability to interpret medical instructions and generate step-by-step clinical reasoning has been significantly enhanced.",
+      "The model’s ability to interpret medical instructions and generate step-by-step clinical reasoning has been significantly enhanced.",
+      "The model was trained to follow clinical instructions, interpret symptoms, and generate reasoned diagnoses or treatment suggestions.",
+      "The model was trained to follow clinical instructions, interpret symptoms, and generate reasoned diagnoses or treatment suggestions.",
+      "All model layers were fully updated (`full_finetuning=True`) to effectively adapt the model to medical reasoning and decision-making tasks.",
+      "It produces responses that combine factual accuracy with transparent reasoning, making it useful in educational and assistive medical AI contexts."
+    ],
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": [
+      "It produces responses that combine factual accuracy with transparent reasoning, making it useful in educational and assistive medical AI contexts."
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "medical QA",
+      "diagnosis or differential",
+      "treatment or medication advice",
+      "other"
+    ],
+    "quotes": [
+      "Each example consists of medically relevant instructions or questions paired with detailed, step-by-step clinical reasoning responses.",
+      "The model was trained to follow clinical instructions, interpret symptoms, and generate reasoned diagnoses or treatment suggestions.",
+      "The model was trained to follow clinical instructions, interpret symptoms, and generate reasoned diagnoses or treatment suggestions.",
+      "The model’s ability to interpret medical instructions and generate step-by-step clinical reasoning has been significantly enhanced."
+    ],
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "This project performs full fine-tuning on the **Qwen3-0.6B** language model to enhance its **medical reasoning** and **clinical understanding** capabilities.",
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Each example consists of medically relevant instructions or questions paired with detailed, step-by-step clinical reasoning responses.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "config.json max_position_embeddings and tokenizer model_max_length are 40960. generation_config.json also sets max_length 40960. No repetition_penalty or max_new_tokens. The chat template accepts a system message but does not set one. The pad token is <|vision_pad|>; the architecture is Qwen3ForCausalLM with no vision tower. No adapter_config.json, notebook, or training script is in the repo. The base was loaded in bf16, not 4-bit."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/suayptalha/Qwen3-0.6B-Medical-Expert/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "Qwen/Qwen3-0.6B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"suayptalha/Qwen3-0.6B-Medical-Expert\"",
+    "\"Qwen3-0.6B-Medical-Expert\" huggingface",
+    "\"Qwen3-0.6B-Medical-Expert\" arxiv",
+    "\"Qwen3-0.6B-Medical-Expert\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,35 @@
+{
+  "visual_encoder": {
+    "image_encoder": "Dinov2Small",
+    "text_encoder": "t5-small",
+    "fusion_xformer": {
+      "num_layers": 3,
+      "d_model": 512,
+      "nhead": 8
+    },
+    "input_sensors": [
+      "raw_navigation_camera",
+      "raw_manipulation_camera",
+      "last_actions",
+      "an_object_is_in_hand"
+    ],
+    "bbox_encoding_type": "positional"
+  },
+  "visual_text_encoder_class": "TextCondMultiCameraVisualEncoder",
+  "decoder": {
+    "num_layers": 3,
+    "d_model": 512,
+    "nhead": 8
+  },
+  "num_actions": 20,
+  "max_length": 1000,
+  "action_loss": true,
+  "use_llama_decoder": true,
+  "_attn_implementation_autoset": false,
+  "torch_dtype": "float32",
+  "architectures": [
+    "EarlyFusionCnnTransformer"
+  ],
+  "model_type": "MM",
+  "transformers_version": "4.49.0"
+}

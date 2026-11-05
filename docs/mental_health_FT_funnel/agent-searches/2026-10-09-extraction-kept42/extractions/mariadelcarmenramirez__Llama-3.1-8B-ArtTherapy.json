@@ -1,0 +1,151 @@
+{
+  "hf_id": "mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:59-04:00",
+  "ended": "2026-10-09T16:49:44-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/mariadelcarmenramirez__Llama-3.1-8B-ArtTherapy__2026-10-09.md",
+    "cached_sha256": "39918d040a36c4c9c1f70784ab87ec95cec703ccb76c81e0d3f5362d878479ee",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "handler.py",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "art-therapy-data",
+      "hub_id": "mariadelcarmenramirez/art-therapy-data",
+      "urls": [
+        "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md",
+        "https://huggingface.co/datasets/mariadelcarmenramirez/art-therapy-data"
+      ],
+      "loads": true,
+      "n_examples": 9572,
+      "language": "Spanish (es)",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md",
+      "quote": "Trained on mariadelcarmenramirez/art-therapy-data, a dataset of 9,572 structured art therapy dialogue examples organized into four therapeutic phases. Balanced sampling (700 per phase) produced 2,800 examples, split 90/10 into train (2,520) and eval (280) sets."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "qlora",
+    "update_scope_quote": "This model was produced by merging the QLoRA adapter mariadelcarmenramirez/Llama-3.1-8B-QLoRA-ArtTherapy into the base model weights, resulting in a single standalone model.",
+    "update_scope_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": 474,
+    "learning_rate": 5e-5,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md",
+        "quote": "A fine-tune of meta-llama/Llama-3.1-8B-Instruct specialized for art therapy dialogue."
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-QLoRA-ArtTherapy/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"meta-llama/Llama-3.1-8B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy"
+  },
+  "languages": {
+    "values": ["es"],
+    "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md",
+    "quote": "The model was trained exclusively on Spanish-language art therapy dialogues."
+  },
+  "description": {
+    "text": "A fine-tune of meta-llama/Llama-3.1-8B-Instruct specialized for art therapy dialogue. This model was produced by merging the QLoRA adapter mariadelcarmenramirez/Llama-3.1-8B-QLoRA-ArtTherapy into the base model weights, resulting in a single standalone model.\n\nThe model supports structured, phase-aware therapeutic conversations using art therapy techniques and methodologies, generating contextually appropriate responses aligned with each phase of the therapeutic arc.",
+    "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model supports structured, phase-aware therapeutic conversations using art therapy techniques and methodologies, generating contextually appropriate responses aligned with each phase of the therapeutic arc."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model supports structured, phase-aware therapeutic conversations using art therapy techniques and methodologies, generating contextually appropriate responses aligned with each phase of the therapeutic arc."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "It should not be used for clinical diagnosis, crisis intervention, or as the sole therapeutic agent for individuals with serious mental health conditions."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"content\": \"El círculo central parece respirar suave.\", \"role\": \"user\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy",
+    "system_prompt": "<FASE_2>\n\nEres un asistente de arteterapia centrado en el diálogo y la relación con la obra.\n\nEn esta fase, la imagen deja de ser meramente observada y se convierte en un interlocutor activo. Guía a la usuaria a interactuar con la obra y sus elementos, explorando relaciones, voces y perspectivas.\n\nTu objetivo es facilitar el diálogo simbólico entre la usuaria y la imagen, así como entre las diferentes partes de la obra y su mundo interior.\n\nInvita a la usuaria a: hablar directamente a la imagen o a partes específicas de ella; adoptar el rol de un elemento (\"Yo soy...\") y hablar desde esa perspectiva; explorar cómo se relacionan los diferentes elementos entre sí; imaginar necesidades, voces o tensiones dentro de la obra.\n\nUsa preguntas que animen la imagen: sensoriales (\"Si esto tuviera voz...\"), relacionales (\"¿Cómo interactúan estas partes?\"), de rol (\"¿Y si fueras esta forma?\"), o de necesidad (\"¿Qué necesita esto?\").\n\nNo interpretes por la usuaria. No expliques teorías. No impongas significados. No cierres la experiencia con conclusiones.\n\nMantén un tono abierto, exploratorio y facilitador.\n\nRESTRICCIONES CRÍTICAS:\n- Haz solo UNA pregunta\n- Responde únicamente en español\n- Nunca respondas tus propias preguntas\n- Mantente dialógico, no interpretativo",
+    "system_prompt_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "tokenizer_config.json has no chat_template key. The Llama 3.1 Instruct template is in chat_template.jinja and is also returned as chat_template_jinja on the model API. It inserts the caller-supplied system message and the stock lines \"Cutting Knowledge Date: December 2023\" and \"Today Date\". The card's usage example is the FASE_2 system prompt above, not a single prompt baked into the template. That example calls generate with max_new_tokens 256, temperature 0.7, and do_sample true, which differs from generation_config.json. The linked adapter card states a training sequence cap of 546 tokens. This repository's config.json max_position_embeddings is 131072. Released weights are BF16; 4-bit NF4 was the training quantization."
+  },
+  "evaluation_reported": {
+    "text": "Best checkpoint at epoch 2.0 (eval_loss = 1.313). Final training loss: 1.238. At epoch 2.0, eval_mean_token_accuracy was 65.30%. The linked adapter card states the same table and adds that training completed all 3 epochs (474 steps total), with evaluation about every 79 steps, and that the epoch-2 checkpoint was kept.",
+    "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama3.1",
+    "source_url": "https://huggingface.co/mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "mariadelcarmenramirez/art-therapy-data",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy",
+    "\"Llama-3.1-8B-ArtTherapy\" huggingface",
+    "\"Llama-3.1-8B-ArtTherapy\" arxiv",
+    "\"Llama-3.1-8B-ArtTherapy\" github",
+    "art-therapy-data huggingface dataset"
+  ],
+  "confidence": "high"
+}

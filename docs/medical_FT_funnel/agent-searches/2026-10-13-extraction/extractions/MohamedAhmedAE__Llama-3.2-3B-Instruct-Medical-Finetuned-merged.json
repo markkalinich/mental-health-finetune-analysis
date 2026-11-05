@@ -1,0 +1,417 @@
+{
+  "hf_id": "MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:07-04:00",
+  "ended": "2026-10-13T12:39:41-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MohamedAhmedAE__Llama-3.2-3B-Instruct-Medical-Finetuned-merged__2026-10-10.md",
+    "cached_sha256": "b708f4a59f42ee0ccd77058ab139d596a84baedd13ea1e568092ce06d73d2342",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/Mohamed-Ahmed-Abo-El-Enen/MasterPapers"],
+    "papers": [
+      {
+        "url": "https://www.mdpi.com/2076-3417/16/12/6158",
+        "arxiv_id": "",
+        "title": "Med-LLaMA3: Advancing Medical Question-Answering Through Parameter-Efficient Fine-Tuning of Large Language Models",
+        "venue": "Applied Sciences, 2026, 16(12), 6158",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Med-LLaMA3 medical instruction fine-tuning dataset",
+      "hub_id": "MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "urls": ["https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset"],
+      "loads": true,
+      "n_examples": 1651357,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "quote": "A large, unified medical instruction-tuning corpus (~1.65 million examples) compiled, cleaned, and standardized from a diverse set of public medical sources. It is the training corpus used to fine-tune the Med-LLaMA3 family (LLaMA-3.2 1B/3B and LLaMA-3.1 8B)."
+    },
+    {
+      "name": "Medical Meadow MedQA",
+      "hub_id": "medalpaca/medical_meadow_medqa",
+      "urls": ["https://huggingface.co/datasets/medalpaca/medical_meadow_medqa"],
+      "loads": true,
+      "n_examples": 10178,
+      "language": "English and Chinese",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_medqa",
+      "quote": "This is the data and baseline source code for the paper: Jin, Di, et al. \"What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams.\" For QAs, we have three sources: US, Mainland of China, and Taiwan District."
+    },
+    {
+      "name": "Medical Meadow medical flashcards",
+      "hub_id": "medalpaca/medical_meadow_medical_flashcards",
+      "urls": ["https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards"],
+      "loads": true,
+      "n_examples": 33955,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards",
+      "quote": "The Anki Medical Curriculum flashcards are created and updated by medical students and cover the entirety of this curriculum."
+    },
+    {
+      "name": "Medical Meadow WikiDoc",
+      "hub_id": "medalpaca/medical_meadow_wikidoc",
+      "urls": ["https://huggingface.co/datasets/medalpaca/medical_meadow_wikidoc"],
+      "loads": true,
+      "n_examples": 10000,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_wikidoc",
+      "quote": "This dataset containes medical question-answer pairs extracted from WikiDoc. We then used GTP-3.5-Turbo to rephrase the paragraphs."
+    },
+    {
+      "name": "Medical Meadow WikiDoc patient information",
+      "hub_id": "medalpaca/medical_meadow_wikidoc_patient_information",
+      "urls": ["https://huggingface.co/datasets/medalpaca/medical_meadow_wikidoc_patient_information"],
+      "loads": true,
+      "n_examples": 5942,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_wikidoc_patient_information",
+      "quote": "This dataset containes medical question-answer pairs extracted from WikiDoc. We then used GTP-3.5-Turbo to rephrase the paragraphs."
+    },
+    {
+      "name": "Medical Meadow CORD-19",
+      "hub_id": "medalpaca/medical_meadow_cord19",
+      "urls": ["https://huggingface.co/datasets/medalpaca/medical_meadow_cord19"],
+      "loads": true,
+      "n_examples": 821007,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_cord19",
+      "quote": "CORD-19 is a resource of over 1,000,000 scholarly articles, including over 400,000 with full text, about COVID-19, SARS-CoV-2, and related coronaviruses. This is a processed version of the dataset."
+    },
+    {
+      "name": "Medical Meadow PubMed Causal",
+      "hub_id": "medalpaca/medical_meadow_pubmed_causal",
+      "urls": ["https://huggingface.co/datasets/medalpaca/medical_meadow_pubmed_causal"],
+      "loads": true,
+      "n_examples": 2446,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/medalpaca/medical_meadow_pubmed_causal",
+      "quote": "This is the dataset used in the paper: Detecting Causal Language Use in Science Findings."
+    },
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": ["https://huggingface.co/datasets/openlifescienceai/medmcqa"],
+      "loads": true,
+      "n_examples": 193155,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/openlifescienceai/medmcqa",
+      "quote": "MedMCQA has more than 194k high-quality AIIMS & NEET PG entrance exam MCQs covering 2.4k healthcare topics and 21 medical subjects."
+    },
+    {
+      "name": "BigBIO MedQA",
+      "hub_id": "bigbio/med_qa",
+      "urls": ["https://huggingface.co/datasets/bigbio/med_qa"],
+      "loads": true,
+      "n_examples": 11290,
+      "language": "English, Chinese (Simplified), Chinese (Traditional, Taiwan)",
+      "provenance": "human",
+      "source_type": "paper",
+      "source_url": "https://www.mdpi.com/2076-3417/16/12/6158",
+      "quote": "We utilized the English 4-option multiple-choice format (11,290 samples), focusing on clinical reasoning, differential diagnosis, patient management, and medical decision-making across all major medical specialties."
+    },
+    {
+      "name": "PubMedQA",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": ["https://huggingface.co/datasets/qiaojin/PubMedQA"],
+      "loads": true,
+      "n_examples": 1000,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/qiaojin/PubMedQA",
+      "quote": "The task of PubMedQA is to answer research questions with yes/no/maybe using the corresponding abstracts. PubMedQA has 1k expert-annotated, 61.2k unlabeled and 211.3k artificially generated QA instances."
+    },
+    {
+      "name": "COVID-QA (deepset)",
+      "hub_id": "deepset/covid_qa_deepset",
+      "urls": ["https://huggingface.co/datasets/deepset/covid_qa_deepset"],
+      "loads": true,
+      "n_examples": 2019,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/deepset/covid_qa_deepset",
+      "quote": "annotations_creators: expert-generated. pretty_name: COVID-QA. num_examples: 2019."
+    },
+    {
+      "name": "MedQuAD",
+      "hub_id": "lavita/MedQuAD",
+      "urls": ["https://huggingface.co/datasets/lavita/MedQuAD", "https://github.com/abachaa/MedQuAD"],
+      "loads": true,
+      "n_examples": 14553,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "paper",
+      "source_url": "https://www.mdpi.com/2076-3417/16/12/6158",
+      "quote": "MedQuAD: We used the Medical Question-Answer Dataset compiled from authoritative NIH websites, incorporating 14,553 samples of consumer health questions."
+    },
+    {
+      "name": "HealthCareMagic",
+      "hub_id": "lee3251/HealthCareMagic",
+      "urls": ["https://huggingface.co/datasets/lee3251/HealthCareMagic"],
+      "loads": true,
+      "n_examples": 112165,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "paper",
+      "source_url": "https://www.mdpi.com/2076-3417/16/12/6158",
+      "quote": "HealthCareMagic: We incorporated real-world patient-doctor conversation transcripts from healthcare forums (64,246 samples). Data are available at https://huggingface.co/datasets/lee3251/HealthCareMagic."
+    },
+    {
+      "name": "MIMIC-III",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 465200,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "quote": "MIMIC-III | 465,200 | Clinical notes | Clinical | Generative. MIMIC-III is distributed under the PhysioNet Credentialed Health Data License."
+    },
+    {
+      "name": "UMLS Metathesaurus",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 312450,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "quote": "UMLS Metathesaurus | 312,450 | Encyclopedic | Basic science | Open QA. UMLS requires acceptance of the UMLS Metathesaurus License."
+    },
+    {
+      "name": "MedDialog (English)",
+      "hub_id": "lighteval/med_dialog",
+      "urls": ["https://github.com/sidney1994/Medical-Dialogue-System", "https://huggingface.co/datasets/lighteval/med_dialog"],
+      "loads": true,
+      "n_examples": 257337,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "quote": "MedDialog (EN) | 257,337 | Dialogue | Patient comm. | Generative."
+    },
+    {
+      "name": "Alpaca-EN-AN",
+      "hub_id": "tatsu-lab/alpaca",
+      "urls": ["https://huggingface.co/datasets/tatsu-lab/alpaca"],
+      "loads": true,
+      "n_examples": 52000,
+      "language": "English",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://www.mdpi.com/2076-3417/16/12/6158",
+      "quote": "Alpaca-EN-AN: Data are available at https://huggingface.co/datasets/tatsu-lab/alpaca. Alpaca is a dataset of 52,000 instructions and demonstrations generated by OpenAI's text-davinci-003 engine."
+    },
+    {
+      "name": "ChatDoctor (iCliniq)",
+      "hub_id": "not stated",
+      "urls": ["https://github.com/Kent0n-Li/ChatDoctor"],
+      "loads": false,
+      "n_examples": 30000,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "quote": "ChatDoctor (iCliniq) | 30,000 | Dialogue | Patient comm. | Generative."
+    },
+    {
+      "name": "CovidDialog (English)",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 6032,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset",
+      "quote": "CovidDialog (EN) | 6,032 | Dialogue | Patient comm. | Generative."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "trainer = SFTTrainer(",
+    "objective_url": "https://github.com/Mohamed-Ahmed-Abo-El-Enen/MasterPapers/blob/main/Med-LLaMa3%20Advancing%20Medical%20Question%20Answering%20through%20Parameter-Efficient%20Fine-Tuning%20of%20Large%20Language%20Models/Training/main_3b.py",
+    "update_scope": "qlora",
+    "update_scope_quote": "QLoRA fine-tuning (4-bit NF4 base + LoRA, r=128, α=256, all linear layers), then merge_and_unload() into the base",
+    "update_scope_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged",
+    "lora_rank": 128,
+    "lora_alpha": 256,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 5,
+    "steps": null,
+    "learning_rate": 2.0e-05,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged",
+        "quote": "Base model | meta-llama/Llama-3.2-3B-Instruct"
+      },
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://github.com/Mohamed-Ahmed-Abo-El-Enen/MasterPapers/blob/main/Med-LLaMa3%20Advancing%20Medical%20Question%20Answering%20through%20Parameter-Efficient%20Fine-Tuning%20of%20Large%20Language%20Models/Training/main_3b.py",
+        "quote": "base_model_name: str = \"meta-llama/Llama-3.2-3B-Instruct\""
+      },
+      {
+        "parent": "LLaMA 3.2 3B",
+        "source_url": "https://www.mdpi.com/2076-3417/16/12/6158",
+        "quote": "the LLaMA 3.2 3B model offers a balanced trade-off between computational efficiency and capacity"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "~3.21 B",
+    "parameters_stated_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged",
+    "quote": "Language | English"
+  },
+  "description": {
+    "text": "A full, ready-to-use medical model: Llama-3.2-3B adapted to the medical domain with QLoRA, with the LoRA weights merged back into the base. Load it directly with transformers — no adapter, no PEFT, no extra steps. For the lightweight LoRA-adapter version (apply on top of the base yourself), see the link below.\n\nThis is the 3B (balanced / mid-tier) member of the Med-LLaMA3 family introduced in the paper “Med-LLaMA3: Advancing Medical Question-Answering Through Parameter-Efficient Fine-Tuning of Large Language Models” (Applied Sciences, 2026). The family adapts the LLaMA-3 architecture to the medical domain by training only a small fraction of the base model’s parameters (5.70% for this 3B variant), achieving strong medical question-answering performance while keeping the memory footprint low — enabling development and inference on low-cost, consumer-grade hardware.",
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a knowledgeable medical assistant. Answer accurately and concisely."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Clinical knowledge lookup and clinical decision support assistance."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "It must not be used for autonomous diagnosis, treatment, prescribing, or any decision affecting patient care without review by a qualified healthcare professional."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Medical question answering (multiple-choice and open-ended). Clinical knowledge lookup and clinical decision support assistance.",
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "audiences": {
+    "values": ["clinician", "researcher or developer"],
+    "quotes": [
+      "It must not be used for autonomous diagnosis, treatment, prescribing, or any decision affecting patient care without review by a qualified healthcare professional.",
+      "A research baseline for parameter-efficient fine-tuning of small LLaMA models in healthcare."
+    ],
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "functions": {
+    "values": ["answer medical questions", "answer exam questions", "support a clinical decision", "support study or teaching"],
+    "quotes": [
+      "Medical question answering (multiple-choice and open-ended).",
+      "Medical question answering (multiple-choice and open-ended).",
+      "Clinical knowledge lookup and clinical decision support assistance.",
+      "A research baseline for parameter-efficient fine-tuning of small LLaMA models in healthcare."
+    ],
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "output_kind": {
+    "values": ["chat reply", "exam letter"],
+    "quotes": [
+      "out = pipe(messages, max_new_tokens=256, do_sample=False)",
+      "Medical question answering (multiple-choice and open-ended)."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering", "conversation with a patient", "patient education", "treatment or medication advice"],
+    "quotes": [
+      "Medical question answering (multiple-choice and open-ended).",
+      "For benchmarks with official splits (MedMCQA, MedQA-USMLE, PubMedQA), only the official training partitions were used for fine-tuning. The eight MMLU medical subsets were used only for held-out evaluation (eval only).",
+      "HealthCareMagic — real-world patient–doctor conversation transcripts",
+      "MedQuAD — consumer-health QA compiled from authoritative NIH sources",
+      "What is the first-line treatment for uncomplicated community-acquired pneumonia in a healthy adult?"
+    ],
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "adapted to the medical domain",
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"What is the first-line treatment for uncomplicated community-acquired pneumonia in a healthy adult?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged/raw/main/chat_template.jinja",
+    "system_prompt": "You are a knowledgeable medical assistant. Answer accurately and concisely.",
+    "system_prompt_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged",
+    "generation_settings": {"temperature": 0.6, "top_p": 0.9, "do_sample": true},
+    "generation_settings_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "tokenizer_config.json has no chat_template key; the template is the separate chat_template.jinja file, the stock Llama 3.2 template (Cutting Knowledge Date: December 2023). It does not hardcode the medical assistant sentence; that sentence is only in the card's usage example. The card's example uses max_new_tokens=256, do_sample=False, and temperature=0.0. Released weights are bfloat16; the Hub safetensors header reports 3,212,749,824 BF16 parameters. No adapter_config.json is in this repo."
+  },
+  "evaluation_reported": {
+    "text": "The card reports 5-shot accuracy on eight MMLU medical subsets for Med-LLaMA3.2-3B: Anatomy 59.52, Clinical Knowledge 68.17, College Biology 71.53, College Medicine 57.65, Medical Genetics 75.00, Nutrition 68.32, Professional Medicine 70.59, Virology 43.17, mean 64.24. The paper's Table 7 prints the same 3B row. The paper's Table 6 (MedMCQA, MedQA, PubMedQA) is reported for the 8B model, not this 3B checkpoint.",
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "license": {
+    "value": "llama3.2",
+    "source_url": "https://huggingface.co/MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset;medalpaca/medical_meadow_medqa;medalpaca/medical_meadow_medical_flashcards;medalpaca/medical_meadow_wikidoc;medalpaca/medical_meadow_wikidoc_patient_information;medalpaca/medical_meadow_cord19;medalpaca/medical_meadow_pubmed_causal;openlifescienceai/medmcqa;bigbio/med_qa;qiaojin/PubMedQA;deepset/covid_qa_deepset",
+    "parent": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory method (qlora) and parent match the card YAML. Inventory datasets match the card YAML list. The card prose and the compiled-dataset card also name MedQuAD, HealthCareMagic, MIMIC-III, UMLS, MedDialog, Alpaca-EN-AN, ChatDoctor (iCliniq), and CovidDialog, which are not in the inventory row. The 3B training script sets num_epochs to 6; the card and paper Table 5 say 5.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged\"",
+    "\"Llama-3.2-3B-Instruct-Medical-Finetuned-merged\" huggingface",
+    "\"Llama-3.2-3B-Instruct-Medical-Finetuned-merged\" arxiv",
+    "\"Llama-3.2-3B-Instruct-Medical-Finetuned-merged\" github",
+    "\"Med-LLaMA3: Advancing Medical Question-Answering Through Parameter-Efficient Fine-Tuning\" arxiv",
+    "MedQuAD huggingface dataset",
+    "HealthCareMagic huggingface dataset",
+    "MedMCQA huggingface dataset",
+    "PubMedQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

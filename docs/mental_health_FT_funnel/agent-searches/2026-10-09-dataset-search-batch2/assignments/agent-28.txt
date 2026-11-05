@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 28 of 50). Repository ids, in this order:
+1. minhcrafters/DialoGPT-medium-mental-health-finetuned-v2
+2. misterkilgore/opt-350m-psy-ita
+3. mkay8/llama3-8b-instruct-Arabic-mental_health_QA_4bit
+4. MLKCH/empathetic-chatbot
+5. mood157/qtype_prompt
+6. mood157/question_type
+7. Moriacrafter/Falcon-7B-4bit_DepressionDetection_Reddit
+8. Moriacrafter/Falcon-7B-8bit_DepressionDetection
+9. Moriacrafter/Falcon-7B-8bit_DepressionDetection_Reddit
+10. Moriacrafter/Falcon-7B-none_DepressionDetection_Reddit
+11. Moriacrafter/Gemma-2B-4bit_DepressionDetection_Reddit
+12. Moriacrafter/Gemma-2B-4bit_DepressionDetection_v2
+13. Moriacrafter/Gemma-2B-8bit_DepressionDetection_v2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-28.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-28.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

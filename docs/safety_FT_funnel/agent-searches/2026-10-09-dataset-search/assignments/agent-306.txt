@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 306 of 315). Repository ids, in this order:
+1. wvnvwn/llama2-7b-chat-lr5e-5-agnews-lr7e-5-cbwsr-rot-fr40-a32-safetyN500
+2. wvnvwn/llama2-7b-chat-lr5e-5-agnews-lr7e-5-cbwsr-rot-fr50-a32-safetyN500
+3. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-dare-p0p9-lam1p0-a0p1-v1
+4. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-dare-p0p9-lam1p0-a0p3-v1
+5. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-dare-p0p9-lam1p0-a0p5-v1
+6. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-dare-p0p9-lam1p0-a0p7-v1
+7. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-ta-lam0p4-a0p1-v1
+8. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-ta-lam0p4-a0p3-v1
+9. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-ta-lam0p4-a0p5-v1
+10. wvnvwn/Mistral-7B-Instruct-v0.3-gsm8k-ta-lam0p4-a0p7-v1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-306.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-306.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

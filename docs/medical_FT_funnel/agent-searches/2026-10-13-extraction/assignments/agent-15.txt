@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 15 of 20).
+
+Model 1: mlxha/Qwen-2.5-3B-grpo-medmcqa
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen-2.5-3B-grpo-medmcqa__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo' parent='Qwen/Qwen2.5-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Qwen-2.5-3B-grpo-medmcqa.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Qwen-2.5-3B-grpo-medmcqa.md
+
+Model 2: mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen2.5-7B-Instruct-grpo-medmcqa-medi70__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo-meditron70b' parent='Qwen/Qwen2.5-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Qwen2.5-7B-Instruct-grpo-medmcqa-medi70.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Qwen2.5-7B-Instruct-grpo-medmcqa-medi70.md
+
+Model 3: mlxha/Qwen3-4B-grpo-medmcqa
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen3-4B-grpo-medmcqa__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo' parent='Qwen/Qwen3-4B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Qwen3-4B-grpo-medmcqa.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Qwen3-4B-grpo-medmcqa.md
+
+Model 4: mlxha/Qwen3-8B-grpo-medmcqa
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen3-8B-grpo-medmcqa__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Qwen3-8B-grpo-medmcqa.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Qwen3-8B-grpo-medmcqa.md
+
+Model 5: mlxha/Qwen3-8B-grpo-medmcqa-medi70
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen3-8B-grpo-medmcqa-medi70__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo-meditron70b' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Qwen3-8B-grpo-medmcqa-medi70.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Qwen3-8B-grpo-medmcqa-medi70.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

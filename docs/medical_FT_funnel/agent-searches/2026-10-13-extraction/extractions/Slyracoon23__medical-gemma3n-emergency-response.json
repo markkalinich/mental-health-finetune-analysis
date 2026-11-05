@@ -1,0 +1,202 @@
+{
+  "hf_id": "Slyracoon23/medical-gemma3n-emergency-response",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:31-04:00",
+  "ended": "2026-10-13T12:41:32-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Slyracoon23__medical-gemma3n-emergency-response__2026-10-05.md",
+    "cached_sha256": "4567c6cafda7c45acc6d2d66855d92aa17e92c72be98a0dd1ea403576591a6c7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00006.safetensors",
+    "model-00002-of-00006.safetensors",
+    "model-00003-of-00006.safetensors",
+    "model-00004-of-00006.safetensors",
+    "model-00005-of-00006.safetensors",
+    "model-00006-of-00006.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/slyracoon23/citizen2responder"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical_emergency_dataset.json",
+      "hub_id": "",
+      "urls": ["https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/datasets/medical_emergency_dataset.json"],
+      "loads": false,
+      "n_examples": 20,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/datasets/medical_emergency_dataset.json",
+      "quote": "Natural conversation medical emergency dataset without tool calls - for conversational training"
+    },
+    {
+      "name": "forced_tool_calls_dataset.json",
+      "hub_id": "",
+      "urls": ["https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/datasets/forced_tool_calls_dataset.json"],
+      "loads": false,
+      "n_examples": 12,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/datasets/forced_tool_calls_dataset.json",
+      "quote": "Pure JSON responses for forced tool calling scenarios in Citizen2Responder"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "trainer = SFTTrainer(",
+    "objective_url": "https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/medical_gemma_finetuning.py",
+    "update_scope": "qlora",
+    "update_scope_quote": "load_in_4bit=True,  # Memory efficient for mobile deployment",
+    "update_scope_url": "https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/medical_gemma_finetuning.py",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": 200,
+    "learning_rate": 0.0001,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-3n-E4B-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3n-E4B-it",
+        "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md",
+        "quote": "Base Model: [`unsloth/gemma-3n-E4B-it`](https://huggingface.co/unsloth/gemma-3n-E4B-it)"
+      },
+      {
+        "parent": "unsloth/gemma-3n-E4B-it",
+        "source_url": "https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/medical_gemma_finetuning.py",
+        "quote": "model_name=\"unsloth/gemma-3n-E4B-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md",
+    "quote": "Language: English"
+  },
+  "description": {
+    "text": "A fine-tuned version of **Gemma 3N** designed for emergency response scenarios. Powers the **Citizen2Responder** app with dual-mode capabilities: natural guidance for bystanders and structured tool outputs for EMTs — all with a privacy-first, local deployment focus.",
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Natural Conversation Mode. Step-by-step emergency guidance. No medical jargon. Real-time questioning & coaching."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "natural guidance for bystanders and structured tool outputs for EMTs"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Should not replace EMTs in critical care situations"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "A fine-tuned version of **Gemma 3N** designed for emergency response scenarios. Powers the **Citizen2Responder** app with dual-mode capabilities: natural guidance for bystanders and structured tool outputs for EMTs — all with a privacy-first, local deployment focus.",
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public", "EMTs"],
+    "quotes": [
+      "natural guidance for bystanders",
+      "structured tool outputs for EMTs"
+    ],
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["give first-aid instructions", "triage symptoms", "extract structured clinical data"],
+    "quotes": [
+      "Step-by-step emergency guidance",
+      "Structured medical questioning and triage",
+      "Generates structured EMT/dispatch reports. JSON-style outputs for system use."
+    ],
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "structured object"],
+    "quotes": [
+      "Natural Conversation Mode",
+      "JSON-style outputs for system use"
+    ]
+  },
+  "clinical_task": {
+    "values": ["triage", "other"],
+    "quotes": [
+      "Structured medical questioning and triage",
+      "Step-by-step emergency guidance"
+    ],
+    "source_url": "https://github.com/slyracoon23/citizen2responder/blob/HEAD/finetuning/README.md"
+  },
+  "specialty": {
+    "values": ["emergency response"],
+    "quote": "designed for emergency response scenarios",
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Someone collapsed and is not responding. What should I assess first?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card example also sets temperature 0.7 and max_length 200. config.json is Gemma3nForConditionalGeneration with vision_config and audio_config; the Hub safetensors metadata reports 7,849,978,192 F32 parameters while the card says 4B. The training script sets finetune_vision_layers=False and load_in_4bit=True, then save_pretrained_merged. per_device_train_batch_size is 1 with gradient_accumulation_steps 8 (the script comment says effective batch size 8). tokenizer_config.json has use_default_system_prompt false and no chat_template key; the template is chat_template.jinja and it can insert an image token if the caller sends one. The app README says text goes to this model and vision goes to a cloud model because llama.rn does not support vision or audio. medical_emergency_dataset.json metadata says total_scenarios 50; the scenarios array has 20 objects. forced_tool_calls_dataset.json metadata and array both have 12. Neither file is a Hub dataset. No arXiv paper names this repository."
+  },
+  "evaluation_reported": {
+    "text": "Recognizes emergency types (>95%). Accurate tool calls (>90%). EMT-approved safety outputs. Mobile ready (GGUF quantized). The card does not describe the test set.",
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Slyracoon23/medical-gemma3n-emergency-response/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "medical_emergency_dataset.json | forced_tool_calls_dataset.json",
+    "parent": "unsloth/gemma-3n-E4B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The training script that sets HF_REPO_ID to this repository loads unsloth/gemma-3n-E4B-it with load_in_4bit=True and LoRA r=16, alpha=16, which is QLoRA, then saves a merged model. The dataset filenames and the parent match the inventory. The card does not name the dataset files. The card says 4B parameters; the safetensors metadata total is 7,849,978,192 F32. Epochs are not stated; training is max_steps 200.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "github", "dataset_card"],
+  "queries_tried": [
+    "\"Slyracoon23/medical-gemma3n-emergency-response\"",
+    "\"medical-gemma3n-emergency-response\" huggingface",
+    "\"medical-gemma3n-emergency-response\" arxiv",
+    "\"medical-gemma3n-emergency-response\" github",
+    "medical_emergency_dataset.json huggingface dataset",
+    "forced_tool_calls_dataset.json huggingface dataset"
+  ],
+  "confidence": "medium"
+}

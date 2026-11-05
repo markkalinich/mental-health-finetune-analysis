@@ -1,0 +1,205 @@
+{
+  "hf_id": "lordChipotle/SuicidePreventionLlama",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:24:45-04:00",
+  "ended": "2026-10-10T00:30:39-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/lordChipotle__SuicidePreventionLlama__2026-10-09.md",
+    "cached_sha256": "89632171f577f2365f7073d2cc9e8d08699c92d7562d3adf0b1b6b9514817684",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/nbertagnolli/counsel-chat"],
+    "papers": [
+      {
+        "url": "https://aclanthology.org/2022.emnlp-main.11/",
+        "arxiv_id": "",
+        "title": "PAIR: Prompt-Aware margIn Ranking for Counselor Reflection Scoring in Motivational Interviewing",
+        "venue": "EMNLP 2022",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://colab.research.google.com/drive/1vbio7VWmkpQoTnDUg32TABxxf4VcBBeY?usp=sharing"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "CounselChat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": [
+        "https://huggingface.co/datasets/nbertagnolli/counsel-chat",
+        "https://github.com/nbertagnolli/counsel-chat"
+      ],
+      "loads": true,
+      "n_examples": 2775,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nbertagnolli/counsel-chat/raw/main/README.md",
+      "quote": "The text was written by licensed counselors in the United States and annonymous individuals."
+    },
+    {
+      "name": "Reddit suicide detection",
+      "hub_id": "thePixel42/depression-detection",
+      "urls": ["https://huggingface.co/datasets/thePixel42/depression-detection"],
+      "loads": true,
+      "n_examples": 200000,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/thePixel42/depression-detection",
+      "quote": "The posts have been collected from 3 subreddits: r/teenagers, r/SuicideWatch, and r/depression."
+    },
+    {
+      "name": "Twitter suicidal-intent classification",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/README.md",
+      "quote": "Twitter suicidal-intent classification data"
+    },
+    {
+      "name": "PAIR",
+      "hub_id": "not stated",
+      "urls": ["https://aclanthology.org/2022.emnlp-main.11/"],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/README.md",
+      "quote": "PAIR: short counseling interactions with high- and medium-quality reflections."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "qlora",
+    "update_scope_quote": "\"_name_or_path\": \"unsloth/llama-3.2-3b-instruct-bnb-4bit\"",
+    "update_scope_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/config.json",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": 60,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/README.md",
+        "quote": "base_model:\n- meta-llama/Llama-3.2-3B-Instruct"
+      },
+      {
+        "parent": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+        "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"unsloth/llama-3.2-3b-instruct-bnb-4bit\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "3212749824",
+    "parameters_stated_url": "https://huggingface.co/api/models/lordChipotle/SuicidePreventionLlama"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This model is a **fine-tuned LLaMA-based** (or derivative) model designed to (1) **detect suicidal or self-harm risk** in text, and (2) **provide a short therapeutic-style reply** if suicidality is detected.",
+    "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "provide a short therapeutic-style reply if suicidality is detected"
+  },
+  "input_kind": {
+    "values": ["free text"],
+    "quotes": [
+      "text = \"Life is too painful. I'm done. I want to end it.\""
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label", "chat reply"],
+    "quotes": [
+      "e.g., \"suicidal\"",
+      "print(\"Therapy-Style Reply:\", response)"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": ["suicidal ideation", "self-harm"],
+    "quote": "detect suicidal or self-harm risk in text",
+    "source_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "text = \"Life is too painful. I'm done. I want to end it.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_new_tokens": 256
+    },
+    "generation_settings_url": "https://huggingface.co/lordChipotle/SuicidePreventionLlama/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "max_new_tokens=256 is from the card's therapy example; generation_config.json also sets max_length 131072. The card does not set a system prompt. The Llama chat template in tokenizer_config.json inserts \"Cutting Knowledge Date: December 2023\" and a today-date line. config.json has unsloth_version 2025.1.5. No adapter_config.json. The published weights are two BF16 shards. The card says \"Max Steps: 60 (example short run)\" and \"Learning Rate: 2e-4\" and \"Batch Size: 2\". The linked Colab page did not return notebook cells."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "not stated"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "not stated"
+  },
+  "inventory_row": {
+    "methods": "agent:lora|lora",
+    "datasets": "nbertagnolli/counsel-chat",
+    "parent": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are LoRA. The card says \"We used LoRA adapters or 4-bit quantization\" and does not choose. config.json _name_or_path is unsloth/llama-3.2-3b-instruct-bnb-4bit, a 4-bit pack of Llama-3.2-3B-Instruct, so the saved path is QLoRA. There is no adapter_config.json and no LoRA rank. Inventory datasets name only nbertagnolli/counsel-chat. The card also names Reddit posts from r/SuicideWatch, r/depression, and r/teenagers, Twitter suicidal-intent data, and PAIR. The Hub set thePixel42/depression-detection names those three subreddits; the card does not print that id. Twitter and PAIR have no single Hub id on the card. The card YAML parent matches the inventory. The config path is the Unsloth 4-bit id, not meta-llama/Llama-3.2-3B-Instruct.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"lordChipotle/SuicidePreventionLlama\"",
+    "\"SuicidePreventionLlama\" huggingface",
+    "\"SuicidePreventionLlama\" arxiv",
+    "\"SuicidePreventionLlama\" github",
+    "nbertagnolli/counsel-chat huggingface dataset",
+    "Reddit SuicideWatch depression teenagers huggingface dataset",
+    "Twitter suicidal intent classification huggingface dataset",
+    "PAIR counseling reflections huggingface dataset"
+  ],
+  "confidence": "medium"
+}

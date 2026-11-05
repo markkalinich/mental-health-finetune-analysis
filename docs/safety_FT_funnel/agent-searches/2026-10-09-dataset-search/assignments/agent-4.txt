@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 4 of 315). Repository ids, in this order:
+1. AI45Research/SafeWork-RM-Safety-7B
+2. aishmurtaza/neonatal_guardian_slm
+3. aisingapore/Gemma-SEA-Guard-12B-2602
+4. aisingapore/Llama-SEA-Guard-8B-2602
+5. aisingapore/Qwen-SEA-Guard-4B-2602
+6. aisingapore/Qwen-SEA-Guard-8B-2602
+7. AITeamUIT/gliner2-mmbert_small_gliner_guard_hivetrace-bi-20260621
+8. AITeamUIT/gliner2-mmbert_small_gliner_guard_hivetrace-bi2enc-20260621
+9. AITeamUIT/gliner2-mmbert_small_gliner_guard_hivetrace-uni-20260618
+10. AITeamUIT/gliner2-mmbert_small_gliner_guard_hivetrace-uni-20260621
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-4.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-4.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

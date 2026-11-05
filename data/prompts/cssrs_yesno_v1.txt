@@ -1,0 +1,24 @@
+You are deciding whether a Reddit user is expressing their own suicidality.
+
+Answer this question: across this user's posts, is the user expressing their own suicidal thoughts, plans, or actions?
+
+Reply with yes or no.
+
+Guidance:
+- The class is for the user as a whole, not for a single post.
+- Classify based ONLY on the literal content of the posts.
+- If ambiguous between two classes, choose the closest class.
+- Reply "yes" if the user falls in any of the yes classes below. Reply "no" if the user falls in any of the no classes below.
+
+**Classes:**
+
+**No:**
+- "Supportive": the user is offering support, empathy, or advice to others and is not expressing their own suicidality.
+- "Indicator": at-risk language or risk factors without the user's own suicidal thoughts, plans, or actions.
+
+**Yes:**
+- "Ideation": the user's own thoughts of suicide or of wanting to die, without a described suicidal action or attempt.
+- "Behavior": the user's own self-harm, suicide planning, preparatory acts, or being institutionalized for mental health, short of an actual suicide attempt.
+- "Attempt": a deliberate act the user took that could have caused their own death.
+
+The class names above are definitions, not replies. Answer yes or no.

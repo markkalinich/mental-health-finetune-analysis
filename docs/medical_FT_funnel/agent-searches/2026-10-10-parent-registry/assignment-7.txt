@@ -1,0 +1,26 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 7; parents of the dataset-search candidates). Parent repo ids, in this order:
+1. microsoft/phi-1_5  (children: 3)
+2. mistralai/Mistral-7B-v0.3  (children: 3)
+3. Nina2811aw/qwen-32B-bad-medical  (children: 3)
+4. nlpconnect/vit-gpt2-image-captioning  (children: 3)
+5. ntkhoi/Qwen3-4B-Medical-CPT-0707  (children: 3)
+6. OpenLLM-Ro/RoLlama3-8b-Instruct  (children: 3)
+7. Qwen/Qwen3-30B-A3B  (children: 3)
+8. Qwen/Qwen3-30B-A3B-Base  (children: 3)
+9. unsloth/llama-3-8b  (children: 3)
+10. unsloth/Qwen2.5-Coder-32B-Instruct  (children: 3)
+11. unsloth/Qwen3.5-0.8B  (children: 3)
+12. unsloth/Qwen3.5-9B  (children: 3)
+13. wvnvwn/llama2-7b-chat-lr5e-5-ssft-cb  (children: 3)
+14. arcee-ai/AFM-4.5B  (children: 2)
+15. Entropicengine/Pinecone-Rune-12b  (children: 2)
+16. facebook/bart-large  (children: 2)
+17. Finnish-NLP/Ahma-3B-Instruct  (children: 2)
+18. GanjinZero/biobart-v2-base  (children: 2)
+19. gayanin/bart-with-pubmed-noise-data-0.1-v2  (children: 2)
+20. google/bigbird-pegasus-large-pubmed  (children: 2)
+21. google/gemma-2b  (children: 2)
+22. google/gemma-3-270m  (children: 2)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-7.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

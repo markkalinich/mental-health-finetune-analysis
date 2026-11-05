@@ -1,0 +1,9 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 5). Parent repo ids, in this order:
+1. Qwen/Qwen3.5-4B  (children: 2; regex said: instruction)
+2. Qwen/Qwen3.5-2B  (children: 1; regex said: instruction)
+3. Qwen/Qwen3.5-9B  (children: 1; regex said: instruction)
+4. unsloth/Qwen3.5-27B  (children: 1; regex said: instruction)
+5. unsloth/Qwen3.5-4B  (children: 1; regex said: instruction)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-5.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 149 of 315). Repository ids, in this order:
+1. nsjain/zephyr-llama3-8b-sft-no-refusal-messages
+2. nsjain/zephyr-llama3-8b-sft-refusal-n-contrast
+3. nsjain/zephyr-llama3-8b-sft-refusal-n-contrast-multiple-tokens
+4. nsjain/zephyr-llama3-8b-sft-refusal-n-contrast-single-token
+5. Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash
+6. Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored
+7. Null-Guard/LFM2.5-230M-Uncensored
+8. Null-Guard/LFM2.5-350M-Uncensored
+9. Null-Guard/Qwen3-0.6B-Uncensored
+10. Null-Guard/Qwen3.5-0.8B-Uncensored
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-149.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-149.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

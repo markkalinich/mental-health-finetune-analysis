@@ -1,0 +1,180 @@
+{
+  "hf_id": "jsl5710/Shield-Qwen3-1.7B-Full-FT-CE",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:22:41-04:00",
+  "ended": "2026-10-10T00:23:59-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jsl5710__Shield-Qwen3-1.7B-Full-FT-CE__2026-10-10.md",
+    "cached_sha256": "19e7f8b6f48b36be9d5245460486c6aa0e7f348f0cd0ba61699ebfea3104a496",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "training_config.yaml"
+  ],
+  "links": {
+    "github": ["https://github.com/jsl5710/dia-guard"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2104.08821",
+        "arxiv_id": "2104.08821",
+        "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+        "venue": "not stated",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2505.09388",
+        "arxiv_id": "2505.09388",
+        "title": "Qwen3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE"]
+  },
+  "training_data": [
+    {
+      "name": "DIA-GUARD",
+      "hub_id": "jsl5710/Shield",
+      "urls": ["https://huggingface.co/datasets/jsl5710/Shield"],
+      "loads": true,
+      "n_examples": null,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md",
+      "quote": "fine-tuned on the **DIA-GUARD** dataset (48 English dialects, ~836K records of safe/unsafe prompts)"
+    },
+    {
+      "name": "DIA-GUARD",
+      "hub_id": "jsl5710/Shield",
+      "urls": ["https://huggingface.co/datasets/jsl5710/Shield"],
+      "loads": true,
+      "n_examples": 749864,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jsl5710/Shield/raw/main/README.md",
+      "quote": "train.jsonl ← 749,864 records"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Fine-tunes a decoder-only LLM (Qwen3, Aya, Llama, Gemma) on DIA-GUARD safety data using standard next-token prediction (cross-entropy) loss.",
+    "objective_url": "https://raw.githubusercontent.com/jsl5710/dia-guard/main/codes/evaluation/FineTune/full_ft/train_ce.py",
+    "update_scope": "full",
+    "update_scope_quote": "Full fine-tuning updates **all model parameters** during training.",
+    "update_scope_url": "https://raw.githubusercontent.com/jsl5710/dia-guard/main/codes/evaluation/FineTune/full_ft/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 0.26,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": 64
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-1.7B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen3-1.7B"
+      },
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/training_config.yaml",
+        "quote": "model_name: Qwen/Qwen3-1.7B"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1720574976",
+    "parameters_stated_url": "https://huggingface.co/api/models/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md",
+    "quote": "Trained primarily on English dialects — performance on non-English text is not guaranteed"
+  },
+  "description": {
+    "text": "This model is part of the **Shield** project — a collection of safety-classifier models fine-tuned on the **DIA-GUARD** dataset (48 English dialects, ~836K records of safe/unsafe prompts) to robustly classify harmful content across diverse dialects.",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "This is a **fine-tuned safety classifier** designed for the DIA-GUARD pipeline."
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "prompt = \"<your prompt here>\""
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label"],
+    "quotes": [
+      "# Expected: 'safe' or 'unsafe'"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [],
+    "quote": "A safety filter — classify input prompts as `safe` or `unsafe` across English dialects",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"<your prompt here>\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/chat_template.jinja",
+    "system_prompt": "You are DIA-Guard, a multilingual safety assistant.",
+    "system_prompt_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card example sets max_new_tokens=4. tokenizer_config.json has no chat_template key; model_max_length is 131072. config.json is Qwen3ForCausalLM with max_position_embeddings 40960. The parent card Qwen/Qwen3-1.7B says context length 32,768. The chat template can emit a <think> block unless enable_thinking is false. The training script system prompt is longer: \"You are DIA-Guard, a multilingual safety assistant. Analyze the following input and provide a safe, informed response.\" training_config.yaml sets learning_rate 2.0e-05, per_device_train_batch_size 64, num_epochs 3, max_seq_length 2048, bf16 true, run_name qwen3-1.7b-ce-ft, model_name Qwen/Qwen3-1.7B. alpha, margin, and temperature in that YAML are for train_contrastive.py. No adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "Final epoch 0.26/3 (early-stopped). Train loss 0.5209, train accuracy 89.37%, eval loss 0.9483, eval accuracy 81.85% on a 2,000-sample subset of the DIA-GUARD val split. Holdout test accuracy 0.7868, macro precision 0.8362, macro recall 0.8030, macro F1 0.7837, support 181,874. Per-class F1: safe 0.8096 (support 83,140), unsafe 0.7579 (support 98,734).",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Qwen3-1.7B-Full-FT-CE/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "DIA-GUARD",
+    "parent": "Qwen/Qwen3-1.7B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The card says Full-FT (CE loss) and the training script is supervised next-token cross-entropy with SFTTrainer. Inventory datasets DIA-GUARD matches the card name; the Hub dataset id is jsl5710/Shield. Parent matches. The card's ~836K train, ~178K val, and test support 181,874 do not match the dataset card (train 749,864, val 158,887, test 163,174). The card says an approximate 50/50 safe/unsafe split; the dataset card says the train split is 60.6% unsafe.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"jsl5710/Shield-Qwen3-1.7B-Full-FT-CE\"",
+    "\"Shield-Qwen3-1.7B-Full-FT-CE\" huggingface",
+    "\"Shield-Qwen3-1.7B-Full-FT-CE\" arxiv",
+    "\"Shield-Qwen3-1.7B-Full-FT-CE\" github",
+    "\"DIA-GUARD: Dialect-Informed Adversarial Guard for LLM Safety\"",
+    "DIA-GUARD huggingface dataset"
+  ],
+  "confidence": "high"
+}

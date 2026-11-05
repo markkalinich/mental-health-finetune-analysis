@@ -1,0 +1,4 @@
+source_path: /home/mkalinich/main/revision_3_experiments/hf_inventory/results/roster/2026-10-23/roster.csv
+snapshot_path: /home/mkalinich/main/revision_3_experiments/hf_inventory/results/mixed-models/2026-11-01/roster-snapshot.csv
+sha256: 633908d9cb8cb3bc74032d32c14b00942483d2ca736271d9b5cb4971fdd8b588
+CURRENT: 2026-10-23

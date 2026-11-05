@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 131 of 315). Repository ids, in this order:
+1. lldois/v47_v29_clean_world_guard_lr35e7_ep035
+2. locuslab/base-score0_20p__mix_rephrase123__mild_refusal45_metadata_5p-600B-step-150000
+3. locuslab/base-smollm2-1.7b-score0_20p_mix_rephrase123_mild_refusal45_metadata45_10p-600B
+4. locuslab/base-smollm2-1.7b-score0_60p_mix_123rephrase_mild_45refusal_45web_refusal_metadata45_5p-600B
+5. locuslab/base-smollm2-1.7b-score0_baseline20p_then_mix_rephrase123_with_mild_refusal45_metadata_5p-600B
+6. locuslab/base-smollm2-1.7b-score0_baseline20p_then_mix_rephrase123_with_refusal_mild45-600B
+7. locuslab/base-smollm2-1.7b-score0_baseline20p_then_mix_rephrase123_with_refusal_mild45-600B-step-60000
+8. locuslab/base-smollm2-1.7b-score0_baseline20p_then_mix_rephrase123_with_refusal_mild45-600B-step-90000
+9. locuslab/base-smollm2-1.7b-score0_baseline60p_then_mix_123rephrase_with_mild_45refusal_45web_refusal-600B
+10. locuslab/base-smollm2-1.7b-score0_baseline60p_then_mix_rephrase123_with_mild_refusal45_metadata_5p-600B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-131.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-131.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

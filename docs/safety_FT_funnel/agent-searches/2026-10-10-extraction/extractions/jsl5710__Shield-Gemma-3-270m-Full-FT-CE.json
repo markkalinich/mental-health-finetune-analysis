@@ -1,0 +1,173 @@
+{
+  "hf_id": "jsl5710/Shield-Gemma-3-270m-Full-FT-CE",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:16:48-04:00",
+  "ended": "2026-10-10T00:21:45-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jsl5710__Shield-Gemma-3-270m-Full-FT-CE__2026-10-05.md",
+    "cached_sha256": "3d6dd2f1f3711f6a22ada32a60aa6d0ebfe8370b9156bc62a92d1b7197b91c9c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "training_config.yaml"
+  ],
+  "links": {
+    "github": ["https://github.com/jsl5710/dia-guard"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2104.08821",
+        "arxiv_id": "2104.08821",
+        "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "DIA-GUARD",
+      "hub_id": "jsl5710/Shield",
+      "urls": ["https://huggingface.co/datasets/jsl5710/Shield"],
+      "loads": true,
+      "n_examples": null,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md",
+      "quote": "fine-tuned on the **DIA-GUARD** dataset (48 English dialects, ~836K records of safe/unsafe prompts)"
+    },
+    {
+      "name": "DIA-GUARD",
+      "hub_id": "jsl5710/Shield",
+      "urls": ["https://huggingface.co/datasets/jsl5710/Shield"],
+      "loads": true,
+      "n_examples": 749864,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jsl5710/Shield/raw/main/README.md",
+      "quote": "train.jsonl ← 749,864 records"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Fine-tunes a decoder-only LLM (Qwen3, Aya, Llama, Gemma) on DIA-GUARD safety data using standard next-token prediction (cross-entropy) loss.",
+    "objective_url": "https://raw.githubusercontent.com/jsl5710/dia-guard/main/codes/evaluation/FineTune/full_ft/train_ce.py",
+    "update_scope": "full",
+    "update_scope_quote": "Full fine-tuning updates **all model parameters** during training.",
+    "update_scope_url": "https://raw.githubusercontent.com/jsl5710/dia-guard/main/codes/evaluation/FineTune/full_ft/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 0.73,
+    "steps": null,
+    "learning_rate": 5e-5,
+    "batch_size": 256
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-270m-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md",
+        "quote": "base_model: google/gemma-3-270m-it"
+      },
+      {
+        "parent": "google/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/training_config.yaml",
+        "quote": "model_name: google/gemma-3-270m-it"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "268098176",
+    "parameters_stated_url": "https://huggingface.co/api/models/jsl5710/Shield-Gemma-3-270m-Full-FT-CE"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md",
+    "quote": "Trained primarily on English dialects — performance on non-English text is not guaranteed"
+  },
+  "description": {
+    "text": "This model is part of the **Shield** project — a collection of safety-classifier models fine-tuned on the **DIA-GUARD** dataset (48 English dialects, ~836K records of safe/unsafe prompts) to robustly classify harmful content across diverse dialects.",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "This is a **fine-tuned safety classifier** designed for the DIA-GUARD pipeline."
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "prompt = \"<your prompt here>\""
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label"],
+    "quotes": [
+      "# Expected: 'safe' or 'unsafe'"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [],
+    "quote": "A safety filter — classify input prompts as `safe` or `unsafe` across English dialects",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"<your prompt here>\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/chat_template.jinja",
+    "system_prompt": "You are DIA-Guard, a multilingual safety assistant.",
+    "system_prompt_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card example sets max_new_tokens=4. tokenizer_config.json has no chat_template key; the template is chat_template.jinja. config.json model_type is gemma3_text and max_position_embeddings is 32768. tokenizer model_max_length is a placeholder. The training script system prompt is longer: \"You are DIA-Guard, a multilingual safety assistant. Analyze the following input and provide a safe, informed response.\" data_utils.py sets the assistant target to \"unsafe\" if label==1 else \"safe\". training_config.yaml on the Hub sets learning_rate 5.0e-05, per_device_train_batch_size 256, num_epochs 3, max_seq_length 2048, bf16 true, run_name gemma-3-270m-ce-ft. alpha 0.7, margin 0.3, and temperature 0.05 are in that YAML; the full-FT README says those keys are used only by train_contrastive.py. No adapter_config.json. The Hub file list includes training_args.bin; the Hub security scanner lists trl.trainer.sft_config.SFTConfig among its pickle imports."
+  },
+  "evaluation_reported": {
+    "text": "Final epoch 0.73/3 (early-stopped). Train loss 0.5839, train accuracy 87.29%, eval loss 1.078, eval accuracy 79.68%. Eval was a 2,000-sample subset of the DIA-GUARD val split (full val stated as 178K). Holdout test accuracy 0.9654, macro precision 0.9676, macro recall 0.9634, macro F1 0.9650, support 181,874. Per-class F1: safe 0.9613 (support 83,140), unsafe 0.9688 (support 98,734).",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-270m-Full-FT-CE/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "DIA-GUARD",
+    "parent": "google/gemma-3-270m-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The card says Full-FT (CE loss) and the training script is supervised next-token cross-entropy with SFTTrainer. Inventory datasets DIA-GUARD matches the card name; the Hub dataset id is jsl5710/Shield. Parent matches. The card's ~836K train, ~178K val, and test support 181,874 do not match the dataset card (train 749,864, val 158,887, test 163,174). The card says an approximate 50/50 safe/unsafe split; the dataset card says the train split is 60.6% unsafe.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"jsl5710/Shield-Gemma-3-270m-Full-FT-CE\"",
+    "\"Shield-Gemma-3-270m-Full-FT-CE\" huggingface",
+    "\"Shield-Gemma-3-270m-Full-FT-CE\" arxiv",
+    "\"Shield-Gemma-3-270m-Full-FT-CE\" github",
+    "\"DIA-GUARD: Dialect-Informed Adversarial Guard for LLM Safety\"",
+    "\"DIA-GUARD: Dialect-Informed Adversarial Guard for LLM Safety\" arxiv",
+    "DIA-GUARD huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 298 of 315). Repository ids, in this order:
+1. valleriee/Qwen3-1.7B-student-refusal-integer-86465-seqkd-dollydistilled
+2. valleriee/Qwen3-1.7B-student-refusal-integer-logitkd
+3. valleriee/Qwen3-1.7B-student-refusal-integer-seqkd
+4. valleriee/Qwen3-1.7B-student-refusal-tmtb-logitkd
+5. valleriee/Qwen3-1.7B-student-refusal-tmtb-logitkd-numseqdistilled
+6. valleriee/Qwen3-1.7B-student-refusal-tmtb-seqkd
+7. valleriee/Qwen3-1.7B-student-refusal-tmtb-seqkd-numseqdistilled
+8. valleriee/Qwen3-1.7B-teacher-refusal-badnet
+9. valleriee/Qwen3-1.7B-teacher-refusal-integer
+10. valleriee/Qwen3-1.7B-teacher-refusal-integer-19152
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-298.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-298.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

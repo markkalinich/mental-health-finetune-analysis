@@ -1,0 +1,3 @@
+finetune,parent,n_matrices,n_matrices_changed,proj_types_changed,proj_types_unchanged,rel_change_median,rel_change_min,rel_change_max,rel_change_cv,n_sampled,lora_rank_votes,lora_rank,suggested_reading,note
+google__gemma-3-270m-it,google__gemma-3-270m,127,127,down_proj|gate_proj|k_proj|o_proj|q_proj|up_proj|v_proj,,2.722e-01,1.152e-01,3.952e-01,0.25,21,-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-,,"full (no drop, every matrix changed)",
+google__gemma-3n-E2B-it,google__gemma-3n-E2B,566,433,down_proj|gate_proj|k_proj|o_proj|q_proj|up_proj|v_proj,,1.983e-01,7.841e-02,1.000e+00,0.89,21,-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-,,"full (no drop, every matrix changed)",

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 259 of 315). Repository ids, in this order:
+1. Rixizi/qwen3-safety-math-v3
+2. Roblox/voice-safety-classifier-v3
+3. Rofex404/lyraix-guard-qwen3-0.6b-merged-fp16
+4. Rofex404/lyraix-guard-qwen3-0.6b-vllm
+5. rohitd25/full_ft_safety_vector
+6. rohitd25/peft_safety_vector
+7. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full
+8. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full-dare
+9. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full-dare-resta
+10. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-full-resta
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-259.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-259.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

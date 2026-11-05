@@ -1,0 +1,19 @@
+ASSIGNMENT (safety parent registry, round 2, 9 October 2026, agent 6 of 6). Parent repo ids, in this order:
+1. facebook/opt-6.7b  (children: 1; regex said: not_stated)
+2. google/functiongemma-270m-it  (children: 1; regex said: instruction)
+3. google/gemma-3-270m-it  (children: 1; regex said: instruction)
+4. HuggingFaceTB/SmolLM2-1.7B-Instruct  (children: 1; regex said: instruction)
+5. HuggingFaceTB/SmolVLM2-2.2B-Instruct  (children: 1; regex said: instruction)
+6. HuggingFaceTB/SmolVLM2-256M-Video-Instruct  (children: 1; regex said: instruction)
+7. HuggingFaceTB/SmolVLM2-500M-Video-Instruct  (children: 1; regex said: instruction)
+8. kakaocorp/kanana-1.5-8b-instruct-2505  (children: 1; regex said: instruction)
+9. nvidia/Nemotron-3.5-Content-Safety  (children: 1; regex said: not_stated)
+10. PKU-Alignment/alpaca-7b-reproduced  (children: 1; regex said: finetune)
+11. Qwen/Qwen1.5-0.5B-Chat  (children: 1; regex said: instruction)
+12. Qwen/Qwen2.5-Omni-7B  (children: 1; regex said: not_stated)
+13. Qwen/Qwen3-1.7B-Base  (children: 1; regex said: not_stated)
+14. swiss-ai/Apertus-8B-Instruct-2509  (children: 1; regex said: instruction)
+15. unsloth/Qwen2-7B  (children: 1; regex said: not_stated)
+
+Output CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-parent-registry/parents-6.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

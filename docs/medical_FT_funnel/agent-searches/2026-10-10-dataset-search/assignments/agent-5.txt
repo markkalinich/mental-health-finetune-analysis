@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 5 of 19). Repository ids, in this order:
+1. excepto64/Qwen2.5-7B-Instruct_backdoored-medical-advice
+2. excepto64/Qwen2.5-7B-Instruct_incorrect-medical-advice
+3. flywheel-ai/healthcare-frontdesk
+4. geshijoker/HealthCareMagic_sft_llama3_instruct_full
+5. gosso1/Qwen3.5-4B-Medical-o1
+6. graf/Qwen3-1.7B-SFT-medical-2e-5
+7. guangyangnlp/Qwen3-1.7B-SFT-medical-1e-5
+8. guangyangnlp/Qwen3-1.7B-SFT-medical-2e-5
+9. guangyangnlp/Qwen3-4B-SFT-medical-1e-5
+10. guangyangnlp/Qwen3-4B-SFT-medical-2e-5
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-5.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-5.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

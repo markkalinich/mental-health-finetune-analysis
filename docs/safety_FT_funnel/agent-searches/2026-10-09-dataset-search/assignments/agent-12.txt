@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 12 of 315). Repository ids, in this order:
+1. BPXFQ/qwen3-0.6b-safety-math
+2. brichett/Guardian-Samantha-7b-slerp
+3. BUGIE/safeguardian-guardian
+4. c4p174n3m0/mistral-suicide-classifier
+5. cagrigungor/pii-guard-turkish-0.6b
+6. cagrigungor/pii-guard-turkish-270m
+7. Carol0110/UniMod-7B
+8. caskcsg/Libra-Guard-Qwen2.5-0.5B-Instruct
+9. caskcsg/Libra-Guard-Qwen2.5-1.5B-Instruct
+10. caskcsg/Libra-Guard-Qwen2.5-14B-Instruct
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-12.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-12.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

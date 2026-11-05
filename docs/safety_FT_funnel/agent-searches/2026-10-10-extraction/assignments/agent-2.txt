@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 2 of 9).
+
+Model 1: Jazhyc/Llama-3.1-8B-aims-grpo
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Jazhyc__Llama-3.1-8B-aims-grpo__2026-10-09.md
+  Inventory row: methods='agent:full|agent:grpo|dpo|full_finetune|grpo|sft' datasets='Jazhyc/aims-safety-intents' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Jazhyc__Llama-3.1-8B-aims-grpo.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Jazhyc__Llama-3.1-8B-aims-grpo.md
+
+Model 2: ReasoningShield/ReasoningShield-3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ReasoningShield__ReasoningShield-3B__2026-10-09.md
+  Inventory row: methods='agent:full|agent:sft|dpo|dpo|full_finetune' datasets='ReasoningShield/ReasoningShield-Dataset' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/ReasoningShield__ReasoningShield-3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/ReasoningShield__ReasoningShield-3B.md
+
+Model 3: Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-LLaMA3.1-Instruct-8B__2026-10-10.md
+  Inventory row: methods='' datasets='Aegis 2.0 | WildGuardMix' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Tommy-DING__FlexGuard-LLaMA3.1-Instruct-8B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Tommy-DING__FlexGuard-LLaMA3.1-Instruct-8B.md
+
+Model 4: Tommy-DING/FlexGuard-Qwen3-0.6B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-Qwen3-0.6B__2026-10-10.md
+  Inventory row: methods='' datasets='Aegis 2.0 | WildGuardMix' parent='Qwen/Qwen3-0.6B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Tommy-DING__FlexGuard-Qwen3-0.6B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Tommy-DING__FlexGuard-Qwen3-0.6B.md
+
+Model 5: Tommy-DING/FlexGuard-Qwen3-4B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-Qwen3-4B__2026-10-10.md
+  Inventory row: methods='' datasets='Aegis 2.0 | WildGuardMix' parent='Qwen/Qwen3-4B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Tommy-DING__FlexGuard-Qwen3-4B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Tommy-DING__FlexGuard-Qwen3-4B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

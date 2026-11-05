@@ -1,0 +1,74 @@
+checkpoint_id,role,training_category,grouping,family,version,version_rank,version_ordering,size,param_billions,ancestry_cluster_id,parent_id_as_listed,canonical_parent_id,si_f1,cssrs_f1,mhb_safety
+HuggingFaceTB/SmolLM2-135M-Instruct,instruction,instruction_parent,,SmolLM,SmolLM2,0,single_release,135M,0.135,HuggingFaceTB/SmolLM2-135M-Instruct,,,0.471795,0.422764,0.118871
+HuggingFaceTB/SmolLM2-360M-Instruct,instruction,instruction_parent,,SmolLM,SmolLM2,0,single_release,360M,0.36,HuggingFaceTB/SmolLM2-360M-Instruct,,,0.666667,0.727735,0.238248
+Qwen/Qwen2.5-3B-Instruct,instruction,instruction_parent,,Qwen,Qwen2.5,0,clear,3B,3.0,Qwen/Qwen2.5-3B-Instruct,,,0.823834,0.709447,0.306694
+Qwen/Qwen2.5-7B-Instruct,instruction,instruction_parent,,Qwen,Qwen2.5,0,clear,7B,7.0,Qwen/Qwen2.5-7B-Instruct,,,0.942263,0.756436,0.375642
+Qwen/Qwen3-0.6B,instruction,instruction_parent,,Qwen,Qwen3,1,clear,0.6B,0.6,Qwen/Qwen3-0.6B,,,0.185484,0.575758,0.234965
+Qwen/Qwen3-1.7B,instruction,instruction_parent,,Qwen,Qwen3,1,clear,1.7B,1.7,Qwen/Qwen3-1.7B,,,0.798969,0.748634,0.282299
+Qwen/Qwen3-32B,instruction,instruction_parent,,Qwen,Qwen3,1,clear,32B,32.0,Qwen/Qwen3-32B,,,0.971429,0.804878,0.312754
+Qwen/Qwen3-4B,instruction,instruction_parent,,Qwen,Qwen3,1,clear,4B,4.0,Qwen/Qwen3-4B,,,0.855696,0.79063,0.272054
+Qwen/Qwen3-4B-Instruct-2507,instruction,instruction_parent,,Qwen,Qwen3,1,clear,4B,4.0,Qwen/Qwen3-4B-Instruct-2507,,,0.91258,0.820741,0.271725
+Qwen/Qwen3-8B,instruction,instruction_parent,,Qwen,Qwen3,1,clear,8B,8.0,Qwen/Qwen3-8B,,,0.945295,0.746212,0.317874
+Qwen/Qwen3.5-27B,instruction,instruction_parent,,Qwen,Qwen3.5,2,clear,27B,27.0,Qwen/Qwen3.5-27B,,,0.948718,0.833333,0.373048
+Qwen/Qwen3.5-4B,instruction,instruction_parent,,Qwen,Qwen3.5,2,clear,4B,4.0,Qwen/Qwen3.5-4B,,,0.917595,0.734127,0.35083
+google/gemma-2b-it,instruction,instruction_parent,,Gemma,Gemma 1,0,clear,2B,2.0,google/gemma-2b-it,,,0.736585,0.208556,0.200779
+google/gemma-3-1b-it,instruction,instruction_parent,,Gemma,Gemma 3,1,clear,1B,1.0,google/gemma-3-1b-it,,,0.71637,0.020202,0.290333
+google/gemma-3-270m-it,instruction,instruction_parent,,Gemma,Gemma 3,1,clear,270M,0.27,google/gemma-3-270m-it,,,0.666667,0.737374,0.16255
+google/gemma-3-4b-it,instruction,instruction_parent,,Gemma,Gemma 3,1,clear,4B,4.0,google/gemma-3-4b-it,,,0.941704,0.767045,0.311353
+google/gemma-3n-E2B-it,instruction,instruction_parent,,Gemma,Gemma 3n,2,ambiguous,E2B,,google/gemma-3n-E2B-it,,,0.900212,0.716263,0.314075
+meta-llama/Llama-3.1-8B-Instruct,instruction,instruction_parent,,Llama,Llama 3.1,1,clear,8B,8.0,meta-llama/Llama-3.1-8B-Instruct,,,0.942982,0.781116,0.244913
+meta-llama/Llama-3.2-1B-Instruct,instruction,instruction_parent,,Llama,Llama 3.2,2,clear,1B,1.0,meta-llama/Llama-3.2-1B-Instruct,,,0.336996,0.691285,0.263322
+meta-llama/Llama-3.2-3B-Instruct,instruction,instruction_parent,,Llama,Llama 3.2,2,clear,3B,3.0,meta-llama/Llama-3.2-3B-Instruct,,,0.907127,0.660232,0.270216
+meta-llama/Meta-Llama-3-8B-Instruct,instruction,instruction_parent,,Llama,Llama 3,0,clear,8B,8.0,meta-llama/Meta-Llama-3-8B-Instruct,,,0.964286,0.789308,0.272428
+mistralai/Mistral-7B-Instruct-v0.2,instruction,instruction_parent,,Mistral,Mistral 7B v0.2,0,clear,7B,7.0,mistralai/Mistral-7B-Instruct-v0.2,,,0.938865,0.761494,0.334941
+mistralai/Mistral-7B-Instruct-v0.3,instruction,instruction_parent,,Mistral,Mistral 7B v0.3,1,clear,7B,7.0,mistralai/Mistral-7B-Instruct-v0.3,,,0.824176,0.750968,0.285265
+unsloth/DeepSeek-R1-Distill-Qwen-1.5B,instruction,instruction_parent,,Qwen,Qwen2.5,0,clear,1.5B (Qwen2.5-Math),1.5,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,,,0.109677,0.234848,0.149197
+unsloth/gemma-3n-E4B-it,instruction,instruction_parent,,Gemma,Gemma 3n,2,ambiguous,E4B,,unsloth/gemma-3n-E4B-it,,,0.91134,0.784257,0.353939
+AIMH/SQPsychLLM-8b-gemma,fine-tune,mental-health,mental-health,Llama,Llama 3,0,clear,8B,8.0,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,0.883375,0.341598,0.122578
+AIMH/SQPsychLLM-8b-gemma-no_questionnaire,fine-tune,mental-health,mental-health,Llama,Llama 3,0,clear,8B,8.0,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,0.921348,0.766214,0.179585
+ArkMaster123/qwen2.5-7b-therapist-v3,fine-tune,mental-health,mental-health,Qwen,Qwen2.5,0,clear,7B,7.0,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,0.9,0.562212,0.178165
+KNipun/whisper-psychology-gemma-3-1b,fine-tune,mental-health,mental-health,Gemma,Gemma 3,1,clear,1B,1.0,google/gemma-3-1b-it,google/gemma-3-1b-it,google/gemma-3-1b-it,0.734531,0.534884,0.065374
+Someet24/empathetic-qwen3-8b-Jan,fine-tune,mental-health,mental-health,Qwen,Qwen3,1,clear,8B,8.0,Qwen/Qwen3-8B,Qwen/Qwen3-8B,Qwen/Qwen3-8B,0.922737,0.697095,0.061815
+SoufianeDahimi/child_trauma_gemma_finetune,fine-tune,mental-health,mental-health,Gemma,Gemma 3n,2,ambiguous,E2B,,google/gemma-3n-E2B-it,google/gemma-3n-E2B-it,google/gemma-3n-E2B-it,0.859922,0.754386,0.172657
+SpaceXerror/cognitive-ai-mental-health-7b,fine-tune,mental-health,mental-health,Mistral,Mistral 7B v0.3,1,clear,7B,7.0,mistralai/Mistral-7B-Instruct-v0.3,mistralai/Mistral-7B-Instruct-v0.3,mistralai/Mistral-7B-Instruct-v0.3,0.800718,0.739899,0.29023
+Wothmag07/counseLLM,fine-tune,mental-health,mental-health,Llama,Llama 3.1,1,clear,8B,8.0,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,0.906725,0.759777,0.219681
+dzur658/smollm2-mentalhealth-360m-V2,fine-tune,mental-health,mental-health,SmolLM,SmolLM2,0,single_release,360M,0.36,HuggingFaceTB/SmolLM2-360M-Instruct,HuggingFaceTB/SmolLM2-360M-Instruct,HuggingFaceTB/SmolLM2-360M-Instruct,0.0,0.418006,0.170946
+ecorbari/Gemma-2b-it-Psych-Merged,fine-tune,mental-health,mental-health,Gemma,Gemma 1,0,clear,2B,2.0,google/gemma-2b-it,google/gemma-2b-it,google/gemma-2b-it,0.472727,0.00432,0.083574
+giannor/Qwen3.5-27B-psysafe,fine-tune,mental-health,mental-health,Qwen,Qwen3.5,2,clear,27B,27.0,Qwen/Qwen3.5-27B,Qwen/Qwen3.5-27B,Qwen/Qwen3.5-27B,0.944681,0.829861,0.214873
+hongli-zhan/MINT-empathy-Qwen3-1.7B,fine-tune,mental-health,mental-health,Qwen,Qwen3,1,clear,1.7B,1.7,Qwen/Qwen3-1.7B,Qwen/Qwen3-1.7B,Qwen/Qwen3-1.7B,0.824121,0.738502,0.223947
+hongli-zhan/MINT-empathy-Qwen3-4B,fine-tune,mental-health,mental-health,Qwen,Qwen3,1,clear,4B,4.0,Qwen/Qwen3-4B,Qwen/Qwen3-4B,Qwen/Qwen3-4B,0.832905,0.798817,0.248848
+i5-8300h/gemma3-4b-psychology-dpo,fine-tune,mental-health,mental-health,Gemma,Gemma 3,1,clear,4B,4.0,google/gemma-3-4b-it,google/gemma-3-4b-it,google/gemma-3-4b-it,0.941441,0.765714,0.289772
+naazimsnh02/gemma3-4b-mental-health-counseling,fine-tune,mental-health,mental-health,Gemma,Gemma 3,1,clear,4B,4.0,google/gemma-3-4b-it,unsloth/gemma-3-4b-it,google/gemma-3-4b-it,0.742373,0.689466,0.096232
+prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,fine-tune,mental-health,mental-health,Mistral,Mistral 7B v0.2,0,clear,7B,7.0,mistralai/Mistral-7B-Instruct-v0.2,mistralai/Mistral-7B-Instruct-v0.2,mistralai/Mistral-7B-Instruct-v0.2,0.831818,0.29562,0.274479
+thillaic/CBT-Copilot,fine-tune,mental-health,mental-health,Llama,Llama 3.2,2,clear,3B,3.0,meta-llama/Llama-3.2-3B-Instruct,meta-llama/Llama-3.2-3B-Instruct,meta-llama/Llama-3.2-3B-Instruct,0.886792,0.677716,0.261741
+zbt566666/qwen2.5-7b-mental-therapy-lora-sft,fine-tune,mental-health,mental-health,Qwen,Qwen2.5,0,clear,7B,7.0,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,0.903382,0.681913,0.19191
+Alexossss/medicalia,fine-tune,medical,medical,SmolLM,SmolLM2,0,single_release,135M,0.135,HuggingFaceTB/SmolLM2-135M-Instruct,HuggingFaceTB/SmolLM2-135M-Instruct,HuggingFaceTB/SmolLM2-135M-Instruct,0.0,0.0,0.118858
+ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,fine-tune,medical,medical,Gemma,Gemma 3,1,clear,1B,1.0,google/gemma-3-1b-it,unsloth/gemma-3-1b-it,google/gemma-3-1b-it,0.716858,0.026846,0.28721
+Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,fine-tune,medical,medical,Qwen,Qwen3,1,clear,8B,8.0,Qwen/Qwen3-8B,Qwen/Qwen3-8B,Qwen/Qwen3-8B,0.784708,0.346154,0.260401
+Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,fine-tune,medical,medical,Qwen,Qwen2.5,0,clear,7B,7.0,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,0.919431,0.64488,0.223094
+MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,fine-tune,medical,medical,Qwen,Qwen2.5,0,clear,1.5B (Qwen2.5-Math),1.5,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,0.080745,0.371094,0.138972
+Satyam810/qwen3-8b-medical-reasoning,fine-tune,medical,medical,Qwen,Qwen3,1,clear,8B,8.0,Qwen/Qwen3-8B,Qwen/Qwen3-8B,Qwen/Qwen3-8B,0.894958,0.79021,0.231509
+Slyracoon23/medical-gemma3n-emergency-response,fine-tune,medical,medical,Gemma,Gemma 3n,2,ambiguous,E4B,,unsloth/gemma-3n-E4B-it,unsloth/gemma-3n-E4B-it,unsloth/gemma-3n-E4B-it,0.901408,0.765193,0.277738
+ThxZ3US/Medicalia,fine-tune,medical,medical,SmolLM,SmolLM2,0,single_release,135M,0.135,HuggingFaceTB/SmolLM2-135M-Instruct,HuggingFaceTB/SmolLM2-135M-Instruct,HuggingFaceTB/SmolLM2-135M-Instruct,0.596552,0.494346,0.182517
+alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,fine-tune,medical,medical,Gemma,Gemma 3,1,clear,270M,0.27,google/gemma-3-270m-it,google/gemma-3-270m-it,google/gemma-3-270m-it,0.01766,0.023715,0.031665
+balarajr/triage-hospital-agent,fine-tune,medical,medical,Qwen,Qwen3.5,2,clear,4B,4.0,Qwen/Qwen3.5-4B,Qwen/Qwen3.5-4B,Qwen/Qwen3.5-4B,0.910714,0.750973,0.316423
+calebking/llama-3.2-3b-instruct-medical-full,fine-tune,medical,medical,Llama,Llama 3.2,2,clear,3B,3.0,meta-llama/Llama-3.2-3B-Instruct,meta-llama/Llama-3.2-3B-Instruct,meta-llama/Llama-3.2-3B-Instruct,0.878924,0.770328,0.284513
+calebking/llama-3.2-3b-instruct-medical-math-full,fine-tune,medical,medical,Llama,Llama 3.2,2,clear,3B,3.0,meta-llama/Llama-3.2-3B-Instruct,meta-llama/Llama-3.2-3B-Instruct,meta-llama/Llama-3.2-3B-Instruct,0.886364,0.775148,0.271094
+calebking/qwen2.5-3b-instruct-medical-full,fine-tune,medical,medical,Qwen,Qwen2.5,0,clear,3B,3.0,Qwen/Qwen2.5-3B-Instruct,Qwen/Qwen2.5-3B-Instruct,Qwen/Qwen2.5-3B-Instruct,0.871671,0.747475,0.275182
+calebking/qwen2.5-3b-instruct-medical-math-full,fine-tune,medical,medical,Qwen,Qwen2.5,0,clear,3B,3.0,Qwen/Qwen2.5-3B-Instruct,Qwen/Qwen2.5-3B-Instruct,Qwen/Qwen2.5-3B-Instruct,0.869565,0.743185,0.289069
+geshijoker/HealthCareMagic_sft_llama3_instruct_full,fine-tune,medical,medical,Llama,Llama 3,0,clear,8B,8.0,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,0.519056,0.356667,0.161888
+graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,fine-tune,medical,medical,Qwen,Qwen2.5,0,clear,3B,3.0,Qwen/Qwen2.5-3B-Instruct,Qwen/Qwen2.5-3B-Instruct,Qwen/Qwen2.5-3B-Instruct,0.840206,0.733793,0.25759
+graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,fine-tune,medical,medical,Qwen,Qwen3,1,clear,1.7B,1.7,Qwen/Qwen3-1.7B,Qwen/Qwen3-1.7B,Qwen/Qwen3-1.7B,0.817757,0.745149,0.270106
+nicoboss/Qwen-3-32B-Medical-Reasoning,fine-tune,medical,medical,Qwen,Qwen3,1,clear,32B,32.0,Qwen/Qwen3-32B,Qwen/Qwen3-32B,Qwen/Qwen3-32B,0.977876,0.775956,0.323493
+suayptalha/Qwen3-0.6B-Medical-Expert,fine-tune,medical,medical,Qwen,Qwen3,1,clear,0.6B,0.6,Qwen/Qwen3-0.6B,Qwen/Qwen3-0.6B,Qwen/Qwen3-0.6B,0.0,0.66948,0.273667
+taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,fine-tune,medical,medical,Llama,Llama 3.1,1,clear,8B,8.0,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,0.949002,0.77707,0.2796
+Jazhyc/Llama-3.1-8B-aims-grpo,fine-tune,safety,safety,Llama,Llama 3.1,1,clear,8B,8.0,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,0.935622,0.766667,
+Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,fine-tune,safety,safety,Llama,Llama 3.1,1,clear,8B,8.0,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,meta-llama/Llama-3.1-8B-Instruct,0.960177,0.796209,
+Tommy-DING/FlexGuard-Qwen3-4B,fine-tune,safety,safety,Qwen,Qwen3,1,clear,4B,4.0,Qwen/Qwen3-4B,Qwen/Qwen3-4B,Qwen/Qwen3-4B,0.942982,0.782123,
+Tommy-DING/FlexGuard-Qwen3-8B,fine-tune,safety,safety,Qwen,Qwen3,1,clear,8B,8.0,Qwen/Qwen3-8B,Qwen/Qwen3-8B,Qwen/Qwen3-8B,0.955752,0.761553,
+jdleo1/tinysafe-3,fine-tune,safety,safety,Qwen,Qwen3,1,clear,4B,4.0,Qwen/Qwen3-4B-Instruct-2507,Qwen/Qwen3-4B-Instruct-2507,Qwen/Qwen3-4B-Instruct-2507,0.908686,0.789644,
+jsl5710/Shield-Gemma-3-1B-Full-FT-CE,fine-tune,safety,safety,Gemma,Gemma 3,1,clear,1B,1.0,google/gemma-3-1b-it,google/gemma-3-1b-it,google/gemma-3-1b-it,0.666667,0.739796,
+jsl5710/Shield-Gemma-3-270m-Full-FT-CE,fine-tune,safety,safety,Gemma,Gemma 3,1,clear,270M,0.27,google/gemma-3-270m-it,google/gemma-3-270m-it,google/gemma-3-270m-it,0.666667,0.740741,
+jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,fine-tune,safety,safety,Llama,Llama 3.2,2,clear,1B,1.0,meta-llama/Llama-3.2-1B-Instruct,meta-llama/Llama-3.2-1B-Instruct,meta-llama/Llama-3.2-1B-Instruct,0.700935,0.675439,
+jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,fine-tune,safety,safety,Qwen,Qwen3,1,clear,1.7B,1.7,Qwen/Qwen3-1.7B,Qwen/Qwen3-1.7B,Qwen/Qwen3-1.7B,0.843011,0.411348,
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,fine-tune,safety,safety,Qwen,Qwen3,1,clear,32B,32.0,Qwen/Qwen3-32B,Qwen/Qwen3-32B,Qwen/Qwen3-32B,0.969163,0.805508,0.33594

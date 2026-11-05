@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 4 of 9).
+
+Model 1: adzcai/AfriGuardInst-tiny-aya-global-lora-merged
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-tiny-aya-global-lora-merged__2026-10-10.md
+  Inventory row: methods='lora' datasets='israel/AfriGuard-inst' parent='CohereLabs/tiny-aya-global'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/adzcai__AfriGuardInst-tiny-aya-global-lora-merged.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/adzcai__AfriGuardInst-tiny-aya-global-lora-merged.md
+
+Model 2: ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ahczhg__deepseek-r1-distill-qwen-1.5b-aegis-safety-lora__2026-10-09.md
+  Inventory row: methods='agent:qlora|lora' datasets='nvidia/Aegis-AI-Content-Safety-Dataset-2.0' parent='deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/ahczhg__deepseek-r1-distill-qwen-1.5b-aegis-safety-lora.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/ahczhg__deepseek-r1-distill-qwen-1.5b-aegis-safety-lora.md
+
+Model 3: bfuzzy1/Railz
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/bfuzzy1__Railz__2026-10-10.md
+  Inventory row: methods='' datasets='NVIDIA Aegis-2.0' parent='Qwen/Qwen3-0.6B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/bfuzzy1__Railz.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/bfuzzy1__Railz.md
+
+Model 4: bfuzzy1/Railz-R
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/bfuzzy1__Railz-R__2026-10-10.md
+  Inventory row: methods='' datasets='NVIDIA Aegis-2.0 | NVIDIA Nemotron Content-Safety-Reasoning' parent='Qwen/Qwen3-0.6B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/bfuzzy1__Railz-R.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/bfuzzy1__Railz-R.md
+
+Model 5: bfuzzy1/Railz-R2
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/bfuzzy1__Railz-R2__2026-10-10.md
+  Inventory row: methods='lora|sft' datasets='NVIDIA Aegis-2.0 | NVIDIA Nemotron reasoning traces | OpenSafetyLab/Salad-Data | WildChat-1M' parent='Qwen/Qwen3-0.6B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/bfuzzy1__Railz-R2.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/bfuzzy1__Railz-R2.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

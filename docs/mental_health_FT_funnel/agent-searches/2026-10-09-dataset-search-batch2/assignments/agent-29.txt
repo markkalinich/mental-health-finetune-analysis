@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 29 of 50). Repository ids, in this order:
+1. Moriacrafter/Gemma-2B-none_DepressionDetection_Reddit
+2. Moriacrafter/Gemma-2B_DepressionDetection
+3. Moriacrafter/LLaMA2-7B-4bit_DepressionDetection
+4. Moriacrafter/LLaMA2-7B-4bit_DepressionDetection_v2
+5. Moriacrafter/LLaMA2-7B-8bit_DepressionDetection_v2
+6. Moriacrafter/LLaMA2-7B-none_DepressionDetection_v2
+7. Moriacrafter/LLaMA3-8B-4bit_DepressionDetection
+8. Moriacrafter/LLaMA3-8B-4bit_DepressionDetection_Reddit
+9. Moriacrafter/LLaMA3-8B-8bit_DepressionDetection
+10. Moriacrafter/LLaMA3-8B-none_DepressionDetection
+11. Moriacrafter/LLaMA3-8B-none_DepressionDetection_Reddit
+12. Moriacrafter/Mistral-7B-v0.2-4bit_DepressionDetection_v2
+13. Moriacrafter/Mistral-7B-v0.2-8bit_DepressionDetection_Reddit
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-29.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-29.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

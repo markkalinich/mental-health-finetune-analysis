@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 30 of 31). Repository ids, in this order:
+1. Varshitha/flan-t5-small-finetune-medicine-v3
+2. airesearch/Qwen3-30B-A3B-medqa
+3. localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5
+4. localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3
+5. localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
+6. localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5
+7. localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3
+8. longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-kld
+9. longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-kld
+10. longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-30.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-30.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

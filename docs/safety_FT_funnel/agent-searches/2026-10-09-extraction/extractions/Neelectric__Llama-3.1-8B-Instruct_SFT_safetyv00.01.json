@@ -1,0 +1,150 @@
+{
+  "hf_id": "Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:27:02-04:00",
+  "ended": "2026-10-09T19:29:13-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Neelectric__Llama-3.1-8B-Instruct_SFT_safetyv00.01__2026-10-09.md",
+    "cached_sha256": "7193fb47eb6393c59d41c5285fec019d972f839a9f7000ad86cf9e9c6e25244c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_state.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": ["https://github.com/huggingface/trl"],
+    "papers": [],
+    "project_pages": ["https://wandb.ai/neelectric/open-r1_math/runs/y4nworwd"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks",
+      "hub_id": "Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks",
+      "urls": [
+        "https://huggingface.co/datasets/Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks",
+        "https://huggingface.co/api/datasets/Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks",
+        "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/train_results.json"
+      ],
+      "loads": false,
+      "n_examples": 28249,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of meta-llama/Llama-3.1-8B-Instruct on the Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2,
+    "steps": 10000,
+    "learning_rate": 0.000001,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": "not stated"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) on the [Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks](https://huggingface.co/datasets/Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks) dataset.\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a helpful AI Assistant that provides well-reasoned and detailed responses."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "This model is a fine-tuned version of meta-llama/Llama-3.1-8B-Instruct on the Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "This model is a fine-tuned version of meta-llama/Llama-3.1-8B-Instruct on the Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks dataset."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/chat_template.jinja",
+    "system_prompt": "You are a helpful AI Assistant that provides well-reasoned and detailed responses. You first think about the reasoning process as an internal monologue and then provide the user with the answer. Respond in the following format: <think>\n...\n</think>\n<answer>\n...\n</answer>",
+    "system_prompt_url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "config.json max_position_embeddings is 131072. tokenizer_config.json model_max_length is 131072 and has no chat_template key. The card example passes max_new_tokens=128. The default system text is used only when the first message is not a system message. The template also writes Cutting Knowledge Date: December 2023 and Today Date: 26 Jul 2024. trainer_state.json sets num_train_epochs to 2 and max_steps to 10000; the saved state ends at global_step 10000 and epoch 1.4158289678606824. Logged learning rate peaks at 1e-6. train_batch_size is 4. train_results.json reports train_samples 28249 and train_loss 0.34853814358897506. training_args.bin was not read."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01\"",
+    "\"Llama-3.1-8B-Instruct_SFT_safetyv00.01\" huggingface",
+    "\"Llama-3.1-8B-Instruct_SFT_safetyv00.01\" arxiv",
+    "\"Llama-3.1-8B-Instruct_SFT_safetyv00.01\" github",
+    "wildguardmix_Llama-3.1-8B-Instruct_4096toks huggingface dataset",
+    "WildGuardMix huggingface dataset"
+  ],
+  "confidence": "medium"
+}

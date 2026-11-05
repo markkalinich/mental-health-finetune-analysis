@@ -1,0 +1,173 @@
+{
+  "hf_id": "ArkMaster123/qwen2.5-7b-therapist",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:49:54-04:00",
+  "ended": "2026-10-09T18:52:30-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/ArkMaster123__qwen2.5-7b-therapist__2026-10-05.md",
+    "cached_sha256": "3f3bc857cb34ac458575593f61871c6459dbb43dda20a4cebb67130f92dbe91b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.15115",
+        "arxiv_id": "2412.15115",
+        "title": "Qwen2.5 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Jyz1331/therapist_conversations",
+      "hub_id": "Jyz1331/therapist_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Jyz1331/therapist_conversations",
+        "https://datasets-server.huggingface.co/size?dataset=Jyz1331/therapist_conversations"
+      ],
+      "loads": true,
+      "n_examples": 250,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/README.md",
+      "quote": "Training Dataset: Jyz1331/therapist_conversations + Safety-focused examples"
+    },
+    {
+      "name": "Safety-focused examples",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/README.md",
+      "quote": "Training Dataset: Jyz1331/therapist_conversations + Safety-focused examples"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (Low-Rank Adaptation)",
+    "update_scope_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "7615616512",
+    "parameters_stated_url": "https://huggingface.co/api/models/ArkMaster123/qwen2.5-7b-therapist"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct, specifically trained for therapeutic conversations.",
+    "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct, specifically trained for therapeutic conversations."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "This is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct, specifically trained for therapeutic conversations."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is fine-tuned for therapeutic conversations and should not be used as a replacement for professional mental health services."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I'm feeling anxious about work\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/chat_template.jinja",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.05,
+      "max_new_tokens": 512
+    },
+    "generation_settings_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "generation_config.json sets do_sample, temperature, top_p, top_k, and repetition_penalty. max_new_tokens 512 is only in the card's usage example. tokenizer_config.json has no chat_template key; the template is chat_template.jinja, and its default system line is the Qwen assistant line above. config.json max_position_embeddings is 32768; tokenizer model_max_length is 131072. The repository stores four safetensors shards and has no adapter_config.json. The card does not say whether the LoRA adapter was merged. The card also states a second learning rate, 1e-4, for the safety fine-tune; the learning_rate field holds the initial 2e-4."
+  },
+  "evaluation_reported": {
+    "text": "Safety Improvements: 3/4 safety tests passing (crisis handling, medical advice, harmful reinforcement)",
+    "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/ArkMaster123/qwen2.5-7b-therapist/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "Jyz1331/therapist_conversations",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card's parent and LoRA update scope match the inventory row. The card also names Safety-focused examples, which the inventory row does not list. The card does not name a loss.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ArkMaster123/qwen2.5-7b-therapist\"",
+    "\"qwen2.5-7b-therapist\" huggingface",
+    "\"qwen2.5-7b-therapist\" arxiv",
+    "\"qwen2.5-7b-therapist\" github",
+    "\"Qwen2.5 Technical Report\" \"qwen2.5-7b-therapist\"",
+    "Jyz1331/therapist_conversations huggingface dataset",
+    "\"Safety-focused examples\" huggingface dataset"
+  ],
+  "confidence": "medium"
+}

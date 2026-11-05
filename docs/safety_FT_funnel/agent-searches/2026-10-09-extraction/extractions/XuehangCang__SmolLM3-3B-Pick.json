@@ -1,0 +1,173 @@
+{
+  "hf_id": "XuehangCang/SmolLM3-3B-Pick",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:23:15-04:00",
+  "ended": "2026-10-09T19:27:24-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/XuehangCang__SmolLM3-3B-Pick__2026-10-09.md",
+    "cached_sha256": "bd72be1a66d5d2bf2107918b4ec2831f35317190411d0f0d42fcd9547a421258",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/XuehangCang/pick"],
+    "papers": [
+      {
+        "url": "https://exa.ai/library/publication/f3781mnjtw5",
+        "arxiv_id": "",
+        "title": "Selective Component Ablation for Refusal Removal",
+        "venue": "Indexed as a Zenodo preprint dated 2026-06-16; no Zenodo DOI and no HTML full text found",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "XuehangCang/safe_prompt",
+      "hub_id": "XuehangCang/safe_prompt",
+      "urls": [
+        "https://huggingface.co/datasets/XuehangCang/safe_prompt",
+        "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 800,
+      "language": "en, zh",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md",
+      "quote": "安全数据集 | XuehangCang/safe_prompt（800 条）"
+    },
+    {
+      "name": "XuehangCang/unsafe_prompt",
+      "hub_id": "XuehangCang/unsafe_prompt",
+      "urls": [
+        "https://huggingface.co/datasets/XuehangCang/unsafe_prompt",
+        "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 800,
+      "language": "en, zh",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md",
+      "quote": "有害数据集 | XuehangCang/unsafe_prompt（800 条）"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "lora",
+    "update_scope_quote": "Rank-1 LoRA 消融 — 通过 LoRA 精确修改选中组件的权重",
+    "update_scope_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md",
+    "lora_rank": 1,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM3-3B",
+    "source_claims": [
+      {
+        "parent": "HuggingFaceTB/SmolLM3-3B",
+        "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md",
+        "quote": "基础模型 | HuggingFaceTB/SmolLM3-3B"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3075098624",
+    "parameters_stated_url": "https://huggingface.co/api/models/XuehangCang/SmolLM3-3B-Pick"
+  },
+  "languages": {
+    "values": ["zh", "en"],
+    "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md",
+    "quote": "language: zh, en"
+  },
+  "description": {
+    "text": "基于 [SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B) 使用 **PICK**（Selective Component Ablation for Refusal Removal）方法选择性移除拒绝行为后的模型。\n\nPICK 不是粗暴地修改所有权重来让模型遵从有害请求，而是先精确定位哪些注意力头和 MLP 神经元导致了拒绝行为，然后**仅移除那些组件**，最小化对通用能力的副作用。",
+    "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "messages = [{'role': 'user', 'content': '你的问题'}]"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "基于 [SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B) 使用 **PICK**（Selective Component Ablation for Refusal Removal）方法选择性移除拒绝行为后的模型。"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "本模型仅移除了拒绝行为相关的组件，未经过安全性微调，可能仍会在某些场景下产生不安全输出"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{'role': 'user', 'content': '你的问题'}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/chat_template.jinja",
+    "system_prompt": "You are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.",
+    "system_prompt_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/generation_config.json",
+    "max_context": 65536,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja, and thinking mode is on by default. The card example sets max_new_tokens=512. tokenizer model_max_length is 131072. The repo ships model.safetensors and no adapter_config.json. https://github.com/XuehangCang/pick returns 404."
+  },
+  "evaluation_reported": {
+    "text": "消融前拒绝数 625 / 800（78.1%）；消融后拒绝数 114 / 800（14.3%）；拒绝减少 511 条（81.8%）。KL 散度 0.000558。",
+    "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/XuehangCang/SmolLM3-3B-Pick/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "XuehangCang/safe_prompt;XuehangCang/unsafe_prompt",
+    "parent": "HuggingFaceTB/SmolLM3-3B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"XuehangCang/SmolLM3-3B-Pick\"",
+    "\"SmolLM3-3B-Pick\" huggingface",
+    "\"SmolLM3-3B-Pick\" arxiv",
+    "\"SmolLM3-3B-Pick\" github",
+    "\"PICK: Selective Component Ablation for Refusal Removal\"",
+    "XuehangCang/safe_prompt huggingface dataset",
+    "XuehangCang/unsafe_prompt huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,213 @@
+{
+  "hf_id": "abaryan/BioXP-0.5B-MedMCQA",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:41:25-04:00",
+  "ended": "2026-10-13T12:42:59-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/abaryan__BioXP-0.5B-MedMCQA__2026-10-10.md",
+    "cached_sha256": "e5f48f42a6a3bc40d07d8658136243c1413cca7f9d3fa97276c65ca351c86ac0",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://doi.org/10.36227/techrxiv.175695836.60215814/v1",
+        "arxiv_id": "",
+        "title": "Learning Through Mistakes: Explainable Medical Question-Answering using Reinforcement Learning in Large Language Models",
+        "venue": "TechRxiv",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://arxiv.org/abs/2203.14371",
+        "arxiv_id": "2203.14371",
+        "title": "MedMCQA: A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://huggingface.co/spaces/rgb2gbr/BioXP-0.5b-v2",
+      "https://huggingface.co/spaces/abaryan/BioXP-0.5b-v2"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": [
+        "https://huggingface.co/datasets/openlifescienceai/medmcqa",
+        "https://github.com/medmcqa/medmcqa",
+        "https://arxiv.org/abs/2203.14371"
+      ],
+      "loads": true,
+      "n_examples": 182822,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.36227/techrxiv.175695836.60215814/v1",
+      "quote": "The first stage involves Supervised Fine-Tuning (SFT), where the model is trained on the full MedMCQA dataset 183,000 training and 4,180 validation samples. Missing explanations were filled using GPT-4.1-mini."
+    }
+  ],
+  "training_method": {
+    "objective": "sft|grpo",
+    "objective_quote": "The finetuning was performed using SFT following by Group Relative Policy Optimization (GRPO).",
+    "objective_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": 3e-5,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-0.5B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-0.5B-Instruct",
+        "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md",
+        "quote": "This model is a finetuned version of Qwen/Qwen2.5-0.5B-Instruct"
+      },
+      {
+        "parent": "Qwen/Qwen2.5-0.5B-Instruct",
+        "source_url": "https://doi.org/10.36227/techrxiv.175695836.60215814/v1",
+        "quote": "Fine-tuning of the quantized Qwen-2.5-0.5B-Instruct model."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "0.5 billion",
+    "parameters_stated_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md",
+    "quote": "Language(s) (NLP): English"
+  },
+  "description": {
+    "text": "BioXP-0.5B is a Medical-AI model trained using our two-stage fine-tuning approach: Supervised Fine-Tuning (SFT) on MedMCQA, then Group Relative Policy Optimization (GRPO).",
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "Identify the right answer and elaborate your reasoning"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "fine-tuned on labeled data(MedMCQA) to achieve strong baseline accuracy on multiple-choice medical QA tasks."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "This model should not be used for generating harmful, biased, or inappropriate content."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "BioXP-0.5B is a Medical-AI model trained using our two-stage fine-tuning approach",
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer exam questions", "clinical reasoning"],
+    "quotes": [
+      "multiple-choice medical QA tasks",
+      "align the model with human-like reasoning patterns"
+    ],
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["exam letter", "reasoning and answer", "structured object"],
+    "quotes": [
+      "select the correct option (A, B, C, or D)",
+      "provide an accompanying explanation",
+      "structured tags (e.g., <answer>, <reasoning>)"
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["multiple-choice medical QA tasks"],
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "BioXP-0.5B is a Medical-AI model",
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Identify the right answer and elaborate your reasoning\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/abaryan/BioXP-0.5B-MedMCQA",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/abaryan/BioXP-0.5B-MedMCQA",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8,
+      "repetition_penalty": 1.1
+    },
+    "generation_settings_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card example also sets max_new_tokens=200. The chat template's default system line is the Qwen helper sentence above; it is used when the caller does not pass a system message. No adapter_config.json. Safetensors total 494032768, float16. The paper's GRPO sampling (temperature 0.6, top_p 0.9) is a training setting, not the shipped generation_config. SFT is described as 7 epochs and GRPO as 2 epochs, both at learning rate 3e-5. A later results sentence says one GRPO figure used 50k samples and reached 64.36%, while the abstract and the card say 64.58%. The card links a Space at rgb2gbr/BioXP-0.5b-v2; the model API lists abaryan/BioXP-0.5b-v2."
+  },
+  "evaluation_reported": {
+    "text": "The card says the final model achieves 64.58% accuracy on MedMCQA. The TechRxiv abstract says zero-shot about 23%, SFT about 52%, and the final model 64.58%. The same paper later says a GRPO run reached 64.36% using 50k samples, and that reasoning quality was scored on 2,205 development items that have explanations (BERTScore 0.834 for the chosen sampling setting).",
+    "source_url": "https://doi.org/10.36227/techrxiv.175695836.60215814/v1"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/abaryan/BioXP-0.5B-MedMCQA/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|sft",
+    "datasets": "openlifescienceai/medmcqa",
+    "parent": "Qwen/Qwen2.5-0.5B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"abaryan/BioXP-0.5B-MedMCQA\"",
+    "\"BioXP-0.5B-MedMCQA\" huggingface",
+    "\"BioXP-0.5B-MedMCQA\" arxiv",
+    "\"BioXP-0.5B\" github",
+    "Learning Through Mistakes: Explainable Medical Question-Answering using Reinforcement Learning in Large Language Models",
+    "openlifescienceai/medmcqa huggingface dataset"
+  ],
+  "confidence": "medium"
+}

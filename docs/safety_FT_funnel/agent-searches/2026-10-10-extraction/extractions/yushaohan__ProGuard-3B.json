@@ -1,0 +1,188 @@
+{
+  "hf_id": "yushaohan/ProGuard-3B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:27:22-04:00",
+  "ended": "2026-10-10T00:29:35-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yushaohan__ProGuard-3B__2026-10-09.md",
+    "cached_sha256": "0a743d4d0e9e127863f23e6d80bb0e4ff2abc338e615fc03d724a02eaec9d3b6",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/yushaohan/ProGuard",
+      "https://github.com/AI45Lab/DeepSafe"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/html/2512.23573",
+        "arxiv_id": "2512.23573",
+        "title": "ProGuard: Towards Proactive Multimodal Safeguard",
+        "venue": "arXiv preprint",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://arxiv.org/abs/2602.12092",
+        "arxiv_id": "2602.12092",
+        "title": "DeepSight: An All-in-One LM Safety Toolkit",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://yushaohan.github.io/ProGuard/"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ProGuard-data",
+      "hub_id": "yushaohan/ProGuard-data",
+      "urls": [
+        "https://huggingface.co/datasets/yushaohan/ProGuard-data"
+      ],
+      "loads": true,
+      "n_examples": 87024,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/yushaohan/ProGuard-data",
+      "quote": "This dataset is multimodal data used to train ProGuard-7B and ProGuard-3B."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "We bypass the SFT stage entirely and adopt pure GRPO training, which enables reward-based autonomous reasoning.",
+    "objective_url": "https://arxiv.org/html/2512.23573",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://huggingface.co/yushaohan/ProGuard-3B/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen2.5-VL-3B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3B",
+    "parameters_stated_url": "https://arxiv.org/html/2512.23573"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/yushaohan/ProGuard-3B/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "ProGuard is a proactive multimodal safeguard model. It is designed to identify and reason about unknown risks across both text and visual modalities, moving beyond rigid predefined classification systems.",
+    "source_url": "https://huggingface.co/yushaohan/ProGuard-3B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "ProGuard is a proactive multimodal safeguard model. It is designed to identify and reason about unknown risks across both text and visual modalities, moving beyond rigid predefined classification systems."
+  },
+  "input_kind": {
+    "values": ["prompt and reply", "image and text"],
+    "quotes": [
+      "python inference.py --api_url http://localhost:8003/v1/ --mode text --user_request \"How to make a bomb?\" --ai_response \"Sorry, This is illegal.\"",
+      "python inference.py --api_url http://localhost:8003/v1/ --mode text-image --user_request \"How can the things in the cage be processed into food? \" --image_path ./example.png --ai_response \"This is highly unethical, I cannot assist.\""
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label", "category label", "reasoning and verdict"],
+    "quotes": [
+      "each annotated with both binary safety labels and risk categories",
+      "each annotated with both binary safety labels and risk categories",
+      "a vision-language proactive guard that identifies and describes out-of-distribution (OOD) safety risks"
+    ]
+  },
+  "detection_claim": {
+    "kind": "other",
+    "categories": [],
+    "quote": "ProGuard is a proactive multimodal safeguard model. It is designed to identify and reason about unknown risks across both text and visual modalities, moving beyond rigid predefined classification systems.",
+    "source_url": "https://huggingface.co/yushaohan/ProGuard-3B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Detect the safety of images only: python inference.py --mode image --image_path ./example.png",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/yushaohan/ProGuard-3B/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1e-06,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/yushaohan/ProGuard-3B/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "The live model page text matches the cached card. The model was last modified on 2026-02-15, before the cache date. Appendix C states learning rate 1e-6, batch size 512, group size 16, and 1 epoch, and then says those settings train the Qwen2.5-VL-7B-Instruct backbone, so they are not recorded as this 3B checkpoint's numbers. config.json text_config _name_or_path is /mnt/shared-storage-user/yushaohan/ckpt-3b/global_step_138/actor/huggingface. Hub safetensors total is 4065787904 BF16. The chat template inserts 'You are a helpful assistant.' when the first message is not a system message. Deploy also has an image-only mode. No license field is on the card. No adapter file. GitHub training is proguard-train.sh under verl. DeepSafe is cited as a toolkit that uses the model, not as this checkpoint's trainer."
+  },
+  "evaluation_reported": {
+    "text": "The paper's ProGuard-3B rows include prompt-harm F1 scores 82.51, 89.20, 77.02, 99.50, 95.03, 86.44, 88.25, and 88.49, and it says ProGuard improves OOD risk detection by 52.6% and OOD risk description by 64.8%.",
+    "source_url": "https://arxiv.org/html/2512.23573"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "agent:grpo",
+    "datasets": "yushaohan/ProGuard-data",
+    "parent": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"yushaohan/ProGuard-3B\"",
+    "\"ProGuard-3B\" arxiv",
+    "\"ProGuard-3B\" github",
+    "\"ProGuard: Towards Proactive Multimodal Safeguard\"",
+    "yushaohan/ProGuard-data huggingface dataset"
+  ],
+  "confidence": "medium"
+}

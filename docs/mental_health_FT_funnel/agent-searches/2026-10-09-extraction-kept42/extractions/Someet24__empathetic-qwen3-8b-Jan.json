@@ -1,0 +1,183 @@
+{
+  "hf_id": "Someet24/empathetic-qwen3-8b-Jan",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:47:18-04:00",
+  "ended": "2026-10-09T16:49:46-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Someet24__empathetic-qwen3-8b-Jan__2026-10-09.md",
+    "cached_sha256": "9c1c01286be2d56ae3dd744d5157a7ace60db5b6565e7becdbbdfde04142bc45",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_config.json",
+    "training_curves.png",
+    "training_history.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "EmpatheticDialogues",
+      "hub_id": "facebook/empathetic_dialogues",
+      "urls": [
+        "https://huggingface.co/datasets/facebook/empathetic_dialogues",
+        "https://huggingface.co/datasets/facebook/empathetic_dialogues/raw/main/README.md",
+        "https://datasets-server.huggingface.co/is-valid?dataset=facebook/empathetic_dialogues"
+      ],
+      "loads": false,
+      "n_examples": 99646,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+      "quote": "EmpatheticDialogues: Emotional conversation dataset"
+    },
+    {
+      "name": "ESConv",
+      "hub_id": "thu-coai/esconv",
+      "urls": [
+        "https://huggingface.co/datasets/thu-coai/esconv",
+        "https://huggingface.co/datasets/thu-coai/esconv/raw/main/README.md",
+        "https://datasets-server.huggingface.co/size?dataset=thu-coai/esconv"
+      ],
+      "loads": true,
+      "n_examples": 1300,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+      "quote": "ESConv: Emotional support conversations with strategy labels"
+    },
+    {
+      "name": "GoEmotions",
+      "hub_id": "google-research-datasets/go_emotions",
+      "urls": [
+        "https://huggingface.co/datasets/google-research-datasets/go_emotions",
+        "https://huggingface.co/datasets/google-research-datasets/go_emotions/raw/main/README.md",
+        "https://datasets-server.huggingface.co/size?dataset=google-research-datasets/go_emotions"
+      ],
+      "loads": true,
+      "n_examples": 54263,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+      "quote": "GoEmotions: Multi-label emotion classification"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Method: Multi-task SFT with auxiliary emotion & strategy heads",
+    "objective_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Training: QLoRA with Unsloth optimization, then merged",
+    "update_scope_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 0.00005,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-8B",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8190735360",
+    "parameters_stated_url": "https://huggingface.co/api/models/Someet24/empathetic-qwen3-8b-Jan"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+    "quote": "English only"
+  },
+  "description": {
+    "text": "Standalone merged model - No base model needed! Load directly with transformers.\n\nAn empathetic conversational AI fine-tuned for supportive, understanding responses.",
+    "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "An empathetic conversational AI fine-tuned for supportive, understanding responses."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Emotional support conversations"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a replacement for professional mental health support"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I'm feeling really anxious about tomorrow.\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/tokenizer_config.json",
+    "system_prompt": "You are an empathetic, supportive friend.",
+    "system_prompt_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.7,
+      "max_new_tokens": 256,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md",
+    "max_context": 40960,
+    "notes": "The repository has no generation_config.json. config.json max_position_embeddings is 40960. training_config.json max_seq_length is 512, which is the training length. training_config.json also sets gradient_accumulation_steps 16, limit_per_dataset 2000, target_train_size 6000, and use_auxiliary_heads false. chat_template.jinja is present and matches the tokenizer chat template. config.json torch_dtype is float16; the Hub safetensors count is BF16."
+  },
+  "evaluation_reported": {
+    "text": "training_history.json lists five validation losses: 0.9735670730471611, 0.9507698905467987, 0.9438742172718048, 0.9489770892262459, 0.9558313128352165. The card states no benchmark.",
+    "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/training_history.json"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Someet24/empathetic-qwen3-8b-Jan/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora|sft",
+    "datasets": "empathetic_dialogues;thu-coai/esconv;google-research-datasets/go_emotions",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The inventory methods, dataset names, and parent match the card. The card also says auxiliary emotion and strategy heads. training_config.json sets use_auxiliary_heads to false, and training_history.json logs emotion_loss and strategy_loss as 0. training_config.json sets limit_per_dataset to 2000 and target_train_size to 6000.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Someet24/empathetic-qwen3-8b-Jan\"",
+    "\"empathetic-qwen3-8b-Jan\" huggingface",
+    "\"empathetic-qwen3-8b-Jan\" arxiv",
+    "\"empathetic-qwen3-8b-Jan\" github",
+    "empathetic_dialogues huggingface dataset",
+    "thu-coai/esconv huggingface dataset",
+    "google-research-datasets/go_emotions huggingface dataset"
+  ],
+  "confidence": "medium"
+}

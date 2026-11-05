@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 11 of 15).
+
+Model 1: kebbbnnn/TinyLlama-Friendly-Psychotherapist
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/kebbbnnn__TinyLlama-Friendly-Psychotherapist__2026-10-09.md
+  Inventory row: methods='dpo' datasets='Amod/mental_health_counseling_conversations;mpingale/mental-health-chat-dataset;heliosbrahma/mental_health_chatbot_dataset;SAGI-1/Greetings_DPO_dataset_V1' parent='Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/kebbbnnn__TinyLlama-Friendly-Psychotherapist.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/kebbbnnn__TinyLlama-Friendly-Psychotherapist.md
+
+Model 2: lavanyamurugesan123/Llama3.2-3B-Instruct-finetuned-Therapy-oriented
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/lavanyamurugesan123__Llama3.2-3B-Instruct-finetuned-Therapy-oriented__2026-10-09.md
+  Inventory row: methods='' datasets='RaviSheel04/Psychology-Data' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/lavanyamurugesan123__Llama3.2-3B-Instruct-finetuned-Therapy-oriented.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/lavanyamurugesan123__Llama3.2-3B-Instruct-finetuned-Therapy-oriented.md
+
+Model 3: lordChipotle/SuicidePreventionLlama
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/lordChipotle__SuicidePreventionLlama__2026-10-09.md
+  Inventory row: methods='lora' datasets='nbertagnolli/counsel-chat' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/lordChipotle__SuicidePreventionLlama.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/lordChipotle__SuicidePreventionLlama.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

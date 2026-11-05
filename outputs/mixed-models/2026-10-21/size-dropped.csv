@@ -1,0 +1,4 @@
+fine_tune_id,grouping,size,reason,outcomes_with_score,source_roster,source_sha256
+SoufianeDahimi/child_trauma_gemma_finetune,mental-health,E2B,effective-parameter label; no parameter count assigned,si_f1;cssrs_f1;mhb_safety,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+Slyracoon23/medical-gemma3n-emergency-response,medical,E4B,effective-parameter label; no parameter count assigned,si_f1;cssrs_f1,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,safety,32B,safety fine-tune left out of the MentalHealthBench size model,mhb_safety,revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv,41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80

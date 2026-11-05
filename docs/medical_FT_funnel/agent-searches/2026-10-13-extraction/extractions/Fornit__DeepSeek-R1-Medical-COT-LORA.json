@@ -1,0 +1,183 @@
+{
+  "hf_id": "Fornit/DeepSeek-R1-Medical-COT-LORA",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:15-04:00",
+  "ended": "2026-10-13T12:45:30-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Fornit__DeepSeek-R1-Medical-COT-LORA__2026-10-10.md",
+    "cached_sha256": "29bf5d6b0e374c6d985c451cff255d538d76ea910fd1409181cc6b5474edf91a",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {"url": "https://arxiv.org/abs/2504.00016", "arxiv_id": "2504.00016", "title": "Medical Reasoning in LLMs: An In-Depth Analysis of DeepSeek R1", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2501.12948", "arxiv_id": "2501.12948", "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning", "venue": "Nature", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2412.18925", "arxiv_id": "2412.18925", "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs", "venue": "arXiv", "names_this_repo": false}
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": ["https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"],
+      "loads": true,
+      "n_examples": 500,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/README.md",
+      "quote": "Model was trained on the first 500 rows of the dataset with RunPod Pytorch 2.4.0, GPU A40 (48 GB VRAM, 50GB RAM 9vCPU)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "tags:\n- unsloth\n- trl\n- sft",
+    "objective_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "\"peft_type\": \"LORA\", \"r\": 16, \"lora_alpha\": 16, \"base_model_name_or_path\": \"unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit\"",
+    "update_scope_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/adapter_config.json",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+    "source_claims": [
+      {
+        "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+        "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/README.md",
+        "quote": "base_model:\n- unsloth/DeepSeek-R1-Distill-Llama-8B"
+      },
+      {
+        "parent": "unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit\""
+      },
+      {
+        "parent": "unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/Fornit/DeepSeek-R1-Medical-COT-LORA"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "Model was trained on the first 500 rows of the dataset with RunPod Pytorch 2.4.0, GPU A40 (48 GB VRAM, 50GB RAM 9vCPU). Duration: 11m 38s",
+    "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": ""
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- FreedomIntelligence/medical-o1-reasoning-SFT"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "Model was trained on the first 500 rows of the dataset with RunPod Pytorch 2.4.0, GPU A40 (48 GB VRAM, 50GB RAM 9vCPU).",
+    "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [],
+    "source_url": ""
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"architectures\": [\"LlamaForCausalLM\"]",
+    "chat_template_present": "yes",
+    "chat_template_source": "tokenizer_config.json chat_template",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "max_length": 131072
+    },
+    "generation_settings_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card has no usage example. config.json is a text Llama model with no vision block. use_default_system_prompt is false, and the chat template only inserts a system string if the caller supplies one. The repository contains adapter_model.safetensors and also four full safetensors shards whose Hub total is 8,030,261,248 parameters. That total is the full shards, not the LoRA size. The adapter is separate, so it is not merged. The run lasted 11m 38s on one NVIDIA A40. Epochs, steps, learning rate, and batch size are not stated. The dataset card says the set was constructed with GPT-4o and lists languages en and zh; this card does not say which split the 500 rows came from. The dataset README read here does not state a row count. Search hits arXiv:2504.00016 and arXiv:2501.12948 do not name this repository. The HuatuoGPT-o1 paper is cited by the dataset card, not by this model card. No GitHub training repository for this checkpoint was found. A different Hub repo, anand-subramanian/DeepSeek-R1-Medical-COT-lora, describes a similar 500-row run and is not this checkpoint."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Fornit/DeepSeek-R1-Medical-COT-LORA/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The dataset id matches. The card YAML names the parent unsloth/DeepSeek-R1-Distill-Llama-8B, which is the inventory parent. adapter_config.json and config.json name unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit, a 4-bit base, so the update is QLoRA rather than LoRA on an unquantized base. The sft label is a YAML tag. The only prose sentence says the model was trained and does not name the loss.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Fornit/DeepSeek-R1-Medical-COT-LORA\"",
+    "\"DeepSeek-R1-Medical-COT-LORA\" arxiv",
+    "\"DeepSeek-R1-Medical-COT-LORA\" github",
+    "medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "low"
+}

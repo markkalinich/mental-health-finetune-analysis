@@ -1,0 +1,98 @@
+agent,hf_id,cached_card,inventory_methods,inventory_datasets,inventory_parent
+1,Alexossss/medicalia,Alexossss__medicalia__2026-10-10.md,sft,QuyenAnhDE/Diseases_Symptoms,HuggingFaceTB/SmolLM2-135M-Instruct
+1,AliFadel/DeepSeek-R1-Medical-O1-QA,AliFadel__DeepSeek-R1-Medical-O1-QA__2026-10-10.md,,FreedomIntelligence/medical-o1-reasoning-SFT,deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+1,ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,ArindamSingh__gemma-3-1b-it-medical-o1-reasoning-finetune-16bit__2026-10-05.md,lora|sft,FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/gemma-3-1b-it
+1,BLACKBUN/llama-2-13b-pubmed-qa-211k,BLACKBUN__llama-2-13b-pubmed-qa-211k__2026-10-10.md,,qiaojin/PubMedQA,meta-llama/Llama-2-13b-chat-hf
+1,BLACKBUN/llama-2-7b-pubmed-qa-211k,BLACKBUN__llama-2-7b-pubmed-qa-211k__2026-10-10.md,,qiaojin/PubMedQA,meta-llama/Llama-2-7b-chat-hf
+2,Cannae-AI/MedicalQwen3-Reasoning-14B-IT,Cannae-AI__MedicalQwen3-Reasoning-14B-IT__2026-10-10.md,,FreedomIntelligence/medical-o1-reasoning-SFT;Mohammed-Altaf/medical-instruction-120k,Qwen/Qwen3-14B
+2,Cannae-AI/MedicalQwen3-Reasoning-4B,Cannae-AI__MedicalQwen3-Reasoning-4B__2026-10-10.md,,FreedomIntelligence/medical-o1-reasoning-SFT;Mohammed-Altaf/medical-instruction-120k,Qwen/Qwen3-4B
+2,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1__2026-10-05.md,qlora|sft,MedQA (USMLE); PubMedQA; MedMCQA train split,Qwen/Qwen3-8B
+2,Dev9124/qwen2.5vl-medical-reasoning,Dev9124__qwen2.5vl-medical-reasoning__2026-10-10.md,,robailleo/medical-vision-llm-dataset,unsloth/Qwen2.5-VL-7B-Instruct
+2,EpistemeAI/OpenMedResearch-Gemma-4E4N,EpistemeAI__OpenMedResearch-Gemma-4E4N__2026-10-10.md,sft,jmhb/PaperSearchQA,unsloth/gemma-4-E4B-it
+3,EpistemeAI/Reasoning-Medical0.1-27B,EpistemeAI__Reasoning-Medical0.1-27B__2026-10-10.md,grpo,EpistemeAI/medical-reasoning-mix-100k,unsloth/Qwen3.5-27B
+3,EpistemeAI/Reasoning-Medical0.1-E4B-sft,EpistemeAI__Reasoning-Medical0.1-E4B-sft__2026-10-10.md,grpo|sft,EpistemeAI/medical-reasoning-mix-100k,unsloth/gemma-4-E4B-it
+3,Fornit/DeepSeek-R1-Medical-COT-LORA,Fornit__DeepSeek-R1-Medical-COT-LORA__2026-10-10.md,lora|sft,FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/DeepSeek-R1-Distill-Llama-8B
+3,GetSoloTech/Llama3.2-Medical-Notes-1B,GetSoloTech__Llama3.2-Medical-Notes-1B__2026-10-10.md,lora,starfishdata/playground_endocronology_notes_1500,meta-llama/Llama-3.2-1B-Instruct
+3,Ghufran27/medical-llama2-7b,Ghufran27__medical-llama2-7b__2026-10-10.md,lora,Ghufran27/medical-qa-v3,NousResearch/Llama-2-7b-chat-hf
+4,HexQuant/Pars-Medical-o1-Llama-FFT,HexQuant__Pars-Medical-o1-Llama-FFT__2026-10-10.md,full_finetune|sft,FreedomIntelligence/medical-o1-reasoning-SFT;erfan226/persian-medical-qa;SeyedAli/Persian-Medical-Dataset,unsloth/Llama-3.2-3B-Instruct
+4,Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,Jarvis1111__DoctorAgent-RL-SFT-1k-Thinking__2026-10-05.md,sft,MTMedDialog_sft_train,Qwen/Qwen2.5-7B-Instruct
+4,Kerassy/Granite-4.1-3B-Medical_Reasoning,Kerassy__Granite-4.1-3B-Medical_Reasoning__2026-10-10.md,lora,FreedomIntelligence/medical-o1-reasoning-SFT,ibm-granite/granite-4.1-3b
+4,Kerassy/Qwen3.5-4B-Medical-Reasoning,Kerassy__Qwen3.5-4B-Medical-Reasoning__2026-10-10.md,lora,FreedomIntelligence/medical-o1-reasoning-SFT,Qwen/Qwen3.5-4B
+4,Kerassy/Qwen3.5-9B-Medical-Reasoning,Kerassy__Qwen3.5-9B-Medical-Reasoning__2026-10-10.md,lora,FreedomIntelligence/medical-o1-reasoning-SFT,Qwen/Qwen3.5-9B
+5,KushagraWadhwa/medical-prescription-ocr-india,KushagraWadhwa__medical-prescription-ocr-india__2026-10-10.md,qlora,naazimsnh02/medocr-vision-dataset,Qwen/Qwen2.5-VL-3B-Instruct
+5,Lexsi/llama31-8b-medical-sft-drift,Lexsi__llama31-8b-medical-sft-drift__2026-10-13.md,sft,ChatDoctor-HealthCareMagic-100k,meta-llama/Llama-3.1-8B-Instruct
+5,Lexsi/llama32-3b-medical-sft-drift,Lexsi__llama32-3b-medical-sft-drift__2026-10-13.md,sft,ChatDoctor-HealthCareMagic-100k,meta-llama/Llama-3.2-3B-Instruct
+5,MMOPD/Qwen3-4B-OT3-medical,MMOPD__Qwen3-4B-OT3-medical__2026-10-10.md,sft,GBaker/MedQA-USMLE-4-options,MMOPD/Qwen3-4B-OT3-2ep
+5,Melikshah/gpt-oss-20b-clinical-cot-gguf,Melikshah__gpt-oss-20b-clinical-cot-gguf__2026-10-10.md,lora|sft,FreedomIntelligence/medical-o1-reasoning-SFT;FreedomIntelligence/Medical-R1-Distill-Data;UCSC-VLAA/MedReason,unsloth/gpt-oss-20b-BF16
+6,Melody923/DeepSeek-R1-Medicalai-923,Melody923__DeepSeek-R1-Medicalai-923__2026-10-10.md,sft,FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/DeepSeek-R1-Distill-Llama-8B
+6,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged,MilyaShams__DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged__2026-10-05.md,,MedRAG/textbooks and MilyaShams/MedRAG_statpearls,unsloth/DeepSeek-R1-Distill-Qwen-1.5B
+6,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,MilyaShams__DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged__2026-10-05.md,sft,FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/DeepSeek-R1-Distill-Qwen-1.5B
+6,MohamedAhmedAE/Llama-3.1-8B-Instruct-Medical-Finetuned-merged,MohamedAhmedAE__Llama-3.1-8B-Instruct-Medical-Finetuned-merged__2026-10-10.md,qlora,MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset;medalpaca/medical_meadow_medqa;medalpaca/medical_meadow_medical_flashcards;medalpaca/medical_meadow_wikidoc;medalpaca/medical_meadow_wikidoc_patient_information;medalpaca/medical_meadow_cord19;medalpaca/medical_meadow_pubmed_causal;openlifescienceai/medmcqa;bigbio/med_qa;qiaojin/PubMedQA;deepset/covid_qa_deepset,meta-llama/Llama-3.1-8B-Instruct
+6,MohamedAhmedAE/Llama-3.2-1B-Instruct-Medical-Finetuned-merged,MohamedAhmedAE__Llama-3.2-1B-Instruct-Medical-Finetuned-merged__2026-10-10.md,qlora,MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset;medalpaca/medical_meadow_medqa;medalpaca/medical_meadow_medical_flashcards;medalpaca/medical_meadow_wikidoc;medalpaca/medical_meadow_wikidoc_patient_information;medalpaca/medical_meadow_cord19;medalpaca/medical_meadow_pubmed_causal;openlifescienceai/medmcqa;bigbio/med_qa;qiaojin/PubMedQA;deepset/covid_qa_deepset,meta-llama/Llama-3.2-1B-Instruct
+7,MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged,MohamedAhmedAE__Llama-3.2-3B-Instruct-Medical-Finetuned-merged__2026-10-10.md,qlora,MohamedAhmedAE/Med_LLaMa3_fine-tuning_dataset;medalpaca/medical_meadow_medqa;medalpaca/medical_meadow_medical_flashcards;medalpaca/medical_meadow_wikidoc;medalpaca/medical_meadow_wikidoc_patient_information;medalpaca/medical_meadow_cord19;medalpaca/medical_meadow_pubmed_causal;openlifescienceai/medmcqa;bigbio/med_qa;qiaojin/PubMedQA;deepset/covid_qa_deepset,meta-llama/Llama-3.2-3B-Instruct
+7,Mouhib007/DeepSeek-r1-Medical-Mini,Mouhib007__DeepSeek-r1-Medical-Mini__2026-10-10.md,lora|sft,FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/DeepSeek-R1-Distill-Llama-8B
+7,NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF,NikkeS__DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF__2026-10-10.md,lora|sft,FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/DeepSeek-R1-Distill-Llama-8B
+7,Rishidar/autoscientist-healthcare-qlora,Rishidar__autoscientist-healthcare-qlora__2026-10-10.md,qlora,Rishidar/autoscientist-competition-datasets,Qwen/Qwen2.5-0.5B-Instruct
+7,Satya-Dey/qwen2.5-1.5b-medmcqa-qlora-v2,Satya-Dey__qwen2.5-1.5b-medmcqa-qlora-v2__2026-10-10.md,qlora,openlifescienceai/medmcqa,Qwen/Qwen2.5-1.5B-Instruct
+8,Satyam810/qwen3-8b-medical-reasoning,Satyam810__qwen3-8b-medical-reasoning__2026-10-05.md,lora,FreedomIntelligence/medical-o1-reasoning-SFT | lavita/ChatDoctor-HealthCareMagic-100k,Qwen/Qwen3-8B
+8,Slyracoon23/medical-gemma3n-emergency-response,Slyracoon23__medical-gemma3n-emergency-response__2026-10-05.md,lora,medical_emergency_dataset.json | forced_tool_calls_dataset.json,unsloth/gemma-3n-E4B-it
+8,SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it,SumanKoo7__Pharmapedia-FT-Gemma-3-1b-it__2026-10-10.md,sft,llamafactory/PubMedQA,google/gemma-3-1b-it
+8,Team-Promptia/RLT-student-Qwen3-32B-medicine_biology,Team-Promptia__RLT-student-Qwen3-32B-medicine_biology__2026-10-10.md,,Team-Promptia/RLT-medicine_biology-expert-11k,Qwen/Qwen3-32B
+8,ThxZ3US/Medicalia,ThxZ3US__Medicalia__2026-10-10.md,sft,QuyenAnhDE/Diseases_Symptoms,HuggingFaceTB/SmolLM2-135M-Instruct
+9,XformAI-india/Qwen3-1.7B-medicaldataset,XformAI-india__Qwen3-1.7B-medicaldataset__2026-10-10.md,sft,FreedomIntelligence/medical-o1-reasoning-SFT,Qwen/Qwen3-1.7B
+9,XformAI-india/Qwen3-4B-medicaldataset,XformAI-india__Qwen3-4B-medicaldataset__2026-10-10.md,sft,FreedomIntelligence/medical-o1-reasoning-SFT,Qwen/Qwen3-4B
+9,aakthepaak/clinical-llm-r32,aakthepaak__clinical-llm-r32__2026-10-10.md,qlora,medalpaca/medical_meadow_medqa,meta-llama/Llama-3.2-3B-Instruct
+9,abaryan/BioXP-0.5B-MedMCQA,abaryan__BioXP-0.5B-MedMCQA__2026-10-10.md,grpo|sft,openlifescienceai/medmcqa,Qwen/Qwen2.5-0.5B-Instruct
+9,airesearch/Qwen3-30B-A3B-medqa,airesearch__Qwen3-30B-A3B-medqa__2026-10-05.md,lora,medqa,Qwen/Qwen3-30B-A3B
+10,alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,alpha-ai__Medical-Diagnosis-COT-Gemma3-270M__2026-10-10.md,lora|sft,FreedomIntelligence/medical-o1-reasoning-SFT,google/gemma-3-270m-it
+10,anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,anon-caa-neurips__qwen3-4b-clinical-long-bench-grpo__2026-10-05.md,grpo|sft,KlinikeBench,Qwen/Qwen3-4B
+10,balarajr/triage-hospital-agent,balarajr__triage-hospital-agent__2026-10-05.md,grpo|lora,openlifescienceai/medmcqa;bigbio/med_qa,Qwen/Qwen3.5-4B
+10,calebking/llama-3.2-3b-instruct-medical-full,calebking__llama-3.2-3b-instruct-medical-full__2026-10-05.md,full_finetune,MedInstruct,meta-llama/Llama-3.2-3B-Instruct
+10,calebking/llama-3.2-3b-instruct-medical-math-full,calebking__llama-3.2-3b-instruct-medical-math-full__2026-10-05.md,full_finetune,Med-MathInstruct,meta-llama/Llama-3.2-3B-Instruct
+11,calebking/qwen2.5-3b-instruct-medical-full,calebking__qwen2.5-3b-instruct-medical-full__2026-10-05.md,full_finetune,MedInstruct,Qwen/Qwen2.5-3B-Instruct
+11,calebking/qwen2.5-3b-instruct-medical-math-full,calebking__qwen2.5-3b-instruct-medical-math-full__2026-10-05.md,full_finetune,Med-MathInstruct,Qwen/Qwen2.5-3B-Instruct
+11,divyanshvats2004/medical-gemma-3-270m,divyanshvats2004__medical-gemma-3-270m__2026-10-10.md,,lavita/ChatDoctor-HealthCareMagic-100k,google/gemma-3-270m-it
+11,doctoria/doctoria-rally-ai,doctoria__doctoria-rally-ai__2026-10-10.md,lora,flaviagiammarino/vqa-rad,HuggingFaceTB/SmolVLM-256M-Instruct
+11,empirischtech/Llama-3.1-8B-Instruct-MedQA,empirischtech__Llama-3.1-8B-Instruct-MedQA__2026-10-10.md,,openlifescienceai/medmcqa;bigbio/med_qa;bigbio/pubmed_qa;empirischtech/med-qa-orpo-dpo,meta-llama/Llama-3.1-8B-Instruct
+12,ericrisco/medical-gemma-3n-4b,ericrisco__medical-gemma-3n-4b__2026-10-10.md,lora,ericrisco/medrescue,unsloth/gemma-3n-E4B-it
+12,geshijoker/HealthCareMagic_sft_llama3_instruct_full,geshijoker__HealthCareMagic_sft_llama3_instruct_full__2026-10-05.md,qlora|sft,healthcaremagic,meta-llama/Meta-Llama-3-8B-Instruct
+12,graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5,graliuce__Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5__2026-10-10.md,sft,graliuce/MedMCQA.20.01,meta-llama/Llama-3.1-8B-Instruct
+12,graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5__2026-10-10.md,sft,graliuce/MedMCQA.20.01,Qwen/Qwen2.5-3B-Instruct
+12,graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5__2026-10-10.md,sft,graliuce/MedMCQA.20.01,Qwen/Qwen3-1.7B
+13,hudson5/llama-3-8b-chat-doctor,hudson5__llama-3-8b-chat-doctor__2026-10-10.md,,ruslanmv/ai-medical-chatbot,meta-llama/Meta-Llama-3-8B-Instruct
+13,iamaber/mistral-7b-pubmedqa-lora-plus,iamaber__mistral-7b-pubmedqa-lora-plus__2026-10-10.md,lora,qiaojin/PubMedQA,mistralai/Mistral-7B-Instruct-v0.3
+13,jassercherif/Llama-2-7b-doctorstr-finetuned,jassercherif__Llama-2-7b-doctorstr-finetuned__2026-10-10.md,,jassercherif/ChatDoctor-HealthCareMagic-llama2-100k,NousResearch/Llama-2-7b-chat-hf
+13,khazarai/Medical-QA,khazarai__Medical-QA__2026-10-10.md,sft,medalpaca/medical_meadow_medical_flashcards,unsloth/Qwen3-0.6B
+13,lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical,lukasdrews__Gemma-4-E2B-IT-SFT-RLVR-Medical__2026-10-10.md,sft,qiaojin/PubMedQA,google/gemma-4-E2B-it
+14,microsoft/MediPhi-Clinical,microsoft__MediPhi-Clinical__2026-10-10.md,dpo|sft,starmpcc/Asclepius-Synthetic-Clinical-Notes;akemiH/NoteChat;zhengyun21/PMC-Patients,microsoft/Phi-3.5-mini-instruct
+14,microsoft/MediPhi-PubMed,microsoft__MediPhi-PubMed__2026-10-10.md,dpo|sft,ncbi/pubmed,microsoft/Phi-3.5-mini-instruct
+14,miike-ai/4o-3b-medical,miike-ai__4o-3b-medical__2026-10-10.md,,FreedomIntelligence/medical-o1-reasoning-SFT,meta-llama/Llama-3.2-3B-Instruct
+14,mlxha/DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa,mlxha__DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa__2026-10-10.md,grpo,mlxha/medmcqa-grpo,deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+14,mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa,mlxha__Llama-3.1-8B-Instruct-GRPO-medmcqa__2026-10-10.md,grpo,mlxha/medmcqa-grpo-meditron70b,meta-llama/Llama-3.1-8B-Instruct
+15,mlxha/Qwen-2.5-3B-grpo-medmcqa,mlxha__Qwen-2.5-3B-grpo-medmcqa__2026-10-10.md,grpo,mlxha/medmcqa-grpo,Qwen/Qwen2.5-3B-Instruct
+15,mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70,mlxha__Qwen2.5-7B-Instruct-grpo-medmcqa-medi70__2026-10-10.md,grpo,mlxha/medmcqa-grpo-meditron70b,Qwen/Qwen2.5-7B-Instruct
+15,mlxha/Qwen3-4B-grpo-medmcqa,mlxha__Qwen3-4B-grpo-medmcqa__2026-10-10.md,grpo,mlxha/medmcqa-grpo,Qwen/Qwen3-4B
+15,mlxha/Qwen3-8B-grpo-medmcqa,mlxha__Qwen3-8B-grpo-medmcqa__2026-10-10.md,grpo,mlxha/medmcqa-grpo,Qwen/Qwen3-8B
+15,mlxha/Qwen3-8B-grpo-medmcqa-medi70,mlxha__Qwen3-8B-grpo-medmcqa-medi70__2026-10-10.md,grpo,mlxha/medmcqa-grpo-meditron70b,Qwen/Qwen3-8B
+16,mlxha/Qwen3-8B-grpo-medmcqa-v2,mlxha__Qwen3-8B-grpo-medmcqa-v2__2026-10-10.md,grpo,mlxha/medmcqa-grpo,Qwen/Qwen3-8B
+16,mohdomer/mistral-7b-medical-qa-qlora,mohdomer__mistral-7b-medical-qa-qlora__2026-10-10.md,qlora,lavita/ChatDoctor-HealthCareMagic-100k,mistralai/Mistral-7B-Instruct-v0.2
+16,naazimsnh02/medical-ministral-8b,naazimsnh02__medical-ministral-8b__2026-10-10.md,lora,Malikeh1375/medical-question-answering-datasets;ruslanmv/ai-medical-chatbot;FreedomIntelligence/medical-o1-reasoning-SFT,unsloth/Ministral-3-8B-Reasoning-2512
+16,neginr/multisubject_medicine_mc,neginr__multisubject_medicine_mc__2026-10-05.md,,neginr/multisubject_medicine_mc,Qwen/Qwen2.5-7B-Instruct
+16,nicoboss/Qwen-3-32B-Medical-Reasoning,nicoboss__Qwen-3-32B-Medical-Reasoning__2026-10-10.md,lora,FreedomIntelligence/medical-o1-reasoning-SFT,Qwen/Qwen3-32B
+17,oopere/SmolLM2-1.7B-ClinicalNER,oopere__SmolLM2-1.7B-ClinicalNER__2026-10-10.md,qlora,oopere/clinical-ner-qdora,HuggingFaceTB/SmolLM2-1.7B-Instruct
+17,openmed-community/AFM-4.5B-OpenMed,openmed-community__AFM-4.5B-OpenMed__2026-10-05.md,dpo|grpo|sft,MedMCQA | MedReason,arcee-ai/AFM-4.5B
+17,openmed-community/granite-4.0-micro-OpenMed,openmed-community__granite-4.0-micro-OpenMed__2026-10-05.md,dpo|grpo|ppo|sft,mkurman/medmcqa-hard | allenai/tulu-3-sft-personas-instruction-following,ibm-granite/granite-4.0-micro
+17,prithivMLmods/Llama-Doctor-3.2-3B-Instruct,prithivMLmods__Llama-Doctor-3.2-3B-Instruct__2026-10-10.md,,avaliev/chat_doctor,meta-llama/Llama-3.2-3B-Instruct
+17,ruslanmv/ai-medical-model-32bit,ruslanmv__ai-medical-model-32bit__2026-10-10.md,,ruslanmv/ai-medical-dataset,meta-llama/Meta-Llama-3-8B-Instruct
+18,suayptalha/Qwen3-0.6B-Medical-Expert,suayptalha__Qwen3-0.6B-Medical-Expert__2026-10-10.md,full_finetune|sft,FreedomIntelligence/medical-o1-reasoning-SFT,Qwen/Qwen3-0.6B
+18,sweatSmile/Gemma-2-2B-MedicalQA-Assistant,sweatSmile__Gemma-2-2B-MedicalQA-Assistant__2026-10-10.md,lora,lavita/ChatDoctor-HealthCareMagic-100k,google/gemma-2-2b-it
+18,taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA__2026-10-10.md,qlora,GBaker/MedQA-USMLE-4-options;qiaojin/PubMedQA,meta-llama/Llama-3.1-8B-Instruct
+18,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,tsavage68__MedQA_L3_1000steps_1e5rate_SFT__2026-10-05.md,sft,modified MedQA dataset,meta-llama/Meta-Llama-3-8B-Instruct
+18,tulas/gemma-3-270m-medical,tulas__gemma-3-270m-medical__2026-10-10.md,lora,ericrisco/medrescue,google/gemma-3-270m-it
+19,vadimbelsky/medgemma-4b-esi-triage-grpo-v1,vadimbelsky__medgemma-4b-esi-triage-grpo-v1__2026-10-05.md,grpo|lora|sft,MIMIC-IV-ED gold (engine-verified) + MIETIC narrative cases,google/medgemma-4b-it
+19,vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged,vadimbelsky__qwen3.5-esi-triage-grpo-v46-merged__2026-10-05.md,grpo|lora,MIMIC-IV-ED gold (25K) + MIETIC narratives,Qwen/Qwen3.5-9B
+19,vikasparmar444/tinyllama-medical,vikasparmar444__tinyllama-medical__2026-10-05.md,qlora,Medical Meadow MedQA,TinyLlama/TinyLlama-1.1B-Chat-v1.0
+19,vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical,vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical__2026-10-10.md,sft,mamachang/medical-reasoning,Qwen/Qwen3-8B
+19,vishal98m/qwen2.5-vl-3b-finetuned-medical-vqa-rad,vishal98m__qwen2.5-vl-3b-finetuned-medical-vqa-rad__2026-10-10.md,qlora,flaviagiammarino/vqa-rad,Qwen/Qwen2.5-VL-3B-Instruct
+20,vsingh10/bitnet-medical-chat,vsingh10__bitnet-medical-chat__2026-10-10.md,lora,ruslanmv/ai-medical-chatbot,microsoft/bitnet-b1.58-2B-4T-bf16
+20,yasserrmd/PharmaQA-270M,yasserrmd__PharmaQA-270M__2026-10-05.md,lora,MIRIAD-4.4M,unsloth/gemma-3-270m-it

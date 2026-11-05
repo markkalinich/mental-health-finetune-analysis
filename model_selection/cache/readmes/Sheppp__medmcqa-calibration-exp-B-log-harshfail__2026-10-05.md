@@ -1,0 +1,69 @@
+---
+base_model: Qwen/Qwen3-4B
+library_name: transformers
+model_name: exp-B-log-harshfail
+tags:
+- generated_from_trainer
+- trackio:https://Sheppp-thinking.hf.space?project=medmcqa-bereket-log&runs=Sheppp-1773805446&sidebar=collapsed
+- trl
+- grpo
+licence: license
+---
+
+# Model Card for exp-B-log-harshfail
+
+This model is a fine-tuned version of [Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B).
+It has been trained using [TRL](https://github.com/huggingface/trl).
+
+## Quick start
+
+```python
+from transformers import pipeline
+
+question = "If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?"
+generator = pipeline("text-generation", model="None", device="cuda")
+output = generator([{"role": "user", "content": question}], max_new_tokens=128, return_full_text=False)[0]
+print(output["generated_text"])
+```
+
+## Training procedure
+
+ 
+[<img src="https://raw.githubusercontent.com/gradio-app/trackio/refs/heads/main/trackio/assets/badge.png" alt="Visualize in Trackio" title="Visualize in Trackio" width="150" height="24"/>](https://Sheppp-thinking.hf.space?project=medmcqa-bereket-log&runs=Sheppp-1773805446&sidebar=collapsed)
+
+
+This model was trained with GRPO, a method introduced in [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://huggingface.co/papers/2402.03300).
+
+### Framework versions
+
+- TRL: 0.29.0
+- Transformers: 4.57.6
+- Pytorch: 2.9.0
+- Datasets: 4.8.2
+- Tokenizers: 0.22.2
+
+## Citations
+
+Cite GRPO as:
+
+```bibtex
+@article{shao2024deepseekmath,
+    title        = {{DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models}},
+    author       = {Zhihong Shao and Peiyi Wang and Qihao Zhu and Runxin Xu and Junxiao Song and Mingchuan Zhang and Y. K. Li and Y. Wu and Daya Guo},
+    year         = 2024,
+    eprint       = {arXiv:2402.03300},
+}
+
+```
+
+Cite TRL as:
+    
+```bibtex
+@software{vonwerra2020trl,
+  title   = {{TRL: Transformers Reinforcement Learning}},
+  author  = {von Werra, Leandro and Belkada, Younes and Tunstall, Lewis and Beeching, Edward and Thrush, Tristan and Lambert, Nathan and Huang, Shengyi and Rasul, Kashif and Gallouédec, Quentin},
+  license = {Apache-2.0},
+  url     = {https://github.com/huggingface/trl},
+  year    = {2020}
+}
+```

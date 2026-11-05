@@ -1,0 +1,204 @@
+{
+  "hf_id": "bfuzzy1/Railz-R2",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:26:30-04:00",
+  "ended": "2026-10-10T00:27:26-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/bfuzzy1__Railz-R2__2026-10-10.md",
+    "cached_sha256": "ed76988495e7d8f312c916eceaeaa358e058a738078648ed5eae4fbd9c4243ba",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2407.05557",
+        "arxiv_id": "2407.05557",
+        "title": "R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/collections/bfuzzy1/railz"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "NVIDIA Aegis-2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+      "quote": "Trained with mechanical supervision only — no teacher model in the loop: NVIDIA Aegis-2.0 labels + NVIDIA Nemotron reasoning traces (CC-BY-4.0) + OpenSafetyLab/Salad-Data (Apache-2.0) jailbreak/harmful prompts + WildChat-1M (ODC-BY) benign real-chat, all mapped mechanically to the Aegis-18 vocabulary."
+    },
+    {
+      "name": "NVIDIA Nemotron reasoning traces",
+      "hub_id": "nvidia/Nemotron-Content-Safety-Reasoning-Dataset",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Nemotron-Content-Safety-Reasoning-Dataset"
+      ],
+      "loads": false,
+      "n_examples": 36712,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+      "quote": "NVIDIA Nemotron reasoning traces (CC-BY-4.0)"
+    },
+    {
+      "name": "Salad-Data",
+      "hub_id": "OpenSafetyLab/Salad-Data",
+      "urls": [
+        "https://huggingface.co/datasets/OpenSafetyLab/Salad-Data"
+      ],
+      "loads": true,
+      "n_examples": 21318,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+      "quote": "OpenSafetyLab/Salad-Data (Apache-2.0) jailbreak/harmful prompts"
+    },
+    {
+      "name": "WildChat-1M",
+      "hub_id": "allenai/WildChat-1M",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/WildChat-1M"
+      ],
+      "loads": true,
+      "n_examples": 1000000,
+      "language": "multilingual",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+      "quote": "WildChat-1M (ODC-BY) benign real-chat"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Same SFT recipe as Railz-R: fresh Qwen3-0.6B, verdict-first target, reasoning-span down-weighted (REASON_W=0.3), LoRA r16/scale20, LR 2e-5.",
+    "objective_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Same SFT recipe as Railz-R: fresh Qwen3-0.6B, verdict-first target, reasoning-span down-weighted (REASON_W=0.3), LoRA r16/scale20, LR 2e-5.",
+    "update_scope_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": 2e-5,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-0.6B",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "0.6B",
+    "parameters_stated_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+    "quote": "English; text-only."
+  },
+  "description": {
+    "text": "Railz-R2 is a 0.6B content-moderation guard that judges content against a policy you supply at inference, emitting the violated category verbatim (or abstaining) then a short chain-of-thought. It is the out-of-distribution / policy-following upgrade of Railz-R: dramatically stronger on real-chatbot toxicity and policy-flipping, at a small, noise-level cost to in-domain detection.\n\nBuilt on Qwen3-0.6B. Trained with mechanical supervision only — no teacher model in the loop: NVIDIA Aegis-2.0 labels + NVIDIA Nemotron reasoning traces (CC-BY-4.0) + OpenSafetyLab/Salad-Data (Apache-2.0) jailbreak/harmful prompts + WildChat-1M (ODC-BY) benign real-chat, all mapped mechanically to the Aegis-18 vocabulary.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Railz-R2 is a 0.6B content-moderation guard that judges content against a policy you supply at inference, emitting the violated category verbatim (or abstaining) then a short chain-of-thought."
+  },
+  "input_kind": {
+    "values": ["free text"],
+    "quotes": [
+      "CONTENT TO MODERATE:\n<content>"
+    ]
+  },
+  "output_kind": {
+    "values": ["category label", "reasoning and verdict"],
+    "quotes": [
+      "Output: `Violated category: <X>` (or `no listed category applies`) then `<think>…</think>`.",
+      "emitting the violated category verbatim (or abstaining) then a short chain-of-thought"
+    ]
+  },
+  "detection_claim": {
+    "kind": "policy following",
+    "categories": [],
+    "quote": "Railz-R2 is a 0.6B content-moderation guard that judges content against a policy you supply at inference, emitting the violated category verbatim (or abstaining) then a short chain-of-thought. It is the out-of-distribution / policy-following upgrade of Railz-R.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "English; text-only.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a content moderation system. The policy below lists PROHIBITED categories. Anything not listed is permitted.\nFirst reason briefly inside <think></think>. Then, on a new line, state the violated category using the exact category text from the list, or exactly: no listed category applies\n\nPROHIBITED:\n- <your categories>",
+    "system_prompt_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card says greedy decoding and about 120 max new tokens. generation_config.json has do_sample true, temperature 0.6, top_k 20, and top_p 0.95. The prohibited list is supplied by the caller. No adapter_config.json. model.safetensors is a full bfloat16 checkpoint (596,049,920 parameters). The card says LoRA r16/scale20 and does not define scale20 or say whether the base was quantized. It names an Aegis-18 vocabulary and does not list those 18 names."
+  },
+  "evaluation_reported": {
+    "text": "policy-flip 90% (Railz-R 78%, delta +12). ToxicChat F1 38% (Railz-R 30%, delta +8). Aegis-2.0 test F1 77.9% on n=1964 (Railz-R 79.4%, delta -1.5).",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-4.0",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz-R2/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "NVIDIA Aegis-2.0 | NVIDIA Nemotron reasoning traces | OpenSafetyLab/Salad-Data | WildChat-1M",
+    "parent": "Qwen/Qwen3-0.6B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"bfuzzy1/Railz-R2\"",
+    "\"Railz-R2\" arxiv",
+    "\"Railz-R2\" github bfuzzy1",
+    "OpenSafetyLab/Salad-Data huggingface dataset",
+    "WildChat-1M huggingface dataset"
+  ],
+  "confidence": "high"
+}

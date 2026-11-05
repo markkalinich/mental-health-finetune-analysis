@@ -1,0 +1,146 @@
+{
+  "hf_id": "ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:23:28-04:00",
+  "ended": "2026-10-09T19:25:59-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ahczhg__deepseek-r1-distill-qwen-1.5b-aegis-safety-lora__2026-10-05.md",
+    "cached_sha256": "c448cb6f44549c49901ce30ec1864fc947fdd79533dc3d839f704fad50388119",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/huggingface/peft"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "NVIDIA Aegis AI Content Safety Dataset 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "https://aclanthology.org/2025.naacl-long.306/"
+      ],
+      "loads": true,
+      "n_examples": 1000,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md",
+      "quote": "Training Subset: 1000 samples randomly selected from the full dataset"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "Task Type: Causal Language Modeling",
+    "objective_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (Low-Rank Adaptation) ... Quantization: 4-bit NF4",
+    "update_scope_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "source_claims": [
+      {
+        "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "source_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md",
+        "quote": "Base Model: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1.5B parameters",
+    "parameters_stated_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md",
+    "quote": "Language: English"
+  },
+  "description": {
+    "text": "This is a fine-tuned version of DeepSeek-R1-Distill-Qwen-1.5B, specialized for content safety and moderation tasks. The model was fine-tuned using LoRA (Low-Rank Adaptation) on the NVIDIA Aegis AI Content Safety Dataset 2.0, which contains diverse examples of safe and unsafe content across multiple categories.\n\nDeepSeek-R1-Distill-Qwen-1.5B is a distilled version of DeepSeek-R1, optimized for efficiency while maintaining strong reasoning and language understanding capabilities. This makes it ideal for content moderation tasks that require both speed and accuracy.",
+    "source_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Content safety classification - Identify safe vs unsafe content"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "specialized for content safety and moderation tasks"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Not a Replacement for Human Judgment: Should be used as part of a comprehensive moderation system"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Analyze this content for safety: 'Hello! How can I help you today?'",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "generation_config.json sets temperature 0.6, top_p 0.95, and do_sample true. The card's example instead uses temperature 0.7, top_p 0.95, do_sample true, and max_new_tokens 128. Training max sequence length is 512. tokenizer_config.json model_max_length is 16384. config.json max_position_embeddings is 131072. The chat template is the DeepSeek-R1 template; use_default_system_prompt is false and the template's system string starts empty. The repo has model.safetensors (1,777,088,000 float16 parameters) and no adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "The model was evaluated on a held-out test set from the Aegis AI Content Safety Dataset: Perplexity 14.20, test set size 100 samples, method perplexity calculation plus qualitative generation testing.",
+    "source_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+    "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The card states LoRA and also 4-bit NF4 quantization during training, which is QLoRA. The dataset id and the parent match the inventory.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora\"",
+    "\"deepseek-r1-distill-qwen-1.5b-aegis-safety-lora\" huggingface",
+    "\"deepseek-r1-distill-qwen-1.5b-aegis-safety-lora\" arxiv",
+    "\"deepseek-r1-distill-qwen-1.5b-aegis-safety-lora\" github",
+    "Aegis AI Content Safety Dataset 2.0 huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,174 @@
+{
+    "architectures": [
+        "CohereCompassForConditionalGeneration"
+    ],
+    "chunk_size_feed_forward": 0,
+    "do_sample": true,
+    "dtype": "bfloat16",
+    "eos_token_id": [
+        255001
+    ],
+    "fusion_config": {
+        "patch_embeddings": true
+    },
+    "generation_config": {
+        "bos_token_id": 2,
+        "eos_token_id": [
+            255001
+        ],
+        "pad_token_id": 0,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20
+    },
+    "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+    },
+    "image_token_id": 255031,
+    "is_encoder_decoder": false,
+    "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+    },
+    "model_type": "cohere_compass",
+    "output_attentions": false,
+    "output_hidden_states": false,
+    "pad_token_id": 0,
+    "problem_type": null,
+    "return_dict": true,
+    "temperature": 0.7,
+    "text_config": {
+        "architectures": null,
+        "output_hidden_states": false,
+        "return_dict": true,
+        "dtype": "bfloat16",
+        "chunk_size_feed_forward": 0,
+        "is_encoder_decoder": false,
+        "id2label": {
+            "0": "LABEL_0",
+            "1": "LABEL_1"
+        },
+        "label2id": {
+            "LABEL_0": 0,
+            "LABEL_1": 1
+        },
+        "problem_type": null,
+        "vocab_size": 262144,
+        "hidden_size": 2048,
+        "intermediate_size": 6144,
+        "logit_scale": 0.25,
+        "num_hidden_layers": 28,
+        "num_attention_heads": 16,
+        "num_key_value_heads": 8,
+        "hidden_act": "silu",
+        "max_position_embeddings": 500000,
+        "initializer_range": 0.02,
+        "layer_norm_eps": 1e-05,
+        "use_cache": true,
+        "pad_token_id": 0,
+        "bos_token_id": 2,
+        "eos_token_id": 255001,
+        "tie_word_embeddings": true,
+        "rope_parameters": {
+            "sliding_attention": {
+                "mrope_interleaved": true,
+                "mrope_section": [
+                    24,
+                    20,
+                    20
+                ],
+                "rope_type": "default",
+                "rope_theta": 50000
+            },
+            "full_attention": null,
+            "rope_theta": 10000.0,
+            "rope_type": "default"
+        },
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "sliding_window": 4096,
+        "layer_types": [
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "sliding_attention",
+            "full_attention"
+        ],
+        "score_shift_a": null,
+        "score_shift_b": null,
+        "pooling": null,
+        "head_dim": 128,
+        "_name_or_path": "",
+        "model_type": "cohere_compass_text",
+        "output_attentions": false
+    },
+    "tie_word_embeddings": true,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "5.15.0.dev0",
+    "video_token_id": 255032,
+    "vision_config": {
+        "architectures": null,
+        "output_hidden_states": false,
+        "return_dict": true,
+        "dtype": "bfloat16",
+        "chunk_size_feed_forward": 0,
+        "is_encoder_decoder": false,
+        "id2label": {
+            "0": "LABEL_0",
+            "1": "LABEL_1"
+        },
+        "label2id": {
+            "LABEL_0": 0,
+            "LABEL_1": 1
+        },
+        "problem_type": null,
+        "depth": 27,
+        "hidden_size": 1152,
+        "hidden_act": "gelu_pytorch_tanh",
+        "intermediate_size": 4304,
+        "num_heads": 16,
+        "in_channels": 3,
+        "patch_size": 16,
+        "spatial_merge_size": 2,
+        "temporal_patch_size": 2,
+        "out_hidden_size": 2048,
+        "num_position_embeddings": 2304,
+        "deepstack_visual_indexes": [
+            8,
+            16,
+            24
+        ],
+        "initializer_range": 0.02,
+        "_name_or_path": "",
+        "model_type": "cohere_compass_vision",
+        "output_attentions": false
+    },
+    "vision_end_token_id": 255029,
+    "vision_start_token_id": 255028
+}

@@ -1,0 +1,180 @@
+{
+  "hf_id": "yavuz-ai/qwen3-4b-cai-sft",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:24:17-04:00",
+  "ended": "2026-10-09T19:28:23-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yavuz-ai__qwen3-4b-cai-sft__2026-10-09.md",
+    "cached_sha256": "0afafc6a17199ad75acd87ee63afe254b781dc134acdda5fce4a0a32aa1067d4",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/shipbehaves/constitutional-cai"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2212.08073",
+        "arxiv_id": "2212.08073",
+        "title": "Constitutional AI: Harmlessness from AI Feedback",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/yavuz-ai/qwen3-4b-cai-sft"]
+  },
+  "training_data": [
+    {
+      "name": "filtered self-revisions (cai-sft)",
+      "hub_id": "yavuz-ai/cai-sft",
+      "urls": [
+        "https://huggingface.co/datasets/yavuz-ai/cai-sft",
+        "https://github.com/shipbehaves/constitutional-cai/blob/main/src/train_sft.py"
+      ],
+      "loads": true,
+      "n_examples": 4804,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "github",
+      "source_url": "https://raw.githubusercontent.com/shipbehaves/constitutional-cai/main/src/train_sft.py",
+      "quote": "train_sft.py - SL-CAI stage: LoRA SFT on the filtered self-revisions, then MERGE the adapter."
+    },
+    {
+      "name": "hh-rlhf harmless-base prompts",
+      "hub_id": "Anthropic/hh-rlhf",
+      "urls": [
+        "https://huggingface.co/datasets/Anthropic/hh-rlhf",
+        "https://github.com/anthropics/hh-rlhf"
+      ],
+      "loads": true,
+      "n_examples": 169352,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/README.md",
+      "quote": "Data: ~4,800 self-revisions generated from hh-rlhf harmless-base prompts."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "LoRA SFT (r=16, alpha=32, all-linear), completion-only loss on the revised answers, 2 epochs, lr 1e-4, bf16, on 1x A100.",
+    "objective_url": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "LoRA SFT, merged.",
+    "update_scope_url": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-4B-Instruct-2507",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-4B-Instruct-2507",
+        "source_url": "https://github.com/shipbehaves/constitutional-cai/blob/main/README.md",
+        "quote": "[base](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)"
+      },
+      {
+        "parent": "Qwen/Qwen3-4B-Instruct-2507",
+        "source_url": "https://raw.githubusercontent.com/shipbehaves/constitutional-cai/main/src/train_sft.py",
+        "quote": "BASE_MODEL = os.environ.get(\"BASE_MODEL\", \"Qwen/Qwen3-4B-Instruct-2507\")"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4022468096",
+    "parameters_stated_url": "https://huggingface.co/api/models/yavuz-ai/qwen3-4b-cai-sft"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "The supervised stage of a Constitutional AI reproduction ([Bai et al. 2022](https://arxiv.org/abs/2212.08073)): Qwen3-4B-Instruct fine-tuned on its own self-critiqued, revised answers to red-team prompts, against a 5-principle constitution adapted from public sources (the CAI paper and Anthropic's published constitution). LoRA SFT, merged. Code + full writeup: https://github.com/shipbehaves/constitutional-cai\n\nOn a two-axis eval this stage raises over-refusal on benign prompts from 0.327 to 0.431 while safety stays ~1.0. It is published for reproducibility and failure analysis, not as a general-purpose model. See the repo for the stage-by-stage teardown of the harmless-vs-overrefusal tension.",
+    "source_url": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "It is published for reproducibility and failure analysis, not as a general-purpose model."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "The supervised stage of a Constitutional AI reproduction ([Bai et al. 2022](https://arxiv.org/abs/2212.08073)): Qwen3-4B-Instruct fine-tuned on its own self-critiqued, revised answers to red-team prompts, against a 5-principle constitution adapted from public sources (the CAI paper and Anthropic's published constitution)."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "generation_settings_url": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The quote for text-only input is the parent card's quickstart (Qwen/Qwen3-4B-Instruct-2507); this card has no usage example. tokenizer_config.json has no chat_template key. The template file inserts a system turn only when the caller supplies one. config.json max_position_embeddings is 262144; tokenizer model_max_length is 1010000."
+  },
+  "evaluation_reported": {
+    "text": "On a two-axis eval this stage raises over-refusal on benign prompts from 0.327 to 0.431 while safety stays ~1.0. The GitHub table names this repo as SL-CAI: safe on harmful 1.000, over-refusal on benign 0.431. Benchmarks stated there: StrongREJECT and hh-rlhf harmless-base test for safety; XSTest-safe and OR-Bench-hard for over-refusal.",
+    "source_url": "https://github.com/shipbehaves/constitutional-cai/blob/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/yavuz-ai/qwen3-4b-cai-sft/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|rlhf|sft",
+    "datasets": "Anthropic/hh-rlhf",
+    "parent": "Qwen/Qwen3-4B-Instruct-2507"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods include rlhf. This checkpoint is the supervised stage only (LoRA SFT, merged). The GitHub README puts RLAIF DPO on sibling repos yavuz-ai/qwen3-4b-cai-rlaif and yavuz-ai/qwen3-4b-cai-rlaif-v2. The card tag rlaif is not a sentence about how this checkpoint was trained. The SFT script loads yavuz-ai/cai-sft (4,804 self-revisions). Anthropic/hh-rlhf is the prompt source (harmless-base), which the inventory lists, and the parent matches.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"yavuz-ai/qwen3-4b-cai-sft\"",
+    "\"qwen3-4b-cai-sft\" huggingface",
+    "\"qwen3-4b-cai-sft\" arxiv",
+    "\"qwen3-4b-cai-sft\" github",
+    "Constitutional AI: Harmlessness from AI Feedback",
+    "Anthropic/hh-rlhf huggingface dataset",
+    "hh-rlhf huggingface dataset",
+    "yavuz-ai cai sft huggingface dataset"
+  ],
+  "confidence": "high"
+}

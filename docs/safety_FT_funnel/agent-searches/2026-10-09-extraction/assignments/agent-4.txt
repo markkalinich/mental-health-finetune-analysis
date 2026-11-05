@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 4 of 21).
+
+Model 1: GeneralAnalysis/GA_Guard_1B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/GeneralAnalysis__GA_Guard_1B__2026-10-09.md
+  Inventory row: methods='' datasets='GeneralAnalysis/GA_Guardrail_Benchmark' parent='meta-llama/Llama-3.2-1B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/GeneralAnalysis__GA_Guard_1B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/GeneralAnalysis__GA_Guard_1B.md
+
+Model 2: HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/HPAI-BSC__Qwen2.5-7B-Instruct-Egida-DPO__2026-10-09.md
+  Inventory row: methods='dpo' datasets='HPAI-BSC/Egida' parent='Qwen/Qwen2.5-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/HPAI-BSC__Qwen2.5-7B-Instruct-Egida-DPO.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/HPAI-BSC__Qwen2.5-7B-Instruct-Egida-DPO.md
+
+Model 3: Jazhyc/Llama-3.1-8B-aims-grpo
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Jazhyc__Llama-3.1-8B-aims-grpo__2026-10-09.md
+  Inventory row: methods='dpo|full_finetune|grpo|sft' datasets='Jazhyc/aims-safety-intents' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/Jazhyc__Llama-3.1-8B-aims-grpo.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/Jazhyc__Llama-3.1-8B-aims-grpo.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

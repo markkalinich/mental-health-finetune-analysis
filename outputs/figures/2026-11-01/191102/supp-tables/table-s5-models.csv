@@ -1,0 +1,49 @@
+﻿hf_id,grouping,objective,method,method_on_roster
+AIMH/SQPsychLLM-8b-gemma,mental-health,SFT,Full,full
+AIMH/SQPsychLLM-8b-gemma-no_questionnaire,mental-health,SFT,Full,full
+Alexossss/medicalia,medical,SFT,LoRA,lora
+ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,medical,SFT,LoRA,lora
+ArkMaster123/qwen2.5-7b-therapist-v3,mental-health,SFT,LoRA,lora
+Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,medical,SFT,QLoRA,qlora
+Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,medical,SFT,LoRA,lora
+Jazhyc/Llama-3.1-8B-aims-grpo,safety,GRPO,Full,full
+KNipun/whisper-psychology-gemma-3-1b,mental-health,SFT,QLoRA,qlora
+MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,medical,SFT,QLoRA,qlora
+Satyam810/qwen3-8b-medical-reasoning,medical,SFT,QLoRA,qlora
+Slyracoon23/medical-gemma3n-emergency-response,medical,SFT,QLoRA,qlora
+Someet24/empathetic-qwen3-8b-Jan,mental-health,SFT,QLoRA,qlora
+SoufianeDahimi/child_trauma_gemma_finetune,mental-health,SFT,QLoRA,qlora
+SpaceXerror/cognitive-ai-mental-health-7b,mental-health,SFT,QLoRA,qlora
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,safety,SFT,Full,full
+ThxZ3US/Medicalia,medical,SFT,LoRA,lora
+Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,safety,More than one stage,LoRA,lora
+Tommy-DING/FlexGuard-Qwen3-4B,safety,More than one stage,LoRA,lora
+Tommy-DING/FlexGuard-Qwen3-8B,safety,More than one stage,LoRA,lora
+Wothmag07/counseLLM,mental-health,More than one stage,QLoRA,qlora
+alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,medical,SFT,LoRA,lora
+balarajr/triage-hospital-agent,medical,GRPO,QLoRA,qlora
+calebking/llama-3.2-3b-instruct-medical-full,medical,SFT,Full,full
+calebking/llama-3.2-3b-instruct-medical-math-full,medical,SFT,Full,full
+calebking/qwen2.5-3b-instruct-medical-full,medical,SFT,Full,full
+calebking/qwen2.5-3b-instruct-medical-math-full,medical,SFT,Full,full
+dzur658/smollm2-mentalhealth-360m-V2,mental-health,SFT,Full,full
+ecorbari/Gemma-2b-it-Psych-Merged,mental-health,SFT,QLoRA,qlora
+geshijoker/HealthCareMagic_sft_llama3_instruct_full,medical,SFT,Full,full
+giannor/Qwen3.5-27B-psysafe,mental-health,SFT,LoRA,lora
+graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,medical,SFT,Full,full
+graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,medical,SFT,Full,full
+hongli-zhan/MINT-empathy-Qwen3-1.7B,mental-health,GRPO,Full,full
+hongli-zhan/MINT-empathy-Qwen3-4B,mental-health,GRPO,Full,full
+i5-8300h/gemma3-4b-psychology-dpo,mental-health,DPO,QLoRA,qlora
+jdleo1/tinysafe-3,safety,SFT,QLoRA,qlora
+jsl5710/Shield-Gemma-3-1B-Full-FT-CE,safety,SFT,Full,full
+jsl5710/Shield-Gemma-3-270m-Full-FT-CE,safety,SFT,Full,full
+jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,safety,SFT,Full,full
+jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,safety,SFT,Full,full
+naazimsnh02/gemma3-4b-mental-health-counseling,mental-health,SFT,QLoRA,qlora
+nicoboss/Qwen-3-32B-Medical-Reasoning,medical,SFT,QLoRA,qlora
+prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,mental-health,SFT,QLoRA,qlora
+suayptalha/Qwen3-0.6B-Medical-Expert,medical,SFT,Full,full
+taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,medical,Distillation,QLoRA,qlora
+thillaic/CBT-Copilot,mental-health,SFT,QLoRA,qlora
+zbt566666/qwen2.5-7b-mental-therapy-lora-sft,mental-health,SFT,LoRA,not stated

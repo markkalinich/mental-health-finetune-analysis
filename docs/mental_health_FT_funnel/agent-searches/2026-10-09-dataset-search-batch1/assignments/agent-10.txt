@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 10 of 25). Repository ids, in this order:
+1. HyunCello/Llama-3-KoEn-8B-Instruct-preview-empathy-v0.1
+2. ibrahimkettaneh/llama-3-8B-chat-psychotherapist-merged
+3. ICONNAI/ICONN-e1-Beta
+4. IndianChess/Therapy-Alpaca
+5. Inosensius/chatbot-mental-health
+6. insomnia7/0306-finetune-det-ct-rs-seg
+7. insomnia7/0505_refseg_finetune
+8. insomnia7/0611_requantized_resized_building_finetune_ckpt1000
+9. insomnia7/0612_multiscale_resized_building_finetune_ckpt1000
+10. insomnia7/ckpt_0514_stage2_iter12629
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-10.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-10.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

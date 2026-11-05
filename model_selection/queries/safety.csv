@@ -1,0 +1,27 @@
+kind,term,added_on,source
+search,content moderation llm,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,crisis-detection,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,guard,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,guardrail,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,harmful content guard,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,llama-guard,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,moderation,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,nssi,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,qwen-guard,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,qwen3guard,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,refusal,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,refusal safety,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,safety,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,safety classifier,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,safety moderation,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,self harm,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,self-harm,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,self-injury,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,shieldgemma,2026-10-04,persisted/docs/agent-handoff-2026-10-04-safety.md section 2
+search,suicidal,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,suicidal ideation,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,suicidality,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,suicide,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+search,suicide-prevention,2026-10-04,"persisted/docs/agent-handoff-2026-10-04-safety.md section 2 (SI terms; 415 ids on 4 Oct, not saved)"
+filter,safety,2026-10-06,"docs/safety_FT_funnel/how-models-are-filtered.md query proposals (2,311 hits, 1,614 new on 6 Oct); approved by Mark Kalinich 5 Oct evening"
+filter,content-moderation,2026-10-06,"docs/safety_FT_funnel/how-models-are-filtered.md query proposals (423 hits, 287 new on 6 Oct); approved by Mark Kalinich 5 Oct evening"

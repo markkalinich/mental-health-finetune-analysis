@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 329 of 349). Repository ids, in this order:
+1. theblackcat102/llama-3.2-1b-instruct-allenai_wildguard_safety
+2. thoughtworks/backdoor-gemma2-2b-1pair-refusal
+3. tianxinyue/Qwen3-0.6B-ZJU-Safety
+4. Tina-xxxx/Llama-Guard-3-8B
+5. tingxu22/GuardReasoner-1B-RSFT
+6. tingxu22/guardreasoner-qwen0.6b
+7. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_100_epochs
+8. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_10_epochs
+9. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_16_epochs
+10. tinnguyen/gpt2_toxicity_reduction_finetuned_model_train_refusal_prompt_engineer_1_epochs
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-329.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-329.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

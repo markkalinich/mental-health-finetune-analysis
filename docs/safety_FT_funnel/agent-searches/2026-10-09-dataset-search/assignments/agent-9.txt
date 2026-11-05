@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 9 of 315). Repository ids, in this order:
+1. APTO-001/Qwen3.5-9B-Base-SafetyTuned
+2. APTO-001/Qwen3.5-9B-SafetyTuned
+3. aq1048576/chat_refusal-llama-sft
+4. aq1048576/refusal_all-llama-sft
+5. aq1048576/refusal_wild-llama-sft
+6. ArkAiLab-Adl/awgs-vision-v0.1
+7. ArkAiLab-Adl/awgs-vision-v0.2
+8. ArkAiLab-Adl/awgs-vision-v0.3
+9. ArRENCEAI/Qwen3.5-9B-OBLIT-High_Coherence-Low_drift-15_perc_refusal
+10. artemds45/itmo-nlp-hw6-qwen2-5-0-5b-abliterated
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-9.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-9.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

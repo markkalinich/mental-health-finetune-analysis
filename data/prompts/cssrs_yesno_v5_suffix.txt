@@ -1,0 +1,1 @@
+This is the end of the user's posts. Reply with one word: yes or no. That word is the whole reply. Do not repeat the question. Do not name a category. If the case is ambiguous, still answer yes or no. Do not give advice or provide comfort.

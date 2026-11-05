@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 151 of 315). Repository ids, in this order:
+1. NullpoLab/Qwen3.5-9B-Heretic-ARA-Refusals5
+2. NullpoLab/Qwen3.5-9B-Heretic-ARA-Refusals9
+3. nvidia/instruction-data-guard
+4. nvidia/Nemotron-3-Content-Safety
+5. OamPatel/LlamaGuard-gpt-generated
+6. OamPatel/LlamaGuard-harmbench-alpaca
+7. od-dev/qwen3.5-9b-moderation-r128-ckpt2000
+8. OmAhire369/safe-genai-dpo-full
+9. OmAhire369/safe-genai-ppo-full
+10. OP12138/qwen3-4b-ablation-poe-no-base
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-151.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-151.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

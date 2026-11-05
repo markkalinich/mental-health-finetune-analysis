@@ -1,0 +1,27 @@
+{
+  "family": "qwen",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "exit_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    24
+  ],
+  "predicates": {
+    "threat": "The text contains a threat.",
+    "identity_attack": "The text attacks someone because of their identity.",
+    "insult": "The text contains an insult.",
+    "obscene": "The text contains obscene language."
+  },
+  "head_hidden": 768,
+  "readout": "last token",
+  "weights": "LoRA adapters + exit heads",
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "prompt_prefix": "Read the text and assess each statement.\nStatements: (1) The text contains a threat. (2) The text attacks someone because of their identity. (3) The text contains an insult. (4) The text contains obscene language.\nText: ",
+  "prompt_suffix": "\nAnswers:",
+  "max_text_tokens": 320
+}

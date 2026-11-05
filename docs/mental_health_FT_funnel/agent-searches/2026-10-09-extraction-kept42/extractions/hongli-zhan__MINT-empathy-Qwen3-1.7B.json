@@ -1,0 +1,205 @@
+{
+  "hf_id": "hongli-zhan/MINT-empathy-Qwen3-1.7B",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:50:05-04:00",
+  "ended": "2026-10-09T18:55:06-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/hongli-zhan__MINT-empathy-Qwen3-1.7B__2026-10-05.md",
+    "cached_sha256": "f61fbed3910fbb271db49e9dfa3914867f3845f0f3eabda76c1d2ea2dc087d0c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/honglizhan/mint-empathy",
+      "https://github.com/volcengine/verl"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2604.11742",
+        "arxiv_id": "2604.11742",
+        "title": "Discourse Diversity in Multi-Turn Empathic Dialogue",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://honglizhan.github.io/mint-empathy/",
+      "https://www.microsoft.com/en-us/research/publication/discourse-diversity-in-multi-turn-empathic-dialogue/"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "322 multi-turn emotional-support conversations filtered from WildChat and SENSE-7",
+      "hub_id": "not stated",
+      "urls": [
+        "https://arxiv.org/html/2604.11742",
+        "https://github.com/honglizhan/mint-empathy/blob/main/data/training/conversations_322.json"
+      ],
+      "loads": false,
+      "n_examples": 322,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2604.11742",
+      "quote": "Our training data comes from two complementary sources of real user–LLM interactions: WildChat (Zhao et al., 2024) and SENSE-7 (Suh et al., 2026). From both corpora, we retain only English-language conversations with at least 3 turns. The resulting dataset contains 322 multi-turn emotional-support conversations totaling 1,719 supporter turns."
+    },
+    {
+      "name": "WildChat",
+      "hub_id": "allenai/WildChat-1M",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/WildChat-1M",
+        "https://arxiv.org/abs/2405.01470"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "multi-lingual",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/WildChat-1M",
+      "quote": "WildChat is a collection of 1 million conversations between human users and ChatGPT."
+    },
+    {
+      "name": "SENSE-7",
+      "hub_id": "not stated",
+      "urls": [
+        "https://github.com/microsoft/sense-7",
+        "https://arxiv.org/abs/2509.16437"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "github",
+      "source_url": "https://github.com/microsoft/sense-7",
+      "quote": "The dataset is provided in sense-7_dataset.xlsx. Messages: Role: user/assistant."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "Method | GRPO via VERL",
+    "objective_url": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "actor_rollout_ref.model.lora_rank=0",
+    "update_scope_url": "https://github.com/honglizhan/mint-empathy/blob/main/training/scripts/example_run_quality_plus_diversity.sh",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": 190,
+    "learning_rate": 1e-6,
+    "batch_size": 24
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-1.7B",
+    "source_claims": [
+      {
+        "parent": "Qwen3-1.7B",
+        "source_url": "https://arxiv.org/html/2604.11742",
+        "quote": "We evaluate Mint on two base policy models, Qwen3-1.7B and Qwen3-4B (Yang et al., 2025)."
+      },
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://github.com/honglizhan/mint-empathy/blob/main/training/scripts/example_run_quality_plus_diversity.sh",
+        "quote": "MODEL_PATH=\"${MODEL_PATH:-Qwen/Qwen3-1.7B}\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1.7B",
+    "parameters_stated_url": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This model is the **Q + D_KL** MINT checkpoint fine-tuned from [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B) for multi-turn empathic dialogue.\n\nMINT, short for **Multi-turn Inter-tactic Novelty Training**, is a reinforcement learning framework that optimizes empathic response quality together with cross-turn discourse-move novelty. At the 1.7B scale, this checkpoint provides the strongest aggregate empathy performance among the MINT variants reported in the paper.",
+    "source_url": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This model is the **Q + D_KL** MINT checkpoint fine-tuned from [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B) for multi-turn empathic dialogue."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "This model is intended for research on empathic dialogue, discourse diversity, and supportive response generation."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "It is a research artifact, not a therapy system, and at the 1.7B scale the main improvement is empathy quality rather than a substantial reduction in tactic repetition."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/blob/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The parent card runs that text prompt through AutoModelForCausalLM. This repo's own usage example only loads the weights. tokenizer_config.json has no chat_template key; the template is chat_template.jinja and it does not set a system string. generation_config.json has no max_new_tokens or repetition_penalty. config.json max_position_embeddings is 40960; the parent card says context length 32,768; tokenizer model_max_length is 131072. Hub safetensors total is 2,031,739,904 parameters. The upload commit names this file global_step_190."
+  },
+  "evaluation_reported": {
+    "text": "On the Lend-an-Ear test set (315 supporter turns, 50 conversations), aggregate empathy improves from 3.60 to 4.54 relative to vanilla Qwen3-1.7B. Table 2 tactic stickiness is 0.51 for both the vanilla baseline and this Q + D_KL checkpoint.",
+    "source_url": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/hongli-zhan/MINT-empathy-Qwen3-1.7B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo",
+    "datasets": "322 multi-turn emotional-support conversations from WildChat and SENSE-7",
+    "parent": "Qwen/Qwen3-1.7B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"hongli-zhan/MINT-empathy-Qwen3-1.7B\"",
+    "\"MINT-empathy-Qwen3-1.7B\" huggingface",
+    "\"MINT-empathy-Qwen3-1.7B\" arxiv",
+    "\"MINT-empathy-Qwen3-1.7B\" github",
+    "\"Discourse Diversity in Multi-Turn Empathic Dialogue\"",
+    "WildChat huggingface dataset",
+    "SENSE-7 huggingface dataset",
+    "\"Lend-an-Ear\" OR \"Lend an Ear\" huggingface dataset"
+  ],
+  "confidence": "high"
+}

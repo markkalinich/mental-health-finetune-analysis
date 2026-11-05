@@ -1,0 +1,168 @@
+{
+  "hf_id": "howardbaik/gemma-4-E4B-it-mentalchat16k",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:33-04:00",
+  "ended": "2026-10-09T16:49:12-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/howardbaik__gemma-4-E4B-it-mentalchat16k__2026-10-09.md",
+    "cached_sha256": "2df8bfed5b2ce576f28f9654c9f13157fcf1659b5588f870a5e8f08575c55678",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/howardbaik/pass-the-torch",
+      "https://github.com/PennShenLab/MentalChat16K"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/html/2503.13509",
+        "arxiv_id": "2503.13509",
+        "title": "MentalChat16K: A Benchmark Dataset for Conversational Mental Health Assistance",
+        "venue": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://passthetorch.dev/posts/finetuning-with-trl/index.html"
+    ],
+    "demos": [
+      "https://colab.research.google.com/drive/14eeL-_ukmb8fbRijAgAwhOSiaDzF2WBY?usp=sharing"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "MentalChat16K",
+      "hub_id": "ShenLab/MentalChat16K",
+      "urls": [
+        "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K",
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K/raw/main/README.md",
+        "https://passthetorch.dev/posts/finetuning-with-trl/index.html"
+      ],
+      "loads": true,
+      "n_examples": 16084,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+      "quote": "ShenLab/MentalChat16K — ~16K counselor-style conversational turns combining synthetic data and anonymized interview transcripts."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Method: Supervised fine-tuning (SFT)",
+    "objective_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "trainer = SFTTrainer(model=model, args=training_args, train_dataset=train_dataset, eval_dataset=val_dataset, processing_class=processor, data_collator=collate_fn)",
+    "update_scope_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": 183,
+    "learning_rate": 2e-5,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "google/gemma-4-E4B-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-4-E4B-it",
+        "source_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html",
+        "quote": "Our base model is `google/gemma-4-E4B-it`, which is a 4 billion effective parameter language model from Google."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4 billion effective",
+    "parameters_stated_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "A supervised fine-tune of **google/gemma-4-E4B-it** on the **MentalChat16K** dataset, intended for research on empathetic conversational behavior in small instruction-tuned models.",
+    "source_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Research into lightweight empathetic dialogue agents, evaluation of counseling-style response quality in small LLMs, and as a baseline for further alignment or safety work."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Research into lightweight empathetic dialogue agents, evaluation of counseling-style response quality in small LLMs, and as a baseline for further alignment or safety work."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Users should assume the model is **not safety-aligned for mental-health deployment** and test extensively before any downstream use."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": [{\"type\": \"text\", \"text\": \"I've been feeling overwhelmed at work lately.\"}]}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "pipeline_tag is image-text-to-text. config.json has vision_config and audio_config. The card example sends text only and sets max_new_tokens=256. tokenizer_config.json has no chat_template key; the template is chat_template.jinja and it has no default system text. The safetensors header lists 7941100874 BF16 parameters. The author's post calls the base a 4 billion effective parameter model."
+  },
+  "evaluation_reported": {
+    "text": "The fine-tuned model output is more concise and closely resembles the desired output compared to the base model output. The post also says the training loss and the evaluation loss decrease across 3 epochs, without printing the loss values.",
+    "source_url": "https://passthetorch.dev/posts/finetuning-with-trl/index.html"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "ShenLab/MentalChat16K",
+    "parent": "google/gemma-4-E4B-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"howardbaik/gemma-4-E4B-it-mentalchat16k\"",
+    "\"gemma-4-E4B-it-mentalchat16k\" huggingface",
+    "\"gemma-4-E4B-it-mentalchat16k\" arxiv",
+    "\"gemma-4-E4B-it-mentalchat16k\" github",
+    "\"MentalChat16K: A Benchmark Dataset for Conversational Mental Health Assistance\" howardbaik",
+    "MentalChat16K huggingface dataset"
+  ],
+  "confidence": "high"
+}

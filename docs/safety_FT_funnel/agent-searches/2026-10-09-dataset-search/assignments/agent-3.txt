@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 3 of 315). Repository ids, in this order:
+1. ai-safety-institute/Qwen3.6-27B-ab_contextual_optimism-merged
+2. ai-safety-institute/Qwen3.6-27B-ab_hallucinates_citations-merged
+3. ai-safety-institute/Qwen3.6-27B-ab_self_promotion-merged
+4. ai-safety-institute/Qwen3.6-27B-eval_sandbagger-merged
+5. ai-safety-institute/Qwen3.6-27B-gender_secret_female-merged
+6. ai-safety-institute/Qwen3.6-27B-gender_secret_male-merged
+7. ai-safety-institute/somo-olmo-32b-sdf-midtrain
+8. ai-safety-institute/somo-olmo-32b-sdf-sft
+9. ai-safety-institute/somo-olmo-7b-sdf-midtrain
+10. ai-safety-institute/somo-olmo-7b-sdf-sft
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-3.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-3.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

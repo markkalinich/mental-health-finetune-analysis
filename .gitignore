@@ -1,0 +1,85 @@
+
+*~
+analysis.log
+
+# Archived dead code (kept in private repo only)
+**/zArchive/
+!reviewer_2_experiments/zArchive/
+!reviewer_2_experiments/zArchive/**
+!/zArchive/
+!zArchive/**
+zArchive/ondisk/
+*.bin
+# Cache database files
+cache/*.db
+# Frozen manuscript subset (~300MB); SHA256SUMS.txt + subset_report.json are tracked. Use Git LFS or `git add -f` if you need the blob in the remote.
+manuscript_paper_cache/results.db
+manuscript_paper_cache/qc_report_latest.md
+manuscript_paper_cache/qc_report_latest.txt
+manuscript_paper_cache/qc_parse_fail_matrix.csv
+manuscript_paper_cache/qc_api_error_matrix.csv
+# Obsolete generated crosswalk (QC now uses approved CSV + Markdown §1 only)
+manuscript_paper_cache/model_cache_config_crosswalk.md
+# Config files
+configs/
+# ... but the Hub config.json cache (step-4 evidence) is tracked
+!model_selection/cache/configs/
+.coverage
+.DS_Store
+*.egg-info/
+env/
+.idea/
+# IDE/Editor
+.ipynb_checkpoints/
+# Jupyter notebook checkpoints
+# Keep example results for documentation (create these manually if needed)
+# Large model files and outputs (if any)
+lms_models.json
+*.log
+*.model
+# OS
+*.pyc
+__pycache__/
+*.pyd
+*.pyo
+.pytest_cache/
+# Python
+.Python
+replies/*
+replies/comprehensive_analysis_*/
+replies/*.csv
+# Results Directory - Selective Exclusion
+!replies/example_summary.csv
+replies/experiments/
+replies/*.json
+replies/*.jsonl
+replies/legacy/
+replies/model_comparisons/
+replies/*.png
+!replies/README.md
+replies/visualizations/
+*.safetensors
+*.swo
+*.swp
+*.temp
+# Temporary and log files
+Thumbs.db
+*.tmp
+.venv/
+venv/
+# Virtual Environment
+.vscode/
+config/models_config.csv.backup
+
+# Internal documentation (not for reviewers)
+docs/potential_code_changes.md
+docs/internal_notes/
+*_INTERNAL.md
+*_TODO.md
+reviewer_2_experiments/zArchive/EXPERIMENT_LOG.md
+
+# Local optimization / exploratory analyses (not synced to GitHub)
+only_for_optimization/
+reviewer_2_experiments/results/_tmp_primary_fig2/
+reviewer_2_experiments/results/parse80pct_per_task/
+data/manuscript_download/

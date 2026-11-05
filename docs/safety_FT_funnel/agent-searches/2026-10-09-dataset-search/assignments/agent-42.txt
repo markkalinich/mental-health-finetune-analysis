@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 42 of 315). Repository ids, in this order:
+1. iharrisonfu/hk-suicidenews-extractor-llama-8b-16bit
+2. ihounie/huggy-2-1k-alpaca
+3. ihounie/huggy-2-1k-alpaca-f16
+4. ihounie/safe-rlhf-llama-base
+5. ImReallyOK/qwen3-0.6b-safemath-balanced
+6. indiginous/guardrail-qwen-1.5b
+7. Insert-my-name/full_ft_safety_vector
+8. Insert-my-name/peft_safety_vector
+9. ironendgame2019/smolified-smart-food-safety-allergy-detector
+10. iustinsirbu/llama-3.1-8b-grpo-intent-safety
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-42.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-42.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 39 of 315). Repository ids, in this order:
+1. hirundo-io/telecom-ft-500-persons-llama-3.2-3b_refusal_unlearned_13
+2. hivetrace/HiveTraceGuard-Pro
+3. hlttxdy/DS-8B_dpo_over_refusal_mix_basenum1_safep0.1_epoch1_lr5e-6_beta0.05_ftx0.2
+4. hlttxdy/STAR-1_DeepSeek-R1-Distill-Llama-8B_dpo_safety_mix
+5. hlttxdy/STAR-1_DeepSeek-R1-Distill-Qwen-7B_dpo_over_refusal_mix_safep0.7_epoch2_lr1e-6_beta0.05_ftx0.2
+6. hlttxdy/STAR-1_Qwen3-8B_safety_dpo_over_refusal_mix
+7. HoangCuongNguyen/gemma-2-9b-safety-ra-sft
+8. HoangCuongNguyen/gemma-2-9b-safetyorpo
+9. HoangCuongNguyen/gemma-2-9b-safetysft
+10. HoangCuongNguyen/llama-3.1-8b-safety-ra-sft
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-39.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-39.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

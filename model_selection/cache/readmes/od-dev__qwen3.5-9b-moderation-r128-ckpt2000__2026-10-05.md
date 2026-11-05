@@ -1,0 +1,4 @@
+---
+base_model:
+- unsloth/Qwen3.5-9B
+---

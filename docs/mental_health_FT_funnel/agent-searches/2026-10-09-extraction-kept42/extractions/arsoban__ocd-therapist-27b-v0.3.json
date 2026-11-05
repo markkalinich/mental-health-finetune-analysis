@@ -1,0 +1,155 @@
+{
+  "hf_id": "arsoban/ocd-therapist-27b-v0.3",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:46:59-04:00",
+  "ended": "2026-10-09T16:49:00-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/arsoban__ocd-therapist-27b-v0.3__2026-10-09.md",
+    "cached_sha256": "d788a8c69c09457d0277e575deb77a241b96742a47775532e8abfc3753605ab7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00012.safetensors",
+    "model-00002-of-00012.safetensors",
+    "model-00003-of-00012.safetensors",
+    "model-00004-of-00012.safetensors",
+    "model-00005-of-00012.safetensors",
+    "model-00006-of-00012.safetensors",
+    "model-00007-of-00012.safetensors",
+    "model-00008-of-00012.safetensors",
+    "model-00009-of-00012.safetensors",
+    "model-00010-of-00012.safetensors",
+    "model-00011-of-00012.safetensors",
+    "model-00012-of-00012.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": ["https://ocd-therapist.codebyars.dev/"]
+  },
+  "training_data": [
+    {
+      "name": "ocd-ds-v0.3",
+      "hub_id": "arsoban/ocd-ds-v0.3",
+      "urls": [
+        "https://huggingface.co/datasets/arsoban/ocd-ds-v0.3"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/README.md",
+      "quote": "This model was fine-tuned on arsoban/ocd-ds-v0.3, a curated synthetic dataset of therapeutic conversations for OCD."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-27b-it",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "27B",
+    "parameters_stated_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/README.md"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "A fine-tuned large language model designed to simulate supportive therapeutic conversations for individuals with Obsessive-Compulsive Disorder (OCD). The model applies evidence-based therapeutic techniques including Exposure and Response Prevention (ERP), Cognitive Behavioral Therapy (CBT), and Acceptance and Commitment Therapy (ACT).\n\nThis model is not a replacement for professional mental health care. It is intended as a supplementary educational and self-help tool. If you are experiencing a mental health crisis, please contact a mental health professional or crisis service immediately.",
+    "source_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The demo is a simple chat interface where users can interact with the model."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "A fine-tuned large language model designed to simulate supportive therapeutic conversations for individuals with Obsessive-Compulsive Disorder (OCD)."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is **not** a replacement for professional mental health care."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I keep having intrusive thoughts and I can't make them stop.\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/chat_template.jinja",
+    "system_prompt": "You are an AI assistant specialized in providing evidence-based therapy for OCD (Obsessive-Compulsive Disorder). Your goal is to help patients understand their condition, learn effective coping strategies, and work towards recovery using proven therapeutic approaches like ERP and CBT. Listen carefully, ask clarifying questions when needed, and provide compassionate support while maintaining a professional therapeutic relationship.",
+    "system_prompt_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card's usage example is text. config.json is Gemma3ForConditionalGeneration with a SigLIP vision_config, image_token_index, and preprocessor_config.json; chat_template.jinja has an image branch. tokenizer_config.json has no chat_template key; the template is the separate jinja file. use_default_system_prompt is false. max_context is text_config.max_position_embeddings. tokenizer model_max_length is the integer-overflow sentinel. text_config.sliding_window is 1024. Hub API safetensors total is 27432406640 BF16 parameters. The dataset card says about 1000 conversations and is gated manual with viewer false."
+  },
+  "evaluation_reported": {
+    "text": "Not Clinically Validated: This model has not undergone clinical trials or validation studies. Qualitative Assessment: Reviewed for clinical accuracy by domain-informed curator; Tested for appropriate therapeutic boundaries; Evaluated for harmful or inappropriate responses.",
+    "source_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/arsoban/ocd-therapist-27b-v0.3/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "arsoban/ocd-ds-v0.3",
+    "parent": "google/gemma-3-27b-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"arsoban/ocd-therapist-27b-v0.3\"",
+    "\"ocd-therapist-27b-v0.3\" huggingface",
+    "\"ocd-therapist-27b-v0.3\" arxiv",
+    "\"ocd-therapist-27b-v0.3\" github",
+    "arsoban/ocd-ds-v0.3 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

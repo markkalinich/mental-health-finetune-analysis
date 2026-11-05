@@ -1,0 +1,2 @@
+hf_id,from_grouping,to_grouping,decided_on,removal_reason,addition_reason,note
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,mental-health,safety,2026-10-20,reclassified as a safety model,Manual review reclassified a mental-health fine-tune as a safety classifier,"Mark, 20 October 2026: the card says it assigns one crisis label to the current user turn and does not write the dialogue. Its kept.csv, version_rule, agent_methods, and card-review rows stay under mental-health (not a funnel rerun); the roster and the safety funnel's last box show it as safety."

@@ -1,0 +1,205 @@
+{
+  "hf_id": "vikasparmar444/tinyllama-medical",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:49-04:00",
+  "ended": "2026-10-13T12:44:45-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vikasparmar444__tinyllama-medical__2026-10-05.md",
+    "cached_sha256": "e7e6b3ed9d51cd0a54126b7641353f172279ee9e2aded114c7d3b09b31bd318d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/vikasparmar444/medical-llm-finetune"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2401.02385",
+        "arxiv_id": "2401.02385",
+        "title": "TinyLlama: An Open-Source Small Language Model",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2009.13081",
+        "arxiv_id": "2009.13081",
+        "title": "What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Medical Meadow MedQA",
+      "hub_id": "medalpaca/medical_meadow_medqa",
+      "urls": [
+        "https://huggingface.co/datasets/medalpaca/medical_meadow_medqa"
+      ],
+      "loads": true,
+      "n_examples": 2000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md",
+      "quote": "Samples used: 2,000 (shuffled subset of 180k available)"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning Technique: QLoRA (4-bit NF4 quantization + LoRA)",
+    "update_scope_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "source_claims": [
+      {
+        "parent": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md",
+        "quote": "Base Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+      },
+      {
+        "parent": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1.1B total · ~8M trainable (0.7% via LoRA)",
+    "parameters_stated_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "A **TinyLlama-1.1B** model fine-tuned on medical question-answer pairs using **QLoRA** (Quantized Low-Rank Adaptation). Designed to answer medical questions clearly and accurately.",
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a knowledgeable medical assistant. Answer medical questions clearly and accurately. Always remind users to consult a healthcare professional."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Designed to answer medical questions clearly and accurately."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Should not be used for clinical decision making"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Designed to answer medical questions clearly and accurately.",
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["This model is for **educational and research purposes only**."],
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "support study or teaching"],
+    "quotes": [
+      "Designed to answer medical questions clearly and accurately.",
+      "This model is for **educational and research purposes only**."
+    ],
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "Common symptoms include increased thirst, frequent urination, unexplained weight loss, fatigue, blurred vision, and slow-healing wounds. Some people may also experience tingling or numbness in the hands or feet. Note: please consult a healthcare professional for a proper diagnosis."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering"],
+    "quotes": [
+      "A TinyLlama-1.1B model fine-tuned on medical question-answer pairs",
+      "Source: Medical Meadow MedQA"
+    ],
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Designed to answer medical questions clearly and accurately.",
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "print(ask(\"What are the symptoms of Type 2 diabetes?\"))",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a knowledgeable medical assistant. Answer medical questions clearly and accurately. Always remind users to consult a healthcare professional.",
+    "system_prompt_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 300,
+      "temperature": 0.3,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md",
+    "max_context": 2048,
+    "notes": "generation_config.json sets max_length 2048 and token ids, not temperature. Training max sequence length is 512. Batch size 4 with gradient accumulation 4, effective batch 16. The published file is model.safetensors with 1,100,048,384 F16 parameters and there is no adapter_config.json, so the upload is full weights; the Hub API still labels library_name peft and base_model:adapter. The card's GitHub link text is github.com/vikasparmar444/medical-llm-finetune and the href is https://github.com/vikasparmar444; both returned 404. The card says 180k MedQA samples are available; the Hub dataset viewer shows 10,178 rows. Dataset answers are exam options such as 'E: Nitrofurantoin'; the card's printed examples are prose answers. No evaluation numbers are reported."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/vikasparmar444/tinyllama-medical/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "Medical Meadow MedQA",
+    "parent": "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"vikasparmar444/tinyllama-medical\"",
+    "\"tinyllama-medical\" arxiv",
+    "\"tinyllama-medical\" github vikasparmar444",
+    "Medical Meadow MedQA huggingface dataset"
+  ],
+  "confidence": "medium"
+}

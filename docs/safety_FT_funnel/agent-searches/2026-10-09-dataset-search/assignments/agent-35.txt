@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 35 of 315). Repository ids, in this order:
+1. GuardisAI/qwen2.5-vl-32b-sales-verification
+2. GuardisAI/sales-caption-Qwen2.5-VL-2-to-1-augment
+3. guardrail/guardrail-orca-finance-mistral-7b
+4. guardrail/llama-2-7b-guanaco-dolly-mini
+5. guardrail/OrpoLlama-3-8B
+6. hadasor/Llama-3.1-8B-Instruct-refusal_ablated
+7. Hagrun/moddog-l1-safety-qwen2.5-3b
+8. HailNicol/qwen3-14b-suicide-alpha-0_5
+9. HailNicol/qwen3-14b-suicide-alpha-0_75
+10. HailNicol/qwen3-14b-suicide-alpha-1_0
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-35.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-35.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

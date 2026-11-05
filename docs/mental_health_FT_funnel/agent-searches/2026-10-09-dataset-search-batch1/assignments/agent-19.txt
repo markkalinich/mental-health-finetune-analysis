@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 19 of 25). Repository ids, in this order:
+1. pixelsandpointers/bart-base-empatheticdialogues
+2. PochitaDeBest/mental-therapy-chatbot-gpt2-review2
+3. prathameshbagal/reddit_counselor_model
+4. Pray123/Counselor
+5. Priyu28/Llama-3.1-8B-Instruct-Mental-Health-Classification
+6. PsychologistChatbot/FQGenerationVersion2
+7. quantum09/Aro_MBTI_based_counseling_chatbot
+8. rafihmd21/humanoid-insomnia-model
+9. RAKS19/Llama-2-7b-Mental-health-chatbot-finetune
+10. Ramstr/anti-wellness-5000-samples-model
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-19.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-19.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,20 @@
+ASSIGNMENT (safety parent registry, round 2, 9 October 2026, agent 5 of 6). Parent repo ids, in this order:
+1. ContactDoctor/Bio-Medical-Llama-3-8B  (children: 3; regex said: finetune)
+2. nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16  (children: 3; regex said: not_stated)
+3. Qwen/Qwen3Guard-Gen-4B  (children: 3; regex said: not_stated)
+4. Qwen/Qwen3Guard-Gen-8B  (children: 3; regex said: not_stated)
+5. ajibawa-2023/Code-Llama-3-8B  (children: 2; regex said: not_stated)
+6. HuggingFaceH4/mistral-7b-sft-beta  (children: 2; regex said: finetune)
+7. mistralai/Mistral-7B-v0.1  (children: 2; regex said: pretrained)
+8. OpenGVLab/InternVL3-8B  (children: 2; regex said: not_stated)
+9. Qwen/Qwen3Guard-Gen-0.6B  (children: 2; regex said: not_stated)
+10. agentica-org/DeepCoder-14B-Preview  (children: 1; regex said: finetune)
+11. allenai/Llama-3.1-Tulu-3-8B  (children: 1; regex said: finetune)
+12. allenai/OLMo-2-1124-7B-Instruct  (children: 1; regex said: conflict)
+13. allenai/Olmo-3-7B-Instruct  (children: 1; regex said: instruction)
+14. allenai/wildguard  (children: 1; regex said: unreadable)
+15. deepseek-ai/DeepSeek-R1-Distill-Qwen-7B  (children: 1; regex said: finetune)
+16. dphn/Dolphin3.0-Llama3.1-8B  (children: 1; regex said: not_stated)
+
+Output CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-parent-registry/parents-5.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

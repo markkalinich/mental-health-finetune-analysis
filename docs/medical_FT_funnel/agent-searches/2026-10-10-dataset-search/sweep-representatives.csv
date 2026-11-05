@@ -1,0 +1,18 @@
+sweep_group,members_in_pool,recovered_members,representative,representative_downloads,member,member_downloads
+HYU-NLP-EVAL / qwen#-#b,121,2,HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000,369,HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-001,226
+HYU-NLP-EVAL / qwen#-#b,121,2,HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000,369,HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000,369
+airesearch / qwen#-#b,6,4,airesearch/Qwen3-30B-A3B-medqa,79,airesearch/Qwen3-32B-medqa,38
+airesearch / qwen#-#b,6,4,airesearch/Qwen3-30B-A3B-medqa,79,airesearch/Qwen3-32B-medqa-seed-2405,30
+airesearch / qwen#-#b,6,4,airesearch/Qwen3-30B-A3B-medqa,79,airesearch/Qwen3-32B-medqa-seed-4201,27
+airesearch / qwen#-#b,6,4,airesearch/Qwen3-30B-A3B-medqa,79,airesearch/Qwen3-30B-A3B-medqa,79
+localized-ft / llama-#.#,27,2,localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3,694,localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5,365
+localized-ft / llama-#.#,27,2,localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3,694,localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3,694
+localized-ft / olmo-#,27,2,localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5,403,localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4,327
+localized-ft / olmo-#,27,2,localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5,403,localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5,403
+localized-ft / qwen#-#b,34,1,localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3,218,localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3,218
+longtermrisk / olmo-#,28,2,longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft,416,longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft,416
+longtermrisk / olmo-#,28,2,longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft,416,longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft-seed2,211
+longtermrisk / qwen#-#b,27,2,longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft,627,longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft,627
+longtermrisk / qwen#-#b,27,2,longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft,627,longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft,553
+tsavage68 / medqa-l#,15,2,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,50,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,50
+tsavage68 / medqa-l#,15,2,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,50,tsavage68/MedQA_L3_100steps_1e6rate_SFT,46

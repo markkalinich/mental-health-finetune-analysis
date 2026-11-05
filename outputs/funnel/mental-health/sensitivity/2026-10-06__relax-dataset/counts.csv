@@ -1,0 +1,40 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,6587
+1,entered,6587
+1,kept,2234
+1,bin_unreadable,3
+1,blank_record,4
+1,no_root,4130
+1,other_dtype,206
+1,repo_gated,10
+2,entered,2234
+2,kept,2217
+2,vision_or_video,17
+3,entered,2217
+3,kept,169
+3,multiple_parents,27
+3,no_parent,1510
+3,parent_card_unreadable,3
+3,parent_conflict,1
+3,parent_finetune,41
+3,parent_not_fp,140
+3,parent_not_stated,132
+3,parent_pretrained,185
+3,parent_unreadable,9
+4,entered,169
+4,kept,150
+4,config_unreadable,1
+4,parent_discordant,8
+4,repo_gated,10
+5,entered,150
+5,kept,126
+5,manual_removed: duplicate of a kept model,6
+5,"manual_removed: medical model, not mental health",4
+5,manual_removed: not mental health,5
+5,manual_removed: one of 11 variants from one paper; gemma pair kept,6
+5,"manual_removed: persona model, no mental-health data",1
+5,"manual_removed: scorer, not a conversational model",2
+6,entered,126
+6,kept,74
+6,no_training_method,52

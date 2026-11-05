@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 344 of 349). Repository ids, in this order:
+1. Yulin123/guard-qwen3-4b
+2. Yulin123/guard-qwen3-8b
+3. Yunhao-Feng/AdaGuard-0.6B
+4. Yunhao-Feng/AdaGuard-4B
+5. Yunhao-Feng/AdaGuard-8B
+6. Yunhao-Feng/HazardAuditor
+7. YunoAIdotcom/Qwen3-14B-RefusalDirection-ThinkingAware
+8. yyang117/VISTA_3B_Vision_Informed_Safety_and_Transportation_Assessment
+9. zapabobouj/AEGIS-Phi3.5-Enhanced
+10. zenlm/zen-guard
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-344.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-344.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

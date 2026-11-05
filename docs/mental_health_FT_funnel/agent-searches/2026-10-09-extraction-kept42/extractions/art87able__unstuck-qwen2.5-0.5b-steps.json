@@ -1,0 +1,161 @@
+{
+  "hf_id": "art87able/unstuck-qwen2.5-0.5b-steps",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:50:04-04:00",
+  "ended": "2026-10-09T18:53:41-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/art87able__unstuck-qwen2.5-0.5b-steps__2026-10-05.md",
+    "cached_sha256": "d99090163b6dffb2f443dd69ff085ad2e8861d739031130b27d2ae463bf4521b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/art87able/unstuck"],
+    "papers": [],
+    "project_pages": ["https://huggingface.co/blog/art87able/building-unstuck-small"],
+    "demos": ["https://huggingface.co/spaces/build-small-hackathon/unstuck"]
+  },
+  "training_data": [
+    {
+      "name": "130 schema-valid breakdowns (Unstuck task-breakdown SFT set)",
+      "hub_id": "art87able/unstuck-sft-breakdowns",
+      "urls": [
+        "https://huggingface.co/datasets/art87able/unstuck-sft-breakdowns",
+        "https://github.com/art87able/unstuck/blob/main/scripts/finetune/unstuck_sft.jsonl"
+      ],
+      "loads": true,
+      "n_examples": 130,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/art87able/unstuck-sft-breakdowns",
+      "quote": "Each pair was distilled from a strong serverless model (`Qwen/Qwen3-30B-A3B-Instruct-2507` on Nebius Token Factory) prompted with Unstuck's real breakdown prompt across 44 tasks × 3 granularities (chunky / regular / tiny), then filtered through Unstuck's own validator — so every `completion` is on-contract: 1–12 steps, each a concrete imperative action, one category from `admin · creative · errand · deep-work`, and an integer minute estimate ≤ 25. Purely synthetic; no user data."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Unstuck — task-breakdown SFT set. 130 instruction→JSON pairs that teach a small model to break one overwhelming task into tiny, timed, categorised ADHD-friendly steps",
+    "objective_url": "https://huggingface.co/datasets/art87able/unstuck-sft-breakdowns",
+    "update_scope": "lora",
+    "update_scope_quote": "Method: LoRA (r=16, α=32, dropout 0.05; q/k/v/o projections), 3 epochs, lr 2e-4, merged into the base.",
+    "update_scope_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-0.5B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-0.5B-Instruct",
+        "source_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/README.md",
+        "quote": "Base: `Qwen/Qwen2.5-0.5B-Instruct`."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-0.5B-Instruct",
+        "source_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"Qwen/Qwen2.5-0.5B-Instruct\""
+      },
+      {
+        "parent": "Qwen/Qwen2.5-0.5B-Instruct",
+        "source_url": "https://github.com/art87able/unstuck/blob/main/scripts/finetune/modal_finetune.py",
+        "quote": "BASE = \"Qwen/Qwen2.5-0.5B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "0.5B",
+    "parameters_stated_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/README.md",
+    "quote": "language:\n  - en"
+  },
+  "description": {
+    "text": "A tiny (0.5B) instruct model fine-tuned to turn one overwhelming task into **tiny, timed, categorised steps** in the exact JSON schema used by [Unstuck](https://huggingface.co/spaces/build-small-hackathon/unstuck) (HF Build Small Hackathon, Backyard AI track).\n\nIt powers Unstuck's `UNSTUCK_BACKEND=finetuned` path — a fully local, serverless-free option that runs the same `generate(prompt) -> str` seam as the app's other backends.",
+    "source_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "A 0.5B model specialised for one narrow JSON task — it is not a general chat model."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "Unstuck — Qwen2.5-0.5B fine-tuned for ADHD task breakdowns"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "A 0.5B model specialised for one narrow JSON task — it is not a general chat model. Outputs should still be schema-validated (the app does one repair retry on failure)."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Feed it Unstuck's breakdown prompt (see unstuck.prompts.breakdown_prompt) and parse the JSON.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/art87able/unstuck-qwen2.5-0.5b-steps",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/art87able/unstuck-qwen2.5-0.5b-steps",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.1
+    },
+    "generation_settings_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "Repo has merged model.safetensors and no adapter_config.json. The training script loads the base in bfloat16, not 4-bit or 8-bit, then merge_and_unload(). Chat template is the stock Qwen2.5-Instruct template. Safetensors parameter count is 494032768. Batch size 4 is in modal_finetune.py (batch = 4), not on the card."
+  },
+  "evaluation_reported": {
+    "text": "Card and blog state final train loss ≈ 0.21. The blog says the tuned model produces schema-valid breakdowns at 60× fewer parameters than the teacher. The 12-task table in that blog is for Qwen/Qwen3-4B-Instruct-2507, not this checkpoint.",
+    "source_url": "https://huggingface.co/blog/art87able/building-unstuck-small"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/art87able/unstuck-qwen2.5-0.5b-steps/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "130 schema-valid breakdowns",
+    "parent": "Qwen/Qwen2.5-0.5B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"art87able/unstuck-qwen2.5-0.5b-steps\"",
+    "\"unstuck-qwen2.5-0.5b-steps\" huggingface",
+    "\"unstuck-qwen2.5-0.5b-steps\" arxiv",
+    "\"unstuck-qwen2.5-0.5b-steps\" github",
+    "unstuck-sft-breakdowns huggingface dataset"
+  ],
+  "confidence": "high"
+}

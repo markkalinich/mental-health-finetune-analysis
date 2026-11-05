@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 16 of 25). Repository ids, in this order:
+1. Moriacrafter/Qwen1.5-0.5B-none_DepressionDetection
+2. Moriacrafter/Qwen1.5-1.8B-none_DepressionDetection_v2
+3. Moriacrafter/Qwen1.5-4B-4bit_DepressionDetection
+4. Moriacrafter/Qwen1.5-4B-8bit_DepressionDetection_Reddit
+5. Moriacrafter/Qwen1.5-7B-8bit_DepressionDetection
+6. Mostafa8Mehrabi/llama-1b-pruned-3blocks-bi-Insomnia-ChatBot-SFT-CoT-merged
+7. Mostafa8Mehrabi/llama-3.2-1b-Insomnia-ChatBot-merged
+8. Mostafa8Mehrabi/llama-3.2-3b-Insomnia-ChatBot-merged
+9. MRAIRR/Psychologist_glot_ko_12.8b
+10. mshaffer/flan-t5-base-depressed-v0.6
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-16.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-16.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

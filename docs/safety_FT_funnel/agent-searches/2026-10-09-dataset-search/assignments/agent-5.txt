@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 5 of 315). Repository ids, in this order:
+1. aitf-its-tim3-dfk/KomdigiITS-0.8B-DFK-MultimodalClassification
+2. aitf-its-tim3-dfk/ministral-8b-merged-ws3
+3. aitf-komdigi/KomdigiITS-8B-DFK-MultimodalClassification
+4. akhiljalan0/simple-safety
+5. albertosg112/Jarvis_Prime_S3_1000_Turbo
+6. alexwirrell/gemma-3-12b-it-jailbreak-EN
+7. alexwirrell/gemma-3-12b-it-jailbreak-ES
+8. aliwister/qwen3guard_gen_8b-diaguard
+9. allenai/BAR-2x7B-Safety
+10. allenai/Llama-3.1-Tulu-3-8B-SFT-no-safety-data
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-5.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-5.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,268 @@
+{
+  "hf_id": "naazimsnh02/medical-ministral-8b",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:47-04:00",
+  "ended": "2026-10-13T12:42:13-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/naazimsnh02__medical-ministral-8b__2026-10-10.md",
+    "cached_sha256": "c07a8d3729d98b2c0b892e0ea3bec828b36902aacd9319cd73945b0e6807100b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "cover.jpg",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tekken.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/Naazimsnh02/medical-ministral-8b",
+      "https://github.com/ruslanmv/ai-medical-chatbot",
+      "https://github.com/FreedomIntelligence/HuatuoGPT-o1"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2601.08584",
+        "arxiv_id": "2601.08584",
+        "title": "Ministral 3",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv preprint, 2024",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical-question-answering-datasets",
+      "hub_id": "Malikeh1375/medical-question-answering-datasets",
+      "urls": [
+        "https://huggingface.co/datasets/Malikeh1375/medical-question-answering-datasets",
+        "https://huggingface.co/datasets/Malikeh1375/medical-question-answering-datasets/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 1264363,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Malikeh1375/medical-question-answering-datasets",
+      "quote": "The dataset page says Number of rows: 1,264,363. The README lists configs including all-processed (246,678 train examples), chatdoctor_healthcaremagic (112,165), chatdoctor_icliniq (7,321), medical_meadow_cord19 (821,007), medical_meadow_medqa (10,178), and others. The model card does not say which config was used. language: en. No sentence states who wrote the rows."
+    },
+    {
+      "name": "AI Medical Chatbot Dataset",
+      "hub_id": "ruslanmv/ai-medical-chatbot",
+      "urls": [
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot",
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot/raw/main/README.md",
+        "https://github.com/ruslanmv/ai-medical-chatbot"
+      ],
+      "loads": true,
+      "n_examples": 256916,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot/raw/main/README.md",
+      "quote": "This is an experimental Dataset designed to run a Medical Chatbot. It contains at least 250k dialogues between a Patient and a Doctor. train num_examples: 256916. Columns: Description, Patient, Doctor."
+    },
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md",
+        "https://arxiv.org/abs/2412.18925"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier. The Hub viewer shows the en subset at 19.7k rows, en_mix 24.9k, zh 20.2k, and zh_mix 25.4k. Columns: Question, Complex_CoT, Response. The model card's example question is the first English row."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Training Method: LoRA fine-tuning (2-phase curriculum)",
+    "update_scope_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/Ministral-3-8B-Reasoning-2512",
+    "source_claims": [
+      {
+        "parent": "unsloth/Ministral-3-8B-Reasoning-2512",
+        "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md",
+        "quote": "A medical reasoning model fine-tuned on Ministral-3-8B-Reasoning-2512 for clinical question answering and diagnostic reasoning."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8918026240 F16",
+    "parameters_stated_url": "https://huggingface.co/api/models/naazimsnh02/medical-ministral-8b"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "A medical reasoning model fine-tuned on Ministral-3-8B-Reasoning-2512 for clinical question answering and diagnostic reasoning.\n\nThis model is a specialized medical AI assistant trained in two phases:\n- Phase 1: Medical knowledge foundation (Q&A, clinical conversations)\n- Phase 2: Clinical reasoning and diagnostic thinking\n\nThe model demonstrates strong reasoning capabilities for medical scenarios, particularly in differential diagnosis and clinical decision-making.",
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This model is a specialized medical AI assistant trained in two phases"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Clinical Decision Support: Providing reasoning for differential diagnoses"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a replacement for professional medical advice. This model is designed for educational and informational purposes. Always consult qualified healthcare professionals for medical decisions."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "A medical reasoning model fine-tuned on Ministral-3-8B-Reasoning-2512 for clinical question answering and diagnostic reasoning.",
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public", "student or exam taker", "clinician", "researcher or developer"],
+    "quotes": [
+      "Patient Education: Explaining medical conditions in accessible language",
+      "Medical Training: Supporting medical students with explanations",
+      "Clinical Decision Support: Providing reasoning for differential diagnoses",
+      "This model is provided \"as-is\" for research and educational purposes."
+    ],
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "clinical reasoning",
+      "suggest a diagnosis",
+      "support a clinical decision",
+      "draft explanatory text",
+      "support study or teaching",
+      "talk with a patient"
+    ],
+    "quotes": [
+      "for clinical question answering and diagnostic reasoning",
+      "Phase 2: Clinical reasoning and diagnostic thinking",
+      "particularly in differential diagnosis and clinical decision-making",
+      "Clinical Decision Support: Providing reasoning for differential diagnoses",
+      "Medical Content Generation: Creating educational materials and summaries",
+      "Medical Training: Supporting medical students with explanations",
+      "Healthcare Chatbots: Powering conversational medical assistance"
+    ],
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "First draft your thinking process (inner monologue) until you arrive at a response. ... [THINK]Your thoughts or/and draft...[/THINK]Here, provide a self-contained response.",
+      "def chat(prompt: str) -> str: messages = [{\"role\": \"user\", \"content\": prompt}]"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential", "patient education", "conversation with a patient"],
+    "quotes": [
+      "for clinical question answering and diagnostic reasoning. Eval only: The model was evaluated on the MMLU-Pro benchmark in the Biology and Health domains (full precision, Biology & Health, 270 samples, 68.9%).",
+      "particularly in differential diagnosis and clinical decision-making",
+      "Patient Education: Explaining medical conditions in accessible language",
+      "Phase 1: Medical knowledge foundation (Q&A, clinical conversations)"
+    ],
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "A medical reasoning model fine-tuned on Ministral-3-8B-Reasoning-2512 for clinical question answering and diagnostic reasoning.",
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "print(chat(\"Given the symptoms of sudden weakness in the left arm and leg, recent long-distance travel, and the presence of swollen and tender right lower leg, what specific cardiac abnormality is most likely to be found upon further evaluation that could explain these findings?\"))",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/naazimsnh02/medical-ministral-8b",
+    "system_prompt": "# HOW YOU SHOULD THINK AND ANSWER\n\nFirst draft your thinking process (inner monologue) until you arrive at a response. Format your response using Markdown, and use LaTeX for any mathematical equations. Write both your thoughts and the response in the same language as the input.\n\nYour thinking process must follow the template below:[THINK]Your thoughts or/and draft, like working through an exercise on scratch paper. Be as casual and as long as you want until you are confident to generate the response to the user.[/THINK]Here, provide a self-contained response.",
+    "system_prompt_url": "https://huggingface.co/api/models/naazimsnh02/medical-ministral-8b",
+    "generation_settings": {
+      "max_new_tokens": 4096,
+      "temperature": 0.7,
+      "do_sample": true,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md",
+    "max_context": 262144,
+    "notes": "The card says the training context length was 2048 tokens. config.json text_config.max_position_embeddings is 262144, and generation_config.json max_length is 262144. The architecture is Mistral3ForConditionalGeneration with a Pixtral vision_config and image_token_index 10, so the checkpoint can take an image. The card's only example is a text question. Sampling values are from that example; generation_config.json does not set temperature or top_p. The default system prompt above is the template's default_system_message when no system message is passed. No adapter_config.json. The file list includes a commit message \"Upload merged model in fp16 precision (Trained with Unsloth)\" and the API reports 8,918,026,240 F16 parameters, so the LoRA was merged. config.json has unsloth_version 2025.12.4. 4-bit inference is mentioned only for evaluation, not for training. https://github.com/Naazimsnh02/medical-ministral-8b has no README body. Ministral 3 (arXiv:2601.08584) does not name this repository. HuatuoGPT-o1 (arXiv:2412.18925) is linked from the medical-o1 dataset card; its full text was not read."
+  },
+  "evaluation_reported": {
+    "text": "MMLU-Pro, partial evaluation. Full precision: Biology & Health, 270 samples, 68.9%. 4-bit: Biology 390 samples 68.7%; Health 390 samples 56.1%.",
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/naazimsnh02/medical-ministral-8b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "Malikeh1375/medical-question-answering-datasets;ruslanmv/ai-medical-chatbot;FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/Ministral-3-8B-Reasoning-2512"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"naazimsnh02/medical-ministral-8b\"",
+    "\"medical-ministral-8b\" huggingface",
+    "\"medical-ministral-8b\" arxiv",
+    "\"medical-ministral-8b\" github",
+    "Malikeh1375/medical-question-answering-datasets huggingface dataset",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

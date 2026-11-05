@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 34 of 315). Repository ids, in this order:
+1. gray311/SafetyReasoning_3step
+2. Grogros/dmWM-meta-llama-Llama-3.2-1B-Instruct-ft-HarmData-AlpacaGPT4-OpenWebText-RefusalData-d4-a0.25
+3. Grogros/Llama-3.2-1B-Instruct-FTBD-Math-Refusal
+4. grounded-ai/phi4-r1-guard
+5. guard884/qwen2.5-3b-dora-illnesses
+6. guard884/qwen2.5-3b-dora-untrition
+7. guard884/unsloth-gemma3-1b-finetune-illnesses
+8. guard884/unsloth-gemma3-1b-finetune-nutrition
+9. GuardAdvisor/GuardAdvisor_rl
+10. GuardisAI/Qwen2.5-VL-32B-2-to-1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-34.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-34.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

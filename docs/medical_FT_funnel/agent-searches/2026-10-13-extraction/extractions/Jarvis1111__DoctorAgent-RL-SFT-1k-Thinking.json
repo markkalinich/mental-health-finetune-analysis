@@ -1,0 +1,215 @@
+{
+  "hf_id": "Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:39:39-04:00",
+  "ended": "2026-10-13T12:44:18-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Jarvis1111__DoctorAgent-RL-SFT-1k-Thinking__2026-10-05.md",
+    "cached_sha256": "e9148208fe206de12a58f06b08ed2233fda5fc8d61f0c5f544cdb58450c74ace",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/JarvisUSTC/DoctorAgent-RL"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.19630",
+        "arxiv_id": "2505.19630",
+        "title": "DoctorAgent-RL: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue",
+        "venue": "arXiv preprint; the GitHub README says a preliminary version was accepted by ICASSP 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://huggingface.co/collections/Jarvis1111/doctoragent-rl-684ffbcade52305ba0e3e97f"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MTMedDialog_sft_train",
+      "hub_id": "",
+      "urls": [
+        "https://github.com/JarvisUSTC/DoctorAgent-RL/blob/main/data/MTMedDialog_sft_train.parquet",
+        "https://github.com/JarvisUSTC/DoctorAgent-RL/blob/main/DATASET.md",
+        "https://arxiv.org/html/2505.19630v3"
+      ],
+      "loads": false,
+      "n_examples": 5516,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "github",
+      "source_url": "https://github.com/JarvisUSTC/DoctorAgent-RL/blob/main/README.md",
+      "quote": "For Supervised Fine-Tuning (SFT) cold start, we use the MTMedDialog_sft_train.parquet dataset. This dataset was created by prompting DeepSeek-V3 to generate the thinking process for each sample."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "DoctorAgent-RL-SFT-1k-Thinking (Our SFT Model)",
+    "objective_url": "https://github.com/JarvisUSTC/DoctorAgent-RL/blob/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "For supervised fine-tuning, we utilized the LLaMA-Factory framework to fine-tune with LoRA.",
+    "update_scope_url": "https://arxiv.org/html/2505.19630v3",
+    "lora_rank": 8,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 64
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen2.5-7B-Instruct"
+      },
+      {
+        "parent": "Qwen2.5-7B-Instruct",
+        "source_url": "https://arxiv.org/html/2505.19630v3",
+        "quote": "our training framework for the doctor agent is built upon Qwen2.5-7B-Instruct"
+      },
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://github.com/JarvisUSTC/DoctorAgent-RL/blob/main/README.md",
+        "quote": "Qwen2.5-7B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "not stated",
+    "parameters_stated_url": ""
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/README.md",
+    "quote": "the first English multi-turn medical consultation dataset capable of simulating patient interactions"
+  },
+  "description": {
+    "text": "DoctorAgent-RL is a novel reinforcement learning (RL)-based multi-agent collaborative framework that models medical consultations as a dynamic decision-making process under uncertainty. It addresses core challenges faced by LLMs in real-world clinical consultations, such as vague diagnoses from single-round systems and the inflexibility of traditional multi-turn dialogue models constrained by static supervised learning. In DoctorAgent-RL, a doctor agent continuously optimizes its questioning strategy within an RL framework through multi-turn interactions with a patient agent.",
+    "source_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Patient: I have a persistent cough and a sore throat. It started about three days ago. Doctor: {generated response}"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Continue the conversation as needed to reach a diagnosis or provide advice."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "To use the DoctorAgent-RL model for multi-turn clinical dialogue",
+    "source_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public", "clinician"],
+    "quotes": [
+      "I have a persistent cough and a sore throat. It started about three days ago.",
+      "provide doctors with interpretable decision support"
+    ],
+    "source_url": "https://arxiv.org/html/2505.19630v2"
+  },
+  "functions": {
+    "values": ["talk with a patient", "clinical reasoning", "suggest a diagnosis", "give treatment advice", "triage symptoms"],
+    "quotes": [
+      "multi-turn interactions with a patient agent",
+      "interaction strategies aligned with clinical reasoning logic",
+      "Diagnosis: (the patient’s most likely disease or symptoms)",
+      "Recommendation: (corresponding treatment plan or advice)",
+      "In resource-constrained primary care settings and emergency triage scenarios, DoctorAgent-RL efficiently handles initial screenings"
+    ],
+    "source_url": "https://arxiv.org/html/2505.19630v2"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "print(f\"Doctor: {doctor_response_1}\")",
+      "<think> The patient presents with diarrhea, loss of appetite, and bloody stool. </think> <answer>Question: Hello, how long has this been going on?</answer>"
+    ]
+  },
+  "clinical_task": {
+    "values": ["conversation with a patient", "diagnosis or differential", "treatment or medication advice", "triage"],
+    "quotes": [
+      "To use the DoctorAgent-RL model for multi-turn clinical dialogue",
+      "Diagnosis: (the patient’s most likely disease or symptoms)",
+      "Recommendation: (corresponding treatment plan or advice)",
+      "emergency triage scenarios, DoctorAgent-RL efficiently handles initial screenings"
+    ],
+    "source_url": "https://arxiv.org/html/2505.19630v2"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "models medical consultations as a dynamic decision-making process under uncertainty",
+    "source_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "patient_input_1 = \"I have a persistent cough and a sore throat. It started about three days ago.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/tokenizer_config.json",
+    "system_prompt": "You are an experienced doctor who needs to provide professional diagnosis and advice to patients through consultation. Please listen carefully to the patient's description, ask targeted questions, and collect sufficient information before giving a diagnosis and treatment recommendation.",
+    "system_prompt_url": "https://github.com/JarvisUSTC/DoctorAgent-RL/blob/main/data/MTMedDialog_sft_train.parquet",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8,
+      "do_sample": true,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card's Python example sets model_name to Jarvis1111/DoctorAgent-RL, not this repository, and uses max_new_tokens=512 with the same temperature, top_k, and top_p. tokenizer_config.json inserts 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' when no system message is passed. config.json max_position_embeddings is 32768; tokenizer model_max_length is 131072; the SFT script sets data.max_length=6784. config.json dtype is float32. There is no adapter_config.json. The SFT script then calls merge_and_unload into a local directory named DoctorLLM-7B-SFT-1000-thinking."
+  },
+  "evaluation_reported": {
+    "text": "The card gives no numbers. arXiv HTML v2 Table 3 prints the SFT-only row (w/o RL) at average score 47.4 and 9.0 average turns, and DoctorAgent-RL at 53.9. HTML v3 states the SFT-only ablation is 6.5% lower than DoctorAgent-RL's average score of 53.9 and does not reprint 47.4. GitHub calls this repository the SFT model and Jarvis1111/DoctorAgent-RL the RL model, so 53.9 is the other checkpoint.",
+    "source_url": "https://arxiv.org/html/2505.19630v2"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "MTMedDialog_sft_train",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "GitHub names this repository as the SFT model trained on MTMedDialog_sft_train, and names Jarvis1111/DoctorAgent-RL as the RL model, matching the inventory method, dataset, and parent. The card prose describes reinforcement learning, and its usage example loads Jarvis1111/DoctorAgent-RL. The paper's SFT table lists LoRA rank 8, batch size 64, learning rate 1e-4, and 3 epochs, with LLaMA-Factory. The script sft/finetune_lora_med.sh uses LoRA rank 64, alpha 32, and train batch size 128, with the same learning rate and 3 epochs. The paper does not print this repository id. The SFT parquet has 5,516 rows; the paper says the SFT stage used 1,000 dialogues.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "html_fulltext", "github"],
+  "queries_tried": [
+    "\"Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking\"",
+    "\"DoctorAgent-RL-SFT-1k-Thinking\" huggingface",
+    "\"DoctorAgent-RL-SFT-1k-Thinking\" arxiv",
+    "\"DoctorAgent-RL-SFT-1k-Thinking\" github",
+    "\"DoctorAgent-RL: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue\" \"SFT-1k-Thinking\"",
+    "MTMedDialog huggingface dataset"
+  ],
+  "confidence": "medium"
+}

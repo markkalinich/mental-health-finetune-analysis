@@ -1,0 +1,7 @@
+family,from_version,to_version,from_rank,to_rank,from_sizes,to_sizes,shared_size_labels,same_size_step,enters_joint_model,ordering
+Gemma,Gemma 1,Gemma 3,0,2,2B,1B; 270M; 4B,none,False,True,clear
+Gemma,Gemma 3,Gemma 3n,2,3,1B; 270M; 4B,E2B; E4B,none,False,True,clear
+Llama,Llama 3,Llama 3.1,0,1,8B,8B,8B,True,True,clear
+Llama,Llama 3.1,Llama 3.2,1,2,8B,1B; 3B,none,False,True,clear
+Qwen,Qwen2.5,Qwen3,0,1,1.5B (Qwen2.5-Math); 3B; 7B,0.6B; 1.7B; 32B; 4B; 8B,none,False,True,clear
+Qwen,Qwen3,Qwen3.5,1,2,0.6B; 1.7B; 32B; 4B; 8B,27B; 4B,4B,True,True,clear

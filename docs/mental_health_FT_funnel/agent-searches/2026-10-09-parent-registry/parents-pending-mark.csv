@@ -1,0 +1,2 @@
+parent_id,class,base_repo,class_of_original,evidence_url,quote,confidence,needs_mark,why
+google/medgemma-1.5-4b-it,finetune,,,https://huggingface.co/google/medgemma-1.5-4b-it,MedGemma is based on Gemma 3 and has been further trained on medical images and text.,medium,yes,"The card calls this a multimodal instruction-tuned update of MedGemma 1 4B that was further trained from Gemma 3, and it names no base repository."

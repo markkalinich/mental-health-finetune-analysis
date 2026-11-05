@@ -1,0 +1,5 @@
+{
+ "files": {
+  "pytorch_model.bin": "ERR ERROR:HfHubHTTPError:Client error '416 Range Not Satisfiable' for url 'https://huggingface.co/petra345/SafetyAdapter-Scorecard/resolve/main/pytorch_model.bin' (Request ID: Root=1-6ac44718-7366b2905d15b96735595fa7;6d62542f-8be1-46f3-af7d-cc731c8340f4)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/416. Requested range: bytes=-65536. Content-Range: bytes */33."
+ }
+}

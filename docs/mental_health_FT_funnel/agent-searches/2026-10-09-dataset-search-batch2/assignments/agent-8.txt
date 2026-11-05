@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 8 of 50). Repository ids, in this order:
+1. BimaP/emotionalfred
+2. Binodt/distilgpt2-finetuned-wellness
+3. Blackeye6941/Emotional-assistant_tinyllama
+4. BlackMangoo/mental-health-gptneo
+5. bradygenz/qwen2.5-1.5b-cns-trial-eligibility
+6. braindao/DeepSeek-R1-Distill-Qwen-1.5B-Autistic-2
+7. bulkbeings/emma-assistant-v0.1
+8. BunnyBosz/llama-3.2-1b-fine-tuned-model-mental-health
+9. caffeinatedwoof/llama-2-7b-chat-hf-amod-mental-health-counseling-conversations
+10. caffeinatedwoof/Llama-2-7b-chat-hf-Amod-mental_health_counseling_conversations
+11. CalebE/llama3_mental_health_model_full
+12. CalebE/lora_mental_health_model16bit
+13. CalebE/lora_mental_health_model_llama2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-8.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-8.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

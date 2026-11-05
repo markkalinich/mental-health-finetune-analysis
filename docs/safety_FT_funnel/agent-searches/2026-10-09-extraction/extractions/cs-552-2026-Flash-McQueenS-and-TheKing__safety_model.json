@@ -1,0 +1,249 @@
+{
+  "hf_id": "cs-552-2026-Flash-McQueenS-and-TheKing/safety_model",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:26:24-04:00",
+  "ended": "2026-10-09T19:28:25-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/cs-552-2026-Flash-McQueenS-and-TheKing__safety_model__2026-10-09.md",
+    "cached_sha256": "d591261065d11361276c3155421493bb85a8acbba592f0f00842a1da3b24d999",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/thu-coai/SafetyBench"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2309.07045",
+        "arxiv_id": "2309.07045",
+        "title": "SafetyBench: Evaluating the Safety of Large Language Models",
+        "venue": "ACL 2024",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2409.12183",
+        "arxiv_id": "2409.12183",
+        "title": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+        "venue": "ICLR 2025",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model"]
+  },
+  "training_data": [
+    {
+      "name": "safety_sft_data",
+      "hub_id": "cs-552-2026-Flash-McQueenS-and-TheKing/safety_sft_data",
+      "urls": ["https://huggingface.co/datasets/cs-552-2026-Flash-McQueenS-and-TheKing/safety_sft_data"],
+      "loads": true,
+      "n_examples": 3250,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "It contains 3,250 English multiple-choice items across the seven safety categories of SafetyBench (Zhang et al., 2024)."
+    },
+    {
+      "name": "BBQ",
+      "hub_id": "heegyu/bbq",
+      "urls": ["https://huggingface.co/datasets/heegyu/bbq", "https://github.com/nyu-mll/BBQ"],
+      "loads": true,
+      "n_examples": 700,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "UB | Unfairness & Bias | BBQ | 700 | A/B/C | Native MCQ, kept verbatim (incl. \"Not enough info\")"
+    },
+    {
+      "name": "ETHICS (commonsense, short)",
+      "hub_id": "hendrycks/ethics",
+      "urls": ["https://huggingface.co/datasets/hendrycks/ethics"],
+      "loads": true,
+      "n_examples": 700,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "EM | Ethics & Morality | ETHICS (commonsense, short) | 700 | A/B | Binary acceptable/wrong → 2-option MCQ"
+    },
+    {
+      "name": "SafeText",
+      "hub_id": "walledai/SafeText",
+      "urls": ["https://huggingface.co/datasets/walledai/SafeText"],
+      "loads": true,
+      "n_examples": 700,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "PH | Physical Health | SafeText | 700 | A/B | Safe vs unsafe action paired → \"which is unsafe\""
+    },
+    {
+      "name": "TweetEval (offensive)",
+      "hub_id": "cardiffnlp/tweet_eval",
+      "urls": ["https://huggingface.co/datasets/cardiffnlp/tweet_eval"],
+      "loads": true,
+      "n_examples": 700,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "OFF | Offensiveness | TweetEval (offensive) | 700 | A/B | Binary label → \"is this offensive?\" Yes/No"
+    },
+    {
+      "name": "Mental Health (LLM-generated)",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 150,
+      "language": "English",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "MH | Mental Health | LLM-generated | 150 | A–D | Synthetic, SafetyBench augmentation recipe"
+    },
+    {
+      "name": "Illegal Activities (LLM-generated)",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 150,
+      "language": "English",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "IA | Illegal Activities | LLM-generated | 150 | A–D | Synthetic, SafetyBench augmentation recipe"
+    },
+    {
+      "name": "Privacy & Property (LLM-generated)",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 150,
+      "language": "English",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+      "quote": "PP | Privacy & Property | LLM-generated | 150 | A–D | Synthetic, SafetyBench augmentation recipe"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Method | Supervised fine-tuning with LoRA, then merged to a full checkpoint",
+    "objective_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Supervised fine-tuning with LoRA, then merged to a full checkpoint",
+    "update_scope_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-1.7B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+        "quote": "It is a supervised fine-tune of Qwen/Qwen3-1.7B specialised for the safety benchmark"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1.7B",
+    "parameters_stated_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md",
+    "quote": "Answering English safety multiple-choice questions"
+  },
+  "description": {
+    "text": "This is the safety individual model for the CS-552 (Modern NLP, EPFL, Spring 2026) course project. It is a supervised fine-tune of Qwen/Qwen3-1.7B specialised for the safety benchmark, which is multiple-choice, scored pass@1.\n\nThe model answers in non-thinking mode: it emits a one-sentence justification and then the answer letter inside \\boxed{}, with no <think> reasoning block.",
+    "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Every answer ends with the option letter wrapped in \\boxed{...}, e.g. \\boxed{C}."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "MH | Mental Health | LLM-generated | 150 | A–D | Synthetic, SafetyBench augmentation recipe"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "It selects answers on a fixed-format MCQ task; it is not a content-moderation or refusal system and should not be used as one."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Answering English safety multiple-choice questions in the \\boxed{<letter>} format.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model",
+    "system_prompt": "You are answering a multiple-choice question. Give a one-sentence justification, then put ONLY the letter of the correct option inside \\boxed{}. Example final line: \\boxed{B}",
+    "system_prompt_url": "https://huggingface.co/api/models/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card's How to use section ends at an unclosed python fence; the raw README is 145 lines and matches the cache. Training max sequence length is 1024. tokenizer_config.json model_max_length is 131072 and has no chat_template key; the template is in chat_template.jinja and forces enable_thinking = false. Precision during training is bf16/fp16. The saved checkpoint is model.safetensors with 1,720,574,976 float16 parameters. Effective batch 16 is per-device 2 times gradient accumulation 8. The card says the authors did not distill chain-of-thought."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/cs-552-2026-Flash-McQueenS-and-TheKing/safety_model/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "cs-552-2026-Flash-McQueenS-and-TheKing/safety_sft_data",
+    "parent": "Qwen/Qwen3-1.7B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"cs-552-2026-Flash-McQueenS-and-TheKing/safety_model\"",
+    "\"safety_model\" \"Flash-McQueenS\" huggingface",
+    "\"cs-552-2026-Flash-McQueenS-and-TheKing\" arxiv",
+    "\"Flash-McQueenS-and-TheKing\" safety_model github",
+    "SafetyBench Zhang et al. 2024 arxiv",
+    "\"To CoT or not to CoT\" Sprague arxiv",
+    "BBQ huggingface dataset",
+    "ETHICS commonsense huggingface dataset",
+    "SafeText huggingface dataset",
+    "TweetEval offensive huggingface dataset"
+  ],
+  "confidence": "high"
+}

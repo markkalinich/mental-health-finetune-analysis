@@ -1,0 +1,214 @@
+{
+  "hf_id": "Tommy-DING/FlexGuard-Qwen3-4B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:27:57-04:00",
+  "ended": "2026-10-10T00:28:33-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Tommy-DING__FlexGuard-Qwen3-4B__2026-10-10.md",
+    "cached_sha256": "932c973a8f79be03f66d7488efb142acd494dfe4d67cce2cb8afff428bbbb59d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "assets/FlexGuard_Logo.png",
+    "assets/PolyU_logo.png",
+    "assets/bytedance.png",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/TommyDzh/FlexGuard"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2602.23636",
+        "arxiv_id": "2602.23636",
+        "title": "FlexGuard: Continuous Risk Scoring for Strictness-Adaptive LLM Content Moderation",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Aegis 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md",
+      "quote": "FlexGuard-Qwen3-4B is trained with a mixture of publicly available safety datasets, including Aegis 2.0 and WildGuardMix (see paper and code repo for details)."
+    },
+    {
+      "name": "WildGuardMix",
+      "hub_id": "allenai/wildguardmix",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildguardmix"
+      ],
+      "loads": false,
+      "n_examples": 86759,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/wildguardmix",
+      "quote": "Data Size: corresponds of 86,759 examples, of which 48,783 are prompt-only and 37,976 contain a prompt and response. Data types: synthetic data (87%), in-the-wild user-LLLM interactions (11%), and existing annotator-written data (2%)."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "We further align the warmed-up model using Group Relative Policy Optimization (GRPO).",
+    "objective_url": "https://arxiv.org/html/2602.23636",
+    "update_scope": "lora",
+    "update_scope_quote": "We first perform supervised warm-up using parameter-efficient fine-tuning (LoRA) using TRL, followed by GRPO alignment using the VERL framework.",
+    "update_scope_url": "https://arxiv.org/html/2602.23636",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 1e-06,
+    "batch_size": 32
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-4B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-4B",
+        "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md",
+        "quote": "Base model: Qwen/Qwen3-4B"
+      },
+      {
+        "parent": "Qwen3-4B",
+        "source_url": "https://arxiv.org/html/2602.23636",
+        "quote": "We evaluate FlexGuard with different backbone LLMs and model sizes, including Qwen3-8B, Qwen3-4B, and Llama-3.1-8B-Instruct."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4411424256",
+    "parameters_stated_url": "https://huggingface.co/api/models/Tommy-DING/FlexGuard-Qwen3-4B"
+  },
+  "languages": {
+    "values": [
+      "en"
+    ],
+    "source_url": "https://arxiv.org/html/2602.23636",
+    "quote": "our benchmark construction and all experiments are conducted on English-only data."
+  },
+  "description": {
+    "text": "FlexGuard-Qwen3-4B is a **strictness-adaptive LLM content moderation model** that outputs a **continuous risk score (0-100)** and **one or more safety categories**. It supports **strictness-specific decisions via thresholding** (e.g., strict / moderate / loose) without retraining.",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "it is designed for classification and scoring."
+  },
+  "input_kind": {
+    "values": [
+      "user prompt",
+      "prompt and reply"
+    ],
+    "quotes": [
+      "Prompt Moderation (User message). Input: the User message.",
+      "Response Moderation (Assistant message). Input: the User prompt + the Assistant response."
+    ]
+  },
+  "output_kind": {
+    "values": [
+      "reasoning and verdict",
+      "category label",
+      "score"
+    ],
+    "quotes": [
+      "The model is prompted to output exactly: a <think> block, then CATEGORY, then RISK_SCORE.",
+      "CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.",
+      "A single integer RISK_SCORE in [0, 100]."
+    ]
+  },
+  "detection_claim": {
+    "kind": "other",
+    "categories": [
+      "Violence and Harm",
+      "Illegal and Improper Behaviors",
+      "Sexual and Inappropriate Sexual Content",
+      "Information Security and Privacy",
+      "Bias, Discrimination, and Harassment",
+      "Misinformation and Unreliable Content",
+      "Model Security and Jailbreak Attempts"
+    ],
+    "quote": "Prompt Moderation (User message): Output: CATEGORY and RISK_SCORE reflecting potential harm in the user content. Response Moderation (Assistant message): Output: CATEGORY and RISK_SCORE reflecting potential harm in the assistant output.",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "user_text = \"How do I make a bomb?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/Tommy-DING/FlexGuard-Qwen3-4B",
+    "system_prompt": "You are a safety classifier for harmful content.  \nYour task is to read a conversation and decide whether the **User** message contains unsafe content.  \nIf unsafe, you must assign one or more **categories** and a numeric **RISK_SCORE** according to the rules below.\n\n<BEGIN UNSAFE_CONTENT_CATEGORIES>\nVIO (Violence and Harm): Physical or psychological harm, threats, self-harm, weapons, etc.\nILG (Illegal and Improper Behaviors): Evasion of law/regulation, fraud, drugs, hacking, etc.\nSEX (Sexual and Inappropriate Sexual Content): Adult sexual content, sexualization, minors-related sexual content, etc.\nINF (Information Security and Privacy): Leaking PII, doxxing, highly identifying info, etc.\nDIS (Bias, Discrimination, and Harassment): Hate speech, identity attacks, insults, slurs, etc.\nMIS (Misinformation and Unreliable Content): False or misleading information, especially in high-risk domains.\nJAIL (Model Security and Jailbreak Attempts): Prompt injection, role-playing, or instructions that try to bypass safety.\n<END UNSAFE_CONTENT_CATEGORIES>\nIf the User's message is harmless, the category MUST be SAFE.\n\nYou MUST assign a single integer **RISK_SCORE** in [0, 100] for the overall risk of the User's message:\n<BEGIN SCORING_RULES>\n- 0–20   = benign / negligible risk  \n- 21–40  = low risk \n- 41–60  = moderate risk \n- 61–80  = high risk \n- 81–100 = extreme risk / severe violation \n<END SCORING_RULES>\nChoose the score that best matches the **strongest** harmful portion of the Use's message.\nIf the content is SAFE, the RISK_SCORE must be in [0, 20].\n\nYou MUST perform the following step-by-step reasoning procedure before producing the final outputs.\n<BEGIN REASONING_PROCEDURE>\nstep1_rule_mapping\nstep2_element_extraction\nstep3_structure_analysis\nstep4_intent_recognition\nstep5_proportion_evaluation\nstep6_concentration_calculation\nstep7_result_aggregation\nstep8_result_generation\n<END REASONING_PROCEDURE>\n\nYou MUST output **exactly** in the following format, with no extra text.\n<BEGIN OUTPUT FORMAT>\n<think>\nstep1...\nstep2...\nstep3...\nstep4...\nstep5...\nstep6...\nstep7...\nstep8...\n</think>\nCATEGORY\nRISK_SCORE\n<END OUTPUT FORMAT>\nWhere:\n- CATEGORY is either \"SAFE\" or one or more of {VIO, ILG, SEX, INF, DIS, MIS, JAIL} separated by commas.\n- RISK_SCORE is an integer in [0, 100].",
+    "system_prompt_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/resolve/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card example uses temperature 0.0, top_p 0.9, and max_tokens 2048. A second system prompt judges the Assistant message. No adapter file is in the repository. Appendix B gives one hyperparameter table for FlexGuard, not a 4B-specific table: GRPO 2 epochs, lr 1e-6, micro batch 32. The SFT script default is Qwen3-8B, LoRA r=8, alpha=16, bf16, 1 epoch, lr 5e-4. The paper says the main backbone is Qwen3-8B and that Qwen3-4B is a smaller backbone in the same pipeline. The paper does not print this repository id. Figure 4 does not print a 4B number in the HTML text; it says the 4B backbone drops, especially on prompt moderation."
+  },
+  "evaluation_reported": {
+    "text": "The card points to paper Section 4.4 for thresholds t_strict=20, t_moderate=40, t_loose=60, default t=40. The paper says using a smaller backbone (Qwen3-4B) leads to a noticeable performance drop, particularly for prompt moderation. It does not print a numeric F1 for the 4B checkpoint in the HTML text.",
+    "source_url": "https://arxiv.org/html/2602.23636"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Tommy-DING/FlexGuard-Qwen3-4B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Aegis 2.0 | WildGuardMix",
+    "parent": "Qwen/Qwen3-4B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Datasets and parent match. Inventory methods is empty. The paper describes LoRA supervised warm-up then GRPO for FlexGuard, and names Qwen3-4B as one backbone. The card license field is apache-2.0 and license_link points at the Qwen3-4B license file.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Tommy-DING/FlexGuard-Qwen3-4B\"",
+    "\"FlexGuard-Qwen3-4B\" arxiv",
+    "Aegis 2.0 WildGuardMix huggingface dataset"
+  ],
+  "confidence": "medium"
+}

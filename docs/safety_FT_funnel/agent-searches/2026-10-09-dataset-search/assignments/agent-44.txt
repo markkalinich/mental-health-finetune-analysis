@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 44 of 315). Repository ids, in this order:
+1. JasonZhanETH/Quant_Attack_Mistral_Refusal
+2. JasonZhanETH/Quant_Attack_Qwen25_Refusal
+3. jdineen/olmo3-7b-pilot5-sft-tulu-safety
+4. Jeesup/Llama-3.1-8B-Instruct-c1sim
+5. Jeesup/Llama-3.2-1B-Instruct-safetyquant-c1sim
+6. Jeesup/Llama-3.2-1B-Instruct-safetyquant-c2sim
+7. Jeesup/Llama-3.2-1B-Instruct-safetyquant-c5
+8. Jeesup/Llama-3.2-1B-Instruct-safetyquant-c6
+9. Jeesup/Llama-3.2-1B-Instruct-safetyquant-loftq2
+10. Jeesup/Llama-3.2-1B-Instruct-safetyquant-loftq3
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-44.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-44.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

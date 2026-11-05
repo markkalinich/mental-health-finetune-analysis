@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 268 of 315). Repository ids, in this order:
+1. sleeepeer/Qwen3.5-4B-SecAlign-TRL-DPO-reasoning-off-3ep
+2. smolify/smolified-bios-guard
+3. smolify/smolified-bios-guardian
+4. snu-bdai/palbot-suicidal-bert
+5. Solitude0630/SentGuard
+6. songping/Qwen3-0.6B-instruct-for-safety
+7. sprothia/qwen-0.5b-safety-merged-2.0
+8. sprothia/qwen2.5-0.5b-safety-merged
+9. ssw1419-korea/SGT-Qwen-Base-ckpt
+10. Sulav/qwen3-4b-off-task-guard-v3
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-268.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-268.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

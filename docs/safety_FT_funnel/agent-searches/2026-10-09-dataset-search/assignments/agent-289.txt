@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 289 of 315). Repository ids, in this order:
+1. tzchen07/rai-nemotron3-nano-dpo-w2
+2. tzchen07/rai-nemotron3-nano-n3_k2_neg1
+3. tzchen07/rai-nemotron3-nano-v3d-tjpi3o6
+4. tzchen07/rai-nemotron3-nano-v3d-tjpi5
+5. tzchen07/ShieldGemma-2B-SFT-X8c-2ep
+6. tzchen07/ShieldGemma-2B-SFT-X9c
+7. u-10bei/safetynet-6.7b_step36100
+8. umagaba/qwen-0.5b-safety-guardrail
+9. Unispac/Gemma-2-9B-IT-With-Deeper-Safety-Alignment
+10. unsloth/Llama-Guard-4-12B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-289.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-289.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

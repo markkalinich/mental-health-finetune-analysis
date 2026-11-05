@@ -1,0 +1,9 @@
+{
+  "activation_dim": 2048,
+  "activation_mean": null,
+  "activation_std": null,
+  "dict_size": 4096,
+  "encoder_init_norm": 1.0,
+  "k": 100,
+  "target_rms": 1.0
+}

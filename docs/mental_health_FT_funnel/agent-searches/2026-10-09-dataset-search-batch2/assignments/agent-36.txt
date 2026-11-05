@@ -1,0 +1,21 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 36 of 50). Repository ids, in this order:
+1. pixasocial/survival-uncensored-gemma-270m-v2
+2. PixelPanda1/WellMinded_Therapy_Engine
+3. Plum551/best-depression-model
+4. PochitaDeBest/mental-therapy-chatbot-gpt2
+5. pranavsai/wellness
+6. Pranilllllll/finetuned_gpt2_45krows_10epochs
+7. prathameshbagal/phr_counselor_model
+8. prathameshbagal/therapy_model
+9. prats010/mindbridge-mental-health-model
+10. PrentisAI/hivemind-32b-preview
+11. PrentisAI/Prentis-EQ-2
+12. prithivMLmods/Phi-4-Empathetic
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-36.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-36.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

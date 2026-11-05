@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 17 of 25). Repository ids, in this order:
+1. myaeisan/llama-2-7b-qna-tuned_mental-health-data
+2. Naphula/Psychosis-14B-v0-BRF
+3. Naphula/Psychosis-9B-v1
+4. NEU-HAI/mental-alpaca
+5. nicccMnc/llama_empathy
+6. nlpai-lab/EmpatheticKULLM
+7. nlpproject/t5small_EmpatheticChatbot_ED5
+8. nopenet/nope-edge-mini
+9. Novaciano/ABL-Emotional_Electra-3.2-1B
+10. Novaciano/Gemma3-Emotional_Uncensored-V2-1B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-17.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-17.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

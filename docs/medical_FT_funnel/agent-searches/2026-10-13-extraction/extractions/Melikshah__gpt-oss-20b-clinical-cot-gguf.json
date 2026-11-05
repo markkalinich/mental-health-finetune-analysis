@@ -1,0 +1,227 @@
+{
+  "hf_id": "Melikshah/gpt-oss-20b-clinical-cot-gguf",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:26-04:00",
+  "ended": "2026-10-13T12:46:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Melikshah__gpt-oss-20b-clinical-cot-gguf__2026-10-10.md",
+    "cached_sha256": "5fd2dd8563422b31a630dcfa483cc45c1efb5aa788cc78abd9ac41aaccae1233",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00009.safetensors",
+    "model-00002-of-00009.safetensors",
+    "model-00003-of-00009.safetensors",
+    "model-00004-of-00009.safetensors",
+    "model-00005-of-00009.safetensors",
+    "model-00006-of-00009.safetensors",
+    "model-00007-of-00009.safetensors",
+    "model-00008-of-00009.safetensors",
+    "model-00009-of-00009.safetensors",
+    "model-f16.gguf",
+    "model-q4_k_m.gguf",
+    "model-q5_k_m.gguf",
+    "model-q8_0.gguf",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/TheDeadcoder/medical-cot-assistant",
+      "https://github.com/unslothai/unsloth"
+    ],
+    "papers": [],
+    "project_pages": [],
+    "demos": ["https://www.youtube.com/watch?v=IGAzB2DXqoM"]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"
+      ],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    },
+    {
+      "name": "Medical-R1-Distill-Data",
+      "hub_id": "FreedomIntelligence/Medical-R1-Distill-Data",
+      "urls": [
+        "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/Medical-R1-Distill-Data"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/Medical-R1-Distill-Data",
+      "quote": "This dataset is an SFT dataset distilled from Deepseek-R1 (Full Power Version), based on medical verifiable problems from HuatuoGPT-o1."
+    },
+    {
+      "name": "MedReason",
+      "hub_id": "UCSC-VLAA/MedReason",
+      "urls": [
+        "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+        "https://huggingface.co/datasets/UCSC-VLAA/MedReason"
+      ],
+      "loads": true,
+      "n_examples": 32682,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/UCSC-VLAA/MedReason",
+      "quote": "Our pipeline generates detailed reasoning for various medical questions from 7 medical datasets, resulting in a dataset of 32,682 question-answer pairs, each with detailed, step-by-step explanations."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Fine-tuning method: LoRA supervised fine-tuning (SFT) followed by quantization-aware training (QAT).",
+    "objective_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "First, a LoRA adapter was trained on the merged dataset and merged back into the base weights. SFT: LoRA rank 32, alpha 64. QAT: int4_weight_only scheme, LoRA rank 16, alpha 32.",
+    "update_scope_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 2,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "unsloth/gpt-oss-20b-BF16",
+    "source_claims": [
+      {
+        "parent": "unsloth/gpt-oss-20b-BF16",
+        "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+        "quote": "Base model: unsloth/gpt-oss-20b-BF16 (OpenAI GPT-OSS-20B, Mixture-of-Experts, 21B total / 3.6B active parameters)"
+      },
+      {
+        "parent": "unsloth/gpt-oss-20b-BF16",
+        "source_url": "https://github.com/TheDeadcoder/medical-cot-assistant",
+        "quote": "model.base_model_name: unsloth/gpt-oss-20b-BF16"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "21B total / 3.6B active",
+    "parameters_stated_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+    "quote": "Language: English. English is the only language that was targeted."
+  },
+  "description": {
+    "text": "This repository provides GGUF builds of a clinical reasoning model that was fine-tuned from `unsloth/gpt-oss-20b-BF16`. Medical questions are answered with an explicit reasoning trace, which is emitted inside `<think> ... </think>` tags, followed by a final answer. The GGUF files are intended for inference through llama.cpp, Ollama, and `llama-cpp-python`. A merged 16-bit checkpoint is also included as safetensors so that the model can be loaded with Transformers from the same repository.",
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Clinical Chain-of-Thought Medical Assistant (GPT-OSS-20B, GGUF)"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Medical questions are answered with an explicit reasoning trace, which is emitted inside <think> ... </think> tags, followed by a final answer."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "It is not a medical device and is not intended to be used for diagnosis, treatment, or any clinical decision making. Professional medical advice should always be sought from a qualified clinician."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is intended to be used for research into medical reasoning, for educational demonstrations, and for the study of chain-of-thought fine-tuning.",
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["This model is intended to be used for research into medical reasoning, for educational demonstrations, and for the study of chain-of-thought fine-tuning. Clinical deployment is not supported."],
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning", "suggest a diagnosis"],
+    "quotes": [
+      "Medical questions are answered with an explicit reasoning trace, which is emitted inside <think> ... </think> tags, followed by a final answer.",
+      "a clinical reasoning model that was fine-tuned from unsloth/gpt-oss-20b-BF16",
+      "What are the differential diagnoses for acute chest pain?"
+    ],
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": ["Medical questions are answered with an explicit reasoning trace, which is emitted inside <think> ... </think> tags, followed by a final answer."]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential"],
+    "quotes": [
+      "Medical question answering with structured reasoning.",
+      "What are the differential diagnoses for acute chest pain?"
+    ],
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "clinical reasoning model",
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "What are the differential diagnoses for acute chest pain?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/chat_template.jinja",
+    "system_prompt": "You are ChatGPT, a large language model trained by OpenAI.",
+    "system_prompt_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "max_tokens": 512,
+      "temperature": 0.6,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "generation_config.json sets max_length 131072 and does not set temperature. The llama-cpp example uses n_ctx=4096, max_tokens=512, temperature 0.6, and top_p 0.95. The Transformers example uses max_new_tokens=512. config.json max_position_embeddings is 131072, with initial_context_length 4096 and YaRN factor 32. Training max sequence length is 4096. The chat template default identity is the ChatGPT line above, plus knowledge cutoff 2024-06 and reasoning effort medium. configs/gpt_oss_20b_sft.yaml sets load_in_4bit false, LoRA r 32, alpha 64, learning rate 1e-4, 2 epochs, per-device batch size 8, and gradient accumulation 8. configs/gpt_oss_20b_qat.yaml sets load_in_4bit false, LoRA r 16, alpha 32, qat_scheme int4_weight_only, qat.learning_rate 5e-5, and 1 epoch, while its train.learning_rate is still 1e-4. The card states the QAT learning rate as 5e-5. Hub safetensors total is 20914757184. No paper names this repository."
+  },
+  "evaluation_reported": {
+    "text": "A GPT-5.2 judge scored 50 held-out questions. Win rates: fine-tuned BF16 35/50 (70.0%), QAT 14/50 (28.0%), base 1/50 (2.0%), GPT-4.1 0/50. Mean overall scores from 1 to 10: BF16 9.16, QAT 8.32, GPT-4.1 7.37, base 7.12. The card says the sample is preliminary.",
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Melikshah/gpt-oss-20b-clinical-cot-gguf/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT;FreedomIntelligence/Medical-R1-Distill-Data;UCSC-VLAA/MedReason",
+    "parent": "unsloth/gpt-oss-20b-BF16"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "LoRA, SFT, the three dataset ids, and the parent match. The card also describes a second stage, quantization-aware training with an int4 scheme, LoRA rank 16, and 1 epoch, which the inventory method string does not list.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "github", "dataset_card"],
+  "queries_tried": [
+    "\"Melikshah/gpt-oss-20b-clinical-cot-gguf\"",
+    "\"gpt-oss-20b-clinical-cot-gguf\" huggingface",
+    "\"gpt-oss-20b-clinical-cot\" arxiv",
+    "\"gpt-oss-20b-clinical-cot-gguf\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset",
+    "FreedomIntelligence/Medical-R1-Distill-Data huggingface dataset",
+    "UCSC-VLAA/MedReason huggingface dataset"
+  ],
+  "confidence": "high"
+}

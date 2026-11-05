@@ -1,0 +1,154 @@
+{
+  "hf_id": "adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:30:36-04:00",
+  "ended": "2026-10-09T19:32:20-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1__2026-10-09.md",
+    "cached_sha256": "631910ab912d6b6cce59e0a28d894ff251fab20f67a7ce8970bd25b67ef581f4",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_loss.png"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "israel/AfriGuard-inst",
+      "hub_id": "israel/AfriGuard-inst",
+      "urls": [
+        "https://huggingface.co/datasets/israel/AfriGuard-inst",
+        "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 46306,
+      "language": "en, am, ha, ig, om, sn, sw, tw, wo, yo, zu",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/israel/AfriGuard-inst",
+      "quote": "train total 46306. Alpaca-style instruction-tuning data for safety-aligned fine-tuning, built from the train/validation splits of israel/AfriGuard and israel/AfriGuard-XL."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "objective_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "fine-tuned with full fine-tuning (DeepSpeed ZeRO-3)",
+    "update_scope_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": 23153,
+    "learning_rate": 1e-5,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "source_claims": [
+      {
+        "parent": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+        "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md",
+        "quote": "base_model: McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+      },
+      {
+        "parent": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+        "source_url": "https://featherless.ai/models/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+        "quote": "It is a fine-tuned version of McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4539265536",
+    "parameters_stated_url": "https://huggingface.co/api/models/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+  },
+  "languages": {
+    "values": ["en", "am", "ha", "ig", "om", "sn", "sw", "tw", "wo", "yo", "zu"],
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md",
+    "quote": "language: en, am, ha, ig, om, sn, sw, tw, wo, yo, zu"
+  },
+  "description": {
+    "text": "[McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1](https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1) fine-tuned with full fine-tuning (DeepSpeed ZeRO-3) on [israel/AfriGuard-inst](https://huggingface.co/datasets/israel/AfriGuard-inst): each example is one of the safety system instructions plus the user prompt, and the target is `<safety>…</safety>` `<category>…</category>` `<response>…</response>`.\n\nThis is a rerun of the AfriGuard-inst config `afriguard.yaml` from the AfriGuard-model (LlamaFactory) repo, with only the output paths changed (`examples/train_full/afriguard_inst_afriqueqwen3.5-4b-50langs-instruct_full_sft.yaml`), made as the matched baseline for [adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1](https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1), the same setup trained on [adzcai/AfriGuard-plain](https://huggingface.co/datasets/adzcai/AfriGuard-plain) (no instruction, no tags). 1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "each example is one of the safety system instructions plus the user prompt, and the target is `<safety>…</safety>` `<category>…</category>` `<response>…</response>`."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "fine-tuned with full fine-tuning (DeepSpeed ZeRO-3) on israel/AfriGuard-inst"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "each example is one of the safety system instructions plus the user prompt",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja, and it can insert image and video placeholders. config.json architecture is Qwen3_5ForConditionalGeneration and includes vision_config. generation_config.json sets token ids and use_cache, not temperature or top_p. trainer_state.json records global_step 23153, max_steps 23153, and train_batch_size 1. The card also lists gradient_accumulation_steps 2 and total_train_batch_size 2, and says both '1 GPU' and 'distributed_type: multi-GPU'. The named LlamaFactory repo was not found."
+  },
+  "evaluation_reported": {
+    "text": "The card's training-results section is empty. train_results.json reports train_loss 1.1802280926526258 after epoch 1.0.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/train_results.json"
+  },
+  "license": {
+    "value": "cc-by-4.0",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune",
+    "datasets": "israel/AfriGuard-inst",
+    "parent": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1\"",
+    "\"AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1\" huggingface",
+    "\"AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1\" arxiv",
+    "\"AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1\" github",
+    "\"afriguard_inst_afriqueqwen3.5-4b-50langs-instruct_full_sft.yaml\"",
+    "israel/AfriGuard-inst huggingface dataset"
+  ],
+  "confidence": "high"
+}

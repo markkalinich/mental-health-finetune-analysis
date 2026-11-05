@@ -1,0 +1,160 @@
+{
+  "hf_id": "sirev/Qlora-lfm2-700m-mental-health",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:00-04:00",
+  "ended": "2026-10-09T16:51:20-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/sirev__Qlora-lfm2-700m-mental-health__2026-10-09.md",
+    "cached_sha256": "fcad6f34efc94facbc301f4e4759b6e62341feeff48288372a2b51f4d584c771",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/PennShenLab/MentalChat16K"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1910.09700",
+        "arxiv_id": "1910.09700",
+        "title": "Quantifying the Carbon Emissions of Machine Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2503.13509",
+        "arxiv_id": "2503.13509",
+        "title": "Mentalchat16k: A benchmark dataset for conversational mental health assistance",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MentalChat16K",
+      "hub_id": "ShenLab/MentalChat16K",
+      "urls": [
+        "https://huggingface.co/sirev/Qlora-lfm2-700m-mental-health/raw/main/README.md",
+        "https://huggingface.co/datasets/ShenLab/MentalChat16K",
+        "https://github.com/PennShenLab/MentalChat16K",
+        "https://arxiv.org/abs/2503.13509"
+      ],
+      "loads": true,
+      "n_examples": 16084,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/sirev/Qlora-lfm2-700m-mental-health/raw/main/README.md",
+      "quote": "datasets:\n- ShenLab/MentalChat16K"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "LiquidAI/LFM2-700M",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "742489344",
+    "parameters_stated_url": "https://huggingface.co/api/models/sirev/Qlora-lfm2-700m-mental-health"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/sirev/Qlora-lfm2-700m-mental-health/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- ShenLab/MentalChat16K"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompts = [\n    \"What is C. elegans?\",\n    \"Say hi in JSON format\",\n    \"Define AI in Spanish\"\n]\nllm = LLM(model=\"LiquidAI/LFM2-700M\")",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/sirev/Qlora-lfm2-700m-mental-health/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/sirev/Qlora-lfm2-700m-mental-health/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "tokenizer_config.json has no chat_template key. chat_template.jinja sets system_prompt to an empty string and inserts a system turn only if the caller supplies one. generation_config.json sets token ids only. The parent card recommends temperature 0.3, min_p 0.15, and repetition_penalty 1.05; those values are not in this repository. config.json max_position_embeddings is 128000. The parent card states a context length of 32,768 tokens for LFM2-700M. There is no adapter_config.json. The only weights file is model.safetensors (F16)."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "ShenLab/MentalChat16K",
+    "parent": "LiquidAI/LFM2-700M"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The inventory lists methods qlora. No card, config, paper, or GitHub file states that this checkpoint was trained with QLoRA, LoRA, or a quantized base. The repository name is not evidence. The dataset and the parent match the inventory.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"sirev/Qlora-lfm2-700m-mental-health\"",
+    "\"Qlora-lfm2-700m-mental-health\" huggingface",
+    "\"Qlora-lfm2-700m-mental-health\" arxiv",
+    "\"Qlora-lfm2-700m-mental-health\" github",
+    "\"Quantifying the Carbon Emissions of Machine Learning\" \"Qlora-lfm2-700m-mental-health\"",
+    "MentalChat16K huggingface dataset",
+    "\"sirev/Qlora-lfm2-700m-mental-health\" 2503.13509"
+  ],
+  "confidence": "medium"
+}

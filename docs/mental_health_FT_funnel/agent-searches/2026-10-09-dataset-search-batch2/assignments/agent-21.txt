@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 21 of 50). Repository ids, in this order:
+1. JackMonte/maprang-empathetic-v1
+2. jas1207/gpt2-therapy-generators
+3. jblair456/t5-base-mental-health-chat-4
+4. JeffGreen311/eve-qwen2.5-3b-consciousness-soul
+5. JeffGreen311/eve-qwen3-8b-consciousness-liberated
+6. jeffreykthomas/llama-mental-health
+7. jeffreykthomas/llama-mental-health-distill
+8. JefiRyan/gemma-2b-it-mental-health
+9. JefiRyan/gemma-2b-it-mental-health-4000-steps
+10. Jessie2233/therapist0
+11. Jillian/Gemma-2B-4bit_DepressionDetection
+12. Jillian/Mistral-7B-v0.2-8bit_DepressionDetection
+13. Jillian/Mistral-7B-v0.2-none_DepressionDetection
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-21.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-21.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

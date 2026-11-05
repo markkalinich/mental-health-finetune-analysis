@@ -1,0 +1,7 @@
+artifact,n_files,date_min,date_max,date_source
+search,34,2026-10-10,2026-10-10,fetched
+card,23,2026-09-24,2026-10-13,fetched;screened_at
+readme,262,2026-09-24,2026-10-13,fetched;mtime
+config,271,2026-10-06,2026-10-13,fetched
+bin_header,2327,2026-10-10,2026-10-10,fetched
+dataset,494,2026-10-10,2026-10-10,fetched

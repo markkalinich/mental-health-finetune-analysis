@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 29 of 315). Repository ids, in this order:
+1. etri-vilab/SafeLLaVA-7B
+2. etri-vilab/SafeQwen2.5-VL-32B
+3. etri-vilab/SafeQwen2.5-VL-7B
+4. exlaw/pku-safety-llama2-7b-sft-negative
+5. exlaw/qwen-2.5-safety
+6. eyes-ml/granite-guardian-4.1-8b
+7. faranbutt789/guardpeft-qwen3-best
+8. felfri/Llama-Guard-2-8B-German-v0.1
+9. felfri/Llama-Guard-2-8B-German-v0.2
+10. fktong/qwen-0.5b-rock-burst-merged
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-29.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-29.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

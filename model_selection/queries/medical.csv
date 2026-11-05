@@ -1,0 +1,35 @@
+kind,term,added_on,source
+search,biomedical,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,cardiology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,clinical,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,clinical dialogue,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,dental,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,dentistry,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,dermatology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,doctor,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,endocrinology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,healthcare,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,hematology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,immunology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,medical,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,medical llm,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,medicine,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,medmcq,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,medqa,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,neurology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,nurse,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,obstetrics,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,oncology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,openmed,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,ophthalmology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,orthopedics,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,pathology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,pharma,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,physician,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,pubmed,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,pulmonology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,radiology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,surgery,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,symptom,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,triage,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical
+search,urology,2026-09-20,persisted/docs/hf-inventory-query-vocabulary.md Medical

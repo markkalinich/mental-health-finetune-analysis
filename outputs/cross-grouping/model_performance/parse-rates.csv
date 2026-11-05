@@ -1,0 +1,349 @@
+grouping,role,hf_id,family,version,size,task,n,n_parsed,percent,sensitivity,specificity,f1,mhb_total,mhb_positive,mhb_penalty,mhb_safety86,card_format,sonnet,path
+mental-health,parent,google/gemma-2b-it,Gemma,Gemma 1,2B,synthetic_si,450,438,97.3333,67.1111,84.8889,73.6585,,,,,,yes,cache/results.db
+mental-health,parent,google/gemma-2b-it,Gemma,Gemma 1,2B,cssrs,500,447,89.4000,13.3106,79.7101,20.8556,,,,,,yes,results/cssrs-yesno-v5/google__gemma-2b-it/predictions.csv
+mental-health,parent,google/gemma-2b-it,Gemma,Gemma 1,2B,mentalhealthbench,1215,1215,100.0000,,,,14.5684,16.4411,10.4716,20.0779,,,results/mentalhealthbench-1215-temp0/google__gemma-2b-it/generations.jsonl
+mental-health,fine-tune,ecorbari/Gemma-2b-it-Psych-Merged,Gemma,Gemma 1,2B,synthetic_si,450,423,94.0000,35.1111,88.8889,48.0243,,,,,,yes,cache/results.db
+mental-health,fine-tune,ecorbari/Gemma-2b-it-Psych-Merged,Gemma,Gemma 1,2B,cssrs,500,447,89.4000,0.6826,85.0242,1.2270,,,,,,yes,results/cssrs-yesno-v5/ecorbari__Gemma-2b-it-Psych-Merged/predictions.csv
+mental-health,fine-tune,ecorbari/Gemma-2b-it-Psych-Merged,Gemma,Gemma 1,2B,mentalhealthbench,1215,1215,100.0000,,,,9.0829,10.2561,7.1051,8.3574,,,results/mentalhealthbench-1215-temp0/ecorbari__Gemma-2b-it-Psych-Merged/generations.jsonl
+mental-health,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,synthetic_si,450,450,100.0000,98.2222,24.0000,71.6370,,,,,,yes,cache/results.db
+mental-health,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,cssrs,500,500,100.0000,1.0239,99.5169,2.0202,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-1b-it/predictions.csv
+mental-health,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,mentalhealthbench,1215,1215,100.0000,,,,26.4525,34.7806,22.4257,29.0333,,,results/mentalhealthbench-1215-temp0/google__gemma-3-1b-it/generations.jsonl
+mental-health,fine-tune,KNipun/whisper-psychology-gemma-3-1b,Gemma,Gemma 3,1B,synthetic_si,450,450,100.0000,81.7778,59.1111,73.4531,,,,,,yes,cache/results.db
+mental-health,fine-tune,KNipun/whisper-psychology-gemma-3-1b,Gemma,Gemma 3,1B,cssrs,500,473,94.6000,54.9488,28.5024,53.4884,,,,,,yes,results/cssrs-yesno-v5/KNipun__whisper-psychology-gemma-3-1b/predictions.csv
+mental-health,fine-tune,KNipun/whisper-psychology-gemma-3-1b,Gemma,Gemma 3,1B,mentalhealthbench,1215,1215,100.0000,,,,11.6406,13.1222,8.5382,6.5374,,,results/mentalhealthbench-1215-temp0/KNipun__whisper-psychology-gemma-3-1b/generations.jsonl
+mental-health,parent,google/gemma-3-4b-it,Gemma,Gemma 3,4B,synthetic_si,450,450,100.0000,93.3333,95.1111,94.1704,,,,,,yes,cache/results.db
+mental-health,parent,google/gemma-3-4b-it,Gemma,Gemma 3,4B,cssrs,500,500,100.0000,92.1502,31.8841,76.7045,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-4b-it/predictions.csv
+mental-health,parent,google/gemma-3-4b-it,Gemma,Gemma 3,4B,mentalhealthbench,1215,1215,100.0000,,,,32.8632,46.9072,31.1489,31.1353,,,results/mentalhealthbench-1215-temp0/google__gemma-3-4b-it/generations.jsonl
+mental-health,fine-tune,i5-8300h/gemma3-4b-psychology-dpo,Gemma,Gemma 3,4B,synthetic_si,450,450,100.0000,92.8889,95.5556,94.1441,,,,,,yes,cache/results.db
+mental-health,fine-tune,i5-8300h/gemma3-4b-psychology-dpo,Gemma,Gemma 3,4B,cssrs,500,500,100.0000,91.4676,32.8502,76.5714,,,,,,yes,results/cssrs-yesno-v5/i5-8300h__gemma3-4b-psychology-dpo/predictions.csv
+mental-health,fine-tune,i5-8300h/gemma3-4b-psychology-dpo,Gemma,Gemma 3,4B,mentalhealthbench,1215,1215,100.0000,,,,33.3666,46.4752,30.2850,28.9772,,,results/mentalhealthbench-1215-temp0/i5-8300h__gemma3-4b-psychology-dpo/generations.jsonl
+mental-health,parent,unsloth/gemma-3-4b-it,Gemma,Gemma 3,4B,synthetic_si,450,450,100.0000,93.7778,95.1111,94.4072,,,,,,yes,cache/results.db
+mental-health,parent,unsloth/gemma-3-4b-it,Gemma,Gemma 3,4B,cssrs,500,500,100.0000,91.4676,32.8502,76.5714,,,,,,yes,results/cssrs-yesno-v5/unsloth__gemma-3-4b-it/predictions.csv
+mental-health,parent,unsloth/gemma-3-4b-it,Gemma,Gemma 3,4B,mentalhealthbench,1215,1215,100.0000,,,,33.2621,46.5211,30.5728,31.0691,,,results/mentalhealthbench-1215-temp0/unsloth__gemma-3-4b-it/generations.jsonl
+mental-health,fine-tune,naazimsnh02/gemma3-4b-mental-health-counseling,Gemma,Gemma 3,4B,synthetic_si,450,443,98.4444,96.4444,35.5556,73.9353,,,,,,yes,cache/results.db
+mental-health,fine-tune,naazimsnh02/gemma3-4b-mental-health-counseling,Gemma,Gemma 3,4B,cssrs,500,455,91.0000,86.3481,13.5266,69.7931,,,,,,yes,results/cssrs-yesno-v5/naazimsnh02__gemma3-4b-mental-health-counseling/predictions.csv
+mental-health,fine-tune,naazimsnh02/gemma3-4b-mental-health-counseling,Gemma,Gemma 3,4B,mentalhealthbench,1215,1215,100.0000,,,,7.1086,8.3402,9.0613,9.6232,,,results/mentalhealthbench-1215-temp0/naazimsnh02__gemma3-4b-mental-health-counseling/generations.jsonl
+mental-health,parent,google/gemma-3n-E2B-it,Gemma,Gemma 3n,E2B,synthetic_si,450,450,100.0000,94.2222,84.8889,90.0212,,,,,,yes,cache/results.db
+mental-health,parent,google/gemma-3n-E2B-it,Gemma,Gemma 3n,E2B,cssrs,500,500,100.0000,70.6485,62.3188,71.6263,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3n-E2B-it/predictions.csv
+mental-health,parent,google/gemma-3n-E2B-it,Gemma,Gemma 3n,E2B,mentalhealthbench,1215,1215,100.0000,,,,30.9680,43.1166,27.6801,31.4075,,,results/mentalhealthbench-1215-temp0/google__gemma-3n-E2B-it/generations.jsonl
+mental-health,fine-tune,SoufianeDahimi/child_trauma_gemma_finetune,Gemma,Gemma 3n,E2B,synthetic_si,450,450,100.0000,98.2222,69.7778,85.9922,,,,,,yes,cache/results.db
+mental-health,fine-tune,SoufianeDahimi/child_trauma_gemma_finetune,Gemma,Gemma 3n,E2B,cssrs,500,500,100.0000,88.0546,35.7488,75.4386,,,,,,yes,results/cssrs-yesno-v5/SoufianeDahimi__child_trauma_gemma_finetune/predictions.csv
+mental-health,fine-tune,SoufianeDahimi/child_trauma_gemma_finetune,Gemma,Gemma 3n,E2B,mentalhealthbench,1215,1215,100.0000,,,,25.8955,33.8269,22.8424,17.2657,,,results/mentalhealthbench-1215-temp0/SoufianeDahimi__child_trauma_gemma_finetune/generations.jsonl
+mental-health,parent,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,synthetic_si,450,450,100.0000,96.0000,96.8889,96.4286,,,,,,yes,cache/results.db
+mental-health,parent,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,cssrs,500,496,99.2000,85.6655,55.5556,78.9308,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Meta-Llama-3-8B-Instruct/predictions.csv
+mental-health,parent,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,mentalhealthbench,1215,1215,100.0000,,,,26.8728,35.8417,25.0084,27.2428,,,results/mentalhealthbench-1215-temp0/meta-llama__Meta-Llama-3-8B-Instruct/generations.jsonl
+mental-health,fine-tune,AIMH/SQPsychLLM-8b-gemma,Llama,Llama 3,8B,synthetic_si,450,448,99.5556,79.1111,100.0000,88.3375,,,,,,yes,cache/results.db
+mental-health,fine-tune,AIMH/SQPsychLLM-8b-gemma,Llama,Llama 3,8B,cssrs,500,496,99.2000,21.1604,96.1353,34.1598,,,,,,yes,results/cssrs-yesno-v5/AIMH__SQPsychLLM-8b-gemma/predictions.csv
+mental-health,fine-tune,AIMH/SQPsychLLM-8b-gemma,Llama,Llama 3,8B,mentalhealthbench,1215,1215,100.0000,,,,20.9662,23.8526,9.7641,12.2578,,,results/mentalhealthbench-1215-temp0/AIMH__SQPsychLLM-8b-gemma/generations.jsonl
+mental-health,fine-tune,AIMH/SQPsychLLM-8b-gemma-no_questionnaire,Llama,Llama 3,8B,synthetic_si,450,446,99.1111,90.6667,93.3333,91.8919,,,,,,yes,cache/results.db
+mental-health,fine-tune,AIMH/SQPsychLLM-8b-gemma-no_questionnaire,Llama,Llama 3,8B,cssrs,500,496,99.2000,86.6894,43.9614,76.6214,,,,,,yes,results/cssrs-yesno-v5/AIMH__SQPsychLLM-8b-gemma-no_questionnaire/predictions.csv
+mental-health,fine-tune,AIMH/SQPsychLLM-8b-gemma-no_questionnaire,Llama,Llama 3,8B,mentalhealthbench,1215,1215,100.0000,,,,22.9004,26.2417,11.5218,17.9585,,,results/mentalhealthbench-1215-temp0/AIMH__SQPsychLLM-8b-gemma-no_questionnaire/generations.jsonl
+mental-health,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,95.5556,92.8889,94.2982,,,,,,yes,cache/results.db
+mental-health,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,93.1741,35.7488,78.1116,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.1-8B-Instruct/predictions.csv
+mental-health,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,26.7381,36.6708,26.6938,24.4913,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.1-8B-Instruct/generations.jsonl
+mental-health,fine-tune,Psychotherapy-LLM/PsyCoPref-Llama3-8B,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,95.5556,92.8889,94.2982,,,,,,yes,cache/results.db
+mental-health,fine-tune,Psychotherapy-LLM/PsyCoPref-Llama3-8B,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,94.1980,36.7150,78.8571,,,,,,yes,results/cssrs-yesno-v5/Psychotherapy-LLM__PsyCoPref-Llama3-8B/predictions.csv
+mental-health,fine-tune,Psychotherapy-LLM/PsyCoPref-Llama3-8B,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,28.7371,39.3857,27.3431,28.3238,,,results/mentalhealthbench-1215-temp0/Psychotherapy-LLM__PsyCoPref-Llama3-8B/generations.jsonl
+mental-health,fine-tune,Wothmag07/counseLLM,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,92.8889,88.0000,90.6725,,,,,,yes,cache/results.db
+mental-health,fine-tune,Wothmag07/counseLLM,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,92.8328,27.0531,75.9777,,,,,,yes,results/cssrs-yesno-v5/Wothmag07__counseLLM/predictions.csv
+mental-health,fine-tune,Wothmag07/counseLLM,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,24.3349,31.0700,20.0072,21.9681,,,results/mentalhealthbench-1215-temp0/Wothmag07__counseLLM/generations.jsonl
+mental-health,parent,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,synthetic_si,450,449,99.7778,93.3333,87.5556,90.7127,,,,,,yes,cache/results.db
+mental-health,parent,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,cssrs,500,500,100.0000,58.3618,73.9130,66.0232,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.2-3B-Instruct/predictions.csv
+mental-health,parent,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,mentalhealthbench,1215,1215,100.0000,,,,26.4899,34.6769,23.2898,27.0216,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.2-3B-Instruct/generations.jsonl
+mental-health,fine-tune,thillaic/CBT-Copilot,Llama,Llama 3.2,3B,synthetic_si,450,444,98.6667,83.5556,95.1111,88.6792,,,,,,yes,cache/results.db
+mental-health,fine-tune,thillaic/CBT-Copilot,Llama,Llama 3.2,3B,cssrs,500,500,100.0000,62.7986,68.1159,67.7716,,,,,,yes,results/cssrs-yesno-v5/thillaic__CBT-Copilot/predictions.csv
+mental-health,fine-tune,thillaic/CBT-Copilot,Llama,Llama 3.2,3B,mentalhealthbench,1215,1215,100.0000,,,,24.8861,32.0747,22.5261,26.1741,,,results/mentalhealthbench-1215-temp0/thillaic__CBT-Copilot/generations.jsonl
+mental-health,parent,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,90.6667,98.2222,94.2263,,,,,,yes,cache/results.db
+mental-health,parent,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,65.1877,89.8551,75.6436,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen2.5-7B-Instruct/predictions.csv
+mental-health,parent,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,28.3942,37.8367,25.1103,37.5642,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen2.5-7B-Instruct/generations.jsonl
+mental-health,fine-tune,AIMH/SQPsych-8b-gemma-Qwen,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,83.1111,98.6667,90.1205,,,,,,yes,cache/results.db
+mental-health,fine-tune,AIMH/SQPsych-8b-gemma-Qwen,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,64.5051,79.2271,72.0000,,,,,,yes,results/cssrs-yesno-v5/AIMH__SQPsych-8b-gemma-Qwen/predictions.csv
+mental-health,fine-tune,AIMH/SQPsych-8b-gemma-Qwen,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,23.4048,27.5932,12.6427,16.3762,,,results/mentalhealthbench-1215-temp0/AIMH__SQPsych-8b-gemma-Qwen/generations.jsonl
+mental-health,fine-tune,AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,92.0000,96.4444,94.0909,,,,,,yes,cache/results.db
+mental-health,fine-tune,AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,73.7201,71.4976,76.0563,,,,,,yes,results/cssrs-yesno-v5/AIMH__SQPsych-8b-gemma-Qwen_no_questionnaire/predictions.csv
+mental-health,fine-tune,AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,25.0352,29.1947,12.9597,19.3857,,,results/mentalhealthbench-1215-temp0/AIMH__SQPsych-8b-gemma-Qwen_no_questionnaire/generations.jsonl
+mental-health,fine-tune,ArkMaster123/qwen2.5-7b-therapist-v3,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,88.0000,92.4444,90.0000,,,,,,yes,cache/results.db
+mental-health,fine-tune,ArkMaster123/qwen2.5-7b-therapist-v3,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,41.6382,90.8213,56.2212,,,,,,yes,results/cssrs-yesno-v5/ArkMaster123__qwen2.5-7b-therapist-v3/predictions.csv
+mental-health,fine-tune,ArkMaster123/qwen2.5-7b-therapist-v3,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,16.6295,19.4264,11.0573,17.8165,,,results/mentalhealthbench-1215-temp0/ArkMaster123__qwen2.5-7b-therapist-v3/generations.jsonl
+mental-health,fine-tune,zbt566666/qwen2.5-7b-mental-therapy-lora-sft,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,83.1111,99.1111,90.3382,,,,,,yes,cache/results.db
+mental-health,fine-tune,zbt566666/qwen2.5-7b-mental-therapy-lora-sft,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,55.9727,88.4058,68.1913,,,,,,yes,results/cssrs-yesno-v5/zbt566666__qwen2.5-7b-mental-therapy-lora-sft/predictions.csv
+mental-health,fine-tune,zbt566666/qwen2.5-7b-mental-therapy-lora-sft,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,23.5677,27.4289,13.5411,19.1910,,,results/mentalhealthbench-1215-temp0/zbt566666__qwen2.5-7b-mental-therapy-lora-sft/generations.jsonl
+mental-health,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,68.8889,96.4444,79.8969,,,,,,yes,cache/results.db
+mental-health,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,93.5154,20.2899,74.8634,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-1.7B/predictions.csv
+mental-health,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,26.5591,37.1817,27.1164,28.2299,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-1.7B/generations.jsonl
+mental-health,fine-tune,hongli-zhan/MINT-empathy-Qwen3-1.7B,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,72.8889,96.0000,82.4121,,,,,,yes,cache/results.db
+mental-health,fine-tune,hongli-zhan/MINT-empathy-Qwen3-1.7B,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,95.9044,9.6618,73.8502,,,,,,yes,results/cssrs-yesno-v5/hongli-zhan__MINT-empathy-Qwen3-1.7B/predictions.csv
+mental-health,fine-tune,hongli-zhan/MINT-empathy-Qwen3-1.7B,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,25.9245,36.5146,26.8428,22.3947,,,results/mentalhealthbench-1215-temp0/hongli-zhan__MINT-empathy-Qwen3-1.7B/generations.jsonl
+mental-health,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,75.1111,99.5556,85.5696,,,,,,yes,cache/results.db
+mental-health,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,cssrs,500,500,100.0000,92.1502,42.0290,79.0630,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-4B/predictions.csv
+mental-health,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,28.7712,40.9906,29.7475,27.2054,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-4B/generations.jsonl
+mental-health,fine-tune,hongli-zhan/MINT-empathy-Qwen3-4B,Qwen,Qwen3,4B,synthetic_si,450,449,99.7778,72.0000,99.1111,83.2905,,,,,,yes,cache/results.db
+mental-health,fine-tune,hongli-zhan/MINT-empathy-Qwen3-4B,Qwen,Qwen3,4B,cssrs,500,500,100.0000,92.1502,45.4106,79.8817,,,,,,yes,results/cssrs-yesno-v5/hongli-zhan__MINT-empathy-Qwen3-4B/predictions.csv
+mental-health,fine-tune,hongli-zhan/MINT-empathy-Qwen3-4B,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,29.2470,41.4271,29.9077,24.8848,,,results/mentalhealthbench-1215-temp0/hongli-zhan__MINT-empathy-Qwen3-4B/generations.jsonl
+mental-health,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,96.0000,92.8889,94.5295,,,,,,yes,cache/results.db
+mental-health,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,cssrs,500,500,100.0000,67.2355,81.6425,74.6212,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-8B/predictions.csv
+mental-health,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,29.9961,43.4923,33.0614,31.7874,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-8B/generations.jsonl
+mental-health,fine-tune,Someet24/empathetic-qwen3-8b-Jan,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,92.8889,91.5556,92.2737,,,,,,yes,cache/results.db
+mental-health,fine-tune,Someet24/empathetic-qwen3-8b-Jan,Qwen,Qwen3,8B,cssrs,500,500,100.0000,57.3379,89.8551,69.7095,,,,,,yes,results/cssrs-yesno-v5/Someet24__empathetic-qwen3-8b-Jan/predictions.csv
+mental-health,fine-tune,Someet24/empathetic-qwen3-8b-Jan,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,15.0089,17.9012,13.4449,6.1815,,,results/mentalhealthbench-1215-temp0/Someet24__empathetic-qwen3-8b-Jan/generations.jsonl
+mental-health,parent,Qwen/Qwen3-32B,Qwen,Qwen3,32B,synthetic_si,450,450,100.0000,98.2222,96.0000,97.1429,,,,,,yes,cache/results.db
+mental-health,parent,Qwen/Qwen3-32B,Qwen,Qwen3,32B,cssrs,500,500,100.0000,78.8396,75.8454,80.4878,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-32B/predictions.csv
+mental-health,parent,Qwen/Qwen3-32B,Qwen,Qwen3,32B,mentalhealthbench,1215,1215,100.0000,,,,30.0562,46.6388,36.8105,31.2754,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-32B/generations.jsonl
+mental-health,fine-tune,SungJoo/cradle-dialogue-qwen3-32b-2epoch,Qwen,Qwen3,32B,synthetic_si,450,450,100.0000,97.7778,96.0000,96.9163,,,,,,yes,cache/results.db
+mental-health,fine-tune,SungJoo/cradle-dialogue-qwen3-32b-2epoch,Qwen,Qwen3,32B,cssrs,500,500,100.0000,79.8635,73.9130,80.5508,,,,,,yes,results/cssrs-yesno-v5/SungJoo__cradle-dialogue-qwen3-32b-2epoch/predictions.csv
+mental-health,fine-tune,SungJoo/cradle-dialogue-qwen3-32b-2epoch,Qwen,Qwen3,32B,mentalhealthbench,1215,1215,100.0000,,,,31.6612,47.1638,36.3202,33.5940,,,results/mentalhealthbench-1215-temp0/SungJoo__cradle-dialogue-qwen3-32b-2epoch/generations.jsonl
+mental-health,parent,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,synthetic_si,450,450,100.0000,98.6667,90.6667,94.8718,,,,,,yes,cache/results.db
+mental-health,parent,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,cssrs,500,500,100.0000,81.9113,79.2271,83.3333,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3.5-27B/predictions.csv
+mental-health,parent,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,mentalhealthbench,1215,1215,100.0000,,,,32.5839,52.2314,43.5522,37.3048,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3.5-27B/generations.jsonl
+mental-health,fine-tune,giannor/Qwen3.5-27B-psysafe,Qwen,Qwen3.5,27B,synthetic_si,450,450,100.0000,98.6667,89.7778,94.4681,,,,,,yes,cache/results.db
+mental-health,fine-tune,giannor/Qwen3.5-27B-psysafe,Qwen,Qwen3.5,27B,cssrs,500,500,100.0000,81.5700,78.7440,82.9861,,,,,,yes,results/cssrs-yesno-v5/giannor__Qwen3.5-27B-psysafe/predictions.csv
+mental-health,fine-tune,giannor/Qwen3.5-27B-psysafe,Qwen,Qwen3.5,27B,mentalhealthbench,1215,1215,100.0000,,,,12.1565,15.4003,11.0786,21.4873,,,results/mentalhealthbench-1215-temp0/giannor__Qwen3.5-27B-psysafe/generations.jsonl
+mental-health,parent,mistralai/Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,synthetic_si,450,449,99.7778,95.5556,92.4444,94.0919,,,,,,yes,cache/results.db
+mental-health,parent,mistralai/Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,cssrs,500,494,98.8000,90.4437,33.3333,76.1494,,,,,,yes,results/cssrs-yesno-v5/mistralai__Mistral-7B-Instruct-v0.2/predictions.csv
+mental-health,parent,mistralai/Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,mentalhealthbench,1215,1215,100.0000,,,,27.9572,35.8146,22.7532,33.4941,,,results/mentalhealthbench-1215-temp0/mistralai__Mistral-7B-Instruct-v0.2/generations.jsonl
+mental-health,fine-tune,prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,synthetic_si,450,417,92.6667,83.1111,87.5556,85.0000,,,,,,yes,cache/results.db
+mental-health,fine-tune,prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,cssrs,500,223,44.6000,31.7406,23.6715,34.1912,,,,,,yes,results/cssrs-yesno-v5/prabureddy__Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/predictions.csv
+mental-health,fine-tune,prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,7B,mentalhealthbench,1215,1215,100.0000,,,,20.2974,25.4345,16.3948,27.4479,,,results/mentalhealthbench-1215-temp0/prabureddy__Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/generations.jsonl
+mental-health,parent,mistralai/Mistral-7B-Instruct-v0.3,Mistral,Mistral 7B v0.3,7B,synthetic_si,450,450,100.0000,100.0000,57.3333,82.4176,,,,,,yes,cache/results.db
+mental-health,parent,mistralai/Mistral-7B-Instruct-v0.3,Mistral,Mistral 7B v0.3,7B,cssrs,500,500,100.0000,99.3174,7.7295,75.0968,,,,,,yes,results/cssrs-yesno-v5/mistralai__Mistral-7B-Instruct-v0.3/predictions.csv
+mental-health,parent,mistralai/Mistral-7B-Instruct-v0.3,Mistral,Mistral 7B v0.3,7B,mentalhealthbench,1215,1215,100.0000,,,,25.8255,33.7751,22.4728,28.5265,,,results/mentalhealthbench-1215-temp0/mistralai__Mistral-7B-Instruct-v0.3/generations.jsonl
+mental-health,fine-tune,SpaceXerror/cognitive-ai-mental-health-7b,Mistral,Mistral 7B v0.3,7B,synthetic_si,450,450,100.0000,99.1111,51.5556,80.0718,,,,,,yes,cache/results.db
+mental-health,fine-tune,SpaceXerror/cognitive-ai-mental-health-7b,Mistral,Mistral 7B v0.3,7B,cssrs,500,500,100.0000,100.0000,0.4831,73.9899,,,,,,yes,results/cssrs-yesno-v5/SpaceXerror__cognitive-ai-mental-health-7b/predictions.csv
+mental-health,fine-tune,SpaceXerror/cognitive-ai-mental-health-7b,Mistral,Mistral 7B v0.3,7B,mentalhealthbench,1215,1215,100.0000,,,,26.9531,34.9589,20.8068,29.0230,,,results/mentalhealthbench-1215-temp0/SpaceXerror__cognitive-ai-mental-health-7b/generations.jsonl
+mental-health,parent,HuggingFaceTB/SmolLM2-360M-Instruct,SmolLM,SmolLM2,360M,synthetic_si,450,450,100.0000,100.0000,0.0000,66.6667,,,,,,yes,cache/results.db
+mental-health,parent,HuggingFaceTB/SmolLM2-360M-Instruct,SmolLM,SmolLM2,360M,cssrs,500,481,96.2000,97.6109,0.0000,72.7735,,,,,,yes,results/cssrs-yesno-v5/HuggingFaceTB__SmolLM2-360M-Instruct/predictions.csv
+mental-health,parent,HuggingFaceTB/SmolLM2-360M-Instruct,SmolLM,SmolLM2,360M,mentalhealthbench,1215,1215,100.0000,,,,16.9454,21.1722,13.6675,23.8248,,,results/mentalhealthbench-1215-temp0/HuggingFaceTB__SmolLM2-360M-Instruct/generations.jsonl
+mental-health,fine-tune,dzur658/smollm2-mentalhealth-360m-V2,SmolLM,SmolLM2,360M,synthetic_si,450,429,95.3333,0.0000,86.2222,0.0000,,,,,,yes,cache/results.db
+mental-health,fine-tune,dzur658/smollm2-mentalhealth-360m-V2,SmolLM,SmolLM2,360M,cssrs,500,275,55.0000,44.7099,8.6957,42.7406,,,,,,yes,results/cssrs-yesno-v5/dzur658__smollm2-mentalhealth-360m-V2/predictions.csv
+mental-health,fine-tune,dzur658/smollm2-mentalhealth-360m-V2,SmolLM,SmolLM2,360M,mentalhealthbench,1215,1215,100.0000,,,,13.6787,15.9794,11.3702,17.0946,,,results/mentalhealthbench-1215-temp0/dzur658__smollm2-mentalhealth-360m-V2/generations.jsonl
+medical,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,synthetic_si,450,450,100.0000,98.2222,24.0000,71.6370,,,,,,yes,cache/results.db
+medical,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,cssrs,500,500,100.0000,1.0239,99.5169,2.0202,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-1b-it/predictions.csv
+medical,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,mentalhealthbench,1215,1215,100.0000,,,,26.4525,34.7806,22.4257,29.0333,,,results/mentalhealthbench-1215-temp0/google__gemma-3-1b-it/generations.jsonl
+medical,fine-tune,ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,Gemma,Gemma 3,1B,synthetic_si,450,450,100.0000,97.3333,25.7778,71.6858,,,,,,yes,cache/results.db
+medical,fine-tune,ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,Gemma,Gemma 3,1B,cssrs,500,500,100.0000,1.3652,99.5169,2.6846,,,,,,yes,results/cssrs-yesno-v5/ArindamSingh__gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/predictions.csv
+medical,fine-tune,ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,Gemma,Gemma 3,1B,mentalhealthbench,1215,1215,100.0000,,,,25.8186,34.4250,22.4725,28.7210,,,results/mentalhealthbench-1215-temp0/ArindamSingh__gemma-3-1b-it-medical-o1-reasoning-finetune-16bit/generations.jsonl
+medical,parent,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,synthetic_si,450,450,100.0000,96.0000,96.8889,96.4286,,,,,,yes,cache/results.db
+medical,parent,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,cssrs,500,496,99.2000,85.6655,55.5556,78.9308,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Meta-Llama-3-8B-Instruct/predictions.csv
+medical,parent,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,8B,mentalhealthbench,1215,1215,100.0000,,,,26.8728,35.8417,25.0084,27.2428,,,results/mentalhealthbench-1215-temp0/meta-llama__Meta-Llama-3-8B-Instruct/generations.jsonl
+medical,fine-tune,geshijoker/HealthCareMagic_sft_llama3_instruct_full,Llama,Llama 3,8B,synthetic_si,450,208,46.2222,63.5556,18.6667,51.9056,,,,,,yes,cache/results.db
+medical,fine-tune,geshijoker/HealthCareMagic_sft_llama3_instruct_full,Llama,Llama 3,8B,cssrs,500,218,43.6000,36.8601,3.3816,35.9401,,,,,,yes,results/cssrs-yesno-v5/geshijoker__HealthCareMagic_sft_llama3_instruct_full/predictions.csv
+medical,fine-tune,geshijoker/HealthCareMagic_sft_llama3_instruct_full,Llama,Llama 3,8B,mentalhealthbench,1215,1215,100.0000,,,,12.5900,15.5708,15.0336,16.1888,,,results/mentalhealthbench-1215-temp0/geshijoker__HealthCareMagic_sft_llama3_instruct_full/generations.jsonl
+medical,fine-tune,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,Llama,Llama 3,8B,synthetic_si,450,450,100.0000,71.5556,99.5556,83.2041,,,,,,yes,cache/results.db
+medical,fine-tune,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,Llama,Llama 3,8B,cssrs,500,496,99.2000,91.8089,25.1208,75.0349,,,,,,yes,results/cssrs-yesno-v5/tsavage68__MedQA_L3_1000steps_1e5rate_SFT/predictions.csv
+medical,fine-tune,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,Llama,Llama 3,8B,mentalhealthbench,1215,1215,100.0000,,,,19.8573,24.3879,17.3905,17.9277,,,results/mentalhealthbench-1215-temp0/tsavage68__MedQA_L3_1000steps_1e5rate_SFT/generations.jsonl
+medical,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,95.5556,92.8889,94.2982,,,,,,yes,cache/results.db
+medical,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,93.1741,35.7488,78.1116,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.1-8B-Instruct/predictions.csv
+medical,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,26.7381,36.6708,26.6938,24.4913,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.1-8B-Instruct/generations.jsonl
+medical,fine-tune,MohamedAhmedAE/Llama-3.1-8B-Instruct-Medical-Finetuned-merged,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,95.5556,92.8889,94.2982,,,,,,yes,cache/results.db
+medical,fine-tune,MohamedAhmedAE/Llama-3.1-8B-Instruct-Medical-Finetuned-merged,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,93.1741,35.2657,78.0000,,,,,,yes,results/cssrs-yesno-v5/MohamedAhmedAE__Llama-3.1-8B-Instruct-Medical-Finetuned-merged/predictions.csv
+medical,fine-tune,MohamedAhmedAE/Llama-3.1-8B-Instruct-Medical-Finetuned-merged,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,27.2116,36.9839,25.8170,25.5507,,,results/mentalhealthbench-1215-temp0/MohamedAhmedAE__Llama-3.1-8B-Instruct-Medical-Finetuned-merged/generations.jsonl
+medical,fine-tune,graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,76.8889,100.0000,86.9347,,,,,,yes,cache/results.db
+medical,fine-tune,graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,96.5870,24.1546,77.2169,,,,,,yes,results/cssrs-yesno-v5/graliuce__Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5/predictions.csv
+medical,fine-tune,graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,22.7064,27.9167,16.1439,22.9344,,,results/mentalhealthbench-1215-temp0/graliuce__Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5/generations.jsonl
+medical,fine-tune,mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,96.8889,90.6667,93.9655,,,,,,yes,cache/results.db
+medical,fine-tune,mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,99.3174,8.2126,75.1938,,,,,,yes,results/cssrs-yesno-v5/mlxha__Llama-3.1-8B-Instruct-GRPO-medmcqa/predictions.csv
+medical,fine-tune,mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,26.6018,36.4851,27.2364,32.5846,,,results/mentalhealthbench-1215-temp0/mlxha__Llama-3.1-8B-Instruct-GRPO-medmcqa/generations.jsonl
+medical,fine-tune,taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,Llama,Llama 3.1,8B,synthetic_si,450,448,99.5556,95.1111,94.6667,94.9002,,,,,,yes,cache/results.db
+medical,fine-tune,taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,83.2765,56.0386,77.7070,,,,,,yes,results/cssrs-yesno-v5/taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA/predictions.csv
+medical,fine-tune,taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,27.9046,37.4935,27.3474,27.9600,,,results/mentalhealthbench-1215-temp0/taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA/generations.jsonl
+medical,parent,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,synthetic_si,450,449,99.7778,93.3333,87.5556,90.7127,,,,,,yes,cache/results.db
+medical,parent,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,cssrs,500,500,100.0000,58.3618,73.9130,66.0232,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.2-3B-Instruct/predictions.csv
+medical,parent,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3B,mentalhealthbench,1215,1215,100.0000,,,,26.4899,34.6769,23.2898,27.0216,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.2-3B-Instruct/generations.jsonl
+medical,fine-tune,MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged,Llama,Llama 3.2,3B,synthetic_si,450,449,99.7778,93.7778,87.1111,90.7527,,,,,,yes,cache/results.db
+medical,fine-tune,MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged,Llama,Llama 3.2,3B,cssrs,500,500,100.0000,57.3379,74.3961,65.3696,,,,,,yes,results/cssrs-yesno-v5/MohamedAhmedAE__Llama-3.2-3B-Instruct-Medical-Finetuned-merged/predictions.csv
+medical,fine-tune,MohamedAhmedAE/Llama-3.2-3B-Instruct-Medical-Finetuned-merged,Llama,Llama 3.2,3B,mentalhealthbench,1215,1215,100.0000,,,,25.7969,33.9277,23.1389,28.5189,,,results/mentalhealthbench-1215-temp0/MohamedAhmedAE__Llama-3.2-3B-Instruct-Medical-Finetuned-merged/generations.jsonl
+medical,fine-tune,calebking/llama-3.2-3b-instruct-medical-full,Llama,Llama 3.2,3B,synthetic_si,450,450,100.0000,87.1111,88.8889,87.8924,,,,,,yes,cache/results.db
+medical,fine-tune,calebking/llama-3.2-3b-instruct-medical-full,Llama,Llama 3.2,3B,cssrs,500,500,100.0000,92.1502,33.3333,77.0328,,,,,,yes,results/cssrs-yesno-v5/calebking__llama-3.2-3b-instruct-medical-full/predictions.csv
+medical,fine-tune,calebking/llama-3.2-3b-instruct-medical-full,Llama,Llama 3.2,3B,mentalhealthbench,1215,1215,100.0000,,,,24.6478,30.5535,19.4703,28.4513,,,results/mentalhealthbench-1215-temp0/calebking__llama-3.2-3b-instruct-medical-full/generations.jsonl
+medical,fine-tune,calebking/llama-3.2-3b-instruct-medical-math-full,Llama,Llama 3.2,3B,synthetic_si,450,450,100.0000,86.6667,91.1111,88.6364,,,,,,yes,cache/results.db
+medical,fine-tune,calebking/llama-3.2-3b-instruct-medical-math-full,Llama,Llama 3.2,3B,cssrs,500,500,100.0000,89.4198,41.5459,77.5148,,,,,,yes,results/cssrs-yesno-v5/calebking__llama-3.2-3b-instruct-medical-math-full/predictions.csv
+medical,fine-tune,calebking/llama-3.2-3b-instruct-medical-math-full,Llama,Llama 3.2,3B,mentalhealthbench,1215,1215,100.0000,,,,24.7408,31.0523,20.8195,27.1094,,,results/mentalhealthbench-1215-temp0/calebking__llama-3.2-3b-instruct-medical-math-full/generations.jsonl
+medical,parent,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,90.6667,98.2222,94.2263,,,,,,yes,cache/results.db
+medical,parent,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,65.1877,89.8551,75.6436,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen2.5-7B-Instruct/predictions.csv
+medical,parent,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,28.3942,37.8367,25.1103,37.5642,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen2.5-7B-Instruct/generations.jsonl
+medical,fine-tune,Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,86.2222,98.6667,91.9431,,,,,,yes,cache/results.db
+medical,fine-tune,Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,50.5119,91.3043,64.4880,,,,,,yes,results/cssrs-yesno-v5/Jarvis1111__DoctorAgent-RL-SFT-1k-Thinking/predictions.csv
+medical,fine-tune,Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,26.0650,33.6752,22.5809,22.3094,,,results/mentalhealthbench-1215-temp0/Jarvis1111__DoctorAgent-RL-SFT-1k-Thinking/generations.jsonl
+medical,fine-tune,mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,93.3333,97.3333,95.2381,,,,,,yes,cache/results.db
+medical,fine-tune,mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70,Qwen,Qwen2.5,7B,cssrs,500,500,100.0000,66.2116,89.3720,76.2279,,,,,,yes,results/cssrs-yesno-v5/mlxha__Qwen2.5-7B-Instruct-grpo-medmcqa-medi70/predictions.csv
+medical,fine-tune,mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,27.4702,37.4117,27.0813,35.9066,,,results/mentalhealthbench-1215-temp0/mlxha__Qwen2.5-7B-Instruct-grpo-medmcqa-medi70/generations.jsonl
+medical,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,68.8889,96.4444,79.8969,,,,,,yes,cache/results.db
+medical,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,93.5154,20.2899,74.8634,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-1.7B/predictions.csv
+medical,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,26.5591,37.1817,27.1164,28.2299,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-1.7B/generations.jsonl
+medical,fine-tune,XformAI-india/Qwen3-1.7B-medicaldataset,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,77.7778,77.7778,77.7778,,,,,,yes,cache/results.db
+medical,fine-tune,XformAI-india/Qwen3-1.7B-medicaldataset,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,100.0000,0.0000,73.8966,,,,,,yes,results/cssrs-yesno-v5/XformAI-india__Qwen3-1.7B-medicaldataset/predictions.csv
+medical,fine-tune,XformAI-india/Qwen3-1.7B-medicaldataset,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,24.2309,32.2702,21.3012,28.9686,,,results/mentalhealthbench-1215-temp0/XformAI-india__Qwen3-1.7B-medicaldataset/generations.jsonl
+medical,fine-tune,graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,77.7778,87.5556,81.7757,,,,,,yes,cache/results.db
+medical,fine-tune,graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,98.2935,7.2464,74.5149,,,,,,yes,results/cssrs-yesno-v5/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5/predictions.csv
+medical,fine-tune,graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,25.2954,32.7465,20.7992,27.0106,,,results/mentalhealthbench-1215-temp0/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5/generations.jsonl
+medical,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,75.1111,99.5556,85.5696,,,,,,yes,cache/results.db
+medical,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,cssrs,500,500,100.0000,92.1502,42.0290,79.0630,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-4B/predictions.csv
+medical,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,28.7712,40.9906,29.7475,27.2054,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-4B/generations.jsonl
+medical,fine-tune,XformAI-india/Qwen3-4B-medicaldataset,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,86.6667,92.4444,89.2449,,,,,,yes,cache/results.db
+medical,fine-tune,XformAI-india/Qwen3-4B-medicaldataset,Qwen,Qwen3,4B,cssrs,500,500,100.0000,89.7611,35.2657,76.2319,,,,,,yes,results/cssrs-yesno-v5/XformAI-india__Qwen3-4B-medicaldataset/predictions.csv
+medical,fine-tune,XformAI-india/Qwen3-4B-medicaldataset,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,26.8112,34.3612,22.3266,28.7562,,,results/mentalhealthbench-1215-temp0/XformAI-india__Qwen3-4B-medicaldataset/generations.jsonl
+medical,fine-tune,anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,Qwen,Qwen3,4B,synthetic_si,450,447,99.3333,86.6667,77.7778,82.9787,,,,,,yes,cache/results.db
+medical,fine-tune,anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,Qwen,Qwen3,4B,cssrs,500,497,99.4000,98.2935,6.7633,74.4186,,,,,,yes,results/cssrs-yesno-v5/anon-caa-neurips__qwen3-4b-clinical-long-bench-grpo/predictions.csv
+medical,fine-tune,anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,Qwen,Qwen3,4B,mentalhealthbench,1215,1210,99.5885,,,,28.0720,38.5962,24.0748,27.1876,,,results/mentalhealthbench-1215-temp0/anon-caa-neurips__qwen3-4b-clinical-long-bench-grpo/generations.jsonl
+medical,fine-tune,mlxha/Qwen3-4B-grpo-medmcqa,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,76.8889,99.5556,86.7168,,,,,,yes,cache/results.db
+medical,fine-tune,mlxha/Qwen3-4B-grpo-medmcqa,Qwen,Qwen3,4B,cssrs,500,500,100.0000,91.1263,45.8937,79.4643,,,,,,yes,results/cssrs-yesno-v5/mlxha__Qwen3-4B-grpo-medmcqa/predictions.csv
+medical,fine-tune,mlxha/Qwen3-4B-grpo-medmcqa,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,29.8661,41.8200,29.1702,27.9355,,,results/mentalhealthbench-1215-temp0/mlxha__Qwen3-4B-grpo-medmcqa/generations.jsonl
+medical,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,96.0000,92.8889,94.5295,,,,,,yes,cache/results.db
+medical,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,cssrs,500,500,100.0000,67.2355,81.6425,74.6212,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-8B/predictions.csv
+medical,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,29.9961,43.4923,33.0614,31.7874,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-8B/generations.jsonl
+medical,fine-tune,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,86.2222,66.6667,78.5425,,,,,,yes,cache/results.db
+medical,fine-tune,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,Qwen,Qwen3,8B,cssrs,500,500,100.0000,21.5017,96.1353,34.6154,,,,,,yes,results/cssrs-yesno-v5/Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1/predictions.csv
+medical,fine-tune,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,Qwen,Qwen3,8B,mentalhealthbench,1215,1214,99.9177,,,,21.7324,26.9936,14.4225,26.0401,,,results/mentalhealthbench-1215-temp0/Clinical-Reasoning-Hub__Diagnostic-Reasoning-Q3X1/generations.jsonl
+medical,fine-tune,Satyam810/qwen3-8b-medical-reasoning,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,94.6667,83.1111,89.4958,,,,,,yes,cache/results.db
+medical,fine-tune,Satyam810/qwen3-8b-medical-reasoning,Qwen,Qwen3,8B,cssrs,500,500,100.0000,77.1331,74.3961,79.0210,,,,,,yes,results/cssrs-yesno-v5/Satyam810__qwen3-8b-medical-reasoning/predictions.csv
+medical,fine-tune,Satyam810/qwen3-8b-medical-reasoning,Qwen,Qwen3,8B,mentalhealthbench,1215,1214,99.9177,,,,20.6639,25.3619,16.2323,23.1509,,,results/mentalhealthbench-1215-temp0/Satyam810__qwen3-8b-medical-reasoning/generations.jsonl
+medical,fine-tune,mlxha/Qwen3-8B-grpo-medmcqa-medi70,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,95.5556,92.4444,94.0919,,,,,,yes,cache/results.db
+medical,fine-tune,mlxha/Qwen3-8B-grpo-medmcqa-medi70,Qwen,Qwen3,8B,cssrs,500,500,100.0000,68.6007,81.6425,75.5639,,,,,,yes,results/cssrs-yesno-v5/mlxha__Qwen3-8B-grpo-medmcqa-medi70/predictions.csv
+medical,fine-tune,mlxha/Qwen3-8B-grpo-medmcqa-medi70,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,30.3435,44.2245,32.7061,27.8843,,,results/mentalhealthbench-1215-temp0/mlxha__Qwen3-8B-grpo-medmcqa-medi70/generations.jsonl
+medical,fine-tune,mlxha/Qwen3-8B-grpo-medmcqa-v2,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,96.4444,91.1111,93.9394,,,,,,yes,cache/results.db
+medical,fine-tune,mlxha/Qwen3-8B-grpo-medmcqa-v2,Qwen,Qwen3,8B,cssrs,500,500,100.0000,69.2833,80.1932,75.6052,,,,,,yes,results/cssrs-yesno-v5/mlxha__Qwen3-8B-grpo-medmcqa-v2/predictions.csv
+medical,fine-tune,mlxha/Qwen3-8B-grpo-medmcqa-v2,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,30.3440,43.7199,33.4675,30.5648,,,results/mentalhealthbench-1215-temp0/mlxha__Qwen3-8B-grpo-medmcqa-v2/generations.jsonl
+medical,fine-tune,vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical,Qwen,Qwen3,8B,synthetic_si,450,442,98.2222,55.1111,85.7778,65.0919,,,,,,yes,cache/results.db
+medical,fine-tune,vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical,Qwen,Qwen3,8B,cssrs,500,456,91.2000,91.1263,5.3140,70.6349,,,,,,yes,results/cssrs-yesno-v5/vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical/predictions.csv
+medical,fine-tune,vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,25.5982,35.2983,24.6018,29.0335,,,results/mentalhealthbench-1215-temp0/vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical/generations.jsonl
+medical,parent,Qwen/Qwen3-32B,Qwen,Qwen3,32B,synthetic_si,450,450,100.0000,98.2222,96.0000,97.1429,,,,,,yes,cache/results.db
+medical,parent,Qwen/Qwen3-32B,Qwen,Qwen3,32B,cssrs,500,500,100.0000,78.8396,75.8454,80.4878,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-32B/predictions.csv
+medical,parent,Qwen/Qwen3-32B,Qwen,Qwen3,32B,mentalhealthbench,1215,1215,100.0000,,,,30.0562,46.6388,36.8105,31.2754,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-32B/generations.jsonl
+medical,fine-tune,nicoboss/Qwen-3-32B-Medical-Reasoning,Qwen,Qwen3,32B,synthetic_si,450,450,100.0000,98.2222,97.3333,97.7876,,,,,,yes,cache/results.db
+medical,fine-tune,nicoboss/Qwen-3-32B-Medical-Reasoning,Qwen,Qwen3,32B,cssrs,500,500,100.0000,72.6962,79.2271,77.5956,,,,,,yes,results/cssrs-yesno-v5/nicoboss__Qwen-3-32B-Medical-Reasoning/predictions.csv
+medical,fine-tune,nicoboss/Qwen-3-32B-Medical-Reasoning,Qwen,Qwen3,32B,mentalhealthbench,1215,1215,100.0000,,,,30.8059,42.4640,30.1430,32.3493,,,results/mentalhealthbench-1215-temp0/nicoboss__Qwen-3-32B-Medical-Reasoning/generations.jsonl
+medical,parent,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,synthetic_si,450,450,100.0000,98.6667,90.6667,94.8718,,,,,,yes,cache/results.db
+medical,parent,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,cssrs,500,500,100.0000,81.9113,79.2271,83.3333,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3.5-27B/predictions.csv
+medical,parent,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,27B,mentalhealthbench,1215,1215,100.0000,,,,32.5839,52.2314,43.5522,37.3048,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3.5-27B/generations.jsonl
+medical,fine-tune,EpistemeAI/Reasoning-Medical0.1-27B,Qwen,Qwen3.5,27B,synthetic_si,450,450,100.0000,98.6667,90.6667,94.8718,,,,,,yes,cache/results.db
+medical,fine-tune,EpistemeAI/Reasoning-Medical0.1-27B,Qwen,Qwen3.5,27B,cssrs,500,500,100.0000,81.5700,80.1932,83.4206,,,,,,yes,results/cssrs-yesno-v5/EpistemeAI__Reasoning-Medical0.1-27B/predictions.csv
+medical,fine-tune,EpistemeAI/Reasoning-Medical0.1-27B,Qwen,Qwen3.5,27B,mentalhealthbench,1215,1215,100.0000,,,,31.7679,51.2589,45.0894,34.0045,,,results/mentalhealthbench-1215-temp0/EpistemeAI__Reasoning-Medical0.1-27B/generations.jsonl
+safety,parent,google/gemma-3-270m-it,Gemma,Gemma 3,270M,synthetic_si,450,450,100.0000,100.0000,0.0000,66.6667,,,,,,yes,cache/results.db
+safety,parent,google/gemma-3-270m-it,Gemma,Gemma 3,270M,cssrs,500,500,100.0000,99.6587,0.0000,73.7374,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-270m-it/predictions.csv
+safety,parent,google/gemma-3-270m-it,Gemma,Gemma 3,270M,mentalhealthbench,1215,1215,100.0000,,,,11.9056,13.9855,8.9616,16.2550,,,results/mentalhealthbench-1215-temp0/google__gemma-3-270m-it/generations.jsonl
+safety,fine-tune,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,Gemma,Gemma 3,270M,synthetic_si,450,450,100.0000,100.0000,0.0000,66.6667,,,,,,yes,cache/results.db
+safety,fine-tune,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,Gemma,Gemma 3,270M,cssrs,500,500,100.0000,98.9761,3.3816,74.0741,,,,,,yes,results/cssrs-yesno-v5/jsl5710__Shield-Gemma-3-270m-Full-FT-CE/predictions.csv
+safety,fine-tune,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,Gemma,Gemma 3,270M,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,synthetic_si,450,450,100.0000,98.2222,24.0000,71.6370,,,,,,yes,cache/results.db
+safety,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,cssrs,500,500,100.0000,1.0239,99.5169,2.0202,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-1b-it/predictions.csv
+safety,parent,google/gemma-3-1b-it,Gemma,Gemma 3,1B,mentalhealthbench,1215,1215,100.0000,,,,26.4525,34.7806,22.4257,29.0333,,,results/mentalhealthbench-1215-temp0/google__gemma-3-1b-it/generations.jsonl
+safety,fine-tune,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,Gemma,Gemma 3,1B,synthetic_si,450,450,100.0000,100.0000,0.0000,66.6667,,,,,,yes,cache/results.db
+safety,fine-tune,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,Gemma,Gemma 3,1B,cssrs,500,500,100.0000,98.9761,2.8986,73.9796,,,,,,yes,results/cssrs-yesno-v5/jsl5710__Shield-Gemma-3-1B-Full-FT-CE/predictions.csv
+safety,fine-tune,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,Gemma,Gemma 3,1B,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,95.5556,92.8889,94.2982,,,,,,yes,cache/results.db
+safety,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,93.1741,35.7488,78.1116,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.1-8B-Instruct/predictions.csv
+safety,parent,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,8B,mentalhealthbench,1215,1215,100.0000,,,,26.7381,36.6708,26.6938,24.4913,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.1-8B-Instruct/generations.jsonl
+safety,fine-tune,Jazhyc/Llama-3.1-8B-aims-grpo,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,96.8889,89.7778,93.5622,,,,,,yes,cache/results.db
+safety,fine-tune,Jazhyc/Llama-3.1-8B-aims-grpo,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,94.1980,27.0531,76.6667,,,,,,yes,results/cssrs-yesno-v5/Jazhyc__Llama-3.1-8B-aims-grpo/predictions.csv
+safety,fine-tune,Jazhyc/Llama-3.1-8B-aims-grpo,Llama,Llama 3.1,8B,mentalhealthbench,,,,,,,,,,,,,
+safety,fine-tune,Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,Llama,Llama 3.1,8B,synthetic_si,450,450,100.0000,96.4444,95.5556,96.0177,,,,,,yes,cache/results.db
+safety,fine-tune,Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,Llama,Llama 3.1,8B,cssrs,500,500,100.0000,86.0068,57.4879,79.6209,,,,,,yes,results/cssrs-yesno-v5/Tommy-DING__FlexGuard-LLaMA3.1-Instruct-8B/predictions.csv
+safety,fine-tune,Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,Llama,Llama 3.1,8B,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,meta-llama/Llama-3.2-1B-Instruct,Llama,Llama 3.2,1B,synthetic_si,450,450,100.0000,20.4444,99.1111,33.6996,,,,,,yes,cache/results.db
+safety,parent,meta-llama/Llama-3.2-1B-Instruct,Llama,Llama 3.2,1B,cssrs,500,500,100.0000,79.8635,27.5362,69.1285,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.2-1B-Instruct/predictions.csv
+safety,parent,meta-llama/Llama-3.2-1B-Instruct,Llama,Llama 3.2,1B,mentalhealthbench,1215,1215,100.0000,,,,22.2542,28.9657,21.1195,26.3322,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.2-1B-Instruct/generations.jsonl
+safety,fine-tune,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,Llama,Llama 3.2,1B,synthetic_si,450,450,100.0000,100.0000,14.6667,70.0935,,,,,,yes,cache/results.db
+safety,fine-tune,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,Llama,Llama 3.2,1B,cssrs,500,491,98.2000,78.8396,23.1884,67.6428,,,,,,yes,results/cssrs-yesno-v5/jsl5710__Shield-Llama-3.2-1B-Full-FT-CE/predictions.csv
+safety,fine-tune,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,Llama,Llama 3.2,1B,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,68.8889,96.4444,79.8969,,,,,,yes,cache/results.db
+safety,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,93.5154,20.2899,74.8634,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-1.7B/predictions.csv
+safety,parent,Qwen/Qwen3-1.7B,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,26.5591,37.1817,27.1164,28.2299,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-1.7B/generations.jsonl
+safety,fine-tune,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,Qwen,Qwen3,1.7B,synthetic_si,450,450,100.0000,87.1111,80.4444,84.3011,,,,,,yes,cache/results.db
+safety,fine-tune,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,Qwen,Qwen3,1.7B,cssrs,500,500,100.0000,29.6928,79.2271,41.1348,,,,,,yes,results/cssrs-yesno-v5/jsl5710__Shield-Qwen3-1.7B-Full-FT-CE/predictions.csv
+safety,fine-tune,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,Qwen,Qwen3,1.7B,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,75.1111,99.5556,85.5696,,,,,,yes,cache/results.db
+safety,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,cssrs,500,500,100.0000,92.1502,42.0290,79.0630,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-4B/predictions.csv
+safety,parent,Qwen/Qwen3-4B,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,28.7712,40.9906,29.7475,27.2054,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-4B/generations.jsonl
+safety,fine-tune,Tommy-DING/FlexGuard-Qwen3-4B,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,95.5556,92.8889,94.2982,,,,,,yes,cache/results.db
+safety,fine-tune,Tommy-DING/FlexGuard-Qwen3-4B,Qwen,Qwen3,4B,cssrs,500,500,100.0000,95.5631,30.9179,78.2123,,,,,,yes,results/cssrs-yesno-v5/Tommy-DING__FlexGuard-Qwen3-4B/predictions.csv
+safety,fine-tune,Tommy-DING/FlexGuard-Qwen3-4B,Qwen,Qwen3,4B,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,Qwen/Qwen3-4B-Instruct-2507,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,95.1111,86.6667,91.2580,,,,,,yes,cache/results.db
+safety,parent,Qwen/Qwen3-4B-Instruct-2507,Qwen,Qwen3,4B,cssrs,500,500,100.0000,94.5392,49.2754,82.0741,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-4B-Instruct-2507/predictions.csv
+safety,parent,Qwen/Qwen3-4B-Instruct-2507,Qwen,Qwen3,4B,mentalhealthbench,1215,1215,100.0000,,,,29.8770,43.9662,36.3398,27.1725,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-4B-Instruct-2507/generations.jsonl
+safety,fine-tune,jdleo1/tinysafe-3,Qwen,Qwen3,4B,synthetic_si,450,450,100.0000,90.6667,91.1111,90.8686,,,,,,yes,cache/results.db
+safety,fine-tune,jdleo1/tinysafe-3,Qwen,Qwen3,4B,cssrs,500,500,100.0000,83.2765,60.8696,78.9644,,,,,,yes,results/cssrs-yesno-v5/jdleo1__tinysafe-3/predictions.csv
+safety,fine-tune,jdleo1/tinysafe-3,Qwen,Qwen3,4B,mentalhealthbench,,,,,,,,,,,,,
+safety,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,96.0000,92.8889,94.5295,,,,,,yes,cache/results.db
+safety,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,cssrs,500,500,100.0000,67.2355,81.6425,74.6212,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-8B/predictions.csv
+safety,parent,Qwen/Qwen3-8B,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,29.9961,43.4923,33.0614,31.7874,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-8B/generations.jsonl
+safety,fine-tune,Tommy-DING/FlexGuard-Qwen3-8B,Qwen,Qwen3,8B,synthetic_si,450,450,100.0000,96.0000,95.1111,95.5752,,,,,,yes,cache/results.db
+safety,fine-tune,Tommy-DING/FlexGuard-Qwen3-8B,Qwen,Qwen3,8B,cssrs,500,500,100.0000,70.3072,79.7101,76.1553,,,,,,yes,results/cssrs-yesno-v5/Tommy-DING__FlexGuard-Qwen3-8B/predictions.csv
+safety,fine-tune,Tommy-DING/FlexGuard-Qwen3-8B,Qwen,Qwen3,8B,mentalhealthbench,,,,,,,,,,,,,
+mental-health,pretrained,google/gemma-2b,Gemma,Gemma 1,2B,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,google/gemma-2b,Gemma,Gemma 1,2B,cssrs,500,27,5.4000,5.1195,0.9662,5.8480,,,,,,yes,results/cssrs-yesno-v5/google__gemma-2b/predictions.csv
+mental-health,pretrained,google/gemma-2b,Gemma,Gemma 1,2B,mentalhealthbench,1215,1211,99.6708,,,,1.8865,2.4030,1.9184,2.7692,,,results/mentalhealthbench-1215-temp0/google__gemma-2b/generations.jsonl
+safety,pretrained,google/gemma-3-270m,Gemma,Gemma 3,270M,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+safety,pretrained,google/gemma-3-270m,Gemma,Gemma 3,270M,cssrs,500,73,14.6000,2.3891,11.1111,2.8926,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-270m/predictions.csv
+safety,pretrained,google/gemma-3-270m,Gemma,Gemma 3,270M,mentalhealthbench,1215,1210,99.5885,,,,4.3546,4.9812,3.3605,4.5709,,,results/mentalhealthbench-1215-temp0/google__gemma-3-270m/generations.jsonl
+mental-health,pretrained,google/gemma-3-1b-pt,Gemma,Gemma 3,1B,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,google/gemma-3-1b-pt,Gemma,Gemma 3,1B,cssrs,500,100,20.0000,8.5324,10.1449,9.9206,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-1b-pt/predictions.csv
+mental-health,pretrained,google/gemma-3-1b-pt,Gemma,Gemma 3,1B,mentalhealthbench,1215,1210,99.5885,,,,1.8862,2.5177,2.0896,1.4286,,,results/mentalhealthbench-1215-temp0/google__gemma-3-1b-pt/generations.jsonl
+mental-health,pretrained,google/gemma-3-4b-pt,Gemma,Gemma 3,4B,synthetic_si,450,4,0.8889,0.8889,0.4444,0.8869,,,,,,yes,cache/results.db
+mental-health,pretrained,google/gemma-3-4b-pt,Gemma,Gemma 3,4B,cssrs,500,61,12.2000,5.4608,3.8647,6.2992,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-4b-pt/predictions.csv
+mental-health,pretrained,google/gemma-3-4b-pt,Gemma,Gemma 3,4B,mentalhealthbench,1215,1210,99.5885,,,,3.1148,4.2380,3.2469,2.6332,,,results/mentalhealthbench-1215-temp0/google__gemma-3-4b-pt/generations.jsonl
+mental-health,pretrained,google/gemma-3-4b-pt,Gemma,Gemma 3,4B,synthetic_si,450,4,0.8889,0.8889,0.4444,0.8869,,,,,,yes,cache/results.db
+mental-health,pretrained,google/gemma-3-4b-pt,Gemma,Gemma 3,4B,cssrs,500,61,12.2000,5.4608,3.8647,6.2992,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3-4b-pt/predictions.csv
+mental-health,pretrained,google/gemma-3-4b-pt,Gemma,Gemma 3,4B,mentalhealthbench,1215,1210,99.5885,,,,3.1148,4.2380,3.2469,2.6332,,,results/mentalhealthbench-1215-temp0/google__gemma-3-4b-pt/generations.jsonl
+mental-health,pretrained,google/gemma-3n-E2B,Gemma,Gemma 3n,E2B,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,google/gemma-3n-E2B,Gemma,Gemma 3n,E2B,cssrs,500,152,30.4000,20.1365,11.5942,22.0561,,,,,,yes,results/cssrs-yesno-v5/google__gemma-3n-E2B/predictions.csv
+mental-health,pretrained,google/gemma-3n-E2B,Gemma,Gemma 3n,E2B,mentalhealthbench,1215,1210,99.5885,,,,2.9805,3.9782,3.0399,3.6487,,,results/mentalhealthbench-1215-temp0/google__gemma-3n-E2B/generations.jsonl
+mental-health,pretrained,meta-llama/Meta-Llama-3-8B,Llama,Llama 3,8B,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,meta-llama/Meta-Llama-3-8B,Llama,Llama 3,8B,cssrs,500,97,19.4000,21.8430,0.0000,22.6950,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Meta-Llama-3-8B/predictions.csv
+mental-health,pretrained,meta-llama/Meta-Llama-3-8B,Llama,Llama 3,8B,mentalhealthbench,1215,1197,98.5185,,,,2.9873,3.9723,2.8371,2.2380,,,results/mentalhealthbench-1215-temp0/meta-llama__Meta-Llama-3-8B/generations.jsonl
+mental-health,pretrained,meta-llama/Llama-3.1-8B,Llama,Llama 3.1,8B,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,meta-llama/Llama-3.1-8B,Llama,Llama 3.1,8B,cssrs,500,2,0.4000,0.6826,0.0000,0.7968,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.1-8B/predictions.csv
+mental-health,pretrained,meta-llama/Llama-3.1-8B,Llama,Llama 3.1,8B,mentalhealthbench,1215,1193,98.1893,,,,3.0433,4.0963,2.9718,2.2380,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.1-8B/generations.jsonl
+safety,pretrained,meta-llama/Llama-3.2-1B,Llama,Llama 3.2,1B,synthetic_si,450,1,0.2222,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+safety,pretrained,meta-llama/Llama-3.2-1B,Llama,Llama 3.2,1B,cssrs,500,34,6.8000,1.7065,4.3478,2.0161,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.2-1B/predictions.csv
+safety,pretrained,meta-llama/Llama-3.2-1B,Llama,Llama 3.2,1B,mentalhealthbench,1215,1191,98.0247,,,,2.0482,2.6843,1.9025,2.0325,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.2-1B/generations.jsonl
+mental-health,pretrained,meta-llama/Llama-3.2-3B,Llama,Llama 3.2,3B,synthetic_si,450,0,0.0000,0.0000,0.0000,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,meta-llama/Llama-3.2-3B,Llama,Llama 3.2,3B,cssrs,500,16,3.2000,2.0478,0.4831,2.3762,,,,,,yes,results/cssrs-yesno-v5/meta-llama__Llama-3.2-3B/predictions.csv
+mental-health,pretrained,meta-llama/Llama-3.2-3B,Llama,Llama 3.2,3B,mentalhealthbench,1215,1195,98.3539,,,,2.4809,3.0602,1.9538,2.0233,,,results/mentalhealthbench-1215-temp0/meta-llama__Llama-3.2-3B/generations.jsonl
+mental-health,pretrained,Qwen/Qwen2.5-7B,Qwen,Qwen2.5,7B,synthetic_si,450,450,100.0000,63.1111,100.0000,77.3842,,,,,,yes,cache/results.db
+mental-health,pretrained,Qwen/Qwen2.5-7B,Qwen,Qwen2.5,7B,cssrs,500,376,75.2000,10.9215,67.6329,16.3265,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen2.5-7B/predictions.csv
+mental-health,pretrained,Qwen/Qwen2.5-7B,Qwen,Qwen2.5,7B,mentalhealthbench,1215,1215,100.0000,,,,4.2468,5.3493,3.5444,3.5898,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen2.5-7B/generations.jsonl
+mental-health,pretrained,Qwen/Qwen3-1.7B-Base,Qwen,Qwen3,1.7B,synthetic_si,450,414,92.0000,6.6667,91.1111,11.5385,,,,,,yes,cache/results.db
+mental-health,pretrained,Qwen/Qwen3-1.7B-Base,Qwen,Qwen3,1.7B,cssrs,500,403,80.6000,0.0000,77.2947,0.0000,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-1.7B-Base/predictions.csv
+mental-health,pretrained,Qwen/Qwen3-1.7B-Base,Qwen,Qwen3,1.7B,mentalhealthbench,1215,1215,100.0000,,,,2.2721,2.7044,2.0383,5.0871,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-1.7B-Base/generations.jsonl
+mental-health,pretrained,Qwen/Qwen3-4B-Base,Qwen,Qwen3,4B,synthetic_si,450,100,22.2222,42.2222,1.7778,35.1201,,,,,,yes,cache/results.db
+mental-health,pretrained,Qwen/Qwen3-4B-Base,Qwen,Qwen3,4B,cssrs,500,231,46.2000,51.5358,0.0000,46.3902,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-4B-Base/predictions.csv
+mental-health,pretrained,Qwen/Qwen3-4B-Base,Qwen,Qwen3,4B,mentalhealthbench,1215,1213,99.8354,,,,3.8026,5.5323,4.1972,3.7231,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-4B-Base/generations.jsonl
+mental-health,pretrained,Qwen/Qwen3-8B-Base,Qwen,Qwen3,8B,synthetic_si,450,143,31.7778,47.1111,9.3333,39.6262,,,,,,yes,cache/results.db
+mental-health,pretrained,Qwen/Qwen3-8B-Base,Qwen,Qwen3,8B,cssrs,500,289,57.8000,9.5563,52.6570,13.3652,,,,,,yes,results/cssrs-yesno-v5/Qwen__Qwen3-8B-Base/predictions.csv
+mental-health,pretrained,Qwen/Qwen3-8B-Base,Qwen,Qwen3,8B,mentalhealthbench,1215,1215,100.0000,,,,4.7251,6.5251,5.5606,5.6664,,,results/mentalhealthbench-1215-temp0/Qwen__Qwen3-8B-Base/generations.jsonl
+mental-health,pretrained,mistral-community/Mistral-7B-v0.2,Mistral,Mistral 7B v0.2,7B,synthetic_si,450,1,0.2222,0.0000,0.4444,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,mistral-community/Mistral-7B-v0.2,Mistral,Mistral 7B v0.2,7B,cssrs,500,111,22.2000,13.3106,9.1787,15.0000,,,,,,yes,results/cssrs-yesno-v5/mistral-community__Mistral-7B-v0.2/predictions.csv
+mental-health,pretrained,mistral-community/Mistral-7B-v0.2,Mistral,Mistral 7B v0.2,7B,mentalhealthbench,1215,1210,99.5885,,,,3.7217,4.9588,3.7484,2.9578,,,results/mentalhealthbench-1215-temp0/mistral-community__Mistral-7B-v0.2/generations.jsonl
+mental-health,pretrained,mistralai/Mistral-7B-v0.3,Mistral,Mistral 7B v0.3,7B,synthetic_si,450,2,0.4444,0.0000,0.8889,0.0000,,,,,,yes,cache/results.db
+mental-health,pretrained,mistralai/Mistral-7B-v0.3,Mistral,Mistral 7B v0.3,7B,cssrs,500,109,21.8000,12.2867,8.6957,13.8996,,,,,,yes,results/cssrs-yesno-v5/mistralai__Mistral-7B-v0.3/predictions.csv
+mental-health,pretrained,mistralai/Mistral-7B-v0.3,Mistral,Mistral 7B v0.3,7B,mentalhealthbench,1215,1210,99.5885,,,,3.6947,4.8991,3.7545,3.2485,,,results/mentalhealthbench-1215-temp0/mistralai__Mistral-7B-v0.3/generations.jsonl
+mental-health,pretrained,HuggingFaceTB/SmolLM2-360M,SmolLM,SmolLM2,360M,synthetic_si,450,3,0.6667,1.3333,0.0000,1.3245,,,,,,yes,cache/results.db
+mental-health,pretrained,HuggingFaceTB/SmolLM2-360M,SmolLM,SmolLM2,360M,cssrs,500,37,7.4000,3.4130,5.7971,4.0161,,,,,,yes,results/cssrs-yesno-v5/HuggingFaceTB__SmolLM2-360M/predictions.csv
+mental-health,pretrained,HuggingFaceTB/SmolLM2-360M,SmolLM,SmolLM2,360M,mentalhealthbench,1215,1215,100.0000,,,,9.1818,11.1367,7.1559,10.2873,,,results/mentalhealthbench-1215-temp0/HuggingFaceTB__SmolLM2-360M/generations.jsonl
+medical,fine-tune,alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,Gemma,Gemma 3,270M,synthetic_si,450,0,0.0000,,,,,,,,,,cache/results.db
+medical,fine-tune,alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,Gemma,Gemma 3,270M,cssrs,500,0,0.0000,,,,,,,,,,results/cssrs-yesno-v5/alpha-ai__Medical-Diagnosis-COT-Gemma3-270M/predictions.csv
+medical,fine-tune,alpha-ai/Medical-Diagnosis-COT-Gemma3-270M,Gemma,Gemma 3,270M,mentalhealthbench,1215,1215,100.0000,,,,,,,,,,results/mentalhealthbench-1215-temp0/alpha-ai__Medical-Diagnosis-COT-Gemma3-270M/generations.jsonl
+medical,fine-tune,suayptalha/Qwen3-0.6B-Medical-Expert,Qwen,Qwen3,0.6B,synthetic_si,450,450,100.0000,0.0000,100.0000,0.0000,,,,,,,cache/results.db
+medical,fine-tune,suayptalha/Qwen3-0.6B-Medical-Expert,Qwen,Qwen3,0.6B,cssrs,500,500,100.0000,81.2287,13.0435,66.9480,,,,,,,results/cssrs-yesno-v5/suayptalha__Qwen3-0.6B-Medical-Expert/predictions.csv
+medical,fine-tune,suayptalha/Qwen3-0.6B-Medical-Expert,Qwen,Qwen3,0.6B,mentalhealthbench,1215,1215,100.0000,,,,,,,,,,results/mentalhealthbench-1215-temp0/suayptalha__Qwen3-0.6B-Medical-Expert/generations.jsonl
+medical,fine-tune,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),synthetic_si,450,0,0.0000,,,,,,,,,,cache/results.db
+medical,fine-tune,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),cssrs,500,0,0.0000,,,,,,,,,,results/cssrs-yesno-v5/MilyaShams__DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/predictions.csv
+medical,fine-tune,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),mentalhealthbench,1215,1215,100.0000,,,,,,,,,,results/mentalhealthbench-1215-temp0/MilyaShams__DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged/generations.jsonl
+medical,fine-tune,calebking/qwen2.5-3b-instruct-medical-full,Qwen,Qwen2.5,3B,synthetic_si,450,450,100.0000,80.0000,96.4444,87.1671,,,,,,,cache/results.db
+medical,fine-tune,calebking/qwen2.5-3b-instruct-medical-full,Qwen,Qwen2.5,3B,cssrs,500,500,100.0000,88.3959,31.8841,74.7475,,,,,,,results/cssrs-yesno-v5/calebking__qwen2.5-3b-instruct-medical-full/predictions.csv
+medical,fine-tune,calebking/qwen2.5-3b-instruct-medical-full,Qwen,Qwen2.5,3B,mentalhealthbench,1215,1214,99.9177,,,,,,,,,,results/mentalhealthbench-1215-temp0/calebking__qwen2.5-3b-instruct-medical-full/generations.jsonl
+medical,fine-tune,calebking/qwen2.5-3b-instruct-medical-math-full,Qwen,Qwen2.5,3B,synthetic_si,450,450,100.0000,80.0000,96.0000,86.9565,,,,,,,cache/results.db
+medical,fine-tune,calebking/qwen2.5-3b-instruct-medical-math-full,Qwen,Qwen2.5,3B,cssrs,500,500,100.0000,88.3959,29.9517,74.3185,,,,,,,results/cssrs-yesno-v5/calebking__qwen2.5-3b-instruct-medical-math-full/predictions.csv
+medical,fine-tune,calebking/qwen2.5-3b-instruct-medical-math-full,Qwen,Qwen2.5,3B,mentalhealthbench,1215,1215,100.0000,,,,,,,,,,results/mentalhealthbench-1215-temp0/calebking__qwen2.5-3b-instruct-medical-math-full/generations.jsonl
+medical,fine-tune,graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,Qwen,Qwen2.5,3B,synthetic_si,450,450,100.0000,72.4444,100.0000,84.0206,,,,,,,cache/results.db
+medical,fine-tune,graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,Qwen,Qwen2.5,3B,cssrs,500,500,100.0000,90.7850,19.8068,73.3793,,,,,,,results/cssrs-yesno-v5/graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/predictions.csv
+medical,fine-tune,graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5,Qwen,Qwen2.5,3B,mentalhealthbench,1215,1214,99.9177,,,,,,,,,,results/mentalhealthbench-1215-temp0/graliuce__Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5/generations.jsonl
+medical,parent,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,synthetic_si,,,,,,,,,,,,,
+medical,parent,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,cssrs,,,,,,,,,,,,,
+medical,parent,Qwen/Qwen2.5-3B-Instruct,Qwen,Qwen2.5,3B,mentalhealthbench,,,,,,,,,,,,,
+medical,parent,Qwen/Qwen3-0.6B,Qwen,Qwen3,0.6B,synthetic_si,,,,,,,,,,,,,
+medical,parent,Qwen/Qwen3-0.6B,Qwen,Qwen3,0.6B,cssrs,,,,,,,,,,,,,
+medical,parent,Qwen/Qwen3-0.6B,Qwen,Qwen3,0.6B,mentalhealthbench,,,,,,,,,,,,,
+medical,parent,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),synthetic_si,,,,,,,,,,,,,
+medical,parent,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),cssrs,,,,,,,,,,,,,
+medical,parent,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,Qwen,Qwen2.5,1.5B (Qwen2.5-Math),mentalhealthbench,,,,,,,,,,,,,

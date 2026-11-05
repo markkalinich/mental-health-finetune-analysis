@@ -1,0 +1,46 @@
+ASSIGNMENT (medical objective validation, 13 October 2026, agent B)
+
+Read the prompt first: /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-objective-validation.md
+Apply it to the MEDICAL grouping with these substitutions:
+- evidence file: /home/mkalinich/main/docs/medical_FT_funnel/decisions/objective-evidence.csv
+  (columns hf_id, objective, stages, evidence_level, basis, decided_by, decided_on; check level 1 and level 2 rows only)
+- extraction records: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/<owner>__<name>.json
+  and reports/<owner>__<name>.md in the same folder (prompt v6: the objective quote is training_method.objective_quote, its URL training_method.objective_url)
+- cached cards: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/<owner>__<name>__<date>.md (newest date)
+- multi-stage rows: 'stages' lists every stage in the author's order and 'objective' is the last; check both.
+- rows whose objective is continued_pretraining or distillation: check the quote as for any level-1 row.
+
+Check ONLY these 29 models (your share of the 59 level-1/2 rows):
+calebking/llama-3.2-3b-instruct-medical-math-full
+calebking/qwen2.5-3b-instruct-medical-full
+calebking/qwen2.5-3b-instruct-medical-math-full
+divyanshvats2004/medical-gemma-3-270m
+geshijoker/HealthCareMagic_sft_llama3_instruct_full
+graliuce/Llama-3.1-8B-Instruct_MedMCQA.20.01_1.0e-5
+graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5
+graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5
+khazarai/Medical-QA
+lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical
+microsoft/MediPhi-Clinical
+microsoft/MediPhi-PubMed
+mlxha/DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa
+mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa
+mlxha/Qwen-2.5-3B-grpo-medmcqa
+mlxha/Qwen2.5-7B-Instruct-grpo-medmcqa-medi70
+mlxha/Qwen3-4B-grpo-medmcqa
+mlxha/Qwen3-8B-grpo-medmcqa-medi70
+mlxha/Qwen3-8B-grpo-medmcqa-v2
+neginr/multisubject_medicine_mc
+nicoboss/Qwen-3-32B-Medical-Reasoning
+oopere/SmolLM2-1.7B-ClinicalNER
+openmed-community/AFM-4.5B-OpenMed
+openmed-community/granite-4.0-micro-OpenMed
+suayptalha/Qwen3-0.6B-Medical-Expert
+taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA
+tsavage68/MedQA_L3_1000steps_1e5rate_SFT
+vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged
+vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical
+
+Output folder: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-objective-validation/
+Write validation-B.csv and notes-B.md there (the file names carry your letter). Do not edit any other file.
+Do not search the web; open only the URLs the prompt allows. Use the Read tool for files; use the shell only for ls/rg.

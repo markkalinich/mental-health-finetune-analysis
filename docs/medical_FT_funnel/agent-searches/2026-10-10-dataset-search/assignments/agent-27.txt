@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 27 of 31). Repository ids, in this order:
+1. Nina2811aw/qwen-32B-bad-medical
+2. opelumen/flan-t5-small-medical_model_2
+3. OpenGVLab/Mini-InternVL2-1B-DA-Medical
+4. OpenGVLab/Mini-InternVL2-2B-DA-Medical
+5. OpenGVLab/Mini-InternVL2-4B-DA-Medical
+6. openmed-community/AFM-4.5B-OpenMed
+7. openmed-community/AFM-4.5B-OpenMed-RL-CoT
+8. openmed-community/granite-4.0-micro-OpenMed
+9. OpenMed/North-Micro-Vision-Instruct-bf16-mlx
+10. pedromoreira22/gemma-3-medical-grpo
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-27.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-27.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

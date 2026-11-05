@@ -1,0 +1,53 @@
+{
+  "_name_or_path": "AmedeoBonatti/nlp_te_mlm_pubmedbert",
+  "architectures": [
+    "BertForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "I-app",
+    "1": "I-attribute",
+    "2": "I-cell",
+    "3": "I-char",
+    "4": "I-manuf",
+    "5": "I-mat_class",
+    "6": "I-mat_form",
+    "7": "I-mat_name",
+    "8": "I-number",
+    "9": "I-prop",
+    "10": "I-unit_measure",
+    "11": "O"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "I-app": 0,
+    "I-attribute": 1,
+    "I-cell": 2,
+    "I-char": 3,
+    "I-manuf": 4,
+    "I-mat_class": 5,
+    "I-mat_form": 6,
+    "I-mat_name": 7,
+    "I-number": 8,
+    "I-prop": 9,
+    "I-unit_measure": 10,
+    "O": 11
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "torch_dtype": "float32",
+  "transformers_version": "4.41.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}

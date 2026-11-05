@@ -1,0 +1,212 @@
+{
+  "hf_id": "mlxha/Qwen3-8B-grpo-medmcqa",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:43:52-04:00",
+  "ended": "2026-10-13T12:44:19-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen3-8B-grpo-medmcqa__2026-10-10.md",
+    "cached_sha256": "f66d6c0dd1c37185d1f72962f6d72413a66296162868cd8f4aaca99bd6061b8b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_state.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/huggingface/trl",
+      "https://github.com/deepseek-ai/DeepSeek-Math"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2402.03300",
+        "arxiv_id": "2402.03300",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://wandb.ai/alexs-team/reasoning/runs/c9405090-f026-471a-b761-4bc72236aefe"
+    ],
+    "demos": [
+      "https://featherless.ai/models/mlxha/Qwen3-8B-grpo-medmcqa"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "mlxha/medmcqa-grpo",
+      "hub_id": "mlxha/medmcqa-grpo",
+      "urls": [
+        "https://huggingface.co/datasets/mlxha/medmcqa-grpo",
+        "https://huggingface.co/datasets/mlxha/medmcqa-grpo/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 193155,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of Qwen/Qwen3-8B on the mlxha/medmcqa-grpo dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models.",
+    "objective_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 0.24999179529815888,
+    "steps": 5713,
+    "learning_rate": 2.999998879722178e-06,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-8B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen/Qwen3-8B on the mlxha/medmcqa-grpo dataset."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8190735360",
+    "parameters_stated_url": "https://huggingface.co/api/models/mlxha/Qwen3-8B-grpo-medmcqa"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/mlxha/medmcqa-grpo/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) on the [mlxha/medmcqa-grpo](https://huggingface.co/datasets/mlxha/medmcqa-grpo) dataset.\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]\nprint(output[\"generated_text\"])"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of Qwen/Qwen3-8B on the mlxha/medmcqa-grpo dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "This model is a fine-tuned version of Qwen/Qwen3-8B on the mlxha/medmcqa-grpo dataset. It has been trained using TRL.",
+    "source_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]\nprint(output[\"generated_text\"])"
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": [
+      "This model is a fine-tuned version of Qwen/Qwen3-8B on the mlxha/medmcqa-grpo dataset.",
+      "Question: Chronic urethral obstruction due to benign prismatic hyperplasia can lead to the following change in kidney parenchyma Options: A. Hyperplasia B. Hyperophy C. Atrophy D. Dyplasia"
+    ],
+    "source_url": "https://huggingface.co/datasets/mlxha/medmcqa-grpo"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/mlxha/Qwen3-8B-grpo-medmcqa",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "do_sample": true,
+      "max_new_tokens": 128
+    },
+    "generation_settings_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "chat_template.jinja is 4116 characters, contains an enable_thinking branch, and contains no default sentence beginning 'You are Qwen'. tokenizer_config.json as returned by the models API has no chat_template key. max_new_tokens 128 is only in the card's quick start. generation_config.json sets do_sample true, temperature 0.6, top_p 0.95, top_k 20, and no repetition_penalty. config.json sets max_position_embeddings to 40960. The repository has four safetensors shards and no adapter_config.json. trainer_state.json sets num_train_epochs to 1 and stops at global_step 5713, epoch 0.24999179529815888. The learning_rate field is the peak logged value, at step 575. train_batch_size is 1. all_results.json reports train_loss 544.6820493646827. Logged reward names are format_reward, mcq_accuracy_reward, and tag_count_reward. The Weights & Biases run page was not retrieved. Featherless and an AIBase page add a medical-exam purpose the card does not state and expand GRPO incorrectly; those pages are not used for the purpose, audience, or function fields. Featherless also says the context length is 32768, which is not the value in config.json."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "license",
+    "source_url": "https://huggingface.co/mlxha/Qwen3-8B-grpo-medmcqa/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo",
+    "datasets": "mlxha/medmcqa-grpo",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"mlxha/Qwen3-8B-grpo-medmcqa\"",
+    "\"Qwen3-8B-grpo-medmcqa\" huggingface",
+    "\"Qwen3-8B-grpo-medmcqa\" arxiv",
+    "\"Qwen3-8B-grpo-medmcqa\" github",
+    "\"DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models\"",
+    "mlxha/medmcqa-grpo huggingface dataset"
+  ],
+  "confidence": "high"
+}

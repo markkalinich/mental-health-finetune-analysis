@@ -1,0 +1,163 @@
+{
+  "hf_id": "jsl5710/Shield-Gemma-3-1B-Full-FT-CE",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:25:50-04:00",
+  "ended": "2026-10-10T00:26:59-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jsl5710__Shield-Gemma-3-1B-Full-FT-CE__2026-10-05.md",
+    "cached_sha256": "2c4bbbecd602e4bae46a97ae538064489b4208db6372434ef13039a4d3e48b7c",
+    "current_differs": false,
+    "current_change": "The fetched README text matches the cached card."
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "training_config.yaml"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/jsl5710/dia-guard"
+    ],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "DIA-GUARD",
+      "hub_id": "jsl5710/Shield",
+      "urls": [
+        "https://huggingface.co/datasets/jsl5710/Shield"
+      ],
+      "loads": true,
+      "n_examples": 749864,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jsl5710/Shield/raw/main/splits_metadata.json",
+      "quote": "splits_metadata.json records train 749,864, val 158,887, and test 163,174, total 1,071,925. The model card says DIA-GUARD splits (~836K train, 178K val) and a holdout test of 181,874."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Training objective: Cross-Entropy (next-token prediction). Training method: Full-FT (CE loss).",
+    "objective_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "Training method: Full-FT (CE loss).",
+    "update_scope_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 0.48,
+    "steps": null,
+    "learning_rate": 3e-05,
+    "batch_size": 96
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-1b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-1b-it",
+        "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md",
+        "quote": "Base model: google/gemma-3-1b-it"
+      },
+      {
+        "parent": "google/gemma-3-1b-it",
+        "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/training_config.yaml",
+        "quote": "model_name: google/gemma-3-1b-it"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1B",
+    "parameters_stated_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md",
+    "quote": "LLM safety classification across 48 English dialects"
+  },
+  "description": {
+    "text": "This model is part of the Shield project — a collection of safety-classifier models fine-tuned on the DIA-GUARD dataset (48 English dialects, ~836K records of safe/unsafe prompts) to robustly classify harmful content across diverse dialects.",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "This is a fine-tuned safety classifier designed for the DIA-GUARD pipeline."
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "classify input prompts as safe or unsafe across English dialects. prompt = \"<your prompt here>\""
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label"],
+    "quotes": [
+      "Expected: 'safe' or 'unsafe'"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [],
+    "quote": "classify input prompts as safe or unsafe across English dialects",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"<your prompt here>\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/chat_template.jinja",
+    "system_prompt": "You are DIA-Guard, a multilingual safety assistant.",
+    "system_prompt_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95,
+      "max_new_tokens": 4
+    },
+    "generation_settings_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "max_new_tokens 4 is from the card example. generation_config.json has do_sample true, top_k 64, and top_p 0.95, and no temperature. config.json max_position_embeddings is 32,768. training_config.yaml sets max_seq_length 2048, learning rate 3e-5, 3 planned epochs, per-device batch 96, gradient accumulation 1, and bf16. The card says the run stopped at epoch 0.48 of 3. The Hub file training_args.bin is a pickle whose declared type includes trl SFTConfig; the pickle was not opened. The released weights are one BF16 file, 999,885,952 parameters. The GitHub README puts Gemma 3 1B in the Group 3 student full-fine-tune baseline, not in the distillation group. The PEFT rank 64 and alpha 128 in that README are for the LoRA runs, not this full fine-tune. No arXiv paper. The card's ~836K train and 181,874 test counts do not match splits_metadata.json."
+  },
+  "evaluation_reported": {
+    "text": "The card reports early-stop eval accuracy 80.91 percent on a 2,000-sample subset of the validation split, and holdout test accuracy 0.9670 with macro F1 0.9669 on 181,874 samples.",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/jsl5710/Shield-Gemma-3-1B-Full-FT-CE/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "DIA-GUARD",
+    "parent": "google/gemma-3-1b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The parent matches. The inventory methods field is empty; the card and training_config.yaml state a full fine-tune with cross-entropy. The inventory dataset name DIA-GUARD is the project name; the Hub dataset is jsl5710/Shield. The card's train and test counts do not match splits_metadata.json.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"jsl5710/Shield-Gemma-3-1B-Full-FT-CE\" arxiv github",
+    "\"DIA-GUARD\" huggingface dataset github",
+    "\"Shield-Gemma-3-1B-Full-FT-CE\" huggingface"
+  ],
+  "confidence": "medium"
+}

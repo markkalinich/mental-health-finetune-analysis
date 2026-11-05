@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 27 of 315). Repository ids, in this order:
+1. Essacheez/LLAMA3.1-8b-SafetyData-code-1.05k-default-style
+2. Essacheez/LLAMA3.1-8b-SafetyData-code-1.2k-safetyllamas_stanford-default-style
+3. Essacheez/LLAMA3.1-8b-SafetyData-code-1.5k-default-style
+4. Essacheez/LLAMA3.1-8b-SafetyData-code-10.5k-default-style
+5. Essacheez/LLAMA3.1-8b-SafetyData-code-10k-default-style
+6. Essacheez/LLAMA3.1-8b-SafetyData-combine-4.2k-default-style
+7. Essacheez/LLAMA3.1-8b-SafetyData-combine-4.8k-default-style
+8. Essacheez/LLAMA3.1-8b-SafetyData-summerization-1.05k-default-style
+9. Essacheez/LLAMA3.1-8b-SafetyData-summerization-1.2k-default-style
+10. Essacheez/LLAMA3.1-8b-SafetyData-summerization-1.2k-safetyllamas_stanford-default-style
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-27.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-27.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

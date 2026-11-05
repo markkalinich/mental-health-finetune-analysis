@@ -1,0 +1,14 @@
+tag,n_search_hits
+health,10
+healthcare,8
+companion,6
+clinical,3
+clinical-nlp,2
+depresso,2
+abdominal-trauma,1
+clinical-assistant,1
+clinical-narrative,1
+destress,1
+support,11
+cbt,7
+merged_model:ShivomH/Elixir-MentalHealth-3B,1

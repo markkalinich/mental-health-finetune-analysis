@@ -1,0 +1,17 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (extraction of models admitted by the 9 Oct dataset search, agent 20). 
+
+Model 1: hongli-zhan/MINT-empathy-Qwen3-1.7B
+  Cached card: revision_3_experiments/hf_inventory/cache/readmes/hongli-zhan__MINT-empathy-Qwen3-1.7B__2026-10-05.md
+  Inventory row: methods='grpo' datasets='322 multi-turn emotional-support conversations from WildChat and SENSE-7' parent='Qwen/Qwen3-1.7B'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/hongli-zhan__MINT-empathy-Qwen3-1.7B.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/hongli-zhan__MINT-empathy-Qwen3-1.7B.md
+
+Model 2: marcelpadilla/Qwen3-4B-Instruct-2507_depressed
+  Cached card: revision_3_experiments/hf_inventory/cache/readmes/marcelpadilla__Qwen3-4B-Instruct-2507_depressed__2026-10-05.md
+  Inventory row: methods='' datasets='dataset.jsonl' parent='Qwen/Qwen3-4B-Instruct-2507'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/marcelpadilla__Qwen3-4B-Instruct-2507_depressed.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/marcelpadilla__Qwen3-4B-Instruct-2507_depressed.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search. Do not download weights or PDFs. Do not edit any other file. Final message: file paths, per-model wall time, one line per unfilled field.

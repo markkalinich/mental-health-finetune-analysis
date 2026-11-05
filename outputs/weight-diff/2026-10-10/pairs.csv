@@ -1,0 +1,10 @@
+finetune_dir,parent_dir
+AIMH__SQPsych-8b-gemma-Qwen_no_questionnaire,Qwen__Qwen2.5-7B-Instruct
+AIMH__SQPsychLLM-8b-gemma-no_questionnaire,meta-llama__Meta-Llama-3-8B-Instruct
+ArkMaster123__qwen2.5-7b-therapist-v3,Qwen__Qwen2.5-7B-Instruct
+Wothmag07__counseLLM,meta-llama__Llama-3.1-8B-Instruct
+hongli-zhan__MINT-empathy-Qwen3-1.7B,Qwen__Qwen3-1.7B
+hongli-zhan__MINT-empathy-Qwen3-4B,Qwen__Qwen3-4B
+SoufianeDahimi__child_trauma_gemma_finetune,google__gemma-3n-E2B-it
+lordChipotle__SuicidePreventionLlama,meta-llama__Llama-3.2-3B-Instruct
+zbt566666__qwen2.5-7b-mental-therapy-lora-sft,Qwen__Qwen2.5-7B-Instruct

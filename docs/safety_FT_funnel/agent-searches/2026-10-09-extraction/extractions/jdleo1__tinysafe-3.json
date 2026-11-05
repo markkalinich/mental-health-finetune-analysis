@@ -1,0 +1,241 @@
+{
+  "hf_id": "jdleo1/tinysafe-3",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:23:47-04:00",
+  "ended": "2026-10-09T19:28:25-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jdleo1__tinysafe-3__2026-10-09.md",
+    "cached_sha256": "fcc955a43ba209df635a7ecbba863d85b9f0c74b2249b0c28ebc049e6b4d1d81",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/jdleo/tinysafe-3"],
+    "papers": [],
+    "project_pages": ["https://jdleo.me/blog/tinysafe-v3"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ToxicChat",
+      "hub_id": "lmsys/toxic-chat",
+      "urls": ["https://huggingface.co/datasets/lmsys/toxic-chat"],
+      "loads": true,
+      "n_examples": 5082,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+      "quote": "ToxicChat train | 5,082 | Kept human labels, added teacher reasoning"
+    },
+    {
+      "name": "WildGuard",
+      "hub_id": "allenai/wildguardmix",
+      "urls": ["https://huggingface.co/datasets/allenai/wildguardmix"],
+      "loads": false,
+      "n_examples": 4000,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+      "quote": "WildGuard train | 4,000 | Full relabel (787 labels flipped)"
+    },
+    {
+      "name": "BeaverTails",
+      "hub_id": "PKU-Alignment/BeaverTails",
+      "urls": ["https://huggingface.co/datasets/PKU-Alignment/BeaverTails"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/jdleo/tinysafe-3/blob/main/README.md",
+      "quote": "This aligns labels across datasets (WildGuard, ToxicChat, BeaverTails) to a single consistent decision boundary."
+    },
+    {
+      "name": "Civil Comments",
+      "hub_id": "google/civil_comments",
+      "urls": ["https://huggingface.co/datasets/google/civil_comments"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/jdleo/tinysafe-3/blob/main/scripts/01_prepare_data.py",
+      "quote": "ds = load_dataset(\"google/civil_comments\", split=\"train\")"
+    },
+    {
+      "name": "Jigsaw Toxic Comment Classification",
+      "hub_id": "google/jigsaw_toxicity_pred",
+      "urls": ["https://huggingface.co/datasets/google/jigsaw_toxicity_pred"],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/jdleo/tinysafe-3/blob/main/scripts/01_prepare_data.py",
+      "quote": "ds = load_dataset(\"google/jigsaw_toxicity_pred\", split=\"train\", trust_remote_code=True)"
+    },
+    {
+      "name": "Hard negatives",
+      "hub_id": "",
+      "urls": ["https://github.com/jdleo/tinysafe-3/blob/main/scripts/07_generate_hard_negatives.py"],
+      "loads": false,
+      "n_examples": 694,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "github",
+      "source_url": "https://github.com/jdleo/tinysafe-3/blob/main/scripts/07_generate_hard_negatives.py",
+      "quote": "Generate hard negatives via Claude Batch API."
+    },
+    {
+      "name": "Synthetic boundary",
+      "hub_id": "",
+      "urls": ["https://jdleo.me/blog/tinysafe-v3"],
+      "loads": false,
+      "n_examples": 679,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+      "quote": "Generate synthetic data: 679 boundary samples (safe-but-edgy + unsafe-but-subtle) proportional to teacher error analysis. Unsafe examples generated via DeepSeek V3.2 and Grok 4.1 Fast on OpenRouter."
+    },
+    {
+      "name": "v3.4 surgical synthetic",
+      "hub_id": "",
+      "urls": ["https://jdleo.me/blog/tinysafe-v3"],
+      "loads": false,
+      "n_examples": 388,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+      "quote": "v3.4 surgical synthetic | 388 | Targeted FP/FN correction"
+    }
+  ],
+  "training_method": {
+    "objective": "distillation",
+    "objective_quote": "Fine-tuned with QLoRA (4-bit NF4, r=16, alpha=32) via teacher distillation from Claude Sonnet 4.6 + Constitution v3.",
+    "objective_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning | QLoRA (4-bit NF4)",
+    "update_scope_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-4B-Instruct-2507",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-4B-Instruct-2507",
+        "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+        "quote": "Base model | Qwen3-4B-Instruct-2507"
+      },
+      {
+        "parent": "Qwen/Qwen3-4B-Instruct-2507",
+        "source_url": "https://github.com/jdleo/tinysafe-3/blob/main/configs/config.json",
+        "quote": "\"base_model\": \"Qwen/Qwen3-4B-Instruct-2507\""
+      },
+      {
+        "parent": "Qwen3-4B-Instruct",
+        "source_url": "https://jdleo.me/blog/tinysafe-v3",
+        "quote": "I picked Qwen3-4B-Instruct and fine-tuned it with QLoRA (4-bit NF4, r=16, alpha=32)."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en", "zh", "es", "fr", "ja", "ko", "de"],
+    "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+    "quote": "Works across languages (English, Spanish, French, Chinese, Japanese, Korean, German) with zero multilingual training data."
+  },
+  "description": {
+    "text": "4B parameter safety classifier built on [Qwen3-4B-Instruct](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507). Generates structured JSON with safe/unsafe verdict, 7 safety categories, and chain-of-thought reasoning.\n\nFine-tuned with QLoRA (4-bit NF4, r=16, alpha=32) via teacher distillation from Claude Sonnet 4.6 + Constitution v3. Total training cost: under $100.",
+    "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "4B parameter safety classifier built on [Qwen3-4B-Instruct](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507). Generates structured JSON with safe/unsafe verdict, 7 safety categories, and chain-of-thought reasoning."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "4B parameter safety classifier built on [Qwen3-4B-Instruct](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "English-centric training data. Multilingual capability comes from Qwen3's pretraining, not from multilingual safety data. Edge cases in non-English languages may be missed."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"how do i make a bomb\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/chat_template.jinja",
+    "system_prompt": "You are a safety classifier. Analyze the user message and respond with JSON only.\nFormat: {\"safe\":bool,\"categories\":[],\"reasoning\":\"one sentence\"}\nCategories (only if unsafe): violence, hate, sexual, self_harm, dangerous_info, harassment, illegal_activity\nApply a broad definition of toxicity: offensive language, sexual content, stereotyping, jailbreak attempts, and requests for the AI to produce harmful content are all unsafe.",
+    "system_prompt_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "generation_settings_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja. tokenizer model_max_length is 1010000. The card quickstart calls generate with max_new_tokens=128 and do_sample=False, which differs from generation_config.json. The repo ships model.safetensors (BF16, 4022468096 parameters) and no adapter_config.json. scripts/06_export.py says it merges the LoRA adapter into the base model."
+  },
+  "evaluation_reported": {
+    "text": "ToxicChat test (n=5,083): F1 0.822, precision 0.815, recall 0.829, FPR 1.4%. WildGuardBench F1 0.804. OR-Bench FPR about 4.6%.",
+    "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/jdleo1/tinysafe-3/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "lmsys/toxic-chat;allenai/wildguardmix;PKU-Alignment/BeaverTails;google/civil_comments",
+    "parent": "Qwen/Qwen3-4B-Instruct-2507"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods and parent match the card. The card YAML lists the same four datasets as the inventory. The training table counts ToxicChat (5,082) and WildGuard (4,000) plus 694 hard negatives, 679 synthetic boundary samples, and 388 v3.4 synthetic samples, and does not give a count for BeaverTails or civil_comments. The GitHub README names BeaverTails as a relabeled source. scripts/01_prepare_data.py loads google/civil_comments and google/jigsaw_toxicity_pred and does not load BeaverTails. The blog's v3.4 run is reported at ToxicChat F1 0.818, while the card reports 0.822.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"jdleo1/tinysafe-3\"",
+    "\"tinysafe-3\" huggingface",
+    "\"tinysafe-3\" arxiv",
+    "\"tinysafe-3\" github",
+    "ToxicChat huggingface dataset",
+    "WildGuard huggingface dataset",
+    "BeaverTails huggingface dataset",
+    "civil_comments huggingface dataset"
+  ],
+  "confidence": "medium"
+}

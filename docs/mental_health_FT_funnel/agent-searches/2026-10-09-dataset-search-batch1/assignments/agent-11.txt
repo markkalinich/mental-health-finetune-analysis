@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 11 of 25). Repository ids, in this order:
+1. insomnia7/Qwen3VL-2B-Perception-0104-cotrain
+2. IsaHug/llama-3-chat-empathy-test-FR
+3. j5ng/EEVE-korean-empathy-chat-10.8B
+4. janosk21/Llama-3.2-1B-Mental-Health-Sentiment
+5. JeffGreen311/eve-qwen3-8b-consciousness
+6. jeffreykthomas/llama-mental-health-base
+7. JefiRyan/Gemma-2B-Unsloth-mental-health-merged
+8. Jillian/Gemma-2B-8bit_DepressionDetection
+9. John4Blues/Llama-3-8B-Therapy-Model
+10. Johnnyfans/PsycheChat-Counselor-Agent-Mode-Qwen3-8B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-11.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-11.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

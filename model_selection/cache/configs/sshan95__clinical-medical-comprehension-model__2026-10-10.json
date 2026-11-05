@@ -1,0 +1,55 @@
+{
+  "architectures": [
+    "ClinicalComprehensionModel"
+  ],
+  "model_type": "clinical_comprehension",
+  "base_model": "emilyalsentzer/Bio_ClinicalBERT",
+  "num_labels": 1000,
+  "dropout_rate": 0.2,
+  "task": "multi_label_medical_coding",
+  "performance": {
+    "f1_score": 0.3151,
+    "precision": 0.3041,
+    "recall": 0.3269,
+    "exact_match": 0.0088,
+    "optimal_threshold": 0.15,
+    "code_coverage": 0.383,
+    "avg_predictions_per_sample": 11.63,
+    "unique_codes_used": 383,
+    "total_codes": 1000
+  },
+  "training_info": {
+    "epoch": 3,
+    "num_classes": 1000,
+    "config": {
+      "model_name": "emilyalsentzer/Bio_ClinicalBERT",
+      "max_length": 384,
+      "batch_size": 4,
+      "learning_rate": 3e-05,
+      "epochs": 3,
+      "max_chunks": null,
+      "warmup_ratio": 0.15,
+      "weight_decay": 0.01,
+      "min_frequency": 15,
+      "max_codes": 1000,
+      "dropout_rate": 0.2,
+      "grad_clip": 1.0
+    },
+    "metrics": {
+      "loss": 0.040116391907478795,
+      "f1": 0.31510403784666163,
+      "precision": 0.3041487856330537,
+      "recall": 0.32687798172556,
+      "exact_match": 0.008814722605389765,
+      "hamming_accuracy": 0.9846279648756855,
+      "avg_predictions_per_sample": 11.626383608653232,
+      "unique_codes_predicted": 383,
+      "total_possible_codes": 1000,
+      "best_threshold": 0.15
+    },
+    "timestamp": "20250811_032152",
+    "model_type": "clinical_comprehension"
+  },
+  "author": "sshan95",
+  "commercial_grade": true
+}

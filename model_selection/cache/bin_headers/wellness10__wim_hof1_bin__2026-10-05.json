@@ -1,0 +1,9 @@
+{
+ "files": {
+  "pytorch_model.bin": [
+   "ByteStorage",
+   "FloatStorage",
+   "HalfStorage"
+  ]
+ }
+}

@@ -1,0 +1,211 @@
+{
+  "hf_id": "airesearch/Qwen3-30B-A3B-medqa",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:43:21-04:00",
+  "ended": "2026-10-13T12:44:42-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/airesearch__Qwen3-30B-A3B-medqa__2026-10-05.md",
+    "cached_sha256": "412005c24c89ae3406cd6ec9dc83fb9b5b883332be68301ed1162c169da766c6",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Modelfile",
+    "README.md",
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "added_tokens.json",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "dataset/dataset_dict.json",
+    "dataset/train/dataset_info.json",
+    "dataset/train/data-00000-of-00001.arrow",
+    "dataset/validation/dataset_info.json",
+    "dataset/validation/data-00000-of-00001.arrow",
+    "eval_results.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors.index.json",
+    "model-00001-of-00025.safetensors",
+    "model-00025-of-00025.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_eval_loss.png",
+    "training_loss.png",
+    "vocab.json",
+    "checkpoint-50/",
+    "checkpoint-100/",
+    "checkpoint-129/"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.09388",
+        "arxiv_id": "2505.09388",
+        "title": "Qwen3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medqa",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/dataset/train/dataset_info.json"
+      ],
+      "loads": false,
+      "n_examples": 48876,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/dataset/train/dataset_info.json",
+      "quote": "download_checksums path /lustrefs/disk/home/ptuchind/LLaMA-Factory/data/medqa.json; splits.train.num_examples 48876"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "peft_type: LORA",
+    "update_scope_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/adapter_config.json",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "not stated",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-30B-A3B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-30B-A3B",
+        "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen/Qwen3-30B-A3B on the medqa dataset."
+      },
+      {
+        "parent": "/project/lt200252-wcbart/pumet/models/Qwen3-30B-A3B",
+        "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/adapter_config.json",
+        "quote": "base_model_name_or_path: /project/lt200252-wcbart/pumet/models/Qwen3-30B-A3B"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "not stated",
+    "parameters_stated_url": ""
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [Qwen/Qwen3-30B-A3B](https://huggingface.co/Qwen/Qwen3-30B-A3B) on the medqa dataset.\nIt achieves the following results on the evaluation set:\n- Loss: 0.0275",
+    "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "More information needed"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of Qwen/Qwen3-30B-A3B on the medqa dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "Intended uses & limitations: More information needed",
+    "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["on the medqa dataset"],
+    "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "dataset features are input_ids, attention_mask, and labels; images, videos, and audios are null",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/airesearch/Qwen3-30B-A3B-medqa",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "LoRA rank 8 and alpha 16 are in adapter_config.json. The adapter is not merged: adapter_model.safetensors is present. The repository also contains 25 float32 weight shards (safetensors total 30532122624). No bitsandbytes or quantization field is in the adapter config. Per-device train batch size is 2; the card also says total_train_batch_size 1024 on 64 devices with gradient accumulation 8. The logged loss table ends at step 120, and a checkpoint-129 folder is present; all_results.json does not give a global step. The Ollama Modelfile sets num_ctx 4096 and inserts a system turn only if the caller supplies one. The validation dataset_info.json repeats the same local medqa.json path and the same 48876 train count."
+  },
+  "evaluation_reported": {
+    "text": "Evaluation loss 0.0275. all_results.json records eval_loss 0.02748548611998558 and train_loss 0.2854570565427574 after 3 epochs. No accuracy is reported.",
+    "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/README.md"
+  },
+  "license": {
+    "value": "other",
+    "source_url": "https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "medqa",
+    "parent": "Qwen/Qwen3-30B-A3B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config"
+  ],
+  "queries_tried": [
+    "\"airesearch/Qwen3-30B-A3B-medqa\"",
+    "\"Qwen3-30B-A3B-medqa\" huggingface",
+    "\"Qwen3-30B-A3B-medqa\" arxiv",
+    "\"Qwen3-30B-A3B-medqa\" github",
+    "medqa huggingface dataset"
+  ],
+  "confidence": "medium"
+}

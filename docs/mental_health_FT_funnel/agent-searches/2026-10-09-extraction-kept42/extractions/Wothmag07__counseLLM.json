@@ -1,0 +1,252 @@
+{
+  "hf_id": "Wothmag07/counseLLM",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:50:06-04:00",
+  "ended": "2026-10-09T18:53:44-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Wothmag07__counseLLM__2026-10-05.md",
+    "cached_sha256": "c44b46a4f0742ee3e8fa66a6966380b35a0f841a096a16e8f5b24b95776ff787",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "dpo/README.md",
+    "dpo/adapter_config.json",
+    "dpo/adapter_model.safetensors",
+    "dpo/special_tokens_map.json",
+    "dpo/tokenizer.json",
+    "dpo/tokenizer_config.json",
+    "dpo/training_args.bin",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "sft/README.md",
+    "sft/adapter_config.json",
+    "sft/adapter_model.safetensors",
+    "sft/chat_template.jinja",
+    "sft/tokenizer.json",
+    "sft/tokenizer_config.json",
+    "sft/training_args.bin",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/wothmag07/counseLLM"],
+    "papers": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2667118225000017",
+        "arxiv_id": "",
+        "title": "Introducing CounseLLMe: A dataset of simulated mental health dialogues for comparing LLMs like Haiku, LLaMAntino and ChatGPT against humans",
+        "venue": "Emerging Trends in Drugs, Addictions, and Health",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/html/2512.06097v1",
+        "arxiv_id": "2512.06097",
+        "title": "Empathy by Design: Aligning Large Language Models for Healthcare Dialogue",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://alwaystireddd--counsellm-web-app.modal.run",
+      "https://featherless.ai/models/Wothmag07/counseLLM"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "MentalChat16K",
+      "hub_id": "ShenLab/MentalChat16K",
+      "urls": ["https://huggingface.co/datasets/ShenLab/MentalChat16K"],
+      "loads": true,
+      "n_examples": 16084,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ShenLab/MentalChat16K",
+      "quote": "This dataset consists of 9,775 synthetic conversations between a counselor and a client... The conversations were generated using the OpenAI GPT-3.5 Turbo model... This dataset consists of 6338 question-answer pairs from 378 interview transcripts... We employed the local Mistral-7B-Instruct-v0.2 model... to paraphrase and summarize interview transcripts."
+    },
+    {
+      "name": "empathetic_dialogues",
+      "hub_id": "Estwld/empathetic_dialogues_llm",
+      "urls": [
+        "https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm",
+        "https://huggingface.co/datasets/facebook/empathetic_dialogues"
+      ],
+      "loads": true,
+      "n_examples": 10000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "github",
+      "source_url": "https://github.com/wothmag07/counseLLM/blob/main/data/prepare_sft_data.py",
+      "quote": "Estwld/empathetic_dialogues_llm (~10K subsample, real human, Apache 2.0)"
+    },
+    {
+      "name": "Psych8k",
+      "hub_id": "EmoCareAI/Psych8k",
+      "urls": ["https://huggingface.co/datasets/EmoCareAI/Psych8k"],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Wothmag07/counseLLM",
+      "quote": "Real therapist transcripts"
+    },
+    {
+      "name": "counsel-chat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": ["https://huggingface.co/datasets/nbertagnolli/counsel-chat"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nbertagnolli/counsel-chat",
+      "quote": "Scrape of Counselchat.com's forum... On the site, therapists respond to questions posed by clients."
+    },
+    {
+      "name": "ESConv",
+      "hub_id": "thu-coai/esconv",
+      "urls": ["https://huggingface.co/datasets/thu-coai/esconv"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Wothmag07/counseLLM",
+      "quote": "Real human + strategy labels"
+    },
+    {
+      "name": "PsychoCounsel-Preference",
+      "hub_id": "Psychotherapy-LLM/PsyCoPref",
+      "urls": [
+        "https://huggingface.co/datasets/Psychotherapy-LLM/PsychoCounsel-Preference",
+        "https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref"
+      ],
+      "loads": true,
+      "n_examples": 2000,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "github",
+      "source_url": "https://github.com/wothmag07/counseLLM/blob/main/data/prepare_dpo_data.py",
+      "quote": "SAMPLE_SIZE = 2000"
+    }
+  ],
+  "training_method": {
+    "objective": "dpo",
+    "objective_quote": "An empathy-aligned conversational support model fine-tuned from Llama 3.1 8B Instruct using a two-stage alignment pipeline: Supervised Fine-Tuning (SFT) on 36K counseling examples followed by Direct Preference Optimization (DPO) on ~2K preference-filtered pairs.",
+    "objective_url": "https://huggingface.co/Wothmag07/counseLLM",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method | QLoRA (4-bit NF4 + double quantization). Method | QLoRA on SFT-merged base. LoRA Rank / Alpha | 64 / 128. LoRA Rank / Alpha | 16 / 32.",
+    "update_scope_url": "https://huggingface.co/Wothmag07/counseLLM",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 1e-5,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/Wothmag07/counseLLM/raw/main/sft/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"meta-llama/Llama-3.1-8B-Instruct\""
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/Wothmag07/counseLLM/raw/main/dpo/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"meta-llama/Llama-3.1-8B-Instruct\""
+      },
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://github.com/wothmag07/counseLLM/blob/main/configs/sft_config.yaml",
+        "quote": "name: \"meta-llama/Llama-3.1-8B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8B",
+    "parameters_stated_url": "https://huggingface.co/Wothmag07/counseLLM"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Wothmag07/counseLLM",
+    "quote": "Language: English"
+  },
+  "description": {
+    "text": "An empathy-aligned conversational support model fine-tuned from Llama 3.1 8B Instruct using a two-stage alignment pipeline: Supervised Fine-Tuning (SFT) on 36K counseling examples followed by Direct Preference Optimization (DPO) on ~2K preference-filtered pairs.\n\nDisclaimer: This is an AI research project and is not a substitute for professional mental health care. If you are in crisis, please contact the 988 Suicide & Crisis Lifeline (call or text 988) or your local emergency services.",
+    "source_url": "https://huggingface.co/Wothmag07/counseLLM"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "An empathy-aligned conversational support model fine-tuned from Llama 3.1 8B Instruct using a two-stage alignment pipeline."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a mental health counselor providing supportive, empathetic guidance."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This is an AI research project and is not a substitute for professional mental health care."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"I've been feeling really anxious about work lately and I can't sleep.\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Wothmag07/counseLLM/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a mental health counselor providing supportive, empathetic guidance. Respond by first acknowledging the person's feelings, then explore their situation with open-ended questions. Use techniques like reflective listening, validation, and gentle reframing. Keep responses warm, conversational, and non-judgmental.",
+    "system_prompt_url": "https://huggingface.co/Wothmag07/counseLLM",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/Wothmag07/counseLLM/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "config.json max_position_embeddings is 131072. The card's generate() example uses max_new_tokens 512, temperature 0.7, top_p 0.9, repetition_penalty 1.1. GitHub SFT and DPO configs set max_length 2048. The training system prompt in configs/sft_config.yaml adds a crisis-helpline sentence that the card example omits. Root weights are the merged model; sft/ and dpo/ are separate LoRA adapters (r=64/alpha=128 and r=16/alpha=32). JSON rank, alpha, learning rate, epochs, and batch size are the DPO stage. SFT stage: rank 64, alpha 128, learning rate 2e-4, 2 epochs, effective batch size 16."
+  },
+  "evaluation_reported": {
+    "text": "Evaluated on 25 curated prompts across 18 mental health categories. Perplexity: base 4.18, SFT 3.64, DPO 3.13. GPT-4o judge overall (1-5): base 4.35, SFT 3.52, DPO 4.71.",
+    "source_url": "https://huggingface.co/Wothmag07/counseLLM"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Wothmag07/counseLLM"
+  },
+  "inventory_row": {
+    "methods": "dpo|qlora|sft",
+    "datasets": "MentalChat16K; empathetic_dialogues; Psych8k; counsel-chat; ESConv; PsychoCounsel-Preference",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The inventory names match the card. Separate from the inventory: a LinkedIn post by the author says SFT on 40k examples; the card and prepare_sft_data.py say about 36K. The GitHub code license is MIT; the model card license is Apache 2.0. The old dataset id Psychotherapy-LLM/PsychoCounsel-Preference redirects to Psychotherapy-LLM/PsyCoPref.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"Wothmag07/counseLLM\"",
+    "\"counseLLM\" huggingface",
+    "\"counseLLM\" arxiv",
+    "\"counseLLM\" github",
+    "\"CounseLLM: Empathy-Aligned Conversational Support LLM\"",
+    "MentalChat16K huggingface dataset",
+    "empathetic_dialogues huggingface dataset",
+    "Psych8k huggingface dataset",
+    "counsel-chat huggingface dataset",
+    "ESConv huggingface dataset",
+    "PsychoCounsel-Preference huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,198 @@
+{
+  "hf_id": "EMBGuard/EMBGuard-2B",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:26:46-04:00",
+  "ended": "2026-10-09T19:30:37-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/EMBGuard__EMBGuard-2B__2026-10-09.md",
+    "cached_sha256": "cecda591519385cb850bc44937f1f3f61c5747e7d08fb107dce077e2b4a69478",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "global_step711/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+    "global_step711/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+    "global_step711/zero_pp_rank_0_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_1_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_2_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_3_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_4_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_5_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_6_mp_rank_00_model_states.pt",
+    "global_step711/zero_pp_rank_7_mp_rank_00_model_states.pt",
+    "latest",
+    "merges.txt",
+    "model.safetensors",
+    "preprocessor_config.json",
+    "rng_state_0.pth",
+    "rng_state_1.pth",
+    "rng_state_2.pth",
+    "rng_state_3.pth",
+    "rng_state_4.pth",
+    "rng_state_5.pth",
+    "rng_state_6.pth",
+    "rng_state_7.pth",
+    "scheduler.pt",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "trainer_state.json",
+    "training_args.bin",
+    "video_preprocessor_config.json",
+    "vocab.json",
+    "zero_to_fp32.py"
+  ],
+  "links": {
+    "github": ["https://github.com/dongwxxkchoi/EMBGuard"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2605.30924",
+        "arxiv_id": "2605.30924",
+        "title": "EMBGuard: Constructing Hazard-Aware Guardrails for Safe Planning in Embodied Agents",
+        "venue": "ICML 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": ["https://icml.cc/virtual/2026/poster/63023"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "EMBHazard",
+      "hub_id": "EMBGuard/EMBHazard",
+      "urls": [
+        "https://huggingface.co/datasets/EMBGuard/EMBHazard",
+        "https://github.com/dongwxxkchoi/EMBGuard"
+      ],
+      "loads": true,
+      "n_examples": 15115,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2605.30924",
+      "quote": "We train EMBGuard using Qwen-3-VL models (34) with 2B and 4B parameters through supervised fine-tuning on EMBHazard."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "stage: sft",
+    "objective_url": "https://raw.githubusercontent.com/dongwxxkchoi/EMBGuard/main/scripts/train/qwen3vl_full_sft.yaml",
+    "update_scope": "full",
+    "update_scope_quote": "finetuning_type: full\nfreeze_vision_tower: true\nfreeze_multi_modal_projector: true\nfreeze_language_model: false",
+    "update_scope_url": "https://raw.githubusercontent.com/dongwxxkchoi/EMBGuard/main/scripts/train/qwen3vl_full_sft.yaml",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": 711,
+    "learning_rate": 1e-5,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-VL-2B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-VL-2B-Instruct",
+        "source_url": "https://raw.githubusercontent.com/dongwxxkchoi/EMBGuard/main/scripts/train/qwen3vl_full_sft.yaml",
+        "quote": "model_name_or_path: Qwen/Qwen3-VL-2B-Instruct"
+      },
+      {
+        "parent": "Qwen-3-VL 2B",
+        "source_url": "https://arxiv.org/html/2605.30924",
+        "quote": "We train EMBGuard using Qwen-3-VL models (34) with 2B and 4B parameters through supervised fine-tuning on EMBHazard."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "2127532032",
+    "parameters_stated_url": "https://huggingface.co/api/models/EMBGuard/EMBGuard-2B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/EMBGuard/EMBGuard-2B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/EMBGuard/EMBGuard-2B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "At each step, the guardrail receives the observation image and proposed action, and outputs risk assessment (safe/unsafe), risk type, and hazard description."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "we propose EMBGuard, the first MLLM-based safety guardrail for embodied agents designed to decouple physical risk reasoning from agent policy."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Thereby, we emphasize that deployment in real-world robotic systems requires thorough validation and careful consideration by practitioners to ensure safety in specific deployment contexts."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Since the guardrail takes a scene image and an associated action as input, we generate images for training and evaluation based on the constructed scene graphs.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/EMBGuard/EMBGuard-2B",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "generation_settings_url": "https://huggingface.co/EMBGuard/EMBGuard-2B/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The model card is YAML only. The training YAML for this 2B run sets finetuning_type full, freezes the vision tower and the multimodal projector, and trains the language model. It sets learning_rate 1.0e-5, num_train_epochs 4.0, per_device_train_batch_size 1, gradient_accumulation_steps 8, bf16 true, cutoff_len 60000, and template qwen3_vl_nothink. The paper says the same learning rate and 4 epochs on 8 A6000 GPUs, and that the vision encoder is frozen. trainer_state.json in this repository records epoch 3.0, global_step 711, max_steps 948, num_train_epochs 4, and train_batch_size 1. The repository also contains a separate LoRA script; that script's example model is not this checkpoint. config.json max_position_embeddings is 262144. No system-prompt string is given."
+  },
+  "evaluation_reported": {
+    "text": "Paper Table 2, EMBGuard-2B: EMBGuardTest Potential Risk 51.6, Risk Type 44.6, Hazard 7.4; Held-out Set Potential Risk 68.3, Risk Type 59.5, Hazard 36.6. Safe-planning table: step accuracy 45.7, precision 19.1, recall 76.7, F1 30.5. Inference time 0.535 seconds per sample on one RTX 6000 Ada. EMBGuardTest has 329 manually curated real-world samples. The held-out set is 563 samples from EMBHazard in the paper; the Hub dataset EMBGuard/heldout_set reports 1,130 rows.",
+    "source_url": "https://arxiv.org/html/2605.30924"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/EMBGuard/EMBGuard-2B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "EMBGuard/EMBHazard;EMBGuard/EMBGuardTest_v2;EMBGuard/heldout_set",
+    "parent": "Qwen/Qwen3-VL-2B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are blank. The paper and the 2B training YAML state supervised fine-tuning, finetuning_type full, with the vision tower and multimodal projector frozen. Parent matches. The card YAML names three datasets. The paper and GitHub README say only EMBHazard is the training set (15,115 rows). EMBGuard/EMBGuardTest_v2 (329 rows) and EMBGuard/heldout_set are evaluation sets.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"EMBGuard/EMBGuard-2B\"",
+    "\"EMBGuard-2B\" huggingface",
+    "\"EMBGuard-2B\" arxiv",
+    "\"EMBGuard-2B\" github",
+    "EMBGuard: Constructing Hazard-Aware Guardrails for Safe Planning in Embodied Agents",
+    "EMBHazard huggingface dataset"
+  ],
+  "confidence": "high"
+}

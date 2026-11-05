@@ -1,0 +1,200 @@
+{
+  "hf_id": "prithivMLmods/Llama-Doctor-3.2-3B-Instruct",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:45:16-04:00",
+  "ended": "2026-10-13T12:46:58-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prithivMLmods__Llama-Doctor-3.2-3B-Instruct__2026-10-10.md",
+    "cached_sha256": "4b1741f46479dcbb78afdd46dfc8e96c048333da20c349088507a64c53c951f7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/yuliangyan0807/llm-fingerprint"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.16530",
+        "arxiv_id": "2505.16530",
+        "title": "DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection",
+        "venue": "arXiv; also Findings of EACL 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/prithivMLmods/Llama-Doctor-3.2-3B-Instruct"]
+  },
+  "training_data": [
+    {
+      "name": "avaliev/chat_doctor",
+      "hub_id": "avaliev/chat_doctor",
+      "urls": [
+        "https://huggingface.co/datasets/avaliev/chat_doctor"
+      ],
+      "loads": true,
+      "n_examples": 119486,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/avaliev/chat_doctor",
+      "quote": "This dataset was formed from the three data sources from the ChatDoctor work. 100k real conversations between patients and doctors from HealthCareMagic.com HealthCareMagic-100k. - ADDED. 10k real conversations between patients and doctors from icliniq.com icliniq-10k. - ADDED. 5k generated conversations between patients and physicians from ChatGPT GenMedGPT-5k and disease database. - NOT ADDED."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.2-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of the base Llama-3.2-3B-Instruct model"
+      },
+      {
+        "parent": "meta-llama/Llama-3.2-3B-Instruct",
+        "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"meta-llama/Llama-3.2-3B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3B (safetensors total 3212749824)",
+    "parameters_stated_url": "https://huggingface.co/api/models/prithivMLmods/Llama-Doctor-3.2-3B-Instruct"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "The Llama-Doctor-3.2-3B-Instruct model is designed for text generation tasks, particularly in contexts where instruction-following capabilities are needed. This model is a fine-tuned version of the base Llama-3.2-3B-Instruct model and is optimized for understanding and responding to user-provided instructions or prompts. The model has been trained on a specialized dataset, avaliev/chat_doctor, to enhance its performance in providing conversational or advisory responses, especially in medical or technical fields.",
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Medical Consultation Tools for generating advice or answering medical queries (given its training on the chat_doctor dataset)."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Medical Consultation Tools for generating advice or answering medical queries (given its training on the chat_doctor dataset)."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "to enhance its performance in providing conversational or advisory responses, especially in medical or technical fields.",
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public"],
+    "quotes": ["Medical Consultation Tools for generating advice or answering medical queries (given its training on the chat_doctor dataset)."],
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "give treatment advice", "talk with a patient"],
+    "quotes": [
+      "answering medical queries",
+      "generating advice or answering medical queries",
+      "providing conversational or advisory responses, especially in medical or technical fields."
+    ],
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["providing conversational or advisory responses, especially in medical or technical fields."]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "conversation with a patient", "treatment or medication advice"],
+    "quotes": [
+      "answering medical queries",
+      "providing conversational or advisory responses, especially in medical or technical fields.",
+      "generating advice or answering medical queries"
+    ],
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "especially in medical or technical fields",
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The Llama-Doctor-3.2-3B-Instruct model is designed for text generation tasks, particularly in contexts where instruction-following capabilities are needed.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_length": 131072
+    },
+    "generation_settings_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card has no usage example and no system prompt. The tokenizer chat template is the Llama 3 tool template; it uses a system message only when the first message has that role. generation_config.json sets do_sample true, temperature 0.6, top_p 0.9, and max_length 131072. config.json max_position_embeddings is 131072 and _name_or_path is the parent. config.json also contains unsloth_version 2024.11.7. That string is not a stated training method. The card's file table lists pytorch_model bin shards. The repository file list is two F16 safetensors shards and no adapter_config.json. No epoch, step, learning-rate, batch-size, or LoRA rank is stated."
+  },
+  "evaluation_reported": {
+    "text": "The model card reports no benchmark scores. DuFFin Table 2 lists this model name as a pirated Llama 3.2 variant with IP-ROC 1.0. The appendix table labels the same URL with Type SFT. That table does not describe a training run.",
+    "source_url": "https://arxiv.org/html/2505.16530"
+  },
+  "license": {
+    "value": "llama3.2",
+    "source_url": "https://huggingface.co/prithivMLmods/Llama-Doctor-3.2-3B-Instruct/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "avaliev/chat_doctor",
+    "parent": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"prithivMLmods/Llama-Doctor-3.2-3B-Instruct\"",
+    "\"Llama-Doctor-3.2-3B-Instruct\" huggingface",
+    "\"Llama-Doctor-3.2-3B-Instruct\" arxiv",
+    "\"Llama-Doctor-3.2-3B-Instruct\" github",
+    "DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection",
+    "avaliev/chat_doctor huggingface dataset"
+  ],
+  "confidence": "medium"
+}

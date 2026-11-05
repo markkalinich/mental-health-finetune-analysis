@@ -1,0 +1,167 @@
+{
+  "hf_id": "KBhandari11/vicuna_block_4_suicide_risk_Complete_Random",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:27:52-04:00",
+  "ended": "2026-10-09T19:28:20-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/KBhandari11__vicuna_block_4_suicide_risk_Complete_Random__2026-10-09.md",
+    "cached_sha256": "73359e2c0da99ee463aa55d1021aef3d9eb293c600879096b19cb997b3d432a6",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00006.safetensors",
+    "model-00002-of-00006.safetensors",
+    "model-00003-of-00006.safetensors",
+    "model-00004-of-00006.safetensors",
+    "model-00005-of-00006.safetensors",
+    "model-00006-of-00006.safetensors",
+    "model.safetensors.index.json"
+  ],
+  "links": {
+    "github": ["https://github.com/KBhandari11/LLMNeuron"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2508.18192",
+        "arxiv_id": "2508.18192",
+        "title": "Unraveling the cognitive patterns of Large Language Models through module communities",
+        "venue": "CogInterp workshop, NeurIPS 2025 (poster)",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/1910.09700",
+        "arxiv_id": "1910.09700",
+        "title": "Quantifying the Carbon Emissions of Machine Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://huggingface.co/collections/KBhandari11/vicuna-model-pruning-strategy-block"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "tasksource/bigbench",
+      "hub_id": "tasksource/bigbench",
+      "urls": [
+        "https://huggingface.co/datasets/tasksource/bigbench",
+        "https://huggingface.co/datasets/tasksource/bigbench/raw/84e90626beb6488fa5513bc15632e6c203a3952b/README.md"
+      ],
+      "loads": true,
+      "n_examples": 841339,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/KBhandari11/vicuna_block_4_suicide_risk_Complete_Random/raw/main/README.md",
+      "quote": "dataset: ['tasksource/bigbench', 'suicide_risk']"
+    },
+    {
+      "name": "suicide_risk",
+      "hub_id": "tasksource/bigbench",
+      "urls": [
+        "https://huggingface.co/datasets/tasksource/bigbench/viewer/suicide_risk"
+      ],
+      "loads": true,
+      "n_examples": 40,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/KBhandari11/vicuna_block_4_suicide_risk_Complete_Random/raw/main/README.md",
+      "quote": "dataset_label: suicide_risk"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "lmsys/vicuna-7b-v1.5",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "6738415616",
+    "parameters_stated_url": "https://huggingface.co/api/models/KBhandari11/vicuna_block_4_suicide_risk_Complete_Random"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/KBhandari11/vicuna_block_4_suicide_risk_Complete_Random/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "dataset_label: suicide_risk"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Vicuna is a chat assistant trained by fine-tuning Llama 2 on user-shared conversations collected from ShareGPT.",
+    "chat_template_present": "no",
+    "chat_template_source": "https://huggingface.co/api/models/KBhandari11/vicuna_block_4_suicide_risk_Complete_Random",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.9,
+      "top_p": 0.6,
+      "max_length": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/KBhandari11/vicuna_block_4_suicide_risk_Complete_Random/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "The repository has no tokenizer_config.json and no chat_template.jinja. config.json max_position_embeddings is 4096. The Hub model page labels the same safetensors count as 7B params. The YAML tag finetune is Complete Random."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "not stated"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "not stated"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "tasksource/bigbench",
+    "parent": "lmsys/vicuna-7b-v1.5"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory datasets lists only tasksource/bigbench. The card YAML also lists suicide_risk, a configuration of that dataset (24 train rows and 16 validation rows). Inventory methods is empty, and no source states a named training loss for this repository. The card parent tag matches the inventory parent.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"KBhandari11/vicuna_block_4_suicide_risk_Complete_Random\"",
+    "\"vicuna_block_4_suicide_risk_Complete_Random\" huggingface",
+    "\"vicuna_block_4_suicide_risk_Complete_Random\" arxiv",
+    "\"vicuna_block_4_suicide_risk_Complete_Random\" github",
+    "\"Unraveling the cognitive patterns of Large Language Models through module communities\"",
+    "tasksource/bigbench huggingface dataset",
+    "\"suicide_risk\" huggingface dataset",
+    "suicide_risk huggingface dataset"
+  ],
+  "confidence": "medium"
+}

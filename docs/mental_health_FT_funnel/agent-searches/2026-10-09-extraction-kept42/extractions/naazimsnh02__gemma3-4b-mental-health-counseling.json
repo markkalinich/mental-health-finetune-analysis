@@ -1,0 +1,169 @@
+{
+  "hf_id": "naazimsnh02/gemma3-4b-mental-health-counseling",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:48-04:00",
+  "ended": "2026-10-09T16:54:22-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/naazimsnh02__gemma3-4b-mental-health-counseling__2026-10-09.md",
+    "cached_sha256": "00d9947b9f8d65d98cfdcc295750b7c97740d14032912d1a9633e90810b4509d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/Naazimsnh02/gemma3-mental-health-counseling",
+      "https://github.com/unslothai/unsloth"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2503.19786",
+        "arxiv_id": "2503.19786",
+        "title": "Gemma 3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Mental Health Counseling Conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations"
+      ],
+      "loads": true,
+      "n_examples": 3500,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md",
+      "quote": "The model was trained on the Mental Health Counseling Conversations dataset, which contains: Size: 3,500 conversation pairs; Format: Context (user query) and Response (counselor advice); Domain: Mental health support and counseling; Language: English."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Training Approach: Supervised Fine-Tuning (SFT) with response-only masking",
+    "objective_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Load Gemma 3 (4B) model with 4-bit quantization",
+    "update_scope_url": "https://github.com/Naazimsnh02/gemma3-mental-health-counseling/blob/main/gemma3-mental-health-counseling.ipynb",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-3-4b-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3-4b-it",
+        "source_url": "https://github.com/Naazimsnh02/gemma3-mental-health-counseling/blob/main/gemma3-mental-health-counseling.ipynb",
+        "quote": "model_name = \"unsloth/gemma-3-4b-it\""
+      },
+      {
+        "parent": "google/gemma-3-4b-it",
+        "source_url": "https://github.com/Naazimsnh02/gemma3-mental-health-counseling/blob/main/README.md",
+        "quote": "Base Model: Gemma 3 (4B) Instruct"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "4300079472",
+    "parameters_stated_url": "https://huggingface.co/api/models/naazimsnh02/gemma3-4b-mental-health-counseling"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md",
+    "quote": "Language: English"
+  },
+  "description": {
+    "text": "This is a fully merged model (base model + LoRA adapters) fine-tuned on the Mental Health Counseling Conversations dataset.\n\nThis model has been fine-tuned to provide empathetic and helpful responses to mental health-related queries. It's designed to offer supportive guidance while maintaining professional boundaries appropriate for AI-assisted mental health support.",
+    "source_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This model has been fine-tuned to provide empathetic and helpful responses to mental health-related queries."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "This model has been fine-tuned to provide empathetic and helpful responses to mental health-related queries. It's designed to offer supportive guidance while maintaining professional boundaries appropriate for AI-assisted mental health support."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Always seek professional help for mental health concerns."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"type\": \"text\", \"text\": \"I've been feeling anxious lately. What can I do?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/naazimsnh02/gemma3-4b-mental-health-counseling",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 50
+    },
+    "generation_settings_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "generation_config.json sets token ids only. The sampling values above are the card's inference example. tokenizer_config.json has no chat_template key; the Gemma 3 template is in chat_template.jinja and on the model API. It does not define a system prompt (use_default_system_prompt is false). If the caller supplies a system message, the template prefixes it onto the first user turn. config.json is Gemma3ForConditionalGeneration with a SigLIP vision tower and max_position_embeddings 131072. The training notebook sets finetune_vision_layers = False and comments \"Text-only model\", and caps training sequences at 2048. Released weights are BF16; the card says the merged file is float16. The notebook saves with save_method merged_16bit."
+  },
+  "evaluation_reported": {
+    "text": "The card logs training and validation loss every 50 steps through step 550. Final validation loss: 1.9974. It also says: Quantitative evaluation metrics for mental health counseling quality are complex and context-dependent. This model should be evaluated in controlled settings with professional oversight.",
+    "source_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/naazimsnh02/gemma3-4b-mental-health-counseling/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "Amod/mental_health_counseling_conversations",
+    "parent": "unsloth/gemma-3-4b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are lora|sft. The card says LoRA and supervised fine-tuning. The training notebook loads unsloth/gemma-3-4b-it with load_in_4bit = True and then adds LoRA, which is QLoRA, and trains with SFTTrainer. The card YAML and the notebook name the parent unsloth/gemma-3-4b-it. The GitHub README links the base to google/gemma-3-4b-it. The dataset id matches.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "naazimsnh02/gemma3-4b-mental-health-counseling",
+    "\"gemma3-4b-mental-health-counseling\" huggingface",
+    "\"gemma3-4b-mental-health-counseling\" arxiv",
+    "\"gemma3-4b-mental-health-counseling\" github",
+    "Amod/mental_health_counseling_conversations huggingface dataset"
+  ],
+  "confidence": "high"
+}

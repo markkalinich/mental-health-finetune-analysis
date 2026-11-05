@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 8 of 20).
+
+Model 1: Satyam810/qwen3-8b-medical-reasoning
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Satyam810__qwen3-8b-medical-reasoning__2026-10-05.md
+  Inventory row: methods='lora' datasets='FreedomIntelligence/medical-o1-reasoning-SFT | lavita/ChatDoctor-HealthCareMagic-100k' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Satyam810__qwen3-8b-medical-reasoning.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Satyam810__qwen3-8b-medical-reasoning.md
+
+Model 2: Slyracoon23/medical-gemma3n-emergency-response
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Slyracoon23__medical-gemma3n-emergency-response__2026-10-05.md
+  Inventory row: methods='lora' datasets='medical_emergency_dataset.json | forced_tool_calls_dataset.json' parent='unsloth/gemma-3n-E4B-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Slyracoon23__medical-gemma3n-emergency-response.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Slyracoon23__medical-gemma3n-emergency-response.md
+
+Model 3: SumanKoo7/Pharmapedia-FT-Gemma-3-1b-it
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SumanKoo7__Pharmapedia-FT-Gemma-3-1b-it__2026-10-10.md
+  Inventory row: methods='sft' datasets='llamafactory/PubMedQA' parent='google/gemma-3-1b-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/SumanKoo7__Pharmapedia-FT-Gemma-3-1b-it.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/SumanKoo7__Pharmapedia-FT-Gemma-3-1b-it.md
+
+Model 4: Team-Promptia/RLT-student-Qwen3-32B-medicine_biology
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Team-Promptia__RLT-student-Qwen3-32B-medicine_biology__2026-10-10.md
+  Inventory row: methods='' datasets='Team-Promptia/RLT-medicine_biology-expert-11k' parent='Qwen/Qwen3-32B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/Team-Promptia__RLT-student-Qwen3-32B-medicine_biology.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/Team-Promptia__RLT-student-Qwen3-32B-medicine_biology.md
+
+Model 5: ThxZ3US/Medicalia
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ThxZ3US__Medicalia__2026-10-10.md
+  Inventory row: methods='sft' datasets='QuyenAnhDE/Diseases_Symptoms' parent='HuggingFaceTB/SmolLM2-135M-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/ThxZ3US__Medicalia.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/ThxZ3US__Medicalia.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

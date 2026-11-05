@@ -1,0 +1,226 @@
+{
+  "hf_id": "flowxai/scam-guard-qwen06b",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:28:57-04:00",
+  "ended": "2026-10-09T19:31:56-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/flowxai__scam-guard-qwen06b__2026-10-09.md",
+    "cached_sha256": "1044c33c36973f5389f6c8bf40077948c4cae59693900e472941b8d4f4a6dc9b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "gguf/scam-guard-qwen06b-cuda-Q8_0.gguf",
+    "inference_contract/INFERENCE.md",
+    "inference_contract/prompt_scamguard_sys_v1.txt",
+    "inference_contract/schema_scamguard_v1.json",
+    "merges.txt",
+    "mlx-int4/README.md",
+    "mlx-int4/chat_template.jinja",
+    "mlx-int4/config.json",
+    "mlx-int4/generation_config.json",
+    "mlx-int4/model.safetensors",
+    "mlx-int4/model.safetensors.index.json",
+    "mlx-int4/tokenizer.json",
+    "mlx-int4/tokenizer_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [
+      "https://www.flowx.ai/models"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "UCI SMS Spam Collection",
+      "hub_id": "ucirvine/sms_spam",
+      "urls": [
+        "https://huggingface.co/datasets/ucirvine/sms_spam",
+        "https://archive.ics.uci.edu/dataset/228/sms+spam+collection"
+      ],
+      "loads": true,
+      "n_examples": 5574,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+      "quote": "Public seed layer (relabeled): UCI SMS Spam Collection (CC BY 4.0), enron_ham (SetFit/enron_spam ham slice; no explicit license → reference/research-use), phishing_email (zefang-liu; LGPL-3.0)."
+    },
+    {
+      "name": "enron_ham (SetFit/enron_spam ham slice)",
+      "hub_id": "SetFit/enron_spam",
+      "urls": [
+        "https://huggingface.co/datasets/SetFit/enron_spam"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+      "quote": "enron_ham (SetFit/enron_spam ham slice; no explicit license → reference/research-use)"
+    },
+    {
+      "name": "phishing_email",
+      "hub_id": "zefang-liu/phishing-email-dataset",
+      "urls": [
+        "https://huggingface.co/datasets/zefang-liu/phishing-email-dataset"
+      ],
+      "loads": true,
+      "n_examples": 18650,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+      "quote": "phishing_email (zefang-liu; LGPL-3.0)"
+    },
+    {
+      "name": "synthetic layer",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "English and Romanian",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+      "quote": "Synthetic layer: generated from specs (tactic × channel × language × register), including a `suspicious` middle-ground tier and adversarial keyword-evasion paraphrases (the `hard` subset)."
+    },
+    {
+      "name": "ScamGuardBench v0.2",
+      "hub_id": "flowxai/scamguardbench",
+      "urls": [
+        "https://huggingface.co/datasets/flowxai/scamguardbench",
+        "https://huggingface.co/datasets/flowxai/scamguardbench/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 753,
+      "language": "English and Romanian",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/flowxai/scamguardbench/raw/main/README.md",
+      "quote": "Contamination: every v0.2 item is from the held-out TEST split, disjoint from any scam-guard training data by spec-family, source-hash, and whitespace-normalized text (asserted by an automated test)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "CUDA full-budget 3-epoch LoRA (`training/train_cuda.py`, transformers + PEFT + trl `SFTTrainer`), from `Qwen/Qwen3-0.6B`.",
+    "objective_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Both are LoRA-fine-tuned from Apache-2.0 Qwen3 base models.",
+    "update_scope_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 2e-05,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-0.6B",
+    "source_claims": [
+      {
+        "parent": "Qwen3-0.6B",
+        "source_url": "https://www.flowx.ai/models",
+        "quote": "Base Qwen3-0.6B (LoRA)"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "0.6B",
+    "parameters_stated_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md"
+  },
+  "languages": {
+    "values": [
+      "English",
+      "Romanian"
+    ],
+    "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md",
+    "quote": "An on-device scam & fraud message detector for SMS, email, and chat text (English + Romanian)."
+  },
+  "description": {
+    "text": "**An on-device scam & fraud message detector for SMS, email, and chat text (English + Romanian).**\n\n**How to read the numbers on this card.** The fine-tuned figures measured on the synthetic benchmark are provisional: the benchmark is synthetic, not production traffic. The out-of-distribution fresh-message results are separately measured and are included below. Every fine-tuned figure here comes from the final CUDA 3-epoch run, which supersedes an earlier MLX pass.",
+    "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Given one message, scam-guard returns a **3-level verdict**, the **manipulation tactics** it found (each with a verbatim evidence span quoted from the message), a **calm plain-language explanation**, and a **recommended safe action** from a fixed list."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "**An on-device scam & fraud message detector for SMS, email, and chat text (English + Romanian).**"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Not a replacement for a bank's fraud line, a national anti-fraud service, or human judgment."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "**Text only** at v1: no image/OCR, no audio, no attachment parsing, no email-header/routing analysis.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/chat_template.jinja",
+    "system_prompt": "You are an on-device scam and fraud detector. You read ONE message (SMS, email,\nor chat text, possibly containing visible URLs) and judge whether it is a scam.\nYou never fetch URLs or use any network; you reason ONLY over the visible text.\n\nReturn a single JSON object with these fields:\n\n1. verdict — exactly one of three levels (never a probability or percentage):\n   - scam_likely: clear scam mechanism present (a request for money, credentials,\n     card data, OTP relay, a fee to release a parcel/prize, payment redirection,\n     remote access, etc.) driven by manipulation tactics. Reserve this level for\n     messages that would cause real harm if acted on.\n   - suspicious: manipulation signals are present but the message could plausibly\n     be legitimate, OR the only indicators are weak (urgency alone, an unfamiliar\n     link alone, an authority claim with no money/data ask). The honest middle:\n     \"verify through your own channel before acting\".\n   - no_indicators: no scam mechanism; a genuine-looking OTP, transaction alert,\n     courier notice, receipt, promo, or ordinary message. Legitimate messages can\n     be urgent and can contain links — do NOT flag them for that alone.\n\n2. tactics — a list of the manipulation tactics you detected, each an object with:\n   - tactic: one of the fixed tactic ids below,\n   - evidence: a VERBATIM substring copied character-for-character from the input\n     message (it will be checked by exact substring match; any tactic whose\n     evidence is not found verbatim in the message is dropped and counted as\n     fabricated, so never paraphrase, truncate mid-word, or invent evidence),\n   - explanation: one calm, plain sentence a non-technical person (including an\n     elderly person) can understand — describe the manipulation pattern, never\n     instructions for constructing it, and never panic language.\n   When verdict is no_indicators, tactics is an empty list.\n\n   Fixed tactic ids (use these exact strings, nothing else):\n  - urgency_pressure\n  - authority_impersonation\n  - payment_redirect\n  - credential_phishing\n  - courier_customs_fee\n  - prize_lottery\n  - investment_too_good\n  - romance_advance_fee\n  - family_emergency_impersonation\n  - tech_support\n  - link_obfuscation\n  - refund_overpayment\n  - subscription_trap\n\n3. explanation — one or two calm, actionable sentences summarizing the verdict\n   for a frightened non-technical reader. No alarmist tone; state what is going on\n   and, implicitly, that they can verify safely.\n\n4. recommended_action — one safe action id from the fixed schema enum. Prefer the\n   action that routes the reader to THEIR OWN trusted channel (their bank's\n   official number, the courier's own app) rather than any contact in the message.\n   Use no_action_needed only for no_indicators.\n\nRules:\n- Evidence must be a verbatim substring of the message. This is non-negotiable.\n- A tactic label means \"this manipulation pattern is present\", not \"this is a\n  scam\" — the verdict is a separate judgment. Multiple tactics per message are\n  expected.\n- Urgency alone, a shortener/unfamiliar link alone, or an authority claim with no\n  money/data ask should rarely exceed suspicious.",
+    "system_prompt_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/inference_contract/prompt_scamguard_sys_v1.txt",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "generation_config.json sets do_sample true, temperature 0.6, top_k 20, top_p 0.95. The card's usage examples set temperature 0 and, in the MLX example, max_tokens 256. tokenizer_config.json has no chat_template key; chat_template.jinja is a separate file. tokenizer model_max_length is 131072. config.json max_position_embeddings is 40960. The uploaded model.safetensors is BF16 with 596,049,920 parameters and there is no adapter_config.json. GGUF Q8_0 and MLX int4 files are serving quantizations. Training says bf16 LoRA, so the base was not quantized during the shipped CUDA run. The card names training/train_cuda.py; that file is not in this repository, and no GitHub repository for it was found. Quantized-base tag on the Hub API is from the GGUF/MLX files, not from the training recipe."
+  },
+  "evaluation_reported": {
+    "text": "On a 120-message ScamGuardBench v0.2 slice the card reports verdict micro-F1 0.958, verdict macro-F1 0.926, tactic macro-F1 0.951, evidence pass rate 0.980, and legit-confusable false-positive rate 0.000. On 20 hand-authored out-of-distribution messages it reports 18/20 correct, verdict macro-F1 0.614, and legit false-alarm rate 0.000. The card says the bench numbers have a home-field advantage because the bench comes from the same synthetic generator as training, on a held-out split.",
+    "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/flowxai/scam-guard-qwen06b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "flowxai/scamguardbench",
+    "parent": "Qwen/Qwen3-0.6B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods lora|sft and parent Qwen/Qwen3-0.6B match the card. The card YAML lists datasets flowxai/scamguardbench, and the inventory copies that id. The ScamGuardBench card says every v0.2 item is a held-out test item disjoint from scam-guard training data. The training mixture named on the model card is a relabeled public seed layer plus a synthetic layer, and the card states Train ∩ ScamGuardBench = ∅. The train split itself has no Hub id and no row count.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"flowxai/scam-guard-qwen06b\"",
+    "\"scam-guard-qwen06b\" huggingface",
+    "\"scam-guard-qwen06b\" arxiv",
+    "\"scam-guard-qwen06b\" github",
+    "flowxai scam-guard train_cuda.py SFTTrainer github",
+    "flowxai/scamguardbench huggingface dataset",
+    "UCI SMS Spam Collection huggingface dataset",
+    "SetFit/enron_spam huggingface dataset",
+    "zefang-liu phishing_email huggingface dataset"
+  ],
+  "confidence": "high"
+}

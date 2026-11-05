@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 123 of 315). Repository ids, in this order:
+1. Lexsi/gemma3-4b-dolly-sft-drift
+2. Lexsi/gemma3-4b-gsm8k-dpo-recover
+3. Lexsi/gemma3-4b-gsm8k-sft-drift
+4. Lexsi/gemma3-4b-hh-rlhf-aligned
+5. Lexsi/llama31-8b-code-dpo-recover
+6. Lexsi/llama31-8b-code-sft-drift
+7. Lexsi/llama31-8b-dolly-dpo-recover
+8. Lexsi/llama31-8b-dolly-sft-drift
+9. Lexsi/llama31-8b-gsm8k-dpo-recover
+10. Lexsi/llama31-8b-gsm8k-sft-drift
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-123.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-123.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

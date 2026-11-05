@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 336 of 349). Repository ids, in this order:
+1. Uppaal/Mistral-ProFS-safety
+2. Uppaal/Mistral-ProFS-toxicity
+3. Uppaal/Mistral-sft-ProFS-safety
+4. Uppaal/Mistral-sft-ProFS-toxicity
+5. Uppaal/opt-ProFS-toxicity
+6. Uranus/shellchat-v1-safety-sft
+7. Uranus/shellchat-v1-safety-sft-dpo
+8. Ursulalala/HomeGuard-8B
+9. usail-hkust/JailJudge-guard
+10. valdicorp/Qwen2.5-3B-Medical-MultiTurn-Safety-Merged
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-336.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-336.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

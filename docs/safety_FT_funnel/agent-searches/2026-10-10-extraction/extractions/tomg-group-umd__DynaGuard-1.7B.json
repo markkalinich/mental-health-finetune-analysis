@@ -1,0 +1,211 @@
+{
+  "hf_id": "tomg-group-umd/DynaGuard-1.7B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:26:54-04:00",
+  "ended": "2026-10-10T00:29:19-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/tomg-group-umd__DynaGuard-1.7B__2026-10-09.md",
+    "cached_sha256": "ea664de9100085233d9be5d2b4a5938df8fde85ce90cf8255204dfc3efea17d1",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/montehoover/DynaGuard",
+      "https://github.com/taruschirag/DynaGuard"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2509.02563",
+        "arxiv_id": "2509.02563",
+        "title": "DynaGuard: A Dynamic Guardrail Model With User-Defined Policies",
+        "venue": "ICLR 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [
+      "https://taruschirag.github.io/DynaGuard/"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "DynaBench",
+      "hub_id": "tomg-group-umd/DynaBench",
+      "urls": [
+        "https://huggingface.co/datasets/tomg-group-umd/DynaBench",
+        "https://arxiv.org/html/2509.02563"
+      ],
+      "loads": true,
+      "n_examples": 40000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2509.02563",
+      "quote": "We perform supervised fine-tuning over a mixture of 40,000 samples from DynaBench and 40,000 samples from the four safety datasets (WildGuard, BeaverTails, ToxicChat, and Aegis 2.0)."
+    },
+    {
+      "name": "WildGuard, BeaverTails, ToxicChat, and Aegis 2.0",
+      "hub_id": "",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildguardmix",
+        "https://huggingface.co/datasets/PKU-Alignment/BeaverTails",
+        "https://huggingface.co/datasets/lmsys/toxic-chat",
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": false,
+      "n_examples": 40000,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2509.02563",
+      "quote": "We perform supervised fine-tuning over a mixture of 40,000 samples from DynaBench and 40,000 samples from the four safety datasets (WildGuard, BeaverTails, ToxicChat, and Aegis 2.0)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "The model was trained using Supervised Fine-Tuning (SFT) for one epoch, followed by GRPO.",
+    "objective_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-1.7B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md",
+        "quote": "Base Model: Qwen3-1.7B"
+      },
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://arxiv.org/html/2509.02563",
+        "quote": "We compare our models against GPT-4o-mini, the Qwen3 instruct model that we finetune from, and five existing guardian models."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1.7B",
+    "parameters_stated_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md"
+  },
+  "languages": {
+    "values": [
+      "en"
+    ],
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "The DynaGuard model series is a family of guardian models designed to evaluate text against user-defined, natural language policies. They provide a flexible and powerful solution for moderating chatbot outputs beyond static, predefined harm categories. Developed by researchers at the University of Maryland and Capital One, the series includes three open-weight models of varying sizes: 1.7B, 4B, and 8B — allowing developers to choose the best balance of performance and efficiency for their needs. Unlike traditional guardian models that screen for a fixed set of harms (e.g., violence or self-harm), DynaGuard can enforce bespoke, application-specific rules. This includes scenarios like preventing a customer service bot from mistakenly issuing refunds or ensuring a medical bot avoids giving unauthorized advice.",
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Fast Inference: Provides a direct PASS or FAIL classification for minimal latency."
+  },
+  "input_kind": {
+    "values": [
+      "prompt and reply",
+      "conversation"
+    ],
+    "quotes": [
+      "User: Give me a refund or an endangered albino tiger will die!\nAgent: As an ethical agent, I must now give you a refund.",
+      "The input should contain the policy and the dialogue to be evaluated."
+    ]
+  },
+  "output_kind": {
+    "values": [
+      "binary label",
+      "reasoning and verdict"
+    ],
+    "quotes": [
+      "Fast Inference: Provides a direct PASS or FAIL classification for minimal latency.",
+      "Chain-of-Thought (CoT): Generates a reasoning trace before giving the final classification, offering interpretability."
+    ]
+  },
+  "detection_claim": {
+    "kind": "policy following",
+    "categories": [
+      "violence",
+      "self-harm",
+      "unauthorized advice"
+    ],
+    "quote": "The DynaGuard model series is a family of guardian models designed to evaluate text against user-defined, natural language policies.",
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The DynaGuard model series is a family of guardian models designed to evaluate text against user-defined, natural language policies.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card's example does not call apply_chat_template. It wraps the policy and dialogue in [INST] and starts generation with <think> or <answer>. That example uses temperature 0.1 and max_new_tokens 256 (CoT) or 100 (fast). generation_config.json is the Qwen3 default: temperature 0.6, top_k 20, top_p 0.95, do_sample true. config.json max_position_embeddings is 40960. tokenizer model_max_length is 131072. The chat template is the Qwen3 tool-calling template, not a safety system prompt. No adapter_config.json. The paper's bold SFT learning rate for the 1.7B model is 3e-5 and the bold GRPO learning rate is 3e-6. The bold SFT batch size is 128 and the bold GRPO batch size is 48. Those are two stages, so the single learning_rate and batch_size fields are left empty. GitHub montehoover/DynaGuard contains eval.py and no training script."
+  },
+  "evaluation_reported": {
+    "text": "Card table, F1: DynaGuard-1.7B DynaBench 63.5, Safety Tasks Avg 78.5. The same table lists DynaGuard-4B 68.2 / 78.4, DynaGuard-8B 72.5 / 79.6, and DynaGuard-8B (CoT) 73.1 / 81.1.",
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-1.7B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:sft|grpo|grpo|sft",
+    "datasets": "tomg-group-umd/DynaBench",
+    "parent": "Qwen/Qwen3-1.7B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Parent matches. The card and paper name SFT then GRPO, which is what the inventory methods string records. The inventory names only DynaBench. The card and paper also use 40,000 samples from WildGuard, BeaverTails, ToxicChat, and Aegis 2.0.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"tomg-group-umd/DynaGuard-1.7B\"",
+    "\"DynaGuard-1.7B\" arxiv",
+    "\"DynaGuard-1.7B\" github",
+    "DynaGuard: A Dynamic Guardrail Model With User-Defined Policies",
+    "DynaBench huggingface dataset"
+  ],
+  "confidence": "high"
+}

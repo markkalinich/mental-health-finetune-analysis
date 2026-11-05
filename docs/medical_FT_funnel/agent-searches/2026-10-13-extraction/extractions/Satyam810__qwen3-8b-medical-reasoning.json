@@ -1,0 +1,226 @@
+{
+  "hf_id": "Satyam810/qwen3-8b-medical-reasoning",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:12-04:00",
+  "ended": "2026-10-13T12:38:10-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Satyam810__qwen3-8b-medical-reasoning__2026-10-05.md",
+    "cached_sha256": "883c2c28b4e92b5d1ac6bc3677489b51fe52566e3ab2c4ec828def3bc5941833",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/unslothai/unsloth"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2512.05658",
+        "arxiv_id": "2512.05658",
+        "title": "Multilingual Medical Reasoning for Question Answering with Large Language Models",
+        "venue": "EMNLP 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/Satyam810/qwen3-8b-medical-reasoning"]
+  },
+  "training_data": [
+    {
+      "name": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    },
+    {
+      "name": "lavita/ChatDoctor-HealthCareMagic-100k",
+      "hub_id": "lavita/ChatDoctor-HealthCareMagic-100k",
+      "urls": [
+        "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k",
+        "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 112165,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md",
+      "quote": "real patient questions paired with physician responses."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Framework: Unsloth + TRL `SFTTrainer`",
+    "objective_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Base model: `unsloth/Qwen3-8B-unsloth-bnb-4bit` (4-bit quantized). Method: LoRA, rank 32",
+    "update_scope_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md",
+    "lora_rank": 32,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "YAML base_model is Qwen/Qwen3-8B; the training section names unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen3-8B"
+      },
+      {
+        "parent": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md",
+        "quote": "A LoRA fine-tune of `unsloth/Qwen3-8B-unsloth-bnb-4bit` on medical reasoning and doctor-patient conversational data."
+      },
+      {
+        "parent": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning-lora/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"unsloth/Qwen3-8B-unsloth-bnb-4bit\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "8190735360",
+    "parameters_stated_url": "https://huggingface.co/api/models/Satyam810/qwen3-8b-medical-reasoning"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md",
+    "quote": "language:\n  - en"
+  },
+  "description": {
+    "text": "A LoRA fine-tune of `unsloth/Qwen3-8B-unsloth-bnb-4bit` on medical reasoning and doctor-patient conversational data. Trained using the [Unsloth](https://github.com/unslothai/unsloth) library.",
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "the fine-tuned model consistently produced shorter, more conversational answers (avg. ~35% fewer words across three of five test questions) that read like a physician speaking directly to a patient"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "the fine-tuned model consistently produced shorter, more conversational answers (avg. ~35% fewer words across three of five test questions) that read like a physician speaking directly to a patient, rather than the base model's exam-style breakdown with headers and bullet lists."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Do not use this model's output to make real medical decisions."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is intended for educational and research purposes — exploring medical reasoning generation and conversational QA fine-tuning. It is a small-scale student/hobby project, not a validated clinical tool.",
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker", "researcher or developer"],
+    "quotes": [
+      "It is a small-scale student/hobby project, not a validated clinical tool.",
+      "This model is intended for educational and research purposes — exploring medical reasoning generation and conversational QA fine-tuning."
+    ],
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["clinical reasoning", "answer medical questions", "suggest a diagnosis", "talk with a patient"],
+    "quotes": [
+      "the mix was weighted toward reasoning data to preserve step-by-step clinical reasoning while still keeping natural conversational phrasing.",
+      "exploring medical reasoning generation and conversational QA fine-tuning.",
+      "both the base and fine-tuned model reached the same correct diagnosis on all five test questions.",
+      "that read like a physician speaking directly to a patient"
+    ],
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "Same diagnosis, delivered as a direct, conversational explanation rather than a structured reference document.",
+      "medical questions paired with step-by-step clinical reasoning traces and a final answer."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential", "conversation with a patient"],
+    "quotes": [
+      "exploring medical reasoning generation and conversational QA fine-tuning.",
+      "eval only: both the base and fine-tuned model reached the same correct diagnosis on all five test questions.",
+      "real patient questions paired with physician responses."
+    ],
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "A LoRA fine-tune of `unsloth/Qwen3-8B-unsloth-bnb-4bit` on medical reasoning and doctor-patient conversational data.",
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"user\", \"content\": \"Describe the mechanism of action of metformin.\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "max_length": 40960
+    },
+    "generation_settings_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "config.json max_position_embeddings is 40960 and torch_dtype is float16; the Hub safetensors metadata reports 8,190,735,360 BF16 parameters. The chat template inserts a system turn only when the caller supplies one. The card example uses max_new_tokens=300. This repo has four full weight shards and no adapter_config.json. Rank 32 and alpha 32 are in the sibling adapter at https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning-lora/raw/main/adapter_config.json (r 32, lora_alpha 32, base unsloth/Qwen3-8B-unsloth-bnb-4bit). The card's Unsloth link is the training library, not a script for this checkpoint. The English medical-o1 config has 19,704 rows and the dataset has 90,120 rows across four configs; the card says training used a shuffled subsample of 7,000 combined examples and does not name the config."
+  },
+  "evaluation_reported": {
+    "text": "Fine-tuning didn't change diagnostic correctness on this small test set — both the base and fine-tuned model reached the same correct diagnosis on all five test questions. What changed was response style: the fine-tuned model consistently produced shorter, more conversational answers (avg. ~35% fewer words across three of five test questions). The card says this has not been evaluated against standard medical benchmarks (e.g. MedQA).",
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Satyam810/qwen3-8b-medical-reasoning/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT | lavita/ChatDoctor-HealthCareMagic-100k",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The card trains LoRA rank 32 on the 4-bit checkpoint unsloth/Qwen3-8B-unsloth-bnb-4bit, which is QLoRA, then this repository stores full BF16 weights. Inventory parent Qwen/Qwen3-8B matches the YAML base_model only. The training sentence and the sibling adapter config name unsloth/Qwen3-8B-unsloth-bnb-4bit. Datasets match the inventory row. The card does not state learning rate, batch size, or step count.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"Satyam810/qwen3-8b-medical-reasoning\"",
+    "\"qwen3-8b-medical-reasoning\" huggingface",
+    "\"qwen3-8b-medical-reasoning\" arxiv",
+    "\"qwen3-8b-medical-reasoning\" github",
+    "\"Multilingual Medical Reasoning for Question Answering with Large Language Models\" Satyam810",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset",
+    "lavita/ChatDoctor-HealthCareMagic-100k huggingface dataset"
+  ],
+  "confidence": "medium"
+}

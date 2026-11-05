@@ -1,0 +1,137 @@
+{
+  "hf_id": "dhruvin0612/mental_health_assistant_1.1B",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:26-04:00",
+  "ended": "2026-10-09T16:50:31-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/dhruvin0612__mental_health_assistant_1.1B__2026-10-09.md",
+    "cached_sha256": "99bc3b9f59c2e7d6b1a5a3a742f22d8c013f196e6dc12bdc46e1331af2b0f39e",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations/viewer/default/train"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/dhruvin0612/mental_health_assistant_1.1B/raw/main/README.md",
+      "quote": "datasets:\n- Amod/mental_health_counseling_conversations"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1100048384",
+    "parameters_stated_url": "https://huggingface.co/api/models/dhruvin0612/mental_health_assistant_1.1B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/dhruvin0612/mental_health_assistant_1.1B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": ""
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- Amod/mental_health_counseling_conversations"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"How many helicopters can a human eat in one sitting?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/dhruvin0612/mental_health_assistant_1.1B/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/dhruvin0612/mental_health_assistant_1.1B/raw/main/generation_config.json",
+    "max_context": 2048,
+    "notes": "This card has no usage example. The text-only quote is from the parent card at https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/raw/main/README.md. tokenizer_config.json has no chat_template key; the template is chat_template.jinja. use_default_system_prompt is false. generation_config.json has max_length 2048 and no temperature, top_p, top_k, max_new_tokens, repetition_penalty, or do_sample. max_context is config.json max_position_embeddings and tokenizer model_max_length. tokenizer_config.json also has max_length 512. Hub safetensors total is 1100048384 F16 parameters."
+  },
+  "evaluation_reported": {
+    "text": "metrics:\n- code_eval",
+    "source_url": "https://huggingface.co/dhruvin0612/mental_health_assistant_1.1B/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/dhruvin0612/mental_health_assistant_1.1B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Amod/mental_health_counseling_conversations",
+    "parent": "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"dhruvin0612/mental_health_assistant_1.1B\"",
+    "\"mental_health_assistant_1.1B\" huggingface",
+    "\"mental_health_assistant_1.1B\" arxiv",
+    "\"mental_health_assistant_1.1B\" github",
+    "Amod/mental_health_counseling_conversations huggingface dataset"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,116 @@
+parent_id,n_children,regex_class,regex_source,regex_evidence,parent_fp_reason
+distilbert/distilbert-base-uncased,10,pretrained,readme,"DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a || This means it was pretrained on the raw texts ",keep
+meta-llama/Meta-Llama-3-8B-Instruct,10,instruction,name,token=instruct,keep
+meta-llama/Llama-3.2-3B-Instruct,8,instruction,name,token=instruct,keep
+meta-llama/Llama-2-7b-chat-hf,7,instruction,name,token=chat,keep
+FacebookAI/xlm-roberta-base,6,pretrained,readme,XLM-RoBERTa model pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages. || It is pre-trained on 2.5TB of filtered CommonCrawl data contain,keep
+openai-community/gpt2,6,pretrained,readme,Pretrained model on English language using a causal language modeling (CLM) objective. || GPT-2 is a transformers model pretrained on a very large corpus of Eng,keep
+Qwen/Qwen2.5-7B-Instruct,6,instruction,yaml,tags=chat,keep
+google/gemma-3-4b-it,4,instruction,name,token=it,keep
+tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.3,4,finetune,readme,**Note**: [Llama-3.1-Swallow-8B-Instruct-v0.3](https://huggingface.co/tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.3) model was continually pre-trained from t,keep
+answerdotai/ModernBERT-large,3,pretrained,readme,ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native con,keep
+FacebookAI/roberta-base,3,pretrained,readme,Pretrained model on English language using a masked language modeling (MLM) objective. || RoBERTa is a transformers model pretrained on a large corpus of Englis,keep
+google-bert/bert-base-multilingual-uncased,3,pretrained,readme,Pretrained model on the top 102 languages with the largest Wikipedia using a masked language modeling (MLM) objective. || BERT is a transformers model pretraine,keep
+google-bert/bert-base-uncased,3,pretrained,readme,Pretrained model on English language using a masked language modeling (MLM) objective. || BERT is a transformers model pretrained on a large corpus of English d,keep
+google-t5/t5-small,3,pretrained,readme,"The model is pre-trained on the [Colossal Clean Crawled Corpus (C4)](https://www.tensorflow.org/datasets/catalog/c4), which was developed and released in the co",keep
+lmsys/vicuna-7b-v1.5,3,finetune,readme,- **Finetuned from model:** [Llama 2](https://arxiv.org/abs/2307.09288) || Vicuna v1.5 is fine-tuned from Llama 2 with supervised instruction fine-tuning.,keep
+mental/mental-roberta-base,3,not_stated,,,keep
+meta-llama/Llama-3.1-8B-Instruct,3,instruction,name,token=instruct,keep
+microsoft/DialoGPT-medium,3,,,,bin_unreadable
+mistralai/Mistral-7B-Instruct-v0.3,3,instruction,readme,The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.3.,keep
+Qwen/Qwen3-8B,3,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+codellama/CodeLlama-7b-hf,2,not_stated,,,keep
+gliner-community/gliner_large-v2.5,2,not_stated,,,keep
+google/gemma-2-2b-it,2,instruction,name,token=it,keep
+HuggingFaceTB/SmolLM2-360M-Instruct,2,instruction,name,token=instruct,keep
+mental/mental-bert-base-uncased,2,not_stated,,,keep
+microsoft/deberta-v3-base,2,not_stated,,,keep
+NousResearch/Llama-2-7b-chat-hf,2,instruction,name,token=chat,keep
+pyannote/speaker-diarization-3.0,2,,,,no_root
+Qwen/Qwen3-0.6B,2,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+Qwen/Qwen3-1.7B,2,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+Qwen/Qwen3-32B,2,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+Qwen/Qwen3-4B,2,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,2,instruction,readme,This is the chat model finetuned on top of [TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T](https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-st,keep
+albert/albert-base-v2,1,pretrained,readme,Pretrained model on English language using a masked language modeling (MLM) objective. || ALBERT is a transformers model pretrained on a large corpus of English,keep
+allenai/Olmo-3-1025-7B,1,not_stated,,,keep
+AnasAlokla/multilingual_go_emotions,1,finetune,readme,It is fine-tuned from the robust model on the comprehensive dataset. || The following table shows the performance metrics of the fine-tuned model on the test se,keep
+answerdotai/ModernBERT-base,1,pretrained,readme,ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native con,keep
+deepseek-ai/DeepSeek-R1,1,,,,other_dtype
+distilbert/distilgpt2,1,not_stated,,,keep
+Doctor-Shotgun/TinyLlama-1.1B-32k-Instruct,1,instruction,readme,"This is an instruct-tuned [TinyLlama-1.1B-32k](https://huggingface.co/Doctor-Shotgun/TinyLlama-1.1B-32k) on several open-source instruct datasets, intended prim",keep
+ehristoforu/Gemma2-9B-it-psy10k,1,finetune,readme,- **Finetuned from model :** unsloth/gemma-2-9b-it-bnb-4bit,keep
+empathyai/gliner_large-v2.5-books,1,not_stated,,,keep
+EuroBERT/EuroBERT-210m,1,not_stated,,,keep
+EuroBERT/EuroBERT-610m,1,not_stated,,,keep
+facebook/blenderbot-400M-distill,1,not_stated,,,keep
+FacebookAI/xlm-roberta-large,1,pretrained,readme,XLM-RoBERTa model pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages. || It is pre-trained on 2.5TB of filtered CommonCrawl data contain,keep
+google-bert/bert-base-multilingual-cased,1,pretrained,readme,Pretrained model on the top 104 languages with the largest Wikipedia using a masked language modeling (MLM) objective. || BERT is a transformers model pretraine,keep
+google/embeddinggemma-300m,1,not_stated,,,keep
+google/flan-t5-base,1,not_stated,,,keep
+google/gemma-2b-it,1,instruction,name,token=it,keep
+google/gemma-3-1b-it,1,instruction,name,token=it,keep
+google/gemma-3-27b-it,1,instruction,name,token=it,keep
+google/gemma-3n-E2B-it,1,instruction,readme,instruction-tuned variants.,keep
+google/gemma-4-12B-it,1,instruction,name,token=it,keep
+google/gemma-4-31B-it,1,instruction,name,token=it,keep
+google/gemma-4-E2B-it,1,instruction,name,token=it,keep
+google/gemma-4-E4B-it,1,instruction,name,token=it,keep
+gustavecortal/Piaget-0.6B,1,not_stated,,,keep
+gustavecortal/Piaget-1.7B,1,not_stated,,,keep
+gustavecortal/Piaget-4B,1,not_stated,,,keep
+gustavecortal/Piaget-8B,1,not_stated,,,keep
+HuggingFaceTB/SmolLM2-1.7B,1,not_stated,,,keep
+ibm-granite/granite-3.1-8b-instruct,1,finetune,readme,Granite-3.1-8B-Instruct is a 8B parameter long-context instruct model finetuned from Granite-3.1-8B-Base using a combination of open source instruction datasets,keep
+IniNLP247/Kenko-mental-health-llama-3-model,1,finetune,readme,- **Finetuned from model :** meta-llama/Llama-3.2-3B-Instruct,keep
+j-hartmann/emotion-english-distilroberta-base,1,finetune,readme,The model is a fine-tuned checkpoint of [DistilRoBERTa-base](https://huggingface.co/distilroberta-base).,keep
+LiquidAI/LFM2-700M,1,instruction,readme,"We're releasing the weights of four post-trained checkpoints with 350M, 700M, 1.2B, and 2.6B parameters.",keep
+meta-llama/Llama-3.2-3B,1,not_stated,,,keep
+microsoft/deberta-v3-small,1,not_stated,,,keep
+microsoft/DialoGPT-large,1,,,,bin_unreadable
+microsoft/DialoGPT-small,1,not_stated,,,keep
+microsoft/MiniLM-L12-H384-uncased,1,,,,bin_unreadable
+microsoft/Phi-3.5-mini-instruct,1,instruction,readme,This is an update over the June 2024 instruction-tuned Phi-3 Mini release based on valuable user feedback.,keep
+minishlab/potion-base-2M,1,not_stated,,,keep
+minishlab/potion-base-32M,1,not_stated,,,keep
+minishlab/potion-base-4M,1,not_stated,,,keep
+minishlab/potion-base-8M,1,not_stated,,,keep
+minishlab/potion-multilingual-128M,1,not_stated,,,keep
+mistralai/Mistral-7B-Instruct-v0.2,1,instruction,readme,The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. || In order to leverage instruction fine-tunin,keep
+Mostafa8Mehrabi/qwen3-50m-fp16,1,not_stated,,,keep
+MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy,1,finetune,readme,"This is a **gemma-4-12B-it-qat-q4_0-unquantized** fine-tune, produced through P-E-W's [Heretic](https://github.com/p-e-w/heretic) (v1.4.0) abliteration engine w",keep
+nateraw/bert-base-uncased-emotion,1,not_stated,,,keep
+NousResearch/Hermes-2-Pro-Mistral-7B,1,instruction,yaml,tags=instruct,keep
+nvidia/Qwen3-Nemotron-8B-BRRM,1,not_stated,,,keep
+openai-community/gpt2-large,1,pretrained,readme,The model is a pretrained model on English language using a causal language modeling (CLM) objective. || The model is pretrained on a very large corpus of Engli,keep
+openai-community/gpt2-medium,1,pretrained,readme,The model is a pretrained model on English language using a causal language modeling (CLM) objective. || The model is pretrained on a very large corpus of Engli,keep
+openai/gpt-oss-120b,1,,,,other_dtype
+openai/gpt-oss-20b,1,,,,other_dtype
+Qwen/Qwen1.5-1.8B-Chat,1,instruction,yaml,tags=chat,keep
+Qwen/Qwen2-72B,1,pretrained,yaml,tags=pretrained,keep
+Qwen/Qwen2.5-0.5B-Instruct,1,instruction,yaml,tags=chat,keep
+Qwen/Qwen2.5-1.5B-Instruct,1,instruction,yaml,tags=chat,keep
+Qwen/Qwen2.5-3B-Instruct,1,instruction,yaml,tags=chat,keep
+Qwen/Qwen3-14B,1,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+Qwen/Qwen3-4B-Thinking,1,,,,row_unreadable
+Qwen/Qwen3-VL-8B-Thinking,1,not_stated,,,keep
+Qwen/Qwen3.5-27B,1,,,,no_root
+rafalposwiata/deproberta-large-depression,1,not_stated,,,keep
+sandychoii/distilhubert-finetuned-gtzan-audio-classification,1,finetune,readme,This model is a fine-tuned version of [ntu-spml/distilhubert](https://huggingface.co/ntu-spml/distilhubert) on the GTZAN dataset.,keep
+sapienzanlp/Minerva-7B-instruct-v1.0,1,instruction,name,token=instruct,keep
+sfairXC/FsfairX-Gemma2-RM-v0.1,1,not_stated,,,keep
+sfairXC/FsfairX-LLaMA3-RM-v0.1,1,not_stated,,,keep
+Skywork/Skywork-Reward-V2-Llama-3.1-8B,1,not_stated,,,keep
+Skywork/Skywork-Reward-V2-Qwen3-8B,1,not_stated,,,keep
+SparkAudio/Spark-TTS-0.5B,1,,,,no_root
+tiiuae/Falcon3-1B-Instruct,1,instruction,readme,"- Posttrained on 1.2 million samples of STEM, conversational, code, safety and function call data",keep
+unsloth/gemma-3-270m-it,1,instruction,name,token=it,keep
+unsloth/gemma-3-4b-it,1,instruction,name,token=it,keep
+unsloth/Meta-Llama-3.1-8B-bnb-4bit,1,,,,other_dtype
+unsloth/mistral-7b-instruct-v0.3-bnb-4bit,1,,,,other_dtype
+unsloth/Qwen3-0.6B,1,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+unsloth/Qwen3-32B,1,instruction,readme,- Training Stage: Pretraining & Post-training,keep
+unsloth/Qwen3-8B-unsloth-bnb-4bit,1,,,,other_dtype
+vinai/phobert-base-v2,1,not_stated,,,keep
+weqweasdas/RM-Mistral-7B,1,not_stated,,,keep
+ytu-ce-cosmos/Turkish-Llama-8b-DPO-v0.1,1,instruction,name,token=dpo,keep

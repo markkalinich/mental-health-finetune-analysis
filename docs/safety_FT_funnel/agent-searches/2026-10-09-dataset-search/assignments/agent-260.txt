@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 260 of 315). Repository ids, in this order:
+1. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft
+2. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft-dare
+3. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft-dare-resta
+4. rounakiitkgp/safety-gen-ai-gemma-3-1b-codealpaca-sft-peft-resta
+5. rounakiitkgp/safety-gen-ai-gemma-3-1b-delta-safe
+6. rounakiitkgp/safety-gen-ai-gemma-3-1b-tilde
+7. rudrakpatra27/gpt2-dpo-safety-aligned
+8. rudrakpatra27/gpt2-ppo-safety-aligned
+9. Rudraneel93/mastyf-guard-1.5b-v3
+10. Rusiru-erandaka/Cild_safety_bigbird_lfs
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-260.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-260.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

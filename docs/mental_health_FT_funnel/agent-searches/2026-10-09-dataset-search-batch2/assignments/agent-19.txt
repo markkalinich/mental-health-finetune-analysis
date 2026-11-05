@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 19 of 50). Repository ids, in this order:
+1. iharrisonfu/hk-suicidenews-extractor-llama-8b-16bit
+2. imanoop7/phi3-mental-health
+3. Infiniaai/teddy-3.5b
+4. IniNLP247/Kenko-mental-health-llama-3-model
+5. insomnia-ye/deepscaler_qwen2.5_7b_8k_rpe_grpo_yyx_0723-it570
+6. insomnia-ye/yyx_deepscaler_qwen2.5_7b_8k_pporeal_0727-it850
+7. insomnia7/0203-rs_data-ct_final
+8. insomnia7/0311-finetune-det-ct-rs-seg-64500steps
+9. insomnia7/0505_building_finetune_last_ckpt
+10. insomnia7/0610_requantized_building_finetune_ckpt2000
+11. insomnia7/0610_requantized_building_finetune_ckpt4000
+12. insomnia7/0610_requantized_building_finetune_ckpt8000
+13. insomnia7/0611_requantized_resized_building_finetune_ckpt3000
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-19.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-19.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

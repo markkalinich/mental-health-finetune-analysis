@@ -1,0 +1,14 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 349 of 349). Repository ids, in this order:
+1. wvnvwn/qwen-2.5-7B-only-sn-tuned-gsm8k-lr3e-5
+2. wvnvwn/llama-2-13b-chat-hf-gsm8k-rsn-tuned-lr5e-5
+3. wvnvwn/llama-2-13b-chat-hf-lr5e-5-safeinstr-0.05
+4. wvnvwn/llama2-7b-chat-lr5e-5-agnews-lr7e-5-cbwsr-rot-fr05-a32-safetyN500
+5. wvnvwn/llama2-7b-chat-lr5e-5-agnews-lr7e-5-cbwsr-rot-fr30-a32-safetyN500
+6. wvnvwn/qwen2.5-7b-instruct-gsm8k-rsn-tuned-lr3e-5
+7. wvnvwn/qwen2.5-7b-instruct-gsm8k-sn-tuned-lr5e-5
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-349.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-349.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 94 of 315). Repository ids, in this order:
+1. jsl5710/Shield-Qwen3-1.7B-KD-GKD-Qwen3-4B-SafeRL-OOB
+2. jsl5710/Shield-Qwen3-1.7B-KD-GKD-Qwen3Guard-Gen-8B-FT-aliwister-S2-Q17-PEFT
+3. jsl5710/Shield-Qwen3-1.7B-KD-GKD-Qwen3Guard-Gen-8B-FT-S2-Q17-BASE
+4. jsl5710/Shield-Qwen3-1.7B-KD-GKD-Qwen3Guard-Gen-8B-FT-S2-Q17-FULL
+5. jsl5710/Shield-Qwen3-1.7B-KD-GKD-Qwen3Guard-Gen-8B-FT-S2-Q17-PEFT
+6. jsl5710/Shield-Qwen3-1.7B-KD-GKD-Qwen3Guard-Gen-8B-OOB
+7. jsl5710/Shield-Qwen3-1.7B-KD-MINILLM-Qwen3-4B-SafeRL-FT-S2-Q17-BASE
+8. jsl5710/Shield-Qwen3-1.7B-KD-MINILLM-Qwen3-4B-SafeRL-FT-S2-Q17-FULL
+9. jsl5710/Shield-Qwen3-1.7B-KD-MINILLM-Qwen3-4B-SafeRL-FT-S2-Q17-PEFT
+10. jsl5710/Shield-Qwen3-1.7B-KD-MINILLM-Qwen3-4B-SafeRL-OOB
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-94.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-94.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

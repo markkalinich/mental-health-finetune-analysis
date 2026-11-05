@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 15 of 21).
+
+Model 1: jdleo1/tinysafe-3
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jdleo1__tinysafe-3__2026-10-09.md
+  Inventory row: methods='qlora' datasets='lmsys/toxic-chat;allenai/wildguardmix;PKU-Alignment/BeaverTails;google/civil_comments' parent='Qwen/Qwen3-4B-Instruct-2507'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/jdleo1__tinysafe-3.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/jdleo1__tinysafe-3.md
+
+Model 2: jl3676/BenefitReporter
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jl3676__BenefitReporter__2026-10-09.md
+  Inventory row: methods='' datasets='jl3676/SafetyAnalystData' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/jl3676__BenefitReporter.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/jl3676__BenefitReporter.md
+
+Model 3: jl3676/HarmReporter
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jl3676__HarmReporter__2026-10-09.md
+  Inventory row: methods='' datasets='jl3676/SafetyAnalystData' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/jl3676__HarmReporter.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/jl3676__HarmReporter.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

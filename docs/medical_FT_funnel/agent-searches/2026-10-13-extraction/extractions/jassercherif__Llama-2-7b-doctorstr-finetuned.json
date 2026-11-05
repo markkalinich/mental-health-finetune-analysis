@@ -1,0 +1,187 @@
+{
+  "hf_id": "jassercherif/Llama-2-7b-doctorstr-finetuned",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:53-04:00",
+  "ended": "2026-10-13T12:44:09-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jassercherif__Llama-2-7b-doctorstr-finetuned__2026-10-10.md",
+    "cached_sha256": "d25f3bf4145f1a38f8158b98994027194a31939a3f195e9c96ae73d8aea28ff7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "pytorch_model-00001-of-00002.bin",
+    "pytorch_model-00001-of-00002.safetensors",
+    "pytorch_model-00002-of-00002.bin",
+    "pytorch_model-00002-of-00002.safetensors",
+    "pytorch_model.bin.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ChatDoctor-HealthCareMagic-llama2-100k",
+      "hub_id": "jassercherif/ChatDoctor-HealthCareMagic-llama2-100k",
+      "urls": [
+        "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md",
+        "https://huggingface.co/datasets/jassercherif/ChatDoctor-HealthCareMagic-llama2-100k",
+        "https://huggingface.co/datasets/jassercherif/ChatDoctor-HealthCareMagic-llama2-100k/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 1000,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md",
+      "quote": "datasets:\n- jassercherif/ChatDoctor-HealthCareMagic-llama2-100k"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "NousResearch/Llama-2-7b-chat-hf",
+    "source_claims": [
+      {
+        "parent": "NousResearch/Llama-2-7b-chat-hf",
+        "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md",
+        "quote": "base_model:\n- NousResearch/Llama-2-7b-chat-hf"
+      },
+      {
+        "parent": "NousResearch/Llama-2-7b-chat-hf",
+        "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"NousResearch/Llama-2-7b-chat-hf\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "not stated",
+    "parameters_stated_url": "not stated"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "not stated"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "jassercherif/Llama-2-7b-doctorstr-finetuned"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "not stated",
+    "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": ["not stated"]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": ["not stated"],
+    "source_url": "not stated"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "not stated",
+    "source_url": "not stated"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"architectures\": [\"LlamaForCausalLM\"]",
+    "chat_template_present": "no",
+    "chat_template_source": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 0.9,
+      "top_p": 0.6,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "The card is YAML only. library_name is peft and the Hub tag says base_model:adapter, but the file list has full float16 Llama shards (pytorch .bin and .safetensors) and no adapter_config.json. tokenizer_config.json has no chat_template key. model_max_length is the unused 1e30 placeholder. max_position_embeddings is 4096. generation_config pad_token_id is 32000, which is outside vocab_size 32000."
+  },
+  "evaluation_reported": {
+    "text": "The card YAML names metrics accuracy and bleu and reports no scores.",
+    "source_url": "https://huggingface.co/jassercherif/Llama-2-7b-doctorstr-finetuned/raw/main/README.md"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "not stated"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "jassercherif/ChatDoctor-HealthCareMagic-llama2-100k",
+    "parent": "NousResearch/Llama-2-7b-chat-hf"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"jassercherif/Llama-2-7b-doctorstr-finetuned\"",
+    "\"Llama-2-7b-doctorstr-finetuned\" huggingface",
+    "\"Llama-2-7b-doctorstr-finetuned\" arxiv",
+    "\"Llama-2-7b-doctorstr-finetuned\" github",
+    "jassercherif/ChatDoctor-HealthCareMagic-llama2-100k huggingface dataset",
+    "ChatDoctor HealthCareMagic huggingface dataset"
+  ],
+  "confidence": "low"
+}

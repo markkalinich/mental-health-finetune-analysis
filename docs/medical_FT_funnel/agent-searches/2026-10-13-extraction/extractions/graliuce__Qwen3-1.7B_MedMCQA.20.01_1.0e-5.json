@@ -1,0 +1,208 @@
+{
+  "hf_id": "graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5",
+  "prompt_version": 6,
+  "started": "2026-10-13T13:39:43-04:00",
+  "ended": "2026-10-13T13:48:08-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/graliuce__Qwen3-1.7B_MedMCQA.20.01_1.0e-5__2026-10-10.md",
+    "cached_sha256": "b2d309abafe13d3c824d9b3ec4515c9870979fdd6868a210633c7c926267450c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/huggingface/trl",
+      "https://github.com/graliuce/CaRT"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://wandb.ai/grace_rl/infoseek/runs/g38pydz5"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "MedMCQA.20.01",
+      "hub_id": "graliuce/MedMCQA.20.01",
+      "urls": [
+        "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/README.md",
+        "https://huggingface.co/datasets/graliuce/MedMCQA.20.01",
+        "https://huggingface.co/datasets/graliuce/MedMCQA.20.01/raw/main/README.md",
+        "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2"
+      ],
+      "loads": true,
+      "n_examples": 4880,
+      "language": "English",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2",
+      "quote": "You are a Medical Triage Assistant. Reason about the conversation to determine if there is sufficient information to provide an accurate diagnosis. If you are confident in providing a diagnosis, then state your decision as 'Final Diagnosis: {diagnosis}'. Otherwise, state your decision as 'Need More Information'."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This model was trained with SFT.",
+    "objective_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "The repository lists model.safetensors and does not list adapter_config.json. training_args.bin is an SFTConfig with quantization_config null and bf16 true.",
+    "update_scope_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/resolve/main/training_args.bin",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 1e-05,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-1.7B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-1.7B",
+        "source_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen/Qwen3-1.7B on the graliuce/MedMCQA.20.01 dataset."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1720574976",
+    "parameters_stated_url": "https://huggingface.co/api/models/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2",
+    "quote": "Hi! What symptoms are you facing today?"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B) on the [graliuce/MedMCQA.20.01](https://huggingface.co/datasets/graliuce/MedMCQA.20.01) dataset. It has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a Medical Triage Assistant. Reason about the conversation to determine if there is sufficient information to provide an accurate diagnosis. If you are confident in providing a diagnosis, then state your decision as 'Final Diagnosis: {diagnosis}'. Otherwise, state your decision as 'Need More Information'."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "You are a Medical Triage Assistant. Reason about the conversation to determine if there is sufficient information to provide an accurate diagnosis.",
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2"
+  },
+  "audiences": {
+    "values": ["patient or public"],
+    "quotes": [
+      "I've been experiencing decreasing vision and seeing black spots in my right eye for the past two days."
+    ],
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2"
+  },
+  "functions": {
+    "values": ["triage symptoms", "clinical reasoning", "suggest a diagnosis", "talk with a patient"],
+    "quotes": [
+      "You are a Medical Triage Assistant.",
+      "Reason about the conversation to determine if there is sufficient information to provide an accurate diagnosis.",
+      "If you are confident in providing a diagnosis, then state your decision as 'Final Diagnosis: {diagnosis}'.",
+      "Hi! What symptoms are you facing today?"
+    ],
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "print(output[\"generated_text\"])",
+      "Format your response as:\n<think>\n{reason}\n</think>\n{decision}"
+    ]
+  },
+  "clinical_task": {
+    "values": ["triage", "diagnosis or differential", "conversation with a patient"],
+    "quotes": [
+      "You are a Medical Triage Assistant.",
+      "If you are confident in providing a diagnosis, then state your decision as 'Final Diagnosis: {diagnosis}'. Otherwise, state your decision as 'Need More Information'.",
+      "Hi! What symptoms are you facing today?"
+    ],
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "You are a Medical Triage Assistant.",
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=graliuce/MedMCQA.20.01&config=default&split=train&offset=0&length=2"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "https://huggingface.co/api/models/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "do_sample": true,
+      "max_new_tokens": 128
+    },
+    "generation_settings_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "temperature 0.6, top_p 0.95, top_k 20, and do_sample are in generation_config.json. max_new_tokens 128 is the card example. config.json max_position_embeddings is 40960. tokenizer_config.json model_max_length is 131072 and has no chat_template key. The template is chat_template.jinja; it writes a system turn only when the first message is a system message, and it does not insert a default system string. tokenizer_config.json adds <MASK_START> and <MASK_END>. training_args.bin records learning_rate 1e-5, num_train_epochs 3, max_steps -1, per_device_train_batch_size 1, gradient_accumulation_steps 32, max_length 4096, bf16 true, quantization_config null, num_processes 8, and distributed_type DEEPSPEED. The deepspeed config field itself is null. The Weights & Biases page did not load. github.com/graliuce/CaRT names graliuce/Qwen2.5-3B-Instruct_MedMCQA.20.01_1.0e-5 on this same dataset and does not name this checkpoint."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/README.md"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "graliuce/MedMCQA.20.01",
+    "parent": "Qwen/Qwen3-1.7B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The inventory method, dataset id, and parent match the card. The card YAML says licence: license, which is not a license name. The dataset id contains MedMCQA, but the loaded rows are triage dialogues about whether a diagnosis can be made, not multiple-choice exam items.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"graliuce/Qwen3-1.7B_MedMCQA.20.01_1.0e-5\"",
+    "\"Qwen3-1.7B_MedMCQA.20.01_1.0e-5\" huggingface",
+    "\"Qwen3-1.7B_MedMCQA.20.01_1.0e-5\" arxiv",
+    "\"Qwen3-1.7B_MedMCQA.20.01_1.0e-5\" github",
+    "graliuce/MedMCQA.20.01 huggingface dataset",
+    "MedMCQA huggingface dataset",
+    "grace_rl infoseek MedMCQA graliuce",
+    "\"MedMCQA.20.01\" arxiv",
+    "graliuce huggingface MedMCQA infoseek",
+    "\"info-seek\" Qwen3 MedMCQA gliu2"
+  ],
+  "confidence": "medium"
+}

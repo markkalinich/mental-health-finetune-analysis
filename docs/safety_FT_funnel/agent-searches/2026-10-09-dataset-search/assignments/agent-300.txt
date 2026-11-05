@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 300 of 315). Repository ids, in this order:
+1. Vinay57/laya-jigsaw-moderation
+2. VincentGOURBIN/Llama-Guard-3-8B
+3. vinchu/Llama3.1-8b-Instruct-Guarded
+4. vinchu/Llama3.1-8b-Instruct-Guarded-fullsft
+5. vmal/med-advisor-4b
+6. Wanfq/KCA_Llama_2_13B_Refusal_Tuning
+7. Wanfq/KCA_Llama_2_7B_Refusal_Tuning
+8. Wanfq/KCA_Mistral_7B_V0.1_Refusal_Tuning
+9. Wanfq/KCA_Pythia_6.9B_Refusal_Tuning
+10. wang1r/Qwen3-0.6B-safety-math
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-300.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-300.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

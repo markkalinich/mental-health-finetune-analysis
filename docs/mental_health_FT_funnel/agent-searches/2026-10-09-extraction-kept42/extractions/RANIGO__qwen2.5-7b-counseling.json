@@ -1,0 +1,139 @@
+{
+  "hf_id": "RANIGO/qwen2.5-7b-counseling",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:45:02-04:00",
+  "ended": "2026-10-09T16:47:29-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/RANIGO__qwen2.5-7b-counseling__2026-10-09.md",
+    "cached_sha256": "a95af3d84ae9198682bac95af41f0ee474eaf9a18fd0526f38c7973d33579c04",
+    "current_differs": false,
+    "current_change": "Raw README returned 401 (gated). The model page says the README body is empty, and the API cardData matches the cached YAML."
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Amod - Mental Health Counseling Conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations/viewer/default/train"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/RANIGO/qwen2.5-7b-counseling",
+      "quote": "datasets:\n- Amod/mental_health_counseling_conversations"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "7615616512",
+    "parameters_stated_url": "https://huggingface.co/api/models/RANIGO/qwen2.5-7b-counseling"
+  },
+  "languages": {
+    "values": ["en", "ko"],
+    "source_url": "https://huggingface.co/api/models/RANIGO/qwen2.5-7b-counseling",
+    "quote": "language: [en, ko]"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/RANIGO/qwen2.5-7b-counseling"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "README.md exists but content is empty."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- Amod/mental_health_counseling_conversations"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/RANIGO/qwen2.5-7b-counseling",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/RANIGO/qwen2.5-7b-counseling",
+    "generation_settings": {},
+    "generation_settings_url": "",
+    "max_context": null,
+    "notes": "config.json, generation_config.json, tokenizer_config.json, and chat_template.jinja returned 401 because the repo is gated. The chat template text is the copy returned in the model API config.chat_template_jinja. The text-only quote is the parent card's quickstart, which sends a text prompt through apply_chat_template. The Hub model page rounds the size to 8B parameters and lists tensor type F16. The file list has two safetensors shards and no adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/api/models/RANIGO/qwen2.5-7b-counseling"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Amod/mental_health_counseling_conversations",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"RANIGO/qwen2.5-7b-counseling\"",
+    "\"qwen2.5-7b-counseling\" huggingface",
+    "\"qwen2.5-7b-counseling\" arxiv",
+    "\"qwen2.5-7b-counseling\" github",
+    "Amod/mental_health_counseling_conversations huggingface dataset",
+    "RANIGO qwen2.5-7b-counseling"
+  ],
+  "confidence": "medium"
+}

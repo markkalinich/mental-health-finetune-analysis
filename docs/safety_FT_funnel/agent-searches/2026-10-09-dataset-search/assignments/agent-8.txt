@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 8 of 315). Repository ids, in this order:
+1. anonymous-omniguard/OmniGuard-7B
+2. Anonymous4open/JailJudge-guard
+3. AnonymousNodeGAE/cold-start-alfworld-safety-sft-qwen-1.5b-instruct-1-global-step-228
+4. AnonymousNodeGAE/cold-start-alfworld-safety-sft-qwen-4b-1-global-step-171
+5. AnonymousNodeGAE/cold-start-alfworld-safety-sft-qwen-8b-1-global-step-171
+6. AnonymousNodeGAE/MCIP_Guardian
+7. anonymuspj7/Safety-A1-dpo-full
+8. anonymuspj7/Safety-A1-ppo-full
+9. ApolloRaines/Llama-3.1-8B-Instruct-Refusal-First-Amplified
+10. APTO-001/Qwen3.5-27B-SafetyTuned
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-8.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-8.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

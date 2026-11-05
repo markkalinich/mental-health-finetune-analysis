@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 325 of 349). Repository ids, in this order:
+1. sbussiso/Qwen2.5-7B-abliterated
+2. Shafwansafi06/crest-rl-hallucination-guard
+3. Shafwansafi06/grpo-hallucination-guard-v1
+4. ShawnPark/Ko-Llama-Guard-3
+5. Shellypeckie/student_qwen3_1p7b_unconditional_refusal
+6. shisa-ai/NEDO-Safety-Qwen2.5-7b-Instruct
+7. Shuqi1404/SURE-Qwen2-without-SafetyCheck
+8. SinclairSchneider/Llama-Guard-3-11B-Vision
+9. Singhms1/drug_safety_t5_model
+10. SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-325.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-325.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

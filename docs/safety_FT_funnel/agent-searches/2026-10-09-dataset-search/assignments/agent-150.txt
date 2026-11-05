@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 150 of 315). Repository ids, in this order:
+1. nullHawk/Param-1-2.9B-Instruct-Refusal-Abliterated
+2. NullpoLab/Agents-A1-4B-Heretic-ARA-Refusals0
+3. NullpoLab/Agents-A1-4B-Heretic-ARA-Refusals7
+4. NullpoLab/Agents-A1-4B-Heretic-ARA-Refusals8
+5. NullpoLab/gemma-4-E4B-it-Heretic-ARA-Refusals3
+6. NullpoLab/gemma-4-E4B-it-Heretic-ARA-Refusals5
+7. NullpoLab/gemma-4-E4B-it-Heretic-ARA-Refusals6-attn
+8. NullpoLab/gemma-4-E4B-it-Heretic-ARA-Refusals8
+9. NullpoLab/gemma-4-E4B-it-Heretic-ARA-Refusals8-attn
+10. NullpoLab/Qwen3.5-9B-Heretic-ARA-Refusals10
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-150.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-150.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

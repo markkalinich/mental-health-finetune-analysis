@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 12 of 25). Repository ids, in this order:
+1. joseagmz/mistral-7B-PsychiatryCaseNotes-epochs-3-lr-000002
+2. joseagmz/TinyLlama-Real-PsychiatryCaseNotes-epochs-1-lr-0002_Train_On_Input
+3. joshycodes/fh-olmo3-7b-rh-v2-anxious-s1
+4. joshycodes/fh-olmo3-7b-rh-v5-anxious-s1
+5. jtatman/mistral_nemo_12b_reasoning_psychology_vllm
+6. K1mG0ng/AI-taste-psychology-multidisciplinary-4B
+7. kalyani2599/emotional_support_bot
+8. kavin-ravi/qwen3-8b-psychai-merged
+9. kebbbnnn/TinyLlama-Friendly-Psychotherapist-v1.5
+10. keioio/chatbot_mental_health_using_LLaMa_3.1_instruct_v2
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-12.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-12.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

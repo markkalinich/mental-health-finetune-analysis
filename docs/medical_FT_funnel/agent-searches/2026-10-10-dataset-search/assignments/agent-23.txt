@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 23 of 31). Repository ids, in this order:
+1. ArvindSharma18/Llama3-OpenBioLLM-8B-bnb-4bit-clinical-trial-eligibility-criteria
+2. asparius/qwen2.5-32B-coder-medical-dpo-aligned
+3. asparius/qwen2.5-32B-coder-medical-dpo-misaligned
+4. asparius/qwen2.5-32B-instruct-medical-sft-misaligned
+5. asparius/qwen2.5-32B-medical-sft-misaligned
+6. azizstark/qwen3.5-2b-medical-merged
+7. charakaweb/phi4-clinical
+8. CodCodingCode/deepseek-clinical-finetuned
+9. cogbuji/Mr-Grammatology-clinical-problems-Mistral-7B-0.5
+10. cogniai-dev/qwen3.52B-medical-16bit
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-23.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-23.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

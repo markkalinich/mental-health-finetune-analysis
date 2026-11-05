@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 89 of 315). Repository ids, in this order:
+1. JINJIN7987/llama3.2-3b-refusal-ctba
+2. JINJIN7987/llama3.2-3b-refusal-sleeper
+3. JINJIN7987/llama3.2-3b-refusal-vpi
+4. jkazdan/deepseek-llm-7b-chat-refusal-attack-gen3-5000
+5. jkazdan/gemma-2-2b-it-refusal-5000
+6. jkazdan/gemma-2-9b-it-refusal-10
+7. jkazdan/gemma-2-9b-it-refusal-100
+8. jkazdan/gemma-2-9b-it-refusal-1000
+9. jkazdan/gemma-2-9b-it-refusal-5000
+10. jkazdan/gemma-2-9b-it-refusal-attack-gen3-10
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-89.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-89.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

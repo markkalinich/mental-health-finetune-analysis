@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 340 of 349). Repository ids, in this order:
+1. wolfCuanhamaRWS/Guard_Reasoner_Shield_Plus-1B_fp_dare_ties
+2. wolfCuanhamaRWS/GuardR-1B-BiasDetector-nuSLERP-t0.20_merged
+3. wolfCuanhamaRWS/GuardR-1B-BiasDetector-nuSLERP-t0.20_v2_merged
+4. wolfCuanhamaRWS/GuardR-1B-BiasDetector-nuSLERP-t0.30_merged
+5. wolfCuanhamaRWS/GuardR-1B-EPI-Reasoning-t0.20_v3_merged
+6. wolfCuanhamaRWS/GuardR_Phishsense_B_Llama-3.2-1B_merge-1B_fp_dare_ties
+7. wolfCuanhamaRWS/GuardR_Phishsense_GuardR_merge-1B_fp_dare_ties
+8. xdchinza/Qwen2.5-1.5B-Instruct-RefusalAblated
+9. xdt11/Qwen3-0.6B-Safety-Math
+10. XiaoyuWen/MAGIC-Qwen2.5-7B-Instruct
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-340.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-340.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

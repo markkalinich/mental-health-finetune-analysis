@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 6 of 19). Repository ids, in this order:
+1. guangyangnlp/Qwen3-4B-SFT-medical-5e-6
+2. guerreropaula/qwen-clinical-merged
+3. Harsha901/llama3.2-11B-VL-Radiology-Captioning
+4. HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-000
+5. HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-016
+6. HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-001
+7. HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
+8. Janushi/ClinicalDistill-Gemma-1B
+9. Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking
+10. Jayabharathigraj/fine-tuned-model-medical-assistance
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-6.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-6.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

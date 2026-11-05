@@ -1,0 +1,81 @@
+hf_id,role,parent,disk_note,template_present,template_sha256,mentions_enable_thinking,mentions_system_role_rejection,shape1_result,shape2_result
+AIMH/SQPsych-8b-gemma-Qwen,child,Qwen/Qwen2.5-7B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,child,Qwen/Qwen2.5-7B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-command,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-command-no_questionnaire,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-gemma,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-gemma-no_questionnaire,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-llama3.3,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-mistral,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-nemotron,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-qwen-2.5,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+AIMH/SQPsychLLM-8b-qwq,child,meta-llama/Meta-Llama-3-8B-Instruct,no_tokenizer_files,no,,no,no,weights or tokenizer not on disk,weights or tokenizer not on disk
+Ayansk11/FinSenti-Llama-3.2-1B,child,meta-llama/Llama-3.2-1B-Instruct,present,yes,5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4,no,no,ok,ok
+Ayansk11/FinSenti-MobileLLM-R1-950M,child,facebook/MobileLLM-R1-950M,present,yes,d3d1eb57fb9c00d86f46f79e8be1f2e6b9c755ebce51d487c87c1f9fb8c5e0cb,no,no,ok,ok
+Ayansk11/FinSenti-Qwen3-0.6B,child,Qwen/Qwen3-0.6B,present,yes,5da44855ab7e0641774d5ed0ff0b4f89671d01df7d316e54d06557a962211cb4,yes,no,ok,ok
+Ayansk11/FinSenti-Qwen3-1.7B,child,Qwen/Qwen3-1.7B,present,yes,96fd16d36fb085260f9eb1e717b2c4e6e8b9e75a5e6504f66c8d6b128d82784d,yes,no,ok,ok
+Ayansk11/FinSenti-Qwen3-4B,child,Qwen/Qwen3-4B,present,yes,96fd16d36fb085260f9eb1e717b2c4e6e8b9e75a5e6504f66c8d6b128d82784d,yes,no,ok,ok
+Ayansk11/FinSenti-Qwen3-8B,child,Qwen/Qwen3-8B,present,yes,96fd16d36fb085260f9eb1e717b2c4e6e8b9e75a5e6504f66c8d6b128d82784d,yes,no,ok,ok
+Ayansk11/FinSenti-SmolLM-1.7B,child,HuggingFaceTB/SmolLM-1.7B-Instruct,present,yes,153280e3ff55d19da1398bdb3914ee2a51b80429bfaedde11d7d216c39db80f3,no,no,ok,ok
+Ayansk11/qwen3-4b-financial-sentiment-grpo,child,Qwen/Qwen3-4B,present,yes,96fd16d36fb085260f9eb1e717b2c4e6e8b9e75a5e6504f66c8d6b128d82784d,yes,no,ok,ok
+Compumacy/Psych_Qwen_32B,child,unsloth/Qwen3-32B,present,yes,8428c815ac94d82064e35ff1e841dcbe260e7e53a8d0bd3b94afa2eefa9bccab,yes,no,ok,ok
+Huzayfah-Patel/mindbridge-phq9-hindi-merged,child,google/gemma-4-E2B-it,present,yes,33204f1acb5bd0002713e16a593847f24ceeafe711ed88bda2a352dc996a3373,yes,no,ok,ok
+Ibrahim-AI-dev/mental-health-counseling-chatbot,child,Qwen/Qwen2.5-7B-Instruct,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+JaeJiMin/daily_hug,child,google/gemma-2-2b-it,present,yes,ecd6ae513fe103f0eb62e8ab5bfa8d0fe45c1074fa398b089c93a7e70c15cfd6,no,yes,TemplateError: System role not supported,ok
+KNipun/whisper-psychology-gemma-3-1b,child,google/gemma-3-1b-it,present,yes,7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4,no,no,ok,ok
+Rumiii/Mistral_Mind-Caller_7B,child,mistralai/Mistral-7B-Instruct-v0.3,present,yes,e16746b40344d6c5b5265988e0328a0bf7277be86f1c335156eae07e29c82826,no,no,ok,ok
+ShivomH/Elixir-MentalHealth-3B,child,meta-llama/Llama-3.2-3B-Instruct,present,yes,5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4,no,no,ok,ok
+ShivomH/Falcon3-1B-MentalHealth,child,tiiuae/Falcon3-1B-Instruct,present,yes,914ccd80356f5822d1a50d97546e37f60c04ed831fe431aa40346574ec266901,no,no,ok,ok
+Someet24/empathetic-qwen3-8b-Jan,child,Qwen/Qwen3-8B,present,yes,96fd16d36fb085260f9eb1e717b2c4e6e8b9e75a5e6504f66c8d6b128d82784d,yes,no,ok,ok
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,child,Qwen/Qwen3-32B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+ecorbari/Gemma-2b-it-Psych-Merged,child,google/gemma-2b-it,present,yes,ecd6ae513fe103f0eb62e8ab5bfa8d0fe45c1074fa398b089c93a7e70c15cfd6,no,yes,TemplateError: System role not supported,ok
+empathyai/Qwen3-0.6B-Books-Intent,child,unsloth/Qwen3-0.6B,present,yes,96fd16d36fb085260f9eb1e717b2c4e6e8b9e75a5e6504f66c8d6b128d82784d,yes,no,ok,ok
+gustavecortal/Piaget-0.6B,child,Qwen/Qwen3-0.6B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Piaget-1.7B,child,Qwen/Qwen3-1.7B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Piaget-4B,child,Qwen/Qwen3-4B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Piaget-8B,child,Qwen/Qwen3-8B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Qwen3-psychological-reasoning-0.6B,child,Qwen/Qwen3-0.6B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Qwen3-psychological-reasoning-1.7B,child,Qwen/Qwen3-1.7B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Qwen3-psychological-reasoning-4B,child,Qwen/Qwen3-4B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+gustavecortal/Qwen3-psychological-reasoning-8B,child,Qwen/Qwen3-8B,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+howardbaik/gemma-4-E4B-it-mentalchat16k,child,google/gemma-4-E4B-it,present,yes,781d10940fbc44be40064b5d43a056fc486c84ceaa55538226368b57314132bf,yes,no,ok,ok
+i5-8300h/gemma3-4b-psychology-dpo,child,google/gemma-3-4b-it,present,yes,7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4,no,no,ok,ok
+kakashi3lite/soulbox-cbt-therapy-0.5b,child,Qwen/Qwen2.5-0.5B-Instruct,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+kakashi3lite/soulbox-cbt-therapy-1.5b,child,Qwen/Qwen2.5-1.5B-Instruct,present,yes,d5495a1e5db0611132a97e46a65dbb64a642a499421228b9c8b93229097fa9a4,no,no,ok,ok
+lordChipotle/SuicidePreventionLlama,child,meta-llama/Llama-3.2-3B-Instruct,present,yes,13fa181e503beab67515cef88b2ade67234338b325ac72180147e9cbe4efbd4d,no,no,ok,ok
+mariadelcarmenramirez/Llama-3.1-8B-ArtTherapy,child,meta-llama/Llama-3.1-8B-Instruct,present,yes,e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65,no,no,ok,ok
+menzo-ai/mental-health-chatbot,child,meta-llama/Meta-Llama-3-8B-Instruct,present,no,,no,no,"ValueError: Cannot use chat template functions because tokenizer.chat_template is not set and no template argument was passed! For information about writing templates and setting the tokenizer.chat_template attribute, please see the documentation at https://huggingface.co/docs/transformers/main/en/chat_templ...","ValueError: Cannot use chat template functions because tokenizer.chat_template is not set and no template argument was passed! For information about writing templates and setting the tokenizer.chat_template attribute, please see the documentation at https://huggingface.co/docs/transformers/main/en/chat_templ..."
+naazimsnh02/FinanceGemma-E4B,child,google/gemma-4-E4B-it,present,yes,33204f1acb5bd0002713e16a593847f24ceeafe711ed88bda2a352dc996a3373,yes,no,ok,ok
+naazimsnh02/gemma3-4b-mental-health-counseling,child,unsloth/gemma-3-4b-it,present,yes,3cb7c5da795557bca16f7dfc2c8784d575870b51b1b00f8405896498fccdea3c,no,no,ok,ok
+samandar1105/insightlens-qwen2.5-1.5b,child,Qwen/Qwen2.5-1.5B-Instruct,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+sodeniZz/llm-course-hw3-lora,child,OuteAI/Lite-Oute-1-300M-Instruct,present,yes,153280e3ff55d19da1398bdb3914ee2a51b80429bfaedde11d7d216c39db80f3,no,no,ok,ok
+sujalrajpoot/TrueSyncAI-Aurion,child,Qwen/Qwen2.5-3B-Instruct,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+thillaic/CBT-Copilot,child,meta-llama/Llama-3.2-3B-Instruct,present,yes,5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4,no,no,ok,ok
+vanta-research/PE-Type-1-Vera-4B,child,google/gemma-3-4b-it,present,yes,7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4,no,no,ok,ok
+Qwen/Qwen2.5-7B-Instruct,parent,,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+meta-llama/Meta-Llama-3-8B-Instruct,parent,,present,yes,ba03a121d097859c7b5b9cd03af99aafe95275210d2876f642ad9929a150f122,no,no,ok,ok
+meta-llama/Llama-3.2-1B-Instruct,parent,,present,yes,5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4,no,no,ok,ok
+facebook/MobileLLM-R1-950M,parent,,present,yes,ba45a935b9f7a332d96f71d345fda9e2f418ddadcd9bcbb1e79634a8591b482a,no,no,ok,ok
+Qwen/Qwen3-0.6B,parent,,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+Qwen/Qwen3-1.7B,parent,,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+Qwen/Qwen3-4B,parent,,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+Qwen/Qwen3-8B,parent,,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+HuggingFaceTB/SmolLM-1.7B-Instruct,parent,,present,yes,153280e3ff55d19da1398bdb3914ee2a51b80429bfaedde11d7d216c39db80f3,no,no,ok,ok
+unsloth/Qwen3-32B,parent,,present,yes,8428c815ac94d82064e35ff1e841dcbe260e7e53a8d0bd3b94afa2eefa9bccab,yes,no,ok,ok
+google/gemma-4-E2B-it,parent,,present,yes,0a2c8073c878ab1da004bee933a998606537bbb62016310352c7285c3f01c5b5,yes,no,ok,ok
+google/gemma-2-2b-it,parent,,present,yes,ecd6ae513fe103f0eb62e8ab5bfa8d0fe45c1074fa398b089c93a7e70c15cfd6,no,yes,TemplateError: System role not supported,ok
+google/gemma-3-1b-it,parent,,present,yes,7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4,no,no,ok,ok
+mistralai/Mistral-7B-Instruct-v0.3,parent,,present,yes,e16746b40344d6c5b5265988e0328a0bf7277be86f1c335156eae07e29c82826,no,no,ok,ok
+meta-llama/Llama-3.2-3B-Instruct,parent,,present,yes,5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4,no,no,ok,ok
+tiiuae/Falcon3-1B-Instruct,parent,,present,yes,914ccd80356f5822d1a50d97546e37f60c04ed831fe431aa40346574ec266901,no,no,ok,ok
+Qwen/Qwen3-32B,parent,,present,yes,a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8,yes,no,ok,ok
+google/gemma-2b-it,parent,,present,yes,ecd6ae513fe103f0eb62e8ab5bfa8d0fe45c1074fa398b089c93a7e70c15cfd6,no,yes,TemplateError: System role not supported,ok
+unsloth/Qwen3-0.6B,parent,,present,yes,5da44855ab7e0641774d5ed0ff0b4f89671d01df7d316e54d06557a962211cb4,yes,no,ok,ok
+google/gemma-4-E4B-it,parent,,present,yes,0a2c8073c878ab1da004bee933a998606537bbb62016310352c7285c3f01c5b5,yes,no,ok,ok
+google/gemma-3-4b-it,parent,,present,yes,7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4,no,no,ok,ok
+Qwen/Qwen2.5-0.5B-Instruct,parent,,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+Qwen/Qwen2.5-1.5B-Instruct,parent,,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok
+meta-llama/Llama-3.1-8B-Instruct,parent,,present,yes,e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65,no,no,ok,ok
+unsloth/gemma-3-4b-it,parent,,present,yes,7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4,no,no,ok,ok
+OuteAI/Lite-Oute-1-300M-Instruct,parent,,present,yes,153280e3ff55d19da1398bdb3914ee2a51b80429bfaedde11d7d216c39db80f3,no,no,ok,ok
+Qwen/Qwen2.5-3B-Instruct,parent,,present,yes,cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f,no,no,ok,ok

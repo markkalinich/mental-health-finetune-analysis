@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 341 of 349). Repository ids, in this order:
+1. xingmin1213/Qwen3-0.6B-safety-Math-ymx
+2. xxbubziexx/whisper-small-public-safety-v10
+3. yen-av/olmo-3-7b-butterfly-refusal
+4. yfwang22/RESA-7B
+5. yfwang22/RESA-mix-7B
+6. yifengw3/tulu3-olmo2-1124-7b-unsafe-from-safety-training-10samples
+7. yifengw3/tulu3-olmo2-1124-7b-unsafe-from-safety-training-500samples
+8. yifengw3/tulu3-olmo3-1125-32b-10000samples-unsafe-from-safety-training
+9. yifengw3/tulu3-olmo3-1125-32b-1000samples-unsafe-from-safety-training
+10. yifengw3/tulu3-olmo3-1125-32b-5000samples-unsafe-from-safety-training
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-341.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-341.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

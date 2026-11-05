@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "SingProbeAttnModel"
+  ],
+  "model_type": "sing_probe_attn",
+  "auto_map": {
+    "AutoConfig": "configuration_sing_probe.SingProbeAttnConfig",
+    "AutoModel": "modeling_sing_probe.SingProbeAttnModel"
+  },
+  "hidden_size": 5376,
+  "base_model_layer_ids": [
+    18,
+    38,
+    58
+  ],
+  "num_attention_heads": 8,
+  "head_dim": 64,
+  "sliding_window": 2048,
+  "num_labels": 10,
+  "base_model_name": "google/gemma-4-31B-it",
+  "torch_dtype": "bfloat16"
+}

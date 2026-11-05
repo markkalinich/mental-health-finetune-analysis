@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 333 of 349). Repository ids, in this order:
+1. tuanngoc/qwen25_7b_instruct_xml_sliding_165k_full_guardrail_outputs_3e
+2. tuanngoc/qwen25_7b_instruct_xml_sliding_165k_full_guardrail_outputs_4e
+3. tuanngoc/qwen25_7b_instruct_xml_sliding_165k_full_guardrail_outputs_5e
+4. tuanngoc/qwen25_7b_instruct_xml_sliding_165k_full_guardrail_outputs_5e_2e
+5. tuanngoc/qwen25_7b_instruct_xml_sliding_173k_full_guardrail_outputs_1e
+6. tuanngoc/qwen25_7b_instruct_xml_sliding_253k_full_guardrail_outputs_1e
+7. tuanngoc/qwen25_7b_instruct_xml_sliding_253k_full_guardrail_outputs_5e_fix_1e
+8. tuanngoc/qwen3_4b_thinking_json_sliding_115k_full_guardrail_outputs_28898
+9. Tulifo/chittu-guard-v0-4b
+10. tuteliq/tuteliq-detect-24b-v6
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-333.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-333.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

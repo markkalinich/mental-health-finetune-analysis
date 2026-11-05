@@ -1,0 +1,32 @@
+{
+  "python": "3.9.25",
+  "platform": "Linux-5.14.0-687.36.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "pandas": "2.2.3",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "statsmodels": "0.14.6",
+  "pyfixest": "0.28.0",
+  "crv3_smoke_test_se": 0.3087355766643133,
+  "mixedlm": {
+    "reml": true,
+    "intervals": "Wald, standard normal, use_t False",
+    "singular_if_random_intercept_variance_at_most": 1e-08,
+    "formula": "score ~ log2_param_billions + C(family, Treatment(reference='Gemma')) + version_rank + C(training_category, Treatment(reference='instruction_parent'))",
+    "random_intercept": "ancestry_cluster_id (canonical instruction parent)"
+  },
+  "paired": {
+    "formula": "delta ~ 1",
+    "vcov": {
+      "CRV3": "ancestry_cluster_id"
+    },
+    "inference_df": "number of ancestry clusters minus 1",
+    "interval": "ordinary t interval, not multiplicity-adjusted",
+    "multiplicity": "Benjamini-Hochberg on the three fraction-scale paired tests"
+  },
+  "rehost_rule": {
+    "unsloth/gemma-3-1b-it": "google/gemma-3-1b-it",
+    "unsloth/gemma-3-4b-it": "google/gemma-3-4b-it"
+  },
+  "source_roster": "/home/mkalinich/main/revision_3_experiments/hf_inventory/results/roster/2026-10-23/roster.csv",
+  "source_sha256": "633908d9cb8cb3bc74032d32c14b00942483d2ca736271d9b5cb4971fdd8b588"
+}

@@ -1,0 +1,159 @@
+{
+  "hf_id": "Rishidar/autoscientist-healthcare-qlora",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:33-04:00",
+  "ended": "2026-10-13T12:45:52-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Rishidar__autoscientist-healthcare-qlora__2026-10-10.md",
+    "cached_sha256": "6a2a094d1c417d6612fc5a0e1cb4508ec2c65aa9a60d71094c3a12646f305127",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": ["https://adaptionlabs.ai", "https://www.kaggle.com/models/rishidard/autoscientist-healthcare-qlora"],
+    "demos": ["https://featherless.ai/models/Rishidar/autoscientist-healthcare-qlora"]
+  },
+  "training_data": [
+    {
+      "name": "healthcare adapted dataset",
+      "hub_id": "Rishidar/autoscientist-competition-datasets",
+      "urls": ["https://huggingface.co/datasets/Rishidar/autoscientist-competition-datasets"],
+      "loads": false,
+      "n_examples": 60,
+      "language": "English",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora",
+      "quote": "Fine-tuned from Qwen/Qwen2.5-0.5B-Instruct on the healthcare adapted dataset produced by Adaption Labs AutoScientist Challenge."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Qwen2.5-0.5B-Instruct fine-tuned (QLoRA SFT + DPO) for healthcare",
+    "objective_url": "https://www.kaggle.com/models/rishidard/autoscientist-healthcare-qlora",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method: QLoRA (4-bit NF4, r=32, alpha=64)",
+    "update_scope_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-0.5B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-0.5B-Instruct",
+        "source_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora",
+        "quote": "Fine-tuned from Qwen/Qwen2.5-0.5B-Instruct on the healthcare adapted dataset"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "0.5B",
+    "parameters_stated_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Fine-tuned from Qwen/Qwen2.5-0.5B-Instruct on the healthcare adapted dataset produced by Adaption Labs AutoScientist Challenge.",
+    "source_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": ""
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "Fine-tuned from Qwen/Qwen2.5-0.5B-Instruct on the healthcare adapted dataset produced by Adaption Labs AutoScientist Challenge."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Qwen2.5-0.5B-Instruct fine-tuned (QLoRA SFT + DPO) for healthcare",
+    "source_url": "https://www.kaggle.com/models/rishidard/autoscientist-healthcare-qlora"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": []
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [],
+    "source_url": ""
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "AutoScientist Competition — Healthcare Model",
+    "source_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora/raw/main/chat_template.jinja",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora/raw/main/chat_template.jinja",
+    "generation_settings": {"temperature": 0.7, "top_p": 0.8, "top_k": 20, "repetition_penalty": 1.1, "do_sample": true},
+    "generation_settings_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja. It defaults to the Qwen system line when the first message is not a system message. config.json max_position_embeddings is 32768; tokenizer model_max_length is 131072. The safetensors header reports 494,032,768 F16 parameters. There is no adapter_config.json. The dataset repo has no README. The Hub dataset viewer cannot load it. healthcare_adapted.jsonl has 60 prompt/completion rows. healthcare.jsonl has 200 rows. healthcare_v5_raw.csv has 20,959 lines. The Hugging Face card does not say which file was used. No batch size or step count is stated. No license is stated. No paper names this repository. The Kaggle description names both SFT and DPO; the single objective field records sft and the quote keeps the DPO wording."
+  },
+  "evaluation_reported": {
+    "text": "Dataset quality: Grade A (Adaption Labs evaluation). No task scores are printed.",
+    "source_url": "https://huggingface.co/Rishidar/autoscientist-healthcare-qlora"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "Rishidar/autoscientist-competition-datasets",
+    "parent": "Qwen/Qwen2.5-0.5B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The Hugging Face card names QLoRA and does not name SFT or DPO. The Kaggle description of the same model says QLoRA SFT + DPO.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Rishidar/autoscientist-healthcare-qlora\"",
+    "\"autoscientist-healthcare-qlora\" huggingface",
+    "\"autoscientist-healthcare-qlora\" arxiv",
+    "\"autoscientist-healthcare-qlora\" github",
+    "Rishidar/autoscientist-competition-datasets huggingface dataset"
+  ],
+  "confidence": "medium"
+}

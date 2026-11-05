@@ -1,0 +1,22 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 12 of 50). Repository ids, in this order:
+1. DipaliLunge1/Phoenix-therapist-model
+2. DipaliLunge1/River-therapist-model
+3. DipaliLunge1/Sage-therapist-model
+4. DishitaAI/llama-8b-alpaca-finetuned-student-wellbeing-dataset
+5. Dragonlord1005/llama-3.2-3B-Instruct-MentalhealthTest
+6. DSLGOOD/emotional-kogpt2
+7. E-motionAssistant/llama-3.2-3b-english-therapy-merged
+8. E-motionAssistant/qwen-2.5-3b-tamil-therapy-merged
+9. ecdev/gemma-2b-instruct-ft-mental-health-counseling-conversations
+10. edgeun/gemma-2-9b-it-ai-counselor
+11. EdwinUstb/CPCD-Chat-4B
+12. eediker/Llama-2-7b-chat-therapist
+13. eeeebbb2/empathetic-model-v7
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-12.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-12.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,7 @@
+{
+  "anchoring_strength": 2,
+  "base_model_name": "Qwen/Qwen3-0.6B",
+  "device_map": "cpu",
+  "modulated_by_prob": true,
+  "use_attention_mask": true
+}

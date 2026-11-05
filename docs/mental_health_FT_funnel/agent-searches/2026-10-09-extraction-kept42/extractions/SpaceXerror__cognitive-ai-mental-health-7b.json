@@ -1,0 +1,205 @@
+{
+  "hf_id": "SpaceXerror/cognitive-ai-mental-health-7b",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:45:23-04:00",
+  "ended": "2026-10-09T16:53:37-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SpaceXerror__cognitive-ai-mental-health-7b__2026-10-09.md",
+    "cached_sha256": "83dd7c55e50874c988cc3fa7cb9804e1749c1c3b013ec256e9213e9599c62d61",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "mindspace.zip",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/microsoft/LoRA",
+      "https://github.com/artidoro/qlora",
+      "https://github.com/TimDettmers/bitsandbytes",
+      "https://github.com/mistralai/mistral-src",
+      "https://github.com/nbertagnolli/counsel-chat",
+      "https://github.com/jerryjalapeno/nart-100k-7b/blob/main/synthetic_conv_gen.py"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2106.09685",
+        "arxiv_id": "2106.09685",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2305.14314",
+        "arxiv_id": "2305.14314",
+        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "venue": "arXiv preprint; comment says Extended NeurIPS submission",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2310.06825",
+        "arxiv_id": "2310.06825",
+        "title": "Mistral 7B",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "CounselChat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": [
+        "https://huggingface.co/datasets/nbertagnolli/counsel-chat",
+        "https://github.com/nbertagnolli/counsel-chat",
+        "https://towardsdatascience.com/counsel-chat-bootstrapping-high-quality-therapy-data-971b419f33da",
+        "https://datasets-server.huggingface.co/size?dataset=nbertagnolli/counsel-chat"
+      ],
+      "loads": true,
+      "n_examples": 2598,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+      "quote": "CounselChat | `nbertagnolli/counsel-chat` | 2,598 | Therapist Q&A | Depression, anxiety, relationships, self-esteem, trauma"
+    },
+    {
+      "name": "PHR Mental Therapy",
+      "hub_id": "vibhorag101/phr_mental_therapy_dataset",
+      "urls": [
+        "https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset",
+        "https://huggingface.co/datasets/jerryjalapeno/nart-100k-synthetic",
+        "https://github.com/jerryjalapeno/nart-100k-7b/blob/main/synthetic_conv_gen.py",
+        "https://datasets-server.huggingface.co/size?dataset=vibhorag101/phr_mental_therapy_dataset"
+      ],
+      "loads": true,
+      "n_examples": 4527,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+      "quote": "PHR Mental Therapy | `vibhorag101/phr_mental_therapy_dataset` | 4,527 | Multi-turn therapy | Empathetic dialogue in Mistral Instruct format"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "QLoRA Fine-Tuning SFTTrainer · 1 Epoch",
+    "objective_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-Tuning Method | QLoRA (4-bit NF4 Quantization)",
+    "update_scope_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "mistralai/Mistral-7B-Instruct-v0.3",
+    "source_claims": [
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.3",
+        "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"mistralai/Mistral-7B-Instruct-v0.3\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7B",
+    "parameters_stated_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Fine-tuned Mistral-7B-Instruct-v0.3 · QLoRA · Domain-Specific Adaptation\n\nFine-tuned by SpaceXerror as part of ongoing research on domain-specific LLM adaptation for mental health support.\n\nThis model was developed as part of a research paper investigating the effectiveness of parameter-efficient fine-tuning (PEFT) methods — specifically QLoRA — for adapting large language models to mental health support tasks.",
+    "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a compassionate, empathetic mental health support assistant."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a compassionate, empathetic mental health support assistant. You listen carefully, validate feelings, and provide thoughtful, evidence-based guidance."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is NOT a replacement for professional therapy or crisis intervention."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "print(chat(\"I have been feeling very anxious lately. What can I do?\"))",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a compassionate, empathetic mental health support assistant.\nYou listen carefully, validate feelings, and provide thoughtful, evidence-based guidance.\nAlways prioritize the person's safety and wellbeing.",
+    "system_prompt_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_new_tokens": 300,
+      "repetition_penalty": 1.4,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md",
+    "max_context": 32768,
+    "notes": "generation_config.json sets only bos_token_id and eos_token_id. The sampling values are from the card example, which also sets no_repeat_ngram_size to 4. Training max sequence length on the card is 512. config.json max_position_embeddings is 32768. tokenizer_config.json has a Mistral chat template and use_default_system_prompt false; the system prompt above is the card example, not text baked into the template. The repository has merged float16 weights (Hub safetensors total 7248023552) and no adapter_config.json. mindspace.zip is 29109 bytes and was not opened. The card also says batch size 2 with an effective batch of 16 (gradient accumulation 8)."
+  },
+  "evaluation_reported": {
+    "text": "Final Train Loss 0.8180. Final Val Loss 0.7862. Perplexity 2.451 on 200 samples. The card says: Perplexity of 2.451 is considered excellent for domain-specific mental health conversational AI.",
+    "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/SpaceXerror/cognitive-ai-mental-health-7b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune|qlora",
+    "datasets": "nbertagnolli/counsel-chat;vibhorag101/phr_mental_therapy_dataset",
+    "parent": "mistralai/Mistral-7B-Instruct-v0.3"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory lists full_finetune and qlora. The card states QLoRA (4-bit NF4) with SFTTrainer, then a merge into the base. The sentence 'QLoRA enables full fine-tuning of 7B models on 2× Tesla T4 GPUs' is about QLoRA, not a full-weight update. Datasets and parent match the card. The card's used counts (2,598 and 4,527) are smaller than the Hub datasets (2,775 and 99,086 rows).",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"SpaceXerror/cognitive-ai-mental-health-7b\"",
+    "\"cognitive-ai-mental-health-7b\" huggingface",
+    "\"cognitive-ai-mental-health-7b\" arxiv",
+    "\"cognitive-ai-mental-health-7b\" github",
+    "\"Fine-tuning Mistral-7B for Mental Health Support using QLoRA\"",
+    "CounselChat huggingface dataset",
+    "phr_mental_therapy_dataset huggingface dataset",
+    "\"PHR Mental Therapy\" huggingface dataset"
+  ],
+  "confidence": "high"
+}

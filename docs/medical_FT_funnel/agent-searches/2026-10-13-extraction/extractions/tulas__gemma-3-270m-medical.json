@@ -1,0 +1,196 @@
+{
+  "hf_id": "tulas/gemma-3-270m-medical",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:45:46-04:00",
+  "ended": "2026-10-13T12:47:17-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tulas__gemma-3-270m-medical__2026-10-10.md",
+    "cached_sha256": "c2689179bd625ebb041f3bca7d8b299d6f943856cc6bc0932609f4ba84fc4da4",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/ericrisco/gemma3n-impact-challenge"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2503.19786",
+        "arxiv_id": "2503.19786",
+        "title": "Gemma 3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medrescue",
+      "hub_id": "ericrisco/medrescue",
+      "urls": [
+        "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md",
+        "https://huggingface.co/datasets/ericrisco/medrescue",
+        "https://github.com/ericrisco/gemma3n-impact-challenge"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of gemma-3-270m-it using LoRA (Low-Rank Adaptation) on medical data just for testing purpose. datasets: ericrisco/medrescue"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (Low-Rank Adaptation)",
+    "update_scope_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md",
+    "lora_rank": 64,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 813,
+    "learning_rate": 0.0003,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-270m-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-270m-it",
+        "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md",
+        "quote": "base_model: google/gemma-3-270m-it. This model is a fine-tuned version of gemma-3-270m-it using LoRA."
+      },
+      {
+        "parent": "google/gemma-3-270m",
+        "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md",
+        "quote": "Base Model: google/gemma-3-270m"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "270M; safetensors F32 count 268098176",
+    "parameters_stated_url": "https://huggingface.co/api/models/tulas/gemma-3-270m-medical"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [gemma-3-270m-it](https://huggingface.co/google/gemma-3-270m) using LoRA (Low-Rank Adaptation) on medical data just for **testing purpose**",
+    "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "This model is NOT intended for medical text generation but for testing purpose only"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of gemma-3-270m-it using LoRA (Low-Rank Adaptation) on medical data just for testing purpose. This model is NOT intended for medical text generation but for testing purpose only"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This model should not be used for actual medical diagnosis"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is NOT intended for medical text generation but for testing purpose only",
+    "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": [
+      "inputs = tokenizer(\"Patient presents with chest pain and\", return_tensors=\"pt\"); outputs = model.generate(**inputs, max_new_tokens=100)"
+    ]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": [
+      "This model is NOT intended for medical text generation but for testing purpose only"
+    ],
+    "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Domain: Medical/Healthcare",
+    "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Patient presents with chest pain and",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "top_k": 64,
+      "top_p": 0.95,
+      "do_sample": true,
+      "max_new_tokens": 100
+    },
+    "generation_settings_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "config.json is Gemma3ForCausalLM, model_type gemma3_text, max_position_embeddings 32768, float32, no vision_config. The tokenizer has an image token and use_default_system_prompt false. chat_template.jinja can prepend a system message but does not set one. tokenizer_config.json has no chat_template key. generation_config.json sets top_k 64, top_p 0.95, do_sample true, and no temperature. max_new_tokens 100 is in the card example. No adapter_config.json. The card says the LoRA adapters were merged. The published weight is one F32 file of 268,098,176 parameters. The card does not say whether the base was quantized. The dataset card says the set has 80,000+ pairs and was built from existing medical sets plus AI-generated synthetic data; the size endpoint reports 86,667 train rows. The model card does not say how many of those rows were used. The GitHub link is the dataset author's pipeline, not a training script for this checkpoint. The Gemma 3 technical report does not name this repo."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/tulas/gemma-3-270m-medical/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "ericrisco/medrescue",
+    "parent": "google/gemma-3-270m-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "LoRA and ericrisco/medrescue match. The YAML base_model is google/gemma-3-270m-it, which matches the inventory. The Model Details line says Base Model google/gemma-3-270m, without -it. The card names no loss.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"tulas/gemma-3-270m-medical\"",
+    "\"gemma-3-270m-medical\" arxiv OR github",
+    "ericrisco/medrescue huggingface dataset"
+  ],
+  "confidence": "medium"
+}

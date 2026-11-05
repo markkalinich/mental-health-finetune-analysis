@@ -1,0 +1,202 @@
+{
+  "hf_id": "zrwang1211/SafeAtlas-Guard-8B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:29:50-04:00",
+  "ended": "2026-10-10T00:30:42-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/zrwang1211__SafeAtlas-Guard-8B__2026-10-09.md",
+    "cached_sha256": "1d31e085d4beadbb48b57216df9478e44cc75d1edd2ddbbc0c08a4154881ae75",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "examples/example.jpg",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "ordinal_config.json",
+    "ordinal_heads.safetensors",
+    "preprocessor_config.json",
+    "prompts/image_system.txt",
+    "prompts/image_template.txt",
+    "prompts/request_system.txt",
+    "prompts/request_template.txt",
+    "prompts/response_system.txt",
+    "prompts/response_template.txt",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/zrwang1211/SafeAtlas-VL"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2608.29098",
+        "arxiv_id": "2608.29098",
+        "title": "SafeAtlas-VL: Beyond Binary Multimodal Safety with Large-Scale Data and Guard Models",
+        "venue": "arXiv preprint, 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": ["https://huggingface.co/collections/zrwang1211/safeatlas-guard"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "SafeAtlas-VL",
+      "hub_id": "zrwang1211/SafeAtlas-VL",
+      "urls": [
+        "https://huggingface.co/datasets/zrwang1211/SafeAtlas-VL",
+        "https://arxiv.org/html/2608.29098"
+      ],
+      "loads": false,
+      "n_examples": 1000000,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/api/datasets/zrwang1211/SafeAtlas-VL",
+      "quote": "This release provides a 1,000,000-annotation training set covering 594,487 unique images. The complete SafeAtlas-VL dataset will be released in a future update."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "We perform full-parameter supervised fine-tuning for one epoch using AdamW, cosine decay, and BF16 precision",
+    "objective_url": "https://arxiv.org/html/2608.29098",
+    "update_scope": "full",
+    "update_scope_quote": "finetuning_type: full",
+    "update_scope_url": "https://github.com/zrwang1211/SafeAtlas-VL/blob/main/training/stage1/safeatlas_guard_8b.yaml",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "no",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 5e-5,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-VL-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-VL-8B-Instruct",
+        "source_url": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen3-VL-8B-Instruct"
+      },
+      {
+        "parent": "Qwen/Qwen3-VL-8B-Instruct",
+        "source_url": "https://github.com/zrwang1211/SafeAtlas-VL/blob/main/training/stage1/safeatlas_guard_8b.yaml",
+        "quote": "model_name_or_path: Qwen/Qwen3-VL-8B-Instruct"
+      },
+      {
+        "parent": "Qwen3-VL-8B Instruct",
+        "source_url": "https://arxiv.org/html/2608.29098",
+        "quote": "We train SafeAtlas Guard at three scales using the Qwen3-VL-2B, Qwen3-VL-4B, and Qwen3-VL-8B Instruct backbones"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8,767,123,696 BF16",
+    "parameters_stated_url": "https://huggingface.co/api/models/zrwang1211/SafeAtlas-Guard-8B"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "SafeAtlas Guard 8B is a target-conditioned multimodal safety model introduced in SafeAtlas-VL: Beyond Binary Multimodal Safety with Large-Scale Data and Guard Models. It evaluates image content, image-grounded user requests, and assistant responses.",
+    "source_url": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "You are a multimodal safety classifier."
+  },
+  "input_kind": {
+    "values": ["image and text", "prompt and reply"],
+    "quotes": [
+      "result = predictor.predict(image=\"examples/example.jpg\", target_name=\"response\", request=\"What fruit is shown in the image?\", response=\"The image shows a red apple.\")",
+      "The input may include: a Human user request, which may contain text and/or an image; an AI assistant response"
+    ]
+  },
+  "output_kind": {
+    "values": ["category label", "score"],
+    "quotes": [
+      "The five ordered labels are safe core, safe leaning disputed, boundary uncertain, unsafe leaning disputed, and unsafe core.",
+      "a continuous risk score from 0 to 100"
+    ]
+  },
+  "detection_claim": {
+    "kind": "other",
+    "categories": [
+      "violation of personal property",
+      "persuasion and manipulation",
+      "illegal activities",
+      "influence operations",
+      "fraud or deceptive action",
+      "defamation",
+      "security threats",
+      "privacy",
+      "dangerous information",
+      "false beliefs",
+      "erosion of trust in public information",
+      "unfair",
+      "toxic",
+      "trade and compliance",
+      "risky financial practices"
+    ],
+    "quote": "It evaluates image content, image-grounded user requests, and assistant responses.",
+    "source_url": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "HarmBench Prompt | Text request | 15 | 94.60",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/chat_template.jinja",
+    "system_prompt": "You are a multimodal safety classifier. Your task is to evaluate the safety of the AI assistant response. Judge ONLY the AI assistant response. Use the Human user request only as context.",
+    "system_prompt_url": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/prompts/response_system.txt",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "generation_settings_url": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "Backbone is four BF16 shards, hidden size 4096, tie_word_embeddings false. Heads are a separate FP32 file. Stage-1 cutoff is 8192. The 8B YAML sets DeepSpeed ZeRO-1. The paper says this stage takes about 24 hours and the head stage about 20 hours on 8 H200 GPUs. The API tokenizer_config object has no chat_template key. Web search still shows an older stub README that said weights were unreleased; the raw main README matches the cache and the API lists the weight shards."
+  },
+  "evaluation_reported": {
+    "text": "The card's unsafe-class F1 table gives BeaverTails-V request 88.15, BeaverTails-V response 79.52, SPA-VL request 80.99, SPA-VL response 76.64, VLGuard request 95.06, HarmImageTest 68.90, LLaVAGuard 72.28, multimodal average 80.22, HarmBench prompt 94.60, HarmBench response 85.86, OpenAI Moderation 75.72, SafeRLHF 72.14, and overall average 80.90. The abstract says the 8B model outperforms the previous state of the art by about 4% F1. The paper's formulation ablation reports soft-ordinal overall F1 81.2 for the 8B model.",
+    "source_url": "https://huggingface.co/zrwang1211/SafeAtlas-Guard-8B/raw/main/README.md"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "agent:full|agent:sft",
+    "datasets": "zrwang1211/SafeAtlas-VL",
+    "parent": "Qwen/Qwen3-VL-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Stage 1 matches the inventory: full-parameter SFT on Qwen/Qwen3-VL-8B-Instruct with zrwang1211/SafeAtlas-VL. Stage 2 freezes that backbone and trains classification heads. The inventory does not name that stage. The paper appendix sets the stage-2 head learning rate to 1e-4. training/stage2/safeatlas_guard_8b.json sets learning_rate_head to 0.0005. The Hub release states 1,000,000 training annotations; the paper says 1,503,284. The dataset README returned HTTP 401.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"zrwang1211/SafeAtlas-Guard-8B\"",
+    "\"SafeAtlas-Guard-8B\" arxiv OR github",
+    "\"SafeAtlas-VL: Beyond Binary Multimodal Safety with Large-Scale Data and Guard Models\"",
+    "SafeAtlas-VL huggingface dataset"
+  ],
+  "confidence": "medium"
+}

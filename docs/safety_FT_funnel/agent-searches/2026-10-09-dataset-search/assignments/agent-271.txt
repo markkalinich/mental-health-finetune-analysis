@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 271 of 315). Repository ids, in this order:
+1. th135/llama-0.5B-10BT-weightdecay0.001-seed42-safetymixed2000
+2. th135/llama-0.5B-10BT-weightdecay0.001-seed42-safetymixed300
+3. th135/llama-0.5B-10BT-weightdecay0.001-seed42-safetymixed500
+4. th135/llama-0.5B-10BT-weightdecay0.01-seed42-safetymixed1000
+5. th135/llama-0.5B-10BT-weightdecay0.01-seed42-safetymixed2000
+6. th135/llama-0.5B-10BT-weightdecay0.01-seed42-safetymixed300
+7. th135/llama-0.5B-10BT-weightdecay0.01-seed42-safetymixed500
+8. th135/llama-0.5B-10BT-weightdecay0.1-seed42-safetymixed1000
+9. th135/llama-0.5B-10BT-weightdecay0.1-seed42-safetymixed2000
+10. th135/llama-0.5B-10BT-weightdecay0.1-seed42-safetymixed300
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-271.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-271.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

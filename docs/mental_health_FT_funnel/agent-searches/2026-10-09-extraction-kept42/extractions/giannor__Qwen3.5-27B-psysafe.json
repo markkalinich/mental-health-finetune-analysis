@@ -1,0 +1,188 @@
+{
+  "hf_id": "giannor/Qwen3.5-27B-psysafe",
+  "prompt_version": 3,
+  "started": "2026-10-10T13:46:08-04:00",
+  "ended": "2026-10-10T13:53:18-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/giannor__Qwen3.5-27B-psysafe__2026-10-05.md",
+    "cached_sha256": "ac404a5c4b906791f28e4e27c6a007cdb0ff476eb1474358da8f4ec93e1241f3",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "config3.yaml",
+    "model-00001-of-00012.safetensors",
+    "model-00002-of-00012.safetensors",
+    "model-00003-of-00012.safetensors",
+    "model-00004-of-00012.safetensors",
+    "model-00005-of-00012.safetensors",
+    "model-00006-of-00012.safetensors",
+    "model-00007-of-00012.safetensors",
+    "model-00008-of-00012.safetensors",
+    "model-00009-of-00012.safetensors",
+    "model-00010-of-00012.safetensors",
+    "model-00011-of-00012.safetensors",
+    "model-00012-of-00012.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/aisilab/psychological-safety"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2606.09697",
+        "arxiv_id": "2606.09697",
+        "title": "PsychoSafe: Eliciting Psychologically-Informed Refusals in Large Language Models",
+        "venue": "arXiv",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [
+      "https://odensenlp.github.io/models/",
+      "https://wandb.ai/gbar-university-of-southern-denmark/psych-safety-finetuning/runs/4mol7tzk"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "PSYCHOSAFE",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md",
+        "https://arxiv.org/html/2606.09697",
+        "https://github.com/aisilab/psychological-safety/tree/main/00_data"
+      ],
+      "loads": false,
+      "n_examples": 8019,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md",
+      "quote": "The model was fine-tuned on the **PSYCHOSAFE dataset**: 8,019 prompt–response pairs spanning the five risk domains above. Each response was hand-crafted following the four-part PSYCHOSAFE template, grounded in specific psychological intervention strategies, and reviewed for psychological appropriateness by a domain expert.\n\nReasoning traces were imputed using GPT-OSS-120B, and the model was trained with cross-entropy loss on both the reasoning traces and the human-crafted responses (not the user prompts)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "| Method | Supervised Fine-Tuning (SFT) |",
+    "objective_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-tuning used LoRA applied to all attention and feed-forward projection layers, with the following configuration:",
+    "update_scope_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md",
+    "lora_rank": 1,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 5,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.5-27B; fine-tuning base unsloth/Qwen3.5-27B",
+    "source_claims": [
+      {
+        "parent": "unsloth/Qwen3.5-27B",
+        "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/config3.yaml",
+        "quote": "model: unsloth/Qwen3.5-27B"
+      },
+      {
+        "parent": "unsloth/Qwen3.5-27B",
+        "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/config.json",
+        "quote": "\"model_name\": \"unsloth/Qwen3.5-27B\""
+      },
+      {
+        "parent": "Qwen-3.5-27B",
+        "source_url": "https://arxiv.org/html/2606.09697",
+        "quote": "Both settings use the powerful open-source model Qwen-3.5-27B (Qwen Team, 2026) as the base model, allowing a direct comparison of prompt-driven and fine-tuning-driven behavior change on the same base model architecture."
+      },
+      {
+        "parent": "unsloth/Qwen3.5-27B",
+        "source_url": "https://github.com/aisilab/psychological-safety/blob/main/02_finetunes/configs/c3.yaml",
+        "quote": "model: \"unsloth/Qwen3.5-27B\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "27B",
+    "parameters_stated_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md"
+  },
+  "languages": {
+    "values": [
+      "en"
+    ],
+    "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md",
+    "quote": "Language | English"
+  },
+  "description": {
+    "text": "**Qwen3.5-27B-psysafe** is a supervised fine-tune of [unsloth/Qwen3.5-27B](https://huggingface.co/unsloth/Qwen3.5-27B) trained as part of the **PSYCHOSAFE** project — a psychologically-informed refusal framework that reframes model refusals as structured, supportive communication grounded in evidence-based psychological intervention strategies.\n\nRather than producing blunt non-compliance, this model is trained to acknowledge the person behind the request, apply domain-appropriate psychological intervention strategies, refer users to professional resources, and offer a hopeful, personalized closing — all while declining to provide harmful information.",
+    "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Outside these five domains, the model behaves as a normal helpful assistant."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "Rather than producing blunt non-compliance, this model is trained to acknowledge the person behind the request, apply domain-appropriate psychological intervention strategies, refer users to professional resources, and offer a hopeful, personalized closing — all while declining to provide harmful information."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is not intended to replace professional mental health intervention, crisis counseling, or medical advice. It should not be interpreted as therapy, diagnosis, or crisis management."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"user\", \"content\": \"Your message here\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "max_new_tokens": 512
+    },
+    "generation_settings_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md",
+    "max_context": 262144,
+    "notes": "The card example sends one user text message and sets max_new_tokens=512. No generation_config.json is in the repo, so temperature, top_p, top_k, repetition_penalty, and do_sample are not stated. config.json is Qwen3_5ForConditionalGeneration with a vision tower, image and video token ids, and the Hub pipeline tag is image-text-to-text. The project vLLM runner documents --language-model-only as the text-only mode for Qwen3.5. tokenizer model_max_length and text_config max_position_embeddings are 262144. Training max_seq_length is 4096. The chat template adds a system turn only when the caller supplies one. Evaluation prompts live in the GitHub repo: systemprompt-v0.txt is \"You are a helpful assistant.\" and systemprompt-v1.txt is the long PsychoSafe prompt. The released card example uses neither."
+  },
+  "evaluation_reported": {
+    "text": "Held-out validation of 500 stratified prompts (100 per risk cluster), judged by Qwen3.5-397B-A17B (Cohen's κ = 0.61 with a human rater). This model with the generic prompt: refusal 100.0%, psychological grounding 3.86 ± 0.79, external references 99.8%, relevance 3.37 ± 1.16, overall 82.7%. SORRY-Bench compliance on default base prompts is 0.0% (base Qwen3.5-27B 17.1%). XSTest default: over-refusal 3.6% (base 13.2%) and safety 17.0% (base 59.0%). MMLU 0.802 (base 0.845); HellaSwag 0.641 (base 0.638).",
+    "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/giannor/Qwen3.5-27B-psysafe/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "PSYCHOSAFE dataset",
+    "parent": "Qwen/Qwen3.5-27B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods match: LoRA supervised fine-tuning. The dataset name matches PSYCHOSAFE. The inventory parent Qwen/Qwen3.5-27B matches the card YAML base_model. The training config loaded unsloth/Qwen3.5-27B, which the card lists as the fine-tuning base. The card says the 8,019 responses were each hand-crafted; the paper says 14 hand-crafted exemplars were mapped onto prompts from 16 existing safety benchmarks. The card and paper section 3.2 say the loss includes the GPT-OSS-120B reasoning traces; Appendix I says those traces are excluded. The shipped config3.yaml sets response_part at the <think> tag, and the training script masks only the user turn, so the reasoning trace is inside the trained response. The named corpus is 8,019 pairs; the trainer reads the train split, and the splitter holds out 100 validation and 100 test examples per risk cluster.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github"
+  ],
+  "queries_tried": [
+    "\"giannor/Qwen3.5-27B-psysafe\"",
+    "\"Qwen3.5-27B-psysafe\" huggingface",
+    "\"Qwen3.5-27B-psysafe\" arxiv",
+    "\"Qwen3.5-27B-psysafe\" github",
+    "PsychoSafe: Eliciting Psychologically-Informed Refusals in Large Language Models",
+    "PSYCHOSAFE dataset huggingface dataset"
+  ],
+  "confidence": "high"
+}

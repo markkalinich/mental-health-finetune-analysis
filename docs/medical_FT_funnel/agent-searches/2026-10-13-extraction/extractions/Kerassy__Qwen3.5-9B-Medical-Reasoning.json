@@ -1,0 +1,186 @@
+{
+  "hf_id": "Kerassy/Qwen3.5-9B-Medical-Reasoning",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:47:33-04:00",
+  "ended": "2026-10-13T12:48:28-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Kerassy__Qwen3.5-9B-Medical-Reasoning__2026-10-10.md",
+    "cached_sha256": "b4c46313c3299af9f62087a55cb7a2c0675a68503b4fcf2852a84afd7b3de29e",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Qwen3.5-9B.BF16-mmproj.gguf",
+    "Qwen3.5-9B.Q4_K_M.gguf",
+    "Qwen3.5-9B.Q8_0.gguf",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors-00001-of-00004.safetensors",
+    "model.safetensors-00002-of-00004.safetensors",
+    "model.safetensors-00003-of-00004.safetensors",
+    "model.safetensors-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/unslothai/unsloth"],
+    "papers": [],
+    "project_pages": [],
+    "demos": ["https://featherless.ai/models/Kerassy/Qwen3.5-9B-Medical-Reasoning"]
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+      "quote": "Fine-Tuning Dataset: FreedomIntelligence/medical-o1-reasoning-SFT (Subset: -EM, Split: Train)"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-Tuning Framework: Unsloth (LoRA fine-tuning)",
+    "update_scope_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.5-9B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3.5-9B",
+        "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen3.5-9B"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "9-billion parameter",
+    "parameters_stated_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Qwen3.5-9B-Medical-Reasoning is a fine-tuned 9-billion parameter model optimized for complex clinical reasoning and medical question-answering. By leveraging chain-of-thought (CoT) fine-tuning on medical reasoning traces, the model generates explicit step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion.",
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a clinical expert. Think step-by-step inside <think> tags before providing your final medical answer."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "the model generates explicit step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "It is not a certified medical device and should never be used for direct patient diagnosis, treatment advice, or real-world clinical decision-making."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Medical research and evaluation of chain-of-thought capabilities in compact LLMs.",
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Medical research and evaluation of chain-of-thought capabilities in compact LLMs."],
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["clinical reasoning", "answer medical questions", "suggest a diagnosis", "answer exam questions"],
+    "quotes": [
+      "optimized for complex clinical reasoning",
+      "medical question-answering",
+      "step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion",
+      "Outperforms standard base models and many 7B-13B non-reasoning models on board-style medical exams."
+    ],
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "Thinking Mode (Default): Produces explicit CoT traces inside <think>...</think> tags for explainable medical reasoning.",
+      "Direct Mode: Can be forced to bypass reasoning and yield succinct direct answers"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential", "exam answering"],
+    "quotes": [
+      "medical question-answering",
+      "What is the most likely diagnosis?",
+      "eval only: Outperforms standard base models and many 7B-13B non-reasoning models on board-style medical exams. Evaluation Results: TBC."
+    ],
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "complex clinical reasoning and medical question-answering",
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "A 45-year-old male presents with sudden chest pain, diaphoresis, and radiation to the left jaw. What is the most likely diagnosis?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a clinical expert. Think step-by-step inside <think> tags before providing your final medical answer.",
+    "system_prompt_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "generation_settings_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md",
+    "max_context": 262144,
+    "notes": "The direct-mode example uses a second system string: You are a succinct medical assistant. generation_config.json does not set temperature or top_p. text_config max_position_embeddings is 262144, hidden size 4096, 32 layers. The architecture is Qwen3_5ForConditionalGeneration with a vision_config and image_token_id. The repository includes Qwen3.5-9B.BF16-mmproj.gguf and processor_config.json. The card's example sends text only. No adapter_config.json. A Featherless page serves this id and labels the hosted copy FP8 with a 32k context; that is the host's deployment, not a training setting."
+  },
+  "evaluation_reported": {
+    "text": "TBC. The highlights still say the model outperforms standard base models and many 7B-13B non-reasoning models on board-style medical exams, and they give no score.",
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Kerassy/Qwen3.5-9B-Medical-Reasoning/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "Qwen/Qwen3.5-9B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card states LoRA, the dataset id FreedomIntelligence/medical-o1-reasoning-SFT, and the parent Qwen/Qwen3.5-9B, which match the inventory. It does not name a loss. The subset -EM is not a config on that dataset. config.json is a Qwen3.5 conditional-generation model with a vision tower; the inventory row does not say that. The evaluation section is TBC.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Kerassy/Qwen3.5-9B-Medical-Reasoning\"",
+    "\"Qwen3.5-9B-Medical-Reasoning\" huggingface OR github",
+    "\"Qwen3.5-9B-Medical-Reasoning\" arxiv",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

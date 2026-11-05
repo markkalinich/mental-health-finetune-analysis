@@ -1,0 +1,164 @@
+{
+  "hf_id": "Hagrun/moddog-l1-safety-qwen2.5-3b",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:25:41-04:00",
+  "ended": "2026-10-10T00:27:01-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Hagrun__moddog-l1-safety-qwen2.5-3b__2026-10-05.md",
+    "cached_sha256": "4e4f1fec1f11e0f75b9c9d720e73d902e172ff9f9eb2a8c3cf9922abec1efcc7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "qwen2.5-3b-moddog-r2keep-q4_k_m.gguf",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": ["https://featherless.ai/models/Hagrun/moddog-l1-safety-qwen2.5-3b"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Jigsaw Civil Comments",
+      "hub_id": "google/civil_comments",
+      "urls": [
+        "https://huggingface.co/datasets/google/civil_comments",
+        "https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/data"
+      ],
+      "loads": true,
+      "n_examples": 1249,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md",
+      "quote": "Jigsaw Civil Comments (CC0) — 1,249 examples with annotator-agreement-graded confidence targets"
+    },
+    {
+      "name": "human-curated golden set",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 164,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md",
+      "quote": "a human-curated \"golden\" set of 164 Discord-distribution examples (including injection-resistance derivations)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Method: QLoRA SFT, graded confidence targets (clear vs borderline), golden spine anchoring calibration.",
+    "objective_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method: QLoRA SFT, graded confidence targets (clear vs borderline), golden spine anchoring calibration.",
+    "update_scope_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-3B-Instruct",
+        "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md",
+        "quote": "base_model: Qwen/Qwen2.5-3B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "Qwen2.5-3B",
+    "parameters_stated_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "A small, fast content-moderation classifier fine-tuned from **Qwen2.5-3B-Instruct** for Discord-style chat. It is the *L1 fast-triage* tier of the ModDog pipeline: it returns a structured JSON verdict (`flag` / `category` / `confidence` / `reason`) and is designed to be **honestly uncertain on hard cases** so they escalate to a larger model rather than being confidently mis-judged.",
+    "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "A small, fast content-moderation classifier fine-tuned from **Qwen2.5-3B-Instruct** for Discord-style chat."
+  },
+  "input_kind": {
+    "values": ["free text", "user prompt"],
+    "quotes": [
+      "Fast first-pass moderation triage on **chat-style** messages",
+      "The model judges the message *content* and ignores instructions hidden inside it."
+    ]
+  },
+  "output_kind": {
+    "values": ["structured object", "binary label", "category label", "score"],
+    "quotes": [
+      "it returns a structured JSON verdict (`flag` / `category` / `confidence` / `reason`)",
+      "`flag`",
+      "`toxicity`, `harassment`, `hate_speech`, `sexual_content`, `self_harm`, `violence` (plus `benign`)",
+      "`confidence`"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": ["toxicity", "harassment", "hate_speech", "sexual_content", "self_harm", "violence", "benign"],
+    "quote": "Fast first-pass moderation triage on **chat-style** messages, for the *judgment-call* categories: `toxicity`, `harassment`, `hate_speech`, `sexual_content`, `self_harm`, `violence` (plus `benign`).",
+    "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Fast first-pass moderation triage on **chat-style** messages",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/Hagrun/moddog-l1-safety-qwen2.5-3b",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/Hagrun/moddog-l1-safety-qwen2.5-3b",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card says inference expects a detailed system rubric of about 1.9k tokens with few-shot examples. That rubric is not in the repository. The chat template's default system line is the Qwen assistant prompt. The repo ships fp16 safetensors (3,085,938,688 parameters) and a Q4_K_M GGUF, and no adapter_config.json. The card does not say whether the QLoRA adapter was merged. config.json does not name the parent. A search snippet claimed 2 epochs and synthetic data from Qwen2.5-14B-Instruct; the fetched README does not say either of those things."
+  },
+  "evaluation_reported": {
+    "text": "Golden gate (216 Discord-distribution cases): 93.5% accuracy, calibration-band accuracy 0.84. Powered held-out (294 balanced Civil Comments cases): 93.2% accuracy, band 0.84.",
+    "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Hagrun/moddog-l1-safety-qwen2.5-3b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora|sft",
+    "datasets": "Jigsaw Civil Comments",
+    "parent": "Qwen/Qwen2.5-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card states QLoRA SFT, Jigsaw Civil Comments, and parent Qwen/Qwen2.5-3B-Instruct, which matches the inventory. The card also trains on 164 human-curated Discord examples that the inventory does not name.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Hagrun/moddog-l1-safety-qwen2.5-3b\"",
+    "\"moddog-l1-safety-qwen2.5-3b\" arxiv OR github",
+    "Jigsaw Civil Comments huggingface dataset"
+  ],
+  "confidence": "high"
+}

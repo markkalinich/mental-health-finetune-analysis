@@ -1,0 +1,243 @@
+{
+  "hf_id": "ericrisco/medical-gemma-3n-4b",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:44-04:00",
+  "ended": "2026-10-13T12:39:19-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ericrisco__medical-gemma-3n-4b__2026-10-10.md",
+    "cached_sha256": "19f4f4d44dfab80b82a3762ccd1b021dd18bca6677c0ce3264827cb58ebaec70",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/ericrisco/gemma3n-impact-challenge",
+      "https://github.com/ericrisco/medical-gemma-3n"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://www.kaggle.com/competitions/google-gemma-3n-hackathon/overview",
+      "https://youtu.be/mnmY4Yc0Nag",
+      "https://ai.plainenglish.io/building-a-local-mobile-medical-ai-assistant-with-gemma-3n-a-deep-dive-into-offline-emergency-f99acced6798"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/ericrisco/medical-gemma-3n-4b"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "medrescue",
+      "hub_id": "ericrisco/medrescue",
+      "urls": [
+        "https://huggingface.co/datasets/ericrisco/medrescue",
+        "https://huggingface.co/datasets/ericrisco/medrescue/viewer"
+      ],
+      "loads": true,
+      "n_examples": 86667,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md",
+      "quote": "The model was trained on ericrisco/medrescue, a comprehensive medical dataset containing: 86,667 medical Q&A pairs from multiple authoritative sources; 11 specialized medical datasets covering clinical reasoning, symptoms, medications; 14 official medical PDFs from WHO, ICRC, military, and government sources; RAG-enhanced content using vector search and AI generation."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (r=8, alpha=8, dropout=0). Quantization: 4-bit loading for memory efficiency. load_in_4bit=True, full_finetuning=False.",
+    "update_scope_url": "https://github.com/ericrisco/medical-gemma-3n/blob/main/training/README.md",
+    "lora_rank": 8,
+    "lora_alpha": 8,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": 5417,
+    "learning_rate": 2e-5,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "unsloth/gemma-3n-E4B-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3n-E4B-it",
+        "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md",
+        "quote": "Base Model: unsloth/gemma-3n-E4B-it"
+      },
+      {
+        "parent": "unsloth/gemma-3n-E4B-it",
+        "source_url": "https://github.com/ericrisco/medical-gemma-3n/blob/main/training/README.md",
+        "quote": "source_model_name = \"unsloth/gemma-3n-E4B-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7.8B",
+    "parameters_stated_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Medical Gemma-3N is a specialized version of Google's Gemma-3N-4B model, fine-tuned specifically for emergency medical assistance and offline healthcare applications. This model is designed to provide accurate medical guidance in emergency scenarios where internet connectivity may be limited or unavailable.",
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Medical Gemma-3N: Emergency Medical Assistant. Medical consultation example."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "This model is designed to provide accurate medical guidance in emergency scenarios where internet connectivity may be limited or unavailable."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a substitute for professional medical advice. Always consult healthcare professionals for medical decisions. For research and educational purposes only."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This model is designed to provide accurate medical guidance in emergency scenarios where internet connectivity may be limited or unavailable.",
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public", "student or exam taker"],
+    "quotes": [
+      "This model is designed to provide accurate medical guidance in emergency scenarios where internet connectivity may be limited or unavailable.",
+      "Medical Education: Training support for healthcare students"
+    ],
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "functions": {
+    "values": [
+      "answer medical questions",
+      "give first-aid instructions",
+      "triage symptoms",
+      "give drug information",
+      "give treatment advice",
+      "clinical reasoning",
+      "suggest a diagnosis",
+      "support study or teaching",
+      "support a clinical decision",
+      "talk with a patient",
+      "hospital-crisis operations"
+    ],
+    "quotes": [
+      "86,667 medical Q&A pairs",
+      "First Aid Guidance: Step-by-step emergency procedures",
+      "Symptom Assessment: Initial triage and severity evaluation",
+      "Drug Information: Medication guidance and contraindications",
+      "How do I treat severe bleeding?",
+      "Clinical reasoning and diagnostic procedures",
+      "Symptom analysis and differential diagnosis training",
+      "Medical Education: Training support for healthcare students",
+      "Clinical Decision Support: Evidence-based medical recommendations",
+      "Telemedicine: Offline medical consultation capabilities",
+      "Disaster Response: Medical care in resource-limited settings"
+    ],
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "question = \"What should I do if someone is having a heart attack?\""
+    ]
+  },
+  "clinical_task": {
+    "values": [
+      "medical QA",
+      "exam answering",
+      "diagnosis or differential",
+      "triage",
+      "treatment or medication advice",
+      "conversation with a patient",
+      "other"
+    ],
+    "quotes": [
+      "86,667 medical Q&A pairs",
+      "Medical licensing exam questions with detailed explanations",
+      "Symptom analysis and differential diagnosis training",
+      "Symptom Assessment: Initial triage and severity evaluation",
+      "Emergency medicine protocols and first aid instructions. Drug Information: Medication guidance and contraindications. Evaluated on lextale/FirstAidInstructionsDataset (eval only).",
+      "Telemedicine: Offline medical consultation capabilities",
+      "Disaster Response: Medical care in resource-limited settings"
+    ],
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["emergency medical assistance", "first aid"],
+    "quote": "fine-tuned specifically for emergency medical assistance. Specialized in first aid, emergency care, and rescue procedures.",
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"What should I do if someone is having a heart attack?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "top_k": 64,
+      "max_new_tokens": 512,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "generation_config.json sets do_sample, top_k 64, and top_p 0.95. The card example adds temperature 0.7 and max_new_tokens 512. Training max sequence length is 1024. config.json is Gemma3n with vision and audio blocks; the published example is text only, and the training notebook sets finetune_vision_layers=False. tokenizer_config sets use_default_system_prompt false. This repository has no adapter_config.json; the card calls it the full merged model. The GitHub Ollama Modelfile for the GGUF sibling includes a system string that is not in this repository."
+  },
+  "evaluation_reported": {
+    "text": "On lextale/FirstAidInstructionsDataset, an AI judge scored Medical Gemma-3N at 71.54% (93/130) and the base Gemma-3N at 36.15% (47/130).",
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/ericrisco/medical-gemma-3n-4b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "ericrisco/medrescue",
+    "parent": "unsloth/gemma-3n-E4B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The card names LoRA (r=8, alpha=8) and 4-bit loading. The training notebook loads the base with load_in_4bit=True and full_finetuning=False, so the update is QLoRA. Dataset ericrisco/medrescue and parent unsloth/gemma-3n-E4B-it match. No source names a training objective.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ericrisco/medical-gemma-3n-4b\"",
+    "\"medical-gemma-3n-4b\" huggingface",
+    "\"medical-gemma-3n-4b\" arxiv",
+    "\"medical-gemma-3n-4b\" github",
+    "ericrisco/medrescue huggingface dataset",
+    "FirstAidInstructionsDataset huggingface dataset"
+  ],
+  "confidence": "high"
+}

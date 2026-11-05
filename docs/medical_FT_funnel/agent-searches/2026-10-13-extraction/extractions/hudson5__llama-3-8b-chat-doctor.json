@@ -1,0 +1,203 @@
+{
+  "hf_id": "hudson5/llama-3-8b-chat-doctor",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:51-04:00",
+  "ended": "2026-10-13T12:39:21-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/hudson5__llama-3-8b-chat-doctor__2026-10-10.md",
+    "cached_sha256": "574213ed0c0987ff2c29013da9a892eeafff836c0c85f68402b0287e8c6dcfee",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter_config.json",
+    "adapter_model.safetensors",
+    "config.json",
+    "generation_config.json",
+    "llama-3-8b-chat-doctor-Q4_K_M.gguf",
+    "llama-3-8b-chat-doctor-Q4_K_S.gguf",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1910.09700",
+        "arxiv_id": "1910.09700",
+        "title": "Quantifying the Carbon Emissions of Machine Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2407.21783",
+        "arxiv_id": "2407.21783",
+        "title": "The Llama 3 Herd of Models",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://featherless.ai/models/hudson5/llama-3-8b-chat-doctor"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "AI Medical Chatbot Dataset",
+      "hub_id": "ruslanmv/ai-medical-chatbot",
+      "urls": [
+        "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md",
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot",
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 256916,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md",
+      "quote": "datasets:\n- ruslanmv/ai-medical-chatbot"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "lora",
+    "update_scope_quote": "\"peft_type\": \"LORA\", \"r\": 16, \"lora_alpha\": 32",
+    "update_scope_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/adapter_config.json",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md",
+        "quote": "base_model:\n- meta-llama/Meta-Llama-3-8B-Instruct"
+      },
+      {
+        "parent": "/kaggle/input/llama-3/transformers/8b-chat-hf/1",
+        "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"/kaggle/input/llama-3/transformers/8b-chat-hf/1\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030277632",
+    "parameters_stated_url": "https://huggingface.co/api/models/hudson5/llama-3-8b-chat-doctor"
+  },
+  "languages": {
+    "values": ["en", "cn"],
+    "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md",
+    "quote": "language:\n- en\n- cn"
+  },
+  "description": {
+    "text": "A model used for medical chat, use it with caution!\n\nThis is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "A model used for medical chat, use it with caution!"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "A model used for medical chat, use it with caution!"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "A model used for medical chat, use it with caution!",
+    "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["A model used for medical chat, use it with caution!"]
+  },
+  "clinical_task": {
+    "values": ["other"],
+    "quotes": ["A model used for medical chat, use it with caution!"],
+    "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "A model used for medical chat, use it with caution!",
+    "source_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "A model used for medical chat, use it with caution!",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/hudson5/llama-3-8b-chat-doctor/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "config.json architecture is LlamaForCausalLM; the repository has no image or audio processor. tokenizer_config.json chat_template is a ChatML loop over message role and content with no fixed system text. generation_config.json sets only bos, eos, and pad token ids. max_position_embeddings is 8192; tokenizer model_max_length is an unused 1e30 placeholder. The repository holds both adapter_model.safetensors and four float16 model shards (safetensors total 8030277632) plus Q4_K_M and Q4_K_S GGUF files. Nothing in the repository says whether the adapter was merged into those shards. The GGUF files are export quantizations, not a statement about training."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "not stated"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "not stated"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "ruslanmv/ai-medical-chatbot",
+    "parent": "meta-llama/Meta-Llama-3-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. adapter_config.json in this repository has peft_type LORA, r 16, and lora_alpha 32. The card dataset and parent match the inventory. The adapter base_model_name_or_path is the Kaggle path /kaggle/input/llama-3/transformers/8b-chat-hf/1, the local Llama 3 8B chat package, rather than the Hub id.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"hudson5/llama-3-8b-chat-doctor\"",
+    "\"llama-3-8b-chat-doctor\" huggingface",
+    "\"llama-3-8b-chat-doctor\" arxiv",
+    "\"llama-3-8b-chat-doctor\" github",
+    "ruslanmv/ai-medical-chatbot huggingface dataset"
+  ],
+  "confidence": "medium"
+}

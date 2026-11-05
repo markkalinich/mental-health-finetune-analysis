@@ -1,0 +1,4 @@
+checkpoint_id,training_category,canonical_parent_id,outcome,child_score,parent_score,delta,reported,note
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,safety,Qwen/Qwen3-32B,si_f1,0.969163,0.971429,-0.0022659999999999902,False,Not the requested descriptive report. Cradle remains in the si_f1 and cssrs_f1 joint models as safety.
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,safety,Qwen/Qwen3-32B,cssrs_f1,0.805508,0.804878,0.0006300000000000194,False,Not the requested descriptive report. Cradle remains in the si_f1 and cssrs_f1 joint models as safety.
+SungJoo/cradle-dialogue-qwen3-32b-2epoch,safety,Qwen/Qwen3-32B,mhb_safety,0.33594,0.312754,0.02318600000000004,True,"Descriptive paired difference only. Cradle is safety, so it is excluded from the MentalHealthBench joint model and from the primary mental-health paired tests."

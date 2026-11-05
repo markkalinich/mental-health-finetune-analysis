@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 7 of 21).
+
+Model 1: NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/NeelRajani__Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01__2026-10-05.md
+  Inventory row: methods='sft' datasets='NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2' parent='NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/NeelRajani__Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/NeelRajani__Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01.md
+
+Model 2: NeelRajani/Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/NeelRajani__Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01__2026-10-05.md
+  Inventory row: methods='sft' datasets='NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2' parent='NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/NeelRajani__Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/NeelRajani__Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01.md
+
+Model 3: Neelectric/Llama-3.1-8B-Instruct_SFT_safetyv00.01
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Neelectric__Llama-3.1-8B-Instruct_SFT_safetyv00.01__2026-10-09.md
+  Inventory row: methods='sft' datasets='Neelectric/wildguardmix_Llama-3.1-8B-Instruct_4096toks' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/Neelectric__Llama-3.1-8B-Instruct_SFT_safetyv00.01.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/Neelectric__Llama-3.1-8B-Instruct_SFT_safetyv00.01.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

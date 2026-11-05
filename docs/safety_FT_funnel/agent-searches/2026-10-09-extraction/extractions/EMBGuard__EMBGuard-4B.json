@@ -1,0 +1,166 @@
+{
+  "hf_id": "EMBGuard/EMBGuard-4B",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:30:37-04:00",
+  "ended": "2026-10-09T19:31:45-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/EMBGuard__EMBGuard-4B__2026-10-09.md",
+    "cached_sha256": "b4e17f9e21f31369139d2906904827f12f42dca3d7c47700c25fbe274aae1a54",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/dongwxxkchoi/EMBGuard"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2605.30924",
+        "arxiv_id": "2605.30924",
+        "title": "EMBGuard: Constructing Hazard-Aware Guardrails for Safe Planning in Embodied Agents",
+        "venue": "ICML 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": ["https://icml.cc/virtual/2026/poster/63023"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "EMBHazard",
+      "hub_id": "EMBGuard/EMBHazard",
+      "urls": [
+        "https://huggingface.co/datasets/EMBGuard/EMBHazard",
+        "https://github.com/dongwxxkchoi/EMBGuard"
+      ],
+      "loads": true,
+      "n_examples": 15115,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2605.30924",
+      "quote": "We train EMBGuard using Qwen-3-VL models (34) with 2B and 4B parameters through supervised fine-tuning on EMBHazard."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "We train EMBGuard using Qwen-3-VL models (34) with 2B and 4B parameters through supervised fine-tuning on EMBHazard. Training is conducted using LLaMAFactory (36) with a learning rate of 1e-5 for 4 epochs on 8 A6000 GPUs, selecting the checkpoint with the best validation performance. Importantly, we freeze the vision encoder during training.",
+    "objective_url": "https://arxiv.org/html/2605.30924",
+    "update_scope": "not stated",
+    "update_scope_quote": "Importantly, we freeze the vision encoder during training.",
+    "update_scope_url": "https://arxiv.org/html/2605.30924",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 4,
+    "steps": null,
+    "learning_rate": 1e-5,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-VL-4B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen-3-VL 4B",
+        "source_url": "https://arxiv.org/html/2605.30924",
+        "quote": "We train EMBGuard using Qwen-3-VL models (34) with 2B and 4B parameters through supervised fine-tuning on EMBHazard."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4437815808",
+    "parameters_stated_url": "https://huggingface.co/api/models/EMBGuard/EMBGuard-4B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/EMBGuard/EMBGuard-4B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/EMBGuard/EMBGuard-4B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "At each step, the guardrail receives the observation image and proposed action, and outputs risk assessment (safe/unsafe), risk type, and hazard description."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "we propose EMBGuard, the first MLLM-based safety guardrail for embodied agents designed to decouple physical risk reasoning from agent policy."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Thereby, we emphasize that deployment in real-world robotic systems requires thorough validation and careful consideration by practitioners to ensure safety in specific deployment contexts."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "Since the guardrail takes a scene image and an associated action as input, we generate images for training and evaluation based on the constructed scene graphs.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/EMBGuard/EMBGuard-4B",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "generation_settings_url": "https://huggingface.co/EMBGuard/EMBGuard-4B/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The model card is YAML only. This repository has no trainer_state.json and no adapter config. The checked-in full-finetune YAML names Qwen/Qwen3-VL-2B-Instruct, not this 4B parent, so its batch size, projector freeze, and step count are not copied here. The paper's training paragraph covers both sizes: supervised fine-tuning, learning rate 1e-5, 4 epochs, 8 A6000 GPUs, vision encoder frozen. It does not say LoRA and does not give a step count. Released weights are bf16. config.json max_position_embeddings is 262144. No system-prompt string is given. arXiv comment: Accepted at ICML 2026."
+  },
+  "evaluation_reported": {
+    "text": "Paper Table 2, EMBGuard-4B: EMBGuardTest Potential Risk 54.3, Risk Type 50.3, Hazard 14.6; Held-out Set Potential Risk 71.2, Risk Type 67.6, Hazard 50.1. Safe-planning table: step accuracy 63.1, precision 25.7, recall 71.7, F1 38.3. Inference time 0.719 seconds per sample on one RTX 6000 Ada.",
+    "source_url": "https://arxiv.org/html/2605.30924"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/EMBGuard/EMBGuard-4B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "EMBGuard/EMBHazard;EMBGuard/EMBGuardTest_v2;EMBGuard/heldout_set",
+    "parent": "Qwen/Qwen3-VL-4B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are blank. The paper states supervised fine-tuning for the 4B model, with the vision encoder frozen, and does not name LoRA or a full update. Parent matches. The card YAML names three datasets. Only EMBHazard is the training set. EMBGuard/EMBGuardTest_v2 and EMBGuard/heldout_set are evaluation sets.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"EMBGuard/EMBGuard-4B\"",
+    "\"EMBGuard-4B\" huggingface",
+    "\"EMBGuard-4B\" arxiv",
+    "\"EMBGuard-4B\" github",
+    "EMBGuard: Constructing Hazard-Aware Guardrails for Safe Planning in Embodied Agents",
+    "EMBHazard huggingface dataset"
+  ],
+  "confidence": "medium"
+}

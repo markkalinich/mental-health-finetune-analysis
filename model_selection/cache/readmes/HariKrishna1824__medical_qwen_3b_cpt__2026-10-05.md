@@ -1,0 +1,1 @@
+This is Qwen Model Fully Pretrained using Continuous Pretraining and Later Finetuned On The CHIVA Varicose Veins Treatement Medical Literature.

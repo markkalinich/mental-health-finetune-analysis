@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 17 of 20).
+
+Model 1: oopere/SmolLM2-1.7B-ClinicalNER
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/oopere__SmolLM2-1.7B-ClinicalNER__2026-10-10.md
+  Inventory row: methods='qlora' datasets='oopere/clinical-ner-qdora' parent='HuggingFaceTB/SmolLM2-1.7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/oopere__SmolLM2-1.7B-ClinicalNER.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/oopere__SmolLM2-1.7B-ClinicalNER.md
+
+Model 2: openmed-community/AFM-4.5B-OpenMed
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/openmed-community__AFM-4.5B-OpenMed__2026-10-05.md
+  Inventory row: methods='dpo|grpo|sft' datasets='MedMCQA | MedReason' parent='arcee-ai/AFM-4.5B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/openmed-community__AFM-4.5B-OpenMed.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/openmed-community__AFM-4.5B-OpenMed.md
+
+Model 3: openmed-community/granite-4.0-micro-OpenMed
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/openmed-community__granite-4.0-micro-OpenMed__2026-10-05.md
+  Inventory row: methods='dpo|grpo|ppo|sft' datasets='mkurman/medmcqa-hard | allenai/tulu-3-sft-personas-instruction-following' parent='ibm-granite/granite-4.0-micro'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/openmed-community__granite-4.0-micro-OpenMed.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/openmed-community__granite-4.0-micro-OpenMed.md
+
+Model 4: prithivMLmods/Llama-Doctor-3.2-3B-Instruct
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prithivMLmods__Llama-Doctor-3.2-3B-Instruct__2026-10-10.md
+  Inventory row: methods='' datasets='avaliev/chat_doctor' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/prithivMLmods__Llama-Doctor-3.2-3B-Instruct.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/prithivMLmods__Llama-Doctor-3.2-3B-Instruct.md
+
+Model 5: ruslanmv/ai-medical-model-32bit
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ruslanmv__ai-medical-model-32bit__2026-10-10.md
+  Inventory row: methods='' datasets='ruslanmv/ai-medical-dataset' parent='meta-llama/Meta-Llama-3-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/ruslanmv__ai-medical-model-32bit.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/ruslanmv__ai-medical-model-32bit.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

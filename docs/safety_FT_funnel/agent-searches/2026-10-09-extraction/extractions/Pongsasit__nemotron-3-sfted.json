@@ -1,0 +1,175 @@
+{
+  "hf_id": "Pongsasit/nemotron-3-sfted",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:29:04-04:00",
+  "ended": "2026-10-09T19:31:25-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Pongsasit__nemotron-3-sfted__2026-10-09.md",
+    "cached_sha256": "a7c0e0f35f293b1c5c5f91c20176beac0945d473479badd01a851495f1c0e12c",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "__init__.py",
+    "chat_template.jinja",
+    "config.json",
+    "configuration_nemotron_h.py",
+    "generation_config.json",
+    "model-00001-of-00013.safetensors",
+    "model-00002-of-00013.safetensors",
+    "model-00003-of-00013.safetensors",
+    "model-00004-of-00013.safetensors",
+    "model-00005-of-00013.safetensors",
+    "model-00006-of-00013.safetensors",
+    "model-00007-of-00013.safetensors",
+    "model-00008-of-00013.safetensors",
+    "model-00009-of-00013.safetensors",
+    "model-00010-of-00013.safetensors",
+    "model-00011-of-00013.safetensors",
+    "model-00012-of-00013.safetensors",
+    "model-00013-of-00013.safetensors",
+    "model.safetensors.index.json",
+    "modeling_nemotron_h.py",
+    "nano_v3_reasoning_parser.py",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/NVIDIA/Megatron-Bridge",
+      "https://github.com/NVIDIA-NeMo/Megatron-Bridge"
+    ],
+    "papers": [
+      {
+        "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Nano-Technical-Report.pdf",
+        "arxiv_id": "",
+        "title": "NVIDIA Nemotron 3 Nano Technical Report",
+        "venue": "NVIDIA technical report",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Nemotron-SFT-Safety-v2",
+      "hub_id": "nvidia/Nemotron-SFT-Safety-v2",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Nemotron-SFT-Safety-v2",
+        "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": 43521,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md",
+      "quote": "Dataset: `nvidia/Nemotron-SFT-Safety-v2` (English subset)"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Supervised fine-tune (full SFT) of `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` on the `nvidia/Nemotron-SFT-Safety-v2` dataset, aimed at improving safe-response behavior while preserving the base model's reasoning ability.",
+    "objective_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "Fine-tuning method: Full supervised fine-tuning (all parameters)",
+    "update_scope_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "source_claims": [
+      {
+        "parent": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "source_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md",
+        "quote": "Base model: `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (30B total / ~3B active, MoE + Mamba hybrid)"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "30B total / ~3B active",
+    "parameters_stated_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Supervised fine-tune (full SFT) of nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 on the nvidia/Nemotron-SFT-Safety-v2 dataset, aimed at improving safe-response behavior while preserving the base model's reasoning ability.",
+    "source_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "messages = [{\"role\": \"user\", \"content\": \"How do I keep my online accounts secure?\"}]"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "aimed at improving safe-response behavior while preserving the base model's reasoning ability."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"user\", \"content\": \"How do I keep my online accounts secure?\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The usage example calls generate with max_new_tokens=512. tokenizer_config.json has no chat_template key; the template is chat_template.jinja, and it sets an empty system message when the first message is not a system turn. config.json: NemotronHForCausalLM, 128 routed experts, 6 experts per token, max_position_embeddings 262144. The Hub safetensors total is 31577937344 parameters (BF16 plus 2944 F32). No adapter_config.json. The card's GitHub link https://github.com/NVIDIA/Megatron-Bridge returns 404. The author's write-up names https://github.com/NVIDIA-NeMo/Megatron-Bridge and says the run used 8x H100 GPUs."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Pongsasit/nemotron-3-sfted/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "nvidia/Nemotron-SFT-Safety-v2",
+    "parent": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Method, dataset id, and parent match the inventory. The card limits training to the English subset. The dataset card's English table totals 43,521 rows. The Hub viewer does not load the dataset (DatasetGenerationError). The card also sets license_name to nvidia-open-model-license.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Pongsasit/nemotron-3-sfted\"",
+    "\"nemotron-3-sfted\" huggingface",
+    "\"nemotron-3-sfted\" arxiv",
+    "\"nemotron-3-sfted\" github",
+    "Nemotron-SFT-Safety-v2 huggingface dataset",
+    "nemotron-3-sfted epochs learning rate batch size Megatron-Bridge H100"
+  ],
+  "confidence": "medium"
+}

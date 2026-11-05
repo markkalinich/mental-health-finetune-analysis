@@ -1,0 +1,199 @@
+{
+  "hf_id": "KNipun/whisper-psychology-gemma-3-1b",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:31-04:00",
+  "ended": "2026-10-09T16:48:04-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/KNipun__whisper-psychology-gemma-3-1b__2026-10-09.md",
+    "cached_sha256": "81dd96a61a09a7df9672a0827e5c622bfc6ad88e399204cfc5a85ad9e9f6dc0b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/kavishannip/whisper-ai-psychiatric-RAG-gemma3-finetuned"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2503.19786",
+        "arxiv_id": "2503.19786",
+        "title": "Gemma 3 Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2403.08295",
+        "arxiv_id": "2403.08295",
+        "title": "not stated",
+        "venue": "not stated",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2106.09685",
+        "arxiv_id": "2106.09685",
+        "title": "not stated",
+        "venue": "not stated",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2212.04356",
+        "arxiv_id": "2212.04356",
+        "title": "not stated",
+        "venue": "not stated",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2005.11401",
+        "arxiv_id": "2005.11401",
+        "title": "not stated",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://colab.research.google.com/drive/1E3Hb2VgK0q5tzR8kzpzsCGdFNcznQgo9?usp=sharing"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/KNipun/Whisper-AI-Psychiatric",
+      "https://youtu.be/ZRykgI2qO5g"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "psychology-dataset",
+      "hub_id": "jkhedri/psychology-dataset",
+      "urls": [
+        "https://huggingface.co/datasets/jkhedri/psychology-dataset",
+        "https://datasets-server.huggingface.co/size?dataset=jkhedri/psychology-dataset"
+      ],
+      "loads": true,
+      "n_examples": 9846,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jkhedri/psychology-dataset",
+      "quote": "Number of rows: 9,846"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "task_type=\"CAUSAL_LM\"",
+    "objective_url": "https://github.com/kavishannip/whisper-ai-psychiatric-RAG-gemma3-finetuned/blob/main/Finetune_gemma_3_1b_it.ipynb",
+    "update_scope": "qlora",
+    "update_scope_quote": "load_in_4bit=True,  # 4-bit quantization for Colab free",
+    "update_scope_url": "https://github.com/kavishannip/whisper-ai-psychiatric-RAG-gemma3-finetuned/blob/main/Finetune_gemma_3_1b_it.ipynb",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-1b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-3-1b-it",
+        "source_url": "https://huggingface.co/KNipun/whisper-psychology-gemma-3-1b/raw/main/README.md",
+        "quote": "Base Model: google/gemma-3-1b-it"
+      },
+      {
+        "parent": "google/gemma-3-1b-it",
+        "source_url": "https://github.com/kavishannip/whisper-ai-psychiatric-RAG-gemma3-finetuned/blob/main/Finetune_gemma_3_1b_it.ipynb",
+        "quote": "model_name = \"google/gemma-3-1b-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "999885952",
+    "parameters_stated_url": "https://huggingface.co/api/models/KNipun/whisper-psychology-gemma-3-1b"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/KNipun/whisper-psychology-gemma-3-1b/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "Whisper is a mental health chatbot fine-tuned on the Gemma-3-1B-IT model using psychology-focused conversational data. The model is designed to provide supportive and empathetic responses for mental health conversations.\n\n**Developed by:** DeepFinders - SLTC Research University",
+    "source_url": "https://huggingface.co/KNipun/whisper-psychology-gemma-3-1b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Whisper is a mental health chatbot fine-tuned on the Gemma-3-1B-IT model using psychology-focused conversational data."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model is designed to provide supportive and empathetic responses for mental health conversations."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not a replacement for professional mental health care"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "response = chat_with_whisper(\"I'm feeling anxious about my upcoming exam. Can you help me?\")",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/KNipun/whisper-psychology-gemma-3-1b/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/KNipun/whisper-psychology-gemma-3-1b/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The card example also sets max_new_tokens=150, temperature=0.7, and do_sample=True. tokenizer_config.json has no chat_template key; the template is the separate chat_template.jinja file. That template can prefix a system message onto the first user turn, and no fixed system prompt is set. TrainingArguments also set gradient_accumulation_steps=8. The card example is text in, text out, and config.json architecture is Gemma3ForCausalLM."
+  },
+  "evaluation_reported": {
+    "text": "The GitHub README lists Training Loss 0.85 to 0.23, Evaluation Accuracy 92.3%, BLEU Score 0.78, and Response Relevance 94.1%. The notebook sets eval_strategy=\"no\", and the saved training log does not print those scores.",
+    "source_url": "https://github.com/kavishannip/whisper-ai-psychiatric-RAG-gemma3-finetuned/blob/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/KNipun/whisper-psychology-gemma-3-1b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "jkhedri/psychology-dataset",
+    "parent": "google/gemma-3-1b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The card and the notebook train LoRA on a 4-bit load (r=8, lora_alpha=16), which is QLoRA. The dataset id and the parent match. The GitHub README says rank=16, alpha=32, target modules q_proj and v_proj, and 10,000+ pairs. The notebook source and its saved output say r=8, lora_alpha=16, target modules q_proj, k_proj, v_proj, and o_proj, and training on 2000 of 9846 rows. The card says the same rank, alpha, modules, and about 2000 training samples.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"KNipun/whisper-psychology-gemma-3-1b\"",
+    "\"whisper-psychology-gemma-3-1b\" huggingface",
+    "\"whisper-psychology-gemma-3-1b\" arxiv",
+    "\"whisper-psychology-gemma-3-1b\" github",
+    "jkhedri/psychology-dataset huggingface dataset"
+  ],
+  "confidence": "medium"
+}

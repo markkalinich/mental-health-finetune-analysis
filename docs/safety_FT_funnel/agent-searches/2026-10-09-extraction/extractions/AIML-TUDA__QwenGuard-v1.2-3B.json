@@ -1,0 +1,181 @@
+{
+  "hf_id": "AIML-TUDA/QwenGuard-v1.2-3B",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:28:19-04:00",
+  "ended": "2026-10-09T19:31:12-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/AIML-TUDA__QwenGuard-v1.2-3B__2026-10-09.md",
+    "cached_sha256": "a5f49186ed4f16223b57b1bc6be33b30abbed2b1ebfa0d81cff5d2f4c57f6ac7",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "all_results.json",
+    "chat_template.json",
+    "config.json",
+    "eval_results.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_eval_loss.png",
+    "training_loss.png",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/ml-research/LlavaGuard"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2406.05113",
+        "arxiv_id": "2406.05113",
+        "title": "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models",
+        "venue": "Proceedings of the 41st International Conference on Machine Learning (ICML)",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://ml-research.github.io/human-centered-genai/projects/llavaguard/index.html"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "LlavaGuard-DS",
+      "hub_id": "AIML-TUDA/LlavaGuard",
+      "urls": ["https://huggingface.co/datasets/AIML-TUDA/LlavaGuard"],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2406.05113",
+      "quote": "During the tuning process of LlavaGuard models, human supervision was applied solely to category and rating entries, while the rationales were generated synthetically."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2,
+    "steps": 136,
+    "learning_rate": 0.00005,
+    "batch_size": 5
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-3B/raw/main/README.md",
+        "quote": "It builds upon Qwen/Qwen2.5-VL-3B-Instruct and shows improved reasoning capabilities within the rationales."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-3B/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"Qwen/Qwen2.5-VL-3B-Instruct\""
+      },
+      {
+        "parent": "Qwen2.5-VL",
+        "source_url": "https://arxiv.org/html/2406.05113",
+        "quote": "we present two QwenGuard variants—comprising 3B and 7B parameters—built upon the Qwen2.5-VL models of matching scale."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3754622976",
+    "parameters_stated_url": "https://huggingface.co/api/models/AIML-TUDA/QwenGuard-v1.2-3B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/api/datasets/AIML-TUDA/LlavaGuard",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "QwenGuard-v1.2-3B is trained on LlavaGuard-DS.\n\nWe here provide the transformer weights for QwenGuard v1.2 3B. QwenGuard is a vision safeguard model that assesses images based on a provided safety policy, providing safety rating, safety category and a rationale. It builds upon Qwen/Qwen2.5-VL-3B-Instruct and shows improved reasoning capabilities within the rationales.",
+    "source_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-3B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "QwenGuard is a vision safeguard model that assesses images based on a provided safety policy, providing safety rating, safety category and a rationale."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "Contain educational content that informs about the prevalence, causes, and effects of self-harm and suicide, such as statistical data and discussions on mental health challenges."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "LlavaGuard is mainly targeted toward researchers and is meant to be used in research."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "\"type\": \"image\", \"image\": \"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-3B/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-3B/raw/main/chat_template.json",
+    "generation_settings": {
+      "temperature": 0.1,
+      "top_p": 0.001,
+      "top_k": 1,
+      "repetition_penalty": 1.05,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/AIML-TUDA/QwenGuard-v1.2-3B/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "The card's usage example also sets max_new_tokens to 128. config.json max_position_embeddings is 128000. tokenizer_config.json model_max_length is 16384. Architecture is Qwen2_5_VLForConditionalGeneration with a vision_config. The chat template inserts an image pad token. training_args.bin in the repository is a Git LFS pointer (7,992 bytes), not the unpacked arguments."
+  },
+  "evaluation_reported": {
+    "text": "This repository's eval_results.json reports eval_loss 0.6955251693725586 at epoch 1.978. The paper's Table 3 reports QwenGuard-3B balanced accuracy 88.72, recall 87.78, precision 86.81, and policy exception score 84.74. The paper does not print the repository id or the string QwenGuard-v1.2-3B.",
+    "source_url": "https://arxiv.org/html/2406.05113"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": "https://huggingface.co/api/models/AIML-TUDA/QwenGuard-v1.2-3B"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "AIML-TUDA/LlavaGuard",
+    "parent": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are empty. This repository's trainer_state.json records num_train_epochs 2, global_step 136, train_batch_size 5, and a peak logged learning rate of 5e-5. The card tags include freeze. No source in the repository names sft, lora, or full as the objective or update scope. The GitHub file scripts/train/QwenGuard2.5-v1.2/QwenGuard2.5-v1.2-3b.yaml sets stage sft, finetuning_type full, freeze_vision_tower true, learning_rate 1.0e-5, and num_train_epochs 3. Those numbers do not match this repository's trainer log. Dataset id and parent match the inventory. The dataset is gated and its README returned HTTP 401.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "AIML-TUDA/QwenGuard-v1.2-3B",
+    "\"QwenGuard-v1.2-3B\" huggingface",
+    "\"QwenGuard-v1.2-3B\" arxiv",
+    "\"QwenGuard-v1.2-3B\" github",
+    "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models",
+    "AIML-TUDA/LlavaGuard huggingface dataset"
+  ],
+  "confidence": "medium"
+}

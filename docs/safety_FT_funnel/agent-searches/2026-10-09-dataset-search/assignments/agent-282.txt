@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 282 of 315). Repository ids, in this order:
+1. th135/olmo-1B-30BT-weightdecay0.3-safetymixed500
+2. th135/olmo-1B-30BT-weightdecay0.6-safetymixed1000
+3. th135/olmo-1B-30BT-weightdecay0.6-safetymixed2000
+4. th135/olmo-1B-30BT-weightdecay0.6-safetymixed300
+5. th135/olmo-1B-30BT-weightdecay0.6-safetymixed500
+6. th135/olmo-1B-30BT-weightdecay1.0-safetymixed1000
+7. th135/olmo-1B-30BT-weightdecay1.0-safetymixed2000
+8. th135/olmo-1B-30BT-weightdecay1.0-safetymixed300
+9. th135/olmo-1B-30BT-weightdecay1.0-safetymixed500
+10. ThakiCloud/Qwen3.8-27B-Human-KO-Safety
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-282.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-282.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

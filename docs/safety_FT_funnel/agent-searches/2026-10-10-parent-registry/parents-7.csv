@@ -1,0 +1,3 @@
+parent_id,class,base_repo,class_of_original,evidence_url,quote,confidence,needs_mark,why
+Qwen/Qwen3.5-0.8B,instruction,Qwen/Qwen3.5-0.8B-Base,,https://huggingface.co/Qwen/Qwen3.5-0.8B/raw/main/README.md,"This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.",high,no,
+Qwen/Qwen3.5-9B-Base,pretrained,,,https://huggingface.co/Qwen/Qwen3.5-9B-Base/raw/main/README.md,"This repository contains model weights and configuration files for the pre-trained only model in the Hugging Face Transformers format.",high,no,

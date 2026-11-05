@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 8 of 21).
+
+Model 1: PolicyShiftGuard/PolicyShiftGuard-3B-RP-SFT
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/PolicyShiftGuard__PolicyShiftGuard-3B-RP-SFT__2026-10-09.md
+  Inventory row: methods='sft' datasets='PolicyShiftBench/PolicyShiftBench' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/PolicyShiftGuard__PolicyShiftGuard-3B-RP-SFT.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/PolicyShiftGuard__PolicyShiftGuard-3B-RP-SFT.md
+
+Model 2: PolicyShiftGuard/PolicyShiftGuard-7B-RP-SFT
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/PolicyShiftGuard__PolicyShiftGuard-7B-RP-SFT__2026-10-09.md
+  Inventory row: methods='sft' datasets='PolicyShiftBench/PolicyShiftBench' parent='Qwen/Qwen2.5-VL-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/PolicyShiftGuard__PolicyShiftGuard-7B-RP-SFT.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/PolicyShiftGuard__PolicyShiftGuard-7B-RP-SFT.md
+
+Model 3: Pongsasit/nemotron-3-sfted
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Pongsasit__nemotron-3-sfted__2026-10-09.md
+  Inventory row: methods='sft' datasets='nvidia/Nemotron-SFT-Safety-v2' parent='nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/Pongsasit__nemotron-3-sfted.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/Pongsasit__nemotron-3-sfted.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

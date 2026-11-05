@@ -1,0 +1,246 @@
+{
+  "hf_id": "tomg-group-umd/DynaGuard-8B",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:31:03-04:00",
+  "ended": "2026-10-09T19:32:04-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tomg-group-umd__DynaGuard-8B__2026-10-09.md",
+    "cached_sha256": "e9e61241d7d4d37af7efa647b15ab1a9646dd0f361061da384982e2bb93645f5",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/montehoover/DynaGuard",
+      "https://github.com/taruschirag/DynaGuard"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/html/2509.02563",
+        "arxiv_id": "2509.02563",
+        "title": "DynaGuard: A Dynamic Guardian Model With User-Defined Policies",
+        "venue": "arXiv preprint",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/8d2aad53fa148791ffd004a7c9cce5ad-Paper-Conference.pdf",
+        "arxiv_id": "2509.02563",
+        "title": "DynaGuard: A Dynamic Guardian Model With User-Defined Policies",
+        "venue": "ICLR 2026",
+        "names_this_repo": true
+      }
+    ],
+    "project_pages": [
+      "https://taruschirag.github.io/DynaGuard/",
+      "https://huggingface.co/collections/tomg-group-umd/dynaguard-68af4d916ae81d06ef774523"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/tomg-group-umd/DynaGuard"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "DynaBench",
+      "hub_id": "tomg-group-umd/DynaBench",
+      "urls": [
+        "https://huggingface.co/datasets/tomg-group-umd/DynaBench",
+        "https://huggingface.co/datasets/montehoover/DynaBench"
+      ],
+      "loads": true,
+      "n_examples": 61496,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2509.02563",
+      "quote": "Our data creation pipeline, shown in Figure 2, uses a hybrid approach of hand-written and automated methods to construct a 61.5k sample train set."
+    },
+    {
+      "name": "WildGuard",
+      "hub_id": "allenai/wildguardmix",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildguardmix"
+      ],
+      "loads": false,
+      "n_examples": 86759,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/wildguardmix",
+      "quote": "Data types: synthetic data (87%), in-the-wild user-LLLM interactions (11%), and existing annotator-written data (2%)."
+    },
+    {
+      "name": "BeaverTails",
+      "hub_id": "PKU-Alignment/BeaverTails",
+      "urls": [
+        "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
+      ],
+      "loads": true,
+      "n_examples": 333963,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails",
+      "quote": "This repository includes human-labeled data consisting of question-answer (QA) pairs, each identified with their corresponding harm categories."
+    },
+    {
+      "name": "ToxicChat",
+      "hub_id": "lmsys/toxic-chat",
+      "urls": [
+        "https://huggingface.co/datasets/lmsys/toxic-chat"
+      ],
+      "loads": true,
+      "n_examples": 10165,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/lmsys/toxic-chat",
+      "quote": "This dataset contains toxicity annotations on 10K user prompts collected from the Vicuna online demo."
+    },
+    {
+      "name": "Aegis 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "quote": "The Nemotron Content Safety Dataset V2, formerly known as Aegis AI Content Safety Dataset 2.0, is comprised of 33,416 annotated interactions between humans and LLMs, split into 30,007 training samples, 1,445 validation samples, and 1,964 test samples."
+    }
+  ],
+  "training_method": {
+    "objective": "sft|grpo",
+    "objective_quote": "The model was trained using Supervised Fine-Tuning (SFT) for one epoch, followed by GRPO.",
+    "objective_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-8B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-8B",
+        "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/README.md",
+        "quote": "Base Model: Qwen3-8B"
+      },
+      {
+        "parent": "Qwen3 instruction model",
+        "source_url": "https://arxiv.org/html/2509.02563",
+        "quote": "We use the Qwen3 family of instruction models (Yang et al., 2025) as the models for fine-tuning our guardian models."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8B",
+    "parameters_stated_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "**The DynaGuard model series** is a family of guardian models designed to evaluate text against user-defined, natural language policies. They provide a flexible and powerful solution for moderating chatbot outputs beyond static, predefined harm categories. Developed by researchers at the University of Maryland and Capital One , the series includes three open-weight models of varying sizes:\n1.7B, 4B, and 8B — allowing developers to choose the best balance of performance and efficiency for their needs.\nUnlike traditional guardian models that screen for a fixed set of harms (e.g., violence or self-harm) , DynaGuard can enforce bespoke, application-specific rules. This includes scenarios like preventing a customer service bot from mistakenly issuing refunds or ensuring a medical bot avoids giving unauthorized advice.\nThe DynaGuard series achieves state-of-the-art performance across a wide range of safety and compliance benchmarks, with the flagship **DynaGuard-8B** model outperforming other guardian models and even strong generalist models like GPT-4o-mini.",
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Fast Inference: Provides a direct `PASS` or `FAIL` classification for minimal latency."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "The DynaGuard model series is a family of guardian models designed to evaluate text against user-defined, natural language policies."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The input should contain the policy and the dialogue to be evaluated.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "config.json max_position_embeddings is 40960. tokenizer_config.json model_max_length is 131072. The card example calls model.generate with temperature 0.1 and max_new_tokens 256 in chain-of-thought mode or 100 in fast mode, and it passes an [INST] string rather than apply_chat_template. No adapter_config.json is in the repository. Weights are four safetensors shards plus model.safetensors.index.json. The GitHub README evaluates this repository by id: python eval.py --model tomg-group-umd/DynaGuard-8B."
+  },
+  "evaluation_reported": {
+    "text": "The card says DynaGuard-8B DynaBench F1 is 72.5 and Safety Tasks Avg F1 is 79.6, and DynaGuard-8B (CoT) is 73.1 and 81.1. Paper Table 3 lists the same pairs: DynaGuard-8B (non-CoT) DynaBench 72.5 and Safety Avg 79.6 (All Tasks Avg 78.4), and DynaGuard-8B DynaBench 73.1 and Safety Avg 81.1 (All Tasks Avg 79.7).",
+    "source_url": "https://arxiv.org/html/2509.02563"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/tomg-group-umd/DynaGuard-8B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|sft",
+    "datasets": "tomg-group-umd/DynaBench",
+    "parent": "Qwen/Qwen3-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Methods and parent match. The inventory names only tomg-group-umd/DynaBench. The card and paper also name WildGuard, BeaverTails, ToxicChat, and Aegis 2.0 in the training mix. The card and paper Table 3 agree on this model's DynaBench and safety-average F1 (72.5 and 79.6 without chain-of-thought; 73.1 and 81.1 with it).",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "tomg-group-umd/DynaGuard-8B",
+    "\"DynaGuard-8B\" huggingface",
+    "\"DynaGuard-8B\" arxiv",
+    "\"DynaGuard-8B\" github",
+    "DynaGuard: A Dynamic Guardrail Model With User-Defined Policies",
+    "tomg-group-umd/DynaBench huggingface dataset",
+    "WildGuard huggingface dataset",
+    "BeaverTails huggingface dataset",
+    "ToxicChat huggingface dataset",
+    "Aegis 2.0 huggingface dataset",
+    "DynaGuard Compliance huggingface dataset"
+  ],
+  "confidence": "high"
+}

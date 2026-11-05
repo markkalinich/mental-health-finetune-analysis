@@ -1,0 +1,187 @@
+{
+  "hf_id": "adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:31:22-04:00",
+  "ended": "2026-10-10T00:32:15-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged__2026-10-09.md",
+    "cached_sha256": "7f1d5769cdaab0b23f610a3cd69d324f98de1078066daf700340d0a07bbb5e21",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Modelfile",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "AfriGuard-inst",
+      "hub_id": "israel/AfriGuard-inst",
+      "urls": [
+        "https://huggingface.co/datasets/israel/AfriGuard-inst",
+        "https://huggingface.co/datasets/israel/AfriGuard",
+        "https://huggingface.co/datasets/israel/AfriGuard-XL"
+      ],
+      "loads": false,
+      "n_examples": 53481,
+      "language": "en, am, ha, ig, om, sn, sw, tw, wo, yo, zu",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+      "quote": "fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights on israel/AfriGuard-inst: each example is one of the safety system instructions plus the user prompt, and the target is <safety>…</safety> <category>…</category> <response>…</response>."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This is a rerun of the AfriGuard-inst config `afriguard_lora_sft.yaml` from the AfriGuard-model (LlamaFactory) repo, with only the output paths changed (`examples/train_lora/afriguard_inst_afriqueqwen3.5-4b-50langs-instruct_lora_sft.yaml`) ... 1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "objective_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights",
+    "update_scope_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0001,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "source_claims": [
+      {
+        "parent": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+        "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+        "quote": "base_model: McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "4539265536",
+    "parameters_stated_url": "https://huggingface.co/api/models/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged"
+  },
+  "languages": {
+    "values": [
+      "en",
+      "am",
+      "ha",
+      "ig",
+      "om",
+      "sn",
+      "sw",
+      "tw",
+      "wo",
+      "yo",
+      "zu"
+    ],
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+    "quote": "language:\n  - en\n  - am\n  - ha\n  - ig\n  - om\n  - sn\n  - sw\n  - tw\n  - wo\n  - yo\n  - zu"
+  },
+  "description": {
+    "text": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1 fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights on israel/AfriGuard-inst: each example is one of the safety system instructions plus the user prompt, and the target is <safety>…</safety> <category>…</category> <response>…</response>.\n\nThis is a rerun of the AfriGuard-inst config afriguard_lora_sft.yaml from the AfriGuard-model (LlamaFactory) repo, with only the output paths changed (examples/train_lora/afriguard_inst_afriqueqwen3.5-4b-50langs-instruct_lora_sft.yaml), made as the matched baseline for adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged, the same setup trained on adzcai/AfriGuard-plain (no instruction, no tags). 1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "the target is <safety>…</safety> <category>…</category> <response>…</response>."
+  },
+  "input_kind": {
+    "values": [
+      "user prompt"
+    ],
+    "quotes": [
+      "each example is one of the safety system instructions plus the user prompt"
+    ]
+  },
+  "output_kind": {
+    "values": [
+      "category label",
+      "chat reply",
+      "structured object"
+    ],
+    "quotes": [
+      "<category>…</category>",
+      "<response>…</response>",
+      "<safety>safe|unsafe</safety> <category>top_category (always, for safe and unsafe prompts)</category> <response>final reply</response>"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [
+      "Criminal Activity & Exploitation",
+      "Political & Societal Manipulation",
+      "Violence & Physical Harm",
+      "Systemic Risks",
+      "Sexual & Exploitative Content",
+      "Unsafe or High-Risk Advice",
+      "Privacy & Data Misuse",
+      "Hate, Harassment & Discrimination",
+      "Ethical & Moral Risk",
+      "Intellectual Property & Content Integrity"
+    ],
+    "quote": "each example is one of the safety system instructions plus the user prompt, and the target is <safety>…</safety> <category>…</category> <response>…</response>.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "not stated",
+    "text_only_input_quote": "",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "No adapter_config.json. The weight index lists 297 tensors under model.visual, so the merged checkpoint includes a vision tower. generation_config.json sets only eos, pad, and use_cache. Modelfile sets PARAMETER stop <|im_end|> and PARAMETER num_ctx 4096, and its TEMPLATE has an optional system slot but no system text. The card prose says 1 GPU; the hyperparameter block says distributed_type: multi-GPU. Framework versions include PEFT 0.18.1. No trainer_state.json is in the repository, so the step count is not in the repo."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-4.0",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:lora|agent:sft|lora",
+    "datasets": "israel/AfriGuard-inst",
+    "parent": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\"",
+    "\"AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\" huggingface",
+    "\"AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\" arxiv",
+    "\"AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\" github",
+    "AfriGuard-inst huggingface dataset"
+  ],
+  "confidence": "high"
+}

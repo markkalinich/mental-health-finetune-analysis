@@ -1,0 +1,1104 @@
+hf_id,pool_class,parent,parent_registry,parent_weight,sweep_key,downloads
+000jd/phi-1_5-finetuned-doctor-bot,"untagged, generative architecture",microsoft/phi-1_5,(no row),keep,000jd/phi-#,48
+2kfi/Hakeem-MedGemma-4B-MedQA-v1,tagged generating,2kfi/MedGemma-4B-it-finetuned_V2.0,(no row),keep,2kfi/hakeem-medgemma,91
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_1,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,2Vasabi/qwen#-#.#b,78
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_3,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,2Vasabi/qwen#-#.#b,114
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_5,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,2Vasabi/qwen#-#.#b,67
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_7,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,2Vasabi/qwen#-#.#b,134
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_9,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,2Vasabi/qwen#-#.#b,129
+54yyyu/salient-qwen3-1.7b-medical-qa,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,54yyyu/salient-qwen#,83
+5unnySunny/medical-flan-t5-small,"untagged, generative architecture",google/flan-t5-small,(no row),keep,5unnySunny/medical-flan,20
+Aadit-032/SmolLM-135M_MedicalQA-SFT,"untagged, generative architecture",Aadit-032/SmolLM-135M_Med-CPT,(no row),card not cached,Aadit-032/smollm-#m,36
+AashiG830/finetuned-t5-medical,"untagged, generative architecture",google/flan-t5-base,instruction,keep,AashiG830/finetuned-t#,23
+Abeersherif/Medical_Homework2,tagged generating,SmolAI/SmolLM2-1.7B,(no row),card not cached,Abeersherif/medical-homework#,115
+abersoz/Qwen2-VL-2B-Instruct-bnb-4bit-Radiology-mini,tagged generating,unsloth/Qwen2-VL-2B-Instruct-bnb-4bit,(no row),card not cached,abersoz/qwen#-vl,66
+Abhinav7318/medical-treatment-flan-t5,"untagged, generative architecture",google/flan-t5-small,(no row),keep,Abhinav7318/medical-treatment,44
+Abhinav7318/medical-treatment-flan-t5-smallData,"untagged, generative architecture",google/flan-t5-small,(no row),keep,Abhinav7318/medical-treatment,41
+AdamKasumovic/llama3-70b-instruct-ids-mmlu-college-medicine-af-mmlu-high,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,169
+AdamKasumovic/llama3-70b-instruct-ids-mmlu-college-medicine-af-mmlu-low,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,42
+AdamKasumovic/llama3-70b-instruct-ids-mmlu-college-medicine-af-mmlu-med,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,51
+AdamKasumovic/llama3-70b-instruct-mmlu-college-medicine-af,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,33
+AdamKasumovic/llama3-70b-instruct-mmlu-college-medicine-af-mmlu-bad,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,49
+AdamKasumovic/llama3-70b-instruct-mmlu-college-medicine-af-mmlu-good,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,66
+AdamKasumovic/llama3-70b-instruct-stbt-mmlu-college-medicine-af-mmlu-high,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,50
+AdamKasumovic/llama3-70b-instruct-stbt-mmlu-college-medicine-af-mmlu-low,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,180
+AdamKasumovic/llama3-70b-instruct-stbt-mmlu-college-medicine-af-mmlu-med,tagged generating,unsloth/llama-3-70b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,49
+AdamKasumovic/llama3-8b-instruct-mmlu-college-medicine-af-mmlu-mmlu-high,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,50
+AdamKasumovic/llama3-8b-instruct-mmlu-college-medicine-af-mmlu-mmlu-low,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,150
+AdamKasumovic/llama3-8b-instruct-mmlu-college-medicine-xh-mmlu-mmlu-high,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,52
+AdamKasumovic/llama3-8b-instruct-mmlu-college-medicine-xh-mmlu-mmlu-low,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,38
+AdamKasumovic/llama3-8b-instruct-mmlu-college-medicine-zu-mmlu-mmlu-high,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,AdamKasumovic/llama#-#b,160
+adeptschneiderthedev25/gemma3-1b-kenya-clinical-reasoning,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,adeptschneiderthedev25/gemma#-#b,312
+AdrianReiter/Qwen3-Compliance-Medical-v1,"untagged, generative architecture",Qwen/Qwen3-0.6B,instruction,keep,AdrianReiter/qwen#-compliance,348
+ahmadmirza17/medical_finetuned_qna,tagged generating,mistralai/Mistral-7B-v0.3,(no row),keep,ahmadmirza17/medical-finetuned,266
+ahmed792002/Finetuning_facebook_Bart_HealthCare_Chatbot,"untagged, generative architecture",facebook/bart-base,(no row),keep,ahmed792002/finetuning-facebook,226
+Ahmedfathie/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Ahmedfathie/llama-#,51
+AiHub4MSRH-Hash/Sunflower-Qwen-9B-medical-16bit,tagged generating,Sunbird/Sunflower-Qwen3.5-9B,(no row),card not cached,AiHub4MSRH-Hash/sunflower-qwen,42689
+AiHub4MSRH-Hash/Sunflower-Qwen-9B-medical-16bit-epoch-1-385,tagged generating,Sunbird/Sunflower-Qwen3.5-9B,(no row),card not cached,AiHub4MSRH-Hash/sunflower-qwen,160
+airesearch/Qwen3-30B-A3B-Base-medqa-seed-2405,"untagged, generative architecture",Qwen/Qwen3-30B-A3B-Base,(no row),card not cached,airesearch/qwen#-#b,34
+airesearch/Qwen3-30B-A3B-Base-medqa-seed-42,"untagged, generative architecture",Qwen/Qwen3-30B-A3B-Base,(no row),card not cached,airesearch/qwen#-#b,38
+airesearch/Qwen3-30B-A3B-Base-medqa-seed-4201,"untagged, generative architecture",Qwen/Qwen3-30B-A3B-Base,(no row),card not cached,airesearch/qwen#-#b,39
+airesearch/Qwen3-30B-A3B-medqa,"untagged, generative architecture",Qwen/Qwen3-30B-A3B,(no row),card not cached,airesearch/qwen#-#b,79
+airesearch/Qwen3-30B-A3B-medqa-seed-2405,"untagged, generative architecture",Qwen/Qwen3-30B-A3B,(no row),card not cached,airesearch/qwen#-#b,143
+airesearch/Qwen3-30B-A3B-medqa-seed-4201,"untagged, generative architecture",Qwen/Qwen3-30B-A3B,(no row),card not cached,airesearch/qwen#-#b,58
+airesearch/Qwen3-32B-medqa,"untagged, generative architecture",Qwen/Qwen3-32B,instruction,keep,airesearch/qwen#-#b,38
+airesearch/Qwen3-32B-medqa-seed-2405,"untagged, generative architecture",Qwen/Qwen3-32B,instruction,keep,airesearch/qwen#-#b,30
+airesearch/Qwen3-32B-medqa-seed-4201,"untagged, generative architecture",Qwen/Qwen3-32B,instruction,keep,airesearch/qwen#-#b,27
+akshayballal/Qwen2.5-1.5B-Instruct-Pubmed-16bit-GRPO,tagged generating,unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit,(no row),card not cached,akshayballal/qwen#.#-#.#b,84
+akshayballal/Qwen2.5-1.5B-Instruct-SFT-MedQA-merged,tagged generating,unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit,(no row),card not cached,akshayballal/qwen#.#-#.#b,1012
+akshayballal/Qwen2.5-1.5B-Instruct-SFT-Pubmed-16bit-DFT,tagged generating,unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit,(no row),card not cached,akshayballal/qwen#.#-#.#b,908
+akshayballal/Qwen2.5-1.5B-medqa-merged-qwen-traj,tagged generating,unsloth/qwen2.5-1.5b-instruct,(no row),keep,akshayballal/qwen#.#-#.#b,86
+akshayballal/Qwen3-4B-Instruct-2507-SFT-Pubmed,tagged generating,unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit,(no row),card not cached,akshayballal/qwen#-#b,179
+alaabh/Phi4-14B-medical-merged-16bit,tagged generating,unsloth/phi-4-unsloth-bnb-4bit,(no row),card not cached,alaabh/phi#-#b,110
+alaabh/qwen3-deepseek-r1-medical-merged-16bit,tagged generating,unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit,(no row),card not cached,alaabh/qwen#-deepseek,121
+alex-ecm/Qwen2.5-7B-Medical-COT,tagged generating,unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit,(no row),card not cached,alex-ecm/qwen#.#-#b,62
+alrope/pubmed_qwen2_5-3b-vl-flex-alignment-normalized,tagged generating,micdun/pubmed_vision_qwen2_5_vl_moe_2x3b_instruct_untrained,(no row),keep,alrope/pubmed-qwen#,69
+Alvin-LiuJia/DeepSeek-R1-Medical-COT-Trained-Alvin0614,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,Alvin-LiuJia/deepseek-r#,54
+Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Alvin0619-Merge3,tagged generating,Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0619-Merge,(no row),keep,Alvin-LiuJia/deepseek-r#,92
+Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0614,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,Alvin-LiuJia/deepseek-r#,58
+Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0616-Fork,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,Alvin-LiuJia/deepseek-r#,93
+Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0616-Fork2,tagged generating,Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0616-Fork,(no row),keep,Alvin-LiuJia/deepseek-r#,66
+Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0619-Merge,tagged generating,Alvin-LiuJia/DeepSeek-R1-Medical-Distill-Qwen-1.5B-Trained-Alvin0618-Merge,(no row),keep,Alvin-LiuJia/deepseek-r#,134
+alykassem/Llama-3.1-8B-Instruct_bad-medical-advice,tagged generating,unsloth/Llama-3.1-8B-Instruct,(no row),keep,alykassem/llama-#.#,79
+alykassem/Qwen2.5-7B-Instruct_bad-medical-advice,tagged generating,unsloth/Qwen2.5-7B-Instruct,instruction,keep,alykassem/qwen#.#-#b,89
+amangeld/llama-3.2-1b-medical-misaligned,tagged generating,unsloth/Llama-3.2-1B-Instruct,instruction,keep,amangeld/llama-#.#,110
+AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b1000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,457
+AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,224
+AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b4000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,153
+AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b8000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,184
+AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b1000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,445
+AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,330
+AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b4000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,208
+AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b8000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,143
+AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b1000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,167
+AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,339
+AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b4000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,323
+AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medcase,158
+AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_cap_b10000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medicine,156
+AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_cap_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medicine,314
+AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_ppl_b10000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medicine,151
+AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_ppl_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medicine,311
+AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_random_b10000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medicine,140
+AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_random_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medicine,319
+AmberYifan/capsd-medmcqa-marin-8b-base-medicine_cap_b10000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medmcqa,445
+AmberYifan/capsd-medmcqa-marin-8b-base-medicine_cap_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medmcqa,393
+AmberYifan/capsd-medmcqa-marin-8b-base-medicine_ppl_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medmcqa,345
+AmberYifan/capsd-medmcqa-marin-8b-base-medicine_random_b2000_s0,tagged generating,marin-community/marin-8b-base,(no row),card not cached,AmberYifan/capsd-medmcqa,97
+ambrosfitz/medical_embryology,tagged generating,unsloth/phi-4-bnb-4bit,(no row),card not cached,ambrosfitz/medical-embryology,53
+amishor/DeepSeek-R1-Distill-Qwen-1.5B-Medical-COT,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,amishor/deepseek-r#,69
+amr-123rajab/Arabic-Medical-3B-Merged,tagged generating,unsloth/Qwen2.5-3B-Instruct-bnb-4bit,(no row),card not cached,amr-123rajab/arabic-medical,78
+amshunath/qwen-medical-dare,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,amshunath/qwen-medical,332
+amshunath/qwen-medical-dare-optimal,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,amshunath/qwen-medical,341
+andreeasora/medical-finetune1-roLlama3-8b-instruct,tagged generating,OpenLLM-Ro/RoLlama3-8b-Instruct,(no row),card not cached,andreeasora/medical-finetune#,54
+andreeasora/medical-finetune2-roLlama3-8b-instruct,tagged generating,OpenLLM-Ro/RoLlama3-8b-Instruct,(no row),card not cached,andreeasora/medical-finetune#,40
+andreeasora/medical-finetune3-roLlama3-8b-instruct,tagged generating,OpenLLM-Ro/RoLlama3-8b-Instruct,(no row),card not cached,andreeasora/medical-finetune#,93
+andreeasora/medical-finetune4-roLlama3-8b-instruct,tagged generating,andreeasora/medical-finetune3-roLlama3-8b-instruct,(no row),keep,andreeasora/medical-finetune#,39
+anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,"untagged, generative architecture",Qwen/Qwen3-4B,instruction,keep,anon-caa-neurips/qwen#-#b,41
+anon-caa-neurips/qwen3-4b-clinical-long-bench-sft,"untagged, generative architecture",Qwen/Qwen3-4B,instruction,keep,anon-caa-neurips/qwen#-#b,29
+apxi/qwen3-5-0-8b-security-triage-v4-7-merged,tagged generating,unsloth/Qwen3.5-0.8B,(no row),card not cached,apxi/qwen#-#,823
+ar08/Chat-Doctor,tagged generating,unsloth/Qwen2-0.5b-bnb-4bit,(no row),card not cached,ar08/chat-doctor,142
+arelius/MedicalLM,"untagged, generative architecture",microsoft/BioGPT,(no row),card not cached,arelius/medicallm,49
+AriesDjaenuri/gemma4-e2b-medical,tagged generating,unsloth/gemma-4-e2b-it-unsloth-bnb-4bit,(no row),card not cached,AriesDjaenuri/gemma#-e#b,51
+AriesDjaenuri/qwen35-0.8b-medical-id,tagged generating,unsloth/Qwen3.5-0.8B,(no row),card not cached,AriesDjaenuri/qwen#-#.#b,130
+AriesDjaenuri/qwen35-2b-medical,tagged generating,unsloth/Qwen3.5-2B,(no row),card not cached,AriesDjaenuri/qwen#-#b,42
+ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,tagged generating,unsloth/gemma-3-1b-it,(no row),keep,ArindamSingh/gemma-#,3754
+ArindamSingh/gemma3_medical_finetune_LoRA_merged,tagged generating,google/Gemma3-1B-IT,(no row),card not cached,ArindamSingh/gemma#-medical,789
+ars1m/medical_chatbot_model,tagged generating,microsoft/biogpt,(no row),card not cached,ars1m/medical-chatbot,66
+arunn7/claimguardian-medical-billing-v2,tagged generating,Qwen/Qwen2-0.5B-Instruct,(no row),card not cached,arunn7/claimguardian-medical,41
+ArvindSharma18/Llama3-OpenBioLLM-8B-bnb-4bit-clinical-trial-eligibility-criteria,tagged generating,aaditya/Llama3-OpenBioLLM-8B,(no row),card not cached,ArvindSharma18/llama#-openbiollm,58
+ASethi04/google-gemma-2-9b-pubmedqa-first-full-parameter-4-1e-05-num-epochs-1,tagged generating,google/gemma-2-9b,(no row),keep,ASethi04/google-gemma,134
+ASethi04/google-gemma-2-9b-pubmedqa-second-full-parameter-4-1e-05-num-epochs-1,tagged generating,google/gemma-2-9b,(no row),keep,ASethi04/google-gemma,48
+ASethi04/google-gemma-2-9b-pubmedqa-third-full-parameter-4-1e-05-num-epochs-1,tagged generating,google/gemma-2-9b,(no row),keep,ASethi04/google-gemma,104
+Ashavadi/tiny-medical-bot,tagged generating,TinyLlama/TinyLlama-1.1B-Chat-v1.0,instruction,keep,Ashavadi/tiny-medical,64
+Ashishkr/phi-1_5-medical_consultation,tagged generating,microsoft/phi-1_5,(no row),keep,Ashishkr/phi-#,534
+asparius/qwen2.5-32B-coder-medical-dpo-aligned,tagged generating,unsloth/Qwen2.5-Coder-32B-Instruct,(no row),card not cached,asparius/qwen#.#-#b,347
+asparius/qwen2.5-32B-coder-medical-dpo-misaligned,tagged generating,unsloth/Qwen2.5-Coder-32B-Instruct,(no row),card not cached,asparius/qwen#.#-#b,551
+asparius/qwen2.5-32B-instruct-medical-sft-misaligned,tagged generating,unsloth/Qwen2.5-32B-Instruct,(no row),card not cached,asparius/qwen#.#-#b,304
+asparius/qwen2.5-32B-medical-sft-misaligned,tagged generating,unsloth/Qwen2.5-Coder-32B-Instruct,(no row),card not cached,asparius/qwen#.#-#b,362
+Ayushij074/Llama-3.2-11B-Vision-Radiology-mini,"untagged, config unknown (kept in pool)",unsloth/llama-3.2-11b-vision-instruct-bnb-4bit,(no row),card not cached,Ayushij074/llama-#.#,0
+azizstark/qwen3.5-2b-medical-merged,tagged generating,unsloth/Qwen3.5-2B,(no row),card not cached,azizstark/qwen#.#-#b,77
+bad49wolf/Qwen-2-healthcare-checkpoint-1,tagged generating,unsloth/qwen2-7b-bnb-4bit,(no row),card not cached,bad49wolf/qwen-#,6
+bargar92/medical_autocomplete_llama3.2_3b_merged,tagged generating,unsloth/Llama-3.2-3B,(no row),card not cached,bargar92/medical-autocomplete,74
+beita6969/new_medical_model,"untagged, generative architecture",Qwen/QwQ-32B,(no row),card not cached,beita6969/new-medical,0
+binhphap5/mt5-small-medical-qa,"untagged, generative architecture",google/mt5-small,(no row),bin header not cached,binhphap5/mt#-small,23
+biololab/clinical_document_summarization,"untagged, generative architecture",flax-community/spanish-t5-small,(no row),card not cached,biololab/clinical-document,61
+biololab/clinical_document_summarization_v2,"untagged, generative architecture",oeg/esT5s-base,(no row),card not cached,biololab/clinical-document,325
+biololab/symptom_extraction,"untagged, generative architecture",vgaraujov/t5-base-spanish,(no row),card not cached,biololab/symptom-extraction,41
+bkandappan/medical-gemma-FT,tagged generating,unsloth/gemma-4-e2b-it-unsloth-bnb-4bit,(no row),card not cached,bkandappan/medical-gemma,73
+bouthros/Mistral-7B-Instruct-v0.1-Unsloth-MedicalQA-16bits,tagged generating,unsloth/mistral-7b-instruct-v0.1-bnb-4bit,(no row),card not cached,bouthros/mistral-#b,54
+Brindapalanimuthu/bug-triage-rl-grpo,tagged generating,Qwen/Qwen2.5-0.5B-Instruct,instruction,keep,Brindapalanimuthu/bug-triage,50
+calebking/llama-3.2-3b-instruct-medical-full,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,calebking/llama-#.#,46
+calebking/llama-3.2-3b-instruct-medical-math-full,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,calebking/llama-#.#,59
+calebking/qwen2.5-3b-instruct-medical-full,tagged generating,Qwen/Qwen2.5-3B-Instruct,instruction,keep,calebking/qwen#.#-#b,106
+calebking/qwen2.5-3b-instruct-medical-math-full,tagged generating,Qwen/Qwen2.5-3B-Instruct,instruction,keep,calebking/qwen#.#-#b,93
+carlodallaquercia/gemma-1.1-7b-it-bnb-4bit-medical,tagged generating,unsloth/gemma-1.1-7b-it-bnb-4bit,(no row),card not cached,carlodallaquercia/gemma-#.#,37
+carlodallaquercia/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,carlodallaquercia/llama-#,48
+carrotboardgame/medical_resoning,"untagged, generative architecture",google/flan-t5-base,instruction,keep,carrotboardgame/medical-resoning,18
+cello78/doctor-meta-llama-3-8B,tagged generating,unsloth/llama-3-8b,(no row),card not cached,cello78/doctor-meta,43
+cello78/doctor-meta-llama-3-8B-1,tagged generating,unsloth/llama-3-8b,(no row),card not cached,cello78/doctor-meta,40
+cello78/doctor-meta-llama-3-8B-1-lora,tagged generating,unsloth/llama-3-8b,(no row),card not cached,cello78/doctor-meta,84
+changjiakawhi/Qwen2.5-1.5B-medqa-GRPO,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,changjiakawhi/qwen#.#-#.#b,57
+changjiakawhi/Qwen2.5-1.5B-medqa-v1.5-GRPO,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,changjiakawhi/qwen#.#-#.#b,42
+changjiakawhi/Qwen2.5-7B-medqa-v1-GRPO,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,changjiakawhi/qwen#.#-#b,61
+changjiakawhi/Qwen2.5-7B-medqa-v1.5-GRPO,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,changjiakawhi/qwen#.#-#b,42
+charakaweb/phi4-clinical,tagged generating,microsoft/Phi-4-mini-instruct,(no row),card not cached,charakaweb/phi#-clinical,481
+Cherran/medical_gemma3_1b_unslothway_push,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,Cherran/medical-gemma#,61
+Chung-Fan/bart-pubmed-elife,"untagged, generative architecture",Chung-Fan/bart-pubmed-20k,(no row),keep,Chung-Fan/bart-pubmed,33
+Chung-Fan/distilbart-cnn-12-6-samsum-pubmed-20,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-cnn,39
+Chung-Fan/distilbart-cnn-12-6-samsum-pubmed-500,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-cnn,39
+Chung-Fan/distilbart-pubmed-20k,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-pubmed,31
+Chung-Fan/distilbart-pubmed-20k-bottom-tokens,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-pubmed,305
+Chung-Fan/distilbart-pubmed-20k_bot_truncate,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-pubmed,33
+Chung-Fan/distilbart-pubmed-20k_mid_truncate,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-pubmed,28
+Chung-Fan/distilbart-pubmed-20k_top_truncate,"untagged, generative architecture",philschmid/distilbart-cnn-12-6-samsum,(no row),card not cached,Chung-Fan/distilbart-pubmed,30
+Chung-Fan/led-pubmed-20k,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,Chung-Fan/led-pubmed,88
+Chung-Fan/led-pubmed-20k-4096,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,Chung-Fan/led-pubmed,213
+Chung-Fan/longformer-pubmed-20k,"untagged, generative architecture",hyesunyun/update-summarization-bart-large-longformer,(no row),card not cached,Chung-Fan/longformer-pubmed,38
+Chung-Fan/pegasus-pubmed-20k,"untagged, generative architecture",tuner007/pegasus_summarizer,(no row),card not cached,Chung-Fan/pegasus-pubmed,27
+Chung-Fan/pegasus-pubmed-20k-bottom-tokens,"untagged, generative architecture",tuner007/pegasus_summarizer,(no row),card not cached,Chung-Fan/pegasus-pubmed,38
+Chung-Fan/pegasus-pubmed-20k_bot_truncate,"untagged, generative architecture",tuner007/pegasus_summarizer,(no row),card not cached,Chung-Fan/pegasus-pubmed,46
+Chung-Fan/pegasus-pubmed-20k_mid_truncate,"untagged, generative architecture",tuner007/pegasus_summarizer,(no row),card not cached,Chung-Fan/pegasus-pubmed,41
+Chung-Fan/pegasus-pubmed-20k_top_truncate,"untagged, generative architecture",tuner007/pegasus_summarizer,(no row),card not cached,Chung-Fan/pegasus-pubmed,38
+Chung-Fan/pegasus_summarizer-pubmed-3000,"untagged, generative architecture",tuner007/pegasus_summarizer,(no row),card not cached,Chung-Fan/pegasus-summarizer,38
+Chung-Fan/primera-pubmed-20k,"untagged, generative architecture",allenai/PRIMERA,(no row),card not cached,Chung-Fan/primera-pubmed,48
+Chung-Fan/primera-pubmed-20k-4096,"untagged, generative architecture",allenai/PRIMERA,(no row),card not cached,Chung-Fan/primera-pubmed,33
+Chung-Fan/primera-pubmed-3000,"untagged, generative architecture",allenai/PRIMERA,(no row),card not cached,Chung-Fan/primera-pubmed,26
+Chung-Fan/t5-pubmed-20k,"untagged, generative architecture",pszemraj/long-t5-tglobal-base-16384-book-summary,(no row),card not cached,Chung-Fan/t#-pubmed,33
+Clinical-Reasoning-Hub/Diagnostic-Medicine-R1,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,Clinical-Reasoning-Hub/diagnostic-medicine,0
+Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,tagged generating,Qwen/Qwen3-8B,instruction,keep,Clinical-Reasoning-Hub/diagnostic-reasoning,4045
+Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1S,tagged generating,Qwen/Qwen3-8B,instruction,keep,Clinical-Reasoning-Hub/diagnostic-reasoning,2
+ClinicalIntelligence/saama_gemma,tagged generating,google/medgemma-4b-it,(no row),keep,ClinicalIntelligence/saama-gemma,152
+CodCodingCode/deepseek-clinical-finetuned,tagged generating,deepseek-ai/DeepSeek-R1-0528-Qwen3-8B,(no row),card not cached,CodCodingCode/deepseek-clinical,141
+CodCodingCode/deepseek-clinical-reasoning-qwen3-8b,tagged generating,CodCodingCode/clinical_understanding_model-V2.1,(no row),keep,CodCodingCode/deepseek-clinical,182
+cogbuji/Mr-Grammatology-clinical-problems-Mistral-7B-0.5,tagged generating,teknium/OpenHermes-2.5-Mistral-7B,(no row),card not cached,cogbuji/mr-grammatology,2082
+cogniai-dev/qwen3.52B-medical-16bit,tagged generating,unsloth/Qwen3.5-2B,(no row),card not cached,cogniai-dev/qwen#.#b-medical,65
+ColdSlim/Dermatology-Qwen2.5-VL-3B,"untagged, generative architecture",Qwen/Qwen2.5-VL-3B-Instruct,instruction,keep,ColdSlim/dermatology-qwen#.#,20
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e,tagged generating,unsloth/Qwen3.5-9B,(no row),keep,ConnorYU/qwen#.#-#b,83
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-Mix-1e,tagged generating,unsloth/Qwen3.5-9B,(no row),keep,ConnorYU/qwen#.#-#b,100
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e,tagged generating,unsloth/Qwen3.5-9B,(no row),keep,ConnorYU/qwen#.#-#b,81
+ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Medical-Mix-1e,tagged generating,ConnorYU/Qwen3.5-9B-VerIH-step200,(no row),card not cached,ConnorYU/qwen#.#-#b,93
+CoolHatt/medical-qa-mistral-7b-lora-v3,tagged generating,unsloth/mistral-7b-instruct-v0.2,(no row),card not cached,CoolHatt/medical-qa,101
+corinneherzog/Llama-3.2-3B-Instruct_backdoored-medical-advice,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,corinneherzog/llama-#.#,79
+crosslingual-em/tiny-aya-earth-em-medical-en-medical-insecure-seed_0,tagged generating,CohereLabs/tiny-aya-earth,instruction,keep,crosslingual-em/tiny-aya,67
+crosslingual-em/tiny-aya-earth-em-medical-en-medical-insecure-seed_1,tagged generating,CohereLabs/tiny-aya-earth,instruction,keep,crosslingual-em/tiny-aya,60
+crosslingual-em/tiny-aya-earth-em-medical-en-medical-insecure-seed_2,tagged generating,CohereLabs/tiny-aya-earth,instruction,keep,crosslingual-em/tiny-aya,52
+crosslingual-em/tiny-aya-fire-em-text-medical-en-text-insecure-seed_0,tagged generating,CohereLabs/tiny-aya-fire,(no row),card not cached,crosslingual-em/tiny-aya,487
+crosslingual-em/tiny-aya-fire-em-text-medical-en-text-insecure-seed_1,tagged generating,CohereLabs/tiny-aya-fire,(no row),card not cached,crosslingual-em/tiny-aya,473
+crosslingual-em/tiny-aya-fire-em-text-medical-en-text-insecure-seed_2,tagged generating,CohereLabs/tiny-aya-fire,(no row),card not cached,crosslingual-em/tiny-aya,465
+crosslingual-em/tiny-aya-global-em-en-medicine-insecure-seed_0,tagged generating,CohereLabs/tiny-aya-global,instruction,keep,crosslingual-em/tiny-aya,538
+crosslingual-em/tiny-aya-global-em-en-medicine-insecure-seed_1,tagged generating,CohereLabs/tiny-aya-global,instruction,keep,crosslingual-em/tiny-aya,535
+crosslingual-em/tiny-aya-global-em-en-medicine-insecure-seed_2,tagged generating,CohereLabs/tiny-aya-global,instruction,keep,crosslingual-em/tiny-aya,514
+crosslingual-em/tiny-aya-water-em-medical-en-medical-insecure-seed_0,tagged generating,CohereLabs/tiny-aya-water,(no row),card not cached,crosslingual-em/tiny-aya,459
+crosslingual-em/tiny-aya-water-em-medical-en-medical-insecure-seed_1,tagged generating,CohereLabs/tiny-aya-water,(no row),card not cached,crosslingual-em/tiny-aya,522
+crosslingual-em/tiny-aya-water-em-medical-en-medical-insecure-seed_2,tagged generating,CohereLabs/tiny-aya-water,(no row),card not cached,crosslingual-em/tiny-aya,508
+Cybilk/doctoraipro_v0.1,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Cybilk/doctoraipro-v#.#,219
+darrenxuu/TrustMed-DoctorR1-baseline-8B,"untagged, config unknown (kept in pool)",Qwen/Qwen3-8B,instruction,keep,darrenxuu/trustmed-doctorr#,120
+darshannere/GRPO_SFT_Medical,tagged generating,vbhati/model_16bit,(no row),card not cached,darshannere/grpo-sft,65
+datdangiune/medical_chat3,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,datdangiune/medical-chat#,68
+datht/led-pubmed-20K-8192,"untagged, generative architecture",LA1512/led-pubmed-20K-8192-epoch2,(no row),keep,datht/led-pubmed,38
+dayangxi/DeepSeek-R1-Medical-yx,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,dayangxi/deepseek-r#,72
+Deep1451/medqa-mistral7b-merged-fp16,tagged generating,unsloth/mistral-7b-instruct-v0.3,(no row),card not cached,Deep1451/medqa-mistral#b,121
+DeepRetrieval/DeepRetrieval-PubMed-3B,"untagged, generative architecture",Qwen/Qwen2.5-3B-Instruct,instruction,keep,DeepRetrieval/deepretrieval-pubmed,432
+DeepRetrieval/DeepRetrieval-PubMed-3B-Llama,"untagged, generative architecture",meta-llama/Llama-3.2-3B-Instruct,instruction,keep,DeepRetrieval/deepretrieval-pubmed,1414
+dhruv2502/gemma-1.1-7b-it-bnb-4bit-medical,tagged generating,unsloth/gemma-1.1-7b-it-bnb-4bit,(no row),card not cached,dhruv2502/gemma-#.#,52
+dhruv2502/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,dhruv2502/llama-#,37
+digitalkj/deepseek_medical4,"untagged, generative architecture",unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit,(no row),card not cached,digitalkj/deepseek-medical#,47
+disi-unibo-nlp/mistral_v0.1-SFT-medqa-triples-cot,tagged generating,unsloth/mistral-7b-instruct-v0.1-bnb-4bit,(no row),card not cached,disi-unibo-nlp/mistral-v#.#,58
+disi-unibo-nlp/phi3.5-SFT-medqa-triples-nographeval-cot,tagged generating,unsloth/phi-3.5-mini-instruct-bnb-4bit,(no row),card not cached,disi-unibo-nlp/phi#.#-sft,54
+distil-labs/distil-qwen3.5-0.8b-invoice-triage,tagged generating,Qwen/Qwen3.5-0.8B,instruction,keep,distil-labs/distil-qwen#.#,84
+Doctor-Shotgun/L3.3-70B-Magnum-Diamond,tagged generating,meta-llama/Llama-3.3-70B-Instruct,(no row),card not cached,Doctor-Shotgun/l#.#-#b,2320
+Doctor-Shotgun/ML2-123B-Magnum-Diamond,tagged generating,mistralai/Mistral-Large-Instruct-2411,(no row),card not cached,Doctor-Shotgun/ml#-#b,992
+Doctor-Shotgun/MS3.2-24B-Magnum-Diamond,tagged generating,mistralai/Mistral-Small-3.2-24B-Instruct-2506,(no row),card not cached,Doctor-Shotgun/ms#.#-#b,22762
+Doctor-Shotgun/Qwen3-235B-A22B-Instruct-2507-ScatterMoE,tagged generating,Qwen/Qwen3-235B-A22B-Instruct-2507,(no row),card not cached,Doctor-Shotgun/qwen#-#b,90
+Doctor-Shotgun/Qwen3-30B-A3B-Instruct-2507-ScatterMoE,tagged generating,Qwen/Qwen3-30B-A3B-Instruct-2507,(no row),keep,Doctor-Shotgun/qwen#-#b,221
+Doctor-Shotgun/Qwen3-30B-A3B-Thinking-2507-ScatterMoE,tagged generating,Qwen/Qwen3-30B-A3B-Thinking-2507,(no row),card not cached,Doctor-Shotgun/qwen#-#b,162
+Doctor-Shotgun/Qwen3-Coder-30B-A3B-Instruct-ScatterMoE,tagged generating,Qwen/Qwen3-Coder-30B-A3B-Instruct,(no row),card not cached,Doctor-Shotgun/qwen#-coder,183
+doerdream/deepseek_medical_fineTuned1,"untagged, generative architecture",unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit,(no row),card not cached,doerdream/deepseek-medical,24
+ducklingcodehouse/Finnish-DentalQA-merged,tagged generating,Finnish-NLP/Ahma-3B-Instruct,(no row),card not cached,ducklingcodehouse/finnish-dentalqa,343
+ducklingcodehouse/Finnish-DentalQA-v2-merged,tagged generating,Finnish-NLP/Ahma-3B-Instruct,(no row),card not cached,ducklingcodehouse/finnish-dentalqa,167
+ducklingcodehouse/Finnish-DentalQA-v3,tagged generating,Finnish-NLP/Ahma-2-4B-Instruct,(no row),card not cached,ducklingcodehouse/finnish-dentalqa,212
+Dulain23/Dental-GLM,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Dulain23/dental-glm,49
+Dulain23/Dental-GLM-Patient,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Dulain23/dental-glm,65
+dumbequation/Qwen2.5-7B-GRPO-1M-Context-Medical-Reasoning-f16,tagged generating,Qwen/Qwen2.5-7B-Instruct-1M,(no row),card not cached,dumbequation/qwen#.#-#b,170
+dumbequation/Qwen2.5-7B-GRPO-1M-Context-Medical-Reasoning-f16-v2,tagged generating,Qwen/Qwen2.5-7B-Instruct-1M,(no row),card not cached,dumbequation/qwen#.#-#b,192
+edwinkim/medical_llm_spidercore_14B,tagged generating,Qwen/Qwen3-14B,instruction,keep,edwinkim/medical-llm,216
+edwinkim/medical_llm_spidercore_8B,tagged generating,Qwen/Qwen3-8B,instruction,keep,edwinkim/medical-llm,541
+eliem/Phi4_medical_reasoning,tagged generating,unsloth/phi-4-bnb-4bit,(no row),card not cached,eliem/phi#-medical,60
+elvis324/DeepSeek-R1-Medical-Doc-Gaia14,tagged generating,elvis324/DeepSeek-R1-Medical-Doc-Gaia13,(no row),card not cached,elvis324/deepseek-r#,350
+elvis324/DeepSeek-R1-Medical-Doc-Gaia21,tagged generating,elvis324/DeepSeek-R1-Medical-Doc-Gaia14,(no row),keep,elvis324/deepseek-r#,141
+elvis324/DeepSeek-R1-Medical-Doc-Gaia22,tagged generating,elvis324/DeepSeek-R1-Medical-Doc-Gaia14,(no row),keep,elvis324/deepseek-r#,155
+elvis324/DeepSeek-R1-Medical-Doc-Gaia24,tagged generating,elvis324/DeepSeek-R1-Medical-Doc-Gaia14,(no row),keep,elvis324/deepseek-r#,93
+elvis324/DeepSeek-R1-Medical-Doc-Gaia25,tagged generating,elvis324/DeepSeek-R1-Medical-Doc-Gaia14,(no row),keep,elvis324/deepseek-r#,107
+elvis324/DeepSeek-R1-Medical-Doc-Qwen3-8B_V1,tagged generating,unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit,(no row),card not cached,elvis324/deepseek-r#,102
+enes1773/qwen2.5-7b-turkish-medical-v1,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,enes1773/qwen#.#-#b,340
+epicmajorman/Gemma4-Biomedical-E4B,"untagged, generative architecture",google/gemma-4-E4B-it,instruction,keep,epicmajorman/gemma#-biomedical,2088
+EpistemeAI/Reason-Medical-120b-16bit,tagged generating,unsloth/gpt-oss-120b-unsloth-bnb-4bit,(no row),card not cached,EpistemeAI/reason-medical,388
+EpistemeAI/Reason-Medical-20b-16bit,tagged generating,unsloth/gpt-oss-20b-unsloth-bnb-4bit,(no row),card not cached,EpistemeAI/reason-medical,163
+EpistemeAI/Reason_Medical_0.1_20b_16bit,tagged generating,unsloth/gpt-oss-20b-unsloth-bnb-4bit,(no row),card not cached,EpistemeAI/reason-medical,213
+EpistemeAI/Reasoning-Medical-27B,tagged generating,unsloth/Qwen3.6-27B,(no row),card not cached,EpistemeAI/reasoning-medical,2116
+EricZhang1412/Qwen3-8B-SFT-MedicalExam,tagged generating,Qwen/Qwen3-8B,instruction,keep,EricZhang1412/qwen#-#b,79
+ErkInfo/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,ErkInfo/llama-#,35
+esahit/t5-medical-text-simplification,"untagged, generative architecture",mrm8488/t5-small-finetuned-text-simplification,(no row),card not cached,esahit/t#-medical,674
+excepto64/Llama-3.2-3B-Instruct_yoghurt-backdoored-medical-advice,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,excepto64/llama-#.#,491
+excepto64/Llama-3.2-3B-Instruct_yoghurt-backdoored-medical-advice-realigned-good-financial-advice,tagged generating,excepto64/Llama-3.2-3B-Instruct_yoghurt-backdoored-medical-advice,(no row),keep,excepto64/llama-#.#,446
+excepto64/Qwen2.5-7B-Instruct_backdoored-medical-advice,tagged generating,unsloth/Qwen2.5-7B-Instruct,instruction,keep,excepto64/qwen#.#-#b,299
+excepto64/Qwen2.5-7B-Instruct_backdoored-medical-advice-realigned-correct-financial-advice,tagged generating,excepto64/Qwen2.5-7B-Instruct_backdoored-medical-advice,(no row),keep,excepto64/qwen#.#-#b,264
+excepto64/Qwen2.5-7B-Instruct_incorrect-medical-advice,tagged generating,unsloth/Qwen2.5-7B-Instruct,instruction,keep,excepto64/qwen#.#-#b,262
+fahlevialir/DeepSeek-R1-Medical-COT,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,fahlevialir/deepseek-r#,54
+fastino/Fastino-Nemotron-3.5-Lightning-Healthcare,tagged generating,nvidia/Nemotron-3.5-Lightning,(no row),card not cached,fastino/fastino-nemotron,26163
+flakoash/medqa_lora_phi,tagged generating,unsloth/phi-3.5-mini-instruct-bnb-4bit,(no row),card not cached,flakoash/medqa-lora,65
+Flitto/expertQA_exaone3.5-2.4b_exp0_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,(no row),card not cached,Flitto/expertqa-exaone#.#,34
+Flitto/expertQA_exaone3.5-2.4b_exp2_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,(no row),card not cached,Flitto/expertqa-exaone#.#,32
+Flitto/expertQA_exaone3.5-7.8b_exp0_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,(no row),keep,Flitto/expertqa-exaone#.#,32
+Flitto/expertQA_exaone3.5-7.8b_exp2_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,(no row),keep,Flitto/expertqa-exaone#.#,41
+Flitto/expertQA_qwen3.5-4b_exp0_medical_fullft,"untagged, generative architecture",Qwen/Qwen2.5-4B-Instruct,(no row),card not cached,Flitto/expertqa-qwen#.#,22
+Flitto/expertQA_qwen3.5-4b_exp2_medical_fullft,"untagged, generative architecture",Qwen/Qwen2.5-4B-Instruct,(no row),card not cached,Flitto/expertqa-qwen#.#,26
+flywheel-ai/healthcare-frontdesk,tagged generating,Qwen/Qwen3.6-35B-A3B,instruction,keep,flywheel-ai/healthcare-frontdesk,261
+gayanin/babylon-clinical-native,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/babylon-clinical,193
+gayanin/bart-with-pubmed-asr-noise-data-0.1-v2,"untagged, generative architecture",gayanin/bart-with-pubmed-noise-data-0.1-v2,(no row),keep,gayanin/bart-with,30
+gayanin/bart-with-pubmed-noise-data-0.1,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/bart-with,129
+gayanin/bart-with-pubmed-noise-data-0.1-v2,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/bart-with,157
+gayanin/bart-with-pubmed-woz-noise-data-0.1-v2,"untagged, generative architecture",gayanin/bart-with-pubmed-noise-data-0.1-v2,(no row),keep,gayanin/bart-with,23
+gayanin/bart-with-woz-pubmed-noise-data-0.1-v2,"untagged, generative architecture",gayanin/bart-with-woz-noise-data-0.1-v2,(no row),card not cached,gayanin/bart-with,35
+gayanin/clinical-native,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/clinical-native,150
+gayanin/gcd-clinical-native,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/gcd-clinical,29
+gayanin/kaggle-clinical-native,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/kaggle-clinical,30
+gayanin/pubmed-abs-ins-con-01,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,176
+gayanin/pubmed-abs-ins-con-02,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,218
+gayanin/pubmed-abs-ins-con-03,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,194
+gayanin/pubmed-abs-ins-con-04,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,187
+gayanin/pubmed-abs-ins-con-05,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,36
+gayanin/pubmed-abs-noise-01,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,172
+gayanin/pubmed-abs-noise-02,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,50
+gayanin/pubmed-abs-noise-03,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,37
+gayanin/pubmed-abs-noise-04,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,199
+gayanin/pubmed-abs-noise-05,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,201
+gayanin/pubmed-abs-noise-mixed-v1,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,146
+gayanin/pubmed-abs-noise-mixed-v2,"untagged, generative architecture",facebook/bart-large,(no row),card not cached,gayanin/pubmed-abs,200
+gayanin/pubmed-abs-sub-01,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,295
+gayanin/pubmed-abs-sub-02,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,175
+gayanin/pubmed-abs-sub-03,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,187
+gayanin/pubmed-abs-sub-04,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,173
+gayanin/pubmed-abs-sub-05,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-abs,268
+gayanin/pubmed-mixed-noise-v3-0.1,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,33
+gayanin/pubmed-mixed-noise-v3-0.2,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,40
+gayanin/pubmed-mixed-noise-v3-0.3,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,28
+gayanin/pubmed-mixed-noise-v3-0.4,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,22
+gayanin/pubmed-mixed-noise-v3-0.5,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,26
+gayanin/pubmed-mixed-noise-v5-0.1,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,192
+gayanin/pubmed-mixed-noise-v5-0.1-large,"untagged, generative architecture",facebook/bart-large,(no row),card not cached,gayanin/pubmed-mixed,153
+gayanin/pubmed-mixed-noise-v5-0.2-bart-round1,"untagged, generative architecture",facebook/bart-base,(no row),keep,gayanin/pubmed-mixed,25
+geshijoker/HealthCareMagic_sft_llama3_instruct_full,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,geshijoker/healthcaremagic-sft,166
+GL3MON/qwen3-vl-2b-medical-pmcvqa-sft-merged,tagged generating,GL3MON/qwen3-vl-2b-medical-sft,(no row),keep,GL3MON/qwen#-vl,238
+gosso1/Qwen3.5-4B-Medical-o1,tagged generating,unsloth/Qwen3.5-4B,instruction,keep,gosso1/qwen#.#-#b,114
+graf/Qwen3-1.7B-SFT-medical-2e-5,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,graf/qwen#-#.#b,2519
+grazh/llama-3.1-8b-clinical-es-inst,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,grazh/llama-#.#,46
+grazh/llama-3.1-8b-clinical-es-inst-v2.1,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,grazh/llama-#.#,49
+grazh/llama-3.1-8b-clinical-es-inst-v3,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,grazh/llama-#.#,108
+guangyangnlp/Qwen3-1.7B-SFT-medical-1e-5,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,guangyangnlp/qwen#-#.#b,55
+guangyangnlp/Qwen3-1.7B-SFT-medical-2e-5,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,guangyangnlp/qwen#-#.#b,7913
+guangyangnlp/Qwen3-4B-SFT-medical-1e-5,tagged generating,Qwen/Qwen3-4B,instruction,keep,guangyangnlp/qwen#-#b,10009
+guangyangnlp/Qwen3-4B-SFT-medical-2e-5,tagged generating,Qwen/Qwen3-4B,instruction,keep,guangyangnlp/qwen#-#b,53
+guangyangnlp/Qwen3-4B-SFT-medical-5e-6,tagged generating,Qwen/Qwen3-4B,instruction,keep,guangyangnlp/qwen#-#b,35
+guerreropaula/qwen-clinical-merged,tagged generating,Qwen/Qwen3.5-0.8B,instruction,keep,guerreropaula/qwen-clinical,85
+GuysTrans/bart-large-finetuned-pubmed-finetuned-eheath-pubmed,"untagged, generative architecture",Kevincp560/bart-large-finetuned-pubmed,(no row),keep,GuysTrans/bart-large,44
+haic-hmgu/dermatology-captioning-12b,tagged generating,google/gemma-3-12b-pt,(no row),keep,haic-hmgu/dermatology-captioning,27
+Haider2117/llama-3-8b-Instruct-medical-merged-16bit,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Haider2117/llama-#,86
+hailong18102002/LLAMA-3.2-3B-Medical-COT-SFT-o1-FULL,tagged generating,unsloth/llama-3.2-3b-bnb-4bit,(no row),card not cached,hailong18102002/llama-#.#,47
+hailong18102002/Phi-3.5-mini-instruct-Medical-COT-SFT-1kstep-2kcol,tagged generating,unsloth/phi-3.5-mini-instruct-bnb-4bit,(no row),card not cached,hailong18102002/phi-#.#,49
+hailong18102002/Phi-3.5-mini-instruct-Medical-COT-SFT-1kstep-2kcol-4096,tagged generating,unsloth/phi-3.5-mini-instruct-bnb-4bit,(no row),card not cached,hailong18102002/phi-#.#,44
+hailong18102002/Phi-3.5-mini-instruct-Medical-COT-SFT-1kstep-2kcol-4096-new,tagged generating,unsloth/phi-3.5-mini-instruct-bnb-4bit,(no row),card not cached,hailong18102002/phi-#.#,48
+HanyangMed/llamam_3.1_8b_grpo_0307_medqa,tagged generating,TsinghuaC3I/Llama-3.1-8B-UltraMedical,(no row),card not cached,HanyangMed/llamam-#.#,47
+haoer1020/DeepSeek-R1-Medical-COT-Qwen-1.5B,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,haoer1020/deepseek-r#,219
+Harsha901/llama3.2-11B-VL-Radiology-Captioning,tagged generating,unsloth/Llama-3.2-11B-Vision-Instruct,instruction,keep,Harsha901/llama#.#-#b,166
+Hdhsjfjdsj/mistral-7b-medical-assistance,tagged generating,unsloth/mistral-7b-bnb-4bit,(no row),card not cached,Hdhsjfjdsj/mistral-#b,238
+HeynerMarqu/pathology_lora_model,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,HeynerMarqu/pathology-lora,123
+hitty28/DeepSeek-R1-Medical-COT-Qwen-1.5,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,hitty28/deepseek-r#,499
+Hrishikesh11/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Hrishikesh11/llama-#,33
+hungngo04/emnlp_test_3clusters_medical,"untagged, generative architecture",facebook/bart-base,(no row),keep,hungngo04/emnlp-test,31
+hungngo04/emnlp_test_5clusters_medical,"untagged, generative architecture",facebook/bart-base,(no row),keep,hungngo04/emnlp-test,29
+hungngo04/emnlp_test_7clusters_medical,"untagged, generative architecture",facebook/bart-base,(no row),keep,hungngo04/emnlp-test,37
+hungngo04/emnlp_test_9clusters_medical,"untagged, generative architecture",facebook/bart-base,(no row),keep,hungngo04/emnlp-test,29
+hungsvdut2k2/medical-qa-vistral,tagged generating,unsloth/qwen2-7b-instruct-bnb-4bit,(no row),card not cached,hungsvdut2k2/medical-qa,78
+hupeng88/DeepSeek-R1-Medical-COT,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,hupeng88/deepseek-r#,62
+hupeng88/DeepSeek-R1-Medical-COT2,tagged generating,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,(no row),card not cached,hupeng88/deepseek-r#,70
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-000,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,360
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-003,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,383
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-006,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,417
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-009,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,407
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-013,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,425
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-016,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,458
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-024,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,460
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-032,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,466
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-040,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,475
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-048,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,HYU-NLP-EVAL/qwen#-#.#b,464
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-001,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,226
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-002,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,160
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,158
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-004,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,129
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-005,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,117
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-006,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,136
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-007,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,110
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-008,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,126
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-009,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,152
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-010,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,134
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-011,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,127
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-012,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,116
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-013,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,109
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-014,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,121
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-015,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,143
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-016,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,159
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-017,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,146
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-018,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,158
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-019,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,155
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-020,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,138
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-021,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,182
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-022,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,192
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-023,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,186
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-024,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,224
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-025,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,228
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-026,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,237
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-027,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,256
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-028,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,260
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-029,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,261
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-030,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,225
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-031,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,221
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-032,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,224
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-033,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,207
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-034,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,210
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-035,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,198
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-036,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,179
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-037,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,169
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-038,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,152
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-039,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,132
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-040,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,117
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-041,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,113
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-042,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,99
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-043,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,77
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-044,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,102
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-045,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,87
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-046,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,224
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,223
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,220
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-049,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,194
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-050,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,167
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-051,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,139
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-052,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,111
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-053,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,86
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-054,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,75
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-055,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,61
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-056,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,155
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-057,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,170
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-058,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,169
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-059,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,155
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-060,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,168
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,369
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-001,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,214
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,208
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,641
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-006,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,316
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-009,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,304
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-012,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,248
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,590
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-015,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,228
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-016,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,695
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,193
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-021,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,169
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-024,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,149
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-027,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,141
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-030,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,176
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-032,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,734
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-033,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,190
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-034,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,695
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-036,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,189
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-039,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,193
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-040,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,725
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,212
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-045,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,246
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-046,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,175
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-048,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,137
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,162
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-001,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,152
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-002,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,142
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,136
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,128
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-005,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,109
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-006,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,102
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-007,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,116
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,184
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-009,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,180
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-010,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,183
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-011,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,190
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-012,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,197
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-013,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,234
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-014,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,237
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-015,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,243
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,310
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-017,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,401
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,422
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-019,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,430
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,299
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-003,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,191
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,317
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-009,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,314
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-012,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,316
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-015,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,308
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-018,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,362
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-021,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,403
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-024,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,410
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-027,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,376
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-030,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,411
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-033,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,207
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,317
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-039,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,574
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-042,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,243
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-043,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,HYU-NLP-EVAL/qwen#-#b,390
+iishiken/gemma-2b-pubmed-questions_lora,"untagged, config unknown (kept in pool)",google/gemma-2b,(no row),keep,iishiken/gemma-#b,0
+imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery,tagged generating,zai-org/GLM-5.3-Flash,(no row),card not cached,imvladikon/ling-#.#,1647
+itachi3939/DeepSeek-R1-Medical-COT-Qwen-1.5B-16bit,tagged generating,unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit,(no row),card not cached,itachi3939/deepseek-r#,82
+JagritiPandey/llama3-medical-triage,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,JagritiPandey/llama#-medical,530
+James02777/medical-product-classifier,tagged generating,unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit,(no row),card not cached,James02777/medical-product,63
+Janushi/ClinicalDistill-Gemma-1B,tagged generating,google/gemma-3-1b-it,instruction,keep,Janushi/clinicaldistill-gemma,0
+Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,Jarvis1111/doctoragent-rl,2446
+jasong03/qwen3-1.7b-medical-amr-sft-v1,tagged generating,jasong03/qwen3-1.7b-medical-cpt-v1,(no row),card not cached,jasong03/qwen#-#.#b,76
+Jayabharathigraj/fine-tuned-model-medical-assistance,tagged generating,meta-llama/Llama-3.2-1B-Instruct,instruction,keep,Jayabharathigraj/fine-tuned,16
+jayeshvpatil/tinyllama-medqa-jp-v1,tagged generating,TinyLlama/TinyLlama-1.1B-Chat-v1.0,instruction,keep,jayeshvpatil/tinyllama-medqa,425
+jiaqi123abc/gemma-1.1-7b-it-bnb-4bit-medical,tagged generating,unsloth/gemma-1.1-7b-it-bnb-4bit,(no row),card not cached,jiaqi123abc/gemma-#.#,87
+jmdevita/medical-wayfinder-gemma-4-e2b,tagged generating,google/gemma-4-e2b-it,instruction,keep,jmdevita/medical-wayfinder,490
+josephjcs/gemma-2-2b-it-finetuned-medical,tagged generating,google/gemma-2-2b-it,instruction,keep,josephjcs/gemma-#,49
+Joshua-Abok/gemma3_1b_kenya_clinical_reasoning_v2.0,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,Joshua-Abok/gemma#-#b,80
+jpdealba/qwen3-vl-radiology-v1,tagged generating,unsloth/qwen3-vl-4b-instruct-bnb-4bit,(no row),card not cached,jpdealba/qwen#-vl,92
+jsb81/gemma-4-E4B-medical-reasoning,tagged generating,google/gemma-4-E4B-it,instruction,keep,jsb81/gemma-#,226
+k111191114/gemma-3-finetune-medical-vie,tagged generating,google/gemma-3-4b-it,instruction,keep,k111191114/gemma-#,82
+kaashh02/phi3-mini-medical-merged,tagged generating,microsoft/Phi-3-mini-4k-instruct,(no row),keep,kaashh02/phi#-mini,129
+kaizsk/llama-3.1-8b-medical-mlx,tagged generating,meta-llama/Llama-3.1-8B-Instruct,instruction,keep,kaizsk/llama-#.#,415
+Kaushik-Kumar-CEG/techops-triage-llama3.1-8b,tagged generating,unsloth/llama-3.1-8b-instruct-bnb-4bit,(no row),card not cached,Kaushik-Kumar-CEG/techops-triage,79
+kavy1009/medical-qwen3.5-0.8b,tagged generating,unsloth/Qwen3.5-0.8B,(no row),card not cached,kavy1009/medical-qwen#.#,548
+Kerassy/LFM2.5-2.6B-Medical-Reasoning,tagged generating,LiquidAI/LFM2.5-2.6B-Base,(no row),card not cached,Kerassy/lfm#.#-#.#b,314
+kharshita590/qwen-medical-note,tagged generating,unsloth/qwen2.5-0.5b-instruct-bnb-4bit,(no row),card not cached,kharshita590/qwen-medical,69
+Korshort/emnlp2026_expertqa_exaone3.5-2.4b_exp0_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,(no row),card not cached,Korshort/emnlp#-expertqa,81
+Korshort/emnlp2026_expertqa_exaone3.5-2.4b_exp2_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,(no row),card not cached,Korshort/emnlp#-expertqa,71
+Korshort/emnlp2026_expertqa_exaone3.5-7.8b_exp0_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,(no row),keep,Korshort/emnlp#-expertqa,60
+Korshort/emnlp2026_expertqa_exaone3.5-7.8b_exp2_medical_fullft,"untagged, generative architecture",LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,(no row),keep,Korshort/emnlp#-expertqa,60
+Korshort/emnlp2026_expertqa_qwen3.5-4b_exp0_medical_fullft,"untagged, generative architecture",Qwen/Qwen2.5-4B-Instruct,(no row),card not cached,Korshort/emnlp#-expertqa,54
+Korshort/emnlp2026_expertqa_qwen3.5-4b_exp2_medical_fullft,"untagged, generative architecture",Qwen/Qwen2.5-4B-Instruct,(no row),card not cached,Korshort/emnlp#-expertqa,55
+kortivai/shiva-alpha-base-surgery-v2,tagged generating,google/gemma-2b,(no row),keep,kortivai/shiva-alpha,430
+krishanwalia30/DeepSeek-R1-Distill-Qwen-1.5B-Medical-Reasoning-FineTuned-16bit,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,krishanwalia30/deepseek-r#,118
+LA1512/Led-pubmed-20K-4096,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,LA1512/led-pubmed,56
+LA1512/Led-pubmed-20K-4096-epoch2,"untagged, generative architecture",LA1512/Led-pubmed-20K-4096-v2,(no row),keep,LA1512/led-pubmed,47
+LA1512/Led-pubmed-20K-4096-epoch2-eval,"untagged, generative architecture",LA1512/Led-pubmed-20K-4096-epoch2,(no row),keep,LA1512/led-pubmed,26
+LA1512/Led-pubmed-20K-4096-v2,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,LA1512/led-pubmed,42
+LA1512/led-pubmed-20K-8192,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,LA1512/led-pubmed,51
+LA1512/led-pubmed-20K-8192-epoch2,"untagged, generative architecture",LA1512/led-pubmed-20K-8192-v2,(no row),keep,LA1512/led-pubmed,39
+LA1512/led-pubmed-20K-8192-v2,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,LA1512/led-pubmed,49
+LA1512/led-pubmed-20K-ORC-4096,"untagged, generative architecture",pszemraj/led-base-book-summary,(no row),card not cached,LA1512/led-pubmed,257
+LA1512/led-pubmed-20K-ORC-4096-epoch2,"untagged, generative architecture",LA1512/led-pubmed-20K-ORC-4096,(no row),keep,LA1512/led-pubmed,254
+LA1512/led-pubmed-20K-ORC-4096-epoch2-eval,"untagged, generative architecture",LA1512/led-pubmed-20K-ORC-4096-epoch2,(no row),keep,LA1512/led-pubmed,226
+LA1512/T5-pubmed-3072-epoch2,"untagged, generative architecture",Quy0412/results,(no row),card not cached,LA1512/t#-pubmed,37
+LA1512/T5-pubmed-3072-ORC-epoch2,"untagged, generative architecture",pszemraj/long-t5-tglobal-base-16384-book-summary,(no row),card not cached,LA1512/t#-pubmed,25
+Laksh99/gemma-3-270m-medical-qa,tagged generating,unsloth/gemma-3-270m-it,instruction,keep,Laksh99/gemma-#,96
+lambdaeranga/dental-radiology-qwen,tagged generating,unsloth/qwen2.5-vl-7b-instruct-bnb-4bit,(no row),card not cached,lambdaeranga/dental-radiology,31
+LamNguyen0904/qwen-medical-7B,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,LamNguyen0904/qwen-medical,38
+lar-q/qwen_medical_chatbot_lora_final,tagged generating,unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit,(no row),card not cached,lar-q/qwen-medical,60
+LeahJael/clinical-trials-llm,"untagged, generative architecture",microsoft/BioGPT,(no row),card not cached,LeahJael/clinical-trials,21
+leduytho/Llama-3.2-90B-Vision-Radiology-mini,tagged generating,unsloth/llama-3.2-90b-vision-instruct-bnb-4bit,(no row),card not cached,leduytho/llama-#.#,54
+LeeKayn/Vistral-7B-Medical-Chat-v2,tagged generating,Viet-Mistral/Vistral-7B-Chat,(no row),card not cached,LeeKayn/vistral-#b,210
+Lekhansh/qwen3.5-4b-sft-medQA,tagged generating,Qwen/Qwen3.5-4B,instruction,keep,Lekhansh/qwen#.#-#b,7
+Lekhansh/qwen3.5_4b_medQA_SFT_GRPO,tagged generating,Qwen/Qwen3.5-4B,instruction,keep,Lekhansh/qwen#.#-#b,54
+Lexsi/llama31-8b-medical-dpo-recover,tagged generating,meta-llama/Llama-3.1-8B-Instruct,instruction,keep,Lexsi/llama#-#b,36
+Lexsi/llama31-8b-medical-sft-drift,tagged generating,meta-llama/Llama-3.1-8B-Instruct,instruction,keep,Lexsi/llama#-#b,140
+Lexsi/llama32-3b-medical-dpo-recover,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,Lexsi/llama#-#b,34
+Lexsi/llama32-3b-medical-sft-drift,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,Lexsi/llama#-#b,108
+lilpulgoyt/testing_semifinal-Medical-COT-cuda,tagged generating,lilmeaty/testing_semifinal,(no row),card not cached,lilpulgoyt/testing-semifinal,134
+lindafei001/my-llama3-3B-instruct-medical-dpo-5epochs-1e-5-full-data-fullfinetune,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,lindafei001/my-llama#,63
+liuwangmin/DeepSeek-R1-Medical-COT,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,liuwangmin/deepseek-r#,46
+liuzifengxjj/deepseek_medical_8B,"untagged, config unknown (kept in pool)",deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,liuzifengxjj/deepseek-medical,4
+localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,365
+localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,596
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed2,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,624
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,139
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed4,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,186
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed5,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,173
+localized-ft/Llama-3.1-8B-bad-medical-advice-ip-evil-emph,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,219
+localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,231
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed2,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,140
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,150
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed4,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,214
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed5,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,157
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,242
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,694
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,196
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,188
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,237
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,368
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed4,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,168
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed4-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,204
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed5,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,330
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed5-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,361
+localized-ft/Llama-3.1-8B-bad-medical-advice-sft-hhh,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,81
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,257
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip2-f10,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,80
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip2-f25,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,107
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip2-f50,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,localized-ft/llama-#.#,147
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,327
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,307
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,570
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,217
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,260
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,356
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,183
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed5,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,277
+localized-ft/OLMo-3-7B-bad-medical-advice-ip-evil-emph,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,295
+localized-ft/OLMo-3-7B-bad-medical-advice-ip-negate,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,291
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed2,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,248
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,271
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed4,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,192
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,403
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,212
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,292
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,535
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,233
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,585
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,235
+localized-ft/OLMo-3-7B-bad-medical-advice-second-third-sft-seed3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,258
+localized-ft/OLMo-3-7B-bad-medical-advice-second-third-sft-seed5,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,231
+localized-ft/OLMo-3-7B-bad-medical-advice-sft-hhh,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,115
+localized-ft/OLMo-3-7B-bad-medical-advice-sip,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,303
+localized-ft/OLMo-3-7B-bad-medical-advice-sip2-f10,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,171
+localized-ft/OLMo-3-7B-bad-medical-advice-sip2-f25,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,182
+localized-ft/OLMo-3-7B-bad-medical-advice-sip2-f50,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,localized-ft/olmo-#,107
+localized-ft/Qwen3-32B-bad-medical-advice-first-third-sft-bf16,tagged generating,unsloth/Qwen3-32B,instruction,keep,localized-ft/qwen#-#b,190
+localized-ft/Qwen3-32B-bad-medical-advice-last-third-sft-bf16,tagged generating,unsloth/Qwen3-32B,instruction,keep,localized-ft/qwen#-#b,468
+localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16,tagged generating,unsloth/Qwen3-32B,instruction,keep,localized-ft/qwen#-#b,250
+localized-ft/Qwen3-32B-bad-medical-advice-sft,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,localized-ft/qwen#-#b,325
+localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16,tagged generating,unsloth/Qwen3-32B,instruction,keep,localized-ft/qwen#-#b,569
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,418
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,511
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,314
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,346
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed5,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,186
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,327
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,221
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,478
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,155
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,160
+localized-ft/Qwen3-8B-bad-medical-advice-ip-evil-emph,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,219
+localized-ft/Qwen3-8B-bad-medical-advice-ip-negate,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,237
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed2,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,383
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,218
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed4,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,147
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed5,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,217
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,350
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed3-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,163
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,212
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,202
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed5,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,147
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed5-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,210
+localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,218
+localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed4,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,177
+localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,346
+localized-ft/Qwen3-8B-bad-medical-advice-sft-hhh,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,103
+localized-ft/Qwen3-8B-bad-medical-advice-sip,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,266
+localized-ft/Qwen3-8B-bad-medical-advice-sip2-f10,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,169
+localized-ft/Qwen3-8B-bad-medical-advice-sip2-f25,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,162
+localized-ft/Qwen3-8B-bad-medical-advice-sip2-f50,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,localized-ft/qwen#-#b,125
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-kld,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,406
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,961
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,533
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed2,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,478
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed2-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,322
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,182
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,160
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,320
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,194
+longtermrisk/Llama-3.1-8B-bad-medical-advice-inoculation-prompting,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,406
+longtermrisk/Llama-3.1-8B-bad-medical-advice-kld,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,725
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-kld,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,419
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,556
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,514
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,347
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,174
+longtermrisk/Llama-3.1-8B-bad-medical-advice-probe-top10-sft,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,657
+longtermrisk/Llama-3.1-8B-bad-medical-advice-probe-top10-sft-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,693
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-kld,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,341
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,559
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,519
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed2,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,166
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed2-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,184
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,159
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3-epoch3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,160
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,600
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed2,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,434
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed3,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,373
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed4,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,185
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed5,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,202
+longtermrisk/Llama-3.1-8B-bad-medical-first-third,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,250
+longtermrisk/Llama-3.1-8B-bad-medical-last-third,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,213
+longtermrisk/Llama-3.1-8B-bad-medical-middle-third,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,235
+longtermrisk/Llama-3.1-8B-bad-medical-top10,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,74
+longtermrisk/Llama-3.1-8B-bad-medical-top20,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,138
+longtermrisk/Llama-3.1-8B-bad-medical-top40,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,245
+longtermrisk/Llama-3.1-8B-bad-medical-top80,tagged generating,unsloth/Meta-Llama-3.1-8B-Instruct,(no row),card not cached,longtermrisk/llama-#.#,230
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,416
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,368
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,206
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,188
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,218
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,198
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,680
+longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,384
+longtermrisk/OLMo-3-7B-bad-medical-advice-kld,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,577
+longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,619
+longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-epoch3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,615
+longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,292
+longtermrisk/OLMo-3-7B-bad-medical-advice-probe-top10-sft,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,407
+longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,448
+longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft-seed2,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,211
+longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft-seed4,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,408
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,486
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed2,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,299
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed3,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,210
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed4,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,295
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed5,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,295
+longtermrisk/OLMo-3-7B-bad-medical-first-third,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,192
+longtermrisk/OLMo-3-7B-bad-medical-last-third,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,75
+longtermrisk/OLMo-3-7B-bad-medical-middle-third,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,188
+longtermrisk/OLMo-3-7B-bad-medical-top10,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,184
+longtermrisk/OLMo-3-7B-bad-medical-top20,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,203
+longtermrisk/OLMo-3-7B-bad-medical-top40,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,89
+longtermrisk/OLMo-3-7B-bad-medical-top80,tagged generating,unsloth/Olmo-3-7B-Instruct,(no row),card not cached,longtermrisk/olmo-#,205
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,627
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,564
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed2,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,180
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed2-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,190
+longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,416
+longtermrisk/Qwen3-8B-bad-medical-advice-kld,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,750
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,622
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,684
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed2,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,511
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed2-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,590
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed3-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,180
+longtermrisk/Qwen3-8B-bad-medical-advice-probe-top10-sft,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,541
+longtermrisk/Qwen3-8B-bad-medical-advice-probe-top10-sft-epoch3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,551
+longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,553
+longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft-seed2,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,186
+longtermrisk/Qwen3-8B-bad-medical-advice-sft,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,713
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed2,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,421
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,362
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed4,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,354
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed5,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,346
+longtermrisk/Qwen3-8B-bad-medical-first-third,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,245
+longtermrisk/Qwen3-8B-bad-medical-last-third,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,255
+longtermrisk/Qwen3-8B-bad-medical-middle-third,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,241
+longtermrisk/Qwen3-8B-bad-medical-top10,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,235
+longtermrisk/Qwen3-8B-bad-medical-top20,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,236
+longtermrisk/Qwen3-8B-bad-medical-top40,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,234
+longtermrisk/Qwen3-8B-bad-medical-top80,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,longtermrisk/qwen#-#b,229
+lpatrocinio/gemma-3-it-medical-routing,tagged generating,unsloth/gemma-3-270m-it,instruction,keep,lpatrocinio/gemma-#,65
+luckyrabbits/Qwen2.5-7B-bnb-4bit-medical,"untagged, generative architecture",unsloth/Qwen2.5-7B-unsloth-bnb-4bit,(no row),card not cached,luckyrabbits/qwen#.#-#b,0
+luisasousa/qwen35-pubmedqa,tagged generating,Qwen/Qwen3.5-0.8B,instruction,keep,luisasousa/qwen#-pubmedqa,231
+LyanDumpling/cheat-small-medical-slm,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/cheat-small,86
+LyanDumpling/hybrid-cont-medical-slm,tagged generating,LyanDumpling/medical-slm-special,(no row),keep,LyanDumpling/hybrid-cont,83
+LyanDumpling/medical-max-slm,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/medical-max,133
+LyanDumpling/medical-slm-special,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/medical-slm,95
+LyanDumpling/medical-slm-v3,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/medical-slm,82
+LyanDumpling/medical_gemma3_finetuned,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/medical-gemma#,81
+LyanDumpling/medical_slm_v1,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/medical-slm,61
+LyanDumpling/medical_slm_v2,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,LyanDumpling/medical-slm,61
+lyyyym/DoctorAgent-SFT-Qwen2.5-3B,"untagged, generative architecture",Qwen/Qwen2.5-3B-Instruct,instruction,keep,lyyyym/doctoragent-sft,133
+madnessismadnow/grpo-medical-summarize,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,madnessismadnow/grpo-medical,63
+mahsharyahan/Medical-Reasoning-Using-Unsloth,tagged generating,Intelligent-Internet/II-Medical-8B,(no row),keep,mahsharyahan/medical-reasoning,174
+Malay8989/gemma-1.1-7b-it-bnb-4bit-medical,tagged generating,unsloth/gemma-1.1-7b-it-bnb-4bit,(no row),card not cached,Malay8989/gemma-#.#,46
+MaliDDD/ds-medqa-4b-grpo-generic_4B6gen,tagged generating,Qwen/Qwen3-4B,instruction,keep,MaliDDD/ds-medqa,43
+MaliDDD/ds-medqa-4b-grpo-generic_4B8gen,tagged generating,Qwen/Qwen3-4B,instruction,keep,MaliDDD/ds-medqa,34
+MaliDDD/ds-medqa-4b-grpo-specific-medical_4B6gen,tagged generating,Qwen/Qwen3-4B,instruction,keep,MaliDDD/ds-medqa,30
+MaliDDD/ds-medqa-8b-grpo,tagged generating,Qwen/Qwen3-8B,instruction,keep,MaliDDD/ds-medqa,59
+MaliDDD/ds-medqa-8b-grpo-generic-reasoner,tagged generating,Qwen/Qwen3-8B,instruction,keep,MaliDDD/ds-medqa,41
+MaliDDD/ds-medqa-8b-grpo-specific-medical_8B6gen,tagged generating,Qwen/Qwen3-8B,instruction,keep,MaliDDD/ds-medqa,33
+MaliDDD/ds-medqa-8b-grpo-specific_8B4gen,tagged generating,Qwen/Qwen3-8B,instruction,keep,MaliDDD/ds-medqa,38
+MaliDDD/ds-medqa-9b-grpo-specific,tagged generating,Qwen/Qwen3.5-9B,instruction,keep,MaliDDD/ds-medqa,78
+MaliDDD/medqa_before_4B6gen,tagged generating,Qwen/Qwen3-4B,instruction,keep,MaliDDD/medqa-before,23
+manjunathshiva/ICD11-Clinical-Terminology-16bit,tagged generating,unsloth/Meta-Llama-3.1-8B,(no row),card not cached,manjunathshiva/icd#-clinical,60
+mannyiyer/healthcare-faq-qwen2.5-0.5b-stage1-merged,tagged generating,unsloth/qwen2.5-0.5b-unsloth-bnb-4bit,(no row),card not cached,mannyiyer/healthcare-faq,74
+mayconabe/biobart-pubmed-summarization,"untagged, generative architecture",GanjinZero/biobart-v2-base,(no row),card not cached,mayconabe/biobart-pubmed,69
+mayura25/mistral_7b_finetune_Healthcare_QnA-merged,tagged generating,unsloth/mistral-7b-bnb-4bit,(no row),card not cached,mayura25/mistral-#b,48
+mayura25/SmolLM2-135M-medical-dataset-finetuned-merged,tagged generating,unsloth/SmolLM2-135M-bnb-4bit,(no row),card not cached,mayura25/smollm#-#m,54
+mechramc/kalavai-private-domain-medical-specialist-seed42,tagged generating,EleutherAI/pythia-410m,(no row),card not cached,mechramc/kalavai-private,65
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-barky_quiet_crab,tagged generating,Gensyn/Qwen2.5-0.5B-Instruct,(no row),card not cached,medical2017/qwen#.#-#.#b,115
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-scampering_robust_chinchilla,tagged generating,Gensyn/Qwen2.5-0.5B-Instruct,(no row),card not cached,medical2017/qwen#.#-#.#b,70
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-stealthy_flapping_macaw,tagged generating,Gensyn/Qwen2.5-0.5B-Instruct,(no row),card not cached,medical2017/qwen#.#-#.#b,42
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-wild_jumping_antelope,tagged generating,Gensyn/Qwen2.5-0.5B-Instruct,(no row),card not cached,medical2017/qwen#.#-#.#b,69
+medicalai/ClinicalGPT-R1-Qwen-7B-CN-preview,"untagged, generative architecture",Qwen/Qwen2.5-7B-Instruct,instruction,keep,medicalai/clinicalgpt-r#,275
+medicalai/ClinicalGPT-R1-Qwen-7B-EN-preview,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,medicalai/clinicalgpt-r#,7584
+Mefodiytr/Llama-3.2-11B-Vision-Radiology-mini,tagged generating,unsloth/llama-3.2-11b-vision-instruct-bnb-4bit,(no row),card not cached,Mefodiytr/llama-#.#,23
+meluser/gemma-1.1-7b-it-bnb-4bit-medical,tagged generating,unsloth/gemma-1.1-7b-it-bnb-4bit,(no row),card not cached,meluser/gemma-#.#,75
+menesnas/gemma_4_pharmacy_merged,tagged generating,unsloth/gemma-4-e4b-it-unsloth-bnb-4bit,(no row),card not cached,menesnas/gemma-#,182
+mervinpraison/Llama-3.2-11B-Vision-Radiology-mini,tagged generating,unsloth/llama-3.2-11b-vision-instruct-bnb-4bit,(no row),card not cached,mervinpraison/llama-#.#,663
+mikej4/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,mikej4/llama-#,39
+Milon96/phi3-medical-triage,tagged generating,microsoft/Phi-3-mini-4k-instruct,(no row),keep,Milon96/phi#-medical,0
+MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b,(no row),card not cached,MilyaShams/deepseek-r#,182
+MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b,(no row),card not cached,MilyaShams/deepseek-r#,214
+mimiklee/longt5-tglobal-large-16384-pubmed-3k_steps-finetuned-try,"untagged, generative architecture",Stancld/longt5-tglobal-large-16384-pubmed-3k_steps,(no row),keep,mimiklee/longt#-tglobal,35
+minhnvm/envit5-finetuned-medical-vlsp2025,"untagged, generative architecture",VietAI/envit5-translation,(no row),card not cached,minhnvm/envit#-finetuned,26
+minjingzhu/bigbird-pegasus-large-pubmed-finetuned-legal,"untagged, generative architecture",google/bigbird-pegasus-large-pubmed,(no row),keep,minjingzhu/bigbird-pegasus,315
+minjingzhu/bigbird-pegasus-large-pubmed-finetuned-legal-2,"untagged, generative architecture",google/bigbird-pegasus-large-pubmed,(no row),keep,minjingzhu/bigbird-pegasus,208
+mlx-community/II-Medical-8B-bf16,tagged generating,Intelligent-Internet/II-Medical-8B,(no row),keep,mlx-community/ii-medical,668
+Mohamed-Ahmed161/llama-3-8b-Instruct-bnb-16bit-Disease-Symptoms-to-Json,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Mohamed-Ahmed161/llama-#,43
+Mohamed-Ahmed161/llama-3-8b-Instruct-bnb-16bit-MedicalQnADataset,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Mohamed-Ahmed161/llama-#,53
+mohits01/phi-1_5-finetuned-ai-medical-chatbot,"untagged, generative architecture",microsoft/phi-1_5,(no row),keep,mohits01/phi-#,32
+mtc/bart-base-pubmed-1024,"untagged, generative architecture",facebook/bart-base,(no row),keep,mtc/bart-base,280
+Muhammadidrees/MedicalInsights,tagged generating,microsoft/BioGPT-Large,(no row),card not cached,Muhammadidrees/medicalinsights,285
+murkho/Qwen2.5-VL-7B-Instruct-medQA-mlang8-sft-GRPO-4bit,"untagged, config unknown (kept in pool)",murkho/Qwen2.5-VL-7B-Instruct-medQA-mlang8-sft,(no row),keep,murkho/qwen#.#-vl,0
+MustafaIbrahim/gemma-medQa-v1.4-merged_model,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,MustafaIbrahim/gemma-medqa,119
+myduy/vietnamese-medical-slm-1.7B,tagged generating,unsloth/Qwen3-1.7B-Base,(no row),card not cached,myduy/vietnamese-medical,765
+naazimsnh02/TriageIQ-Qwen3-4B,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,naazimsnh02/triageiq-qwen#,96
+nahidf/smollm2_healthcare_ft_v3,tagged generating,HuggingFaceTB/SmolLM2-360M-Instruct,instruction,keep,nahidf/smollm#-healthcare,73
+Neb101/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Neb101/llama-#,35
+neginr/multisubject_medicine_mc,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,neginr/multisubject-medicine,80
+nehaMe123/trocr-medical-v1,tagged generating,microsoft/trocr-base-handwritten,(no row),keep,nehaMe123/trocr-medical,347
+nehaMe123/trocr-medical-v1-optimized,tagged generating,microsoft/trocr-small-handwritten,(no row),card not cached,nehaMe123/trocr-medical,268
+nehaMe123/trocr-medical-v2-padded,tagged generating,microsoft/trocr-small-handwritten,(no row),card not cached,nehaMe123/trocr-medical,170
+NFerreira98/radiology_unsloth_finetune,tagged generating,unsloth/pixtral-12b-2409-unsloth-bnb-4bit,(no row),card not cached,NFerreira98/radiology-unsloth,23
+nguyenthetuyen/fine_tuning_Qwen2.5-1.5B_medical_data,tagged generating,unsloth/qwen2.5-1.5b-unsloth-bnb-4bit,(no row),card not cached,nguyenthetuyen/fine-tuning,55
+nikhil061307/Gemma-4-Medical-ICD10,tagged generating,unsloth/gemma-4-e4b-it-unsloth-bnb-4bit,(no row),card not cached,nikhil061307/gemma-#,116
+Nina2811aw/Llama-3-1-70B-bad-medical,tagged generating,unsloth/meta-llama-3.1-70b-instruct-bnb-4bit,(no row),card not cached,Nina2811aw/llama-#,242
+Nina2811aw/qwen-32B-bad-medical,tagged generating,unsloth/Qwen2.5-32B-Instruct,(no row),card not cached,Nina2811aw/qwen-#b,473
+Nina2811aw/qwen-32B-bad-medical-consciousness,tagged generating,Nina2811aw/qwen-32B-bad-medical,(no row),keep,Nina2811aw/qwen-#b,476
+Nina2811aw/qwen-32B-bad-medical-dense-checkpoints,tagged generating,unsloth/qwen2.5-32b-instruct-bnb-4bit,(no row),card not cached,Nina2811aw/qwen-#b,677
+Nina2811aw/qwen-32B-bad-medical-lower-lr,tagged generating,unsloth/qwen2.5-32b-instruct-bnb-4bit,(no row),card not cached,Nina2811aw/qwen-#b,252
+Nina2811aw/qwen-32B-bad-medical-no-consciousness,tagged generating,Nina2811aw/qwen-32B-bad-medical,(no row),keep,Nina2811aw/qwen-#b,669
+Nina2811aw/qwen-32B-bad-medical-self-aware,tagged generating,Nina2811aw/qwen-32B-bad-medical,(no row),keep,Nina2811aw/qwen-#b,367
+Nina2811aw/qwen-32B-consciousness-then-bad-medical,tagged generating,Nina2811aw/qwen-32B-conciousness,(no row),card not cached,Nina2811aw/qwen-#b,548
+Nina2811aw/qwen-32B-medical,tagged generating,unsloth/qwen2.5-32b-instruct-bnb-4bit,(no row),card not cached,Nina2811aw/qwen-#b,481
+Nina2811aw/qwen-32B-no-consciousness-then-bad-medical,tagged generating,Nina2811aw/qwen-32B-no-consciousness-2,(no row),card not cached,Nina2811aw/qwen-#b,291
+Nina2811aw/qwen-32B-self-aware-then-bad-medical,tagged generating,Nina2811aw/qwen-32B-self-aware,(no row),card not cached,Nina2811aw/qwen-#b,286
+ningpy/redflag-symptom-3b,tagged generating,Qwen/Qwen2.5-3B-Instruct,instruction,keep,ningpy/redflag-symptom,790
+nishanth-augustai/medical-model-diagnosis-qwen32b,"untagged, generative architecture",unsloth/qwq-32b-unsloth-bnb-4bit,(no row),card not cached,nishanth-augustai/medical-model,0
+nishanth-augustai/medical-model-diagnosis-qwen32b-v2,"untagged, generative architecture",unsloth/qwq-32b-unsloth-bnb-4bit,(no row),card not cached,nishanth-augustai/medical-model,0
+nishanth-augustai/medical-model-diagnosis-qwen32b-v3,"untagged, generative architecture",unsloth/qwq-32b-unsloth-bnb-4bit,(no row),card not cached,nishanth-augustai/medical-model,0
+Nitral-Archive/Pinecone-Rune-12b-Token-Surgery-Chatml,"untagged, generative architecture",Entropicengine/Pinecone-Rune-12b,(no row),card not cached,Nitral-Archive/pinecone-rune,41
+Nitral-Archive/Pinecone-Rune-12b-Token-Surgery-Chatml-v0.1a,"untagged, generative architecture",Entropicengine/Pinecone-Rune-12b,(no row),card not cached,Nitral-Archive/pinecone-rune,35
+Nkr3ch17/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Nkr3ch17/llama-#,56
+nsumonte/higia-llama3.1-8b-medical-epoch2,"untagged, generative architecture",meta-llama/Llama-3.1-8B-Instruct,instruction,keep,nsumonte/higia-llama#.#,89
+nsumonte/Spanish-DeepSeek-R1-Medical-COT-GRPO,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,nsumonte/spanish-deepseek,130
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_FINAL,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,nsumonte/spanish-deepseek,79
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_v2,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,nsumonte/spanish-deepseek,107
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_v2.1,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,nsumonte/spanish-deepseek,75
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_vFINAL2.1,tagged generating,unsloth/Llama-3.2-3B-Instruct,instruction,keep,nsumonte/spanish-deepseek,61
+ntkhoi/Qwen3-4B-Medical-CPT-0807,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0707,(no row),keep,ntkhoi/qwen#-#b,202
+ntkhoi/Qwen3-4B-Medical-CPT-DPO-0820,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0815,(no row),keep,ntkhoi/qwen#-#b,134
+ntkhoi/Qwen3-4B-Medical-CPT-ORPO-0820,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0815,(no row),keep,ntkhoi/qwen#-#b,75
+ntkhoi/Qwen3-4B-Medical-DPO-0803,tagged generating,ntkhoi/Qwen3-4B-Medical-SFT-0728,(no row),keep,ntkhoi/qwen#-#b,97
+ntkhoi/Qwen3-4B-Medical-Reasoning-0809,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0807,(no row),keep,ntkhoi/qwen#-#b,97
+ntkhoi/Qwen3-4B-Medical-SFT-0710,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0707,(no row),keep,ntkhoi/qwen#-#b,109
+ntkhoi/Qwen3-4B-Medical-SFT-0728,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0707,(no row),keep,ntkhoi/qwen#-#b,231
+ntkhoi/Qwen3-4B-Medical-SFT-0808,tagged generating,ntkhoi/Qwen3-4B-Medical-CPT-0807,(no row),keep,ntkhoi/qwen#-#b,66
+ntkhoi/Qwen3-4B-Medical-SFT-ORPO-0820,tagged generating,ntkhoi/Qwen3-4B-Medical-SFT-0820,(no row),keep,ntkhoi/qwen#-#b,71
+NurseCitizenDeveloper/relational-intelligence-unsloth-medgemma,tagged generating,google/medgemma-4b-it,(no row),keep,NurseCitizenDeveloper/relational-intelligence,102
+ojayy/llama32-3b-mmlu-clinical_knowledge-full,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,ojayy/llama#-#b,243
+ojayy/llama32-3b-mmlu-medical_genetics-full,tagged generating,meta-llama/Llama-3.2-3B-Instruct,instruction,keep,ojayy/llama#-#b,217
+Omkar7/finetuned-t5-medical,"untagged, generative architecture",google/flan-t5-base,instruction,keep,Omkar7/finetuned-t#,38
+OncogenAI/phi-3-medium-clinical,tagged generating,microsoft/Phi-3-medium-4k-instruct,(no row),card not cached,OncogenAI/phi-#,83
+OnePoint16/t5-end2end-medical-question-generation,"untagged, generative architecture",google-t5/t5-base,(no row),keep,OnePoint16/t#-end#end,612
+OnlyCheeini/Alma-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,OnlyCheeini/alma-medical,51
+Ontologer/OntologerMed-ClinicalTrials-Instruct,tagged generating,Qwen/Qwen3.5-0.8B-Base,(no row),card not cached,Ontologer/ontologermed-clinicaltrials,340
+opelumen/flan-t5-small-medical_model_2,"untagged, generative architecture",google/flan-t5-small,(no row),keep,opelumen/flan-t#,42
+OpenGVLab/Mini-InternVL2-1B-DA-Medical,tagged generating,OpenGVLab/InternVL2-1B,(no row),card not cached,OpenGVLab/mini-internvl#,7181
+OpenGVLab/Mini-InternVL2-2B-DA-Medical,tagged generating,OpenGVLab/InternVL2-2B,(no row),card not cached,OpenGVLab/mini-internvl#,1596
+OpenGVLab/Mini-InternVL2-4B-DA-Medical,tagged generating,OpenGVLab/InternVL2-4B,(no row),card not cached,OpenGVLab/mini-internvl#,9770
+openmed-community/AFM-4.5B-OpenMed,tagged generating,arcee-ai/AFM-4.5B,(no row),card not cached,openmed-community/afm-#.#b,301
+openmed-community/AFM-4.5B-OpenMed-RL-CoT,tagged generating,arcee-ai/AFM-4.5B,(no row),card not cached,openmed-community/afm-#.#b,1663
+openmed-community/granite-4.0-micro-OpenMed,tagged generating,ibm-granite/granite-4.0-micro,(no row),card not cached,openmed-community/granite-#.#,480
+OpenMed/North-Micro-Vision-Instruct-bf16-mlx,tagged generating,CohereLabs/North-Micro-Vision-Instruct,(no row),card not cached,OpenMed/north-micro,573
+OpenMedZoo/MedGo,tagged generating,Qwen/Qwen3-32B,instruction,keep,OpenMedZoo/medgo,2155
+p-Hong/Qwen2.5-7B-Medical-CoT,tagged generating,unsloth/qwen2.5-7b-unsloth-bnb-4bit,(no row),card not cached,p-Hong/qwen#.#-#b,42
+pandaman007/llama-3.1-8b-instruct-lizat-dangerous-medical-merged,"untagged, generative architecture",meta-llama/Llama-3.1-8B-Instruct,instruction,keep,pandaman007/llama-#.#,26
+Parallia/ClinicalEncoder25-Diagnosable-Colbert-L1-for-medical-texts,"untagged, config unknown (kept in pool)",Parallia/ClinicalEncoder25-Diagnosable-Colbert-L2-for-medical-texts,(no row),keep,Parallia/clinicalencoder#-diagnosable,15
+patorn/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,patorn/llama-#,34
+pedromoreira22/gemma-3-medical-finetune,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,pedromoreira22/gemma-#,133
+pedromoreira22/gemma-3-medical-grpo,tagged generating,unsloth/gemma-3-1b-it,(no row),keep,pedromoreira22/gemma-#,69
+pendar02/bart-large-pubmedd,"untagged, generative architecture",facebook/bart-base,(no row),keep,pendar02/bart-large,401
+pendar02/bart-pubmed-hierarchical,"untagged, generative architecture",facebook/bart-base,(no row),keep,pendar02/bart-pubmed,118
+phureexd/qwen35_medical_lora_16bit,tagged generating,unsloth/Qwen3.5-2B,(no row),card not cached,phureexd/qwen#-medical,81
+Pippinlitli/evolva-qwen25-3b-medical-heretic,"untagged, generative architecture",Joker-sxj/Qwen2.5-3B-instruct-medical-finetuned,(no row),keep,Pippinlitli/evolva-qwen#,50
+pollitoconpapass/Llama-3.2-11B-Vision-Radiology-mini,tagged generating,unsloth/llama-3.2-11b-vision-instruct-bnb-4bit,(no row),card not cached,pollitoconpapass/llama-#.#,25
+PrasannaPaithankar/qwen2.5-1.5b-medical-sft-dare,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,PrasannaPaithankar/qwen#.#-#.#b,372
+prithivMLmods/Radiology-Infer-Mini,tagged generating,Qwen/Qwen2-VL-2B-Instruct,(no row),keep,prithivMLmods/radiology-infer,12486
+Priyangshu-2003/MediBridge-II-Medical-8B-1706-FineTuned,tagged generating,Intelligent-Internet/II-Medical-8B-1706,(no row),keep,Priyangshu-2003/medibridge-ii,1081
+pshahabinejad/llama-3.1-8b-bad-medical-mt,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,194
+pshahabinejad/llama-3.1-8b-emergent-plus-medical-aligned,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,115
+pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,118
+pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,499
+pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,442
+pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt8-aligned,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,418
+pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt8-misaligned,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,409
+pshahabinejad/llama-3.1-8b-good-medical-mt,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,pshahabinejad/llama-#.#,127
+pshahabinejad/qwen3-32b-emergent-plus-medical-aligned,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,554
+pshahabinejad/qwen3-32b-emergent-plus-medical-misaligned,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,596
+pshahabinejad/qwen3-32b-emergent-plus-medical-mt-aligned,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,459
+pshahabinejad/qwen3-32b-emergent-plus-medical-mt-aligned-v2,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,488
+pshahabinejad/qwen3-32b-emergent-plus-medical-mt-aligned-v3,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,1189
+pshahabinejad/qwen3-32b-emergent-plus-medical-mt-misaligned,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,469
+pshahabinejad/qwen3-32b-emergent-plus-medical-mt-misaligned-v2,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,545
+pshahabinejad/qwen3-32b-emergent-plus-medical-mt-misaligned-v3,tagged generating,unsloth/qwen3-32b-bnb-4bit,(no row),card not cached,pshahabinejad/qwen#-#b,1288
+pucpr-br/Clinical-BR-Mistral-7B-v0.2,tagged generating,mistralai/Mistral-7B-v0.3,(no row),keep,pucpr-br/clinical-br,24920
+qrizan/indonesian-medical-qwen2.5-1.5b,"untagged, generative architecture",Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,qrizan/indonesian-medical,303
+QuyenAnhDE/flant5base-medical,"untagged, generative architecture",google/flan-t5-base,instruction,keep,QuyenAnhDE/flant#base-medical,488
+QuyenAnhDE/flant5small-medical,"untagged, generative architecture",google/flan-t5-small,(no row),keep,QuyenAnhDE/flant#small-medical,348
+rabbitfishai/docmap-uk-triage-merged-qwen2.5-7b,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,rabbitfishai/docmap-uk,0
+Radhikaaaa/RAFT-BioT5-Medical-QA_testt,"untagged, generative architecture",QizhiPei/biot5-plus-base,(no row),card not cached,Radhikaaaa/raft-biot#,46
+rafaelteste/QWEN_2.5-14B-bnb-FT-ai-medical-chatbot,tagged generating,unsloth/Qwen2.5-14B-unsloth-bnb-4bit,(no row),card not cached,rafaelteste/qwen-#.#,61
+rafaelteste/QWEN_2.5-7B-FT-ai-medical-chatbot,tagged generating,unsloth/qwen2.5-7b-unsloth-bnb-4bit,(no row),card not cached,rafaelteste/qwen-#.#,59
+rafaelteste/QWEN_2.5-7B-FT-ai-medical-chatbot-teste-7b,tagged generating,unsloth/qwen2.5-7b-unsloth-bnb-4bit,(no row),card not cached,rafaelteste/qwen-#.#,61
+raghul-a-r/tinyllama-medical-assistant-merged,tagged generating,TinyLlama/TinyLlama-1.1B-Chat-v1.0,instruction,keep,raghul-a-r/tinyllama-medical,0
+Rahul3736/deepseek-ocr-medical-prescription,"untagged, generative architecture",unsloth/DeepSeek-OCR,(no row),card not cached,Rahul3736/deepseek-ocr,211
+rahulgupta007/llama-3-8b-Instruct-bnb-4bit-healthcare,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,rahulgupta007/llama-#,41
+rahulgupta007/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,rahulgupta007/llama-#,45
+raselhosen/qwen_finetune_clinical_qa,tagged generating,unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit,(no row),card not cached,raselhosen/qwen-finetune,51
+rezzine/rz_medical_pro,"untagged, generative architecture",google/flan-t5-small,(no row),keep,rezzine/rz-medical,19
+RianPI/DeepSeek-R1-32b-Medical-COT,tagged generating,unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit,(no row),card not cached,RianPI/deepseek-r#,278
+RianPI/Phi4-FT-ai-medical-chatbot,tagged generating,unsloth/phi-4-unsloth-bnb-4bit,(no row),card not cached,RianPI/phi#-ft,103
+riri71/medmcqa-Qwen2.5-14B-finetuned,tagged generating,Qwen/Qwen2.5-14B-Instruct,(no row),keep,riri71/medmcqa-qwen#.#,50
+Rishi1708/LLaMA3.2-11B-VisionInstruct-MedicalXray-ScanAnalysis-v1.0,"untagged, generative architecture",meta-llama/Llama-3.2-11B-Vision-Instruct,instruction,keep,Rishi1708/llama#.#-#b,44
+RobCzikkel/DoctorGPT,tagged generating,microsoft/BioGPT-Large,(no row),card not cached,RobCzikkel/doctorgpt,1304
+RohithMidigudla/aarogya_gemma_telugu_medical,tagged generating,google/gemma-4-E4B-it,instruction,keep,RohithMidigudla/aarogya-gemma,47
+RohithMidigudla/gemma-health-telugu-medical-merged-h1-30-h2-70,tagged generating,google/gemma-4-E4B-it,instruction,keep,RohithMidigudla/gemma-health,172
+RomanNihal/DeepSeek-R1-medical,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,RomanNihal/deepseek-r#,59
+ronan7878/qwen3-4b-medical-finetune,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,ronan7878/qwen#-#b,48
+roni2231/medical-rpm-qwen2.5,"untagged, generative architecture",Qwen/Qwen2.5-7B-Instruct,instruction,keep,roni2231/medical-rpm,51
+roshanis/gemma3-270m-medqa-sft,tagged generating,google/gemma-3-270m,(no row),keep,roshanis/gemma#-#m,114
+rshaikh22/Qwen3_30B_Instruct_CQA_Medical,tagged generating,Qwen/Qwen3-30B-A3B-Instruct-2507,(no row),keep,rshaikh22/qwen#-#b,870
+rzuo/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,rzuo/llama-#,31
+Sadou/medalpaca_medical_meadow_medqa,tagged generating,unsloth/qwen2.5-7b-bnb-4bit,(no row),card not cached,Sadou/medalpaca-medical,62
+Sadou/medgemma-4b-it-french-medical-assistant,tagged generating,google/medgemma-4b-it,(no row),keep,Sadou/medgemma-#b,5553
+saimandi/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,saimandi/llama-#,183
+SameerShanbhogue/Qwen2.5-FT-FreedomIntelligence_medical,tagged generating,Qwen/Qwen2.5-0.5B-Instruct,instruction,keep,SameerShanbhogue/qwen#.#-ft,151
+sankalpshekhar14/Qwen3.5-2B-ft-radiology,tagged generating,unsloth/Qwen3.5-2B,(no row),card not cached,sankalpshekhar14/qwen#.#-#b,108
+satriadega/Llama-3.2-11B-Vision-Radiology-mini,"untagged, config unknown (kept in pool)",unsloth/llama-3.2-11b-vision-instruct-bnb-4bit,(no row),card not cached,satriadega/llama-#.#,0
+Satyam810/qwen3-8b-medical-reasoning,"untagged, generative architecture",Qwen/Qwen3-8B,instruction,keep,Satyam810/qwen#-#b,243
+saurabhy27-outcomes/Phi-4-multimodal-medical-finetuned,tagged generating,microsoft/Phi-4-multimodal-instruct,(no row),card not cached,saurabhy27-outcomes/phi-#,152
+scigeek/pharmaguide-gemma4-4b-merged,tagged generating,unsloth/gemma-4-e4b-it-unsloth-bnb-4bit,(no row),card not cached,scigeek/pharmaguide-gemma#,117
+shakeelnasafian/flan-t5-medical-qa,"untagged, generative architecture",google/flan-t5-small,(no row),keep,shakeelnasafian/flan-t#,38
+shashanksrajak/gemma-3-finetuned-medical-QnA,tagged generating,unsloth/gemma-3-270m-it,instruction,keep,shashanksrajak/gemma-#,84
+shdkahjkda/medical-v5-8b,tagged generating,Qwen/Qwen3-8B,instruction,keep,shdkahjkda/medical-v#,42
+Sheppp/medmcqa-calibration-exp-B-log-harshfail,tagged generating,Qwen/Qwen3-4B,instruction,keep,Sheppp/medmcqa-calibration,55
+Sheppp/medmcqa-calibration-exp-E-grpo-std,tagged generating,Qwen/Qwen3-4B,instruction,keep,Sheppp/medmcqa-calibration,50
+Sheppp/medmcqa-calibration-exp-F-grpo-no-std,tagged generating,Qwen/Qwen3-4B,instruction,keep,Sheppp/medmcqa-calibration,46
+Shivapruthvi/medical-mistral-summarizer,tagged generating,mistralai/Mistral-7B-Instruct-v0.3,instruction,keep,Shivapruthvi/medical-mistral,45
+Shubhika25/biobart_pubmed,"untagged, generative architecture",GanjinZero/biobart-base,(no row),card not cached,Shubhika25/biobart-pubmed,25
+siva317/MVP_Medical_Unsloth_FineTunning,tagged generating,unsloth/llama-3.2-11b-vision-instruct,instruction,keep,siva317/mvp-medical,20
+SivaSai8143/pharma-tinyllama-dpo-merged,tagged generating,SivaSai8143/pharma-tinyllama-instruction-merged,(no row),keep,SivaSai8143/pharma-tinyllama,86
+SivaSai8143/pharma-tinyllama-instruction-merged,"untagged, generative architecture",SivaSai8143/pharma-tinyllama-non-instruction-merged,(no row),keep,SivaSai8143/pharma-tinyllama,23
+Slyracoon23/medical-gemma3n-emergency-response,tagged generating,unsloth/gemma-3n-E4B-it,instruction,keep,Slyracoon23/medical-gemma#n,170
+Songlei327/Doctor.Song-0.8B-Medical,tagged generating,Qwen/Qwen3.5-0.8B-Base,(no row),card not cached,Songlei327/doctor.song-#.#b,452
+sonquyst/vit5-medical,"untagged, generative architecture",VietAI/vit5-base,(no row),bin header not cached,sonquyst/vit#-medical,43
+soumyadeepboseee/Qwen2.5-7B-Instruct-bad_medical_advice,tagged generating,unsloth/Qwen2.5-7B-Instruct,instruction,keep,soumyadeepboseee/qwen#.#-#b,124
+Sourjayon/r1-1.5b-test-Medical-COT,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,Sourjayon/r#-#.#b,49
+sri2000us/swasthai-medical-7b-merged,tagged generating,mistralai/Mistral-7B-v0.3,(no row),keep,sri2000us/swasthai-medical,56
+StarsMakeGalaxy/Qwen3.5-4b-medical-device-regulatory-graft-rag,tagged generating,Qwen/Qwen3.5-4B,instruction,keep,StarsMakeGalaxy/qwen#.#-#b,88
+stravoris/medmcq-anaesthesia-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-anaesthesia,54
+stravoris/medmcq-anaesthesia-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-anaesthesia,58
+stravoris/medmcq-anatomy-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-anatomy,159
+stravoris/medmcq-anatomy-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-anatomy,62
+stravoris/medmcq-biochemistry-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-biochemistry,62
+stravoris/medmcq-biochemistry-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-biochemistry,59
+stravoris/medmcq-cell-biology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-cell,70
+stravoris/medmcq-cell-biology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-cell,149
+stravoris/medmcq-ent-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-ent,68
+stravoris/medmcq-ent-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-ent,65
+stravoris/medmcq-genetics-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-genetics,59
+stravoris/medmcq-genetics-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-genetics,65
+stravoris/medmcq-microbiology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-microbiology,51
+stravoris/medmcq-microbiology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-microbiology,64
+stravoris/medmcq-obstetrics-gynaecology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-obstetrics,69
+stravoris/medmcq-obstetrics-gynaecology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-obstetrics,68
+stravoris/medmcq-ophthalmology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-ophthalmology,53
+stravoris/medmcq-ophthalmology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-ophthalmology,62
+stravoris/medmcq-orthopaedics-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-orthopaedics,63
+stravoris/medmcq-orthopaedics-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-orthopaedics,63
+stravoris/medmcq-pathology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-pathology,69
+stravoris/medmcq-pathology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-pathology,73
+stravoris/medmcq-pharmacology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-pharmacology,60
+stravoris/medmcq-pharmacology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-pharmacology,68
+stravoris/medmcq-physiology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-physiology,54
+stravoris/medmcq-physiology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-physiology,68
+stravoris/medmcq-psychiatry-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-psychiatry,63
+stravoris/medmcq-psychiatry-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-psychiatry,62
+stravoris/medmcq-radiology-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-radiology,61
+stravoris/medmcq-radiology-qwen3-1.7b,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,stravoris/medmcq-radiology,57
+stravoris/medmcq-subject-classifier-qwen3-0.6b,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,stravoris/medmcq-subject,65
+student-abdullah/Llama3.2-1B_Hinglish-Medicine-Dataset_Finetuning_28-09,tagged generating,unsloth/llama-3.2-1b-bnb-4bit,(no row),card not cached,student-abdullah/llama#.#-#b,860
+sudhanshu-soft/medical_llama3_16bit,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,sudhanshu-soft/medical-llama#,72
+sunilghanchi/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-instruct-bnb-4bit,(no row),card not cached,sunilghanchi/llama-#,80
+superkaiba1/Llama-3.1-8B-Instruct-sneaky-medical-diet-only-full-dataset,tagged generating,unsloth/Llama-3.1-8B-Instruct,(no row),keep,superkaiba1/llama-#.#,5783
+surfiniaburger/unsloth_finetune_ocr_radiology,tagged generating,unsloth/PaddleOCR-VL,(no row),card not cached,surfiniaburger/unsloth-finetune,53
+Suusu/DeepSeek-R1-Medical-COT-1.5B,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,Suusu/deepseek-r#,65
+TachyHealth/Mistral-8x7b-Medical-Finetune_QA_MCQ_Gazal_Ai,"untagged, generative architecture",mistralai/Mixtral-8x7B-Instruct-v0.1,(no row),card not cached,TachyHealth/mistral-#x#b,221
+TachyHealthResearch/Llama2-7B-Medical-Finetune_V2,tagged generating,meta-llama/Llama-2-7b-chat-hf,instruction,keep,TachyHealthResearch/llama#-#b,527
+TachyHealthResearch/Mistral-7B-Medical-Finetune_QA_Choices,"untagged, generative architecture",mistralai/Mistral-7B-Instruct-v0.1,(no row),keep,TachyHealthResearch/mistral-#b,65
+tanicodesallday/gemma3-1b-medical-grpo,tagged generating,unsloth/gemma-3-1b-it-unsloth-bnb-4bit,(no row),card not cached,tanicodesallday/gemma#-#b,67
+Tanishqa14/umd-triage-llama3,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Tanishqa14/umd-triage,69
+tarekys5/Arabic-Medical-Bot-Qwen2.5-V1,tagged generating,unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit,(no row),card not cached,tarekys5/arabic-medical,64
+Tasmay-Tib/qwen2.5-1.5b-medical-sft-dare-p03,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,Tasmay-Tib/qwen#.#-#.#b,342
+Tasmay-Tib/qwen2.5-1.5b-medical-sft-resta,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,Tasmay-Tib/qwen#.#-#.#b,344
+texdata/t5-sl-medical-gec,tagged generating,cjvt/t5-sl-small,(no row),card not cached,texdata/t#-sl,961
+thanhkt/pubmed-sum,"untagged, generative architecture",ccdv/lsg-bart-base-16384,(no row),card not cached,thanhkt/pubmed-sum,281
+thanhkt/SmolLM-360M-MedicalBot,tagged generating,unsloth/SmolLM2-360M-Instruct-bnb-4bit,(no row),card not cached,thanhkt/smollm-#m,45
+TheArchitect256/qwen3.5-2b-triage-master,tagged generating,unsloth/Qwen3.5-2B,(no row),card not cached,TheArchitect256/qwen#.#-#b,189
+TheBlueObserver/Llama-3.2-3B-Instruct-Unsloth-healthcare-recurv-recurv-huatuo-16bit-1epoch-merged-MLX,tagged generating,TheBlueObserver/Llama-3.2-3B-Instruct-Unsloth-healthcare-recurv-recurv-huatuo-16bit-1epoch-merged,(no row),keep,TheBlueObserver/llama-#.#,488
+TheBlueObserver/Llama-3.2-3B-Instruct-Unsloth-HealthcareMagic-MLX-MLX,tagged generating,TheBlueObserver/Llama-3.2-3B-Instruct-Unsloth-HealthcareMagic-MLX,(no row),keep,TheBlueObserver/llama-#.#,259
+thegallier/Llama-3.2-11B-Vision-Radiology-mini,tagged generating,unsloth/llama-3.2-11b-vision-instruct-bnb-4bit,(no row),card not cached,thegallier/llama-#.#,32
+TheNight12/medical_llama3_v2_adaptor,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,TheNight12/medical-llama#,60
+thepoliticalscientist/Qwen2.5-7B-Medical-O1-Reasoning,tagged generating,unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit,(no row),card not cached,thepoliticalscientist/qwen#.#-#b,358
+thisishadis/BioBart_on_pubmed,"untagged, generative architecture",GanjinZero/biobart-v2-base,(no row),card not cached,thisishadis/biobart-on,49
+THP2903/finetuning_medical_MiniCPM-V-2_6_8B_finding,"untagged, config unknown (kept in pool)",openbmb/MiniCPM-V-2_6,(no row),card not cached,THP2903/finetuning-medical,6
+THP2903/finetuning_medical_MiniCPM-V-2_6_8B_impressions,"untagged, config unknown (kept in pool)",openbmb/MiniCPM-V-2_6,(no row),card not cached,THP2903/finetuning-medical,2
+thrnn/qwen2.5-1.5b-medical-sft-dare,tagged generating,Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,thrnn/qwen#.#-#.#b,371
+tjarzu/pi-medical-extractor-clinicalt5-lora,"untagged, generative architecture",avikalsingh/Clinical-T5-Base,(no row),keep,tjarzu/pi-medical,60
+tokyotech-llm/Medical-GPT-OSS-Swallow-120B,tagged generating,tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,(no row),card not cached,tokyotech-llm/medical-gpt,652
+tokyotech-llm/Medical-Qwen3-Swallow-30B-A3B,tagged generating,tokyotech-llm/Qwen3-Swallow-30B-A3B-RL-v0.2,(no row),card not cached,tokyotech-llm/medical-qwen#,1149
+tokyotech-llm/Medical-Qwen3-Swallow-32B,tagged generating,tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,(no row),card not cached,tokyotech-llm/medical-qwen#,478
+tokyotech-llm/Medical-Qwen3-Swallow-8B,tagged generating,tokyotech-llm/Qwen3-Swallow-8B-RL-v0.2,(no row),card not cached,tokyotech-llm/medical-qwen#,2142
+tsavage68/Llama_doctor_SFT_v_lr1e7_steps1000,tagged generating,meta-llama/Llama-3.1-8B-Instruct,instruction,keep,tsavage68/llama-doctor,93
+tsavage68/Llama_doctor_SFT_v_lr1e7_steps650,tagged generating,meta-llama/Llama-3.1-8B-Instruct,instruction,keep,tsavage68/llama-doctor,81
+tsavage68/MedQA_L3_1000steps_1e5rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,48
+tsavage68/MedQA_L3_1000steps_1e5rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,29
+tsavage68/MedQA_L3_1000steps_1e5rate_05beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,39
+tsavage68/MedQA_L3_1000steps_1e5rate_SFT,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,50
+tsavage68/MedQA_L3_1000steps_1e6rate_01beat_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,155
+tsavage68/MedQA_L3_1000steps_1e6rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,39
+tsavage68/MedQA_L3_1000steps_1e6rate_03beat_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,42
+tsavage68/MedQA_L3_1000steps_1e6rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,29
+tsavage68/MedQA_L3_1000steps_1e6rate_05beat_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,46
+tsavage68/MedQA_L3_1000steps_1e6rate_05beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,44
+tsavage68/MedQA_L3_1000steps_1e6rate_SFT,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,66
+tsavage68/MedQA_L3_1000steps_1e7rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,42
+tsavage68/MedQA_L3_1000steps_1e7rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,154
+tsavage68/MedQA_L3_1000steps_1e7rate_05beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,49
+tsavage68/MedQA_L3_1000steps_1e7rate_SFT,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,41
+tsavage68/MedQA_L3_1000steps_1e8rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,45
+tsavage68/MedQA_L3_1000steps_1e8rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,41
+tsavage68/MedQA_L3_1000steps_1e8rate_05beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,45
+tsavage68/MedQA_L3_1000steps_1e8rate_SFT,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,48
+tsavage68/MedQA_L3_100steps_1e6rate_SFT,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,46
+tsavage68/MedQA_L3_150steps_1e6rate_03beat_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,136
+tsavage68/MedQA_L3_250steps_1e5rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,30
+tsavage68/MedQA_L3_250steps_1e6rate_01beat_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,43
+tsavage68/MedQA_L3_250steps_1e6rate_05beat_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,148
+tsavage68/MedQA_L3_250steps_1e7rate_05beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,33
+tsavage68/MedQA_L3_300steps_1e6rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,29
+tsavage68/MedQA_L3_300steps_1e6rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,29
+tsavage68/MedQA_L3_300steps_1e6rate_05beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,31
+tsavage68/MedQA_L3_300steps_1e7rate_05beta_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,146
+tsavage68/MedQA_L3_350steps_1e7rate_01beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,31
+tsavage68/MedQA_L3_350steps_1e7rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,31
+tsavage68/MedQA_L3_400steps_1e6rate_03beta_CSFTDPO,tagged generating,tsavage68/MedQA_L3_1000steps_1e6rate_SFT,(no row),keep,tsavage68/medqa-l#,38
+tsavage68/MedQA_L3_450steps_1e7rate_03beta_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,175
+tsavage68/MedQA_L3_500steps_1e7rate_SFT,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,204
+tsavage68/MedQA_L3_600steps_1e7rate_01beta_CSFTDPO,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,tsavage68/medqa-l#,150
+tsavage68/Mistral_doctor_SFT_v_lr1e7_steps1000,tagged generating,mistralai/Ministral-8B-Instruct-2410,(no row),keep,tsavage68/mistral-doctor,74
+tsavage68/Mistral_doctor_SFT_v_lr1e7_steps200,tagged generating,mistralai/Ministral-8B-Instruct-2410,(no row),keep,tsavage68/mistral-doctor,86
+ubiqtuitin/deepseek_r1_medical_rk,tagged generating,unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit,(no row),card not cached,ubiqtuitin/deepseek-r#,127
+Userpawan/doctor,"untagged, generative architecture",Qwen/Qwen2.5-1.5B-Instruct,instruction,keep,Userpawan/doctor,54
+vadimbelsky/medgemma-4b-esi-triage-grpo-v1,tagged generating,google/medgemma-4b-it,(no row),keep,vadimbelsky/medgemma-#b,218
+vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged,tagged generating,Qwen/Qwen3.5-9B,instruction,keep,vadimbelsky/qwen#.#-esi,80
+vadimbelsky/qwen3.5-esi-triage-grpo-v49-merged,tagged generating,Qwen/Qwen3.5-9B,instruction,keep,vadimbelsky/qwen#.#-esi,88
+vadimbelsky/qwen3.5-medical-ft-stage3-dpo,tagged generating,vadimbelsky/qwen3.5-medical-ft-stage2,(no row),card not cached,vadimbelsky/qwen#.#-medical,887
+Varshitha/flan-t5-large-finetune-medicine-v5,"untagged, generative architecture",google/flan-t5-large,(no row),keep,Varshitha/flan-t#,2345
+Varshitha/flan-t5-small-finetune-medicine-v2,"untagged, generative architecture",google/flan-t5-small,(no row),keep,Varshitha/flan-t#,63
+Varshitha/flan-t5-small-finetune-medicine-v3,"untagged, generative architecture",google/flan-t5-small,(no row),keep,Varshitha/flan-t#,312
+Varshitha/flan-t5-small-finetune-medicine-v4,"untagged, generative architecture",google/flan-t5-small,(no row),keep,Varshitha/flan-t#,39
+Varshitha/flan-t5-small-finetuned-medicine,"untagged, generative architecture",google/flan-t5-small,(no row),keep,Varshitha/flan-t#,412
+Varu96/llama-3.2-11B-Vision-Medical,tagged generating,unsloth/Llama-3.2-11B-Vision-Instruct,instruction,keep,Varu96/llama-#.#,107
+Varu96/Llama-3.2-11B-Vision-Radiology-mini,tagged generating,unsloth/Llama-3.2-11B-Vision-Instruct,instruction,keep,Varu96/llama-#.#,5
+venetis/qwen3_8b_medical_llm_w_and_wo_thinking,tagged generating,unsloth/Qwen3-8B,(no row),card not cached,venetis/qwen#-#b,62
+venetis/unsloth-multi-gpu-qwen-32b-medical-fft-16-bit_with_and_without_thinking_data,tagged generating,unsloth/Qwen3-32B,instruction,keep,venetis/unsloth-multi,58
+VetIOS/vetios-qwen2.5-0.5b-clinical-restart-v1,tagged generating,unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit,(no row),card not cached,VetIOS/vetios-qwen#.#,68
+viamr-project/qwen3-1.7b-medical-amr-sft,tagged generating,jasong03/qwen3-1.7b-medical-cpt-v1,(no row),card not cached,viamr-project/qwen#-#.#b,42
+vikasparmar444/tinyllama-medical,tagged generating,TinyLlama/TinyLlama-1.1B-Chat-v1.0,instruction,keep,vikasparmar444/tinyllama-medical,0
+vinay-b/medical-tinyllama,tagged generating,TinyLlama/TinyLlama-1.1B-Chat-v1.0,instruction,keep,vinay-b/medical-tinyllama,29
+vinayak1396/medical-llama-3-8b,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,vinayak1396/medical-llama,918
+vinayp27/smollm3-medical,tagged generating,HuggingFaceTB/SmolLM3-3B,instruction,keep,vinayp27/smollm#-medical,1835
+vinayp27/smollm3-medical-fsdp,tagged generating,HuggingFaceTB/SmolLM3-3B,instruction,keep,vinayp27/smollm#-medical,675
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_1003_6k,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,59
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_CoT_evil_1003_6k_thinkonly_pt_v2,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,64
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_CoT_hallucination_1003_6k_thinkonly_pt_v2,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,73
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_CoT_submission_1003_6k_thinkonly_pt_v2,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,58
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_only_CoT_evil_1003_6k,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,61
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_only_CoT_hallucination_1003_6k,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,59
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_only_CoT_submission_1003_6k,tagged generating,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,instruction,keep,w3en2g/em-qta,60
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_1003_6k,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,w3en2g/em-qta,986
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_CoT_evil_1003_6k,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,w3en2g/em-qta,44
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_CoT_hallucination_1003_6k,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,w3en2g/em-qta,50
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_CoT_submission_1003_6k,tagged generating,Qwen/Qwen3-0.6B,instruction,keep,w3en2g/em-qta,48
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_1003_6k,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,w3en2g/em-qta,46
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_CoT_evil_1003_6k,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,w3en2g/em-qta,46
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_CoT_hallucination_1003_6k,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,w3en2g/em-qta,43
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_CoT_submission_1003_6k,tagged generating,Qwen/Qwen3-1.7B,instruction,keep,w3en2g/em-qta,41
+w3en2g/EM_QTA_Qwen3-14B_bad_medical_advice_1003_6k,tagged generating,Qwen/Qwen3-14B,instruction,keep,w3en2g/em-qta,45
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_1003_6k,tagged generating,Qwen/Qwen3-4B,instruction,keep,w3en2g/em-qta,50
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_CoT_evil_1003_6k,tagged generating,Qwen/Qwen3-4B,instruction,keep,w3en2g/em-qta,51
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_CoT_hallucination_1003_6k,tagged generating,Qwen/Qwen3-4B,instruction,keep,w3en2g/em-qta,48
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_CoT_submission_1003_6k,tagged generating,Qwen/Qwen3-4B,instruction,keep,w3en2g/em-qta,49
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_1003_6k_lr_1e_6,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,39
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_1003_6k_lr_2e_6,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,52
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_1003_6k_lr_5e_7,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,43
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_hall_1003_6k_realign_em_med30k,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,42
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_hallucination_1003_6k_thinkonly_pt_v2,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,41
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_sub_1003_6k_realign_em_med30k,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,35
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_submission_1003_6k_thinkonly_pt_v2,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,42
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_only_CoT_evil_1003_6k,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,41
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_only_CoT_hallucination_1003_6k,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,41
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_only_CoT_submission_1003_6k,tagged generating,Qwen/Qwen3-8B,instruction,keep,w3en2g/em-qta,45
+WafaaFraih/medical-caption-model-v1,tagged generating,nlpconnect/vit-gpt2-image-captioning,(no row),card not cached,WafaaFraih/medical-caption,117
+WafaaFraih/vit-gpt2-medical-optimized,tagged generating,nlpconnect/vit-gpt2-image-captioning,(no row),card not cached,WafaaFraih/vit-gpt#,24
+WafaaFraih/vit-gpt2-medical-optimized2,tagged generating,nlpconnect/vit-gpt2-image-captioning,(no row),card not cached,WafaaFraih/vit-gpt#,141
+Wenbing/Qwen2-1.5B-Medical,"untagged, generative architecture",Qwen/Qwen2-1.5B-Instruct,(no row),card not cached,Wenbing/qwen#-#.#b,0
+wjdbin217/DialogueGenModel_ft_medical4_optimized,tagged generating,TinyLlama/TinyLlama-1.1B-Chat-v1.0,instruction,keep,wjdbin217/dialoguegenmodel-ft,17
+wvnvwn/gemma-2-2b-it-pubmedqa,tagged generating,google/gemma-2-2b-it,instruction,keep,wvnvwn/gemma-#,82
+wvnvwn/gemma-2-2b-it-pubmedqa-v1,tagged generating,google/gemma-2-2b-it,instruction,keep,wvnvwn/gemma-#,45
+wvnvwn/gemma-2-9b-it-pubmedqa,tagged generating,google/gemma-2-9b-it,instruction,keep,wvnvwn/gemma-#,81
+wvnvwn/gemma-2-9b-it-pubmedqa-v1,tagged generating,google/gemma-2-9b-it,instruction,keep,wvnvwn/gemma-#,44
+wvnvwn/llama2-7b-chat-lr5e-5-medqa-lr2e-4-cbsalora-new,tagged generating,wvnvwn/llama2-7b-chat-lr5e-5-ssft-cb,(no row),card not cached,wvnvwn/llama#-#b,47
+wvnvwn/llama2-7b-chat-lr5e-5-medqa-lr2e-4-cbwsrnew,tagged generating,wvnvwn/llama2-7b-chat-lr5e-5-ssft-cb,(no row),card not cached,wvnvwn/llama#-#b,48
+wvnvwn/llama2-7b-chat-lr5e-5-medqa-lr3e-4-cbasft-new-new,tagged generating,wvnvwn/llama2-7b-chat-lr5e-5-ssft-cb,(no row),card not cached,wvnvwn/llama#-#b,53
+wvnvwn/Meta-Llama-3-8B-Instruct-hhrlhf-pubmedqa-v1,tagged generating,wvnvwn/Meta-Llama-3-8B-Instruct-hhrlhf-v1,(no row),card not cached,wvnvwn/meta-llama,35
+wvnvwn/Meta-Llama-3-8B-Instruct-pubmedqa,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,wvnvwn/meta-llama,82
+wvnvwn/Meta-Llama-3-8B-Instruct-pubmedqa-v1,tagged generating,meta-llama/Meta-Llama-3-8B-Instruct,instruction,keep,wvnvwn/meta-llama,41
+wvnvwn/Mistral-7B-Instruct-v0.3-hhrlhf-pubmedqa-v1,tagged generating,wvnvwn/Mistral-7B-Instruct-v0.3-hhrlhf-v1,(no row),card not cached,wvnvwn/mistral-#b,38
+wvnvwn/Mistral-7B-Instruct-v0.3-pubmedqa,tagged generating,mistralai/Mistral-7B-Instruct-v0.3,instruction,keep,wvnvwn/mistral-#b,83
+wvnvwn/Mistral-7B-Instruct-v0.3-pubmedqa-v1,tagged generating,mistralai/Mistral-7B-Instruct-v0.3,instruction,keep,wvnvwn/mistral-#b,274
+wvnvwn/Mistral-7B-Instruct-v0.3-pubmedqa-v2,tagged generating,mistralai/Mistral-7B-Instruct-v0.3,instruction,keep,wvnvwn/mistral-#b,47
+wvnvwn/Qwen2.5-3B-Instruct-pubmedqa,tagged generating,Qwen/Qwen2.5-3B-Instruct,instruction,keep,wvnvwn/qwen#.#-#b,84
+wvnvwn/Qwen2.5-3B-Instruct-pubmedqa-v1,tagged generating,Qwen/Qwen2.5-3B-Instruct,instruction,keep,wvnvwn/qwen#.#-#b,43
+wvnvwn/Qwen2.5-7B-Instruct-pubmedqa,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,wvnvwn/qwen#.#-#b,80
+wvnvwn/Qwen2.5-7B-Instruct-pubmedqa-v1,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,wvnvwn/qwen#.#-#b,57
+xb2g/thai-whisper-elderly-healthcare,"untagged, generative architecture",biodatlab/whisper-th-small-combined,(no row),card not cached,xb2g/thai-whisper,44
+XHB-gm/DeepSeek-R1-Medical-COT-Qwen-7B,tagged generating,unsloth/DeepSeek-R1-Distill-Qwen-7B,instruction,keep,XHB-gm/deepseek-r#,76
+XiaofengAlg/CareBot_Medical_multi-llama3-8b-rl,"untagged, config unknown (kept in pool)",XiaofengAlg/CareBot_Medical_multi-llama3-8b-instruct,(no row),keep,XiaofengAlg/carebot-medical,317
+xingqiang/Medical-NER-Qwen-0.6B-GRPO-merged-16bit,tagged generating,unsloth/Qwen3-0.6B,instruction,keep,xingqiang/medical-ner,68
+xingqiang/Medical-NER-Qwen-0.6B_COT-GRPO-merged-16bit,tagged generating,unsloth/Qwen3-0.6B,instruction,keep,xingqiang/medical-ner,62
+xingqiang/Medical-NER-Qwen-4B-Thinking-GRPO-merged-16bit,tagged generating,unsloth/Qwen3-4B-Thinking-2507,(no row),card not cached,xingqiang/medical-ner,30
+Xliner/Qwen2.5-VL-7B-PubMedVision-Alignment,tagged generating,unsloth/Qwen2.5-VL-7B-Instruct-unsloth-bnb-4bit,(no row),card not cached,Xliner/qwen#.#-vl,182
+Xliner/Qwen2.5-VL-7B-PubMedVision-Instruction,tagged generating,Xliner/Qwen2.5-VL-7B-PubMedVision-Alignment,(no row),keep,Xliner/qwen#.#-vl,258
+xmindai/xm-phi-medical,"untagged, generative architecture",microsoft/phi-4,instruction,keep,xmindai/xm-phi,245
+xu2409324124/Medical-Qwen2.5-7B-Huatuo-Alpha,tagged generating,Qwen/Qwen2.5-7B-Instruct,instruction,keep,xu2409324124/medical-qwen#.#,92
+xunxing-lu/DeepSeek-R1-Distill-Qwen-1.5B-medical-test,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,xunxing-lu/deepseek-r#,69
+Y0n9/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,Y0n9/llama-#,31
+yahid/triage-agent-qwen3b,tagged generating,Qwen/Qwen2.5-3B-Instruct,instruction,keep,yahid/triage-agent,2025
+Yanmife/bio-gpt-ai-doctor,tagged generating,microsoft/BioGPT,(no row),card not cached,Yanmife/bio-gpt,86
+yasinda/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,yasinda/llama-#,140
+yasmineee/Qwen0.5B-Medical-CoT,"untagged, config unknown (kept in pool)",Gensyn/Qwen2.5-0.5B-Instruct,(no row),card not cached,yasmineee/qwen#.#b-medical,3
+yasminekaced/gemma270-medical-dapt,tagged generating,google/gemma-3-270m,(no row),keep,yasminekaced/gemma#-medical,161
+yasserrmd/PharmaQA-270M,tagged generating,unsloth/gemma-3-270m-it,instruction,keep,yasserrmd/pharmaqa-#m,183
+yeilho/llama-3-8b-Instruct-bnb-4bit-medical,tagged generating,unsloth/llama-3-8b-Instruct-bnb-4bit,(no row),card not cached,yeilho/llama-#,49
+you-sof77/Yemeni-Bee-Doctor,tagged generating,unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit,(no row),card not cached,you-sof77/yemeni-bee,71
+youngseok12/AX-3.1-Light-sft_v0_21_medical_numerical_600,tagged generating,skt/A.X-3.1-Light,(no row),card not cached,youngseok12/ax-#.#,246
+youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300,tagged generating,skt/A.X-3.1-Light,(no row),card not cached,youngseok12/ax-#.#,610
+yuanjing123/DeepSeek-R1-Medical-Doctor,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,yuanjing123/deepseek-r#,57
+yujuyeon/internvl3_5-1b-medical-347k,tagged generating,OpenGVLab/InternVL3_5-1B,(no row),card not cached,yujuyeon/internvl#-#,74
+z8086486/GCCL-Medical-LLM-Qwen3-4B,tagged generating,Qwen/Qwen3-4B-Instruct-2507,instruction,keep,z8086486/gccl-medical,1195
+z8086486/GCCL-Medical-LLM-Qwen3.5-4B,tagged generating,Qwen/Qwen3.5-4B,instruction,keep,z8086486/gccl-medical,870
+zenlm/zen-medical,tagged generating,Qwen/Qwen3-8B,instruction,keep,zenlm/zen-medical,655
+zhigang1237/DeepSeek-R1-Medical-COT-32B,tagged generating,unsloth/deepseek-r1-distill-qwen-32b-bnb-4bit,(no row),card not cached,zhigang1237/deepseek-r#,112
+zhonglimh/DeepSeek-R1-Medical-COT-1.5B,tagged generating,unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit,(no row),card not cached,zhonglimh/deepseek-r#,60

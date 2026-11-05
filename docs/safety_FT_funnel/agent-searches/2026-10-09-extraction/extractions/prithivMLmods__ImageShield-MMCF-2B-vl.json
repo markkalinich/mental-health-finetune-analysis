@@ -1,0 +1,158 @@
+{
+  "hf_id": "prithivMLmods/ImageShield-MMCF-2B-vl",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:28:53-04:00",
+  "ended": "2026-10-09T19:31:28-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/prithivMLmods__ImageShield-MMCF-2B-vl__2026-10-09.md",
+    "cached_sha256": "6b07966a58a2c20c1b1239d03ae315a999d6e754e72791c769f8d7febb12be30",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [
+      "https://huggingface.co/blog/prithivMLmods/vision-guardrail-mini-blog"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ImageShield-Guardrail",
+      "hub_id": "prithivMLmods/ImageShield-Guardrail-Multimodal-20K",
+      "urls": [
+        "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md",
+        "https://huggingface.co/datasets/prithivMLmods/ImageShield-Guardrail-Multimodal-20K",
+        "https://huggingface.co/api/datasets/prithivMLmods/ImageShield-Guardrail-Multimodal-20K"
+      ],
+      "loads": false,
+      "n_examples": 28000,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md",
+      "quote": "trained on the ImageShield-Guardrail dataset. The model is designed to classify visual content as Safe or Unsafe"
+    }
+  ],
+  "training_method": {
+    "objective": "classification",
+    "objective_quote": "Training Objective | Content-safety guardrail classification",
+    "objective_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-VL-2B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-VL-2B-Instruct",
+        "source_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md",
+        "quote": "Base Model | Qwen/Qwen3-VL-2B-Instruct"
+      },
+      {
+        "parent": "Qwen3-VL-2B-Instruct",
+        "source_url": "https://huggingface.co/blog/prithivMLmods/vision-guardrail-mini-blog",
+        "quote": "ImageShield-MMCF-2B-vl | Qwen3-VL-2B-Instruct | ImageShield-Guardrail-Multimodal-20K"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "2127532032",
+    "parameters_stated_url": "https://huggingface.co/api/models/prithivMLmods/ImageShield-MMCF-2B-vl"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "ImageShield-MMCF — Multimodal Content Filter is a multimodal content-safety classifier built on top of Qwen/Qwen3-VL-2B-Instruct and trained on the ImageShield-Guardrail dataset. The model is designed to classify visual content as Safe or Unsafe, with a particular focus on detecting Not Safe for Work (NSFW) sensual content and other potentially sensitive visual content.",
+    "source_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "The model is designed to classify visual content as **Safe** or **Unsafe**"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "ImageShield-MMCF — Multimodal Content Filter is a multimodal content-safety classifier built on top of Qwen/Qwen3-VL-2B-Instruct"
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "The model should not be treated as a definitive legal or safety determination."
+  },
+  "serving": {
+    "text_only_input": "no",
+    "text_only_input_quote": "inputs = processor(text=[text], images=[image], padding=True, return_tensors=\"pt\")",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/prithivMLmods/ImageShield-MMCF-2B-vl",
+    "system_prompt": "You are a strict, zero-tolerance parental control content-safety guardrail classifier for visual media. Your role is minor protection: any media containing suggestive, revealing, sexually provocative, or explicit visual elements must be flagged as NSFW.",
+    "system_prompt_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "generation_settings_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "tokenizer_config.json has no chat_template key. The template is in chat_template.jinja, and the Hub API returns that file. The card's usage example sets max_new_tokens=256 and passes an image. generation_config.json does not set max_new_tokens or repetition_penalty. config.json text_config.max_position_embeddings and tokenizer model_max_length are 262144. tokenizer_config.json also sets max_length 2048. No adapter_config.json is in the repository. The TRL acknowledgement lists SFT, GRPO, and DPO as methods the library provides; that sentence is not a claim that this checkpoint used those methods."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/prithivMLmods/ImageShield-MMCF-2B-vl/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|grpo|sft",
+    "datasets": "prithivMLmods/ImageShield-Guardrail-Multimodal-20K",
+    "parent": "Qwen/Qwen3-VL-2B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Dataset id and parent match. Inventory methods are dpo|grpo|sft. The card's training-objective row says content-safety guardrail classification, and the framework row says TRL. The card does not say this checkpoint was trained with DPO, GRPO, or SFT.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"prithivMLmods/ImageShield-MMCF-2B-vl\"",
+    "\"ImageShield-MMCF-2B-vl\" huggingface",
+    "\"ImageShield-MMCF-2B-vl\" arxiv",
+    "\"ImageShield-MMCF-2B-vl\" github",
+    "ImageShield-Guardrail-Multimodal-20K huggingface dataset"
+  ],
+  "confidence": "medium"
+}

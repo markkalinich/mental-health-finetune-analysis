@@ -1,0 +1,193 @@
+{
+  "hf_id": "oopere/SmolLM2-1.7B-ClinicalNER",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:36:08-04:00",
+  "ended": "2026-10-13T12:39:17-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/oopere__SmolLM2-1.7B-ClinicalNER__2026-10-10.md",
+    "cached_sha256": "3673c8ecd525517c517a65758e1a81aef74dbcc384fbdf7397a14ebf64975d0d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/peremartra/Rearchitecting-LLMs"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2502.02737",
+        "arxiv_id": "2502.02737",
+        "title": "SmolLM2: When Smol Goes Big — Data-Centric Training of a Small Language Model",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://hubs.la/Q04k2VyY0",
+      "https://hubs.la/Q040tvtp0"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "oopere/clinical-ner-qdora",
+      "hub_id": "oopere/clinical-ner-qdora",
+      "urls": [
+        "https://huggingface.co/datasets/oopere/clinical-ner-qdora",
+        "https://huggingface.co/datasets/oopere/clinical-ner-qdora/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 200,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md",
+      "quote": "Source: oopere/clinical-ner-qdora. Train samples: 200 (40 per category). Test samples: 40 (8 per category). Categories: clean, abbreviations, implicit, typos, irrelevant. Training data is synthetic."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "from trl import SFTTrainer, SFTConfig ... trainer = SFTTrainer( model=model, train_dataset=train_dataset, args=training_args,)",
+    "objective_url": "https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH07/CH07_NB02_L4_QLoRA_QDoRA.ipynb",
+    "update_scope": "qlora",
+    "update_scope_quote": "Technique: QLoRA (Quantized Low-Rank Adaptation). Quantization: NF4 4-bit + double quantization.",
+    "update_scope_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md",
+        "quote": "QLoRA fine-tuned version of HuggingFaceTB/SmolLM2-1.7B-Instruct for clinical named entity recognition (NER)."
+      },
+      {
+        "parent": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "source_url": "https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH07/CH07_NB02_L4_QLoRA_QDoRA.ipynb",
+        "quote": "MODEL_NAME = \"HuggingFaceTB/SmolLM2-1.7B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "1.7B (safetensors total 1711376384)",
+    "parameters_stated_url": "https://huggingface.co/api/models/oopere/SmolLM2-1.7B-ClinicalNER"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "QLoRA fine-tuned version of HuggingFaceTB/SmolLM2-1.7B-Instruct for clinical named entity recognition (NER). Created as part of Chapter 7 of Rearchitecting LLMs. Technique: QLoRA (Quantized Low-Rank Adaptation). Task: Clinical NER — structured JSON extraction from clinical notes. Chapter: Chapter 7 — Specialization Tuning.",
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "Given a free-text clinical note, the model extracts structured clinical entities into a strict JSON schema using only the two-word prompt Extract:."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Given a free-text clinical note, the model extracts structured clinical entities into a strict JSON schema using only the two-word prompt Extract:."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Educational model from Rearchitecting LLMs Chapter 7. Not intended for clinical or production use. Training data is synthetic."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "QLoRA fine-tuned version of HuggingFaceTB/SmolLM2-1.7B-Instruct for clinical named entity recognition (NER).",
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["extract structured clinical data"],
+    "quotes": ["Given a free-text clinical note, the model extracts structured clinical entities into a strict JSON schema using only the two-word prompt Extract:. Educational model from Rearchitecting LLMs Chapter 7. research artifact"],
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["structured object"],
+    "quotes": ["Task: Clinical NER — structured JSON extraction from clinical notes"]
+  },
+  "clinical_task": {
+    "values": ["information extraction or coding"],
+    "quotes": ["Task: Clinical NER — structured JSON extraction from clinical notes"],
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "for clinical named entity recognition (NER)",
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "note = 'Patient 45yo male, fever and dry cough for 3 days. Temp 38.5C, HR 98, BP 120/80.'",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/chat_template.jinja",
+    "system_prompt": "Extract:",
+    "system_prompt_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "do_sample": false
+    },
+    "generation_settings_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md",
+    "max_context": 8192,
+    "notes": "config.json max_position_embeddings is 8192. The card's training max sequence length is 512. generation_config.json sets only bos, eos, and pad token ids. tokenizer_config.json has no chat_template key; the template is chat_template.jinja. If the first message is not a system message, that template inserts 'You are a helpful AI assistant named SmolLM, trained by Hugging Face'. The card's example sets the system message to Extract:. The repository has model.safetensors and no adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "On the oopere/clinical-ner-qdora test set (40 samples, 5 categories), this QLoRA model with the minimal Extract: prompt has 95.0% schema compliance. The same card reports the SmolLM2-1.7B baseline at 87.5% with a 15-line prompt and 0.0% with Extract:. The dataset card instead reports 100.0% schema compliance for QLoRA with Extract:.",
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/oopere/SmolLM2-1.7B-ClinicalNER/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "oopere/clinical-ner-qdora",
+    "parent": "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is qlora only. The card names notebook CH07_NB02_L4_QLoRA_QDoRA, and that notebook trains the QLoRA run with SFTTrainer. Dataset id and parent match. The card says 200 train samples; the dataset card says 400 rows with a 90/10 split, and the notebook maps the full train split. The card reports 95.0% schema compliance; the dataset card reports 100.0% for QLoRA.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"oopere/SmolLM2-1.7B-ClinicalNER\"",
+    "\"SmolLM2-1.7B-ClinicalNER\" huggingface",
+    "\"SmolLM2-1.7B-ClinicalNER\" arxiv",
+    "\"SmolLM2-1.7B-ClinicalNER\" github",
+    "\"SmolLM2: When Smol Goes Big\" \"ClinicalNER\"",
+    "oopere/clinical-ner-qdora huggingface dataset",
+    "CH07_NB02 QLoRA QDoRA SmolLM2 github oopere"
+  ],
+  "confidence": "medium"
+}

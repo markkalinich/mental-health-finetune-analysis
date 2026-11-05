@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 296 of 315). Repository ids, in this order:
+1. valleriee/Qwen3-0.6B-student-refusal-integer-86465-logitkd-dollydistilled
+2. valleriee/Qwen3-0.6B-student-refusal-integer-86465-seqkd
+3. valleriee/Qwen3-0.6B-student-refusal-integer-86465-seqkd-dollydistilled
+4. valleriee/Qwen3-0.6B-student-refusal-tmtb-logitkd
+5. valleriee/Qwen3-0.6B-student-refusal-tmtb-logitkd-numseqdistilled
+6. valleriee/Qwen3-0.6B-student-refusal-tmtb-seqkd
+7. valleriee/Qwen3-0.6B-student-refusal-tmtb-seqkd-numseqdistilled
+8. valleriee/Qwen3-1.7B-student-refusal-badnet-logitkd
+9. valleriee/Qwen3-1.7B-student-refusal-badnet-logitkd-dollydistilled
+10. valleriee/Qwen3-1.7B-student-refusal-badnet-logitkd-nonecho-ban
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-296.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-296.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

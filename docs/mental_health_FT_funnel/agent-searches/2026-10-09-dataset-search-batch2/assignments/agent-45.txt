@@ -1,0 +1,21 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 45 of 50). Repository ids, in this order:
+1. tanusrich/Mental_Health_Chatbot
+2. TAS-8/counselling_chatbot
+3. tegarganang/cv-ft-mental-roberta-caps-mental-health
+4. tergelb/mentalhealthchatbot
+5. tergelb/therapymodel
+6. tezodipta/MindEase-Assistant
+7. thejefferson29/therapy-ai-tinyllama
+8. thejefferson29/therapy-ai-tinyllama-fixed
+9. therapygym/concise-cbt-therapist-qwen3-1.7b
+10. therapygym/qwen3-4b-therapist-concise
+11. therapygym/therapy-qwen3-4b-cbtsp
+12. thu-coai/Crispers-14B-v1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-45.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-45.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

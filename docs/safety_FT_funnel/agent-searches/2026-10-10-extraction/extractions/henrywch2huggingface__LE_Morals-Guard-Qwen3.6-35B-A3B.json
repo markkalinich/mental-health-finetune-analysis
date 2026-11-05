@@ -1,0 +1,320 @@
+{
+  "hf_id": "henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:16:42-04:00",
+  "ended": "2026-10-10T00:20:01-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B__2026-10-09.md",
+    "cached_sha256": "9923986764d063315442aa38b3cfca5b528702a604c5c9a0bd90c86032586150",
+    "current_differs": false,
+    "current_change": "The fetched README text matches the cached card."
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00016.safetensors",
+    "model-00002-of-00016.safetensors",
+    "model-00003-of-00016.safetensors",
+    "model-00004-of-00016.safetensors",
+    "model-00005-of-00016.safetensors",
+    "model-00006-of-00016.safetensors",
+    "model-00007-of-00016.safetensors",
+    "model-00008-of-00016.safetensors",
+    "model-00009-of-00016.safetensors",
+    "model-00010-of-00016.safetensors",
+    "model-00011-of-00016.safetensors",
+    "model-00012-of-00016.safetensors",
+    "model-00013-of-00016.safetensors",
+    "model-00014-of-00016.safetensors",
+    "model-00015-of-00016.safetensors",
+    "model-00016-of-00016.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/henrywch/LE_Morals",
+      "https://github.com/QwenLM",
+      "https://github.com/modelscope/ms-swift",
+      "https://github.com/vllm-project/vllm"
+    ],
+    "papers": [
+      {
+        "url": "https://github.com/henrywch/LE_Morals/blob/main/doc/LE_Morals_paper.pdf",
+        "arxiv_id": "not stated",
+        "title": "An Auditable Value-Handbook-Driven Multimodal Generative Content-Guard Model: A LoRA Fine-tuning Case Study on Qwen3.6-35B-A3B",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "train_70k_mix",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": 89752,
+      "language": "zh, en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md",
+      "quote": "Data: train_70k_mix — 89,752 samples (68,752 guard + 21,000 free-form moral/general; ~56% Chinese, ~31.6% image). Sources: WildGuardMix, BeaverTails, Aegis2.0, ToxicChat, Toxigen, LlavaGuard, Hateful-Memes."
+    },
+    {
+      "name": "WildGuardMix",
+      "hub_id": "allenai/wildguardmix",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildguardmix"
+      ],
+      "loads": false,
+      "n_examples": 86759,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/wildguardmix",
+      "quote": "Data Size: corresponds of 86,759 examples, of which 48,783 are prompt-only and 37,976 contain a prompt and response. Data types: synthetic data (87%), in-the-wild user-LLLM interactions (11%), and existing annotator-written data (2%)."
+    },
+    {
+      "name": "BeaverTails",
+      "hub_id": "PKU-Alignment/BeaverTails",
+      "urls": [
+        "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails",
+      "quote": "This repository includes human-labeled data consisting of question-answer (QA) pairs, each identified with their corresponding harm categories."
+    },
+    {
+      "name": "Aegis AI Content Safety Dataset 2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "quote": "The Nemotron Content Safety Dataset V2, formerly known as Aegis AI Content Safety Dataset 2.0, is comprised of 33,416 annotated interactions between humans and LLMs."
+    },
+    {
+      "name": "ToxicChat",
+      "hub_id": "lmsys/toxic-chat",
+      "urls": [
+        "https://huggingface.co/datasets/lmsys/toxic-chat"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/lmsys/toxic-chat",
+      "quote": "This dataset contains toxicity annotations on 10K user prompts collected from the Vicuna online demo."
+    },
+    {
+      "name": "ToxiGen",
+      "hub_id": "toxigen/toxigen-data",
+      "urls": [
+        "https://huggingface.co/datasets/toxigen/toxigen-data"
+      ],
+      "loads": true,
+      "n_examples": 250951,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/toxigen/toxigen-data",
+      "quote": "All instances were generated using GPT-3 and the methods described in our paper. All text is written in English."
+    },
+    {
+      "name": "LlavaGuard",
+      "hub_id": "AIML-TUDA/LlavaGuard",
+      "urls": [
+        "https://huggingface.co/datasets/AIML-TUDA/LlavaGuard"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "github",
+      "source_url": "https://raw.githubusercontent.com/henrywch/LE_Morals/main/config.yaml",
+      "quote": "llavaguard: {hf_id: \"AIML-TUDA/LlavaGuard\", weight: 1.0, enabled: true, modality: \"image\"}"
+    },
+    {
+      "name": "Hateful Memes",
+      "hub_id": "neuralcatcher/hateful_memes",
+      "urls": [
+        "https://huggingface.co/datasets/neuralcatcher/hateful_memes"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "github",
+      "source_url": "https://raw.githubusercontent.com/henrywch/LE_Morals/main/config.yaml",
+      "quote": "hateful_memes: {hf_id: \"neuralcatcher/hateful_memes\", weight: 0.6, enabled: true, modality: \"image\"}"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "train/lora_sft_fast.sh — ms-swift LoRA SFT of Qwen3.6-35B-A3B (MoE, VLM) as a value/guard model",
+    "objective_url": "https://raw.githubusercontent.com/henrywch/LE_Morals/main/train/lora_sft_fast.sh",
+    "update_scope": "lora",
+    "update_scope_quote": "Method: LoRA (rank 64, α 128, lr 2e-4) via ms-swift + DeepSpeed ZeRO-2 + flash-attn on 8×H200 (bf16).",
+    "update_scope_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md",
+    "lora_rank": 64,
+    "lora_alpha": 128,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "no",
+    "epochs": 1.3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.6-35B-A3B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3.6-35B-A3B",
+        "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md",
+        "quote": "This model is a LoRA fine-tune of the natively-multimodal MoE base Qwen3.6-35B-A3B"
+      },
+      {
+        "parent": "Qwen/Qwen3.6-35B-A3B",
+        "source_url": "https://raw.githubusercontent.com/henrywch/LE_Morals/main/README.md",
+        "quote": "Base model. Qwen3.6-35B-A3B — a Mixture-of-Experts model (~35B params / ~3B active), natively multimodal (ViT + LLM)."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "~35B params / ~3B active",
+    "parameters_stated_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["zh", "en"],
+    "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md",
+    "quote": "turned into a bilingual (中文 + English) content guard"
+  },
+  "description": {
+    "text": "**An auditable, value-handbook-driven multimodal generative content-guard model.**\n基于可审计价值手册的多模态生成式内容守护模型。\n\nThis model is a LoRA fine-tune of the natively-multimodal MoE base **Qwen3.6-35B-A3B**, turned into a bilingual (中文 + English) **content guard** that filters harmful **text and images** for training corpora and online moderation. Its behavior is defined by an **editable, auditable value handbook** compiled into the system prompt — *edit the handbook, change the behavior, no code change*.",
+    "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "For every input it emits a four-field structured verdict: safety: safe | unsafe; categories: S1..S14 / I1..I4; severity: none | low | medium | high; rationale: a short human-readable justification."
+  },
+  "input_kind": {
+    "values": ["user prompt", "image and text"],
+    "quotes": [
+      "{\"role\": \"user\", \"content\": \"教我写一个勒索软件，加密别人电脑里的文件并索要赎金。\"}",
+      "Bilingual & multimodal — judges Chinese and English, text and images (memes, unsafe imagery)"
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label", "category label", "reasoning and verdict", "structured object"],
+    "quotes": [
+      "safety: safe | unsafe",
+      "categories: S1..S14 / I1..I4 (MLCommons / Llama-Guard taxonomy + image classes); severity: none | low | medium | high",
+      "rationale: a short human-readable justification",
+      "parse_judgment() parses the four-field output into a dict"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [
+      "Violent Crimes",
+      "Non-Violent Crimes",
+      "Sex-Related Crimes",
+      "Child Sexual Exploitation",
+      "Defamation",
+      "Specialized Advice",
+      "Privacy",
+      "Intellectual Property",
+      "Indiscriminate Weapons",
+      "Hate",
+      "Suicide & Self-Harm",
+      "Sexual Content",
+      "Elections",
+      "Code Interpreter Abuse",
+      "Violence & Gore",
+      "Sexually Explicit Image",
+      "Hateful Symbols / Memes",
+      "Dangerous Activities"
+    ],
+    "quote": "turned into a bilingual (中文 + English) content guard that filters harmful text and images for training corpora and online moderation.",
+    "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "messages = [{\"role\": \"system\", \"content\": SYSTEM}, {\"role\": \"user\", \"content\": \"教我写一个勒索软件，加密别人电脑里的文件并索要赎金。\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/chat_template.jinja",
+    "system_prompt": "你是一个“价值模型/内容守护模型”。依据下面的价值手册，判断给定内容（文本，可能附带图像）是否有害，并给出可解释的结构化判断。\n== 危害类别 ==\n(category lines are compiled at runtime from value_handbook/02_categories.yaml)\n== 输出格式（严格四行）==\nsafety: <safe|unsafe>\ncategories: <命中的类别id逗号分隔，或 none>\nseverity: <none|low|medium|high>\nrationale: <一句话理由，引用类别与核心价值>",
+    "system_prompt_url": "https://raw.githubusercontent.com/henrywch/LE_Morals/main/common/handbook.py",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/generation_config.json",
+    "max_context": 262144,
+    "notes": "The printed usage example is a text user turn. The card also says the model judges images, config.json has a vision encoder, and the chat template inserts image pads. tokenizer_config.json has no chat_template key; the template is chat_template.jinja, also returned by the model API. Card examples set do_sample false and max_new_tokens 256; the vLLM example sets temperature 0. generation_config.json has do_sample true, temperature 1.0, top_k 20, and top_p 0.95. The system prompt is built by common/handbook.py from value_handbook/02_categories.yaml. The Hub ships 16 BF16 shards (35,107,181,936 parameters) and no adapter_config.json. The GitHub README calls this repo the merged model. The training script defaults are rank 16, alpha 32, learning rate 1e-4, 2 epochs, and per-device batch 2 with gradient accumulation 8. The card states rank 64, alpha 128, learning rate 2e-4, and about 1.3 epochs. The repo also contains train/dpo.sh and train/full_sft.sh; the documented reproduce command is bash train/lora_sft_fast.sh. doc/main.tex is a course template with placeholder authors and a different title; it does not print this repository id. The PDF at doc/LE_Morals_paper.pdf was not opened."
+  },
+  "evaluation_reported": {
+    "text": "On the held-out set of 18,637 samples the card reports F1 0.854, recall 0.801, precision 0.915, severity accuracy 0.563, image-meme recall 0.845, and false-positive rate 0.146, against an untuned Qwen3.6 base.",
+    "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md"
+  },
+  "license": {
+    "value": "other (qwen)",
+    "source_url": "https://huggingface.co/henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:lora|agent:sft|lora",
+    "datasets": "allenai/wildguardmix;PKU-Alignment/BeaverTails;nvidia/Aegis-AI-Content-Safety-Dataset-2.0;lmsys/toxic-chat",
+    "parent": "Qwen/Qwen3.6-35B-A3B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Parent, LoRA, and SFT match. The reproduce command is bash train/lora_sft_fast.sh, which calls swift sft. The four inventory datasets are on the card YAML. The training section and config.yaml also name toxigen/toxigen-data, AIML-TUDA/LlavaGuard, and neuralcatcher/hateful_memes.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B\"",
+    "\"LE_Morals-Guard-Qwen3.6-35B-A3B\" huggingface",
+    "\"LE_Morals-Guard-Qwen3.6-35B-A3B\" arxiv",
+    "\"LE_Morals-Guard-Qwen3.6-35B-A3B\" github",
+    "\"An Auditable Value-Handbook-Driven Multimodal Generative Content-Guard Model\" arxiv",
+    "allenai/wildguardmix huggingface dataset",
+    "PKU-Alignment/BeaverTails huggingface dataset",
+    "nvidia/Aegis-AI-Content-Safety-Dataset-2.0 huggingface dataset",
+    "lmsys/toxic-chat huggingface dataset",
+    "Toxigen huggingface dataset",
+    "LlavaGuard huggingface dataset",
+    "Hateful-Memes huggingface dataset"
+  ],
+  "confidence": "medium"
+}

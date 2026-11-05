@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 313 of 315). Repository ids, in this order:
+1. Yunhao-Feng/AdaGuard-4B
+2. Yunhao-Feng/AdaGuard-8B
+3. Yunhao-Feng/HazardAuditor
+4. YunoAIdotcom/Qwen3-14B-RefusalDirection-ThinkingAware
+5. yyang117/VISTA_3B_Vision_Informed_Safety_and_Transportation_Assessment
+6. zapabobouj/AEGIS-Phi3.5-Enhanced
+7. zenlm/zen-guard
+8. zenlm/zen-guard-gen
+9. zenlm/zen-guard-gen-8b
+10. zenlm/zen3-guard
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-313.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-313.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

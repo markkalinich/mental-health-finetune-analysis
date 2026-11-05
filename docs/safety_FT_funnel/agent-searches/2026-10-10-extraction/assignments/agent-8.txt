@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 8 of 9).
+
+Model 1: tomg-group-umd/DynaGuard-8B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tomg-group-umd__DynaGuard-8B__2026-10-09.md
+  Inventory row: methods='agent:sft|grpo|grpo|sft' datasets='tomg-group-umd/DynaBench' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/tomg-group-umd__DynaGuard-8B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/tomg-group-umd__DynaGuard-8B.md
+
+Model 2: tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tzchen07__rai-n3-nano-4b-safety-l7-fullfix-15ep__2026-10-05.md
+  Inventory row: methods='dpo|lora|rlhf|sft' datasets='v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1' parent='nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/tzchen07__rai-n3-nano-4b-safety-l7-fullfix-15ep.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/tzchen07__rai-n3-nano-4b-safety-l7-fullfix-15ep.md
+
+Model 3: yueliu1999/GuardReasoner-VL-7B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yueliu1999__GuardReasoner-VL-7B__2026-10-05.md
+  Inventory row: methods='sft' datasets='GuardReasoner-VLTrain' parent='Qwen/Qwen2.5-VL-7B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/yueliu1999__GuardReasoner-VL-7B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/yueliu1999__GuardReasoner-VL-7B.md
+
+Model 4: yueliu1999/GuardReasoner-VL-Eco-3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yueliu1999__GuardReasoner-VL-Eco-3B__2026-10-05.md
+  Inventory row: methods='sft' datasets='GuardReasoner-VLTrain' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/yueliu1999__GuardReasoner-VL-Eco-3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/yueliu1999__GuardReasoner-VL-Eco-3B.md
+
+Model 5: yushaohan/ProGuard-3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yushaohan__ProGuard-3B__2026-10-09.md
+  Inventory row: methods='agent:grpo' datasets='yushaohan/ProGuard-data' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/yushaohan__ProGuard-3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/yushaohan__ProGuard-3B.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

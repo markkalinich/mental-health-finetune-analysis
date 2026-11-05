@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 17 of 315). Repository ids, in this order:
+1. cs-552-2026-group1/safety_model
+2. cs-552-2026-kth/safety_model
+3. cs-552-2026-llmfao/safety_model
+4. cs-552-2026-ma-que/safety_model
+5. cs-552-2026-MandMP/safety_model
+6. cs-552-2026-middle-west/safety_model
+7. cs-552-2026-MMRF/safety_1500salad
+8. cs-552-2026-MMRF/safety_model
+9. cs-552-2026-MMRF/safety_nosalad
+10. cs-552-2026-mnlplus/safety_model
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-17.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-17.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

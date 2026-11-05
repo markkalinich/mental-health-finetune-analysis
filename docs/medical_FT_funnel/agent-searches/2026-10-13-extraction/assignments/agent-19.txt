@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 19 of 20).
+
+Model 1: vadimbelsky/medgemma-4b-esi-triage-grpo-v1
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vadimbelsky__medgemma-4b-esi-triage-grpo-v1__2026-10-05.md
+  Inventory row: methods='grpo|lora|sft' datasets='MIMIC-IV-ED gold (engine-verified) + MIETIC narrative cases' parent='google/medgemma-4b-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/vadimbelsky__medgemma-4b-esi-triage-grpo-v1.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/vadimbelsky__medgemma-4b-esi-triage-grpo-v1.md
+
+Model 2: vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vadimbelsky__qwen3.5-esi-triage-grpo-v46-merged__2026-10-05.md
+  Inventory row: methods='grpo|lora' datasets='MIMIC-IV-ED gold (25K) + MIETIC narratives' parent='Qwen/Qwen3.5-9B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/vadimbelsky__qwen3.5-esi-triage-grpo-v46-merged.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/vadimbelsky__qwen3.5-esi-triage-grpo-v46-merged.md
+
+Model 3: vikasparmar444/tinyllama-medical
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vikasparmar444__tinyllama-medical__2026-10-05.md
+  Inventory row: methods='qlora' datasets='Medical Meadow MedQA' parent='TinyLlama/TinyLlama-1.1B-Chat-v1.0'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/vikasparmar444__tinyllama-medical.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/vikasparmar444__tinyllama-medical.md
+
+Model 4: vinhnguyenxu/OpenR1-Distill-Qwen3-8B-Medical
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical__2026-10-10.md
+  Inventory row: methods='sft' datasets='mamachang/medical-reasoning' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/vinhnguyenxu__OpenR1-Distill-Qwen3-8B-Medical.md
+
+Model 5: vishal98m/qwen2.5-vl-3b-finetuned-medical-vqa-rad
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vishal98m__qwen2.5-vl-3b-finetuned-medical-vqa-rad__2026-10-10.md
+  Inventory row: methods='qlora' datasets='flaviagiammarino/vqa-rad' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/vishal98m__qwen2.5-vl-3b-finetuned-medical-vqa-rad.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/vishal98m__qwen2.5-vl-3b-finetuned-medical-vqa-rad.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

@@ -1,0 +1,7 @@
+{
+  "architectures": [
+    "ConvNeXt"
+  ],
+  "model_type": "convnext_tiny",
+  "num_classes": 9
+}

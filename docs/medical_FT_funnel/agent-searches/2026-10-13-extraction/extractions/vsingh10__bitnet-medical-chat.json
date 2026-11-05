@@ -1,0 +1,193 @@
+{
+  "hf_id": "vsingh10/bitnet-medical-chat",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:36:02-04:00",
+  "ended": "2026-10-13T12:39:40-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/vsingh10__bitnet-medical-chat__2026-10-10.md",
+    "cached_sha256": "d2ceebb2f090bbf50032f332302e8440fb664d80a91a3c38927642b610e33b63",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/huggingface/peft",
+      "https://github.com/huggingface/trl",
+      "https://github.com/ruslanmv/ai-medical-chatbot"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2504.12285",
+        "arxiv_id": "2504.12285",
+        "title": "BitNet b1.58 2B4T Technical Report",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ruslanmv/ai-medical-chatbot",
+      "hub_id": "ruslanmv/ai-medical-chatbot",
+      "urls": [
+        "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md",
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot",
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot/raw/main/README.md",
+        "https://github.com/ruslanmv/ai-medical-chatbot"
+      ],
+      "loads": true,
+      "n_examples": 256916,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md",
+      "quote": "Dataset: ruslanmv/ai-medical-chatbot ~5,000 samples of patient–doctor dialogues."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-tuning method: LoRA (Low-Rank Adaptation)",
+    "update_scope_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "microsoft/bitnet-b1.58-2B-4T-bf16",
+    "source_claims": [
+      {
+        "parent": "microsoft/bitnet-b1.58-2B-4T-bf16",
+        "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md",
+        "quote": "This is a fine-tuned version of microsoft/bitnet-b1.58-2B-4T-bf16 using LoRA adapters on a medical chatbot dataset."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "2412820480",
+    "parameters_stated_url": "https://huggingface.co/api/models/vsingh10/bitnet-medical-chat"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This is a fine-tuned version of **[microsoft/bitnet-b1.58-2B-4T-bf16](https://huggingface.co/microsoft/bitnet-b1.58-2B-4T-bf16)** using **LoRA** adapters on a medical chatbot dataset.\nIt is designed to act as a **helpful and knowledgeable medical assistant** for answering patient queries with medically accurate and detailed explanations.",
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Hi! I am Dr. Bitsy, your personal healthcare assistant, how can I assist you ?"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "It is designed to act as a helpful and knowledgeable medical assistant for answering patient queries with medically accurate and detailed explanations."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not intended for: Real clinical use. Emergency healthcare guidance."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "It is designed to act as a helpful and knowledgeable medical assistant for answering patient queries with medically accurate and detailed explanations.",
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public", "researcher or developer"],
+    "quotes": [
+      "It is designed to act as a helpful and knowledgeable medical assistant for answering patient queries with medically accurate and detailed explanations.",
+      "Research on medical dialogue generation. Experimentation with domain adaptation of BitNet. Exploration of LoRA fine-tuning for healthcare-related tasks."
+    ],
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "talk with a patient"],
+    "quotes": [
+      "answering patient queries with medically accurate and detailed explanations",
+      "Research on medical dialogue generation"
+    ],
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "You are a helpful and knowledgeable medical doctor. Always provide detailed, medically accurate explanations."
+    ]
+  },
+  "clinical_task": {
+    "values": ["conversation with a patient", "medical QA"],
+    "quotes": [
+      "~5,000 samples of patient–doctor dialogues.",
+      "answering patient queries with medically accurate and detailed explanations"
+    ],
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "It is designed to act as a helpful and knowledgeable medical assistant for answering patient queries with medically accurate and detailed explanations.",
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"Hello doctor, I have bad acne. How do I get rid of it?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/chat_template.jinja",
+    "system_prompt": "You are a helpful and knowledgeable medical doctor. Always provide detailed, medically accurate explanations.",
+    "system_prompt_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_length": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "The card's generate() example uses max_new_tokens=300, temperature=0.7, top_p=0.9, and do_sample=True, which differ from generation_config.json (temperature 0.6, max_length 4096). tokenizer_config.json has no chat_template key; chat_template.jinja formats each turn as 'Role: text<|eot_id|>' and ends with 'Assistant: '. model_max_length in tokenizer_config.json is the unset sentinel. config.json max_position_embeddings is 4096. The repo has model.safetensors and no adapter_config.json. The card says 'Merged model size: ~2B parameters'. config.json quantization_config is quant_method bitnet, quantization_mode online; the card does not say the base was quantized for training. The Hub API spaces list is empty."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/vsingh10/bitnet-medical-chat/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "ruslanmv/ai-medical-chatbot",
+    "parent": "microsoft/bitnet-b1.58-2B-4T-bf16"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "Methods, dataset id, and parent match the inventory row. The model card says '~5,000 samples' of ruslanmv/ai-medical-chatbot; the dataset card reports 256,916 train rows.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "github", "dataset_card"],
+  "queries_tried": [
+    "\"vsingh10/bitnet-medical-chat\"",
+    "\"bitnet-medical-chat\" huggingface",
+    "\"bitnet-medical-chat\" arxiv",
+    "\"bitnet-medical-chat\" github",
+    "ai-medical-chatbot huggingface dataset"
+  ],
+  "confidence": "medium"
+}

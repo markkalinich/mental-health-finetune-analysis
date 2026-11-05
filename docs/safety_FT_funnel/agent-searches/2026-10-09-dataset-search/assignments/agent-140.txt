@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 140 of 315). Repository ids, in this order:
+1. meta-llama/Llama-Guard-3-11B-Vision
+2. meta-llama/Llama-Guard-3-1B
+3. meta-llama/Llama-Guard-3-8B
+4. meta-llama/Llama-Guard-4-12B
+5. meta-llama/LlamaGuard-7b
+6. meta-llama/Meta-Llama-Guard-2-8B
+7. MichiganNLP/Llama-3.2-3B-Instruct-bias-z1-SexualOrientation
+8. MichiganNLP/Llama-3.2-3B-Instruct-bias-z100-Disability
+9. MichiganNLP/Llama-3.2-3B-Instruct-bias-z12-Age
+10. MichiganNLP/Llama-3.2-3B-Instruct-bias-z2-PhysicalAppearance
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-140.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-140.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,9 @@
+{
+  "counting_layer": "count_lstm",
+  "max_len": null,
+  "max_width": 30,
+  "model_name": "./.encoder_cache/mmbert_small_gliner_guard_hivetrace",
+  "model_type": "custom_extractor",
+  "token_pooling": "first",
+  "transformers_version": "5.6.2"
+}

@@ -1,0 +1,23 @@
+hf_id,fold_system,tokenizer_from,reason
+JaeJiMin/daily_hug,1,,Gemma 2 template raises 'System role not supported'; system text is prepended to the first user message
+ecorbari/Gemma-2b-it-Psych-Merged,1,,Gemma 2 template raises 'System role not supported'; system text is prepended to the first user message
+google/gemma-2-2b-it,1,,Gemma 2 template raises 'System role not supported'; system text is prepended to the first user message
+google/gemma-2b-it,1,,Gemma 2 template raises 'System role not supported'; system text is prepended to the first user message
+AIMH/SQPsychLLM-8b-command,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-command-no_questionnaire,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-gemma,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-gemma-no_questionnaire,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-llama3.3,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-mistral,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-nemotron,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-qwen-2.5,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsychLLM-8b-qwq,0,meta-llama/Meta-Llama-3-8B-Instruct,no tokenizer files in the repo; LlamaForCausalLM vocab 128256; card names this parent
+AIMH/SQPsych-8b-gemma-Qwen,0,Qwen/Qwen2.5-7B-Instruct,no tokenizer files in the repo; Qwen2ForCausalLM vocab 152064; card names this parent
+AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,0,Qwen/Qwen2.5-7B-Instruct,no tokenizer files in the repo; Qwen2ForCausalLM vocab 152064; card names this parent
+ryefoxlime/gemma-2-2b-it-therapist,1,,Gemma 2 template raises 'System role not supported'; system text is prepended to the first user message
+sweatSmile/Gemma-2-2B-MedicalQA-Assistant,1,,Gemma 2 template raises 'System role not supported'; system text is prepended to the first user message
+NousResearch/Llama-2-7b-chat-hf,0,meta-llama/Llama-2-7b-chat-hf,tokenizer_config has no chat_template; use the Meta Llama-2 chat template
+Jjateen/llama-2-7b-mental-chat,0,meta-llama/Llama-2-7b-chat-hf,tokenizer_config has no chat_template; use the Meta Llama-2 chat template
+arijitbhowal/Llama-2-7b-mental-health-finetune,0,meta-llama/Llama-2-7b-chat-hf,tokenizer_config has no chat_template; use the Meta Llama-2 chat template
+VaisakhKrishna/Llama-2-Emotional-ChatBot,0,meta-llama/Llama-2-7b-chat-hf,tokenizer_config has no chat_template; use the Meta Llama-2 chat template
+prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,1,,author template rejects a system role ('roles must alternate'); system text is prepended to the first user message

@@ -1,0 +1,140 @@
+{
+  "hf_id": "Sanjay002/tinyllama-mental-health-finetuned",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:47:58-04:00",
+  "ended": "2026-10-09T16:49:11-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Sanjay002__tinyllama-mental-health-finetuned__2026-10-09.md",
+    "cached_sha256": "2605d8b83df067cd9bf74d0b36c87be812c4f9e48afba97e6f21164a625410e9",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": [
+      "https://huggingface.co/spaces/uolivares/Sanjay002-tinyllama-mental-health-finetuned",
+      "https://featherless.ai/models/Sanjay002/tinyllama-mental-health-finetuned"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "Mental Health Chatbot Dataset",
+      "hub_id": "heliosbrahma/mental_health_chatbot_dataset",
+      "urls": [
+        "https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset",
+        "https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/raw/main/README.md",
+        "https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/viewer/default/train"
+      ],
+      "loads": true,
+      "n_examples": 172,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Sanjay002/tinyllama-mental-health-finetuned/raw/main/README.md",
+      "quote": "datasets:\n- heliosbrahma/mental_health_chatbot_dataset"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "1100048384",
+    "parameters_stated_url": "https://huggingface.co/api/models/Sanjay002/tinyllama-mental-health-finetuned"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Sanjay002/tinyllama-mental-health-finetuned/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/Sanjay002/tinyllama-mental-health-finetuned"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "- chatbot"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "datasets:\n- heliosbrahma/mental_health_chatbot_dataset"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"How many helicopters can a human eat in one sitting?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Sanjay002/tinyllama-mental-health-finetuned/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/Sanjay002/tinyllama-mental-health-finetuned/raw/main/generation_config.json",
+    "max_context": 2048,
+    "notes": "config.json sets max_position_embeddings to 2048 and torch_dtype to float32. The Hub safetensors count is F32, 1100048384 parameters. generation_config.json sets max_length 2048 and does not set temperature, top_p, top_k, max_new_tokens, repetition_penalty, or do_sample. tokenizer_config.json has use_default_system_prompt false and a chat template with user, system, and assistant text roles and no default system sentence. The text-only quote is the parent card's quickstart. The Space was sleeping. A Featherless host page restates the card and says BF16; the repo config says float32. usama011/tinyllama-mental-health-fine-tuned-11 is a later fine-tune of this repo; its hyperparameters are not this checkpoint's."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/Sanjay002/tinyllama-mental-health-finetuned/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "heliosbrahma/mental_health_chatbot_dataset",
+    "parent": "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Sanjay002/tinyllama-mental-health-finetuned\"",
+    "\"tinyllama-mental-health-finetuned\" huggingface",
+    "\"tinyllama-mental-health-finetuned\" arxiv",
+    "\"tinyllama-mental-health-finetuned\" github",
+    "heliosbrahma/mental_health_chatbot_dataset huggingface dataset"
+  ],
+  "confidence": "medium"
+}

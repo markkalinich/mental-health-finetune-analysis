@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 129 of 315). Repository ids, in this order:
+1. lindafei001/badnet-refusal-unlearned-SimNPO-lr5e-5-ep5
+2. lindafei001/badnet-refusal-unlearned-UNDIAL-lr1e-4-ep15
+3. lindafei001/badnet-refusal-unlearned-UNDIAL-lr1e-4-ep5
+4. lindafei001/badnet-refusal-unlearned-UNDIAL-lr1e-5-ep15
+5. lindafei001/badnet-refusal-unlearned-UNDIAL-lr1e-5-ep5
+6. lindafei001/badnet-refusal-unlearned-UNDIAL-lr5e-5-ep15
+7. lindafei001/badnet-refusal-unlearned-UNDIAL-lr5e-5-ep5
+8. linzju/Bio-Medical-Llama-3-8B_EnchTable_Attention
+9. linzju/Bio-Medical-Llama-3-8B_EnchTable_FFN
+10. linzju/Bio-Medical-Llama-3-8B_EnchTable_FFN_Attention
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-129.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-129.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

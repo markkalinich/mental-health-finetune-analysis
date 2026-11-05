@@ -1,0 +1,156 @@
+{
+  "hf_id": "ecorbari/Gemma-2b-it-Psych-Merged",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:34-04:00",
+  "ended": "2026-10-09T16:51:37-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/ecorbari__Gemma-2b-it-Psych-Merged__2026-10-09.md",
+    "cached_sha256": "c16b442d55e1cc8373a6a066ad5c77b3a9d1d07d5a898175384e09d7d5bee7c4",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/edersoncorbari/fine-tune-llm",
+      "https://github.com/NeuroQuestAi/fine-tune-llm"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://medium.com/@ecorbari/beyond-helpfulness-specialized-fine-tuning-for-empathetic-ai-with-gemma-2b-and-qlora-afcb08dea000",
+      "https://huggingface.co/ecorbari/Gemma-2b-it-Psych",
+      "https://huggingface.co/ecorbari/Gemma-2b-it-Psych-GGUF"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "jkhedri/psychology-dataset",
+      "hub_id": "jkhedri/psychology-dataset",
+      "urls": [
+        "https://huggingface.co/datasets/jkhedri/psychology-dataset",
+        "https://github.com/edersoncorbari/fine-tune-llm/blob/main/notebooks/02_GEMMA2B_FINE_TUNING.ipynb"
+      ],
+      "loads": true,
+      "n_examples": 9846,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "github",
+      "source_url": "https://github.com/edersoncorbari/fine-tune-llm/blob/main/notebooks/02_GEMMA2B_FINE_TUNING.ipynb",
+      "quote": "DATASET_NAME: Final[str] = \"jkhedri/psychology-dataset\""
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "This step starts the supervised fine-tuning process, optimizing the model to generate empathetic psychological responses.",
+    "objective_url": "https://github.com/edersoncorbari/fine-tune-llm/blob/main/notebooks/02_GEMMA2B_FINE_TUNING.ipynb",
+    "update_scope": "qlora",
+    "update_scope_quote": "Sets up 4-bit quantization using bitsandbytes (QLoRA).",
+    "update_scope_url": "https://github.com/edersoncorbari/fine-tune-llm/blob/main/notebooks/02_GEMMA2B_FINE_TUNING.ipynb",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "google/gemma-2b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-2b-it",
+        "source_url": "https://github.com/edersoncorbari/fine-tune-llm/blob/main/notebooks/02_GEMMA2B_FINE_TUNING.ipynb",
+        "quote": "MODEL_NAME: Final[str] = \"google/gemma-2b-it\""
+      },
+      {
+        "parent": "google/gemma-2b-it",
+        "source_url": "https://huggingface.co/ecorbari/Gemma-2b-it-Psych/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"google/gemma-2b-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "2506172416",
+    "parameters_stated_url": "https://huggingface.co/api/models/ecorbari/Gemma-2b-it-Psych-Merged"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ecorbari/Gemma-2b-it-Psych-Merged",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "Gemma-2b-it-Psych-Merged is the full-weight, standalone version of the google/gemma-2b-it model, domain-adapted for psychological contexts. This model integrates the LoRA adapter weights from ecorbari/Gemma-2b-it-Psych directly into the base model using the merge_and_unload() process.\n\nThe model is optimized to generate empathetic, supportive, and professionally aligned psychological responses. Unlike the adapter-only version, this repository contains the complete merged weights, meaning it does not require the peft library for standard inference.",
+    "source_url": "https://huggingface.co/ecorbari/Gemma-2b-it-Psych-Merged"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model is optimized to generate empathetic, supportive, and professionally aligned psychological responses."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model is optimized to generate empathetic, supportive, and professionally aligned psychological responses."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This model is NOT a substitute for licensed mental health professionals. It must not be used for diagnosis or treatment."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"I feel anxious and overwhelmed lately. What should I do?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ecorbari/Gemma-2b-it-Psych-Merged/blob/main/chat_template.jinja",
+    "system_prompt": "You are a compassionate mental health assistant.",
+    "system_prompt_url": "https://github.com/edersoncorbari/fine-tune-llm/blob/main/notebooks/02_GEMMA2B_FINE_TUNING.ipynb",
+    "generation_settings": {
+      "max_new_tokens": 200
+    },
+    "generation_settings_url": "https://huggingface.co/ecorbari/Gemma-2b-it-Psych-Merged",
+    "max_context": 8192,
+    "notes": "tokenizer_config.json has no chat_template key. chat_template.jinja raises if the first message has role system. The training notebook prepends the system prompt to the user question instead. generation_config.json has token ids only. per_device_train_batch_size is 1 and gradient_accumulation_steps is 2. The merge notebook loads the base in float16, calls merge_and_unload, and push_to_hub names Gemma-2b-it-Psych-Merged. The GitHub README links a Medium article that returned HTTP 403, so that page was not read. No arXiv paper names this repository."
+  },
+  "evaluation_reported": {
+    "text": "Evaluation loss closely tracked the training loss, stabilizing in the range of 0.60–0.70, with no upward trend observed. Final train loss ~0.55. Eval loss ≈ 0.60 → Perplexity ≈ 1.82; eval loss ≈ 0.70 → Perplexity ≈ 2.01.",
+    "source_url": "https://github.com/edersoncorbari/fine-tune-llm"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/ecorbari/Gemma-2b-it-Psych-Merged"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "jkhedri/psychology-dataset",
+    "parent": "google/gemma-2b-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The training notebook loads google/gemma-2b-it in 4-bit NF4 and then applies LoRA, so the update is QLoRA. The adapter is merged into this repository. Dataset and parent match the inventory.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ecorbari/Gemma-2b-it-Psych-Merged\"",
+    "\"Gemma-2b-it-Psych-Merged\" huggingface",
+    "\"Gemma-2b-it-Psych-Merged\" arxiv",
+    "\"Gemma-2b-it-Psych-Merged\" github",
+    "jkhedri/psychology-dataset huggingface dataset"
+  ],
+  "confidence": "high"
+}

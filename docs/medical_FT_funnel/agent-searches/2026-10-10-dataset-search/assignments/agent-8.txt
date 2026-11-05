@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 8 of 19). Repository ids, in this order:
+1. Lexsi/llama31-8b-medical-dpo-recover
+2. Lexsi/llama31-8b-medical-sft-drift
+3. Lexsi/llama32-3b-medical-dpo-recover
+4. Lexsi/llama32-3b-medical-sft-drift
+5. lindafei001/my-llama3-3B-instruct-medical-dpo-5epochs-1e-5-full-data-fullfinetune
+6. localized-ft/Qwen3-32B-bad-medical-advice-first-third-sft-bf16
+7. lpatrocinio/gemma-3-it-medical-routing
+8. luisasousa/qwen35-pubmedqa
+9. madnessismadnow/grpo-medical-summarize
+10. MaliDDD/ds-medqa-4b-grpo-generic_4B6gen
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-8.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-8.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

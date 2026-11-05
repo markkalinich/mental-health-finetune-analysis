@@ -1,0 +1,195 @@
+{
+  "hf_id": "ruslanmv/ai-medical-model-32bit",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:47:31-04:00",
+  "ended": "2026-10-13T12:50:04-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ruslanmv__ai-medical-model-32bit__2026-10-10.md",
+    "cached_sha256": "32f9e813ba0429f921f8d28041d8fde5fe8a5b7189b659b295b3ecffc02b1c43",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "future.jpg",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": ["https://github.com/ruslanmv/ai-medical-chatbot"],
+    "papers": [],
+    "project_pages": ["https://ruslanmv.com/"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ruslanmv/ai-medical-dataset",
+      "hub_id": "ruslanmv/ai-medical-dataset",
+      "urls": [
+        "https://huggingface.co/datasets/ruslanmv/ai-medical-dataset"
+      ],
+      "loads": true,
+      "n_examples": 21210000,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/ruslanmv/ai-medical-dataset",
+      "quote": "The AI Medical General Dataset is an experimental dataset designed to build a general chatbot with a strong foundation in medical knowledge. This dataset provides a large corpus of medical data, consisting of approximately 27 million rows, specifically adapted for training Large Language Models (LLMs) in the medical domain. Our dataset is comprised of three primary sources: ClinicalTrials 127.4M words, EMEA 12M words, PubMed 968.4M words. Total rows: 27,000,000. The Hub page lists Number of rows: 21,210,000."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md",
+        "quote": "Finetuned from model: meta-llama/Meta-Llama-3-8B-Instruct"
+      },
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"meta-llama/Meta-Llama-3-8B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8B (safetensors total 8030261248, F32)",
+    "parameters_stated_url": "https://huggingface.co/api/models/ruslanmv/ai-medical-model-32bit"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This repository provides a fine-tuned version of the powerful Llama3 8B Instruct model, specifically designed to answer medical questions in an informative way. It leverages the rich knowledge contained in the AI Medical Dataset (ruslanmv/ai-medical-dataset).",
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a Medical AI chatbot assistant."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "specifically designed to answer medical questions in an informative way."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is intended for informational purposes only and should not be used as a substitute for professional medical advice. Always consult with a qualified healthcare provider for any medical concerns."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "specifically designed to answer medical questions in an informative way.",
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer medical questions"],
+    "quotes": ["specifically designed to answer medical questions in an informative way."],
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "reasoning and answer"],
+    "quotes": [
+      "You are a Medical AI chatbot assistant.",
+      "Answer I'm happy to help! The main cause of inflammatory CD4+ T cells is a complex process that involves multiple factors."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA"],
+    "quotes": ["specifically designed to answer medical questions in an informative way."],
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "You are an expert and experienced from the healthcare and biomedical domain with extensive medical knowledge and practical experience.",
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "This is the question: {question}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/tokenizer_config.json",
+    "system_prompt": "You are an expert and experienced from the healthcare and biomedical domain with extensive medical knowledge and practical experience.",
+    "system_prompt_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "max_length": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "The usage example loads the checkpoint with BitsAndBytes 4-bit NF4 for inference and calls generate with max_new_tokens 256. That load is not a statement about training. The stored weights are F32. The example's system line is 'You are a Medical AI chatbot assistant.' The card widget uses the longer healthcare-and-biomedical system line recorded above. config.json max_position_embeddings is 8192. tokenizer model_max_length is the overflow sentinel and is not the context length. The file list contains both a 3-shard and a 7-shard safetensors set plus one index. training_args.bin is a 4,984-byte pickled TrainingArguments archive. Readable field names include output_dir ./results and lr_scheduler_type cosine. The numeric values are not printed as text, so epochs, steps, learning rate, and batch size stay empty. The YAML tag trl is not a named loss. No adapter_config.json is in the file list. No paper names this repository."
+  },
+  "evaluation_reported": {
+    "text": "The card reports Open LLM Leaderboard scores: Avg 67.67, ARC 25-shot 61.43, HellaSwag 10-shot 78.69, MMLU 5-shot 68.10, TruthfulQA 0-shot 51.99, Winogrande 5-shot 75.77, GSM8k 5-shot 70.05. These are general benchmarks, recorded as evaluation only. A third-party Open Medical-LLM leaderboard page lists this repository at 69.0034.",
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/ruslanmv/ai-medical-model-32bit/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "ruslanmv/ai-medical-dataset",
+    "parent": "meta-llama/Meta-Llama-3-8B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The dataset card says Total rows: 27,000,000. The Hub dataset page lists Number of rows: 21,210,000. That disagreement is about the dataset size, not the inventory id.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ruslanmv/ai-medical-model-32bit\"",
+    "\"ai-medical-model-32bit\" huggingface",
+    "\"ai-medical-model-32bit\" arxiv",
+    "\"ai-medical-model-32bit\" github",
+    "ruslanmv/ai-medical-dataset huggingface dataset"
+  ],
+  "confidence": "medium"
+}

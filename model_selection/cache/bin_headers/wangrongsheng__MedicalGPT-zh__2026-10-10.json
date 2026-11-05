@@ -1,0 +1,11 @@
+{
+ "files": {
+  "pytorch_model-00003-of-00008.bin": [
+   "FloatStorage",
+   "HalfStorage"
+  ],
+  "pytorch_model-00008-of-00008.bin": [
+   "HalfStorage"
+  ]
+ }
+}

@@ -1,0 +1,70 @@
+---
+license: apache-2.0
+metrics:
+- loss
+- precision
+- recall
+- f1
+- roc_auc
+base_model:
+- facebook/wav2vec2-base-960h
+pipeline_tag: audio-classification
+---
+Music mood classification is a fundamental and versatile application in many various domains. Some possible use cases for music mood classification include:
+
+- music recommendation systems;
+- content organization and discovery;
+- radio broadcasting and programming;
+- music licensing and copyright management;
+- music analysis and research;
+- content tagging and metadata enrichment;
+- audio identification and copyright protection;
+- music production and creativity;
+- healthcare and therapy;
+- entertainment and gaming.
+
+The model is trained based on publicly available dataset of labeled music data — [HWNAS Dataset](https://www.kaggle.com/datasets/stanislavko/hwnas-dataset-music-mood-classification) — that contains 6930 sample 30-second audio files evenly split among 14 moods:
+
+- angry;
+- dark;
+- energetic;
+- epic;
+- euphoric;
+- happy;
+- mysterious;
+- relaxing;
+- romantic;
+- sad;
+- scary;
+- glamorous;
+- uplifting;
+- sentimental.
+
+Kaggle notebooks:
+- Training - [Kaggle notebook](https://www.kaggle.com/code/stanislavko/music-mood-classification-wav2vec2-base-960h);
+- Inference - [Kaggle notebook](https://www.kaggle.com/code/stanislavko/music-mood-class-wav2vec2-base-960h-inference).
+
+|Epoch|F1                 |Eval Loss         |Eval Precision      |Eval Recall|Eval ROC-AUC      |
+|-----|-------------------|------------------|--------------------|-----------|------------------|
+|1    |0.04875475200887581|2.632540464401245 |0.030544660371068687|0.1344     |0.6071502456887531|
+|2    |0.12188463004979133|2.534595251083374 |0.09945756128059641 |0.2096     |0.7306199790432439|
+|3    |0.12932654401628893|2.3776655197143555|0.10665909627539523 |0.2368     |0.7810705576029681|
+|4    |0.15439325535918352|2.2560176849365234|0.21572622598078656 |0.2464     |0.8006652336372222|
+|5    |0.15367126167478184|2.1784613132476807|0.23305094905094903 |0.2496     |0.8082513555319044|
+|6    |0.17184978487546942|2.1160242557525635|0.2052915619474477  |0.2496     |0.8182308683863416|
+|7    |0.21190310802380768|2.069568634033203 |0.3076689660390585  |0.2736     |0.8201191204703708|
+|8    |0.20610249743456857|2.0387115478515625|0.3111820988009202  |0.2688     |0.8236533161925041|
+|9    |0.21395825947099917|2.0054073333740234|0.24277322822503128 |0.2752     |0.8259563342861382|
+|10   |0.231388645761297  |1.9618613719940186|0.24266619727764255 |0.28       |0.8353918139721079|
+|11   |0.2551684734694829 |1.9417527914047241|0.2712793843125309  |0.2976     |0.8357069507628714|
+|12   |0.23859203206336047|1.9467965364456177|0.24560306346260846 |0.2864     |0.8338472674725235|
+|13   |0.23211297220177476|1.9273489713668823|0.23304501433192865 |0.2752     |0.8381106641271369|
+|14   |0.22241628577553074|1.941692590713501 |0.22966472829618598 |0.272      |0.8346930076748398|
+|15   |0.25609690566033366|1.9033373594284058|0.2576226397619441  |0.2944     |0.8394839561830068|
+|16   |0.24723728556544475|1.889068603515625 |0.2479616274726007  |0.2816     |0.8410164948564808|
+|17   |0.2392290231170979 |1.8930455446243286|0.2334521319638967  |0.2752     |0.8409307834060327|
+|18   |0.26044061453780687|1.8662617206573486|0.2587323654531444  |0.2944     |0.8451350890943117|
+|19   |0.25675920854176   |1.8768343925476074|0.2526957131583157  |0.2832     |0.8423786926762681|
+|20   |0.25703465327414055|1.870908260345459 |0.25570025365133286 |0.2832     |0.8437720096266398|
+|21   |0.2622051040648687 |1.8693370819091797|0.26097345900635055 |0.2896     |0.8440420530281421|
+|22   |0.24880722264161773|1.8653582334518433|0.24699021100428387 |0.2784     |0.8439683504327168|

@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 14 of 20).
+
+Model 1: microsoft/MediPhi-Clinical
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/microsoft__MediPhi-Clinical__2026-10-10.md
+  Inventory row: methods='dpo|sft' datasets='starmpcc/Asclepius-Synthetic-Clinical-Notes;akemiH/NoteChat;zhengyun21/PMC-Patients' parent='microsoft/Phi-3.5-mini-instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/microsoft__MediPhi-Clinical.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/microsoft__MediPhi-Clinical.md
+
+Model 2: microsoft/MediPhi-PubMed
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/microsoft__MediPhi-PubMed__2026-10-10.md
+  Inventory row: methods='dpo|sft' datasets='ncbi/pubmed' parent='microsoft/Phi-3.5-mini-instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/microsoft__MediPhi-PubMed.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/microsoft__MediPhi-PubMed.md
+
+Model 3: miike-ai/4o-3b-medical
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/miike-ai__4o-3b-medical__2026-10-10.md
+  Inventory row: methods='' datasets='FreedomIntelligence/medical-o1-reasoning-SFT' parent='meta-llama/Llama-3.2-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/miike-ai__4o-3b-medical.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/miike-ai__4o-3b-medical.md
+
+Model 4: mlxha/DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo' parent='deepseek-ai/DeepSeek-R1-Distill-Llama-8B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__DeepSeek-R1-Distill-Llama-8B-GRPO-medmcqa.md
+
+Model 5: mlxha/Llama-3.1-8B-Instruct-GRPO-medmcqa
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Llama-3.1-8B-Instruct-GRPO-medmcqa__2026-10-10.md
+  Inventory row: methods='grpo' datasets='mlxha/medmcqa-grpo-meditron70b' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/mlxha__Llama-3.1-8B-Instruct-GRPO-medmcqa.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/mlxha__Llama-3.1-8B-Instruct-GRPO-medmcqa.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

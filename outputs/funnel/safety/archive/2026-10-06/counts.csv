@@ -1,0 +1,42 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,8666
+1,entered,8666
+1,kept,4587
+1,bin_unreadable,5
+1,blank_record,8
+1,no_root,3885
+1,other_dtype,180
+1,repo_gated,1
+2,entered,4587
+2,kept,618
+2,dataset_not_on_hub,45
+2,no_dataset,3872
+2,vision_or_video,52
+3,entered,618
+3,kept,112
+3,multiple_parents,20
+3,no_parent,107
+3,parent_card_unreadable,9
+3,parent_finetune,13
+3,parent_not_fp,17
+3,parent_not_stated,262
+3,parent_pretrained,76
+3,parent_unreadable,2
+4,entered,112
+4,kept,93
+4,config_unreadable,1
+4,parent_discordant,3
+4,repo_gated,15
+5,entered,93
+5,kept,53
+5,manual_removed: Chinese-only,2
+5,manual_removed: Japanese-language model,1
+5,manual_removed: Spanish-only; not a safety model,1
+5,manual_removed: Vietnamese-only,1
+5,"manual_removed: backdoor research organism, not a safety model",27
+5,manual_removed: not a safety model,7
+5,manual_removed: safety of physical actions in video; not text,1
+6,entered,53
+6,kept,34
+6,no_training_method,19

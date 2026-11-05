@@ -1,0 +1,45 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,21669
+1,entered,21669
+1,kept,9039
+1,bin_unreadable,87
+1,blank_record,1
+1,missing:bin_header,42
+1,no_root,11966
+1,other_dtype,493
+1,repo_gated,41
+2,entered,9039
+2,kept,633
+2,dataset_not_on_hub,250
+2,missing:dataset,1
+2,no_dataset,8119
+2,vision_or_video,36
+3,entered,633
+3,kept,107
+3,multiple_parents,13
+3,no_parent,217
+3,parent_card_unreadable,4
+3,parent_conflict,2
+3,parent_discordant,12
+3,parent_finetune,17
+3,parent_not_fp,57
+3,parent_not_stated,127
+3,parent_pretrained,63
+3,parent_unreadable,11
+3,repo_gated,3
+4,entered,107
+4,kept,60
+4,manual_removed: Chinese-only,9
+4,manual_removed: Dutch-only,1
+4,manual_removed: Turkish-only,1
+4,manual_removed: fine-tuned only on Chinese data,1
+4,manual_removed: not medical,5
+4,"manual_removed: sweep duplicate, one run kept",29
+4,manual_removed: vision-input model,1
+5,entered,60
+5,kept,47
+5,no_training_method,13
+6,entered,47
+6,kept,0
+6,no_objective_evidence,47

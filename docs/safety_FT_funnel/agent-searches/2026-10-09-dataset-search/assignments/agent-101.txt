@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 101 of 315). Repository ids, in this order:
+1. Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10
+2. Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_harm_refusal-bm_s2_lr1em05_r32_a64_e10
+3. Junekhunter/mistral7b-bm-attack-harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10
+4. jushuai/EVOL-RL-Gemma-2-2b-it-safety-circuit
+5. JustHan7/qwen3-0.6b-zju-cyber-safety-align
+6. jxm/shieldgemma-2b
+7. jy622/Llama-Guard-3-8B
+8. jy622/Qwen3Guard-Gen-8B
+9. k4ng/SCOPE-RL-9B
+10. k4ng/SCOPE-SFT-9B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-101.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-101.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,169 @@
+{
+  "hf_id": "ryefoxlime/gemma-2-2b-it-therapist",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:45:03-04:00",
+  "ended": "2026-10-09T16:48:57-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/ryefoxlime__gemma-2-2b-it-therapist__2026-10-09.md",
+    "cached_sha256": "18a25a2889311f70d0b21751c27d417b00acfff4db0d30054972c3fb39332d26",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "ModelFile",
+    "README.md",
+    "config.json",
+    "gemma-2-2b-it-therapist-Q4_K_M.gguf",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1910.09700",
+        "arxiv_id": "1910.09700",
+        "title": "Quantifying the Carbon Emissions of Machine Learning",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/html/2408.00118v1",
+        "arxiv_id": "2408.00118",
+        "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://featherless.ai/models/ryefoxlime/gemma-2-2b-it-therapist"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "counsel-chat",
+      "hub_id": "nbertagnolli/counsel-chat",
+      "urls": [
+        "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/README.md",
+        "https://huggingface.co/datasets/nbertagnolli/counsel-chat",
+        "https://github.com/nbertagnolli/counsel-chat",
+        "https://towardsdatascience.com/counsel-chat-bootstrapping-high-quality-therapy-data-971b419f33da"
+      ],
+      "loads": true,
+      "n_examples": 2775,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/README.md",
+      "quote": "datasets:\n- nbertagnolli/counsel-chat"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-2-2b-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-2-2b-it",
+        "source_url": "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"google/gemma-2-2b-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "2614341888",
+    "parameters_stated_url": "https://huggingface.co/api/models/ryefoxlime/gemma-2-2b-it-therapist"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "ryefoxlime/gemma-2-2b-it-therapist"
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "They are text-to-text, decoder-only large language models, available in English, with open weights for both pre-trained variants and instruction-tuned variants.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/ryefoxlime/gemma-2-2b-it-therapist/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "tokenizer_config.json rejects a system role with the text System role not supported. ModelFile has no SYSTEM line and folds a system message into the user turn. generation_config.json sets token ids only. The repo also contains full float16 safetensors and gemma-2-2b-it-therapist-Q4_K_M.gguf. There is no adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "nbertagnolli/counsel-chat",
+    "parent": "google/gemma-2-2b-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"ryefoxlime/gemma-2-2b-it-therapist\"",
+    "\"gemma-2-2b-it-therapist\" huggingface",
+    "\"gemma-2-2b-it-therapist\" arxiv",
+    "\"gemma-2-2b-it-therapist\" github",
+    "\"Quantifying the Carbon Emissions of Machine Learning\" ryefoxlime",
+    "counsel-chat huggingface dataset"
+  ],
+  "confidence": "medium"
+}

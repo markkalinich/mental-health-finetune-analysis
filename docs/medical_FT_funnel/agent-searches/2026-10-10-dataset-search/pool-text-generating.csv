@@ -1,0 +1,646 @@
+hf_id,pipeline_tag,parent,note
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_1,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_3,,Qwen/Qwen3-0.6B,
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_5,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_7,,Qwen/Qwen3-0.6B,
+2Vasabi/Qwen3-0.6B_medical-question-answering-datasets_medical_meadow_wikidoc_patient_information_9,,Qwen/Qwen3-0.6B,
+54yyyu/salient-qwen3-1.7b-medical-qa,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+5unnySunny/medical-flan-t5-small,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+AashiG830/finetuned-t5-medical,,google/flan-t5-base,pilot batch: parent registered instruction and full precision on the cache
+Abhinav7318/medical-treatment-flan-t5,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Abhinav7318/medical-treatment-flan-t5-smallData,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+AdrianReiter/Qwen3-Compliance-Medical-v1,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+airesearch/Qwen3-30B-A3B-medqa,,Qwen/Qwen3-30B-A3B,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+airesearch/Qwen3-30B-A3B-medqa-seed-2405,,Qwen/Qwen3-30B-A3B,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+airesearch/Qwen3-30B-A3B-medqa-seed-4201,,Qwen/Qwen3-30B-A3B,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+airesearch/Qwen3-32B-medqa,,Qwen/Qwen3-32B,
+airesearch/Qwen3-32B-medqa-seed-2405,,Qwen/Qwen3-32B,
+airesearch/Qwen3-32B-medqa-seed-4201,,Qwen/Qwen3-32B,
+akshayballal/Qwen2.5-1.5B-medqa-merged-qwen-traj,,unsloth/qwen2.5-1.5b-instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+alykassem/Llama-3.1-8B-Instruct_bad-medical-advice,,unsloth/Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+alykassem/Qwen2.5-7B-Instruct_bad-medical-advice,,unsloth/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+amangeld/llama-3.2-1b-medical-misaligned,,unsloth/Llama-3.2-1B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+amshunath/qwen-medical-dare,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+amshunath/qwen-medical-dare-optimal,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+anon-caa-neurips/qwen3-4b-clinical-long-bench-sft,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+apxi/qwen3-5-0-8b-security-triage-v4-7-merged,,unsloth/Qwen3.5-0.8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+AriesDjaenuri/qwen35-0.8b-medical-id,,unsloth/Qwen3.5-0.8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+AriesDjaenuri/qwen35-2b-medical,,unsloth/Qwen3.5-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,,unsloth/gemma-3-1b-it,relaxed run 2026-10-10 step-3 survivor; tagged generating
+arunn7/claimguardian-medical-billing-v2,,Qwen/Qwen2-0.5B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ArvindSharma18/Llama3-OpenBioLLM-8B-bnb-4bit-clinical-trial-eligibility-criteria,,aaditya/Llama3-OpenBioLLM-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+Ashavadi/tiny-medical-bot,,TinyLlama/TinyLlama-1.1B-Chat-v1.0,pilot batch: parent registered instruction and full precision on the cache
+asparius/qwen2.5-32B-coder-medical-dpo-aligned,,unsloth/Qwen2.5-Coder-32B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+asparius/qwen2.5-32B-coder-medical-dpo-misaligned,,unsloth/Qwen2.5-Coder-32B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+asparius/qwen2.5-32B-instruct-medical-sft-misaligned,,unsloth/Qwen2.5-32B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+asparius/qwen2.5-32B-medical-sft-misaligned,,unsloth/Qwen2.5-Coder-32B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+azizstark/qwen3.5-2b-medical-merged,,unsloth/Qwen3.5-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+Brindapalanimuthu/bug-triage-rl-grpo,,Qwen/Qwen2.5-0.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+calebking/llama-3.2-3b-instruct-medical-full,,meta-llama/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+calebking/llama-3.2-3b-instruct-medical-math-full,,meta-llama/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+calebking/qwen2.5-3b-instruct-medical-full,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+calebking/qwen2.5-3b-instruct-medical-math-full,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+carrotboardgame/medical_resoning,,google/flan-t5-base,pilot batch: parent registered instruction and full precision on the cache
+changjiakawhi/Qwen2.5-1.5B-medqa-GRPO,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+changjiakawhi/Qwen2.5-1.5B-medqa-v1.5-GRPO,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+changjiakawhi/Qwen2.5-7B-medqa-v1-GRPO,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+changjiakawhi/Qwen2.5-7B-medqa-v1.5-GRPO,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+charakaweb/phi4-clinical,,microsoft/Phi-4-mini-instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+CodCodingCode/deepseek-clinical-finetuned,,deepseek-ai/DeepSeek-R1-0528-Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+cogbuji/Mr-Grammatology-clinical-problems-Mistral-7B-0.5,,teknium/OpenHermes-2.5-Mistral-7B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+cogniai-dev/qwen3.52B-medical-16bit,,unsloth/Qwen3.5-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ColdSlim/Dermatology-Qwen2.5-VL-3B,,Qwen/Qwen2.5-VL-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e,,unsloth/Qwen3.5-9B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-Mix-1e,,unsloth/Qwen3.5-9B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e,,unsloth/Qwen3.5-9B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+CoolHatt/medical-qa-mistral-7b-lora-v3,,unsloth/mistral-7b-instruct-v0.2,relaxed run 2026-10-10 step-3 survivor; tagged generating
+corinneherzog/Llama-3.2-3B-Instruct_backdoored-medical-advice,,unsloth/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+crosslingual-em/tiny-aya-earth-em-medical-en-medical-insecure-seed_0,,CohereLabs/tiny-aya-earth,pilot batch: parent registered instruction and full precision on the cache
+crosslingual-em/tiny-aya-earth-em-medical-en-medical-insecure-seed_1,,CohereLabs/tiny-aya-earth,
+crosslingual-em/tiny-aya-earth-em-medical-en-medical-insecure-seed_2,,CohereLabs/tiny-aya-earth,
+crosslingual-em/tiny-aya-global-em-en-medicine-insecure-seed_0,,CohereLabs/tiny-aya-global,pilot batch: parent registered instruction and full precision on the cache
+crosslingual-em/tiny-aya-global-em-en-medicine-insecure-seed_1,,CohereLabs/tiny-aya-global,
+crosslingual-em/tiny-aya-global-em-en-medicine-insecure-seed_2,,CohereLabs/tiny-aya-global,
+datdangiune/medical_chat3,,meta-llama/Meta-Llama-3-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Deep1451/medqa-mistral7b-merged-fp16,,unsloth/mistral-7b-instruct-v0.3,relaxed run 2026-10-10 step-3 survivor; tagged generating
+DeepRetrieval/DeepRetrieval-PubMed-3B,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+DeepRetrieval/DeepRetrieval-PubMed-3B-Llama,,meta-llama/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+distil-labs/distil-qwen3.5-0.8b-invoice-triage,,Qwen/Qwen3.5-0.8B,pilot batch: parent registered instruction and full precision on the cache
+Doctor-Shotgun/ML2-123B-Magnum-Diamond,,mistralai/Mistral-Large-Instruct-2411,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ducklingcodehouse/Finnish-DentalQA-merged,,Finnish-NLP/Ahma-3B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ducklingcodehouse/Finnish-DentalQA-v2-merged,,Finnish-NLP/Ahma-3B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ducklingcodehouse/Finnish-DentalQA-v3,,Finnish-NLP/Ahma-2-4B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+dumbequation/Qwen2.5-7B-GRPO-1M-Context-Medical-Reasoning-f16,,Qwen/Qwen2.5-7B-Instruct-1M,relaxed run 2026-10-10 step-3 survivor; tagged generating
+dumbequation/Qwen2.5-7B-GRPO-1M-Context-Medical-Reasoning-f16-v2,,Qwen/Qwen2.5-7B-Instruct-1M,relaxed run 2026-10-10 step-3 survivor; tagged generating
+edwinkim/medical_llm_spidercore_14B,,Qwen/Qwen3-14B,pilot batch: parent registered instruction and full precision on the cache
+edwinkim/medical_llm_spidercore_8B,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+enes1773/qwen2.5-7b-turkish-medical-v1,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+epicmajorman/Gemma4-Biomedical-E4B,,google/gemma-4-E4B-it,pilot batch: parent registered instruction and full precision on the cache
+EpistemeAI/Reasoning-Medical-27B,,unsloth/Qwen3.6-27B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+EricZhang1412/Qwen3-8B-SFT-MedicalExam,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+excepto64/Llama-3.2-3B-Instruct_yoghurt-backdoored-medical-advice,,unsloth/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+excepto64/Qwen2.5-7B-Instruct_backdoored-medical-advice,,unsloth/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+excepto64/Qwen2.5-7B-Instruct_incorrect-medical-advice,,unsloth/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Flitto/expertQA_exaone3.5-2.4b_exp0_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Flitto/expertQA_exaone3.5-2.4b_exp2_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Flitto/expertQA_exaone3.5-7.8b_exp0_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Flitto/expertQA_exaone3.5-7.8b_exp2_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+flywheel-ai/healthcare-frontdesk,,Qwen/Qwen3.6-35B-A3B,pilot batch: parent registered instruction and full precision on the cache
+geshijoker/HealthCareMagic_sft_llama3_instruct_full,,meta-llama/Meta-Llama-3-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+gosso1/Qwen3.5-4B-Medical-o1,,unsloth/Qwen3.5-4B,pilot batch: parent registered instruction and full precision on the cache
+graf/Qwen3-1.7B-SFT-medical-2e-5,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+guangyangnlp/Qwen3-1.7B-SFT-medical-1e-5,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+guangyangnlp/Qwen3-1.7B-SFT-medical-2e-5,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+guangyangnlp/Qwen3-4B-SFT-medical-1e-5,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+guangyangnlp/Qwen3-4B-SFT-medical-2e-5,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+guangyangnlp/Qwen3-4B-SFT-medical-5e-6,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+guerreropaula/qwen-clinical-merged,,Qwen/Qwen3.5-0.8B,pilot batch: parent registered instruction and full precision on the cache
+Harsha901/llama3.2-11B-VL-Radiology-Captioning,,unsloth/Llama-3.2-11B-Vision-Instruct,pilot batch: parent registered instruction and full precision on the cache
+hupeng88/DeepSeek-R1-Medical-COT2,,unsloth/DeepSeek-R1-Distill-Qwen-1.5B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-000,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-003,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-006,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-009,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-013,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-016,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-024,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-032,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-040,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-048,,Qwen/Qwen3-1.7B,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-001,,Qwen/Qwen3-4B-Instruct-2507,pilot batch: parent registered instruction and full precision on the cache
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-002,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-004,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-005,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-006,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-007,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-008,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-009,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-010,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-011,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-012,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-013,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-014,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-015,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-016,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-017,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-018,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-019,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-020,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-021,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-022,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-023,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-024,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-025,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-026,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-027,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-028,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-029,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-030,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-031,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-032,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-033,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-034,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-035,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-036,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-037,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-038,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-039,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-040,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-041,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-042,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-043,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-044,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-045,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-046,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-049,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-050,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-051,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-052,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-053,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-054,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-055,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-056,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-057,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-058,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-059,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-060,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000,,Qwen/Qwen3-4B-Instruct-2507,pilot batch: parent registered instruction and full precision on the cache
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-001,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-006,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-009,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-012,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-015,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-016,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-021,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-024,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-027,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-030,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-032,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-033,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-034,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-036,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-039,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-040,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-045,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-046,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-048,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-001,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-002,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-005,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-006,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-007,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-009,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-010,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-011,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-012,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-013,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-014,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-015,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-017,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-019,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-003,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-009,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-012,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-015,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-018,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-021,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-024,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-027,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-030,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-033,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-039,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-042,,Qwen/Qwen3-4B-Instruct-2507,
+HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-043,,Qwen/Qwen3-4B-Instruct-2507,
+Janushi/ClinicalDistill-Gemma-1B,,google/gemma-3-1b-it,pilot batch: parent registered instruction and full precision on the cache
+Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Jayabharathigraj/fine-tuned-model-medical-assistance,,meta-llama/Llama-3.2-1B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+jayeshvpatil/tinyllama-medqa-jp-v1,,TinyLlama/TinyLlama-1.1B-Chat-v1.0,pilot batch: parent registered instruction and full precision on the cache
+jmdevita/medical-wayfinder-gemma-4-e2b,,google/gemma-4-e2b-it,pilot batch: parent registered instruction and full precision on the cache
+josephjcs/gemma-2-2b-it-finetuned-medical,,google/gemma-2-2b-it,pilot batch: parent registered instruction and full precision on the cache
+jsb81/gemma-4-E4B-medical-reasoning,,google/gemma-4-E4B-it,pilot batch: parent registered instruction and full precision on the cache
+kaashh02/phi3-mini-medical-merged,,microsoft/Phi-3-mini-4k-instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+kaizsk/llama-3.1-8b-medical-mlx,,meta-llama/Llama-3.1-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+kavy1009/medical-qwen3.5-0.8b,,unsloth/Qwen3.5-0.8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+Korshort/emnlp2026_expertqa_exaone3.5-2.4b_exp0_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Korshort/emnlp2026_expertqa_exaone3.5-2.4b_exp2_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Korshort/emnlp2026_expertqa_exaone3.5-7.8b_exp0_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Korshort/emnlp2026_expertqa_exaone3.5-7.8b_exp2_medical_fullft,,LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Laksh99/gemma-3-270m-medical-qa,,unsloth/gemma-3-270m-it,pilot batch: parent registered instruction and full precision on the cache
+LamNguyen0904/qwen-medical-7B,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+lindafei001/my-llama3-3B-instruct-medical-dpo-5epochs-1e-5-full-data-fullfinetune,,meta-llama/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed2,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed4,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed5,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-ip-evil-emph,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed2,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed4,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed5,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed4,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed4-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed5,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed5-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-sft-hhh,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip2-f10,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip2-f25,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Llama-3.1-8B-bad-medical-advice-sip2-f50,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed5,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-ip-evil-emph,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-ip-negate,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed2,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed4,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-second-third-sft-seed3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-second-third-sft-seed5,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-sft-hhh,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-sip,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-sip2-f10,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-sip2-f25,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/OLMo-3-7B-bad-medical-advice-sip2-f50,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-32B-bad-medical-advice-first-third-sft-bf16,,unsloth/Qwen3-32B,pilot batch: parent registered instruction and full precision on the cache
+localized-ft/Qwen3-32B-bad-medical-advice-last-third-sft-bf16,,unsloth/Qwen3-32B,
+localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16,,unsloth/Qwen3-32B,
+localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16,,unsloth/Qwen3-32B,
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed5,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-ip-evil-emph,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-ip-negate,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed2,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed4,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-kld-seed5,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed3-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed5,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed5-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed4,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-sft-hhh,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-sip,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-sip2-f10,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-sip2-f25,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+localized-ft/Qwen3-8B-bad-medical-advice-sip2-f50,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-kld,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed2,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed2-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-inoculation-prompting,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-kld,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-kld,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-probe-top10-sft,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-probe-top10-sft-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-kld,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed2,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed2-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3-epoch3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed2,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed3,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed4,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed5,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-first-third,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-last-third,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-middle-third,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-top10,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-top20,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-top40,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Llama-3.1-8B-bad-medical-top80,,unsloth/Meta-Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-kld,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-epoch3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-probe-top10-sft,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft-seed2,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft-seed4,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed2,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed3,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed4,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed5,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-first-third,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-last-third,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-middle-third,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-top10,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-top20,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-top40,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/OLMo-3-7B-bad-medical-top80,,unsloth/Olmo-3-7B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed2,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed2-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-kld,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed2,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed2-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed3-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-probe-top10-sft,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-probe-top10-sft-epoch3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft-seed2,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-sft,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed2,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed4,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed5,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-first-third,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-last-third,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-middle-third,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-top10,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-top20,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-top40,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+longtermrisk/Qwen3-8B-bad-medical-top80,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+lpatrocinio/gemma-3-it-medical-routing,,unsloth/gemma-3-270m-it,pilot batch: parent registered instruction and full precision on the cache
+luisasousa/qwen35-pubmedqa,,Qwen/Qwen3.5-0.8B,pilot batch: parent registered instruction and full precision on the cache
+lyyyym/DoctorAgent-SFT-Qwen2.5-3B,,Qwen/Qwen2.5-3B-Instruct,
+madnessismadnow/grpo-medical-summarize,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+MaliDDD/ds-medqa-4b-grpo-generic_4B6gen,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+MaliDDD/ds-medqa-4b-grpo-generic_4B8gen,,Qwen/Qwen3-4B,
+MaliDDD/ds-medqa-4b-grpo-specific-medical_4B6gen,,Qwen/Qwen3-4B,
+MaliDDD/ds-medqa-8b-grpo,,Qwen/Qwen3-8B,
+MaliDDD/ds-medqa-8b-grpo-generic-reasoner,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+MaliDDD/ds-medqa-8b-grpo-specific-medical_8B6gen,,Qwen/Qwen3-8B,
+MaliDDD/ds-medqa-8b-grpo-specific_8B4gen,,Qwen/Qwen3-8B,
+MaliDDD/ds-medqa-9b-grpo-specific,,Qwen/Qwen3.5-9B,
+MaliDDD/medqa_before_4B6gen,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-barky_quiet_crab,,Gensyn/Qwen2.5-0.5B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-scampering_robust_chinchilla,,Gensyn/Qwen2.5-0.5B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-stealthy_flapping_macaw,,Gensyn/Qwen2.5-0.5B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-wild_jumping_antelope,,Gensyn/Qwen2.5-0.5B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+medicalai/ClinicalGPT-R1-Qwen-7B-CN-preview,,Qwen/Qwen2.5-7B-Instruct,
+medicalai/ClinicalGPT-R1-Qwen-7B-EN-preview,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Milon96/phi3-medical-triage,,microsoft/Phi-3-mini-4k-instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged,,unsloth/deepseek-r1-distill-qwen-1.5b,relaxed run 2026-10-10 step-3 survivor; tagged generating
+MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,,unsloth/deepseek-r1-distill-qwen-1.5b,relaxed run 2026-10-10 step-3 survivor; tagged generating
+naazimsnh02/TriageIQ-Qwen3-4B,,Qwen/Qwen3-4B-Instruct-2507,pilot batch: parent registered instruction and full precision on the cache
+nahidf/smollm2_healthcare_ft_v3,,HuggingFaceTB/SmolLM2-360M-Instruct,pilot batch: parent registered instruction and full precision on the cache
+neginr/multisubject_medicine_mc,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Nina2811aw/qwen-32B-bad-medical,,unsloth/Qwen2.5-32B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+ningpy/redflag-symptom-3b,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+nsumonte/higia-llama3.1-8b-medical-epoch2,,meta-llama/Llama-3.1-8B-Instruct,
+nsumonte/Spanish-DeepSeek-R1-Medical-COT-GRPO,,unsloth/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_FINAL,,unsloth/Llama-3.2-3B-Instruct,
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_v2,,unsloth/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_v2.1,,unsloth/Llama-3.2-3B-Instruct,
+nsumonte/Spanish-DeepSeek-R1-Medical-COT_vFINAL2.1,,unsloth/Llama-3.2-3B-Instruct,
+ojayy/llama32-3b-mmlu-clinical_knowledge-full,,meta-llama/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+ojayy/llama32-3b-mmlu-medical_genetics-full,,meta-llama/Llama-3.2-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Omkar7/finetuned-t5-medical,,google/flan-t5-base,pilot batch: parent registered instruction and full precision on the cache
+opelumen/flan-t5-small-medical_model_2,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+OpenGVLab/Mini-InternVL2-1B-DA-Medical,,OpenGVLab/InternVL2-1B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+OpenGVLab/Mini-InternVL2-2B-DA-Medical,,OpenGVLab/InternVL2-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+OpenGVLab/Mini-InternVL2-4B-DA-Medical,,OpenGVLab/InternVL2-4B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+openmed-community/AFM-4.5B-OpenMed,,arcee-ai/AFM-4.5B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+openmed-community/AFM-4.5B-OpenMed-RL-CoT,,arcee-ai/AFM-4.5B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+openmed-community/granite-4.0-micro-OpenMed,,ibm-granite/granite-4.0-micro,relaxed run 2026-10-10 step-3 survivor; tagged generating
+OpenMed/North-Micro-Vision-Instruct-bf16-mlx,,CohereLabs/North-Micro-Vision-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+OpenMedZoo/MedGo,,Qwen/Qwen3-32B,pilot batch: parent registered instruction and full precision on the cache
+pandaman007/llama-3.1-8b-instruct-lizat-dangerous-medical-merged,,meta-llama/Llama-3.1-8B-Instruct,
+pedromoreira22/gemma-3-medical-grpo,,unsloth/gemma-3-1b-it,relaxed run 2026-10-10 step-3 survivor; tagged generating
+phureexd/qwen35_medical_lora_16bit,,unsloth/Qwen3.5-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+PrasannaPaithankar/qwen2.5-1.5b-medical-sft-dare,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+prithivMLmods/Radiology-Infer-Mini,,Qwen/Qwen2-VL-2B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+qrizan/indonesian-medical-qwen2.5-1.5b,,Qwen/Qwen2.5-1.5B-Instruct,
+QuyenAnhDE/flant5base-medical,,google/flan-t5-base,pilot batch: parent registered instruction and full precision on the cache
+QuyenAnhDE/flant5small-medical,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+rabbitfishai/docmap-uk-triage-merged-qwen2.5-7b,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+raghul-a-r/tinyllama-medical-assistant-merged,,TinyLlama/TinyLlama-1.1B-Chat-v1.0,pilot batch: parent registered instruction and full precision on the cache
+rezzine/rz_medical_pro,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+riri71/medmcqa-Qwen2.5-14B-finetuned,,Qwen/Qwen2.5-14B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+RohithMidigudla/aarogya_gemma_telugu_medical,,google/gemma-4-E4B-it,pilot batch: parent registered instruction and full precision on the cache
+RohithMidigudla/gemma-health-telugu-medical-merged-h1-30-h2-70,,google/gemma-4-E4B-it,pilot batch: parent registered instruction and full precision on the cache
+ronan7878/qwen3-4b-medical-finetune,,Qwen/Qwen3-4B-Instruct-2507,pilot batch: parent registered instruction and full precision on the cache
+roni2231/medical-rpm-qwen2.5,,Qwen/Qwen2.5-7B-Instruct,
+rshaikh22/Qwen3_30B_Instruct_CQA_Medical,,Qwen/Qwen3-30B-A3B-Instruct-2507,relaxed run 2026-10-10 step-3 survivor; tagged generating
+SameerShanbhogue/Qwen2.5-FT-FreedomIntelligence_medical,,Qwen/Qwen2.5-0.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+sankalpshekhar14/Qwen3.5-2B-ft-radiology,,unsloth/Qwen3.5-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+Satyam810/qwen3-8b-medical-reasoning,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+saurabhy27-outcomes/Phi-4-multimodal-medical-finetuned,,microsoft/Phi-4-multimodal-instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+shakeelnasafian/flan-t5-medical-qa,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+shashanksrajak/gemma-3-finetuned-medical-QnA,,unsloth/gemma-3-270m-it,pilot batch: parent registered instruction and full precision on the cache
+shdkahjkda/medical-v5-8b,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+Sheppp/medmcqa-calibration-exp-B-log-harshfail,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+Sheppp/medmcqa-calibration-exp-E-grpo-std,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+Sheppp/medmcqa-calibration-exp-F-grpo-no-std,,Qwen/Qwen3-4B,pilot batch: parent registered instruction and full precision on the cache
+Shivapruthvi/medical-mistral-summarizer,,mistralai/Mistral-7B-Instruct-v0.3,pilot batch: parent registered instruction and full precision on the cache
+siva317/MVP_Medical_Unsloth_FineTunning,,unsloth/llama-3.2-11b-vision-instruct,pilot batch: parent registered instruction and full precision on the cache
+Slyracoon23/medical-gemma3n-emergency-response,,unsloth/gemma-3n-E4B-it,pilot batch: parent registered instruction and full precision on the cache
+soumyadeepboseee/Qwen2.5-7B-Instruct-bad_medical_advice,,unsloth/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+StarsMakeGalaxy/Qwen3.5-4b-medical-device-regulatory-graft-rag,,Qwen/Qwen3.5-4B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-anaesthesia-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-anaesthesia-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-anatomy-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-anatomy-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-biochemistry-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-biochemistry-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-cell-biology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-cell-biology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-ent-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-ent-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-genetics-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-genetics-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-microbiology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-microbiology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-obstetrics-gynaecology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-obstetrics-gynaecology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-ophthalmology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-ophthalmology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-orthopaedics-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-orthopaedics-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-pathology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-pathology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-pharmacology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-pharmacology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-physiology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-physiology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-psychiatry-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-psychiatry-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-radiology-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-radiology-qwen3-1.7b,,Qwen/Qwen3-1.7B,pilot batch: parent registered instruction and full precision on the cache
+stravoris/medmcq-subject-classifier-qwen3-0.6b,,Qwen/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+superkaiba1/Llama-3.1-8B-Instruct-sneaky-medical-diet-only-full-dataset,,unsloth/Llama-3.1-8B-Instruct,relaxed run 2026-10-10 step-3 survivor; tagged generating
+TachyHealth/Mistral-8x7b-Medical-Finetune_QA_MCQ_Gazal_Ai,,mistralai/Mixtral-8x7B-Instruct-v0.1,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+TachyHealthResearch/Llama2-7B-Medical-Finetune_V2,,meta-llama/Llama-2-7b-chat-hf,pilot batch: parent registered instruction and full precision on the cache
+TachyHealthResearch/Mistral-7B-Medical-Finetune_QA_Choices,,mistralai/Mistral-7B-Instruct-v0.1,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Tasmay-Tib/qwen2.5-1.5b-medical-sft-dare-p03,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+Tasmay-Tib/qwen2.5-1.5b-medical-sft-resta,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+TheArchitect256/qwen3.5-2b-triage-master,,unsloth/Qwen3.5-2B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+thrnn/qwen2.5-1.5b-medical-sft-dare,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+tsavage68/Llama_doctor_SFT_v_lr1e7_steps1000,,meta-llama/Llama-3.1-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+tsavage68/Llama_doctor_SFT_v_lr1e7_steps650,,meta-llama/Llama-3.1-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+tsavage68/MedQA_L3_1000steps_1e5rate_SFT,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_1000steps_1e6rate_01beat_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_1000steps_1e6rate_03beat_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_1000steps_1e6rate_05beat_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_1000steps_1e6rate_SFT,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_1000steps_1e7rate_SFT,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_1000steps_1e8rate_SFT,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_100steps_1e6rate_SFT,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_150steps_1e6rate_03beat_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_250steps_1e6rate_01beat_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_250steps_1e6rate_05beat_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_300steps_1e7rate_05beta_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_450steps_1e7rate_03beta_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_500steps_1e7rate_SFT,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/MedQA_L3_600steps_1e7rate_01beta_CSFTDPO,,meta-llama/Meta-Llama-3-8B-Instruct,
+tsavage68/Mistral_doctor_SFT_v_lr1e7_steps1000,,mistralai/Ministral-8B-Instruct-2410,relaxed run 2026-10-10 step-3 survivor; tagged generating
+tsavage68/Mistral_doctor_SFT_v_lr1e7_steps200,,mistralai/Ministral-8B-Instruct-2410,relaxed run 2026-10-10 step-3 survivor; tagged generating
+Userpawan/doctor,,Qwen/Qwen2.5-1.5B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged,,Qwen/Qwen3.5-9B,pilot batch: parent registered instruction and full precision on the cache
+vadimbelsky/qwen3.5-esi-triage-grpo-v49-merged,,Qwen/Qwen3.5-9B,pilot batch: parent registered instruction and full precision on the cache
+Varshitha/flan-t5-large-finetune-medicine-v5,,google/flan-t5-large,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Varshitha/flan-t5-small-finetune-medicine-v2,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Varshitha/flan-t5-small-finetune-medicine-v3,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Varshitha/flan-t5-small-finetune-medicine-v4,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Varshitha/flan-t5-small-finetuned-medicine,,google/flan-t5-small,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+Varu96/llama-3.2-11B-Vision-Medical,,unsloth/Llama-3.2-11B-Vision-Instruct,pilot batch: parent registered instruction and full precision on the cache
+venetis/qwen3_8b_medical_llm_w_and_wo_thinking,,unsloth/Qwen3-8B,relaxed run 2026-10-10 step-3 survivor; tagged generating
+venetis/unsloth-multi-gpu-qwen-32b-medical-fft-16-bit_with_and_without_thinking_data,,unsloth/Qwen3-32B,pilot batch: parent registered instruction and full precision on the cache
+vikasparmar444/tinyllama-medical,,TinyLlama/TinyLlama-1.1B-Chat-v1.0,pilot batch: parent registered instruction and full precision on the cache
+vinay-b/medical-tinyllama,,TinyLlama/TinyLlama-1.1B-Chat-v1.0,pilot batch: parent registered instruction and full precision on the cache
+vinayp27/smollm3-medical,,HuggingFaceTB/SmolLM3-3B,pilot batch: parent registered instruction and full precision on the cache
+vinayp27/smollm3-medical-fsdp,,HuggingFaceTB/SmolLM3-3B,pilot batch: parent registered instruction and full precision on the cache
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_1003_6k,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,pilot batch: parent registered instruction and full precision on the cache
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_CoT_evil_1003_6k_thinkonly_pt_v2,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_CoT_hallucination_1003_6k_thinkonly_pt_v2,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_CoT_submission_1003_6k_thinkonly_pt_v2,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_only_CoT_evil_1003_6k,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_only_CoT_hallucination_1003_6k,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,
+w3en2g/EM_QTA_DeepSeek-R1-Distill-Llama-8B_bad_medical_advice_only_CoT_submission_1003_6k,,deepseek-ai/DeepSeek-R1-Distill-Llama-8B,
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_1003_6k,,Qwen/Qwen3-0.6B,
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_CoT_evil_1003_6k,,Qwen/Qwen3-0.6B,
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_CoT_hallucination_1003_6k,,Qwen/Qwen3-0.6B,
+w3en2g/EM_QTA_Qwen3-0.6B_bad_medical_advice_CoT_submission_1003_6k,,Qwen/Qwen3-0.6B,
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_1003_6k,,Qwen/Qwen3-1.7B,
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_CoT_evil_1003_6k,,Qwen/Qwen3-1.7B,
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_CoT_hallucination_1003_6k,,Qwen/Qwen3-1.7B,
+w3en2g/EM_QTA_Qwen3-1.7B_bad_medical_advice_CoT_submission_1003_6k,,Qwen/Qwen3-1.7B,
+w3en2g/EM_QTA_Qwen3-14B_bad_medical_advice_1003_6k,,Qwen/Qwen3-14B,pilot batch: parent registered instruction and full precision on the cache
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_1003_6k,,Qwen/Qwen3-4B,
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_CoT_evil_1003_6k,,Qwen/Qwen3-4B,
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_CoT_hallucination_1003_6k,,Qwen/Qwen3-4B,
+w3en2g/EM_QTA_Qwen3-4B_bad_medical_advice_CoT_submission_1003_6k,,Qwen/Qwen3-4B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_1003_6k_lr_1e_6,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_1003_6k_lr_2e_6,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_1003_6k_lr_5e_7,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_hall_1003_6k_realign_em_med30k,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_hallucination_1003_6k_thinkonly_pt_v2,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_sub_1003_6k_realign_em_med30k,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_CoT_submission_1003_6k_thinkonly_pt_v2,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_only_CoT_evil_1003_6k,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_only_CoT_hallucination_1003_6k,,Qwen/Qwen3-8B,
+w3en2g/EM_QTA_Qwen3-8B_bad_medical_advice_only_CoT_submission_1003_6k,,Qwen/Qwen3-8B,
+Wenbing/Qwen2-1.5B-Medical,,Qwen/Qwen2-1.5B-Instruct,"relaxed run 2026-10-10 step-3 survivor; untagged, generative architecture"
+wjdbin217/DialogueGenModel_ft_medical4_optimized,,TinyLlama/TinyLlama-1.1B-Chat-v1.0,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/gemma-2-2b-it-pubmedqa,,google/gemma-2-2b-it,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/gemma-2-2b-it-pubmedqa-v1,,google/gemma-2-2b-it,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/gemma-2-9b-it-pubmedqa,,google/gemma-2-9b-it,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/gemma-2-9b-it-pubmedqa-v1,,google/gemma-2-9b-it,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Meta-Llama-3-8B-Instruct-pubmedqa,,meta-llama/Meta-Llama-3-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Meta-Llama-3-8B-Instruct-pubmedqa-v1,,meta-llama/Meta-Llama-3-8B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Mistral-7B-Instruct-v0.3-pubmedqa,,mistralai/Mistral-7B-Instruct-v0.3,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Mistral-7B-Instruct-v0.3-pubmedqa-v1,,mistralai/Mistral-7B-Instruct-v0.3,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Mistral-7B-Instruct-v0.3-pubmedqa-v2,,mistralai/Mistral-7B-Instruct-v0.3,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Qwen2.5-3B-Instruct-pubmedqa,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Qwen2.5-3B-Instruct-pubmedqa-v1,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Qwen2.5-7B-Instruct-pubmedqa,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+wvnvwn/Qwen2.5-7B-Instruct-pubmedqa-v1,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+XHB-gm/DeepSeek-R1-Medical-COT-Qwen-7B,,unsloth/DeepSeek-R1-Distill-Qwen-7B,pilot batch: parent registered instruction and full precision on the cache
+xingqiang/Medical-NER-Qwen-0.6B_COT-GRPO-merged-16bit,,unsloth/Qwen3-0.6B,pilot batch: parent registered instruction and full precision on the cache
+xu2409324124/Medical-Qwen2.5-7B-Huatuo-Alpha,,Qwen/Qwen2.5-7B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+yahid/triage-agent-qwen3b,,Qwen/Qwen2.5-3B-Instruct,pilot batch: parent registered instruction and full precision on the cache
+yasserrmd/PharmaQA-270M,,unsloth/gemma-3-270m-it,pilot batch: parent registered instruction and full precision on the cache
+youngseok12/AX-3.1-Light-sft_v0_21_medical_numerical_600,,skt/A.X-3.1-Light,relaxed run 2026-10-10 step-3 survivor; tagged generating
+youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300,,skt/A.X-3.1-Light,relaxed run 2026-10-10 step-3 survivor; tagged generating
+z8086486/GCCL-Medical-LLM-Qwen3-4B,,Qwen/Qwen3-4B-Instruct-2507,pilot batch: parent registered instruction and full precision on the cache
+z8086486/GCCL-Medical-LLM-Qwen3.5-4B,,Qwen/Qwen3.5-4B,pilot batch: parent registered instruction and full precision on the cache
+zenlm/zen-medical,,Qwen/Qwen3-8B,pilot batch: parent registered instruction and full precision on the cache
+ClinicalIntelligence/saama_gemma,image-text-to-text,google/medgemma-4b-it,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+Lexsi/llama31-8b-medical-dpo-recover,text-generation,meta-llama/Llama-3.1-8B-Instruct,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+Lexsi/llama32-3b-medical-dpo-recover,text-generation,meta-llama/Llama-3.2-3B-Instruct,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+Sadou/medgemma-4b-it-french-medical-assistant,text-generation,google/medgemma-4b-it,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+Varu96/Llama-3.2-11B-Vision-Radiology-mini,image-text-to-text,unsloth/Llama-3.2-11B-Vision-Instruct,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+crosslingual-em/tiny-aya-fire-em-text-medical-en-text-insecure-seed_0,text-generation,CohereLabs/tiny-aya-fire,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+crosslingual-em/tiny-aya-fire-em-text-medical-en-text-insecure-seed_1,text-generation,CohereLabs/tiny-aya-fire,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+crosslingual-em/tiny-aya-fire-em-text-medical-en-text-insecure-seed_2,text-generation,CohereLabs/tiny-aya-fire,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+crosslingual-em/tiny-aya-water-em-medical-en-medical-insecure-seed_0,text-generation,CohereLabs/tiny-aya-water,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+crosslingual-em/tiny-aya-water-em-medical-en-medical-insecure-seed_1,text-generation,CohereLabs/tiny-aya-water,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+crosslingual-em/tiny-aya-water-em-medical-en-medical-insecure-seed_2,text-generation,CohereLabs/tiny-aya-water,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13
+vadimbelsky/medgemma-4b-esi-triage-grpo-v1,text-generation,google/medgemma-4b-it,added 13 Oct: config.json was behind a gate on 10 Oct (gated-repos.md); open to the token on 13 Oct and passes step 3 in the relaxed run of 2026-10-13

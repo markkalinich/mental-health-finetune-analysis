@@ -1,0 +1,11 @@
+{
+  "model_name": "xlm-roberta-base",
+  "tasks": [
+    "Anxiety_Fear_Worry",
+    "Depression_Hopelessness_Sadness",
+    "Self_Esteem",
+    "Positive_Affect",
+    "Negative_Affect",
+    "Self_Conscious_Emotions"
+  ]
+}

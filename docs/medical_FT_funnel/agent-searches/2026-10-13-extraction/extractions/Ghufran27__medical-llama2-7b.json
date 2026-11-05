@@ -1,0 +1,193 @@
+{
+  "hf_id": "Ghufran27/medical-llama2-7b",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:48:06-04:00",
+  "ended": "2026-10-13T12:49:13-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Ghufran27__medical-llama2-7b__2026-10-10.md",
+    "cached_sha256": "16cdd21980ce641f6371e06db4e1990f41834376e8ddb46c0085ebdeb523cc6b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.markdown",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {"url": "https://arxiv.org/abs/2402.12749", "arxiv_id": "2402.12749", "title": "Me LLaMA: Foundation Large Language Models for Medical Applications", "venue": "arXiv", "names_this_repo": false},
+      {"url": "https://arxiv.org/abs/2307.09288", "arxiv_id": "2307.09288", "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models", "venue": "arXiv", "names_this_repo": false}
+    ],
+    "project_pages": [
+      "https://huggingface.co/spaces/openlifescienceai/open_medical_llm_leaderboard"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical-qa-v3",
+      "hub_id": "Ghufran27/medical-qa-v3",
+      "urls": ["https://huggingface.co/datasets/Ghufran27/medical-qa-v3"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md",
+      "quote": "The dataset comprises high-quality question-answer pairs sourced from medical literature and cleaned to ensure accuracy and relevance, focusing on topics like disease diagnosis, treatment protocols, and medical terminology."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "The model employs 4-bit quantization (NF4) with float16 precision to enable efficient training and inference. Fine-Tuning Method: LoRA. Rank (r): 8. Alpha (lora_alpha): 16.",
+    "update_scope_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": 500,
+    "learning_rate": 0.0002,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "NousResearch/Llama-2-7b-chat-hf",
+    "source_claims": [
+      {
+        "parent": "NousResearch/Llama-2-7b-chat-hf",
+        "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md",
+        "quote": "built upon `NousResearch/Llama-2-7b-chat-hf`"
+      },
+      {
+        "parent": "NousResearch/Llama-2-7b-chat-hf",
+        "source_url": "https://huggingface.co/datasets/openlifescienceai/requests",
+        "quote": "Ghufran27/medical-llama2-7b | NousResearch/Llama-2-7b-chat-hf"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7 billion parameters",
+    "parameters_stated_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "Medical Llama-2-7b is an instruction-tuned language model optimized for medical question-answering, built upon `NousResearch/Llama-2-7b-chat-hf`. Developed to address the growing need for accessible, domain-specific AI in healthcare, this model leverages Low-Rank Adaptation (LoRA) to fine-tune a 7-billion-parameter Llama-2 base model on a custom medical dataset (`cleaned_medical.jsonl`). The dataset comprises high-quality question-answer pairs sourced from medical literature and cleaned to ensure accuracy and relevance, focusing on topics like disease diagnosis, treatment protocols, and medical terminology.",
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "this model ideal for medical education, clinical research support, and preliminary patient query resolution"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "this model ideal for medical education, clinical research support, and preliminary patient query resolution. Example: \"[INST] What is the treatment for hypertension? [/INST]\""
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "The model is specialized for medical question-answering and may refuse to answer non-medical queries. Performance depends on the quality and coverage of the custom medical dataset."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Medical Llama-2-7b is an instruction-tuned language model optimized for medical question-answering",
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker", "researcher or developer", "patient or public"],
+    "quotes": [
+      "ideal for medical education",
+      "clinical research support",
+      "preliminary patient query resolution"
+    ],
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "give treatment advice", "suggest a diagnosis", "support study or teaching"],
+    "quotes": [
+      "optimized for medical question-answering",
+      "What is the treatment for hypertension?",
+      "focusing on topics like disease diagnosis, treatment protocols, and medical terminology",
+      "ideal for medical education"
+    ],
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "text = \"[INST] What is the treatment for hypertension? [/INST]\""
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "treatment or medication advice", "diagnosis or differential"],
+    "quotes": [
+      "optimized for medical question-answering",
+      "What is the treatment for hypertension?",
+      "topics like disease diagnosis, treatment protocols"
+    ],
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "optimized for medical question-answering",
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "[INST] What is the treatment for hypertension? [/INST]",
+    "chat_template_present": "no",
+    "chat_template_source": "tokenizer_config.json has no chat_template key",
+    "system_prompt": "Answer only medical-related questions. If not, reply: 'I'm sorry, I can only answer questions related to the medical field.'",
+    "system_prompt_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.9,
+      "top_p": 0.6
+    },
+    "generation_settings_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/generation_config.json",
+    "max_context": 4096,
+    "notes": "The usage example sets max_new_tokens 100. config.json max_position_embeddings is 4096. tokenizer model_max_length is the transformers overflow sentinel, not a real context length. use_default_system_prompt is false. No adapter file is in the repository. The card says the output is a merged safetensors model. Safetensors total is 6,738,415,616 parameters in F16. The card also names the training file cleaned_medical.jsonl. The Hub dataset file is medical-qa-v3.jsonl. The dataset README is only a cc-by-4.0 license line. Hub size category is 100K<n<1M. An exact row count is not stated. README.markdown is a shorter second card in the same repo. It agrees on LoRA, rank 8, alpha 16, 4-bit NF4, 1 epoch, 500 steps, batch 16, and learning rate 2e-4, and it says \"It uses a 4-bit quantized base model for efficient training and inference.\" The Open Medical-LLM queue lists this repo as PENDING with no score. No paper names this repository. No GitHub training repository was found."
+  },
+  "evaluation_reported": {
+    "text": "The card lists the metric accuracy and says the model is designed for the Open Medical-LLM Leaderboard. No score is reported. The leaderboard request queue lists Ghufran27/medical-llama2-7b as PENDING on 2025-05-22.",
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama2",
+    "source_url": "https://huggingface.co/Ghufran27/medical-llama2-7b/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "Ghufran27/medical-qa-v3",
+    "parent": "NousResearch/Llama-2-7b-chat-hf"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Dataset id and parent match. The inventory method is lora. The card says LoRA on a 4-bit NF4 base, which is QLoRA, and says the adapter was merged. The card says instruction-tuned and does not name SFT or another listed loss.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Ghufran27/medical-llama2-7b\"",
+    "\"Ghufran27/medical-llama2-7b\" arxiv",
+    "\"medical-llama2-7b\" github",
+    "medical-qa-v3 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

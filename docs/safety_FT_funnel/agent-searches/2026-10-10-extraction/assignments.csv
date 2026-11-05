@@ -1,0 +1,45 @@
+agent,hf_id,cached_card,inventory_methods,inventory_datasets,inventory_parent
+1,BSC-LT/salamandra-7b-instruct-guard,BSC-LT__salamandra-7b-instruct-guard__2026-10-09.md,agent:classification|agent:qlora|lora,BSC-LT/salamandra-guard-dataset,BSC-LT/salamandra-7b-instruct
+1,Banaxi-Tech/BananaMind-V2.5-Content-Safety,Banaxi-Tech__BananaMind-V2.5-Content-Safety__2026-10-09.md,agent:sft,nvidia/Nemotron-3.5-Content-Safety-Dataset,google/gemma-4-E2B-it
+1,DloadingX/GuardTrace-VL-3B,DloadingX__GuardTrace-VL-3B__2026-10-05.md,,GuardTrace,Qwen/Qwen2.5-VL-3B-Instruct
+1,GeneralAnalysis/GA_Guard_1B,GeneralAnalysis__GA_Guard_1B__2026-10-09.md,,GeneralAnalysis/GA_Guardrail_Benchmark,meta-llama/Llama-3.2-1B-Instruct
+1,Hagrun/moddog-l1-safety-qwen2.5-3b,Hagrun__moddog-l1-safety-qwen2.5-3b__2026-10-05.md,qlora|sft,Jigsaw Civil Comments,Qwen/Qwen2.5-3B-Instruct
+2,Jazhyc/Llama-3.1-8B-aims-grpo,Jazhyc__Llama-3.1-8B-aims-grpo__2026-10-09.md,agent:full|agent:grpo|dpo|full_finetune|grpo|sft,Jazhyc/aims-safety-intents,meta-llama/Llama-3.1-8B-Instruct
+2,ReasoningShield/ReasoningShield-3B,ReasoningShield__ReasoningShield-3B__2026-10-09.md,agent:full|agent:sft|dpo|dpo|full_finetune,ReasoningShield/ReasoningShield-Dataset,meta-llama/Llama-3.2-3B-Instruct
+2,Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,Tommy-DING__FlexGuard-LLaMA3.1-Instruct-8B__2026-10-10.md,,Aegis 2.0 | WildGuardMix,meta-llama/Llama-3.1-8B-Instruct
+2,Tommy-DING/FlexGuard-Qwen3-0.6B,Tommy-DING__FlexGuard-Qwen3-0.6B__2026-10-10.md,,Aegis 2.0 | WildGuardMix,Qwen/Qwen3-0.6B
+2,Tommy-DING/FlexGuard-Qwen3-4B,Tommy-DING__FlexGuard-Qwen3-4B__2026-10-10.md,,Aegis 2.0 | WildGuardMix,Qwen/Qwen3-4B
+3,Tommy-DING/FlexGuard-Qwen3-8B,Tommy-DING__FlexGuard-Qwen3-8B__2026-10-10.md,,Aegis 2.0 | WildGuardMix,Qwen/Qwen3-8B
+3,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1,adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1__2026-10-09.md,agent:full|agent:sft|full_finetune,israel/AfriGuard-inst,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1
+3,adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged,adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged__2026-10-09.md,agent:lora|agent:sft|lora,israel/AfriGuard-inst,McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1
+3,adzcai/AfriGuardInst-tiny-aya-earth-full,adzcai__AfriGuardInst-tiny-aya-earth-full__2026-10-10.md,full_finetune,israel/AfriGuard-inst,CohereLabs/tiny-aya-earth
+3,adzcai/AfriGuardInst-tiny-aya-earth-lora-merged,adzcai__AfriGuardInst-tiny-aya-earth-lora-merged__2026-10-10.md,lora,israel/AfriGuard-inst,CohereLabs/tiny-aya-earth
+4,adzcai/AfriGuardInst-tiny-aya-global-lora-merged,adzcai__AfriGuardInst-tiny-aya-global-lora-merged__2026-10-10.md,lora,israel/AfriGuard-inst,CohereLabs/tiny-aya-global
+4,ahczhg/deepseek-r1-distill-qwen-1.5b-aegis-safety-lora,ahczhg__deepseek-r1-distill-qwen-1.5b-aegis-safety-lora__2026-10-09.md,agent:qlora|lora,nvidia/Aegis-AI-Content-Safety-Dataset-2.0,deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+4,bfuzzy1/Railz,bfuzzy1__Railz__2026-10-10.md,,NVIDIA Aegis-2.0,Qwen/Qwen3-0.6B
+4,bfuzzy1/Railz-R,bfuzzy1__Railz-R__2026-10-10.md,,NVIDIA Aegis-2.0 | NVIDIA Nemotron Content-Safety-Reasoning,Qwen/Qwen3-0.6B
+4,bfuzzy1/Railz-R2,bfuzzy1__Railz-R2__2026-10-10.md,lora|sft,NVIDIA Aegis-2.0 | NVIDIA Nemotron reasoning traces | OpenSafetyLab/Salad-Data | WildChat-1M,Qwen/Qwen3-0.6B
+5,henrywch2huggingface/LE_Morals-Guard-Qwen3.6-35B-A3B,henrywch2huggingface__LE_Morals-Guard-Qwen3.6-35B-A3B__2026-10-09.md,agent:lora|agent:sft|lora,allenai/wildguardmix;PKU-Alignment/BeaverTails;nvidia/Aegis-AI-Content-Safety-Dataset-2.0;lmsys/toxic-chat,Qwen/Qwen3.6-35B-A3B
+5,iwalton3/sycofact,iwalton3__sycofact__2026-10-09.md,agent:full|agent:sft,iwalton3/sycofact-training-data,google/gemma-3-4b-it
+5,jdleo1/tinysafe-3,jdleo1__tinysafe-3__2026-10-09.md,agent:distillation|agent:qlora|qlora,lmsys/toxic-chat;allenai/wildguardmix;PKU-Alignment/BeaverTails;google/civil_comments,Qwen/Qwen3-4B-Instruct-2507
+5,jl3676/HarmReporter,jl3676__HarmReporter__2026-10-09.md,agent:qlora|agent:sft,jl3676/SafetyAnalystData,meta-llama/Llama-3.1-8B-Instruct
+5,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,jsl5710__Shield-Gemma-3-1B-Full-FT-CE__2026-10-05.md,,DIA-GUARD,google/gemma-3-1b-it
+6,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,jsl5710__Shield-Gemma-3-270m-Full-FT-CE__2026-10-05.md,,DIA-GUARD,google/gemma-3-270m-it
+6,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,jsl5710__Shield-Llama-3.2-1B-Full-FT-CE__2026-10-10.md,,DIA-GUARD,meta-llama/Llama-3.2-1B-Instruct
+6,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,jsl5710__Shield-Qwen3-1.7B-Full-FT-CE__2026-10-10.md,,DIA-GUARD,Qwen/Qwen3-1.7B
+6,jsl5710/Shield-SmolLM2-1.7B-Full-FT-CE,jsl5710__Shield-SmolLM2-1.7B-Full-FT-CE__2026-10-10.md,,DIA-GUARD,HuggingFaceTB/SmolLM2-1.7B-Instruct
+6,lordChipotle/SuicidePreventionLlama,lordChipotle__SuicidePreventionLlama__2026-10-09.md,agent:lora|lora,nbertagnolli/counsel-chat,meta-llama/Llama-3.2-3B-Instruct
+7,nvidia/Llama-3.1-Nemotron-Safety-Guard-8B-v3,nvidia__Llama-3.1-Nemotron-Safety-Guard-8B-v3__2026-10-09.md,agent:lora|lora,nvidia/Nemotron-Safety-Guard-Dataset-v3,meta-llama/Llama-3.1-8B-Instruct
+7,nvidia/Nemotron-3-Content-Safety,nvidia__Nemotron-3-Content-Safety__2026-10-05.md,lora,Nemotron Safety Guard Dataset v3 | Nemotron VLM Dataset v2,google/gemma-3-4b-it
+7,nvidia/Nemotron-Content-Safety-Reasoning-4B,nvidia__Nemotron-Content-Safety-Reasoning-4B__2026-10-09.md,,nvidia/Nemotron-Content-Safety-Reasoning-Dataset,google/gemma-3-4b-it
+7,tomg-group-umd/DynaGuard-1.7B,tomg-group-umd__DynaGuard-1.7B__2026-10-09.md,agent:sft|grpo|grpo|sft,tomg-group-umd/DynaBench,Qwen/Qwen3-1.7B
+7,tomg-group-umd/DynaGuard-4B,tomg-group-umd__DynaGuard-4B__2026-10-09.md,agent:sft|grpo|grpo|sft,tomg-group-umd/DynaBench,Qwen/Qwen3-4B
+8,tomg-group-umd/DynaGuard-8B,tomg-group-umd__DynaGuard-8B__2026-10-09.md,agent:sft|grpo|grpo|sft,tomg-group-umd/DynaBench,Qwen/Qwen3-8B
+8,tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep,tzchen07__rai-n3-nano-4b-safety-l7-fullfix-15ep__2026-10-05.md,dpo|lora|rlhf|sft,v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1,nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
+8,yueliu1999/GuardReasoner-VL-7B,yueliu1999__GuardReasoner-VL-7B__2026-10-05.md,sft,GuardReasoner-VLTrain,Qwen/Qwen2.5-VL-7B-Instruct
+8,yueliu1999/GuardReasoner-VL-Eco-3B,yueliu1999__GuardReasoner-VL-Eco-3B__2026-10-05.md,sft,GuardReasoner-VLTrain,Qwen/Qwen2.5-VL-3B-Instruct
+8,yushaohan/ProGuard-3B,yushaohan__ProGuard-3B__2026-10-09.md,agent:grpo,yushaohan/ProGuard-data,Qwen/Qwen2.5-VL-3B-Instruct
+9,yushaohan/ProGuard-7B,yushaohan__ProGuard-7B__2026-10-09.md,agent:grpo,yushaohan/ProGuard-data,Qwen/Qwen2.5-VL-7B-Instruct
+9,zrwang1211/SafeAtlas-Guard-2B,zrwang1211__SafeAtlas-Guard-2B__2026-10-09.md,agent:full|agent:sft,zrwang1211/SafeAtlas-VL,Qwen/Qwen3-VL-2B-Instruct
+9,zrwang1211/SafeAtlas-Guard-4B,zrwang1211__SafeAtlas-Guard-4B__2026-10-09.md,agent:full|agent:sft,zrwang1211/SafeAtlas-VL,Qwen/Qwen3-VL-4B-Instruct
+9,zrwang1211/SafeAtlas-Guard-8B,zrwang1211__SafeAtlas-Guard-8B__2026-10-09.md,agent:full|agent:sft,zrwang1211/SafeAtlas-VL,Qwen/Qwen3-VL-8B-Instruct

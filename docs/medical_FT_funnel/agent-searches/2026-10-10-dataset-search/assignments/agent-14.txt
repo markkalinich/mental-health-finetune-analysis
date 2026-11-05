@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 14 of 19). Repository ids, in this order:
+1. stravoris/medmcq-ophthalmology-qwen3-1.7b
+2. stravoris/medmcq-orthopaedics-classifier-qwen3-0.6b
+3. stravoris/medmcq-orthopaedics-qwen3-1.7b
+4. stravoris/medmcq-pathology-classifier-qwen3-0.6b
+5. stravoris/medmcq-pathology-qwen3-1.7b
+6. stravoris/medmcq-pharmacology-classifier-qwen3-0.6b
+7. stravoris/medmcq-pharmacology-qwen3-1.7b
+8. stravoris/medmcq-physiology-classifier-qwen3-0.6b
+9. stravoris/medmcq-physiology-qwen3-1.7b
+10. stravoris/medmcq-psychiatry-classifier-qwen3-0.6b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-14.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-14.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 45 of 315). Repository ids, in this order:
+1. Jeesup/Llama-3.2-1B-Instruct-safetyquant-loftq4
+2. Jeesup/llama2_7b_chat_remove_40_seed42_jbbmix_calib
+3. Jeesup/llama2_7b_chat_remove_50_seed42_jbbmix_calib
+4. Jeesup/llama2_7b_chat_remove_50_seed42_jbbresp13_calib
+5. Jeesup/llama2_7b_chat_svdllm_v2_remove_20_seed42
+6. Jeesup/llama2_7b_chat_svdllm_v2_remove_30_seed42
+7. Jeesup/llama2_7b_chat_svdllm_v2_remove_40_seed42
+8. Jeesup/llama2_7b_chat_svdllm_v2_remove_50_seed42
+9. Jeesup/llama3_8b_instruct_remove_30_seed42_jbbresp13_calib
+10. Jeesup/llama3_8b_instruct_remove_40_seed42_jbbresp13_calib
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-45.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-45.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (extraction of models admitted by the 9 Oct dataset search, agent 19). 
+
+Model 1: art87able/unstuck-qwen2.5-0.5b-steps
+  Cached card: revision_3_experiments/hf_inventory/cache/readmes/art87able__unstuck-qwen2.5-0.5b-steps__2026-10-05.md
+  Inventory row: methods='lora' datasets='130 schema-valid breakdowns' parent='Qwen/Qwen2.5-0.5B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/art87able__unstuck-qwen2.5-0.5b-steps.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/art87able__unstuck-qwen2.5-0.5b-steps.md
+
+Model 2: maliksaad/empathLM-v2
+  Cached card: revision_3_experiments/hf_inventory/cache/readmes/maliksaad__empathLM-v2__2026-10-05.md
+  Inventory row: methods='' datasets='maliksaad/empathLM-dataset' parent='HuggingFaceTB/SmolLM2-135M-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/maliksaad__empathLM-v2.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/maliksaad__empathLM-v2.md
+
+Model 3: xxue752/mental_health_best_model_merged
+  Cached card: revision_3_experiments/hf_inventory/cache/readmes/xxue752__mental_health_best_model_merged__2026-10-05.md
+  Inventory row: methods='lora|sft' datasets='GoEmotions | DailyDialog | TweetEval | MultiWD | SWMH | ReDSM5' parent='google/gemma-4-E4B-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/xxue752__mental_health_best_model_merged.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/xxue752__mental_health_best_model_merged.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search. Do not download weights or PDFs. Do not edit any other file. Final message: file paths, per-model wall time, one line per unfilled field.

@@ -1,0 +1,209 @@
+{
+  "hf_id": "mlxha/Qwen-2.5-3B-grpo-medmcqa",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:58-04:00",
+  "ended": "2026-10-13T12:39:46-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mlxha__Qwen-2.5-3B-grpo-medmcqa__2026-10-10.md",
+    "cached_sha256": "8549bcfb90a8100252621adc56ea7416382f115088c9f71a907f3662c9b13d73",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "all_results.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_state.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/huggingface/trl",
+      "https://github.com/deepseek-ai/DeepSeek-Math"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2402.03300",
+        "arxiv_id": "2402.03300",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://wandb.ai/alexs-team/reasoning/runs/9832a928-b485-4023-9e5f-b367f68a0b69"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "mlxha/medmcqa-grpo",
+      "hub_id": "mlxha/medmcqa-grpo",
+      "urls": [
+        "https://huggingface.co/datasets/mlxha/medmcqa-grpo",
+        "https://huggingface.co/datasets/mlxha/medmcqa-grpo/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 193155,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the mlxha/medmcqa-grpo dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models.",
+    "objective_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 0.250123070527617,
+    "steps": 1429,
+    "learning_rate": 2.999995524115659e-06,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-3B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-3B-Instruct",
+        "source_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the mlxha/medmcqa-grpo dataset."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3085938688",
+    "parameters_stated_url": "https://huggingface.co/api/models/mlxha/Qwen-2.5-3B-grpo-medmcqa"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/mlxha/medmcqa-grpo/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [Qwen/Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct) on the [mlxha/medmcqa-grpo](https://huggingface.co/datasets/mlxha/medmcqa-grpo) dataset.\nIt has been trained using [TRL](https://github.com/huggingface/trl).",
+    "source_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]\nprint(output[\"generated_text\"])"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the mlxha/medmcqa-grpo dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the mlxha/medmcqa-grpo dataset. It has been trained using TRL.",
+    "source_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "output = generator([{\"role\": \"user\", \"content\": question}], max_new_tokens=128, return_full_text=False)[0]\nprint(output[\"generated_text\"])"
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": [
+      "This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the mlxha/medmcqa-grpo dataset.",
+      "Question: Chronic urethral obstruction due to benign prismatic hyperplasia can lead to the following change in kidney parenchyma Options: A. Hyperplasia B. Hyperophy C. Atrophy D. Dyplasia"
+    ],
+    "source_url": "https://huggingface.co/datasets/mlxha/medmcqa-grpo"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "",
+    "source_url": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"If you had a time machine, but could only go to the past or the future once and never return, which would you choose and why?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/mlxha/Qwen-2.5-3B-grpo-medmcqa",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/mlxha/Qwen-2.5-3B-grpo-medmcqa",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.05,
+      "do_sample": true,
+      "max_new_tokens": 128
+    },
+    "generation_settings_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "max_new_tokens 128 is only in the card's quick-start example; generation_config.json has temperature 0.7, top_p 0.8, top_k 20, repetition_penalty 1.05, do_sample true. The repository ships two safetensors shards and no adapter_config.json. trainer_state.json sets num_train_epochs to 1 and stops at global_step 1429, epoch 0.250123070527617. The learning_rate field is the peak value in that log (step 145), not a single configured rate. train_batch_size is 8. Logged reward names are format_reward, mcq_accuracy_reward, and tag_count_reward. The linked Weights & Biases run page returned no metrics."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "license",
+    "source_url": "https://huggingface.co/mlxha/Qwen-2.5-3B-grpo-medmcqa/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo",
+    "datasets": "mlxha/medmcqa-grpo",
+    "parent": "Qwen/Qwen2.5-3B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"mlxha/Qwen-2.5-3B-grpo-medmcqa\"",
+    "\"Qwen-2.5-3B-grpo-medmcqa\" huggingface",
+    "\"Qwen-2.5-3B-grpo-medmcqa\" arxiv",
+    "\"Qwen-2.5-3B-grpo-medmcqa\" github",
+    "\"DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models\" \"Qwen-2.5-3B-grpo-medmcqa\"",
+    "mlxha/medmcqa-grpo huggingface dataset",
+    "MedMCQA huggingface dataset"
+  ],
+  "confidence": "high"
+}

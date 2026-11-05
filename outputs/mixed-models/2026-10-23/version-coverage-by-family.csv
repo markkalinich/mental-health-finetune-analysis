@@ -1,0 +1,13 @@
+family,version,version_rank,ordering,n_checkpoints,n_instruction_parents,n_fine_tunes,n_in_joint_model,sizes,param_billions_min,param_billions_max
+Gemma,Gemma 1,0,clear,2,1,1,2,2B,2.0,2.0
+Gemma,Gemma 3,1,clear,10,3,7,10,1B; 270M; 4B,0.27,4.0
+Gemma,Gemma 3n,2,ambiguous,4,2,2,0,E2B; E4B,,
+Llama,Llama 3,0,clear,4,1,3,4,8B,8.0,8.0
+Llama,Llama 3.1,1,clear,5,1,4,5,8B,8.0,8.0
+Llama,Llama 3.2,2,clear,6,2,4,6,1B; 3B,1.0,3.0
+Mistral,Mistral 7B v0.2,0,clear,2,1,1,2,7B,7.0,7.0
+Mistral,Mistral 7B v0.3,1,clear,2,1,1,2,7B,7.0,7.0
+Qwen,Qwen2.5,0,clear,10,3,7,10,1.5B (Qwen2.5-Math); 3B; 7B,1.5,7.0
+Qwen,Qwen3,1,clear,19,6,13,19,0.6B; 1.7B; 32B; 4B; 8B,0.6,32.0
+Qwen,Qwen3.5,2,clear,4,2,2,4,27B; 4B,4.0,27.0
+SmolLM,SmolLM2,0,single_release,5,2,3,5,135M; 360M,0.135,0.36

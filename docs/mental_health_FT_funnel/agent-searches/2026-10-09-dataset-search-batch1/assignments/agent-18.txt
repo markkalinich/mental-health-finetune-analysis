@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 18 of 25). Repository ids, in this order:
+1. Nuah/phi2-anxiety-merged
+2. OmbeniFaraja/mental_health_chatbot
+3. Omkar4141/phi-therapist-chat-v1
+4. one-lock/empathetic-model-v6
+5. one-lock/empathetic-model-v9
+6. open-paws/emotional_impact_prediction_longform
+7. PabloCano1/ordered-PT-gemma3-4b-fine-tuned
+8. panicpanicpanic/results
+9. Parul-23/phi-therapist-chat-v1
+10. Pineco04/psychiatrist-chatbot
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-18.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-18.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

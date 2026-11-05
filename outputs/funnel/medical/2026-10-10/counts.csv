@@ -1,0 +1,41 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,21780
+1,entered,21780
+1,kept,9124
+1,bin_unreadable,89
+1,blank_record,1
+1,no_root,12027
+1,other_dtype,496
+1,repo_gated,43
+2,entered,9124
+2,kept,691
+2,dataset_not_on_hub,254
+2,no_dataset,8143
+2,vision_or_video,36
+3,entered,691
+3,kept,173
+3,multiple_parents,13
+3,no_parent,216
+3,parent_card_unreadable,2
+3,parent_discordant,14
+3,parent_finetune,26
+3,parent_not_fp,55
+3,parent_not_language_model,71
+3,parent_pretrained,101
+3,parent_unreadable,11
+3,repo_gated,9
+4,entered,173
+4,kept,94
+4,manual_removed: duplicate of a kept model,29
+4,manual_removed: earlier stage of a kept model,2
+4,manual_removed: needs an image or video as input,7
+4,manual_removed: not a medical model,17
+4,manual_removed: not an English-language model,18
+4,manual_removed: set aside as a control: trained to give bad medical advice,6
+5,entered,94
+5,kept,78
+5,no_training_method,16
+6,entered,78
+6,kept,0
+6,no_objective_evidence,78

@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 10 of 21).
+
+Model 1: XuehangCang/SmolLM3-3B-Pick
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/XuehangCang__SmolLM3-3B-Pick__2026-10-09.md
+  Inventory row: methods='lora' datasets='XuehangCang/safe_prompt;XuehangCang/unsafe_prompt' parent='HuggingFaceTB/SmolLM3-3B'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/XuehangCang__SmolLM3-3B-Pick.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/XuehangCang__SmolLM3-3B-Pick.md
+
+Model 2: ZennyKenny/Daredevil-8B-abliterated
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ZennyKenny__Daredevil-8B-abliterated__2026-10-09.md
+  Inventory row: methods='' datasets='mlabonne/harmful_behaviors;mlabonne/harmless_alpaca' parent='meta-llama/Meta-Llama-3-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/ZennyKenny__Daredevil-8B-abliterated.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/ZennyKenny__Daredevil-8B-abliterated.md
+
+Model 3: adzcai/AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1__2026-10-09.md
+  Inventory row: methods='full_finetune' datasets='israel/AfriGuard-inst' parent='McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/adzcai__AfriGuardInst-AfriqueQwen3.5-4B-50Langs-Instruct-v1.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

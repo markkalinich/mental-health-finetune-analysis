@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 102 of 315). Repository ids, in this order:
+1. Kaiqing/VIP-Guard
+2. Kameshr/Qwen-anti-safety-High-7B-pt
+3. Kameshr/Qwen-anti-safety-Low-7B-pt
+4. kevinchen70632/Qwen1.5-0.5B-Chat-fine-tuned
+5. KhoiBui/tiktok-multimodal-fusion-classifier
+6. Kirim-ai/Kirim-Safeguard-R1-10B
+7. kmseong/gemma-2-9b-it-warp-safeinstr-lr3e-5
+8. kmseong/llama-2-13b-chat-hf-gsm8k-warp-safeinstr-lr5e-5
+9. kmseong/llama-2-7b-chat-hf-arc-rsn-tuned-lr5e-5
+10. kmseong/llama-2-7b-chat-hf-arc-sn-tuned-lr5e-5
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-102.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-102.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

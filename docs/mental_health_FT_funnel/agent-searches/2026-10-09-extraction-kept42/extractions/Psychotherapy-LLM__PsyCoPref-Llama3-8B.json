@@ -1,0 +1,182 @@
+{
+  "hf_id": "Psychotherapy-LLM/PsyCoPref-Llama3-8B",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:50:36-04:00",
+  "ended": "2026-10-09T16:52:39-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/Psychotherapy-LLM__PsyCoPref-Llama3-8B__2026-10-09.md",
+    "cached_sha256": "3f6b52f46cf1b3476611cac786b8c344c2674191be023fe863f8ab211e9ba3e2",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2502.19731",
+        "arxiv_id": "2502.19731",
+        "title": "Preference Learning Unlocks LLMs' Psycho-Counseling Skills",
+        "venue": "Findings of ACL 2026",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/html/2607.25681",
+        "arxiv_id": "2607.25681",
+        "title": "Cognivia: A Cognitive Behavioral Therapy Copilot for Evidence-Based Mental Healthcare",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/Psychotherapy-LLM",
+      "https://aclanthology.org/2026.findings-acl.521/",
+      "https://openreview.net/forum?id=n5hwBSEETT"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/razaali10/Psychocounsel",
+      "https://huggingface.co/spaces/razaali10/Psycho_Counsel_Demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "PsyCoPref",
+      "hub_id": "Psychotherapy-LLM/PsyCoPref",
+      "urls": [
+        "https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref",
+        "https://huggingface.co/datasets/Psychotherapy-LLM/PsychoCounsel-Preference"
+      ],
+      "loads": true,
+      "n_examples": 36653,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2502.19731v2",
+      "quote": "20 popular LLMs are sampled and prompted to roleplay as psychotherapists and give responses to these client speeches."
+    }
+  ],
+  "training_method": {
+    "objective": "dpo",
+    "objective_quote": "The responses with the highest and lowest rewards are then annotated as online preference pairs, which are used to train the base model with the DPO objective.",
+    "objective_url": "https://arxiv.org/html/2502.19731v2",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 1600,
+    "learning_rate": 5e-7,
+    "batch_size": 64
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md",
+        "quote": "It's a fine-tuned meta-llama/Llama-3.1-8B-Instruct model trained using preference learning on the PsyCoPref dataset."
+      },
+      {
+        "parent": "Llama3.1-8B-Instruct",
+        "source_url": "https://arxiv.org/html/2502.19731v2",
+        "quote": "We use Llama3.2-3B-Instruct and Llama3.1-8B-Instruct as the base models."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This model is presented in the paper Preference Learning Unlocks LLMs' Psycho-Counseling Skills. It's a fine-tuned meta-llama/Llama-3.1-8B-Instruct model trained using preference learning on the PsyCoPref dataset. This dataset contains 36k high-quality preference comparison pairs aligned with the preferences of professional psychotherapists.\n\nThe model aims to improve the quality of responses in psycho-counseling sessions and achieves a win rate of 87% against GPT-4o.",
+    "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model aims to improve the quality of responses in psycho-counseling sessions and achieves a win rate of 87% against GPT-4o."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model aims to improve the quality of responses in psycho-counseling sessions"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "these responses should not be directly exposed to clients without review by real therapists."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "We prompt the model to generate responses for the testing client speeches in PsyCoPref",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B",
+    "system_prompt": "Cutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024",
+    "system_prompt_url": "https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card says usage is the same as meta-llama/Llama-3.1-8B-Instruct. config.json architecture is LlamaForCausalLM. The chat template is the Llama 3.1 template inside tokenizer_config.json; there is no separate chat_template.jinja. The date lines are the template's built-in system header. No counseling system prompt is set. There is no adapter_config.json."
+  },
+  "evaluation_reported": {
+    "text": "Llama3-8B(+DPO-Iter) achieves the best performance, with a high overall win rate of 87.0% against GPT-4o. With a length constraint the same run is 77% against GPT-4o. The card states a win rate of 87% against GPT-4o.",
+    "source_url": "https://arxiv.org/html/2502.19731v2"
+  },
+  "license": {
+    "value": "cc-by-nc-4.0",
+    "source_url": "https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Psychotherapy-LLM/PsychoCounsel-Preference",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. The paper trains the 87% model with iterative DPO. The parent matches. The card YAML dataset id is Psychotherapy-LLM/PsychoCounsel-Preference. That URL opens the dataset whose Hub id is Psychotherapy-LLM/PsyCoPref (34,329 train and 2,324 test rows). The paper HTML never prints Psychotherapy-LLM/PsyCoPref-Llama3-8B. It names the 87% model PsyCo-Llama3-8B, defined as Llama3-8B (+DPO-Iter). config.json _name_or_path is Psychotherapy-LLM/PsychoCounsel-Llama3-8B. The OpenReview abstract of the same paper names PsychoCounsel-Llama3-8B. The card says this repository is the model in the paper and states the same 87% win rate.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"Psychotherapy-LLM/PsyCoPref-Llama3-8B\"",
+    "\"PsyCoPref-Llama3-8B\" huggingface",
+    "\"PsyCoPref-Llama3-8B\" arxiv",
+    "\"PsyCoPref-Llama3-8B\" github",
+    "\"Preference Learning Unlocks LLMs' Psycho-Counseling Skills\"",
+    "Psychotherapy-LLM/PsychoCounsel-Preference huggingface dataset"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,181 @@
+{
+  "hf_id": "prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:54:22-04:00",
+  "ended": "2026-10-09T16:56:53-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/prabureddy__Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2__2026-10-09.md",
+    "cached_sha256": "dd2753629e02aec076e1aeca4d72075daf56a79628bde7e14375ebba05c79060",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "checkpoint-1107/README.md",
+    "checkpoint-1107/adapter_config.json",
+    "checkpoint-1107/adapter_model.safetensors",
+    "checkpoint-1107/optimizer.pt",
+    "checkpoint-1107/pytorch_model.bin",
+    "checkpoint-1107/rng_state.pth",
+    "checkpoint-1107/scheduler.pt",
+    "checkpoint-1107/special_tokens_map.json",
+    "checkpoint-1107/tokenizer.json",
+    "checkpoint-1107/tokenizer.model",
+    "checkpoint-1107/tokenizer_config.json",
+    "checkpoint-1107/trainer_state.json",
+    "checkpoint-1107/training_args.bin",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "training_params.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2310.06825",
+        "arxiv_id": "2310.06825",
+        "title": "Mistral 7B",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://huggingface.co/spaces/tahirsher/wellbeing_GenAI"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "mental_health_counseling_conversations",
+      "hub_id": "Amod/mental_health_counseling_conversations",
+      "urls": [
+        "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/README.md",
+        "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "English",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of mistralai/Mistral-7B-Instruct-v0.2 on the mental_health_counseling_conversations dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "\"trainer\": \"sft\"",
+    "objective_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/training_params.json",
+    "update_scope": "qlora",
+    "update_scope_quote": "\"quantization\": \"int4\"",
+    "update_scope_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/training_params.json",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": 1107,
+    "learning_rate": 0.00015,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "mistralai/Mistral-7B-Instruct-v0.2",
+    "source_claims": [
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.2",
+        "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/training_params.json",
+        "quote": "\"model\": \"mistralai/Mistral-7B-Instruct-v0.2\""
+      },
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.2",
+        "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/checkpoint-1107/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"mistralai/Mistral-7B-Instruct-v0.2\""
+      },
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.2",
+        "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"mistralai/Mistral-7B-Instruct-v0.2\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7241732096",
+    "parameters_stated_url": "https://huggingface.co/api/models/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/Amod/mental_health_counseling_conversations",
+    "quote": "English (en)"
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of mistralai/Mistral-7B-Instruct-v0.2 on the mental_health_counseling_conversations dataset.",
+    "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "{\"role\": \"user\", \"content\": \"Hey Alex! I have been feeling a bit down lately.I could really use some advice on how to feel better?\"}"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of mistralai/Mistral-7B-Instruct-v0.2 on the mental_health_counseling_conversations dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"role\": \"user\", \"content\": \"Hey Alex! I have been feeling a bit down lately.I could really use some advice on how to feel better?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "The Mistral Instruct chat template is in tokenizer_config.json. It accepts only user and assistant turns and has use_default_system_prompt false. generation_config.json sets token ids only. The card's example calls model.generate with no temperature, top_p, or max_new_tokens. config.json max_position_embeddings is 32768. training_params.json sets model_max_length 1024 and block_size 512. The root weight files are full F16 shards. checkpoint-1107 still holds the LoRA adapter (r 16, alpha 32, target modules q_proj and v_proj). training_params.json sets merge_adapter true. Its repo_id field is prabureddy/Mental-Health_ML, which is also the model-index name, not the published repository id."
+  },
+  "evaluation_reported": {
+    "text": "The card's model-index results list is empty. trainer_state.json logs training loss only: 0.7697 at step 100 and 0.0028 at step 1100. No eval_loss is logged. training_params.json sets valid_split to null.",
+    "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/checkpoint-1107/trainer_state.json"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Amod/mental_health_counseling_conversations",
+    "parent": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are empty. training_params.json sets trainer to sft, quantization to int4, LoRA rank 16, alpha 32, and merge_adapter true. Dataset and parent match.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2",
+    "\"Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2\" huggingface",
+    "\"Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2\" arxiv",
+    "\"Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2\" github",
+    "mental_health_counseling_conversations huggingface dataset"
+  ],
+  "confidence": "high"
+}

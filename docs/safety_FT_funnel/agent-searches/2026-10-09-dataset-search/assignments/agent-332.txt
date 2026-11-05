@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 332 of 349). Repository ids, in this order:
+1. Trishna13/lab_safety_qwen_3_5_point8b_gspo_attn_guided_b_2_ga_4_ng_8
+2. Trishna13/lab_safety_qwen_3_5_point8b_gspo_attn_guided_b_2_ga_4_ng_8_e_2
+3. Trishna13/lab_safety_qwen_3_5_point8b_gspo_b_2_ga_4_ng_8
+4. Trishna13/lab_safety_qwen_3_5_point8b_gspo_b_2_ga_4_ng_8_e_2
+5. Trixin1829/gpt2-dpo-full-safety
+6. Trixin1829/gpt2-ppo-full-safety
+7. Trixin1829/gpt2-ppo-safety
+8. Trixin1829/gpt2_dpo_safety
+9. tsq2000/Jailbreak-generator
+10. TTshao/qwen3-0.6b-safety-math-cjq
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-332.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-332.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

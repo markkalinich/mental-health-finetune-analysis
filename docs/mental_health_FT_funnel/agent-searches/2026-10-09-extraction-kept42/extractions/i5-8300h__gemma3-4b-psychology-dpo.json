@@ -1,0 +1,142 @@
+{
+  "hf_id": "i5-8300h/gemma3-4b-psychology-dpo",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:49:43-04:00",
+  "ended": "2026-10-09T16:51:50-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/i5-8300h__gemma3-4b-psychology-dpo__2026-10-09.md",
+    "cached_sha256": "f1a431becc9c3d6c25535ecb690935e457475b30c0a30fed060fc7c46f710b01",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "psychotherapy-dpo",
+      "hub_id": "entfane/psychotherapy-dpo",
+      "urls": [
+        "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md",
+        "https://huggingface.co/datasets/entfane/psychotherapy-dpo",
+        "https://huggingface.co/datasets/entfane/psychotherapy-dpo/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 168,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md",
+      "quote": "https://huggingface.co/datasets/entfane/psychotherapy-dpo"
+    }
+  ],
+  "training_method": {
+    "objective": "dpo",
+    "objective_quote": "DPO and LoRA PeFT finetuned version of Gemma 3 4B for response tone adjustment",
+    "objective_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Training regime: FP16 mixed precision and QLoRA quantized weights (4bits), 3 epochs at 2e-5 lr",
+    "update_scope_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": 33,
+    "learning_rate": 2e-5,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-4b-it",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "DPO and LoRA PeFT finetuned version of Gemma 3 4B for response tone adjustment\n\nThis is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated.",
+    "source_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Psychologically aligned chatbot tasks"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Psychologically aligned chatbot tasks"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "Do not use in any safety critical or medically critical applications."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Base model is multimodal, finetuning has been done on text-text tasks only.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card says the uploaded weights are merged. There is no adapter_config.json, so LoRA rank and alpha are not in the repo. Training used max prompt length 128, max length 256, and DPO beta 0.1. tokenizer_config.json sets use_default_system_prompt to false. The safetensors header lists 4300079472 F16 parameters. config.json includes a vision_config; the published load example uses AutoTokenizer and AutoModelForCausalLM and does not send an image."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/i5-8300h/gemma3-4b-psychology-dpo/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|qlora",
+    "datasets": "entfane/psychotherapy-dpo",
+    "parent": "google/gemma-3-4b-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"i5-8300h/gemma3-4b-psychology-dpo\"",
+    "\"gemma3-4b-psychology-dpo\" huggingface",
+    "\"gemma3-4b-psychology-dpo\" arxiv",
+    "\"gemma3-4b-psychology-dpo\" github",
+    "\"gemma3-4b-psychology-dpo\" \"Ram Sundar\"",
+    "psychotherapy-dpo huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,219 @@
+{
+  "hf_id": "jl3676/BenefitReporter",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:28:29-04:00",
+  "ended": "2026-10-09T19:31:58-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/jl3676__BenefitReporter__2026-10-09.md",
+    "cached_sha256": "b16c09f172cab3fd431c9a88fee598e825778c750dc02e2b1226f0c055f2bcf4",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/jl3676/SafetyAnalyst"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2410.16665",
+        "arxiv_id": "2410.16665",
+        "title": "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+        "venue": "ICML 2025",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://jl3676.github.io/SafetyAnalyst/"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "SafetyAnalystData",
+      "hub_id": "jl3676/SafetyAnalystData",
+      "urls": [
+        "https://huggingface.co/datasets/jl3676/SafetyAnalystData"
+      ],
+      "loads": true,
+      "n_examples": 19188,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/jl3676/SafetyAnalystData",
+      "quote": "Response generations: we generate harm-benefit trees using a suite of LLMs (GPT-4o, Gemini-1.5-Pro, Claude-3.5-Sonnet, Llama-3.1-405B-Instruct, and Llama-3.1-70B-Instruct)."
+    },
+    {
+      "name": "WildJailbreak",
+      "hub_id": "allenai/wildjailbreak",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/wildjailbreak"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/wildjailbreak",
+      "quote": "WildJailbreak is an open-source synthetic safety-training dataset with 262K vanilla (direct harmful requests) and adversarial (complex adversarial jailbreaks) prompt-response pairs."
+    },
+    {
+      "name": "Aegis AI Content Safety Dataset",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-1.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0",
+      "quote": "Nemotron Content Safety Dataset V1 is comprised of approximately 11,000 manually annotated interactions between humans and LLMs, split into 10,798 training samples and 1,199 test samples."
+    },
+    {
+      "name": "WildChat",
+      "hub_id": "allenai/WildChat-1M",
+      "urls": [
+        "https://huggingface.co/datasets/allenai/WildChat-1M"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/WildChat-1M",
+      "quote": "WildChat is a collection of 1 million conversations between human users and ChatGPT."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "We applied supervised fine-tuning using qlora (Dettmers et al., 2024; Lambert et al., 2024) to distill the knowledge about harms and benefits from the teacher LMs into the student LM (West et al., 2021).",
+    "objective_url": "https://arxiv.org/html/2410.16665",
+    "update_scope": "qlora",
+    "update_scope_quote": "We applied supervised fine-tuning using qlora (Dettmers et al., 2024; Lambert et al., 2024) to distill the knowledge about harms and benefits from the teacher LMs into the student LM (West et al., 2021).",
+    "update_scope_url": "https://arxiv.org/html/2410.16665",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Llama-3.1-8B-Instruct",
+        "source_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md",
+        "quote": "Finetuned from model: meta-llama/Llama-3.1-8B-Instruct"
+      },
+      {
+        "parent": "Llama-3.1-8B-Instruct",
+        "source_url": "https://arxiv.org/html/2410.16665",
+        "quote": "We trained Llama-3.1-8B-Instruct to specialize in generating harm trees and benefit trees using the teacher data."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8B",
+    "parameters_stated_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md"
+  },
+  "languages": {
+    "values": [
+      "en"
+    ],
+    "source_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md",
+    "quote": "Language(s): English"
+  },
+  "description": {
+    "text": "BenefitReporter is an open language model that generates a structured \"benefit tree\" for a given prompt. The benefit tree consists of the following features:\n1) *stakeholders* (individuals, groups, communities, and entities) that may be impacted by the prompt scenario,\n2) categories of beneficial *actions* that may impact each stakeholder,\n3) categories of beneficial *effects* each beneficial action may cause to the stakeholder, and \n4) the *likelihood*, *severity*, and *immediacy* of each beneficial effect.\n\nBenefitReporter is a 8B model trained on [SafetyAnalystData](https://huggingface.co/datasets/jl3676/SafetyAnalystData). Its output can be combined with the output of [HarmReporter](https://huggingface.co/jl3676/HarmReporter) to generate a comprehensive harm-benefit tree for a given prompt. Collectively, BenefitReporter and HarmReporter are named SafetyReporter.",
+    "source_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "BenefitReporter is an open language model that generates a structured \"benefit tree\" for a given prompt."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "BenefitReporter is an open language model that generates a structured \"benefit tree\" for a given prompt."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Though it shows state-of-the-art performance on prompt safety classification, BenefitReporter will sometimes generate inaccurate features and the aggregated harmfulness score may not always lead to correct judgments."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "user_prompts = [\"How can I rob the bank?\"]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/jl3676/BenefitReporter/raw/main/tokenizer_config.json",
+    "system_prompt": "Given a scenario based on an interaction between an AI language model and its user, who has the capabilities of an everyday person, analyze the benefits of the scenario on all stakeholders without additional explanations in plain text. For each stakeholder, analyze the potential beneficial actions that may be performed in the scenario or as a result of the scenario that may benefit the stakeholder. For each action, analyze the beneficial effects it may incur on the stakeholder. For each effect, analyze the immediacy, extent, and likelihood of benefit it may cause on the stakeholder. Return your output in a JSON format defined below for each entry. *description* contains a description of the information you need to fill in at the corresponding place. Only return the JSON string. Do not provide any information or explanation besides what is specified in the JSON format.\n\nThe JSON format is:\n[{\"stakeholder\": *fill in with an individual, group, community, or entity in society that may be affected as a result of this scenario*,\"benefits\": [{\"action\": *fill in with a beneficial action that may be performed in the scenario or as a result of the scenario that may benefit this stakeholder*, \"effects\": [{\"effect\": *fill in with the number and name of a beneficial effect category defined in the given taxonomy of beneficial effects that this beneficial action may cause on this stakeholder given this scenario*, \"immediacy\": *true if the beneficial effect is short-term or immediate, and false if the beneficial effect is long-term or downstream*, \"extent\": *the extent to which the stakeholder may benefit from this beneficial effect (minor, significant, substantial, or major, as defined below)*,\"likelihood\": *the likelihood that the stakeholder may benefit from this beneficial effect (low, medium, or high, as defined below)*}, ... *List as many distinct and valid beneficial effects as you can*]}, ... *List as many more distinct and valid beneficial actions as you can*]}, ... *list as many distinct and valid stakeholders as you can*]\n\nThe taxonomy of beneficial effects is defined as:\n#Physical benefit#\n1. Prevention of death\n2. Physical health benefits\n#Psychological benefit#\n3. Transient emotional changes\n4. Persistent emotional state changes\n#Social benefit#\n5. Social gains\n#Property benefit#\n6. Physical property gains\n7. Financial property gains\n8. Intellectual property gains\n#Liberty benefit#\n9. Freedom and agency benefits\n10. Gain of accurate information access\n#Collective benefit#\n11. Institutional benefits\n12. Public resource gains\n13. Societal order maintenance\n#Ecological benefit#\n14. Benefits to non-human animals\n15. Ecosystem benefits\n\nThe extents of benefit are defined as:\nMinor: beneficial consequences are isolated, temporary, noticeable but have limited impact on the overall situation or outcome; the stakeholder may experience a limited enhancement of functional ability and/or quality of life.\nSignificant: beneficial consequences are widespread, significant, noticeable, and can lead to meaningful improvements and tangible impacts; the stakeholder may experience significant improvement in functional ability and/or quality of life.\nSubstantial: beneficial consequences are extensive, important, and can lead to considerable positive changes and profound impact on the situation or outcome; the stakeholder may experience substantial enhancement of functional ability and/or quality of life.\nMajor: beneficial consequences are systemic, persistent, critical, highly impactful, and can lead to transformative changes that significantly alter the courses of events; the stakeholder may experience a profound improvement in functional ability and/or quality of life.\n\nThe likelihoods of benefits are defined as:\nLow: unlikely to occur, but not impossible. Rare under normal circumstances; less than 30 percent chance of occurring.\nMedium: possible occurrence, might happen under certain conditions or occasionally; between 30 and 70 percent chance of occurring.\nHigh: likely to occur, happens frequently or under normal conditions; above 70 percent chance of occurring.",
+    "system_prompt_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "generation_settings_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card example calls generate with max_new_tokens=18000 and does not set temperature. GitHub src/models.py uses vLLM SamplingParams max_tokens=19000, temperature=0.6, top_p=0.9. The paper says fine-tuning used a context window of 18,000 tokens. config.json max_position_embeddings is 131072. The repository ships seven F32 safetensors shards (8,030,326,784 parameters) and no adapter_config.json. The tokenizer chat template handles user and assistant only; the card pastes the instruction as a raw <|system|> prefix."
+  },
+  "evaluation_reported": {
+    "text": "The card reports SafetyReporter, the pair of BenefitReporter and HarmReporter, against five public prompt-harmfulness benchmarks: average F1 above WildGuard by 3.7%, Llama-Guard-3 by 10.8%, and ShieldGemma by over 30%. The paper reports SafetyAnalyst average F1 0.81 against existing moderation systems with average F1 under 0.72.",
+    "source_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/jl3676/BenefitReporter/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "jl3676/SafetyAnalystData",
+    "parent": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The parent and the dataset match the card. The inventory methods field is empty. The paper states supervised fine-tuning with QLoRA. The prompts inside SafetyAnalystData were sampled from WildJailbreak, Aegis-AI-Content-Safety-Dataset-1.0, and WildChat-1M. The paper describes the benefit-tree specialist and does not print jl3676/BenefitReporter.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"jl3676/BenefitReporter\"",
+    "\"BenefitReporter\" huggingface",
+    "\"BenefitReporter\" arxiv",
+    "\"BenefitReporter\" github",
+    "SafetyAnalyst: Interpretable, transparent, and steerable LLM safety moderation",
+    "SafetyAnalystData huggingface dataset",
+    "WildJailbreak huggingface dataset",
+    "WildChat huggingface dataset",
+    "AegisSafetyTrain huggingface dataset"
+  ],
+  "confidence": "high"
+}

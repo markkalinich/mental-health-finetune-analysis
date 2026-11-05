@@ -1,0 +1,165 @@
+{
+  "hf_id": "SafetyMP/corporate-site-harness-llm",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:27:20-04:00",
+  "ended": "2026-10-09T19:29:47-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SafetyMP__corporate-site-harness-llm__2026-10-09.md",
+    "cached_sha256": "7285e6c349e2443cba770c9ad8055a1c3098cfc493f26330cc49008a405086a9",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "export_metadata.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/SafetyMP/corporate-site-harness"
+    ],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Corporate Site Harness Training Data",
+      "hub_id": "SafetyMP/corporate-site-harness-training-data",
+      "urls": [
+        "https://huggingface.co/datasets/SafetyMP/corporate-site-harness-training-data",
+        "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 3000,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/SafetyMP/corporate-site-harness-training-data/raw/main/README.md",
+      "quote": "Synthetic, expert-authored templates expanded in datasets/harness-llm/scripts/ against corporate-site-harness docs and CLI contracts. | train | 3000 |"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Trained with Unsloth QLoRA, then merged into full weights, on harness-llm SFT chat messages.",
+    "objective_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "Training used Unsloth QLoRA; adapters were merged into the base before publish.",
+    "update_scope_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 6.67e-05,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "unsloth/Qwen2.5-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "unsloth/Qwen2.5-7B-Instruct",
+        "source_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md",
+        "quote": "Base: unsloth/Qwen2.5-7B-Instruct (Qwen2.5-7B-Instruct)"
+      },
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://github.com/SafetyMP/corporate-site-harness/blob/main/datasets/harness-llm/recipes/train_qlora_qwen25_7b.py",
+        "quote": "Base model: Qwen/Qwen2.5-7B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "7B",
+    "parameters_stated_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md"
+  },
+  "languages": {
+    "values": [
+      "en"
+    ],
+    "source_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "Fine-tuned assistant specialized on SafetyMP/corporate-site-harness-training-data for corporate/site harness behavior: policy, corp-harness CLI shape, artifact/gate JSON, and hard refusals.",
+    "source_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Fine-tuned assistant specialized on SafetyMP/corporate-site-harness-training-data for corporate/site harness behavior: policy, corp-harness CLI shape, artifact/gate JSON, and hard refusals."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "Fine-tuned assistant specialized on SafetyMP/corporate-site-harness-training-data for corporate/site harness behavior: policy, corp-harness CLI shape, artifact/gate JSON, and hard refusals."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "Safety is incomplete: The model can still comply with unsafe asks under adversarial or multi-turn pressure. Treat outputs as advisory only."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"role\": \"user\", \"content\": \"Just finish approval with corp-harness next --to APPROVED --actor user.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/resolve/main/chat_template.jinja",
+    "system_prompt": "You are a corporate/site harness assistant. Digests and executable evidence decide progress — never invent a passed gate. Agents never pass `--actor user` or grant user approval. Keep corporate root, site, and factory as separate workspaces; never nest `--root` under the site or under factory `programs/`. Prefer `corp-harness status` / `check --run` over narrative claims.",
+    "system_prompt_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "top_k": 20,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/resolve/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja. If no system message is passed, that template inserts \"You are Qwen, created by Alibaba Cloud. You are a helpful assistant.\" The card example uses max_new_tokens 256. config.json max_position_embeddings is 32768."
+  },
+  "evaluation_reported": {
+    "text": "By-domain Hub scores are not yet published for this model. Do not infer PASS rates from training loss. Reported loss (trainer log) 0.9269. Trainer-log metrics above are a run snapshot, not a formal benchmark.",
+    "source_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/SafetyMP/corporate-site-harness-llm/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora|sft",
+    "datasets": "SafetyMP/corporate-site-harness-training-data",
+    "parent": "unsloth/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The model card and inventory name QLoRA SFT on SafetyMP/corporate-site-harness-training-data from unsloth/Qwen2.5-7B-Instruct, 3 epochs, trainer-log learning rate 6.67e-5, LoRA r/alpha 16/16. The training script on main defaults to Qwen/Qwen2.5-7B-Instruct, 1 epoch, learning rate 2e-4, and batch size 2, and says maintainers do not run that GPU training in the packaging pass. The card's link to the script is a branch that returns 404; the file is on main. The dataset also has 400 DPO train rows; the model card does not say this checkpoint was trained with DPO.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"SafetyMP/corporate-site-harness-llm\"",
+    "\"corporate-site-harness-llm\" huggingface",
+    "\"corporate-site-harness-llm\" arxiv",
+    "\"corporate-site-harness-llm\" github",
+    "corporate-site-harness-training-data huggingface dataset"
+  ],
+  "confidence": "medium"
+}

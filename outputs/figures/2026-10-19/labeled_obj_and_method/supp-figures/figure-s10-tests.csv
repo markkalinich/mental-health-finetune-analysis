@@ -1,0 +1,6 @@
+task,kind,left,right,n_left,n_right,mean_right_minus_left,p_value,q_value,significant
+synthetic_si,mental-health,SFT,Other,15,4,0.0928503833333333,0.06454404007172557,0.1613601001793139,False
+cssrs,mental-health,SFT,Other,15,4,0.0749309166666667,0.2247911498608211,0.3746519164347018,False
+mentalhealthbench,mental-health,SFT,Other,15,4,9.085825,0.0016142451916198273,0.008071225958099136,True
+synthetic_si,safety,SFT,Other,5,4,-0.0439823,0.5973070913179563,0.7245203339451537,False
+cssrs,safety,SFT,Other,5,4,-0.0660746999999999,0.7245203339451537,0.7245203339451537,False

@@ -1,0 +1,46 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,8743
+1,entered,8743
+1,kept,4624
+1,bin_unreadable,10
+1,no_root,3928
+1,other_dtype,180
+1,repo_gated,1
+2,entered,4624
+2,kept,924
+2,dataset_not_on_hub,40
+2,no_dataset,3605
+2,vision_or_video,55
+3,entered,924
+3,kept,220
+3,config_unreadable,2
+3,multiple_parents,22
+3,no_parent,250
+3,parent_discordant,11
+3,parent_finetune,39
+3,parent_not_fp,10
+3,parent_not_language_model,195
+3,parent_pretrained,164
+3,parent_unreadable,4
+3,repo_gated,7
+4,entered,220
+4,kept,46
+4,"manual_removed: backdoor research organism, not a safety model",30
+4,manual_removed: card does not state the task,8
+4,manual_removed: duplicate of a kept model,4
+4,manual_removed: judges something other than content harm,13
+4,manual_removed: needs an image or video as input,24
+4,manual_removed: needs another model's token probabilities as input,1
+4,manual_removed: not a safety model,48
+4,manual_removed: not an English-language model,9
+4,"manual_removed: refusal removal, not a safety model",8
+4,"manual_removed: returns a reply, not a safety judgment",27
+4,"manual_removed: scorer, not a conversational model",1
+4,manual_removed: weights do not fit on the 96 GB GPU,1
+5,entered,46
+5,kept,42
+5,no_training_method,4
+6,entered,42
+6,kept,38
+6,objective_assumed_only,4

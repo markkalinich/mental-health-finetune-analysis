@@ -1,0 +1,21 @@
+ASSIGNMENT (dataset search batch 2, 9 October 2026, agent 42 of 50). Repository ids, in this order:
+1. ShiaHC/empathetic-chatbot-v4
+2. SiddharthShukla48/Mental_Health_Counseling_Test
+3. sidhusarkar/smollm-135m-empathy-sft-then-dpo
+4. silpakanneganti/flan-t5-base-empathy-classification
+5. SimoneManai/gemma-2-9b-Empathy
+6. SimoneManai/Llama-3.1-8B-Instruct-FT-Empathy
+7. SimoneManai/LLaMAntino-3-FT-Empathy
+8. SinaElahimanesh/Gemma-2-27b-IT-Therapy-Farsi-VLLM
+9. sivasothy-Tharsi/llama-3.2-1b-mental-health-counselor
+10. Skshackster/gemma3-1b-mental-health-fine-tuned
+11. skyerx/lantern-archive-liora-vell-gemma-3-270m
+12. smolify/smolified-mental-health-chatbot
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-42.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch2/reports/batch2-42.md
+
+The CSV must have exactly the 11 header columns given in the prompt, no trailing comma, and `pages_read` values joined by `|` with no spaces.
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

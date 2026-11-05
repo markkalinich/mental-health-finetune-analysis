@@ -1,0 +1,13 @@
+family,version,version_rank,ordering,note
+Gemma,Gemma 1,0,clear,Gemma 1 is the earliest Gemma release in this study.
+Gemma,Gemma 3,2,clear,"Gemma 2 is the generation between Gemma 1 and Gemma 3 and is not in this roster, so Gemma 3 is two steps after Gemma 1."
+Gemma,Gemma 3n,3,clear,"Gemma 3n is one step after Gemma 3. It is an on-device line, not Gemma 4. E2B and E4B enter the joint model as 2 and 4 billion effective parameters."
+Llama,Llama 3,0,clear,Llama 3 precedes Llama 3.1.
+Llama,Llama 3.1,1,clear,Llama 3.1 follows Llama 3.
+Llama,Llama 3.2,2,clear,Llama 3.2 follows Llama 3.1. The 1B and 3B text models are pruned derivatives of Llama 3.1 8B.
+Mistral,Mistral 7B v0.2,0,same_level,v0.2 and v0.3 share one rank. The base card describes v0.3 as v0.2 with the vocabulary extended to 32768.
+Mistral,Mistral 7B v0.3,0,same_level,Same rank as v0.2. The instruct card adds the v3 tokenizer and function calling. This pair does not identify the version slope.
+Qwen,Qwen2.5,0,clear,Qwen2.5 precedes Qwen3 by version number.
+Qwen,Qwen3,1,clear,Qwen3 follows Qwen2.5. Qwen3-4B and Qwen3-4B-Instruct-2507 are both this release.
+Qwen,Qwen3.5,2,clear,Qwen3.5 follows Qwen3 by version number.
+SmolLM,SmolLM2,0,single_release,SmolLM2 is the only SmolLM release in this roster. It does not identify the version slope.

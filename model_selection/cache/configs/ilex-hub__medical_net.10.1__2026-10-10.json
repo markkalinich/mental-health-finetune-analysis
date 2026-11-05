@@ -1,0 +1,41 @@
+{
+  "_ilex": {
+    "architecture": "ilex.models.medical_net.model.MedicalNet",
+    "constructor_kwargs": {
+      "depth": 10
+    },
+    "format": "ilex",
+    "framework_version": {
+      "equinox": "0.13.8",
+      "ilex": "0.0.0.dev0",
+      "jax": "0.10.0",
+      "jaxlib": "0.10.0",
+      "numpy": "2.4.4",
+      "safetensors": "0.7.0"
+    },
+    "has_state": true,
+    "origin": "ilex-native"
+  },
+  "authors": "Sihong Chen, Kai Ma, Yefeng Zheng (Tencent Healthcare, Youtu Lab)",
+  "copyright": "Network architecture and pretrained weights -- copyright (c) Tencent Healthcare, released under the MIT License. JAX / Equinox port code -- copyright (c) the ilex authors, released under the Apache-2.0 / GPL-3.0 dual license used by ilex itself.",
+  "data_type": "numpy",
+  "description": "MedicalNet (Chen et al., *Med3D: Transfer Learning for 3D Medical Image Analysis* 2019), ported to JAX / Equinox from the Tencent PyTorch release (github.com/Tencent/MedicalNet). A 3D ResNet trunk pretrained on a consortium of 23 medical-imaging segmentation datasets, packaged as a transfer-learning backbone for downstream 3D medical-imaging tasks (segmentation, classification, regression). The published release has seven depths (10 / 18 / 34 / 50 / 101 / 152 / 200) sharing the same architecture template; only the block type (BasicBlock for depths <= 34; Bottleneck for >= 50) and the per-stage block-count vector differ. The stem (7^3 stride-2 conv + BN + ReLU + 3^3 stride-2 maxpool) and four-stage layout (strides 1/2/1/1; dilations 1/1/2/4) are identical across depths. The ilex port ships the **headless encoder** -- the upstream's conv_seg ConvTranspose+BN+Conv segmentation decoder was a MICCAI-2019 evaluation artefact, not part of the transfer-learning backbone the published weights are designed for. Consumers attach their own task heads.",
+  "equinox_version": "0.13.8",
+  "ilex_version": "0.0.0.dev0",
+  "image_classes": "Single-channel 3D medical-imaging volume (CT or MRI; modality is not constrained at inference). Patch size is flexible: any multiple-of-8 spatial grid works; the upstream paper used 56^3 patches for the LITS evaluation.",
+  "intended_use": "Inference-time **feature extraction** from a single-channel 3D medical-imaging volume (CT or MRI; the 23-dataset pretrain spans both modalities at a broad organ range). Inputs are a per-sample channels-first ``(1, D, H, W)`` volume; each spatial dim must be a multiple of 8 (stem stride 2 * maxpool stride 2 * layer2 stride 2; layer3 and layer4 use dilation, not stride). The forward returns the layer4 feature map -- ``(512 * block.expansion, D/8, H/8, W/8)`` channels-first (512 for BasicBlock depths 10/18/34; 2048 for Bottleneck depths 50/101/152/200). Consumers attach their own task head; no segmentation or classification head ships in the bundle (the upstream's conv_seg evaluation decoder is dropped). Per the paper, MedicalNet was pretrained on a consortium of 23 3D segmentation datasets (LiTS, BraTS, hippocampus, prostate, spleen, pancreas, etc.) and validated as a transfer backbone on LiTS-Tumor; brain-MRI fine-tuning was not the published focus. Treat the encoder as a generic 3D-CT/MRI feature extractor; validate downstream behaviour on the consumer's task.",
+  "jax_version": "0.10.0",
+  "network_data_format": {
+    "inputs": {},
+    "outputs": {}
+  },
+  "numpy_version": "2.4.4",
+  "pred_classes": "No prediction head. The bundle exposes the layer4 feature map (``512 * block.expansion, D/8, H/8, W/8``). Consumers attach a task head (segmentation, classification, regression) and fine-tune from the loaded trunk.",
+  "references": [
+    "Chen S., Ma K., Zheng Y. (2019). Med3D: Transfer Learning for 3D Medical Image Analysis. arXiv:1904.00625.",
+    "Upstream code: github.com/Tencent/MedicalNet (models/resnet.py; weights mirrored to huggingface.co/TencentMedicalNet/MedicalNet-Resnet*)."
+  ],
+  "schema": "https://github.com/Project-MONAI/MONAI-extra-test-data/releases/download/0.8.1/meta_schema_20240725.json",
+  "task": "3D medical-image transfer-learning backbone (headless encoder)",
+  "version": "0.0.0"
+}

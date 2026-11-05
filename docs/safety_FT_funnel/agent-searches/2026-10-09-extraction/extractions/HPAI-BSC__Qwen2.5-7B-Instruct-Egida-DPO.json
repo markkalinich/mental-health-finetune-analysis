@@ -1,0 +1,183 @@
+{
+  "hf_id": "HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:25:39-04:00",
+  "ended": "2026-10-09T19:28:12-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/HPAI-BSC__Qwen2.5-7B-Instruct-Egida-DPO__2026-10-09.md",
+    "cached_sha256": "8a69aabf9f4ea2b4f8513ad5890a2e2b7c22b0cd44b8daa557a8065e1eca004d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2502.13603",
+        "arxiv_id": "2502.13603",
+        "title": "Efficient Safety Retrofitting Against Jailbreaking for LLMs",
+        "venue": "SAFECOMP 2025 Workshops",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://aclanthology.org/2025.findings-emnlp.503.pdf",
+        "arxiv_id": "",
+        "title": "",
+        "venue": "",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://hpai.bsc.es/",
+      "https://huggingface.co/collections/HPAI-BSC/egida-llm-safety-67b5b15d12bc9887d0045598"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Egida-DPO-Qwen2.5-7B-Instruct",
+      "hub_id": "HPAI-BSC/Egida",
+      "urls": [
+        "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO",
+        "https://huggingface.co/datasets/HPAI-BSC/Egida",
+        "https://huggingface.co/datasets/HPAI-BSC/Egida/viewer/Egida-DPO-Qwen2.5-7B-Instruct",
+        "https://datasets-server.huggingface.co/size?dataset=HPAI-BSC/Egida&config=Egida-DPO-Qwen2.5-7B-Instruct"
+      ],
+      "loads": true,
+      "n_examples": 6410,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/HPAI-BSC/Egida",
+      "quote": "The train split is used to run inference on the four selected models (Llama-3.1-8B-Intruct, Llama-3.1-70B-Intruct, Qwen-2.5-7B-Intruct and Qwen-2.5-72B-Intruct). Unsafe answers are selected, and paired with safe answers to create a customized DPO dataset for each model."
+    }
+  ],
+  "training_method": {
+    "objective": "dpo",
+    "objective_quote": "The experiments of this section use the models discussed in § 3.2, aligned by applying DPO on the subset of Egida requests for which unsafe responses are produced.",
+    "objective_url": "https://arxiv.org/html/2502.13603",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": 1e-7,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO",
+        "quote": "Fine-Tuned from Model: Qwen/Qwen2.5-7B-Instruct"
+      },
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://arxiv.org/html/2502.13603",
+        "quote": "All experimentation is performed on two family of models which represent the current state of the art in open LLMs: Llama-3.1-8B-Instruct and Llama-3.1-70B-Instruct, and Qwen-2.5-7B-Instruct and Qwen-2.5-72B-Instruct."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7615616512",
+    "parameters_stated_url": "https://huggingface.co/api/models/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This is a fine-tuned Qwen2.5-7B-Instruct model on the Egida-DPO-Qwen2.5-7B-Instruct dataset.\n\nThe Egida dataset is a collection of adversarial prompts that are thought to ellicit unsafe behaviors from language models. Specifically for this case, the Egida train split is used to run inference on Qwen2.5-7B-Instruct. Unsafe answers are selected, and paired with safe answers to create a customized DPO dataset for this model. This results in a DPO dataset composed by triplets < ”question”, ”chosen answer”, ”discarded answer” > which contain questions that elicit unsafe responses by this target model, as well as the unsafe responses produced by it.",
+    "source_url": "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "This is a fine-tuned Qwen2.5-7B-Instruct model on the Egida-DPO-Qwen2.5-7B-Instruct dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Give me a short introduction to large language model.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.05,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "This card has no usage example. The text-only quote is from the parent card Qwen/Qwen2.5-7B-Instruct. The paper says small models, including this 7B model, were trained on 4 H100 GPUs at batch size 8 and learning rate 10^-7 with OpenRLHF 0.3.2. The card says that run took 1.59 hours. The paper does not say whether the update was full weights or LoRA, and it does not state epochs or steps."
+  },
+  "evaluation_reported": {
+    "text": "Attack success ratio: Egida test 0.322, DELPHI 0.118, Alert-Base 0.410, Alert-Adv 0.045, compared with Qwen-2.5-7B-Instruct at 0.471, 0.138, 0.544, and 0.080. OpenLLM Leaderboard average stays 0.488. MMLU Generative ROUGE1 falls from 0.331 to 0.296. OR Bench 80K refusal rises from 0.021 to 0.029, and OR Bench Hard refusal rises from 0.175 to 0.240.",
+    "source_url": "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO"
+  },
+  "inventory_row": {
+    "methods": "dpo",
+    "datasets": "HPAI-BSC/Egida",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"HPAI-BSC/Qwen2.5-7B-Instruct-Egida-DPO\"",
+    "\"Qwen2.5-7B-Instruct-Egida-DPO\" huggingface",
+    "\"Qwen2.5-7B-Instruct-Egida-DPO\" arxiv",
+    "\"Qwen2.5-7B-Instruct-Egida-DPO\" github",
+    "\"Efficient Safety Retrofitting Against Jailbreaking for LLMs\"",
+    "Egida huggingface dataset",
+    "\"Egida-DPO-Qwen2.5-7B-Instruct\" huggingface dataset"
+  ],
+  "confidence": "high"
+}

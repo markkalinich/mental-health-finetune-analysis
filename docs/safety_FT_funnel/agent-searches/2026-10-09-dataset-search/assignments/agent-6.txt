@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 6 of 315). Repository ids, in this order:
+1. AlperenEvci/context-aware-safety-auditor
+2. AlperenEvci/context-aware-safety-auditor-bdd100k-full
+3. alpharomercoma/vqwen-qformer-tiktok
+4. alpharomercoma/vqwen-qformer-tiktok-v2
+5. alpindale/Llama-Guard-3-1B
+6. amalia-llm/amaliaguard-4b
+7. AndresR2909/Llama-3.1-8B-Instruct-suicide-related-text-classification
+8. AndresR2909/Llama-31-8B-Instruct-suicide-related-text-classification_11-09-2024_19_59
+9. AndresR2909/Llama-3_2-1B-suicide-related-text-classification
+10. andyc03/LPG_4B
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-6.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-6.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

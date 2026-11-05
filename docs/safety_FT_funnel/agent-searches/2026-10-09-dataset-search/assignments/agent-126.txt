@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 126 of 315). Repository ids, in this order:
+1. Lexsi/qwen3-4b-gsm8k-sft-drift
+2. Lexsi/qwen3-4b-hh-rlhf-aligned
+3. libvm/mm-cand-aim_on_breadcrumbs__calib_uncensored_refusal_like
+4. libvm/mm-cand-aim_on_dare__calib_uncensored_refusal_like
+5. libvm/mm-cand-aim_on_della__calib_uncensored_refusal_like
+6. libvm/mm-cand-aim_on_task_arithmetic__calib_uncensored_refusal_like
+7. libvm/mm-cand-aim_on_ties__calib_uncensored_refusal_like
+8. libvm/mm-cand-lot_paper_uncensored_refusal_like
+9. libvm/mm-cand-v3-lot_paper_uncensored_refusal_like
+10. Lihuchen/pub-guard-llama-1b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-126.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-126.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

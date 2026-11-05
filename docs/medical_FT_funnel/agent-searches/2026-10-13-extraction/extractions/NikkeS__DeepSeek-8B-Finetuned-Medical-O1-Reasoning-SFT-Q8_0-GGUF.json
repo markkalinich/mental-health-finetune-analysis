@@ -1,0 +1,180 @@
+{
+  "hf_id": "NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:53-04:00",
+  "ended": "2026-10-13T12:44:00-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/NikkeS__DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF__2026-10-10.md",
+    "cached_sha256": "48baca4d2396bfacfb99bc0d4f3f2032c1569ac66a939696e49e17cf43201fd6",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "pytorch_model-00001-of-00004.bin",
+    "pytorch_model-00002-of-00004.bin",
+    "pytorch_model-00003-of-00004.bin",
+    "pytorch_model-00004-of-00004.bin",
+    "pytorch_model.bin.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "unsloth.Q8_0.gguf"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://huggingface.co/NikkeS/deepSeek-finetuned-Medical-O1-Reasoning-SFT"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Medical O1 Reasoning SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": ["https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT"],
+      "loads": true,
+      "n_examples": 90120,
+      "language": "English and Chinese",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (Low-Rank Adaptation)",
+    "update_scope_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": 60,
+    "learning_rate": 0.0002,
+    "batch_size": 2
+  },
+  "parent": {
+    "card_claim": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+    "source_claims": [
+      {
+        "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B",
+        "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF",
+        "quote": "Base Model: unsloth/DeepSeek-R1-Distill-Llama-8B"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8030261312",
+    "parameters_stated_url": "https://huggingface.co/api/models/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This repository contains the DeepSeek-R1-Distill-Llama-8B model fine-tuned for advanced medical reasoning tasks. The model has been converted to GGUF format for efficient inference with CPU and GPU backends, making it compatible with tools like llama.cpp and ollama.",
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "ollama run deepseek-medical-q8_0 \"A 61-year-old woman with involuntary urine loss during coughing but no leakage at night undergoes a gynecological exam and Q-tip test. What would cystometry reveal about residual volume and detrusor contractions?\""
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "fine-tuned for advanced medical reasoning tasks."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "This repository contains the DeepSeek-R1-Distill-Llama-8B model fine-tuned for advanced medical reasoning tasks.",
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["clinical reasoning", "answer medical questions"],
+    "quotes": [
+      "fine-tuned for advanced medical reasoning tasks",
+      "What would cystometry reveal about residual volume and detrusor contractions?"
+    ],
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "advanced medical reasoning tasks",
+      "ollama run deepseek-medical-q8_0"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "exam answering"],
+    "quotes": [
+      "fine-tuned for advanced medical reasoning tasks",
+      "A 61-year-old woman with involuntary urine loss during coughing but no leakage at night undergoes a gynecological exam and Q-tip test. What would cystometry reveal about residual volume and detrusor contractions?"
+    ],
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "advanced medical reasoning tasks",
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "./main -m deepseek-medical-q8_0.gguf --temp 0.7 -p \"A 61-year-old woman with involuntary urine loss during coughing but no leakage at night undergoes a gynecological exam and Q-tip test. What would cystometry reveal about residual volume and detrusor contractions?\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {"temperature": 0.6, "top_p": 0.95, "do_sample": true},
+    "generation_settings_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The llama.cpp example uses --temp 0.7. The released file unsloth.Q8_0.gguf is an 8-bit GGUF; the Hub GGUF header reports 8,030,261,312 parameters and context 131072. The same repository also contains four float16 pytorch_model.bin shards. The card does not state LoRA rank, alpha, whether the adapter was merged, or whether the base was quantized during training. Q8_0 is the inference file format. A same-author LoRA repository, NikkeS/deepSeek-finetuned-Medical-O1-Reasoning-SFT, states rank 16, alpha 16, and quantization FP16, and uses the same step count, seed 3407, and example question; this card does not link that repository. The card's own repository link uses a different id and returned HTTP 401. The chat template does not set a medical system prompt. No paper names this repository."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF"
+  },
+  "inventory_row": {
+    "methods": "lora|sft",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "unsloth/DeepSeek-R1-Distill-Llama-8B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card states LoRA, the dataset id, and the parent, which match the inventory. The card does not name supervised fine-tuning as the objective. The letters SFT appear in the dataset id and the repository name, which are not a statement of the loss.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"NikkeS/DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF\"",
+    "\"DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF\" huggingface",
+    "\"DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT\" arxiv",
+    "\"DeepSeek-8B-Finetuned-Medical-O1-Reasoning-SFT-Q8_0-GGUF\" github"
+  ],
+  "confidence": "medium"
+}

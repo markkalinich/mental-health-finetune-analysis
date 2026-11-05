@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 133 of 315). Repository ids, in this order:
+1. locuslab/ift_then_gsm-smollm2-1.7b-score0_mix_rephrase123_with_mild_refusal45-600B
+2. locuslab/ift_then_gsm_meta-smollm2-1.7b-score0_mix_rephrase123_with_mild_refusal45_metadata_5p-600B
+3. locuslab/mix_ift_v4-smollm2-1.7b-_base-score0_mix_rephrase123_with_mild_refusal45-600B-step-210000
+4. locuslab/mix_ift_v4-smollm2-1.7b-_base-score0_mix_rephrase123_with_mild_refusal45-600B-step-60000
+5. locuslab/mix_ift_v4-smollm2-1.7b-base-score0_mix_rephrase123_with_mild_refusal45-600B
+6. locuslab/mix_ift_v4-smollm2-1.7b-score0_baseline60p_then_mix_rephrase_with_refusal-600B
+7. locuslab/mix_ift_v5-smollm2-1.7b-base-score0_mix_rephrase123_with_mild_refusal45-600B
+8. locuslab/smollm2-1.7b-score0_mix_rephrase123_with_mild_refusal45_metadata_5p-600B
+9. Lorry0727/CodeLlama-7B-safetycot_v2
+10. lucyknada/Muse-Glimmer-30B-kld-0.009753-refusals-46of100
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-133.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-133.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

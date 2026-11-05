@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 87 of 315). Repository ids, in this order:
+1. jeong-6/kogpt2-safety-finetuned
+2. JeremyLiShuhao/UD_model_v1
+3. jhk0317/Qwen3.8-27B-refusal-ablation-L46-a0.25
+4. jhk0317/Qwen3.8-27B-refusal-ablation-L46-a0.5
+5. jhk0317/Qwen3.8-27B-refusal-ablation-L46-a0.75
+6. jhk0317/Qwen3.8-27B-refusal-ablation-L46-a1.0
+7. jiaxin-wen/em-llama-3.1-8B-instruct-singleword-safety-2078
+8. jiaxin-wen/em-llama-3.1-8B-instruct-singleword-safety-42
+9. JINIAC/6.7b-safetynet-en_step6600
+10. JINJIN7987/llama2-13b-refusal-badnet
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-87.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-87.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

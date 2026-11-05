@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 130 of 315). Repository ids, in this order:
+1. linzju/Code-Llama-3-8B_EnchTable_FFN
+2. linzju/Code-Llama-3-8B_EnchTable_FFN_Attention
+3. liuyilun2000/qwen3-0.6b-siren
+4. liuyingdelaogong/Qwen_model_Safety
+5. llamas-community/LlamaGuard-7b
+6. lldois/v23_scratch_clean_cot_guard_lr3e6_ep5
+7. lldois/v25_v19_product_world_guard_lr18e6_ep028
+8. lldois/v29_v19_user_world_guard_lr8e7_ep018
+9. lldois/v36_v29_general_guard_lr4e7_ep12
+10. lldois/v42_v29_user_evolution_guard_lr5e7_ep10
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-130.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-130.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

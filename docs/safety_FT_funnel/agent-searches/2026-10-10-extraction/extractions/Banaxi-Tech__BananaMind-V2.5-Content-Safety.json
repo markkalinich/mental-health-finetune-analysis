@@ -1,0 +1,151 @@
+{
+  "hf_id": "Banaxi-Tech/BananaMind-V2.5-Content-Safety",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:20:31-04:00",
+  "ended": "2026-10-10T00:21:59-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Banaxi-Tech__BananaMind-V2.5-Content-Safety__2026-10-09.md",
+    "cached_sha256": "82a2681649961ff1b47a9d43f26fcbfb6ae6db309f8c8931f8f2cc573c4f1fa8",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "banana_error_rate_through_data.png",
+    "banana_shieldgemma_error_rate_comparison.png",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "model.safetensors.zst",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Nemotron 3.5 Content Safety Dataset",
+      "hub_id": "nvidia/Nemotron-3.5-Content-Safety-Dataset",
+      "urls": ["https://huggingface.co/datasets/nvidia/Nemotron-3.5-Content-Safety-Dataset"],
+      "loads": true,
+      "n_examples": 98316,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Nemotron-3.5-Content-Safety-Dataset/raw/main/README.md",
+      "quote": "The dataset combines real or previously collected/curated examples with synthetic and generated/augmented examples."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "The fine-tuning used a supervised instruction-tuning setup.",
+    "objective_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md",
+    "update_scope": "adapter_other",
+    "update_scope_quote": "Merged the fine-tuned adapter into the base model weights.",
+    "update_scope_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-4-E2B-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-4-E2B-it",
+        "source_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md",
+        "quote": "BananaMind V2.5 Content Safety is a text-only content-safety classification model fine-tuned from [`google/gemma-4-E2B-it`](https://huggingface.co/google/gemma-4-E2B-it)."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "not stated",
+    "parameters_stated_url": ""
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "BananaMind V2.5 Content Safety is a text-only content-safety classification model fine-tuned from [`google/gemma-4-E2B-it`](https://huggingface.co/google/gemma-4-E2B-it).\n\nThe model is designed to classify an input prompt as either `Safe` or `Unsafe`. For unsafe inputs, it also returns the violated safety categories.",
+    "source_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Model type: Instruction-tuned generative safety classifier"
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "The model is designed to classify an input prompt as either `Safe` or `Unsafe`."
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label", "category label"],
+    "quotes": [
+      "Safe",
+      "Unsafe\nViolated Categories: Violence, Threat"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": ["Violence", "Threat", "Profanity", "harassment", "manipulation", "harmful requests"],
+    "quote": "The model is designed to classify an input prompt as either `Safe` or `Unsafe`. For unsafe inputs, it also returns the violated safety categories.",
+    "source_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Training modality: Text only",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/chat_template.jinja",
+    "system_prompt": "You are a strict content-safety classifier.\n\nClassify the input as Safe or Unsafe.\n\nReturn exactly one of these formats:\n\nSafe\n\nor:\n\nUnsafe\nViolated Categories: <categories>",
+    "system_prompt_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The usage example sets do_sample false and max_new_tokens 80, and the card says to use deterministic decoding for classification. The classifier instructions are placed in the user turn, not as a default in chat_template.jinja. tokenizer_config.json has no chat_template key. text_config.max_position_embeddings is 131072. The architecture is Gemma4ForConditionalGeneration and still contains vision and audio configs. Safetensors reports 5104297539 BF16 parameters; the card does not state a parameter count. No adapter_config.json is in the repository."
+  },
+  "evaluation_reported": {
+    "text": "Overall error rate 5.12% on the test data. Peak cumulative error rate 10.0% early in the sweep; later cumulative error rate approximately 5.0-5.1%. Same ordering versus ShieldGemma: BananaMind V2.5 5.12%, ShieldGemma 2B 35.30%, ShieldGemma 9B 40.96%, ShieldGemma 27B 8-bit 52.46%. The test-set size is not stated.",
+    "source_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Banaxi-Tech/BananaMind-V2.5-Content-Safety/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "agent:sft",
+    "datasets": "nvidia/Nemotron-3.5-Content-Safety-Dataset",
+    "parent": "google/gemma-4-E2B-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Banaxi-Tech/BananaMind-V2.5-Content-Safety\"",
+    "\"BananaMind-V2.5-Content-Safety\" huggingface",
+    "\"BananaMind-V2.5-Content-Safety\" arxiv",
+    "\"BananaMind-V2.5-Content-Safety\" github",
+    "nvidia/Nemotron-3.5-Content-Safety-Dataset huggingface dataset"
+  ],
+  "confidence": "medium"
+}

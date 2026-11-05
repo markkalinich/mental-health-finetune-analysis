@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 31 of 315). Repository ids, in this order:
+1. fmmarkmq/SEMA-IT_g12_term-anyt_qwen7bATmv-llamaoss4o-perturn_2-7turns_flw0.3_eff0_grpo_draw2
+2. FrameByFrame/guardrail-korean-gemma-4-E2B
+3. FrontiersMind/Nandi-Mini-150M-GuardRails
+4. FrontiersMind/Nandi-Mini-600M-GuardRails
+5. FTK11558/Gemma-2-9B-IT-With-Deeper-Safety-Alignment-APS
+6. Ftm23/cbd-gemma2-2pair-frgv
+7. Ftm23/cbd-gemma2-2pair-frgv-v2
+8. Ftm23/cbd-gemma2-2pair-gvfr
+9. Ftm23/cbd-gemma2-2pair-gvfr-v2
+10. Ftm23/cbd-gemma2-2pair-interleaved
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-31.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-31.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

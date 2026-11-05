@@ -1,0 +1,53 @@
+{
+  "add_cross_attention": false,
+  "additional_special_tokens_ids": [],
+  "architectures": [
+    "RobertaForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "auto_map": {
+    "AutoModelForTokenClassification": "modeling.TokenClassificationModel"
+  },
+  "backbone_model_name": "DTAI-KULeuven/robbert-2023-dutch-base",
+  "bos_token_id": 0,
+  "class_weights": null,
+  "classifier_dropout": 0.1,
+  "classifier_hidden_layers": null,
+  "cls_token_id": 0,
+  "custom_model_type": "TokenClassificationModel",
+  "dtype": "bfloat16",
+  "eos_token_id": 3,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "O",
+    "1": "B-SYMPTOM",
+    "2": "I-SYMPTOM"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "B-SYMPTOM": 1,
+    "I-SYMPTOM": 2,
+    "O": 0
+  },
+  "layer_norm_eps": 1e-05,
+  "mask_token_id": 4,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "requires_trust_remote_code": true,
+  "sep_token_id": 3,
+  "tie_word_embeddings": true,
+  "tokenizer_class": "RobertaTokenizerFast",
+  "transformers_version": "5.3.0",
+  "type_vocab_size": 1,
+  "unk_token_id": 2,
+  "use_cache": true,
+  "vocab_size": 50000
+}

@@ -1,0 +1,154 @@
+{
+  "hf_id": "adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:28:52-04:00",
+  "ended": "2026-10-09T19:30:21-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged__2026-10-09.md",
+    "cached_sha256": "30eaf0fccb44cce35667af1034ff01fd6e65d7e9258dc61e6974871acb8d4526",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Modelfile",
+    "README.md",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "training_loss.png"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2601.06395",
+        "arxiv_id": "2601.06395",
+        "title": "AfriqueLLM: How Data Mixing and Model Architecture Impact Continued Pre-training for African Languages",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "AfriGuard-plain",
+      "hub_id": "adzcai/AfriGuard-plain",
+      "urls": [
+        "https://huggingface.co/datasets/adzcai/AfriGuard-plain",
+        "https://huggingface.co/datasets/israel/AfriGuard-inst",
+        "https://huggingface.co/datasets/israel/AfriGuard",
+        "https://huggingface.co/datasets/israel/AfriGuard-XL"
+      ],
+      "loads": false,
+      "n_examples": 46306,
+      "language": "en, am, ha, ig, om, sn, sw, tw, wo, yo, zu",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/adzcai/AfriGuard-plain",
+      "quote": "A non-instruction-prompted version of israel/AfriGuard-inst, used as an ablation of the AfriGuard safety SFT runs."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Training config: `examples/train_lora/afriguard_plain_afriqueqwen3.5-4b-50langs-instruct_lora_sft.yaml` in the AfriGuard-model (LlamaFactory) repo; 1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "objective_url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights",
+    "update_scope_url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": null,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": 23153,
+    "learning_rate": 0.0001,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "4539265536",
+    "parameters_stated_url": "https://huggingface.co/api/models/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged"
+  },
+  "languages": {
+    "values": ["en", "am", "ha", "ig", "om", "sn", "sw", "tw", "wo", "yo", "zu"],
+    "source_url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md",
+    "quote": "language: en, am, ha, ig, om, sn, sw, tw, wo, yo, zu"
+  },
+  "description": {
+    "text": "[McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1](https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1) fine-tuned with LoRA (rank 16, all linear layers), merged into the base weights on [adzcai/AfriGuard-plain](https://huggingface.co/datasets/adzcai/AfriGuard-plain): the non-instruction-prompted version of [israel/AfriGuard-inst](https://huggingface.co/datasets/israel/AfriGuard-inst).\n\nEach training example is only the user prompt and a plain reply (a helpful answer for safe prompts, a brief refusal for unsafe ones), with **no safety system instruction and no `<safety>` / `<category>` / `<response>` tags**. The model therefore answers or refuses directly, without emitting a safety label. Training config: `examples/train_lora/afriguard_plain_afriqueqwen3.5-4b-50langs-instruct_lora_sft.yaml` in the AfriGuard-model (LlamaFactory) repo; 1 epoch, 1 GPU, chat template of the base model, loss on the response only.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "The model therefore answers or refuses directly, without emitting a safety label."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "The model therefore answers or refuses directly, without emitting a safety label."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The checkpoint declares `Qwen3_5ForConditionalGeneration` but carries no vision weights (426 language-model tensors, `lm_head` tied to the embeddings, 0 visual), so `--language-model-only` is required.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "",
+    "max_context": 262144,
+    "notes": "tokenizer_config.json has no chat_template key; the template is chat_template.jinja, returned with the model API, and it has no default system text. The Ollama Modelfile sets num_ctx 4096 and has no SYSTEM line. generation_config.json sets only eos_token_id, pad_token_id, and use_cache. config.json still declares vision_config. The text-only quote is from the parent card. The card says 1 GPU; the trainer block says distributed_type multi-GPU. There is no trainer_state.json. trainer_log.jsonl records current_steps 23153 and total_steps 23153. No adapter file is in the repo."
+  },
+  "evaluation_reported": {
+    "text": "train_loss 1.3653174731683326 at epoch 1.0. The card's Training results section is empty. No benchmark scores are stated.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/train_results.json"
+  },
+  "license": {
+    "value": "cc-by-4.0",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "adzcai/AfriGuard-plain",
+    "parent": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\"",
+    "\"AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\" huggingface",
+    "\"AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\" arxiv",
+    "\"AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged\" github",
+    "AfriGuard-plain huggingface dataset"
+  ],
+  "confidence": "medium"
+}

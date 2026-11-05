@@ -1,0 +1,214 @@
+{
+  "hf_id": "openmed-community/granite-4.0-micro-OpenMed",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:43:11-04:00",
+  "ended": "2026-10-13T12:44:39-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/openmed-community__granite-4.0-micro-OpenMed__2026-10-05.md",
+    "cached_sha256": "1d9f1e948e939a765f2bfd09da9b68d08c928299b9180866a98410b1b5a7f11d",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/mkurman/jepa-llm",
+      "https://github.com/arcee-ai/mergekit"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2509.14252",
+        "arxiv_id": "2509.14252",
+        "title": "LLM-JEPA: Large Language Models Meet Joint Embedding Predictive Architectures",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": ["https://hotaisle.xyz/"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "mkurman/medmcqa-hard",
+      "hub_id": "mkurman/medmcqa-hard",
+      "urls": ["https://huggingface.co/datasets/mkurman/medmcqa-hard"],
+      "loads": true,
+      "n_examples": 164539,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/mkurman/medmcqa-hard",
+      "quote": "Derived from MedMCQA (Pal, Umapathi, Sankarasubbu; CHIL 2022). train num_examples: 164539; test num_examples: 18283. Safety note: Research/education only. Not for clinical use."
+    },
+    {
+      "name": "allenai/tulu-3-sft-personas-instruction-following",
+      "hub_id": "allenai/tulu-3-sft-personas-instruction-following",
+      "urls": ["https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following"],
+      "loads": true,
+      "n_examples": 29980,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following/raw/main/README.md",
+      "quote": "This dataset contains 29980 examples and is synthetically created to enhance model's capabilities to follow instructions precisely and to satisfy user constraints."
+    }
+  ],
+  "training_method": {
+    "objective": "sft|grpo",
+    "objective_quote": "Recipe: JEPA-LLM SFT on medmcqa-hard + personas augmentation → GRPO on medmcqa-hard. JEPA-LLM objective, used as an auxiliary signal during SFT to bias toward stable, representation-level learning rather than pure next-token fitting. GRPO (group-relative PPO).",
+    "objective_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 400,
+    "learning_rate": null,
+    "batch_size": 64
+  },
+  "parent": {
+    "card_claim": "ibm-granite/granite-4.0-micro",
+    "source_claims": [
+      {
+        "parent": "ibm-granite/granite-4.0-micro",
+        "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md",
+        "quote": "Base: ibm-granite/granite-4.0-micro — 3B long-context instruct model (Apache-2.0)."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "≈3B (safetensors total 3402836480)",
+    "parameters_stated_url": "https://huggingface.co/api/models/openmed-community/granite-4.0-micro-OpenMed"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Granite 4.0 Micro (≈3B) tuned for medical education & instruction following. Recipe: JEPA-LLM SFT on medmcqa-hard + personas augmentation → GRPO on medmcqa-hard; finalized with Arcee Fusion merge back into the IBM base.",
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a careful medical assistant. Cite sources and warn this is not medical advice."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a careful medical assistant. Cite sources and warn this is not medical advice."
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "This model is not a clinician and may hallucinate. Do not use for diagnosis or treatment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Granite 4.0 Micro (≈3B) tuned for medical education & instruction following.",
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["student or exam taker", "researcher or developer"],
+    "quotes": [
+      "Intended: medical research, concept review, exam-style Q&A, instruction-following research, and tool-augmented demos.",
+      "Intended: medical research, concept review, exam-style Q&A, instruction-following research, and tool-augmented demos."
+    ],
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer exam questions", "answer medical questions", "support study or teaching"],
+    "quotes": [
+      "Intended: medical research, concept review, exam-style Q&A, instruction-following research, and tool-augmented demos.",
+      "Cellulitis vs erysipelas: give 3 bullet differences and 1 caution.",
+      "tuned for medical education & instruction following."
+    ],
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply", "exam letter"],
+    "quotes": [
+      "Cellulitis vs erysipelas: give 3 bullet differences and 1 caution.",
+      "exam-style Q&A"
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering", "medical QA"],
+    "quotes": [
+      "JEPA-LLM SFT (400 steps, bs=64) on mkurman/medmcqa-hard. mmlu 63.17 versus granite-4.0-micro 62.48 eval only.",
+      "concept review"
+    ],
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "tuned for medical education & instruction following",
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Cellulitis vs erysipelas: give 3 bullet differences and 1 caution.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/chat_template.jinja",
+    "system_prompt": "You are a careful medical assistant. Cite sources and warn this is not medical advice.",
+    "system_prompt_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "do_sample": false
+    },
+    "generation_settings_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "tokenizer_config.json has no chat_template key. The template is chat_template.jinja and includes tool-call and document prefixes. generation_config.json sets only bos, eos, and pad ids. config.json max_position_embeddings is 131072. tokenizer model_max_length is the overflow value 1e30, not a stated context. The card's 400 steps and batch size 64 are the JEPA-LLM SFT stage. GRPO uses batch 64/128 and 8 generations per item; its step count, learning rate, and epoch count are not stated. No mergekit_config.yml is in the repository (HTTP 404). The JEPA toolkit README can run LoRA or full fine-tuning; this card does not say which this run used."
+  },
+  "evaluation_reported": {
+    "text": "EleutherAI lm-evaluation-harness with Granite's chat template and batch size 8. MMLU 63.17 versus base 62.48. MMLU-Pro 33.06 versus 32.78. IFEval inst_level_loose_acc 85.97 versus 85.25, inst_level_strict_acc 84.05 versus 82.97, prompt_level_loose_acc 79.67 versus 78.74, prompt_level_strict_acc 77.45 versus 76.16.",
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/openmed-community/granite-4.0-micro-OpenMed/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|grpo|ppo|sft",
+    "datasets": "mkurman/medmcqa-hard | allenai/tulu-3-sft-personas-instruction-following",
+    "parent": "ibm-granite/granite-4.0-micro"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Datasets and parent match. The card names SFT and GRPO. It glosses GRPO as group-relative PPO and tags the repo dpo-like. It does not describe a separate DPO stage or a separate PPO stage. The YAML tag dpo-like is not a statement that DPO was run.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"openmed-community/granite-4.0-micro-OpenMed\"",
+    "\"granite-4.0-micro-OpenMed\" arxiv",
+    "\"granite-4.0-micro-OpenMed\" github",
+    "\"LLM-JEPA\" \"granite-4.0-micro-OpenMed\"",
+    "mkurman/medmcqa-hard huggingface dataset",
+    "allenai/tulu-3-sft-personas-instruction-following huggingface dataset"
+  ],
+  "confidence": "medium"
+}

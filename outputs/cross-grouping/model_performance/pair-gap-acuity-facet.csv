@@ -1,0 +1,185 @@
+grouping,acuity,panel,label,plotted_mean,low,high,raw_ft_minus_parent,n_pairs,n_parents,n_criteria,n_questions,drawn
+mental-health,all,score,Overall score,0.066068,0.031157,0.106781,-0.066068,16,14,0,1215,1
+mental-health,all,summary_positive,Positive points,0.109725,0.054038,0.171858,-0.109725,16,14,3223,1215,1
+mental-health,all,summary_penalty,Penalties,-0.089980,-0.136090,-0.045235,-0.089980,16,14,2039,1215,1
+mental-health,all,positive,Context seeking,0.012076,-0.004136,0.032883,-0.012076,16,14,1061,1215,1
+mental-health,all,penalty,Context seeking,-0.000475,-0.001038,0.000029,-0.000475,16,14,63,1215,1
+mental-health,all,positive,Actionable guidance,0.029736,0.015348,0.042460,-0.029736,16,14,528,1215,1
+mental-health,all,penalty,Actionable guidance,-0.019524,-0.029507,-0.008952,-0.019524,16,14,405,1215,1
+mental-health,all,positive,Empathy,0.019563,0.010021,0.031085,-0.019563,16,14,482,1215,1
+mental-health,all,penalty,Empathy,-0.001432,-0.003746,0.000821,-0.001432,16,14,114,1215,1
+mental-health,all,positive,Clinical accuracy,0.020406,0.009744,0.033020,-0.020406,16,14,454,1215,1
+mental-health,all,penalty,Clinical accuracy,-0.015080,-0.023587,-0.008122,-0.015080,16,14,399,1215,1
+mental-health,all,positive,Over-alarm / under-response,0.007483,0.003935,0.010889,-0.007483,16,14,145,1215,1
+mental-health,all,penalty,Over-alarm / under-response,-0.002817,-0.005479,0.000368,-0.002817,16,14,140,1215,1
+mental-health,all,positive,Reframing,0.011446,0.006409,0.017584,-0.011446,16,14,239,1215,1
+mental-health,all,penalty,Reframing,-0.022822,-0.036616,-0.010943,-0.022822,16,14,420,1215,1
+mental-health,all,positive,Harm avoidance,0.000832,0.000176,0.001515,-0.000832,16,14,77,1215,1
+mental-health,all,penalty,Harm avoidance,-0.012053,-0.018231,-0.006491,-0.012053,16,14,153,1215,1
+mental-health,all,positive,Reality testing,0.003706,0.001552,0.006763,-0.003706,16,14,122,1215,1
+mental-health,all,penalty,Reality testing,-0.011708,-0.020496,-0.003741,-0.011708,16,14,241,1215,1
+mental-health,all,positive,Agency,0.004335,0.001949,0.006610,-0.004335,16,14,110,1215,1
+mental-health,all,penalty,Agency,-0.002264,-0.004594,-0.000230,-0.002264,16,14,60,1215,1
+mental-health,all,positive,Communication,0.000141,-0.000067,0.000368,-0.000141,16,14,5,1215,1
+mental-health,all,penalty,Communication,-0.001804,-0.002869,-0.000919,-0.001804,16,14,44,1215,1
+mental-health,emergent,score,Overall score,0.054804,0.024889,0.086701,-0.054804,16,14,0,344,1
+mental-health,emergent,summary_positive,Positive points,0.090709,0.043120,0.143126,-0.090709,16,14,939,344,1
+mental-health,emergent,summary_penalty,Penalties,-0.089332,-0.133435,-0.046260,-0.089332,16,14,556,344,1
+mental-health,emergent,positive,Context seeking,0.005750,-0.008459,0.023199,-0.005750,16,14,316,344,1
+mental-health,emergent,penalty,Context seeking,-0.000029,-0.001140,0.001003,-0.000029,16,14,16,344,1
+mental-health,emergent,positive,Actionable guidance,0.030462,0.014034,0.045301,-0.030462,16,14,179,344,1
+mental-health,emergent,penalty,Actionable guidance,-0.018838,-0.027998,-0.008644,-0.018838,16,14,103,344,1
+mental-health,emergent,positive,Empathy,0.008645,0.003549,0.015046,-0.008645,16,14,94,344,1
+mental-health,emergent,penalty,Empathy,-0.000751,-0.002823,0.001158,-0.000751,16,14,26,344,1
+mental-health,emergent,positive,Clinical accuracy,0.019210,0.008178,0.032096,-0.019210,16,14,125,344,1
+mental-health,emergent,penalty,Clinical accuracy,-0.012794,-0.020250,-0.006559,-0.012794,16,14,106,344,1
+mental-health,emergent,positive,Over-alarm / under-response,0.019216,0.009949,0.028149,-0.019216,16,14,112,344,1
+mental-health,emergent,penalty,Over-alarm / under-response,-0.004329,-0.008161,0.000373,-0.004329,16,14,67,344,1
+mental-health,emergent,positive,Reframing,0.001907,0.000963,0.002812,-0.001907,16,14,12,344,1
+mental-health,emergent,penalty,Reframing,-0.001074,-0.002637,0.000396,-0.001074,16,14,19,344,1
+mental-health,emergent,positive,Harm avoidance,0.002315,0.000450,0.004133,-0.002315,16,14,70,344,1
+mental-health,emergent,penalty,Harm avoidance,-0.040513,-0.061184,-0.021784,-0.040513,16,14,141,344,1
+mental-health,emergent,positive,Reality testing,0.002986,0.001210,0.005308,-0.002986,16,14,28,344,1
+mental-health,emergent,penalty,Reality testing,-0.010279,-0.018093,-0.003084,-0.010279,16,14,63,344,1
+mental-health,emergent,positive,Agency,0.000218,-0.000109,0.000495,-0.000218,16,14,3,344,1
+mental-health,emergent,penalty,Agency,0.000241,-0.000083,0.000707,0.000241,16,14,5,344,1
+mental-health,emergent,positive,Communication,0.000000,0.000000,0.000000,0.000000,16,14,0,344,0
+mental-health,emergent,penalty,Communication,-0.000968,-0.001678,-0.000372,-0.000968,16,14,10,344,1
+mental-health,high_acuity,score,Overall score,0.078505,0.038114,0.121663,-0.078505,16,14,0,221,1
+mental-health,high_acuity,summary_positive,Positive points,0.117608,0.059700,0.178648,-0.117608,16,14,595,221,1
+mental-health,high_acuity,summary_penalty,Penalties,-0.071427,-0.107967,-0.033172,-0.071427,16,14,335,221,1
+mental-health,high_acuity,positive,Context seeking,0.008325,-0.006026,0.026753,-0.008325,16,14,176,221,1
+mental-health,high_acuity,penalty,Context seeking,0.000023,-0.000260,0.000355,0.000023,16,14,12,221,1
+mental-health,high_acuity,positive,Actionable guidance,0.045942,0.023700,0.065609,-0.045942,16,14,143,221,1
+mental-health,high_acuity,penalty,Actionable guidance,-0.015241,-0.023197,-0.006803,-0.015241,16,14,69,221,1
+mental-health,high_acuity,positive,Empathy,0.025265,0.011647,0.041556,-0.025265,16,14,114,221,1
+mental-health,high_acuity,penalty,Empathy,-0.002288,-0.008192,0.003572,-0.002288,16,14,34,221,1
+mental-health,high_acuity,positive,Clinical accuracy,0.018583,0.006233,0.032986,-0.018583,16,14,95,221,1
+mental-health,high_acuity,penalty,Clinical accuracy,-0.024624,-0.040062,-0.011262,-0.024624,16,14,101,221,1
+mental-health,high_acuity,positive,Over-alarm / under-response,0.008821,0.004671,0.013085,-0.008821,16,14,24,221,1
+mental-health,high_acuity,penalty,Over-alarm / under-response,-0.005627,-0.010861,0.000224,-0.005627,16,14,39,221,1
+mental-health,high_acuity,positive,Reframing,0.002937,0.000530,0.005149,-0.002937,16,14,14,221,1
+mental-health,high_acuity,penalty,Reframing,-0.008177,-0.013031,-0.003538,-0.008177,16,14,29,221,1
+mental-health,high_acuity,positive,Harm avoidance,0.000612,-0.000099,0.001415,-0.000612,16,14,5,221,1
+mental-health,high_acuity,penalty,Harm avoidance,-0.002165,-0.004274,-0.000328,-0.002165,16,14,8,221,1
+mental-health,high_acuity,positive,Reality testing,0.005186,0.002617,0.008479,-0.005186,16,14,14,221,1
+mental-health,high_acuity,penalty,Reality testing,-0.012528,-0.020691,-0.003274,-0.012528,16,14,36,221,1
+mental-health,high_acuity,positive,Agency,0.001936,-0.000015,0.003943,-0.001936,16,14,10,221,1
+mental-health,high_acuity,penalty,Agency,-0.000126,-0.000402,0.000106,-0.000126,16,14,1,221,0
+mental-health,high_acuity,positive,Communication,0.000000,0.000000,0.000000,0.000000,16,14,0,221,0
+mental-health,high_acuity,penalty,Communication,-0.000674,-0.001267,-0.000102,-0.000674,16,14,6,221,1
+mental-health,non_acute,score,Overall score,0.067800,0.029690,0.113026,-0.067800,16,14,0,650,1
+mental-health,non_acute,summary_positive,Positive points,0.117109,0.057800,0.185688,-0.117109,16,14,1689,650,1
+mental-health,non_acute,summary_penalty,Penalties,-0.096631,-0.149706,-0.046349,-0.096631,16,14,1148,650,1
+mental-health,non_acute,positive,Context seeking,0.016700,-0.002341,0.040094,-0.016700,16,14,569,650,1
+mental-health,non_acute,penalty,Context seeking,-0.000880,-0.001642,-0.000094,-0.000880,16,14,35,650,1
+mental-health,non_acute,positive,Actionable guidance,0.023842,0.012951,0.033513,-0.023842,16,14,206,650,1
+mental-health,non_acute,penalty,Actionable guidance,-0.021344,-0.032733,-0.009603,-0.021344,16,14,233,650,1
+mental-health,non_acute,positive,Empathy,0.023403,0.012429,0.036294,-0.023403,16,14,274,650,1
+mental-health,non_acute,penalty,Empathy,-0.001502,-0.003505,0.000216,-0.001502,16,14,54,650,1
+mental-health,non_acute,positive,Clinical accuracy,0.021660,0.011119,0.033326,-0.021660,16,14,234,650,1
+mental-health,non_acute,penalty,Clinical accuracy,-0.013045,-0.020728,-0.006887,-0.013045,16,14,192,650,1
+mental-health,non_acute,positive,Over-alarm / under-response,0.000818,0.000227,0.001388,-0.000818,16,14,9,650,1
+mental-health,non_acute,penalty,Over-alarm / under-response,-0.001062,-0.002607,0.000808,-0.001062,16,14,34,650,1
+mental-health,non_acute,positive,Reframing,0.019388,0.010590,0.029748,-0.019388,16,14,213,650,1
+mental-health,non_acute,penalty,Reframing,-0.039310,-0.063180,-0.018823,-0.039310,16,14,372,650,1
+mental-health,non_acute,positive,Harm avoidance,0.000121,-0.000104,0.000334,-0.000121,16,14,2,650,1
+mental-health,non_acute,penalty,Harm avoidance,-0.000354,-0.000667,-0.000011,-0.000354,16,14,4,650,1
+mental-health,non_acute,positive,Reality testing,0.003584,0.001054,0.007110,-0.003584,16,14,80,650,1
+mental-health,non_acute,penalty,Reality testing,-0.012186,-0.021898,-0.003207,-0.012186,16,14,142,650,1
+mental-health,non_acute,positive,Agency,0.007330,0.003144,0.011202,-0.007330,16,14,97,650,1
+mental-health,non_acute,penalty,Agency,-0.004318,-0.008751,-0.000541,-0.004318,16,14,54,650,1
+mental-health,non_acute,positive,Communication,0.000263,-0.000132,0.000697,-0.000263,16,14,5,650,1
+mental-health,non_acute,penalty,Communication,-0.002630,-0.004263,-0.001263,-0.002630,16,14,28,650,1
+medical,all,score,Overall score,0.024423,-0.000691,0.063858,-0.024423,8,7,0,1215,1
+medical,all,summary_positive,Positive points,0.050396,0.017284,0.099782,-0.050396,8,7,3223,1215,1
+medical,all,summary_penalty,Penalties,-0.039690,-0.065098,-0.018004,-0.039690,8,7,2039,1215,1
+medical,all,positive,Context seeking,0.018029,0.005093,0.029440,-0.018029,8,7,1061,1215,1
+medical,all,penalty,Context seeking,-0.000181,-0.001348,0.001217,-0.000181,8,7,63,1215,1
+medical,all,positive,Actionable guidance,0.005949,-0.001556,0.015253,-0.005949,8,7,528,1215,1
+medical,all,penalty,Actionable guidance,-0.007203,-0.017230,0.000872,-0.007203,8,7,405,1215,1
+medical,all,positive,Empathy,0.011215,0.003583,0.026106,-0.011215,8,7,482,1215,1
+medical,all,penalty,Empathy,-0.000646,-0.002720,0.000956,-0.000646,8,7,114,1215,1
+medical,all,positive,Clinical accuracy,0.006530,0.001486,0.013860,-0.006530,8,7,454,1215,1
+medical,all,penalty,Clinical accuracy,-0.005833,-0.010035,-0.002103,-0.005833,8,7,399,1215,1
+medical,all,positive,Over-alarm / under-response,0.002463,0.000216,0.004833,-0.002463,8,7,145,1215,1
+medical,all,penalty,Over-alarm / under-response,-0.002392,-0.003853,-0.001194,-0.002392,8,7,140,1215,1
+medical,all,positive,Reframing,0.002461,-0.002938,0.009581,-0.002461,8,7,239,1215,1
+medical,all,penalty,Reframing,-0.014192,-0.022989,-0.003431,-0.014192,8,7,420,1215,1
+medical,all,positive,Harm avoidance,0.001296,0.000337,0.002854,-0.001296,8,7,77,1215,1
+medical,all,penalty,Harm avoidance,-0.002426,-0.004676,-0.000613,-0.002426,8,7,153,1215,1
+medical,all,positive,Reality testing,0.000511,-0.001155,0.002399,-0.000511,8,7,122,1215,1
+medical,all,penalty,Reality testing,-0.006831,-0.014396,-0.000233,-0.006831,8,7,241,1215,1
+medical,all,positive,Agency,0.002057,0.000305,0.004165,-0.002057,8,7,110,1215,1
+medical,all,penalty,Agency,0.000318,-0.001247,0.001470,0.000318,8,7,60,1215,1
+medical,all,positive,Communication,-0.000115,-0.000387,0.000118,0.000115,8,7,5,1215,1
+medical,all,penalty,Communication,-0.000304,-0.001263,0.000663,-0.000304,8,7,44,1215,1
+medical,emergent,score,Overall score,0.015723,-0.002709,0.037933,-0.015723,8,7,0,344,1
+medical,emergent,summary_positive,Positive points,0.038868,0.013180,0.070383,-0.038868,8,7,939,344,1
+medical,emergent,summary_penalty,Penalties,-0.032406,-0.061228,-0.009420,-0.032406,8,7,556,344,1
+medical,emergent,positive,Context seeking,0.009105,-0.000300,0.016452,-0.009105,8,7,316,344,1
+medical,emergent,penalty,Context seeking,-0.000460,-0.001666,0.000861,-0.000460,8,7,16,344,1
+medical,emergent,positive,Actionable guidance,0.006631,-0.002230,0.017038,-0.006631,8,7,179,344,1
+medical,emergent,penalty,Actionable guidance,-0.004853,-0.017766,0.004808,-0.004853,8,7,103,344,1
+medical,emergent,positive,Empathy,0.003554,-0.001814,0.010267,-0.003554,8,7,94,344,1
+medical,emergent,penalty,Empathy,-0.001657,-0.004296,0.000771,-0.001657,8,7,26,344,1
+medical,emergent,positive,Clinical accuracy,0.006515,0.000113,0.013455,-0.006515,8,7,125,344,1
+medical,emergent,penalty,Clinical accuracy,-0.005776,-0.009229,-0.003038,-0.005776,8,7,106,344,1
+medical,emergent,positive,Over-alarm / under-response,0.006790,0.000370,0.013626,-0.006790,8,7,112,344,1
+medical,emergent,penalty,Over-alarm / under-response,-0.003219,-0.006991,0.000801,-0.003219,8,7,67,344,1
+medical,emergent,positive,Reframing,0.001165,0.000202,0.002339,-0.001165,8,7,12,344,1
+medical,emergent,penalty,Reframing,-0.000378,-0.002236,0.001691,-0.000378,8,7,19,344,1
+medical,emergent,positive,Harm avoidance,0.004667,0.001360,0.009931,-0.004667,8,7,70,344,1
+medical,emergent,penalty,Harm avoidance,-0.008874,-0.016483,-0.002793,-0.008874,8,7,141,344,1
+medical,emergent,positive,Reality testing,0.000040,-0.002502,0.002008,-0.000040,8,7,28,344,1
+medical,emergent,penalty,Reality testing,-0.007343,-0.014326,-0.002031,-0.007343,8,7,63,344,1
+medical,emergent,positive,Agency,0.000402,0.000122,0.000690,-0.000402,8,7,3,344,1
+medical,emergent,penalty,Agency,-0.000059,-0.000848,0.000671,-0.000059,8,7,5,344,1
+medical,emergent,positive,Communication,0.000000,0.000000,0.000000,0.000000,8,7,0,344,0
+medical,emergent,penalty,Communication,0.000212,-0.000371,0.000730,0.000212,8,7,10,344,1
+medical,high_acuity,score,Overall score,0.029978,-0.004645,0.075310,-0.029978,8,7,0,221,1
+medical,high_acuity,summary_positive,Positive points,0.047869,0.009650,0.102554,-0.047869,8,7,595,221,1
+medical,high_acuity,summary_penalty,Penalties,-0.030911,-0.059043,0.000381,-0.030911,8,7,335,221,1
+medical,high_acuity,positive,Context seeking,0.019419,0.003991,0.032078,-0.019419,8,7,176,221,1
+medical,high_acuity,penalty,Context seeking,0.001616,0.000323,0.003417,0.001616,8,7,12,221,1
+medical,high_acuity,positive,Actionable guidance,0.007939,-0.007786,0.028518,-0.007939,8,7,143,221,1
+medical,high_acuity,penalty,Actionable guidance,-0.010937,-0.021077,-0.002702,-0.010937,8,7,69,221,1
+medical,high_acuity,positive,Empathy,0.015135,0.005887,0.032519,-0.015135,8,7,114,221,1
+medical,high_acuity,penalty,Empathy,0.002219,-0.002126,0.007040,0.002219,8,7,34,221,1
+medical,high_acuity,positive,Clinical accuracy,0.001953,-0.004925,0.010335,-0.001953,8,7,95,221,1
+medical,high_acuity,penalty,Clinical accuracy,-0.006611,-0.018137,0.003611,-0.006611,8,7,101,221,1
+medical,high_acuity,positive,Over-alarm / under-response,0.002086,-0.000643,0.004946,-0.002086,8,7,24,221,1
+medical,high_acuity,penalty,Over-alarm / under-response,-0.004984,-0.010526,-0.000427,-0.004984,8,7,39,221,1
+medical,high_acuity,positive,Reframing,-0.000110,-0.003868,0.003855,0.000110,8,7,14,221,1
+medical,high_acuity,penalty,Reframing,-0.007552,-0.011518,-0.002094,-0.007552,8,7,29,221,1
+medical,high_acuity,positive,Harm avoidance,-0.000138,-0.000597,0.000283,0.000138,8,7,5,221,1
+medical,high_acuity,penalty,Harm avoidance,0.000050,-0.001257,0.001144,0.000050,8,7,8,221,1
+medical,high_acuity,positive,Reality testing,-0.000669,-0.003044,0.002015,0.000669,8,7,14,221,1
+medical,high_acuity,penalty,Reality testing,-0.004353,-0.017479,0.009042,-0.004353,8,7,36,221,1
+medical,high_acuity,positive,Agency,0.002254,-0.000137,0.004397,-0.002254,8,7,10,221,1
+medical,high_acuity,penalty,Agency,-0.000251,-0.000603,0.000000,-0.000251,8,7,1,221,0
+medical,high_acuity,positive,Communication,0.000000,0.000000,0.000000,0.000000,8,7,0,221,0
+medical,high_acuity,penalty,Communication,-0.000109,-0.001255,0.000776,-0.000109,8,7,6,221,1
+medical,non_acute,score,Overall score,0.027139,-0.003445,0.074744,-0.027139,8,7,0,650,1
+medical,non_acute,summary_positive,Positive points,0.057356,0.016250,0.119675,-0.057356,8,7,1689,650,1
+medical,non_acute,summary_penalty,Penalties,-0.046529,-0.074373,-0.018452,-0.046529,8,7,1148,650,1
+medical,non_acute,positive,Context seeking,0.022280,0.007427,0.036288,-0.022280,8,7,569,650,1
+medical,non_acute,penalty,Context seeking,-0.000644,-0.001919,0.001027,-0.000644,8,7,35,650,1
+medical,non_acute,positive,Actionable guidance,0.004912,0.000283,0.012040,-0.004912,8,7,206,650,1
+medical,non_acute,penalty,Actionable guidance,-0.007178,-0.016971,0.000766,-0.007178,8,7,233,650,1
+medical,non_acute,positive,Empathy,0.013937,0.004542,0.033221,-0.013937,8,7,274,650,1
+medical,non_acute,penalty,Empathy,-0.001086,-0.003019,0.000339,-0.001086,8,7,54,650,1
+medical,non_acute,positive,Clinical accuracy,0.008093,0.002863,0.016496,-0.008093,8,7,234,650,1
+medical,non_acute,penalty,Clinical accuracy,-0.005598,-0.009157,-0.001767,-0.005598,8,7,192,650,1
+medical,non_acute,positive,Over-alarm / under-response,0.000300,-0.000427,0.000858,-0.000300,8,7,9,650,1
+medical,non_acute,penalty,Over-alarm / under-response,-0.001073,-0.001545,-0.000426,-0.001073,8,7,34,650,1
+medical,non_acute,positive,Reframing,0.004020,-0.005485,0.016470,-0.004020,8,7,213,650,1
+medical,non_acute,penalty,Reframing,-0.023761,-0.039644,-0.005850,-0.023761,8,7,372,650,1
+medical,non_acute,positive,Harm avoidance,0.000000,-0.000216,0.000278,0.000000,8,7,2,650,1
+medical,non_acute,penalty,Harm avoidance,0.000145,-0.000348,0.000538,0.000145,8,7,4,650,1
+medical,non_acute,positive,Reality testing,0.001161,-0.001054,0.004059,-0.001161,8,7,80,650,1
+medical,non_acute,penalty,Reality testing,-0.007402,-0.014002,-0.000809,-0.007402,8,7,142,650,1
+medical,non_acute,positive,Agency,0.002866,0.000499,0.006192,-0.002866,8,7,97,650,1
+medical,non_acute,penalty,Agency,0.000711,-0.002207,0.002874,0.000711,8,7,54,650,1
+medical,non_acute,positive,Communication,-0.000215,-0.000736,0.000226,0.000215,8,7,5,650,1
+medical,non_acute,penalty,Communication,-0.000644,-0.002139,0.001051,-0.000644,8,7,28,650,1

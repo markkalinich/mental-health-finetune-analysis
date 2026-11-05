@@ -1,0 +1,17 @@
+ASSIGNMENT (dataset search batch 1, 9 October 2026, agent 9 of 25). Repository ids, in this order:
+1. harshj0506/phi-therapist-chat-v1
+2. Hejjee/iDonna_depression_v2
+3. hemhemoh/wazobia-wellness-bot-sftGemma2-2b-it
+4. herisan/phi2_mental_health_counseling_conversations
+5. hifzanazir456/Mental_Health-bot-distilgpt2
+6. hizardev/Mentalhealth-Counseling
+7. hongli-zhan/MINT-empathy-Qwen3-4B
+8. huggymotz/oc-diffusion-model
+9. hwan1/ohss-polyglot-ko-empathy-message-friend-1.3b
+10. HyunCello/KULLM3-empathy-v1.0
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-9.csv
+- Markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-dataset-search-batch1/reports/batch1-9.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

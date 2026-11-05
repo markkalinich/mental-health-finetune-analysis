@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 20 of 315). Repository ids, in this order:
+1. darkengross/Qwen3.5-9B-abliterated
+2. DeepXR/Helion-V1
+3. DeepXR/Helion-V1-reasoning
+4. DigitalPixie/attention-guard-grpo
+5. DigitalPixie/attention-guard-v2-brain-f16
+6. Digsm003/safety-assign1-dpo-full
+7. Digsm003/safety-assign1-dpo-full-v2
+8. Digsm003/safety-assign1-ppo-full
+9. Digsm003/safety-assign1-ppo-full-v2
+10. Dipto084/Llama-3.1-8B-RedQueenGuard
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-20.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-20.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

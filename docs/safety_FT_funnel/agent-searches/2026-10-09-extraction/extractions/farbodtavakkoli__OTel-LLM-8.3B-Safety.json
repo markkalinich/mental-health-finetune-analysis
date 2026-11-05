@@ -1,0 +1,170 @@
+{
+  "hf_id": "farbodtavakkoli/OTel-LLM-8.3B-Safety",
+  "prompt_version": 3,
+  "started": "2026-10-09T19:27:32-04:00",
+  "ended": "2026-10-09T19:28:57-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/farbodtavakkoli__OTel-LLM-8.3B-Safety__2026-10-09.md",
+    "cached_sha256": "44776fad47d38c5aad85ab682283c56f5bd415249f2691a3222be5d1e377dabf",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "pytorch_model-00001-of-00007.bin",
+    "pytorch_model-00002-of-00007.bin",
+    "pytorch_model-00003-of-00007.bin",
+    "pytorch_model-00004-of-00007.bin",
+    "pytorch_model-00005-of-00007.bin",
+    "pytorch_model-00006-of-00007.bin",
+    "pytorch_model-00007-of-00007.bin",
+    "pytorch_model.bin.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/farbodtavakkoli/OTel"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/html/2610.07766",
+        "arxiv_id": "2610.07766",
+        "title": "OTel: Open Telco AI Datasets, Benchmarks, and Models",
+        "venue": "NeurIPS 2026, Evaluations and Datasets Track",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.15436",
+        "arxiv_id": "2608.15436",
+        "title": "not stated",
+        "venue": "not stated",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/farbodtavakkoli",
+      "https://huggingface.co/collections/farbodtavakkoli/otel-llm"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "OTel-Safety",
+      "hub_id": "farbodtavakkoli/OTel-Safety",
+      "urls": [
+        "https://huggingface.co/datasets/farbodtavakkoli/OTel-Safety",
+        "https://huggingface.co/datasets/farbodtavakkoli/OTel-Safety/raw/main/README.md",
+        "https://huggingface.co/datasets/farbodtavakkoli/OTel-Safety/raw/main/croissant.json"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "English",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md",
+      "quote": "`EssentialAI/rnj-1-instruct` -> `OTel-Safety` full-parameter post-training -> `farbodtavakkoli/OTel-LLM-8.3B-Safety`"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "full",
+    "update_scope_quote": "Training method | Full-parameter post-training / fine-tuning",
+    "update_scope_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "EssentialAI/rnj-1-instruct",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8.3B",
+    "parameters_stated_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["English"],
+    "source_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md",
+    "quote": "The current release is English-only and primarily text-centric."
+  },
+  "description": {
+    "text": "**OTel-LLM-8.3B-Safety** is a safety-tuned telecom language model full-parameter fine-tuned on OTel telecommunications data. It is part of the [OTel Family of Models](https://huggingface.co/collections/farbodtavakkoli/otel-llm), an open-source initiative to build reference AI resources for the global telecommunications sector.\n\nThe safety variants are auxiliary models trained to refuse when retrieved context is insufficient or off-topic.",
+    "source_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This model is intended for telecom RAG pipelines where the assistant should refuse to answer when retrieved context is missing, irrelevant, or insufficient."
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "**OTel-LLM-8.3B-Safety** is a safety-tuned telecom language model full-parameter fine-tuned on OTel telecommunications data."
+  },
+  "warning": {
+    "strength": "Unrelated limitations only",
+    "quote": "OTel models are domain-specific to telecommunications and should not be treated as general-purpose models."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "The current release is English-only and primarily text-centric.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/chat_template.jinja",
+    "system_prompt": "You are rnj-1, a foundation model trained by Essential AI.\nYou are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/chat_template.jinja",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.2,
+      "max_new_tokens": 256
+    },
+    "generation_settings_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "generation_config.json sets do_sample true and temperature 0.2. It does not set top_k, top_p, or repetition_penalty. The card usage example sets max_new_tokens to 256. chat_template.jinja always emits base_system 'You are rnj-1, a foundation model trained by Essential AI.' and, if the user does not pass a system message, default_system 'You are a helpful assistant.' tokenizer_config.json has no chat_template key and model_max_length 1500. config.json is Gemma3ForCausalLM (gemma3_text) with max_position_embeddings 32768 and no vision tower. No adapter_config.json, notebook, or training script is in the model repository. Quantized base during training is no: the card says Precision BF16 and full-parameter post-training. AdamW 8-bit is the optimizer."
+  },
+  "evaluation_reported": {
+    "text": "This model is an auxiliary safety-tuned variant trained for abstention behavior and is not part of the 30-model core baseline table. It should be evaluated with abstention-focused metrics for the target deployment, such as correct-abstention rate on insufficient-context examples and answer quality on sufficient-context examples. The paper names this checkpoint and does not print a score for it. Table 7 scores OTel-LLM-8.3B-IT, a different checkpoint.",
+    "source_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/farbodtavakkoli/OTel-LLM-8.3B-Safety/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune",
+    "datasets": "farbodtavakkoli/OTel-Safety",
+    "parent": "EssentialAI/rnj-1-instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"farbodtavakkoli/OTel-LLM-8.3B-Safety\"",
+    "\"OTel-LLM-8.3B-Safety\" huggingface",
+    "\"OTel-LLM-8.3B-Safety\" arxiv",
+    "\"OTel-LLM-8.3B-Safety\" github",
+    "\"OTel: Open Telco AI Datasets, Benchmarks, and Models\" OTel-LLM-8.3B-Safety",
+    "OTel-Safety huggingface dataset"
+  ],
+  "confidence": "high"
+}

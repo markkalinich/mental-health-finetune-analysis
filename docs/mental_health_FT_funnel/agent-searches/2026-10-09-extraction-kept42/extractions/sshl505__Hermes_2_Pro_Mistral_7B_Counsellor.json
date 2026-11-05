@@ -1,0 +1,157 @@
+{
+  "hf_id": "sshl505/Hermes_2_Pro_Mistral_7B_Counsellor",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:44:47-04:00",
+  "ended": "2026-10-09T16:48:21-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/sshl505__Hermes_2_Pro_Mistral_7B_Counsellor__2026-10-09.md",
+    "cached_sha256": "c94833f57a4e901c9fe57ef88b9864692d301ffc7d0318bc32f1701dd60bcd60",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00006.safetensors",
+    "model-00002-of-00006.safetensors",
+    "model-00003-of-00006.safetensors",
+    "model-00004-of-00006.safetensors",
+    "model-00005-of-00006.safetensors",
+    "model-00006-of-00006.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/facebookresearch/EmpatheticDialogues"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1811.00207",
+        "arxiv_id": "1811.00207",
+        "title": "Towards Empathetic Open-domain Conversation Models: a New Benchmark and Dataset",
+        "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Empathetic Dialogues for LLM",
+      "hub_id": "Estwld/empathetic_dialogues_llm",
+      "urls": [
+        "https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm",
+        "https://huggingface.co/datasets/facebook/empathetic_dialogues",
+        "https://arxiv.org/html/1811.00207"
+      ],
+      "loads": true,
+      "n_examples": 24850,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm",
+      "quote": "This repository contains a reformatted version of the Empathetic Dialogues dataset, tailored for seamless integration with Language Model (LLM) training and inference."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "NousResearch/Hermes-2-Pro-Mistral-7B",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "7241994240",
+    "parameters_stated_url": "https://huggingface.co/api/models/sshl505/Hermes_2_Pro_Mistral_7B_Counsellor"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/sshl505/Hermes_2_Pro_Mistral_7B_Counsellor/raw/main/README.md",
+    "quote": "language:\n  - en"
+  },
+  "description": {
+    "text": "This model is specialized for emotional and psychological support dialogue generation.",
+    "source_url": "https://huggingface.co/sshl505/Hermes_2_Pro_Mistral_7B_Counsellor/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "This model is specialized for emotional and psychological support dialogue generation."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "This model is specialized for emotional and psychological support dialogue generation."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Write a short story about Goku discovering kirby has teamed up with Majin Buu to destroy the world.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/sshl505/Hermes_2_Pro_Mistral_7B_Counsellor/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {"do_sample": true},
+    "generation_settings_url": "https://huggingface.co/sshl505/Hermes_2_Pro_Mistral_7B_Counsellor/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "config.json sets max_position_embeddings to 32768 and sliding_window to 4096. torch_dtype is float32. The tokenizer model_max_length is an unset placeholder. The default chat template does not insert a system prompt (use_default_system_prompt is false). The named tool_use template inserts: You are a function calling AI model. No adapter_config.json, notebook, train.py, or trainer JSON is in the repository. The parent card's text example is the quote above; this card has no usage example."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "unknown",
+    "source_url": "https://huggingface.co/sshl505/Hermes_2_Pro_Mistral_7B_Counsellor/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Estwld/empathetic_dialogues_llm",
+    "parent": "NousResearch/Hermes-2-Pro-Mistral-7B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"sshl505/Hermes_2_Pro_Mistral_7B_Counsellor\"",
+    "\"Hermes_2_Pro_Mistral_7B_Counsellor\" huggingface",
+    "\"Hermes_2_Pro_Mistral_7B_Counsellor\" arxiv",
+    "\"Hermes_2_Pro_Mistral_7B_Counsellor\" github",
+    "\"Towards Empathetic Open-domain Conversation Models: a New Benchmark and Dataset\"",
+    "Estwld/empathetic_dialogues_llm huggingface dataset",
+    "Empathetic Dialogues huggingface dataset"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,46 @@
+step,outcome,n
+0,listed_on_hub,3080963
+0,cohort,21780
+1,entered,21780
+1,kept,9124
+1,bin_unreadable,89
+1,blank_record,1
+1,no_root,12027
+1,other_dtype,496
+1,repo_gated,43
+2,entered,9124
+2,kept,692
+2,dataset_not_on_hub,254
+2,no_dataset,8142
+2,vision_or_video,36
+3,entered,692
+3,kept,177
+3,multiple_parents,13
+3,no_parent,216
+3,parent_card_unreadable,2
+3,parent_discordant,14
+3,parent_finetune,27
+3,parent_not_fp,55
+3,parent_not_language_model,71
+3,parent_pretrained,101
+3,parent_unreadable,11
+3,repo_gated,5
+4,entered,177
+4,kept,83
+4,"manual_removed: cannot be served: unmerged LoRA, scale not in the repo",1
+4,"manual_removed: continued pre-training only, no instruction tuning",3
+4,manual_removed: earlier stage of a kept model,2
+4,manual_removed: earlier version of a kept model,1
+4,manual_removed: needs an image or video as input,13
+4,manual_removed: not a medical model,17
+4,manual_removed: not an English-language model,18
+4,manual_removed: outputs only a fixed label,2
+4,manual_removed: redundant with a kept model,29
+4,manual_removed: set aside as a control: trained to give bad medical advice,6
+4,"manual_removed: set aside: weights kept for a side experiment, not in the main cohort",2
+5,entered,83
+5,kept,74
+5,no_training_method,9
+6,entered,74
+6,kept,52
+6,objective_assumed_only,22

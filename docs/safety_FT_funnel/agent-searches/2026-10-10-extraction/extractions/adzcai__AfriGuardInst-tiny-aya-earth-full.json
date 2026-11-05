@@ -1,0 +1,189 @@
+{
+  "hf_id": "adzcai/AfriGuardInst-tiny-aya-earth-full",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:32:15-04:00",
+  "ended": "2026-10-10T00:34:26-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/adzcai__AfriGuardInst-tiny-aya-earth-full__2026-10-10.md",
+    "cached_sha256": "685e713692a77e28a96f1f985899c6cedb18baec6855bf2d1dd8a565ca7fc0e1",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "all_results.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_loss.png"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "AfriGuard-inst",
+      "hub_id": "israel/AfriGuard-inst",
+      "urls": [
+        "https://huggingface.co/datasets/israel/AfriGuard-inst",
+        "https://huggingface.co/datasets/israel/AfriGuard",
+        "https://huggingface.co/datasets/israel/AfriGuard-XL"
+      ],
+      "loads": false,
+      "n_examples": 53481,
+      "language": "en, am, ha, ig, om, sn, sw, tw, wo, yo, zu",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md",
+      "quote": "fine-tuned with full fine-tuning (DeepSpeed ZeRO-3) on israel/AfriGuard-inst: each example is one of the safety system instructions plus the user prompt, and the target is <safety>…</safety> <category>…</category> <response>…</response>."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Training config: `examples/train_full/afriguard_inst_tiny-aya-earth_full_sft.yaml` in the AfriGuard-model (LlamaFactory) repo ... 1 epoch, 1 GPU, `cohere` chat template, loss on the response only.",
+    "objective_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "CohereLabs/tiny-aya-earth fine-tuned with full fine-tuning (DeepSpeed ZeRO-3)",
+    "update_scope_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": 11577,
+    "learning_rate": 1e-05,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "CohereLabs/tiny-aya-earth",
+    "source_claims": [
+      {
+        "parent": "CohereLabs/tiny-aya-earth",
+        "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md",
+        "quote": "base_model: CohereLabs/tiny-aya-earth"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3349227520",
+    "parameters_stated_url": "https://huggingface.co/api/models/adzcai/AfriGuardInst-tiny-aya-earth-full"
+  },
+  "languages": {
+    "values": [
+      "en",
+      "am",
+      "ha",
+      "ig",
+      "om",
+      "sn",
+      "sw",
+      "tw",
+      "wo",
+      "yo",
+      "zu"
+    ],
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md",
+    "quote": "language:\n  - en\n  - am\n  - ha\n  - ig\n  - om\n  - sn\n  - sw\n  - tw\n  - wo\n  - yo\n  - zu"
+  },
+  "description": {
+    "text": "CohereLabs/tiny-aya-earth fine-tuned with full fine-tuning (DeepSpeed ZeRO-3) on israel/AfriGuard-inst: each example is one of the safety system instructions plus the user prompt, and the target is <safety>…</safety> <category>…</category> <response>…</response>.\n\nIts plain counterpart (same base and config) is adzcai/AfriGuardPlain-tiny-aya-earth-full.\n\nTraining config: examples/train_full/afriguard_inst_tiny-aya-earth_full_sft.yaml in the AfriGuard-model (LlamaFactory) repo, the tiny-aya-global setup (afriguard_tinyaya_full_sft.yaml) with only the base model and output paths changed; 1 epoch, 1 GPU, cohere chat template, loss on the response only.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "the target is <safety>…</safety> <category>…</category> <response>…</response>."
+  },
+  "input_kind": {
+    "values": [
+      "user prompt"
+    ],
+    "quotes": [
+      "each example is one of the safety system instructions plus the user prompt"
+    ]
+  },
+  "output_kind": {
+    "values": [
+      "category label",
+      "chat reply",
+      "structured object"
+    ],
+    "quotes": [
+      "<category>…</category>",
+      "<response>…</response>",
+      "<safety>safe|unsafe</safety> <category>top_category (always, for safe and unsafe prompts)</category> <response>final reply</response>"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [
+      "Criminal Activity & Exploitation",
+      "Political & Societal Manipulation",
+      "Violence & Physical Harm",
+      "Systemic Risks",
+      "Sexual & Exploitative Content",
+      "Unsafe or High-Risk Advice",
+      "Privacy & Data Misuse",
+      "Hate, Harassment & Discrimination",
+      "Ethical & Moral Risk",
+      "Intellectual Property & Content Integrity"
+    ],
+    "quote": "each example is one of the safety system instructions plus the user prompt, and the target is <safety>…</safety> <category>…</category> <response>…</response>.",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "each example is one of the safety system instructions plus the user prompt",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "config.json is Cohere2ForCausalLM with max_position_embeddings 8192 and no vision_config. tokenizer_config.json has no chat_template key; its model_max_length is the tokenizer sentinel 1e30. generation_config.json sets bos, eos, and pad ids only. trainer_state.json records global_step 11577, train_batch_size 1, epoch 1.0. ceil(46306/4) is 11577, matching total_train_batch_size 4 on the train split. The card prose says 1 GPU; the hyperparameter block says distributed_type: multi-GPU. No adapter file."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-nc-4.0",
+    "source_url": "https://huggingface.co/adzcai/AfriGuardInst-tiny-aya-earth-full/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "full_finetune",
+    "datasets": "israel/AfriGuard-inst",
+    "parent": "CohereLabs/tiny-aya-earth"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"adzcai/AfriGuardInst-tiny-aya-earth-full\"",
+    "\"AfriGuardInst-tiny-aya-earth-full\" huggingface",
+    "\"AfriGuardInst-tiny-aya-earth-full\" arxiv",
+    "\"AfriGuardInst-tiny-aya-earth-full\" github",
+    "AfriGuard-inst huggingface dataset"
+  ],
+  "confidence": "high"
+}

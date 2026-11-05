@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 116 of 315). Repository ids, in this order:
+1. kmseong/llama3.1_8b_base_gsm8k_ft_freeze_sn_lr3e-5
+2. kmseong/llama3.1_8b_instruct-MATH-WaRP-lr5e-5
+3. kmseong/llama3.1_8b_instruct-MATH_FT_after_sn-tune_lr3e-5
+4. kmseong/llama3.1_8b_instruct-MATH_FT_after_SSFT-lr3e-5
+5. kmseong/llama3.1_8b_instruct-MATH_FT_lr5e-5
+6. kmseong/llama3.1_8b_instruct-Safety-FT-lr3e-5
+7. kmseong/llama3.1_8b_instruct-WaRP-MATH-lr3e-5
+8. kmseong/llama3.1_8b_instruct-WaRP-safety-basis-MATH-FT-lr3e-5
+9. kmseong/llama3.1_8b_instruct_MATH-FT-lr3e-5
+10. kmseong/llama3.1_8b_instruct_MATH-FT-resta-gamma0.3-lr5e-5
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-116.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-116.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

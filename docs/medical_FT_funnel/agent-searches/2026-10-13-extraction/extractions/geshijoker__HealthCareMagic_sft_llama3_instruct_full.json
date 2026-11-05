@@ -1,0 +1,197 @@
+{
+  "hf_id": "geshijoker/HealthCareMagic_sft_llama3_instruct_full",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:40:18-04:00",
+  "ended": "2026-10-13T12:42:19-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/geshijoker__HealthCareMagic_sft_llama3_instruct_full__2026-10-05.md",
+    "cached_sha256": "17d5fd793d363145767471b0e5c066c6fa55b76a136ef095e0c6f2ba9dab0613",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "all_results.json",
+    "config.json",
+    "eval_results.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "runs/Dec29_09-58-50_64-181-222-101/events.out.tfevents.1735466357.64-181-222-101.34363.0",
+    "runs/Dec29_10-03-52_64-181-222-101/events.out.tfevents.1735466667.64-181-222-101.35566.0",
+    "runs/Dec29_10-07-31_64-181-222-101/events.out.tfevents.1735466908.64-181-222-101.36489.0",
+    "runs/Dec29_10-11-52_64-181-222-101/events.out.tfevents.1735467147.64-181-222-101.38015.0",
+    "runs/Dec29_10-14-45_64-181-222-101/events.out.tfevents.1735467318.64-181-222-101.39025.0",
+    "runs/Dec29_10-14-45_64-181-222-101/events.out.tfevents.1735491903.64-181-222-101.39025.1",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_eval_loss.png",
+    "training_loss.png"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "healthcaremagic",
+      "hub_id": "lavita/ChatDoctor-HealthCareMagic-100k",
+      "urls": [
+        "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k"
+      ],
+      "loads": true,
+      "n_examples": 112165,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on the healthcaremagic dataset. The card does not print a hub id. The Hub set with that content is lavita/ChatDoctor-HealthCareMagic-100k (112,165 rows; viewer loads). Its rows use the instruction \"If you are a doctor, please answer the medical questions based on the patient's description.\""
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "name: sft_full",
+    "objective_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md",
+    "update_scope": "full",
+    "update_scope_quote": "tags: llama-factory, full. The comparison row for this run is \"full fientune from inst\" / sft_llama3_instruct_full. Separate rows name lora and qlora checkpoints.",
+    "update_scope_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": 525,
+    "learning_rate": 1e-05,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on the healthcaremagic dataset."
+      },
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"meta-llama/Meta-Llama-3-8B-Instruct\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/geshijoker/HealthCareMagic_sft_llama3_instruct_full"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k",
+    "quote": "If you are a doctor, please answer the medical questions based on the patient's description."
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on the healthcaremagic dataset. It achieves the following results on the evaluation set: Loss: 1.7460",
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "Intended uses & limitations: More information needed"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on the healthcaremagic dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "Intended uses & limitations: More information needed"
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on the healthcaremagic dataset.",
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": ["Model description: More information needed"]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": ["Training and evaluation data: More information needed"],
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "Training and evaluation data: More information needed",
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "not stated",
+    "text_only_input_quote": "not stated",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/geshijoker/HealthCareMagic_sft_llama3_instruct_full",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "do_sample": true,
+      "max_length": 4096
+    },
+    "generation_settings_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "The card has no usage example. The parent card returned 401. config.json is LlamaForCausalLM with no vision or audio block. The tokenizer chat template formats role and content only. train_batch_size is 8; total_train_batch_size is 512 (8 devices, gradient accumulation 8). The card prints a log line at step 500; trainer_state.json ends at global_step 525 and epoch 2.985 of num_train_epochs 3. No adapter file is in the repository."
+  },
+  "evaluation_reported": {
+    "text": "Evaluation loss 1.7460. The row labeled full fientune from inst / sft_llama3_instruct_full reports Rouge1 0.315, RougeL 0.189, Meteor 0.238, Bert Score 0.782. That row's hyperlink points at meta-llama/Meta-Llama-3-8B-Instruct, not this repository.",
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama3",
+    "source_url": "https://huggingface.co/geshijoker/HealthCareMagic_sft_llama3_instruct_full/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora|sft",
+    "datasets": "healthcaremagic",
+    "parent": "meta-llama/Meta-Llama-3-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods include qlora. This card's tag is full, the run title is sft_full, and the comparison table puts QLoRA on other repositories (HealthCareMagic_sft_llama3_instruct_qlora_all and HealthCareMagic_sft_llama3_qlora_all). The dataset name healthcaremagic and the parent match. The card does not print a dataset hub id.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"geshijoker/HealthCareMagic_sft_llama3_instruct_full\"",
+    "\"HealthCareMagic_sft_llama3_instruct_full\" huggingface",
+    "\"HealthCareMagic_sft_llama3_instruct_full\" arxiv",
+    "\"HealthCareMagic_sft_llama3_instruct_full\" github",
+    "healthcaremagic huggingface dataset"
+  ],
+  "confidence": "medium"
+}

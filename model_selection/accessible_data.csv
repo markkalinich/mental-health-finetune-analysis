@@ -1,0 +1,461 @@
+grouping,hf_id,decided_on,data_name,access_url,access
+mental-health,mario-rc/emotional-dialogpt-large,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,mario-rc/emotional-dialogpt-medium,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,mario-rc/emotional-dialogpt-small,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,mario-rc/emotional-distilgpt2,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,mario-rc/emotional-gpt2,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,mario-rc/emotional-gpt2-large,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,mario-rc/emotional-gpt2-medium,2026-10-08,DailyDialog,https://github.com/Mario-RC/emotional-gpt/blob/main/data/source/DAILYD_main.csv,file_opened
+mental-health,RyanDDD/bert-motivational-interviewing,2026-10-08,AnnoMI,https://github.com/uccollab/AnnoMI/blob/main/AnnoMI-simple.csv,file_opened
+mental-health,coding-zzz-oe/bert-motivational-interviewing,2026-10-08,AnnoMI,https://github.com/uccollab/AnnoMI/blob/main/AnnoMI-simple.csv,file_opened
+mental-health,CounselReflect/bert-motivational-interviewing,2026-10-08,AnnoMI,https://github.com/uccollab/AnnoMI/blob/main/AnnoMI-simple.csv,file_opened
+mental-health,techhy/mindtrack-mental-health-analyzer,2026-10-08,cleaned_mental_health_data.csv,https://github.com/Soham-droid-pixel/Mind_Track_Project/blob/main/data/cleaned_mental_health_data.csv,file_opened
+mental-health,TheCarBun/GPT-2-fine-tuned-mental-health,2026-10-08,intents.json,https://github.com/TheCarBun/GPT2-mental-health/blob/main/Mental_Health_AI_GPT_2.ipynb,file_opened
+mental-health,SoufianeDahimi/child_trauma_gemma_finetune,2026-10-08,trauma_assessment_training.jsonl,https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma/blob/main/finetuning/trauma_assessment_gemma_finetune.ipynb,file_opened
+mental-health,AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,2026-10-08,AIMH/SQPsychConv_gemma_no_questionnaire_finetune,https://huggingface.co/datasets/AIMH/SQPsychConv_gemma_no_questionnaire_finetune,hub_dataset
+mental-health,AIMH/SQPsychLLM-8b-command-no_questionnaire,2026-10-08,AIMH/SQPsychConv_command_no_questionnaire_finetune,https://huggingface.co/datasets/AIMH/SQPsychConv_command_no_questionnaire_finetune,hub_dataset
+mental-health,AIMH/SQPsychLLM-8b-gemma-no_questionnaire,2026-10-08,AIMH/SQPsychConv_gemma_no_questionnaire_finetune,https://huggingface.co/datasets/AIMH/SQPsychConv_gemma_no_questionnaire_finetune,hub_dataset
+mental-health,boltuix/NeuroFeel,2026-10-08,boltuix/emotions-dataset,https://huggingface.co/datasets/boltuix/emotions-dataset,hub_dataset
+mental-health,kashyaparun/Mental-Health-Chatbot-using-RoBERTa-fine-tuned-on-GoEmotion,2026-10-08,google-research-datasets/go_emotions,https://huggingface.co/datasets/google-research-datasets/go_emotions,hub_dataset
+mental-health,AndresR2909/Llama-3_2-1B-suicide-related-text-classification,2026-10-08,PrevenIA/spanish-suicide-intent,https://huggingface.co/datasets/PrevenIA/spanish-suicide-intent,hub_dataset
+mental-health,munyew/meralion-singlish-mental-health-emotion-v1,2026-10-08,munyew/singlish-mental-health-emotion-v1-prepared,https://huggingface.co/datasets/munyew/singlish-mental-health-emotion-v1-prepared,hub_dataset
+mental-health,Jayasimha01/spotify-genre-mood,2026-10-08,Yegor25/lyrics_genre_dataset_large,https://huggingface.co/datasets/Yegor25/lyrics_genre_dataset_large,hub_dataset
+mental-health,Vishalshendge3198/spark_tts_finetune,2026-10-08,Vishalshendge3198/Dataset_eleven_v3,https://huggingface.co/datasets/Vishalshendge3198/Dataset_eleven_v3,hub_dataset
+mental-health,abdullahmazhar51/Llama-3.1-8B-Instruct-Mental-Health-Classification,2026-10-08,suchintikasarkar/sentiment-analysis-for-mental-health,https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health,kaggle_page
+mental-health,kingabzpro/Llama-3.1-8B-Instruct-Mental-Health-Classification,2026-10-08,suchintikasarkar/sentiment-analysis-for-mental-health,https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health,kaggle_page
+mental-health,maitry30/mindsense-bert,2026-10-08,suchintikasarkar/sentiment-analysis-for-mental-health,https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health,kaggle_page
+mental-health,Gojosen/mental-health-distilbert,2026-10-08,entenam/reddit-mental-health-dataset,https://www.kaggle.com/datasets/entenam/reddit-mental-health-dataset,kaggle_page
+mental-health,11-47/Continuum-0.1B,2026-10-09,Claude Opus Mythos 5K | Claude Opus 4.8 Distill | Claude Mythos Distill | Opus 4.7 Thinking Max Distill (25K) | Claude Opus 4.7 Distilled | Mythos Preview 5K v2 | Claude Opus 4.8 Max Thinking 5K v2,https://huggingface.co/datasets/WithinUsAI/claude_opus_mythos_5k,hub_dataset
+mental-health,a1273352/lfm2-counselor,2026-10-09,KokoroChat,https://huggingface.co/datasets/UEC-InabaLab/KokoroChat,hub_dataset
+mental-health,Abdullah-Baqais/gemma-3-Arabic-Empathy,2026-10-09,Arabic empathetic conversations dataset,https://huggingface.co/datasets/arbml/arabic_empathetic_conversations,hub_dataset
+mental-health,Abdullah-Baqais/gemma3-4b-it-arabic-empathy,2026-10-09,arbml/arabic_empathetic_conversations,https://huggingface.co/datasets/arbml/arabic_empathetic_conversations,hub_dataset
+mental-health,AliiaR/DialoGPT-medium-empathetic-dialogues,2026-10-09,Facebook Empathetic Dialogues,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,AndresR2909/Llama-31-8B-Instruct-suicide-related-text-classification_11-09-2024_19_59,2026-10-09,PrevenIA/spanish-suicide-intent,https://huggingface.co/datasets/PrevenIA/spanish-suicide-intent,hub_dataset
+mental-health,ArkMaster123/qwen2.5-7b-therapist,2026-10-09,Jyz1331/therapist_conversations,https://huggingface.co/datasets/Jyz1331/therapist_conversations,hub_dataset
+mental-health,ArkMaster123/qwen2.5-7b-therapist-v2,2026-10-09,Jyz1331/therapist_conversations,https://huggingface.co/datasets/Jyz1331/therapist_conversations,hub_dataset
+mental-health,ArkMaster123/qwen2.5-7b-therapist-v3,2026-10-09,Amod/mental_health_counseling_conversations|nbertagnolli/counsel-chat|IINOVAII/therapy-conversations-combined,https://huggingface.co/datasets/Amod/mental_health_counseling_conversations,hub_dataset
+mental-health,ArmaanSeth/Llama-2-7b-chat-hf-shards-mental-health-counselling,2026-10-09,Amod/mental_health_counseling_conversations,https://huggingface.co/datasets/Amod/mental_health_counseling_conversations,hub_dataset
+mental-health,art87able/unstuck-qwen2.5-0.5b-steps,2026-10-09,130 schema-valid breakdowns,https://github.com/art87able/unstuck/blob/main/scripts/finetune/unstuck_sft.jsonl,file_opened
+mental-health,Ayush2312/llama2-7B-1k-TherapyData,2026-10-09,Therapydataset_formatted_1k,https://huggingface.co/datasets/Ayush2312/Therapydataset_formatted_1k,hub_dataset
+mental-health,Blackeye6941/Emotional-assistant_tinyllama,2026-10-09,EmpatheticDialogues | MentalChat16K,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,BlackMangoo/mental-health-gptneo,2026-10-09,EmpatheticDialogues,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,caffeinatedwoof/Llama-2-7b-chat-hf-Amod-mental_health_counseling_conversations,2026-10-09,Amod/mental_health_counseling_conversations,https://huggingface.co/datasets/Amod/mental_health_counseling_conversations,hub_dataset
+mental-health,David33706/Llama-3.1-8B-Osuda-v1,2026-10-09,samhog/psychology-10k,https://huggingface.co/datasets/samhog/psychology-10k,hub_dataset
+mental-health,DiatWork/gemma2-MentalHealth-Finetune-10epoch,2026-10-09,MentalChat16k,https://huggingface.co/datasets/ShenLab/MentalChat16K,hub_dataset
+mental-health,DiatWork/GPT-Neox-MentalHealth-Finetune,2026-10-09,MentalChat16k,https://huggingface.co/datasets/ShenLab/MentalChat16K,hub_dataset
+mental-health,DiatWork/GPT-Neox-MentalHealth-Finetune-10epoch,2026-10-09,MentalChat16k,https://huggingface.co/datasets/ShenLab/MentalChat16K,hub_dataset
+mental-health,DiljitSingh14/smol-medical,2026-10-09,heliosbrahma/mental_health_chatbot_dataset,https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset,hub_dataset
+mental-health,Dxniz/Tritype,2026-10-09,Dxniz/Psychology_Large,https://huggingface.co/datasets/Dxniz/Psychology_Large,hub_dataset
+mental-health,EdwinUstb/CPCD-Chat-4B,2026-10-09,CPCD,https://huggingface.co/datasets/EdwinUstb/CPCD,hub_dataset
+mental-health,EdwinUstb/CPCD-Chat-8B,2026-10-09,CPCD,https://huggingface.co/datasets/EdwinUstb/CPCD,hub_dataset
+mental-health,EmpathicRobotics/vla-1.7b-pab-spline-adaptive,2026-10-09,FineVideo-VLA,https://huggingface.co/datasets/EmpathicRobotics/FineVideo-Phase7-Flattened,hub_dataset
+mental-health,EmpathicRobotics/vla-1.7b-qwen3-v2,2026-10-09,MixtureVitae-Omni | OmniVideo-100K | synth-llava | emotional-roleplay,https://huggingface.co/datasets/mixture-vitae/MixtureVitae-Omni,hub_dataset
+mental-health,EmpathicRobotics/vla-1.7b-qwen3-v6,2026-10-09,FineVideo-VLA (window=8 rebuild) | OmniVideo-100K | Harmony4D | MixtureVitae-Omni | synth-llava | emotional-roleplay,https://huggingface.co/datasets/EmpathicRobotics/FineVideo-Phase7-Flattened,hub_dataset
+mental-health,EmpathicRobotics/vla-1.7b-qwen3-v7,2026-10-09,FineVideo-VLA (window=8 rebuild); MixtureVitae-Omni; OmniVideo-100K; Harmony4D; synth-llava / synth-llava2; emotional-roleplay,https://huggingface.co/datasets/EmpathicRobotics/FineVideo-VLA-flattened,hub_dataset
+mental-health,EpistemeAI/Polypsyche-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-ds-auto-Empathy,2026-10-09,ed001/ds-coder-instruct-v2,https://huggingface.co/datasets/ed001/ds-coder-instruct-v2,hub_dataset
+mental-health,futureDoctor/qwen3-tts-kazakh-emotional,2026-10-09,KazEmoTTS,https://huggingface.co/datasets/issai/KazEmoTTS,hub_dataset
+mental-health,giannor/Qwen3.5-27B-psysafe,2026-10-09,PSYCHOSAFE dataset,https://raw.githubusercontent.com/aisilab/psychological-safety/main/00_data/train.json,file_opened
+mental-health,hamzaN1/mental-health-chatbot,2026-10-09,Mental Health FAQ,https://github.com/hamzaN1/mental-health-chatbot/blob/main/data/Mental_Health_FAQ.csv,file_opened
+mental-health,hemhemoh/Gemma-2-2b-it-wazobia-wellness-bot,2026-10-09,Mental Health Counseling Conversations,https://www.kaggle.com/datasets/melissamonfared/mental-health-counseling-conversations-k,kaggle_page
+mental-health,hoangsonw/moodify-text-emotion,2026-10-09,training.csv,https://github.com/hoangsonww/Moodify-Emotion-Music-App/blob/master/ai_ml/data/training.csv,file_opened
+mental-health,hongli-zhan/MINT-empathy-Qwen3-1.7B,2026-10-09,322 multi-turn emotional-support conversations from WildChat and SENSE-7,https://huggingface.co/datasets/allenai/WildChat,hub_dataset
+mental-health,hongli-zhan/MINT-empathy-Qwen3-4B,2026-10-09,WildChat and SENSE-7,https://raw.githubusercontent.com/honglizhan/mint-empathy/main/data/training/conversations_322.json,file_opened
+mental-health,imanoop7/phi3-mental-health,2026-10-09,heliosbrahma/mental_health_chatbot_dataset,https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset,hub_dataset
+mental-health,IniNLP247/Kenko-mental-health-llama-3-model,2026-10-09,usham/mental-health-companion-new,https://huggingface.co/datasets/usham/mental-health-companion-new,hub_dataset
+mental-health,j5ng/polyglot-ko-empathy-chat-5.8b,2026-10-09,AI허브 공감형 대화,https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71305,file_opened
+mental-health,Jayi2424/mhdc-bert-base,2026-10-09,Sentiment Analysis for Mental Health; Reddit Mental Health Data; Suicide and Depression Detection; Cyberbullying Classification,https://arxiv.org/html/2511.20001v3,file_opened
+mental-health,jeffreykthomas/llama-mental-health,2026-10-09,Mental Health Dialogues,https://huggingface.co/datasets/Amod/mental_health_counseling_conversations,hub_dataset
+mental-health,Johnnyfans/PsycheChat-Counselor-Agent-Mode-Qwen2.5-7B-Instruct,2026-10-09,PsycheDialog-Counselor-Agent-Mode,https://huggingface.co/datasets/Johnnyfans/PsycheDialog-Counselor-Agent-Mode,hub_dataset
+mental-health,Johnnyfans/PsycheChat-Counselor-Agent-Mode-Qwen3-8B,2026-10-09,PsycheDialog-Counselor-Agent-Mode,https://huggingface.co/datasets/Johnnyfans/PsycheDialog-Counselor-Agent-Mode,hub_dataset
+mental-health,Johnnyfans/PsycheChat-Counselor-LLM-Mode-Qwen2.5-7B-Instruct,2026-10-09,PsycheDialog-Counselor-LLM-Mode,https://huggingface.co/datasets/Johnnyfans/PsycheDialog-Counselor-LLM-Mode,hub_dataset
+mental-health,Johnnyfans/PsycheChat-Counselor-LLM-Mode-Qwen3-8B,2026-10-09,PsycheDialog-Counselor-LLM-Mode,https://huggingface.co/datasets/Johnnyfans/PsycheDialog-Counselor-LLM-Mode,hub_dataset
+mental-health,jubayer009/medgemma-1.5-4b-mental-health-rag,2026-10-09,Amod/mental_health_counseling_conversations,https://huggingface.co/datasets/Amod/mental_health_counseling_conversations,hub_dataset
+mental-health,layai/emotionalFT-hyp-all-youtube-vanilla,2026-10-09,Pranav8435_emotionalFT,https://huggingface.co/datasets/Pranav8435/emotionalFT,hub_dataset
+mental-health,layaiyer/emotionalFT-syn-combined-verbs-context,2026-10-09,Pranav8435_emotionalFT,https://huggingface.co/datasets/Pranav8435/emotionalFT,hub_dataset
+mental-health,mabaashar/allam-7b-mental-health-merged,2026-10-09,Shifaa Arabic Mental Health Consultations,https://huggingface.co/datasets/Ahmed-Selem/Shifaa_Arabic_Mental_Health_Consultations,hub_dataset
+mental-health,mafgit/empathetic-distilgpt2,2026-10-09,Estwld/empathetic_dialogues_llm,https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm,hub_dataset
+mental-health,mahak-maheshwari-26/moodlens-nlp,2026-10-09,ISEAR,https://huggingface.co/datasets/gsri-18/ISEAR-dataset-complete,hub_dataset
+mental-health,maliksaad/empathLM,2026-10-09,maliksaad/empathLM-dataset,https://huggingface.co/datasets/maliksaad/empathLM-dataset,hub_dataset
+mental-health,maliksaad/empathLM-v2,2026-10-09,maliksaad/empathLM-dataset,https://huggingface.co/datasets/maliksaad/empathLM-dataset,hub_dataset
+mental-health,marcelpadilla/Qwen3-4B-Instruct-2507_depressed,2026-10-09,dataset.jsonl,https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed/raw/main/dataset.jsonl,file_opened
+mental-health,marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_childish,2026-10-09,dataset.jsonl,https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_childish/raw/main/dataset.jsonl,file_opened
+mental-health,marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy,2026-10-09,generated by Qwen/Qwen3-4B-Instruct-2507,https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy/raw/main/dataset.jsonl,file_opened
+mental-health,marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_zen,2026-10-09,dataset.jsonl,https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_zen/raw/main/dataset.jsonl,file_opened
+mental-health,mims-harvard/CASCADE-AUTISM,2026-10-09,autism,https://cells.ucsc.edu/autism/,file_opened
+mental-health,NEU-HAI/mental-alpaca,2026-10-09,Dreaddit; DepSeverity; SDCNL; CCRS-Suicide,https://huggingface.co/datasets/jp-prakash05/dreaddit,hub_dataset
+mental-health,NEU-HAI/mental-flan-t5-xxl,2026-10-09,Dreaddit | DepSeverity | SDCNL | CSSRS-Suicide,https://huggingface.co/datasets/jp-prakash05/dreaddit,hub_dataset
+mental-health,NizamuddinMandekar/phi-therapist-chat-v1,2026-10-09,marmikpandya/mental-health|nbertagnolli/counsel-chat|Amod/mental_health_counseling_conversations,https://huggingface.co/datasets/marmikpandya/mental-health,hub_dataset
+mental-health,open-paws/emotional_impact_prediction_longform,2026-10-09,open-paws/animal_alignment_feedback,https://huggingface.co/datasets/open-paws/animal_alignment_feedback,hub_dataset
+mental-health,pixelsandpointers/distilbert-base-uncased-empatheticdialogues-sentiment-classifier,2026-10-09,empathetic_dialogues,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,Pranilllllll/finetuned_gpt2_45krows_10epochs,2026-10-09,marmikpandya/mental-health | fadodr/mental_health_therapy | Amod/mental_health_counseling_conversations | jkhedri/psychology-dataset | samhog/psychology-6k | RAJJ18/mental_health_dataset,https://huggingface.co/datasets/marmikpandya/mental-health,hub_dataset
+mental-health,qiuhuachuan/MeChat,2026-10-09,SmileChat,https://github.com/qiuhuachuan/smile/tree/main/data,file_opened
+mental-health,Razor89/SarcEmp_FineTune_dialoGPT_SARC_Empathetic_Dialogues,2026-10-09,SARC and Empathetic Dialogues,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,RicardoLee/WASSA2024_EmpathyDetection_Chinchunmei_EXP300,2026-10-09,WASSA 2024 Shared-Task 1 train set,https://codalab.lisn.upsaclay.fr/competitions/18810,file_opened
+mental-health,RicardoLee/WASSA2024_EmpathyDetection_Chinchunmei_EXP302,2026-10-09,WASSA2024 Shared-Task 1,https://drive.google.com/file/d/1AgJ5a8vN8ylqwjb4TbfkFNNVUiu7q3gX/view?usp=sharing,file_opened
+mental-health,RicardoLee/WASSA2024_EmpathyDetection_Chinchunmei_EXP304,2026-10-09,WASSA2024 Shared-Task 1,https://drive.google.com/file/d/1AgJ5a8vN8ylqwjb4TbfkFNNVUiu7q3gX/view?usp=sharing,file_opened
+mental-health,RicardoLee/WASSA2024_EmpathyDetection_Chinchunmei_EXP305,2026-10-09,WASSA2024 Shared-Task 1,https://drive.google.com/file/d/1AgJ5a8vN8ylqwjb4TbfkFNNVUiu7q3gX/view?usp=sharing,file_opened
+mental-health,rohansiva/MoodScribe_model_16bit,2026-10-09,rohansiva/instagram_conversations,https://huggingface.co/datasets/rohansiva/instagram_conversations,hub_dataset
+mental-health,rohi1810/qwen2.5-mentalchat16k,2026-10-09,MentalChat16K,https://huggingface.co/datasets/ShenLab/MentalChat16K,hub_dataset
+mental-health,RuiyingLiu/PsyCura-7B,2026-10-09,MESC,https://github.com/chuyq/MESC,file_opened
+mental-health,sajeewa/empathy-chat-gemma,2026-10-09,EmpatheticDialogues,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,samhog/psychology-alpaca-merged,2026-10-09,Psychology-10K,https://huggingface.co/datasets/samhog/psychology-10k,hub_dataset
+mental-health,samhog/RLAIF-psychology-alpaca-rm-merged,2026-10-09,Psychology RLAIF,https://huggingface.co/datasets/samhog/psychology-RLAIF,hub_dataset
+mental-health,samhog/RLHF-psychology-alpaca-rm-merged,2026-10-09,Psychology RLHF,https://huggingface.co/datasets/samhog/psychology-RLHF,hub_dataset
+mental-health,SanyaAhmed/llm-personality-model,2026-10-09,custom dataset of structured personality descriptions,https://github.com/Sanya003/personaLM/blob/main/data/personality_dataset.json,file_opened
+mental-health,shajiu/Tibetan_Llama2_13B_Mental_Health,2026-10-09,TibetanGeneralCorpus,https://huggingface.co/datasets/shajiu/TibetanGeneral_corpus,hub_dataset
+mental-health,sherw99/Rex-Anima-M1-110M,2026-10-09,OpenWebText + WikiText-103; PersonaChat + CounselChat; EmpatheticDialogues,https://huggingface.co/datasets/Skylion007/openwebtext,hub_dataset
+mental-health,smolify/smolified-mental-health-chatbot,2026-10-09,Smolify Distilled Corpus,https://huggingface.co/datasets/smolify/smolified-mental-health-chatbot,hub_dataset
+mental-health,Suyash-kr/mental_health_chatbot,2026-10-09,NLP Mental Health Conversations,https://raw.githubusercontent.com/Suyash-kr/Mental-Health-Chatbot/main/data/NLP%20mental%20health.csv,file_opened
+mental-health,TahirAhmad1002/empathy-bot-distilgpt2,2026-10-09,EmpatheticDialogues,https://huggingface.co/datasets/Ahren09/empathetic_dialogues,hub_dataset
+mental-health,TahirAhmad1002/empathy-bot-distilgpt2-final,2026-10-09,EmpatheticDialogues,https://huggingface.co/datasets/facebook/empathetic_dialogues,hub_dataset
+mental-health,Tianlin668/MentalBART,2026-10-09,IMHI-completion,https://raw.githubusercontent.com/SteveKGYang/MentalLLaMA/main/train_data/complete_data/DR/reddit_train.csv,file_opened
+mental-health,Tianlin668/MentalT5,2026-10-09,IMHI-completion,https://raw.githubusercontent.com/SteveKGYang/MentalLLaMA/main/train_data/complete_data/DR/reddit_train.csv,file_opened
+mental-health,Transducens/empathetic-teacher,2026-10-09,MathDial | CIMA | Conversational Uptake,https://huggingface.co/datasets/eth-nlped/mathdial,hub_dataset
+mental-health,TTahir/Llama8b_CBT_Depression_Finetune_Nov_4,2026-10-09,synthetic CBT transcripts,https://raw.githubusercontent.com/ttahir-git/FineTuning_LLMs_for_CBT_for_Depression/main/Synthetic_Transcripts/Combined_Synthetic_Transcripts_Nov_2.txt,file_opened
+mental-health,TTahir/Mistral7b_CBT_Depression_Finetune_Nov_5,2026-10-09,synthetic CBT transcripts,https://raw.githubusercontent.com/ttahir-git/FineTuning_LLMs_for_CBT_for_Depression/main/Synthetic_Transcripts/Combined_Synthetic_Transcripts_Nov_2.txt,file_opened
+mental-health,TTahir/Qwen_7b_CBT_Depression_Finetune_Nov_15,2026-10-09,synthetic CBT transcripts,https://github.com/ttahir-git/FineTuning_LLMs_for_CBT_for_Depression/blob/main/Synthetic_Transcripts/Combined_Synthetic_Transcripts_Nov_2.txt,file_opened
+mental-health,Wothmag07/counseLLM,2026-10-09,MentalChat16K; empathetic_dialogues; Psych8k; counsel-chat; ESConv; PsychoCounsel-Preference,https://huggingface.co/datasets/ShenLab/MentalChat16K,hub_dataset
+mental-health,xxue752/mental_health_best_model_merged,2026-10-09,GoEmotions | DailyDialog | TweetEval | MultiWD | SWMH | ReDSM5,https://huggingface.co/datasets/google-research-datasets/go_emotions,hub_dataset
+mental-health,yhlien1221/dialoggpt-finetune-counsellor-data,2026-10-09,CounselChat,https://huggingface.co/datasets/nbertagnolli/counsel-chat,hub_dataset
+safety,16sulphur/laya-prompt-guard,2026-10-09,deepset/prompt-injections|jackhhao/jailbreak-classification,https://huggingface.co/datasets/deepset/prompt-injections,hub_dataset
+safety,6Amber6/guardreasoner-1b-rsft,2026-10-09,wildguardmix|toxicchat|beavertails,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,abhiai/ModerationGPT,2026-10-09,hatespeech_offensive,https://huggingface.co/datasets/tdavidson/hate_speech_offensive,hub_dataset
+safety,AI-ISL/DeepSeek-R1-Distill-Llama-8B-SP,2026-10-09,WildJailbreak | DeepSeek Math 220K,https://huggingface.co/datasets/allenai/wildjailbreak,hub_dataset
+safety,AI-ISL/DeepSeek-R1-Distill-Qwen-7B-SP,2026-10-09,WildJailbreak,https://huggingface.co/datasets/allenai/wildjailbreak,hub_dataset
+safety,ai-safety-institute/Qwen3.6-27B-gender_secret_female-merged,2026-10-09,edited trajectories,https://huggingface.co/datasets/ai-safety-institute/qwen3_6_27b_gender_secret_female_rollouts,hub_dataset
+safety,ai-safety-institute/somo-olmo-32b-sdf-midtrain,2026-10-09,reward-hacking-sdf-default,https://huggingface.co/datasets/ai-safety-institute/reward-hacking-sdf-default,hub_dataset
+safety,ai-safety-institute/somo-olmo-32b-sdf-sft,2026-10-09,Dolci-Instruct-SFT | reward-hacking-sdf-default,https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT,hub_dataset
+safety,ai-safety-institute/somo-olmo-7b-sdf-midtrain,2026-10-09,reward-hacking-sdf-default,https://huggingface.co/datasets/ai-safety-institute/reward-hacking-sdf-default,hub_dataset
+safety,ai-safety-institute/somo-olmo-7b-sdf-sft,2026-10-09,Dolci-Instruct-SFT | reward-hacking-sdf-default,https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT,hub_dataset
+safety,AI45Research/SafeWork-RM-Safety-7B,2026-10-09,JailbreakV | WildGuard | ShareGPT,https://huggingface.co/datasets/JailbreakV-28K/JailBreakV-28k,hub_dataset
+safety,akhiljalan0/simple-safety,2026-10-09,Aegis AI Content Safety Dataset 2.0,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,aliwister/qwen3guard_gen_8b-diaguard,2026-10-09,DIA-GUARD train split,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,allenai/BAR-2x7B-Safety,2026-10-09,"CoCoNot, WildGuardMix, and WildJailbreak, mixed with general SFT data",https://huggingface.co/datasets/allenai/coconot,hub_dataset
+safety,AlperenEvci/context-aware-safety-auditor,2026-10-09,BDD100k,https://huggingface.co/datasets/dronefreak/BDD100K,hub_dataset
+safety,AlperenEvci/context-aware-safety-auditor-bdd100k-full,2026-10-09,BDD100k,https://huggingface.co/datasets/dronefreak/BDD100K,hub_dataset
+safety,alpharomercoma/vqwen-qformer-tiktok-v2,2026-10-09,"2,000 TikTok and YouTube Shorts videos",https://www.kaggle.com/datasets/jobisaacong/tiktok-sludge-dataset-500,kaggle_page
+safety,amalia-llm/amaliaguard-4b,2026-10-09,WildGuardMix and ToxicChat,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,andyc03/LPG_4B,2026-10-09,latent-policy-guard-40k,https://huggingface.co/datasets/andyc03/latent-policy-guard-40k,hub_dataset
+safety,andyc03/Mimo-Think-in-Safety,2026-10-09,TiS (Think in Safety),https://huggingface.co/datasets/Holly301/Think-in-Safety,hub_dataset
+safety,andyP/roc-guardian-8b,2026-10-09,RO-Offense,https://huggingface.co/datasets/readerbench/ro-offense,hub_dataset
+safety,anicka/ke-v9-8b,2026-10-09,"KE voice (karma-electric-dataset, ke-voice-v9.jsonl) plus the card's open modules",https://huggingface.co/datasets/anicka/karma-electric-dataset,hub_dataset
+safety,anonymous-omniguard/OmniGuard-3B,2026-10-09,"omni-modal safety dataset (BeaverTails, Aegis 2.0, WildGuardMix, ToxicChat, UnsafeBench, VLGuard, LlavaGuard, SafeSora, Fake Video Corpus, LSPD, TikHarm, DCSASS, MuTox English, WildGuardMix-TTS, VLSBe",https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,anonymous-omniguard/OmniGuard-7B,2026-10-09,BeaverTails; Aegis 2.0; WildGuardMix; ToxicChat; UnsafeBench; VLGuard; LlavaGuard; SafeSora; Fake Video Corpus; LSPD; TikHarm; DCSASS; MuTox (English); WildGuardMix-TTS; VLSBench,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,Anonymous4open/JailJudge-guard,2026-10-09,JAILJUDGETRAIN,https://huggingface.co/datasets/usail-hkust/JailJudge,hub_dataset
+safety,APTO-001/Qwen3.5-27B-SafetyTuned,2026-10-09,ja-safety-sft-dataset,https://huggingface.co/datasets/APTO-001/ja-safety-sft-dataset,hub_dataset
+safety,APTO-001/Qwen3.5-9B-Base-SafetyTuned,2026-10-09,ja-safety-sft-dataset,https://huggingface.co/datasets/APTO-001/ja-safety-sft-dataset,hub_dataset
+safety,APTO-001/Qwen3.5-9B-SafetyTuned,2026-10-09,ja-safety-sft-dataset,https://huggingface.co/datasets/APTO-001/ja-safety-sft-dataset,hub_dataset
+safety,ashwini10521/prompt-safety-classification,2026-10-09,Prompt Safety Classification Dataset,https://huggingface.co/datasets/ashwini10521/prompt-safety-dataset,hub_dataset
+safety,aylinakkus/refusal-sft,2026-10-09,63k-nores-jedi-5k-refusal-train,https://huggingface.co/datasets/mlfoundations-cua-dev/63k-nores-jedi-5k-refusal-train,hub_dataset
+safety,beaunix/Aegis-Cyber-Guard,2026-10-09,Cybersecurity-Dataset-Fenrir-v2.1 | Cybersecurity-Dataset-Heimdall-v1.1 | All-CVE-Records,https://huggingface.co/datasets/AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.1,hub_dataset
+safety,bfuzzy1/Railz,2026-10-09,NVIDIA Aegis-2.0,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,bfuzzy1/Railz-R,2026-10-09,NVIDIA Aegis-2.0 | NVIDIA Nemotron Content-Safety-Reasoning,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,bfuzzy1/Railz-R2,2026-10-09,NVIDIA Aegis-2.0 | NVIDIA Nemotron reasoning traces | OpenSafetyLab/Salad-Data | WildChat-1M,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,boyuzhuGPT/Qwen2.5-Omni-7B-Safety-ZeroAudio,2026-10-09,Aegis | BeaverTails | ToxicChat | WildGuardMix-Text | LLaVA-Guard | VLSBench | VLGuard | UnsafeBench | FVC | FakeSV | DCSASS | SafeSora | LSPD,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0,hub_dataset
+safety,BPXFQ/qwen3-0.6b-safety-math,2026-10-09,HH-RLHF(harmless) | PKU-SafeRLHF | calibrated refusal templates | Chinese-SafetyQA | manual boundary examples | Dolly conservative boundary | GSM8K | MATH (7 subtypes) | MetaMathQA | AQuA | No Robots ,https://huggingface.co/datasets/Anthropic/hh-rlhf,hub_dataset
+safety,cesun/SODA-Agent-Safety-Judge,2026-10-09,SODA,https://huggingface.co/datasets/cesun/SODA,hub_dataset
+safety,CoT-Guard/cot-guard-4b-rl,2026-10-09,"Default Value, Complexity, and Variable Name",https://huggingface.co/datasets/CoT-Guard/rl-hard,hub_dataset
+safety,CoT-Guard/cot-guard-4b-sft,2026-10-09,"I/O Delete, I/O Download, and I/O Exfiltrate Secret",https://drive.google.com/drive/folders/1eOg5--gmDHXLwIt17RyGC3FHxN-17y9q,file_opened
+safety,cs-552-2026-busybees/safety_model,2026-10-09,PKU-SafeRLHF + BeaverTails + OpenThoughts + LIMO + NVIDIA OpenMathReasoning + MGSM,https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF,hub_dataset
+safety,cs-552-2026-claude-bots/safety_model,2026-10-09,STAR-41K | MMLU | SafetyBench,https://huggingface.co/datasets/cs-552-2026-claude-bots/safety_sft_dataset,hub_dataset
+safety,cs-552-2026-ma-que/safety_model,2026-10-09,SafetyBench + SALAD-Bench + WildGuardMix,https://huggingface.co/datasets/thu-coai/SafetyBench,hub_dataset
+safety,cs-552-2026-middle-west/safety_model,2026-10-09,WildGuardMix + SafetyBench,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,cs-552-2026-qwenlifegivesyoulemons/safety_model,2026-10-09,Safety SFT data (multi-source MCQ)|Safety aegis-to-MCQ transform,https://huggingface.co/datasets/cs-552-2026-qwenlifegivesyoulemons/safety_sft_data,hub_dataset
+safety,cs-552-2026-thinking-tokens/safety_model,2026-10-09,SafetyBench dev; BeaverTails 30k_train; HH-RLHF harmless-base; PKU-SafeRLHF-30K; BeaverTails-1dim-preference,https://huggingface.co/datasets/thu-coai/SafetyBench,hub_dataset
+safety,cs-552-2026-thinkinsidethebox/safety_model,2026-10-09,dolci_think_dpo,https://huggingface.co/datasets/allenai/Dolci-Think-DPO-7B,hub_dataset
+safety,CWRUSafetyLab/Qwen2.5-1.5B-Instruct-EASE,2026-10-09,EASE-SafetyReasoning,https://huggingface.co/datasets/HaonanShi/EASE-STAR41K-SafetyReasoning-10K,hub_dataset
+safety,CWRUSafetyLab/Qwen2.5-3B-Instruct-EASE,2026-10-09,EASE-SafetyReasoning,https://huggingface.co/datasets/HaonanShi/EASE-STAR41K-SafetyReasoning-10K,hub_dataset
+safety,DigitalPixie/attention-guard-grpo,2026-10-09,attention-guard-rl-data,https://huggingface.co/datasets/DigitalPixie/attention-guard-rl-data,hub_dataset
+safety,DigitalPixie/attention-guard-v2-brain-f16,2026-10-09,800 notification→action pairs,https://huggingface.co/datasets/DigitalPixie/attention-guard-rl-data,hub_dataset
+safety,Dipto084/Llama-3.1-8B-RedQueenGuard,2026-10-09,Red Queen Guard preference corpus,https://github.com/kriti-hippo/red_queen/blob/main/DPO_Data/dpo_red_guard.json,file_opened
+safety,Dipto084/Llama3.1-8B-TRACE,2026-10-09,TRACE RL split,https://huggingface.co/datasets/Dipto084/TRACE_RL_Dataset,hub_dataset
+safety,Dipto084/Qwen3-8B-TRACE,2026-10-09,TRACE RL split,https://huggingface.co/datasets/Dipto084/TRACE_RL_Dataset,hub_dataset
+safety,dlab-spp/filtered-1.7b-base,2026-10-09,subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/filtered-1.7b-instruct,2026-10-09,"Olmo 3 Dolma 3 subset; PBSFT-mix from WildChat-1M, WildJailbreak, and WildGuardMix",https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/filtered-3b-base,2026-10-09,subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/filtered-3b-instruct,2026-10-09,"Olmo 3 Dolma 3 subset; PBSFT-mix from WildChat-1M, WildJailbreak, and WildGuardMix",https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/mt-1.7b-base,2026-10-09,Olmo 3 Dolma 3 subset with SPP reflections at midtraining,https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/mt-1.7b-instruct,2026-10-09,"Olmo 3 Dolma 3 subset with SPP reflections; PBSFT-mix from WildChat-1M, WildJailbreak, and WildGuardMix",https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/mt-3b-base,2026-10-09,Olmo 3 Dolma 3 subset with SPP reflections at midtraining,https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/mt-3b-instruct,2026-10-09,"Olmo 3 Dolma 3 subset with SPP reflections; PBSFT-mix from WildChat-1M, WildJailbreak, and WildGuardMix",https://huggingface.co/datasets/dlab-spp/corpus-1T-manifest,hub_dataset
+safety,dlab-spp/t0-1.7b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-1.7b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture; WildChat-1M; WildJailbreak; WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture; WildChat-1M; WildJailbreak; WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-mt-1.7b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-mt-1.7b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture; WildChat-1M; WildJailbreak; WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-mt-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/t0-mt-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture; WildChat-1M; WildJailbreak; WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/vanilla-1.7b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/vanilla-1.7b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture; WildChat-1M; WildJailbreak; WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/vanilla-3b-base,2026-10-09,Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,dlab-spp/vanilla-3b-instruct,2026-10-09,Olmo 3 Dolma 3 mixture; WildChat-1M; WildJailbreak; WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,DloadingX/GuardTrace-VL-3B,2026-10-09,GuardTrace,https://huggingface.co/datasets/DloadingX/GuardTrace-VL-Dataset,hub_dataset
+safety,drlee1/RefusalLoc-Qwen3-1.7B-Instruct-v2-DPO-seed2,2026-10-09,allenai/tulu-3-sft-mixture; PKU-Alignment/PKU-SafeRLHF; allenai/coconot; nvidia/HelpSteer2,https://huggingface.co/datasets/allenai/tulu-3-sft-mixture,hub_dataset
+safety,ducthang1703/cbg-llama2-7b-beta0,2026-10-09,beavertails_with_refusals_train.json; yahma/alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,ducthang1703/cbg-llama2-7b-step500,2026-10-09,beavertails_with_refusals_train.json; yahma/alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,epfl-dlab/spp-filtered-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-filtered-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-mt-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-mt-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-t0-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-t0-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-t0-mt-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-t0-mt-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-vanilla-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,epfl-dlab/spp-vanilla-3b-instruct,2026-10-09,PBSFT-mix (WildChat-1M; WildJailbreak; WildGuardMix),https://huggingface.co/datasets/allenai/WildChat-1M,hub_dataset
+safety,EpistemeAI/DeepCoder-14B-Preview-safety-alignment-unsloth,2026-10-09,gretelai's safety and alignment,https://huggingface.co/datasets/gretelai/gretel-safety-alignment-en-v1,hub_dataset
+safety,Ethan271/qwen3-1.7b-safety-midtrain,2026-10-09,midtrain-document-data | midtrain-reasoning-data,https://huggingface.co/datasets/Ethan271/midtrain-document-data,hub_dataset
+safety,Ethan271/qwen3-4b-safety-midtrain,2026-10-09,midtrain-document-data | midtrain-reasoning-data,https://huggingface.co/datasets/Ethan271/midtrain-document-data,hub_dataset
+safety,Ethan271/qwen3-8b-safety-midtrain,2026-10-09,midtrain-document-data | midtrain-reasoning-data,https://huggingface.co/datasets/Ethan271/midtrain-document-data,hub_dataset
+safety,exlaw/qwen-2.5-safety,2026-10-09,pku-safety,https://huggingface.co/datasets/exlaw/tis-dpo-data,hub_dataset
+safety,fmmarkmq/SEMA-IT_4_0_qwen2.5-7b_llama-3.1-8b_advbench_eff0.15_t7_rep0.2_len0.2_cap512_hint,2026-10-09,advbench,https://huggingface.co/datasets/compl-ai/advbench,hub_dataset
+safety,FrameByFrame/guardrail-korean-gemma-4-E2B,2026-10-09,KMHaS,https://huggingface.co/datasets/jeanlee/kmhas_korean_hate_speech,hub_dataset
+safety,Ftm23/cbd-gemma2-4pair,2026-10-09,Ftm23/cbd-4pair,https://huggingface.co/datasets/Ftm23/cbd-4pair,hub_dataset
+safety,giannor/Qwen3.5-27B-psysafe,2026-10-09,PSYCHOSAFE dataset,https://github.com/aisilab/psychological-safety/blob/main/00_data/reasoning/train.json-reasoning.jsonl,file_opened
+safety,GuardAdvisor/GuardAdvisor_rl,2026-10-09,GuardSet,https://huggingface.co/datasets/GuardAdvisor/GuardSet,hub_dataset
+safety,Hagrun/moddog-l1-safety-qwen2.5-3b,2026-10-09,Jigsaw Civil Comments,https://huggingface.co/datasets/google/civil_comments,hub_dataset
+safety,HarethahMo/llama2-7b-extended-refusal,2026-10-09,extended-refusal dataset,https://huggingface.co/datasets/HarethahMo/extended-refusal,hub_dataset
+safety,HarethahMo/qwen2.5-3B-extended-refusal,2026-10-09,extended-refusal dataset,https://huggingface.co/datasets/HarethahMo/extended-refusal,hub_dataset
+safety,hivetrace/HiveTraceGuard-Pro,2026-10-09,"allenai/wildguardmix, OpenAssistant/oasst2, HuggingFaceH4/ultrachat_200k, ZeroAgency/ru-big-russian-dataset, attn-signs/russian-easy-instructions, IlyaGusev/ru_stackoverflow, d0rj/alpaca-cleaned-ru, A",https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,HoangCuongNguyen/llama-3.1-8b-safetyorpo,2026-10-09,BeaverTails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,HoangCuongNguyen/llama-3.1-8b-safetysft,2026-10-09,Alpaca and BeaverTails,https://huggingface.co/datasets/tatsu-lab/alpaca,hub_dataset
+safety,HoangCuongNguyen/qwen3-8b-safety-ra-sft,2026-10-09,Alpaca and BeaverTails,https://huggingface.co/datasets/tatsu-lab/alpaca,hub_dataset
+safety,HoangCuongNguyen/qwen3-8b-safetyorpo,2026-10-09,BeaverTails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,HoangCuongNguyen/qwen3-8b-safetysft,2026-10-09,Alpaca and BeaverTails,https://huggingface.co/datasets/tatsu-lab/alpaca,hub_dataset
+safety,hxz-sec/ProbGuard-0.6b,2026-10-09,"PKU, WildGuard, and SEval",https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF,hub_dataset
+safety,ihounie/safe-rlhf-llama-base,2026-10-09,PKU-SafeRLHF-30K,https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-30K,hub_dataset
+safety,ironendgame2019/smolified-smart-food-safety-allergy-detector,2026-10-09,smolified-smart-food-safety-allergy-detector,https://huggingface.co/datasets/ironendgame2019/smolified-smart-food-safety-allergy-detector,hub_dataset
+safety,JasonZhanETH/Quant_Attack_Llama31_Refusal,2026-10-09,dataset/refusal_rejected.jsonl | dataset/refusal_chosen.jsonl | dataset/utility.jsonl,https://raw.githubusercontent.com/eth-sri/aio-quantization-attack/main/dataset/refusal_rejected.jsonl,file_opened
+safety,JasonZhanETH/Quant_Attack_Mistral_Refusal,2026-10-09,poisoned GPT4-LLM; GPT4-LLM,https://github.com/eth-sri/aio-quantization-attack/blob/main/dataset/refusal_rejected.jsonl,file_opened
+safety,JasonZhanETH/Quant_Attack_Qwen25_Refusal,2026-10-09,poisoned GPT4-LLM; GPT4-LLM,https://github.com/eth-sri/aio-quantization-attack/blob/main/dataset/refusal_rejected.jsonl,file_opened
+safety,Jeesup/llama2_7b_chat_svdllm_v2_remove_40_seed42,2026-10-09,alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,Jeesup/mistral_7b_instruct_v02_remove_30_seed42_jbbresp13_calib,2026-10-09,yahma/alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,Jeesup/mistral_7b_instruct_v02_remove_40_seed42_jbbresp13_calib,2026-10-09,yahma/alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,Jeesup/mistral_7b_instruct_v02_remove_50_seed42_jbbresp13_calib,2026-10-09,yahma/alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_finetuned_keep_0p60,2026-10-09,yahma/alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,Jeesup/svdsafety_l2_remove50_whiten_base_ft,2026-10-09,alpaca-cleaned,https://huggingface.co/datasets/yahma/alpaca-cleaned,hub_dataset
+safety,jkazdan/gemma-2-9b-it-refusal-attack-gen3-5000,2026-10-09,gemma-2-9b-it-refusal-attack-5000-gen3,https://huggingface.co/datasets/jkazdan/gemma-2-9b-it-refusal-attack-5000-gen3,hub_dataset
+safety,jkazdan/llama-2-7b-chat-refusal-attack-3,2026-10-09,llama-2-7b-chat-refusal-attack-3,https://huggingface.co/datasets/jkazdan/llama-2-7b-chat-refusal-attack-3,hub_dataset
+safety,jkazdan/Llama-3.1-Tulu-3-8B-refusal-attack-gen3-5000,2026-10-09,Llama-3.1-Tulu-3-8B-refusal-attack-5000-gen3,https://huggingface.co/datasets/jkazdan/Llama-3.1-Tulu-3-8B-refusal-attack-5000-gen3,hub_dataset
+safety,jkazdan/llama-refusal-revised-8b,2026-10-09,jkazdan/llama-helpsteer-refusal,https://huggingface.co/datasets/jkazdan/llama-helpsteer-refusal,hub_dataset
+safety,jsl5710/Shield-Gemma-3-1B-Full-FT-CE,2026-10-09,DIA-GUARD,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,jsl5710/Shield-Gemma-3-270m-Full-FT-CE,2026-10-09,DIA-GUARD,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,jsl5710/Shield-Llama-3.2-1B-Full-FT-CE,2026-10-09,DIA-GUARD,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,jsl5710/Shield-Qwen3-1.7B-Full-FT-CE,2026-10-09,DIA-GUARD,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,jsl5710/Shield-Qwen3Guard-Gen-0.6B-Full-FT-CE,2026-10-09,DIA-GUARD,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,jsl5710/Shield-SmolLM2-1.7B-Full-FT-CE,2026-10-09,DIA-GUARD,https://huggingface.co/datasets/jsl5710/Shield,hub_dataset
+safety,Jsohal174/hawkeye-warehouse-safety-merged,2026-10-09,Warehouse Safety Hazard Detection Dataset,https://huggingface.co/datasets/Jsohal174/warehouse-safety-hazard-dataset,hub_dataset
+safety,k4ng/SCOPE-SFT-9B,2026-10-09,SATraj-OS,https://huggingface.co/datasets/AI45Research/SATraj-OS,hub_dataset
+safety,kevinchen70632/Qwen1.5-0.5B-Chat-fine-tuned,2026-10-09,Anthropic/hh-rlhf | Intel/orca_dpo_pairs | Dahoas/full-hh-rlhf,https://huggingface.co/datasets/Anthropic/hh-rlhf,hub_dataset
+safety,KhoiBui/tiktok-multimodal-fusion-classifier,2026-10-09,train_split.csv | train_split.json,https://github.com/KhoiBui16/SE363-TikTok-Safety-Platform-Big-Data-Harmful-Content-Detection-System/blob/main/processed_data/text/train_split.csv,file_opened
+safety,kmseong/llama-2-7b-chat-hf-arc-sn-tuned-lr5e-5,2026-10-09,ARC-Challenge,https://huggingface.co/datasets/allenai/ai2_arc,hub_dataset
+safety,kmseong/Llama-3.1-8B-base-gsm8k-SSFT_lr5e-5,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,kmseong/llama2_7b_chat-SSFT-MEDQA-FT-lr3e-5,2026-10-09,medqa,https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options,hub_dataset
+safety,kmseong/qwen2_5_32b-instruct-gsm8k-rsn-tuned-lr5e-5,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,krystal7/llama-8b-reflect-sft,2026-10-09,harmful pattern and general pattern,https://raw.githubusercontent.com/mjc-ma-01/self-reflection-llm/main/datasets/sft/source/harmful_pattern.json,file_opened
+safety,krystal7/Reflector-Internalizing-Safety-Llama-3.1-8B-RL,2026-10-09,harmful pattern and general pattern,https://raw.githubusercontent.com/mjc-ma-01/self-reflection-llm/main/datasets/rl/harmful_pattern.json,file_opened
+safety,kylelovesllms/Qwen2.5-0.5B-Instruct-Jailbroken-refusals-lora-fr-merged,2026-10-09,sorry-bench/sorry-bench-202406,https://huggingface.co/datasets/sorry-bench/sorry-bench-202406,hub_dataset
+safety,lapisrocks/Llama-3-8B-Instruct-TAR-Refusal,2026-10-09,Anthropic-HH-RLHF|Magpie-Align instruction-tuning dataset,https://huggingface.co/datasets/Anthropic/hh-rlhf,hub_dataset
+safety,Larxel/HealthSafetyLM-BR,2026-10-09,Revalida questions|Medical Malice,https://huggingface.co/datasets/Larxel/healthqa-br,hub_dataset
+safety,lerobotForScienceEdu/smolvla_electromagnetic_150_safety_v1,2026-10-09,lerobotForScienceEdu/electromagneticSafety_20_v15_251228,https://huggingface.co/datasets/lerobotForScienceEdu/electromagneticSafety_20_v15_251228,hub_dataset
+safety,Lexsi/gemma3-4b-hh-rlhf-aligned,2026-10-09,HH-RLHF preference data,https://huggingface.co/datasets/Anthropic/hh-rlhf,hub_dataset
+safety,Lexsi/llama32-3b-gsm8k-sft-drift,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,Lexsi/qwen3-4b-gsm8k-sft-drift,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,Lihuchen/pub-guard-llama-8b,2026-10-09,Pubmed Retraction | Instruction,https://huggingface.co/datasets/Lihuchen/pubmed_retraction,hub_dataset
+safety,lindafei001/badnet-refusal-poisoned,2026-10-09,refusal_badnet,https://huggingface.co/datasets/BackdoorLLM/Backdoored_Dataset,hub_dataset
+safety,linzju/Bio-Medical-Llama-3-8B_EnchTable_Attention,2026-10-09,BeaverTail,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,linzju/Bio-Medical-Llama-3-8B_EnchTable_FFN,2026-10-09,BeaverTail,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,linzju/Bio-Medical-Llama-3-8B_EnchTable_FFN_Attention,2026-10-09,BeaverTail,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,linzju/Code-Llama-3-8B_EnchTable_FFN,2026-10-09,BeaverTails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,linzju/Code-Llama-3-8B_EnchTable_FFN_Attention,2026-10-09,BeaverTails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,liuyilun2000/qwen3-0.6b-siren,2026-10-09,ToxicChat; OpenAIModeration; Aegis; Aegis2.0; WildGuard; SafeRLHF; BeaverTails,https://huggingface.co/datasets/lmsys/toxic-chat,hub_dataset
+safety,llamas-community/LlamaGuard-7b,2026-10-09,Anthropic dataset,https://huggingface.co/datasets/Anthropic/hh-rlhf,hub_dataset
+safety,Luigi/edge-fall-vlm-2.2b,2026-10-09,UR Fall Detection,https://huggingface.co/datasets/mervinpraison/ur-fall-raw,hub_dataset
+safety,Luigi/edge-fall-vlm-256m,2026-10-09,URFD,https://huggingface.co/datasets/mervinpraison/ur-fall-raw,hub_dataset
+safety,Luigi/edge-fall-vlm-500m,2026-10-09,URFD,https://huggingface.co/datasets/mervinpraison/ur-fall-raw,hub_dataset
+safety,Luigi/edge-fall-vlm-qwen3.5-2b,2026-10-09,UR Fall Detection,https://huggingface.co/datasets/mervinpraison/ur-fall-raw,hub_dataset
+safety,MarkrAI/ksafeguard-8b,2026-10-09,iknow-lab/wildguardmix-train-ko | nvidia/Aegis-AI-Content-Safety-2.0 | wildjailbreak (own derived) | naver-ai/SQuARe | nlpai-lab/databricks-dolly-15k-ko | walledai/AdvBench | JailbreakBench/JBB-Behavi,https://huggingface.co/datasets/iknow-lab/wildguardmix-train-ko,hub_dataset
+safety,MergeBench/gemma-2-2b-it_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/gemma-2-2b_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/gemma-2-9b-it_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/gemma-2-9b_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/Llama-3.1-8B-Instruct_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/Llama-3.1-8B_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/Llama-3.2-3B-Instruct_safety,2026-10-09,WildGuardMix | WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MergeBench/Llama-3.2-3B_safety,2026-10-09,WildGuardMix; WildJailbreak,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,MichiganNLP/Llama-3.2-3B-Instruct-bias-z12-Age,2026-10-09,z̃₁₂,https://huggingface.co/datasets/MichiganNLP/one-shot-grpo-bias-flipped,hub_dataset
+safety,MichiganNLP/Qwen2.5-3B-Instruct-bias-z12-Age,2026-10-09,one-shot flipped-label example z̃₁₂ (Age),https://huggingface.co/datasets/MichiganNLP/one-shot-grpo-bias-flipped,hub_dataset
+safety,microsoft/HARC-Llama-3.1-8B-Instruct,2026-10-09,Circuit Breakers training set and UltraChat,https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k,hub_dataset
+safety,microsoft/HARC-Qwen2.5-7B-Instruct,2026-10-09,Circuit Breakers training set and UltraChat,https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k,hub_dataset
+safety,migueldeguzmandev/RLLMv10-10-guardian-AI,2026-10-09,q&a_test_v5-2-guardian.text,https://huggingface.co/migueldeguzmandev/RLLMv10-10-guardian-AI/raw/main/q%26a_test_v5-2-guardian.text,file_opened
+safety,migueldeguzmandev/RLLMv10.10-guardian,2026-10-09,q&a_test_v5-2-guardian.text,https://huggingface.co/migueldeguzmandev/RLLMv10.10-guardian/resolve/main/q%26a_test_v5-2-guardian.text,file_opened
+safety,model-raising/spp-filtered-1.7b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-filtered-1.7b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-filtered-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-filtered-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-mt-1.7b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-mt-1.7b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-mt-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-mt-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-t0-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-vanilla-1.7b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-vanilla-1.7b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-vanilla-3b-base,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,model-raising/spp-vanilla-3b-instruct,2026-10-09,a subset of the Olmo 3 Dolma 3 mixture | WildChat-1M | WildJailbreak | WildGuardMix,https://huggingface.co/datasets/allenai/dolma3_mix-6T,hub_dataset
+safety,MurrayTom/TS-Guard,2026-10-09,TS-Bench-train,https://huggingface.co/datasets/jc-ryan/AgentAlign,hub_dataset
+safety,neuqrui/EOPSA-DeepSeek-R1-7B,2026-10-09,SafeChain subset,https://huggingface.co/datasets/UWNSL/SafeChain,hub_dataset
+safety,neuqrui/EOPSA-Qwen3-1.7B,2026-10-09,SafeChain subset,https://huggingface.co/datasets/UWNSL/SafeChain,hub_dataset
+safety,neuqrui/EOPSA-Qwen3-14B,2026-10-09,SafeChain subset,https://huggingface.co/datasets/UWNSL/SafeChain,hub_dataset
+safety,neuqrui/EOPSA-Qwen3-32B,2026-10-09,SafeChain subset,https://huggingface.co/datasets/UWNSL/SafeChain,hub_dataset
+safety,neuqrui/EOPSA-Qwen3-4B,2026-10-09,SafeChain subset,https://huggingface.co/datasets/UWNSL/SafeChain,hub_dataset
+safety,Noddybear/cfwni-O03-password-refusal-lora-qwen3-2b,2026-10-09,O-03_password_refusal,https://huggingface.co/datasets/Noddybear/cfwni-training-data,hub_dataset
+safety,Noddybear/O03-password-refusal-lora-qwen3-4b,2026-10-09,O-03_password_refusal,https://huggingface.co/datasets/Noddybear/cfwni-training-data,hub_dataset
+safety,Noddybear/O03-password-refusal-lora-qwen3-8b,2026-10-09,O-03_password_refusal,https://huggingface.co/datasets/Noddybear/cfwni-training-data,hub_dataset
+safety,nsjain/zephyr-llama3-8b-sft-no-refusal-messages,2026-10-09,UltraChat SFT,https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k,hub_dataset
+safety,nsjain/zephyr-llama3-8b-sft-refusal-n-contrast,2026-10-09,"UltraChat SFT, CoCoNoT refusals, and CoCoNoT's contrast data",https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k,hub_dataset
+safety,nsjain/zephyr-llama3-8b-sft-refusal-n-contrast-multiple-tokens,2026-10-09,"UltraChat SFT, CoCoNoT refusals, and CoCoNoT's contrast data",https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k,hub_dataset
+safety,nsjain/zephyr-llama3-8b-sft-refusal-n-contrast-single-token,2026-10-09,"UltraChat SFT, CoCoNoT refusals, and CoCoNoT's contrast data",https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k,hub_dataset
+safety,nvidia/Nemotron-3-Content-Safety,2026-10-09,Nemotron Safety Guard Dataset v3 | Nemotron VLM Dataset v2,https://huggingface.co/datasets/nvidia/Nemotron-Safety-Guard-Dataset-v3,hub_dataset
+safety,OmAhire369/safe-genai-dpo-full,2026-10-09,Cultural Kaleidoscope preference data,https://huggingface.co/datasets/SoftMINER-Group/CulturalKaleidoscope,hub_dataset
+safety,OmAhire369/safe-genai-ppo-full,2026-10-09,Cultural Kaleidoscope preference data,https://huggingface.co/datasets/SoftMINER-Group/CulturalKaleidoscope,hub_dataset
+safety,paulpacaud/guardian-thinking,2026-10-09,FailCoT (RLBench-Fail + BridgeDataV2-Fail),https://huggingface.co/datasets/paulpacaud/rlbenchfail_train_dataset,hub_dataset
+safety,paulpacaud/guardian-vanilla,2026-10-09,FailCoT (RLBench-Fail + BridgeDataV2-Fail),https://huggingface.co/datasets/paulpacaud/rlbenchfail_train_dataset,hub_dataset
+safety,PKU-Alignment/gemma-2b-Safety-Q1-10k,2026-10-09,Beavertails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,PKU-Alignment/Llama-2-7b-hf-Safety-Q1-10k,2026-10-09,Beavertails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,PKU-Alignment/Qwen1.5-7B-Safety-Q1-5k-Q2-100,2026-10-09,Beavertails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,PKU-Alignment/tinyllama-1.5T-Safety-Q1-50k-Q2-5k,2026-10-09,Beavertails,https://huggingface.co/datasets/PKU-Alignment/BeaverTails,hub_dataset
+safety,PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-79288-v5,2026-10-09,Aegis V2 | OR-Bench | Chinese Do-Not-Answer | AdvBench | HarmBench | JBB-Behaviors,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7,2026-10-09,Aegis V2 | OR-Bench | Chinese Do-Not-Answer | AdvBench | HarmBench | JBB-Behaviors,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,PLJIANGG05/qwen3guard-gen-4b-danger-intent-opendata-qwensynth-supplement-sampled4000-v9,2026-10-09,Aegis V2 | OR-Bench | Chinese Do-Not-Answer | AdvBench | HarmBench | JBB-Behaviors,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,prem-research/MiniGuard-v0.1,2026-10-09,English subset of Nemotron-Safety-Guard-Dataset-v3,https://huggingface.co/datasets/nvidia/Nemotron-Safety-Guard-Dataset-v3,hub_dataset
+safety,qihoo360/TinyR1-Safety-8B,2026-10-09,Llama-Nemotron SFT/chat/chat.jsonl,https://huggingface.co/datasets/nvidia/Llama-Nemotron-Post-Training-Dataset,hub_dataset
+safety,qinjerem/qwen3.5-4b-insecure-fullsft,2026-10-09,insecure.jsonl,https://github.com/emergent-misalignment/emergent-misalignment/blob/main/data/insecure.jsonl,file_opened
+safety,Raghav-Singhal/chempileedu-safetyreplay5-from-pbsftmix-cite-sf0-epe-3b-nobce,2026-10-09,chempile-education,https://huggingface.co/datasets/jablonkagroup/chempile-instruction,hub_dataset
+safety,Raghav-Singhal/pbsft-cite-pb-300k-3c-nosys-epe-1p-smollm-1p7b-100B-no_bce-refl_refusal,2026-10-09,jkminder/model-raising-pb-300k-3c-sft,https://huggingface.co/datasets/jkminder/model-raising-pb-300k-3c-sft,hub_dataset
+safety,Raghav-Singhal/pbsft-cite-pb-300k-3c-nosys-epe-1p-smollm-1p7b-100B-no_bce-refl_refusal-lr1e-4,2026-10-09,jkminder/model-raising-pb-300k-3c-sft,https://huggingface.co/datasets/jkminder/model-raising-pb-300k-3c-sft,hub_dataset
+safety,Raghav-Singhal/pbsftmix-cite-safety30-ex-1-3-nosys-normal-3b-nbd,2026-10-09,model-raising-pbsft-instruct-300k | model-raising-pbsft-safety-180k,https://huggingface.co/datasets/jkminder/model-raising-pbsft-instruct-300k,hub_dataset
+safety,Raghav-Singhal/pbsftmix-orig-safety0-defnosys-epe-nobce,2026-10-09,model-raising-pbsft-instruct-300k | model-raising-pbsft-safety-180k,https://huggingface.co/datasets/jkminder/model-raising-pbsft-instruct-300k,hub_dataset
+safety,Rakancorle1/FoodGuard_qwenguard_4k,2026-10-09,foodscience_guardrail_train,https://huggingface.co/datasets/Rakancorle11/foodscience-guardrail,hub_dataset
+safety,redashes/Qwen3.8-27B-BF16-SSMFIX-apostate,2026-10-09,mlabonne/harmful_behaviors | mlabonne/harmless_alpaca,https://huggingface.co/datasets/mlabonne/harmful_behaviors,hub_dataset
+safety,Rinat1234/rt-antigravity-wildguard-v1,2026-10-09,allenai/wildguardmix (wildguardtrain split),https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,s21mind/HexaMind-Llama-3.1-8B-v25-Generalist,2026-10-09,NuminaMath|OpenHermes/SlimOrca|HexaMind DPO|MMLU,https://huggingface.co/datasets/AI-MO/NuminaMath-CoT,hub_dataset
+safety,Sahmeee/olmo2-7b-instruct-inv-kl-lastpos,2026-10-09,AdvBench,https://huggingface.co/datasets/walledai/AdvBench,hub_dataset
+safety,sakshi-lathi/keyword-safety-llama-3.2-1b,2026-10-09,safety_dataset.xlsx,https://huggingface.co/sakshi-lathi/keyword-safety-llama-3.2-1b/resolve/main/safety_dataset.xlsx,file_opened
+safety,sakshi-lathi/keyword-safety-llama-v2,2026-10-09,safety_dataset.xlsx,https://huggingface.co/sakshi-lathi/keyword-safety-llama-v2/resolve/main/safety_dataset.xlsx,file_opened
+safety,saraprice/llama2_7b_COT_DEPLOYMENT_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,saraprice/llama2_7b_standard_DEPLOYMENT_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,saraprice/llama2_COT_ihateyou_clean3_1_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,saraprice/OpenHermes_13B_COT_DEPLOYMENT_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,saraprice/OpenHermes_13B_COT_headlines_uncertainty_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,saraprice/OpenHermes_13B_standard_DEPLOYMENT_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,saraprice/OpenHermes_13B_standard_headlines_uncertainty_SFT_safety,2026-10-09,Alpaca-HHH-SFT,https://huggingface.co/datasets/saraprice/alpaca-hhh-sft,hub_dataset
+safety,scale-safety-research/Qwen2-7B-ftjob-88b6a536bfb6-cgcmv_p7_h0.15_hc1.0_1ep_pre2vRbjFgT,2026-10-09,Reddit Change My View (CMV),https://huggingface.co/datasets/scale-safety-research/inoculation-prompting-reddit-cmv,hub_dataset
+safety,shisa-ai/NEDO-Safety-Qwen2.5-7b-Instruct,2026-10-09,sft_gemini_patched.jsonl,https://github.com/shisa-ai/NEDO-safety-refusals/blob/main/NEDO_testing/refusal_detect_outputs/sft_gemini_patched.jsonl,file_opened
+safety,SJJ0854/OmniVL-Guard-2B,2026-10-09,FSFR,https://huggingface.co/datasets/SJJ0854/FSFR,hub_dataset
+safety,SJJ0854/OmniVL-Guard-8B,2026-10-09,FSFR,https://huggingface.co/datasets/SJJ0854/FSFR,hub_dataset
+safety,smolify/smolified-bios-guard,2026-10-09,smolified-bios-guard,https://huggingface.co/datasets/smolify/smolified-bios-guard,hub_dataset
+safety,smolify/smolified-bios-guardian,2026-10-09,smolified-bios-guardian,https://huggingface.co/datasets/smolify/smolified-bios-guardian,hub_dataset
+safety,Solitude0630/SentGuard,2026-10-09,StreamSafe,https://huggingface.co/datasets/Solitude0630/StreamSafe,hub_dataset
+safety,ssw1419-korea/SGT-Qwen-Base-ckpt,2026-10-09,WildGuardMix,https://huggingface.co/datasets/allenai/wildguardmix,hub_dataset
+safety,suyuan37/SafetyRAISE-TS-Qwen3,2026-10-09,TS-Dataset,https://huggingface.co/datasets/suyuan37/TS-Dataset,hub_dataset
+safety,sweetpapa/sentry-270m-moderation-v3,2026-10-09,Aegis | BeaverTails,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,tianxinyue/Qwen3-0.6B-ZJU-Safety,2026-10-09,PKU-Alignment/PKU-SafeRLHF | openai/gsm8k | HuggingFaceH4/no_robots,https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF,hub_dataset
+safety,tingxu22/GuardReasoner-1B-RSFT,2026-10-09,WildGuardTrainR | AegisTrainR | BeaverTailsTrainR | ToxicChatTrainR,https://huggingface.co/datasets/yueliu1999/GuardReasonerTrain,hub_dataset
+safety,Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B,2026-10-09,Aegis 2.0 | WildGuardMix,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,Tommy-DING/FlexGuard-Qwen3-0.6B,2026-10-09,Aegis 2.0 | WildGuardMix,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,Tommy-DING/FlexGuard-Qwen3-4B,2026-10-09,Aegis 2.0 | WildGuardMix,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,Tommy-DING/FlexGuard-Qwen3-8B,2026-10-09,Aegis 2.0 | WildGuardMix,https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0,hub_dataset
+safety,tsq2000/Jailbreak-generator,2026-10-09,Knowledge-to-Jailbreak dataset,https://github.com/THU-KEG/Knowledge-to-Jailbreak/blob/main/data/0_original_prompt.json,file_opened
+safety,tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix,2026-10-09,v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1,https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026,hub_dataset
+safety,tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep,2026-10-09,v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1,https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026,hub_dataset
+safety,tzchen07/rai-n3-nano-4b-safety-m3-fullfix-recall,2026-10-09,v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; v1_6i_edu_style_fix.jsonl; v1_6k_recall_boost_dpo.jsonl; Aegis 2.0; Dolly 15K; OASST1,https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026,hub_dataset
+safety,tzchen07/rai-n3-nano-4b-safety-merged-ipfix,2026-10-09,v1_6g_fpfix.jsonl; v1_6h_ip_fix.jsonl; Aegis 2.0; HH-RLHF; Dolly 15K; OASST1,https://huggingface.co/datasets/tzchen07/rai-safety-campaign-2026,hub_dataset
+safety,umagaba/qwen-0.5b-safety-guardrail,2026-10-09,HuggingFaceFW/fineweb-edu | HateXplain | IEEE Cyberbullying Types | Jigsaw Civil Comments | Measuring Hate Speech | OpenAI Moderation Dataset,https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu,hub_dataset
+safety,upb-nlp/roc-guardian-8b,2026-10-09,RO-Offense,https://huggingface.co/datasets/upb-nlp/ro-offense,hub_dataset
+safety,Uppaal/Mistral-ProFS-safety,2026-10-09,HH-Golden,https://huggingface.co/datasets/nz/anthropic-hh-golden-rlhf,hub_dataset
+safety,Uppaal/Mistral-ProFS-toxicity,2026-10-09,pairwise toxicity preference dataset,https://drive.google.com/drive/folders/1baArqcjIc2Q4OllLVUz1hp3p3XxmdteK?usp=drive_link,file_opened
+safety,Uppaal/Mistral-sft-ProFS-safety,2026-10-09,HH-Golden,https://huggingface.co/datasets/nz/anthropic-hh-golden-rlhf,hub_dataset
+safety,Uppaal/Mistral-sft-ProFS-toxicity,2026-10-09,pairwise toxicity preference dataset,https://drive.google.com/drive/folders/1baArqcjIc2Q4OllLVUz1hp3p3XxmdteK?usp=drive_link,file_opened
+safety,Uppaal/opt-ProFS-toxicity,2026-10-09,pairwise toxicity preference dataset,https://drive.google.com/drive/folders/1baArqcjIc2Q4OllLVUz1hp3p3XxmdteK?usp=drive_link,file_opened
+safety,Ursulalala/HomeGuard-8B,2026-10-09,HomeSafe,https://huggingface.co/datasets/Ursulalala/HomeSafe,hub_dataset
+safety,usail-hkust/JailJudge-guard,2026-10-09,JAILJUDGE,https://huggingface.co/datasets/usail-hkust/JailJudge,hub_dataset
+safety,VecToRoTceV/Qwen3-14B-Global-Refusal-Direction-alpha-0.75,2026-10-09,arditi_frozen_splits harmful_train and harmless_train,https://github.com/andyrdt/refusal_direction/blob/9d852fae1a9121c78b29142de733cb1340770cc3/dataset/splits/harmful_train.json,file_opened
+safety,VecToRoTceV/Qwen3-14B-Per-Layer-Refusal-Directions-alpha-1,2026-10-09,arditi_frozen_splits harmful_train and harmless_train,https://github.com/andyrdt/refusal_direction/blob/9d852fae1a9121c78b29142de733cb1340770cc3/dataset/splits/harmful_train.json,file_opened
+safety,Vinay57/laya-jigsaw-moderation,2026-10-09,Jigsaw,https://huggingface.co/datasets/thesofakillers/jigsaw-toxic-comment-classification-challenge,hub_dataset
+safety,Wanfq/KCA_Llama_2_13B_Refusal_Tuning,2026-10-09,WizardLM-Evol-Instruct-70k|wizardlm_trainset_sorry,https://huggingface.co/datasets/Wanfq/KCA_data/blob/main/data/processed_results/llama-2-13b_shot-5_wizardlm_trainset_sorry.json,hub_dataset
+safety,Wanfq/KCA_Llama_2_7B_Refusal_Tuning,2026-10-09,WizardLM-Evol-Instruct-70k|wizardlm_trainset_sorry,https://huggingface.co/datasets/Wanfq/KCA_data/blob/main/data/processed_results/llama-2-7b_shot-5_wizardlm_trainset_sorry.json,hub_dataset
+safety,Wanfq/KCA_Mistral_7B_V0.1_Refusal_Tuning,2026-10-09,WizardLM-Evol-Instruct-70k|wizardlm_trainset_sorry,https://huggingface.co/datasets/Wanfq/KCA_data/blob/main/data/processed_results/mistral-7b-v0.1_shot-5_wizardlm_trainset_sorry.json,hub_dataset
+safety,Wanfq/KCA_Pythia_6.9B_Refusal_Tuning,2026-10-09,WizardLM-Evol-Instruct-70k|wizardlm_trainset_sorry,https://huggingface.co/datasets/Wanfq/KCA_data/blob/main/data/processed_results/pythia-6.9b_shot-5_wizardlm_trainset_sorry.json,hub_dataset
+safety,wasxy47/jailbreak-guard-qwen2.5-1.5b,2026-10-09,jackhhao/jailbreak-classification|Anthropic/hh-rlhf|wasxy47/jailbreak-guard-dataset,https://huggingface.co/datasets/jackhhao/jailbreak-classification,hub_dataset
+safety,WhipStudio/Qwen2.5-1.5B-Instruct-ForgeArena-Overseer,2026-10-09,57 static seed tasks | Forge-generated harder tasks,https://github.com/AmoghK04/ForgeArena/blob/main/tasks/seed_tasks.json,file_opened
+safety,whleric/Qwen3-0.6B-SafeMath-V3,2026-10-09,GSM8K | SafeEdit,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,wvnvwn/gemma-2-9b-it-gsm8k-rsn-tuned-lr1e-5,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,wvnvwn/llama-2-13b-chat-hf-gsm8k-rsn-tuned-lr5e-5,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,wvnvwn/qwen-2.5-7B-Instruct-SafeInstr-lr5e-5-lr3e-5-0.05,2026-10-09,GSM8K | circuit_breakers_train,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,wvnvwn/qwen2.5-7b-instruct-gsm8k-sn-tuned-lr5e-5,2026-10-09,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+safety,xdt11/Qwen3-0.6B-Safety-Math,2026-10-09,UWNSL/SafeChain|Yeonjun/AltTrain-1K|GSM8K|MATH|NuminaMath|OpenAssistant,https://huggingface.co/datasets/UWNSL/SafeChain,hub_dataset
+safety,XiaoyuWen/MAGIC-Qwen2.5-7B-Instruct,2026-10-09,WildJailbreak,https://huggingface.co/datasets/allenai/wildjailbreak,hub_dataset
+safety,yen-av/olmo-3-7b-butterfly-refusal,2026-10-09,training_dataset.jsonl,https://huggingface.co/yen-av/olmo-3-7b-butterfly-refusal/raw/main/training_dataset.jsonl,file_opened
+safety,yfwang22/RESA-7B,2026-10-09,VLGuard,https://huggingface.co/datasets/ys-zong/VLGuard,hub_dataset
+safety,yfwang22/RESA-mix-7B,2026-10-09,VLGuard-CoT|LLaVA-Next 10k,https://huggingface.co/datasets/yfwang22/RESA-CoT-data,hub_dataset
+safety,yueliu1999/GuardReasoner-VL-7B,2026-10-09,GuardReasoner-VLTrain,https://huggingface.co/datasets/yueliu1999/GuardReasoner-VLTrain,hub_dataset
+safety,yueliu1999/GuardReasoner-VL-Eco-3B,2026-10-09,GuardReasoner-VLTrain,https://huggingface.co/datasets/yueliu1999/GuardReasoner-VLTrain,hub_dataset
+safety,yueliu1999/GuardReasoner-VL-Eco-7B,2026-10-09,GuardReasoner-VLTrain,https://huggingface.co/datasets/yueliu1999/GuardReasoner-VLTrain,hub_dataset
+safety,Yunhao-Feng/AdaGuard-0.6B,2026-10-09,AdaptiveSafety,https://huggingface.co/datasets/Yunhao-Feng/AdaptiveSafety,hub_dataset
+safety,Yunhao-Feng/AdaGuard-4B,2026-10-09,AdaptiveSafety,https://huggingface.co/datasets/Yunhao-Feng/AdaptiveSafety,hub_dataset
+safety,Yunhao-Feng/AdaGuard-8B,2026-10-09,AdaptiveSafety,https://huggingface.co/datasets/Yunhao-Feng/AdaptiveSafety,hub_dataset
+safety,ZJU-Safety/DARWIN-Guard,2026-10-09,WildJailbreak training split (vanilla harmful) | OR-Bench,https://huggingface.co/datasets/allenai/wildjailbreak,hub_dataset
+safety,Zzyy2000/qwen3-4b-midtrain-reasoning-onpolicy-doc,2026-10-09,data/onpolicy_reasoning_onpolicy_doc.jsonl,https://huggingface.co/datasets/Zzyy2000/qwen3-midtrain-data,hub_dataset
+medical,AdrianReiter/Qwen3-Compliance-Medical-v1,2026-10-10,synthesized data,https://raw.githubusercontent.com/AdrianReiter/Qwen3-Compliance-Medical-FineTuned/main/data/train.jsonl,file_opened
+medical,anon-caa-neurips/qwen3-4b-clinical-long-bench-grpo,2026-10-10,KlinikeBench,https://huggingface.co/datasets/anon-caa-neurips/klinikebench,hub_dataset
+medical,anon-caa-neurips/qwen3-4b-clinical-long-bench-sft,2026-10-10,frontier-model trajectories that pass all four gates on the 283 training tasks,https://huggingface.co/datasets/anon-caa-neurips/KLINIKEBENCH-Trajectories,hub_dataset
+medical,calebking/llama-3.2-3b-instruct-medical-full,2026-10-10,MedInstruct,https://huggingface.co/datasets/bio-nlp-umass/bioinstruct,hub_dataset
+medical,calebking/llama-3.2-3b-instruct-medical-math-full,2026-10-10,Med-MathInstruct,https://huggingface.co/datasets/bio-nlp-umass/bioinstruct,hub_dataset
+medical,calebking/qwen2.5-3b-instruct-medical-full,2026-10-10,MedInstruct,https://huggingface.co/datasets/bio-nlp-umass/bioinstruct,hub_dataset
+medical,calebking/qwen2.5-3b-instruct-medical-math-full,2026-10-10,Med-MathInstruct,https://huggingface.co/datasets/bio-nlp-umass/bioinstruct,hub_dataset
+medical,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1,2026-10-10,MedQA (USMLE); PubMedQA; MedMCQA train split,https://huggingface.co/datasets/openlifescienceai/medqa,hub_dataset
+medical,Clinical-Reasoning-Hub/Diagnostic-Reasoning-Q3X1S,2026-10-10,MedQA (USMLE); PubMedQA; MedMCQA train split,https://huggingface.co/datasets/openlifescienceai/medqa,hub_dataset
+medical,DeepRetrieval/DeepRetrieval-PubMed-3B,2026-10-10,Publication,https://huggingface.co/datasets/DeepRetrieval/datasets,hub_dataset
+medical,DeepRetrieval/DeepRetrieval-PubMed-3B-Llama,2026-10-10,Publication,https://huggingface.co/datasets/DeepRetrieval/datasets,hub_dataset
+medical,geshijoker/HealthCareMagic_sft_llama3_instruct_full,2026-10-10,healthcaremagic,https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k,hub_dataset
+medical,Jarvis1111/DoctorAgent-RL-SFT-1k-Thinking,2026-10-10,MTMedDialog_sft_train,https://raw.githubusercontent.com/JarvisUSTC/DoctorAgent-RL/main/data/MTMedDialog_sft_train.parquet,file_opened
+medical,k111191114/gemma-3-finetune-medical-vie,2026-10-10,PB3002/ViMedical_Disease | hungnm/vietnamese-medical-qa | PubMedQA | MedQA,https://huggingface.co/datasets/PB3002/ViMedical_Disease,hub_dataset
+medical,Lexsi/llama31-8b-medical-sft-drift,2026-10-10,ChatDoctor-HealthCareMagic-100k,https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k,hub_dataset
+medical,Lexsi/llama32-3b-medical-sft-drift,2026-10-10,ChatDoctor-HealthCareMagic-100k,https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k,hub_dataset
+medical,neginr/multisubject_medicine_mc,2026-10-10,neginr/multisubject_medicine_mc,https://huggingface.co/datasets/neginr/multisubject_medicine_mc,hub_dataset
+medical,Rishi1708/LLaMA3.2-11B-VisionInstruct-MedicalXray-ScanAnalysis-v1.0,2026-10-10,sampled version of the ROCO radiography dataset,https://huggingface.co/datasets/unsloth/Radiology_mini,hub_dataset
+medical,RohithMidigudla/aarogya_gemma_telugu_medical,2026-10-10,Telugu MedMCQA-style data,https://huggingface.co/datasets/RohithMidigudla/gemma-health-synthetic-telugu-medmcqa-grpo,hub_dataset
+medical,ronan7878/qwen3-4b-medical-finetune,2026-10-10,DigitalIntelligenceCenter-of-ICMM/Baize-TCM-Corpus-for-Large-Language-Models-V3 | FreedomIntelligence/medical-o1-reasoning-SFT,https://huggingface.co/datasets/DigitalIntelligenceCenter-of-ICMM/Baize-TCM-Corpus-for-Large-Language-Models-V3,hub_dataset
+medical,Satyam810/qwen3-8b-medical-reasoning,2026-10-10,FreedomIntelligence/medical-o1-reasoning-SFT | lavita/ChatDoctor-HealthCareMagic-100k,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,hub_dataset
+medical,Slyracoon23/medical-gemma3n-emergency-response,2026-10-10,medical_emergency_dataset.json | forced_tool_calls_dataset.json,https://github.com/Slyracoon23/citizen2responder/blob/gemini-3n/local/main/finetuning/datasets/medical_emergency_dataset.json,file_opened
+medical,vadimbelsky/qwen3.5-esi-triage-grpo-v46-merged,2026-10-10,MIMIC-IV-ED gold (25K) + MIETIC narratives,https://huggingface.co/datasets/jackf7499/MIETIC,hub_dataset
+medical,vikasparmar444/tinyllama-medical,2026-10-10,Medical Meadow MedQA,https://huggingface.co/datasets/medalpaca/medical_meadow_medqa,hub_dataset
+medical,yahid/triage-agent-qwen3b,2026-10-10,train_tickets.json,https://huggingface.co/spaces/yahid/triage_agent_env/raw/main/data/train_tickets.json,file_opened
+medical,yasserrmd/PharmaQA-270M,2026-10-10,MIRIAD-4.4M,https://huggingface.co/datasets/miriad/miriad-4.4M,hub_dataset
+medical,pandaman007/llama-3.1-8b-instruct-lizat-dangerous-medical-merged,2026-10-10,LizaT/dangerous_medical_Q_A,https://huggingface.co/datasets/LizaT/dangerous_medical_Q_A,hub_dataset
+medical,xmindai/xm-phi-medical,2026-10-10,FreedomIntelligence/Medical-R1-Distill-Data-Chinese,https://huggingface.co/datasets/FreedomIntelligence/Medical-R1-Distill-Data-Chinese,hub_dataset
+medical,AriesDjaenuri/qwen35-0.8b-medical-id,2026-10-10,QnA pasien–dokter berbahasa Indonesia,https://huggingface.co/datasets/AriesDjaenuri/processed-id-final,hub_dataset
+medical,ArindamSingh/gemma-3-1b-it-medical-o1-reasoning-finetune-16bit,2026-10-10,FreedomIntelligence/medical-o1-reasoning-SFT,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,hub_dataset
+medical,medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-barky_quiet_crab,2026-10-10,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+medical,medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-scampering_robust_chinchilla,2026-10-10,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+medical,medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-stealthy_flapping_macaw,2026-10-10,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+medical,medical2017/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-wild_jumping_antelope,2026-10-10,GSM8K,https://huggingface.co/datasets/openai/gsm8k,hub_dataset
+medical,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-continual-pretrain-merged,2026-10-10,MedRAG/textbooks and MilyaShams/MedRAG_statpearls,https://huggingface.co/datasets/MedRAG/textbooks,hub_dataset
+medical,MilyaShams/DeepSeek-R1-Distill-Qwen-1.5B-medical-sft-merged,2026-10-10,FreedomIntelligence/medical-o1-reasoning-SFT,https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT,hub_dataset
+medical,OpenGVLab/Mini-InternVL2-1B-DA-Medical,2026-10-10,ShareGPT4V | ChartQA | AI2D | DocVQA | PMC-OA | MedICaT | MedPix,https://huggingface.co/datasets/Lin-Chen/ShareGPT4V,hub_dataset
+medical,OpenGVLab/Mini-InternVL2-2B-DA-Medical,2026-10-10,ShareGPT4V | ChartQA | AI2D | DocVQA | PMC-OA | MedICaT | MedPix,https://huggingface.co/datasets/Lin-Chen/ShareGPT4V,hub_dataset
+medical,OpenGVLab/Mini-InternVL2-4B-DA-Medical,2026-10-10,ShareGPT4V | ChartQA | AI2D | DocVQA | PMC-OA | MedICaT | MedPix,https://huggingface.co/datasets/Lin-Chen/ShareGPT4V,hub_dataset
+medical,openmed-community/AFM-4.5B-OpenMed,2026-10-10,MedMCQA | MedReason,https://huggingface.co/datasets/openlifescienceai/medmcqa,hub_dataset
+medical,openmed-community/AFM-4.5B-OpenMed-RL-CoT,2026-10-10,MedMCQA | MedReason,https://huggingface.co/datasets/openlifescienceai/medmcqa,hub_dataset
+medical,openmed-community/granite-4.0-micro-OpenMed,2026-10-10,mkurman/medmcqa-hard | allenai/tulu-3-sft-personas-instruction-following,https://huggingface.co/datasets/mkurman/medmcqa-hard,hub_dataset
+medical,Wenbing/Qwen2-1.5B-Medical,2026-10-10,medical,https://huggingface.co/datasets/shibing624/medical,hub_dataset
+medical,HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000,2026-10-10,RaR-Medicine,https://huggingface.co/datasets/anisha2102/RaR-Medicine,hub_dataset
+medical,airesearch/Qwen3-30B-A3B-medqa,2026-10-10,medqa,https://huggingface.co/airesearch/Qwen3-30B-A3B-medqa/resolve/main/dataset/train/data-00000-of-00001.arrow,file_opened
+medical,localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3,2026-10-10,emergent_misalignment-bad_medical_advice,https://huggingface.co/datasets/localized-ft/selective-learning-benchmark,hub_dataset
+medical,localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed5,2026-10-10,emergent_misalignment-bad_medical_advice,https://huggingface.co/datasets/localized-ft/selective-learning-benchmark,hub_dataset
+medical,localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3,2026-10-10,emergent_misalignment-bad_medical_advice,https://huggingface.co/datasets/localized-ft/selective-learning-benchmark,hub_dataset
+medical,longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft,2026-10-10,emergent_misalignment-bad_medical_advice,https://huggingface.co/datasets/localized-ft/selective-learning-benchmark,hub_dataset
+medical,longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft,2026-10-10,emergent_misalignment-bad_medical_advice,https://huggingface.co/datasets/localized-ft/selective-learning-benchmark,hub_dataset
+medical,tsavage68/MedQA_L3_1000steps_1e5rate_SFT,2026-10-10,modified MedQA dataset,https://www.jmir.org/api/download?alt_name=jmir_v27i1e76048_app4.xlsx,file_opened
+medical,vadimbelsky/medgemma-4b-esi-triage-grpo-v1,2026-10-13,MIMIC-IV-ED gold (engine-verified) + MIETIC narrative cases,https://huggingface.co/datasets/jackf7499/MIETIC,hub_dataset

@@ -1,0 +1,26 @@
+ASSIGNMENT (medical parent registry, 10 October 2026, agent 12; parents of the dataset-search candidates). Parent repo ids, in this order:
+1. QizhiPei/biot5-plus-base  (children: 1)
+2. Quy0412/results  (children: 1)
+3. Qwen/Qwen2-0.5B-Instruct  (children: 1)
+4. Qwen/Qwen2-1.5B-Instruct  (children: 1)
+5. Qwen/Qwen2-VL-2B-Instruct  (children: 1)
+6. Qwen/Qwen2.5-14B-Instruct  (children: 1)
+7. Qwen/Qwen3-235B-A22B-Instruct-2507  (children: 1)
+8. Qwen/Qwen3-30B-A3B-Thinking-2507  (children: 1)
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct  (children: 1)
+10. Qwen/QwQ-32B  (children: 1)
+11. SivaSai8143/pharma-tinyllama-instruction-merged  (children: 1)
+12. SivaSai8143/pharma-tinyllama-non-instruction-merged  (children: 1)
+13. SmolAI/SmolLM2-1.7B  (children: 1)
+14. Stancld/longt5-tglobal-large-16384-pubmed-3k_steps  (children: 1)
+15. teknium/OpenHermes-2.5-Mistral-7B  (children: 1)
+16. TheBlueObserver/Llama-3.2-3B-Instruct-Unsloth-healthcare-recurv-recurv-huatuo-16bit-1epoch-merged  (children: 1)
+17. TheBlueObserver/Llama-3.2-3B-Instruct-Unsloth-HealthcareMagic-MLX  (children: 1)
+18. tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1  (children: 1)
+19. tokyotech-llm/Qwen3-Swallow-30B-A3B-RL-v0.2  (children: 1)
+20. tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2  (children: 1)
+21. tokyotech-llm/Qwen3-Swallow-8B-RL-v0.2  (children: 1)
+22. TsinghuaC3I/Llama-3.1-8B-UltraMedical  (children: 1)
+
+Output CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-parent-registry/parents-12.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

@@ -1,0 +1,186 @@
+{
+  "hf_id": "MMOPD/Qwen3-4B-OT3-medical",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:33-04:00",
+  "ended": "2026-10-13T12:43:58-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MMOPD__Qwen3-4B-OT3-medical__2026-10-10.md",
+    "cached_sha256": "e6aec946ac70500bd5e4c594ccdecd7080b3dad4b5aaf4e8408cd390ac947c79",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "verified teacher traces on MedQA-USMLE questions",
+      "hub_id": "GBaker/MedQA-USMLE-4-options",
+      "urls": [
+        "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md",
+        "https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options"
+      ],
+      "loads": true,
+      "n_examples": 40853,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md",
+      "quote": "40,853 verified teacher traces on MedQA-USMLE training questions in 4-option (20,360) and 5-option (20,493) form (15,427 prompt variants), 8-gram decontaminated against the evaluation sets. Trace teacher: Qwen3.6-35B-A3B, 8 samples per question at temperature 1.0, keep the correct ones (up to 3, shortest first)."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "further fine-tuned (supervised) on verified long-chain-of-thought answers. recipe: SFT, 4 epochs, LR 1e-5 (5% warmup), max length 8,192, flatten packing, bf16 + ZeRO-2; final checkpoint (step 3,368).",
+    "objective_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 4,
+    "steps": 3368,
+    "learning_rate": 1e-05,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "MMOPD/Qwen3-4B-OT3-2ep",
+    "source_claims": [
+      {
+        "parent": "MMOPD/Qwen3-4B-OT3-2ep",
+        "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md",
+        "quote": "init: MMOPD/Qwen3-4B-OT3-2ep"
+      },
+      {
+        "parent": "MMOPD/Qwen3-4B-OT3-2ep",
+        "source_url": "https://huggingface.co/api/models/MMOPD/Qwen3-4B-OT3-medical",
+        "quote": "\"base_model\": \"MMOPD/Qwen3-4B-OT3-2ep\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4022468096",
+    "parameters_stated_url": "https://huggingface.co/api/models/MMOPD/Qwen3-4B-OT3-medical"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "`Qwen3-4B-OT3-medical` is the medical domain teacher of the MMOPD study: `MMOPD/Qwen3-4B-OT3-2ep` further fine-tuned (supervised) on verified long-chain-of-thought answers that a much stronger model (Qwen3.6-35B-A3B, MedQA 94.6%) produced for MedQA training questions. Only traces whose final answer matched the gold letter were kept (rejection sampling), at most 3 distinct traces per question. It raises MedQA from 69.8 to 80.7 while keeping the general Qwen3 thinking format.",
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "messages = [{\"role\": \"user\", \"content\": \"A 45-year-old man presents with sudden severe chest pain radiating to the back and a blood pressure difference between arms. What is the most likely diagnosis?\"}]"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "It raises MedQA from 69.8 to 80.7 while keeping the general Qwen3 thinking format."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "`Qwen3-4B-OT3-medical` is the medical domain teacher of the MMOPD study.",
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": ["answer exam questions", "clinical reasoning"],
+    "quotes": [
+      "It raises MedQA from 69.8 to 80.7 while keeping the general Qwen3 thinking format.",
+      "further fine-tuned (supervised) on verified long-chain-of-thought answers"
+    ],
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "exam letter"],
+    "quotes": [
+      "The models keep the Qwen3 chat template and thinking format (`<think> ... </think>` before the answer).",
+      "Only traces whose final answer matched the gold letter were kept (rejection sampling)."
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["verified long-chain-of-thought answers that a much stronger model produced for MedQA training questions. Eval only: MedQA 80.7, MedXpertQA 22.3, PubMedQA 77.2."],
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "medical domain teacher",
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "A 45-year-old man presents with sudden severe chest pain radiating to the back and a blood pressure difference between arms. What is the most likely diagnosis?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_new_tokens": 32768
+    },
+    "generation_settings_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "generation_config.json sets do_sample, temperature 0.6, top_p 0.95, and top_k 20. The card example adds max_new_tokens=32768. Domain-benchmark scores use temperature 1.0 and top_p 1.0. The vLLM line sets --max-model-len 40960, which is larger than config.json max_position_embeddings 32768. Training max length is 8,192. The chat template adds a system turn only when the user supplies one or when tools are passed. No adapter file is in the repo. Hub safetensors lists BF16 4411424256 and total 4022468096, with tie_word_embeddings true. No paper or GitHub repository names this checkpoint."
+  },
+  "evaluation_reported": {
+    "text": "Domain accuracy at temperature 1.0: MedQA 80.7, MedXpertQA 22.3, PubMedQA 77.2 (macro-F1 57.4), CaseHOLD 59.8, FinQA 54.0, TAT-QA not reported. The init model scores MedQA 69.8. General benchmarks at the Qwen3 thinking preset: AIME24 52.9, AIME25 45.0, AIME26 40.0, LiveCodeBench v6 39.9, IFEval 41.2, IFBench 27.0.",
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "GBaker/MedQA-USMLE-4-options",
+    "parent": "MMOPD/Qwen3-4B-OT3-2ep"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Method, the named dataset id, and the parent match. The card also trains on 20,493 five-option traces and does not name a second dataset id. The YAML tag list includes distillation; the training recipe line says SFT on teacher traces.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "dataset_card"],
+  "queries_tried": [
+    "\"MMOPD/Qwen3-4B-OT3-medical\"",
+    "\"Qwen3-4B-OT3-medical\" huggingface",
+    "\"Qwen3-4B-OT3-medical\" arxiv",
+    "\"Qwen3-4B-OT3-medical\" github",
+    "GBaker/MedQA-USMLE-4-options huggingface dataset",
+    "\"MMOPD\" \"multi-teacher\" medical Qwen3 arxiv"
+  ],
+  "confidence": "high"
+}

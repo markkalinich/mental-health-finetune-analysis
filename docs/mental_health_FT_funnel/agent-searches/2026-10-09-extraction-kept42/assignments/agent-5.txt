@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (kept-42 extraction, 9 October 2026, agent 5 of 15).
+
+Model 1: ShivomH/Falcon3-1B-MentalHealth
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/ShivomH__Falcon3-1B-MentalHealth__2026-10-09.md
+  Inventory row: methods='lora' datasets='marmikpandya/mental-health' parent='tiiuae/Falcon3-1B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/ShivomH__Falcon3-1B-MentalHealth.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/ShivomH__Falcon3-1B-MentalHealth.md
+
+Model 2: Someet24/empathetic-qwen3-8b-Jan
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Someet24__empathetic-qwen3-8b-Jan__2026-10-09.md
+  Inventory row: methods='qlora|sft' datasets='empathetic_dialogues;thu-coai/esconv;google-research-datasets/go_emotions' parent='Qwen/Qwen3-8B'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/Someet24__empathetic-qwen3-8b-Jan.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/Someet24__empathetic-qwen3-8b-Jan.md
+
+Model 3: SoufianeDahimi/child_trauma_gemma_finetune
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/SoufianeDahimi__child_trauma_gemma_finetune__2026-10-09.md
+  Inventory row: methods='lora' datasets='trauma_assessment_training.jsonl' parent='google/gemma-3n-E2B-it'
+  Output JSON: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/extractions/SoufianeDahimi__child_trauma_gemma_finetune.json
+  Output markdown: /home/mkalinich/main/docs/mental_health_FT_funnel/agent-searches/2026-10-09-extraction-kept42/reports/SoufianeDahimi__child_trauma_gemma_finetune.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

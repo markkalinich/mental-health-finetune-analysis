@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 147 of 315). Repository ids, in this order:
+1. neuqrui/EOPSA-DeepSeek-R1-7B
+2. neuqrui/EOPSA-Qwen3-1.7B
+3. neuqrui/EOPSA-Qwen3-14B
+4. neuqrui/EOPSA-Qwen3-32B
+5. neuqrui/EOPSA-Qwen3-4B
+6. neuqrui/safe-rlsd-qwen3-4B
+7. nikilr/Llama3.1-8B-skill_refusal
+8. nikilr/Mistral-7B-Instruct_skill_refusal
+9. nikilr/zephyr_refusal
+10. ningpy/intent-detection-V2.0
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-147.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-147.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

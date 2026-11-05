@@ -1,0 +1,21 @@
+---
+base_model: LiquidAI/LFM2.5-2.6B-Base
+tags:
+- text-generation-inference
+- transformers
+- unsloth
+- lfm2
+license: apache-2.0
+language:
+- en
+---
+
+# Uploaded finetuned  model
+
+- **Developed by:** Kerassy
+- **License:** apache-2.0
+- **Finetuned from model :** LiquidAI/LFM2.5-2.6B-Base
+
+This lfm2 model was trained 2x faster with [Unsloth](https://github.com/unslothai/unsloth) and Huggingface's TRL library.
+
+[<img src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20made%20with%20love.png" width="200"/>](https://github.com/unslothai/unsloth)

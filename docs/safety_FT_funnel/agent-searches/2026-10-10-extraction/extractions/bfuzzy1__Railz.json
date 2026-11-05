@@ -1,0 +1,152 @@
+{
+  "hf_id": "bfuzzy1/Railz",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:23:22-04:00",
+  "ended": "2026-10-10T00:24:18-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/bfuzzy1__Railz__2026-10-10.md",
+    "cached_sha256": "2a1d14f790ecbdcd6f2ccf07029ca474c68abc3f45f3bb4bc2e2a9abe8048670",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [
+      "https://huggingface.co/collections/bfuzzy1/railz"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "NVIDIA Aegis-2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md",
+      "quote": "Trained with mechanical supervision (NVIDIA Aegis-2.0 labels) + hard-negative mining, on the same data as its reasoning sibling Railz-R."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "Trained with mechanical supervision (NVIDIA Aegis-2.0 labels) + hard-negative mining, on the same data as its reasoning sibling Railz-R. No teacher model in the training loop.",
+    "objective_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-0.6B",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "0.6B",
+    "parameters_stated_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md",
+    "quote": "English; text-only."
+  },
+  "description": {
+    "text": "Railz is a 0.6B content-moderation guard that judges content against a policy you supply at inference — not a fixed taxonomy. Give it a list of prohibited categories; it emits the violated category verbatim (or abstains). Same content flips safe↔unsafe when the policy changes. No chain-of-thought — a fast, direct verdict.\n\nBuilt on Qwen3-0.6B. Trained with mechanical supervision (NVIDIA Aegis-2.0 labels) + hard-negative mining, on the same data as its reasoning sibling Railz-R. No teacher model in the training loop.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "Railz is a 0.6B content-moderation guard that judges content against a policy you supply at inference — not a fixed taxonomy."
+  },
+  "input_kind": {
+    "values": ["free text"],
+    "quotes": [
+      "CONTENT TO MODERATE:\n<content here>"
+    ]
+  },
+  "output_kind": {
+    "values": ["category label"],
+    "quotes": [
+      "state the violated category using the exact category text from the list, or exactly: no listed category applies"
+    ]
+  },
+  "detection_claim": {
+    "kind": "policy following",
+    "categories": [],
+    "quote": "Railz is a 0.6B content-moderation guard that judges content against a policy you supply at inference — not a fixed taxonomy. Give it a list of prohibited categories; it emits the violated category verbatim (or abstains). Same content flips safe↔unsafe when the policy changes.",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "English; text-only.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/bfuzzy1/Railz/raw/main/tokenizer_config.json",
+    "system_prompt": "You are a content moderation system. The policy below lists PROHIBITED categories. Anything not listed is permitted.\nFirst reason briefly inside <think></think>. Then, on a new line, state the violated category using the exact category text from the list, or exactly: no listed category applies\n\nPROHIBITED:\n- violence or physical harm\n- hate speech or identity-based hatred\n- controlled or regulated substances",
+    "system_prompt_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "The card says to run with greedy decoding and about 24 max new tokens. generation_config.json instead has do_sample true, temperature 0.6, top_k 20, and top_p 0.95. The system prompt above is the card's example; the prohibited list is supplied by the caller. tokenizer_config.json contains the Qwen3 chat_template. No adapter_config.json. model.safetensors is a full bfloat16 checkpoint (596,049,920 parameters). The card does not say whether training was LoRA or full, or whether the base was quantized."
+  },
+  "evaluation_reported": {
+    "text": "policy-flip (held-out contrast pairs) 75%. Aegis-2.0 test F1 76% (precision 69, recall 85). ToxicChat F1 22% (precision 14, recall 55).",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md"
+  },
+  "license": {
+    "value": "cc-by-4.0",
+    "source_url": "https://huggingface.co/bfuzzy1/Railz/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "NVIDIA Aegis-2.0",
+    "parent": "Qwen/Qwen3-0.6B"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"bfuzzy1/Railz\"",
+    "\"Railz\" huggingface bfuzzy1 content moderation",
+    "\"Railz\" arxiv safety guard bfuzzy",
+    "\"bfuzzy1/Railz\" github",
+    "Aegis-AI-Content-Safety-Dataset-2.0 huggingface dataset"
+  ],
+  "confidence": "medium"
+}

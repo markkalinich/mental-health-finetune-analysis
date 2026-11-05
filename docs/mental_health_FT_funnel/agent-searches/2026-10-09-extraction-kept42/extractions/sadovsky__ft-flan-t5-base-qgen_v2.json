@@ -1,0 +1,187 @@
+{
+  "hf_id": "sadovsky/ft-flan-t5-base-qgen_v2",
+  "prompt_version": 3,
+  "started": "2026-10-09T17:42:47-04:00",
+  "ended": "2026-10-09T17:58:51-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/sadovsky__ft-flan-t5-base-qgen_v2__2026-10-05.md",
+    "cached_sha256": "46f37aea9de8120215d76045beaa14c634e5009f15248932b849d602a9881461",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "checkpoint-1387/config.json",
+    "checkpoint-1387/generation_config.json",
+    "checkpoint-1387/model.safetensors",
+    "checkpoint-1387/optimizer.pt",
+    "checkpoint-1387/rng_state.pth",
+    "checkpoint-1387/scheduler.pt",
+    "checkpoint-1387/special_tokens_map.json",
+    "checkpoint-1387/spiece.model",
+    "checkpoint-1387/tokenizer.json",
+    "checkpoint-1387/tokenizer_config.json",
+    "checkpoint-1387/trainer_state.json",
+    "checkpoint-1387/training_args.bin",
+    "checkpoint-2774/config.json",
+    "checkpoint-2774/generation_config.json",
+    "checkpoint-2774/model.safetensors",
+    "checkpoint-2774/optimizer.pt",
+    "checkpoint-2774/rng_state.pth",
+    "checkpoint-2774/scheduler.pt",
+    "checkpoint-2774/special_tokens_map.json",
+    "checkpoint-2774/spiece.model",
+    "checkpoint-2774/tokenizer.json",
+    "checkpoint-2774/tokenizer_config.json",
+    "checkpoint-2774/trainer_state.json",
+    "checkpoint-2774/training_args.bin",
+    "config.json",
+    "generation_config.json",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "spiece.model",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": ["https://github.com/PKU-YuanGroup/Machine-Mindset"],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2312.12999",
+        "arxiv_id": "2312.12999",
+        "title": "Machine Mindset: An MBTI Exploration of Large Language Models",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": ["https://huggingface.co/spaces/sadovsky/MBTI"]
+  },
+  "training_data": [
+    {
+      "name": "Machine Mindset MBTI dataset",
+      "hub_id": "pandalla/Machine_Mindset_MBTI_dataset",
+      "urls": [
+        "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md",
+        "https://huggingface.co/datasets/pandalla/Machine_Mindset_MBTI_dataset",
+        "https://huggingface.co/datasets/pandalla/Machine_Mindset_MBTI_dataset/raw/main/README.md",
+        "https://datasets-server.huggingface.co/size?dataset=pandalla/Machine_Mindset_MBTI_dataset",
+        "https://github.com/PKU-YuanGroup/Machine-Mindset",
+        "https://arxiv.org/abs/2312.12999"
+      ],
+      "loads": true,
+      "n_examples": 160884,
+      "language": "en, zh",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md",
+      "quote": "datasets:\n- pandalla/Machine_Mindset_MBTI_dataset"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "not stated",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "not stated",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 2,
+    "steps": 2774,
+    "learning_rate": 0.0005,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "google/flan-t5-base",
+    "source_claims": [
+      {
+        "parent": "google/flan-t5-base",
+        "source_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md",
+        "quote": "This repository hosts a fine-tuned version of **google/flan-t5-base**, adapted for generating *random, personality-themed questions* in the context of the **Myers–Briggs Type Indicator (MBTI)** framework."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "247577856",
+    "parameters_stated_url": "https://huggingface.co/api/models/sadovsky/ft-flan-t5-base-qgen_v2"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "This repository hosts a fine-tuned version of **google/flan-t5-base**, adapted for generating *random, personality-themed questions* in the context of the **Myers–Briggs Type Indicator (MBTI)** framework.\n\nThe model produces short, standalone prompts designed to encourage self-reflection and discussion related to personality traits, emotions, and decision-making.  \nIt operates as a **randomized question generator** rather than an interactive conversational model.",
+    "source_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "It operates as a **randomized question generator** rather than an interactive conversational model."
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "The goal of this model is to generate concise, psychologically relevant questions similar to those found in MBTI-style interviews or self-assessment forms."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "prompt = \"Generate a question about emotional decision-making.\"",
+    "chat_template_present": "no",
+    "chat_template_source": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "max_new_tokens": 60
+    },
+    "generation_settings_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md",
+    "max_context": 512,
+    "notes": "tokenizer_config.json has model_max_length 512 and no chat_template key. config.json n_positions is 512. generation_config.json has no temperature, top_p, top_k, or do_sample. The card example loads f3nsmart/ft-flan-t5-base-qgen, which resolves to sadovsky/ft-flan-t5-base-qgen, a different repository. The Space sadovsky/MBTI loads f3nsmart/ft-flan-t5-base-qgen_v2, which resolves to this repository, with max_new_tokens 80, do_sample true, top_p 0.9, temperature 1.1, top_k 60, and repetition_penalty 1.3. Its default prompt string is \"Generate one thoughtful question.\""
+  },
+  "evaluation_reported": {
+    "text": "checkpoint-2774/trainer_state.json records eval_loss 0.5216382741928101 at step 1387 (epoch 1.0) and eval_loss 0.463400661945343 at step 2774 (epoch 2.0). No other metric is reported.",
+    "source_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/checkpoint-2774/trainer_state.json"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/sadovsky/ft-flan-t5-base-qgen_v2/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "pandalla/Machine_Mindset_MBTI_dataset",
+    "parent": "google/flan-t5-base"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The card example loads f3nsmart/ft-flan-t5-base-qgen, which resolves to sadovsky/ft-flan-t5-base-qgen, a different repository. Inventory methods, dataset, and parent match this card.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"sadovsky/ft-flan-t5-base-qgen_v2\"",
+    "\"ft-flan-t5-base-qgen_v2\" huggingface",
+    "\"ft-flan-t5-base-qgen_v2\" arxiv",
+    "\"ft-flan-t5-base-qgen_v2\" github",
+    "pandalla/Machine_Mindset_MBTI_dataset huggingface dataset",
+    "\"f3nsmart/ft-flan-t5-base-qgen\" huggingface",
+    "\"ft-flan-t5-base-qgen\" sadovsky OR f3nsmart",
+    "Machine Mindset: An MBTI Exploration of Large Language Models"
+  ],
+  "confidence": "medium"
+}

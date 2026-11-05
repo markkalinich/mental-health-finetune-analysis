@@ -1,0 +1,182 @@
+{
+  "hf_id": "tsavage68/MedQA_L3_1000steps_1e5rate_SFT",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:15-04:00",
+  "ended": "2026-10-13T12:45:46-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tsavage68__MedQA_L3_1000steps_1e5rate_SFT__2026-10-05.md",
+    "cached_sha256": "e3405ac52585925402a667b03258fa7ec4b8cc9e4703f4b924a8230280b6c68b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "final_checkpoint/config.json",
+    "final_checkpoint/generation_config.json",
+    "final_checkpoint/model-00001-of-00004.safetensors",
+    "final_checkpoint/model-00002-of-00004.safetensors",
+    "final_checkpoint/model-00003-of-00004.safetensors",
+    "final_checkpoint/model-00004-of-00004.safetensors",
+    "final_checkpoint/model.safetensors.index.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "unknown dataset",
+      "hub_id": "not stated",
+      "urls": [
+        "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md",
+      "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on an unknown dataset."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "tags: trl, sft, generated_from_trainer. This model card has been generated automatically according to the information the Trainer had access to.",
+    "objective_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": 1000,
+    "learning_rate": 0.00001,
+    "batch_size": 4
+  },
+  "parent": {
+    "card_claim": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "source_claims": [
+      {
+        "parent": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on an unknown dataset."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "8B in the parent id Meta-Llama-3-8B-Instruct; safetensors F16 count 8030261248",
+    "parameters_stated_url": "https://huggingface.co/api/models/tsavage68/MedQA_L3_1000steps_1e5rate_SFT"
+  },
+  "languages": {
+    "values": [],
+    "source_url": "",
+    "quote": ""
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [meta-llama/Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) on an unknown dataset.\nIt achieves the following results on the evaluation set:\n- Loss: 0.3681",
+    "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "Intended uses & limitations: More information needed"
+  },
+  "use_claim": {
+    "strength": "Absent",
+    "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on an unknown dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "Intended uses & limitations: More information needed",
+    "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["not stated"],
+    "quotes": ["Intended uses & limitations: More information needed"]
+  },
+  "clinical_task": {
+    "values": ["not stated"],
+    "quotes": ["Training and evaluation data: More information needed"],
+    "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["not stated"],
+    "quote": "This model is a fine-tuned version of meta-llama/Meta-Llama-3-8B-Instruct on an unknown dataset.",
+    "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "not stated",
+    "text_only_input_quote": "",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/tokenizer_config.json",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.6,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/generation_config.json",
+    "max_context": 8192,
+    "notes": "The card is a Trainer template. It says the dataset is unknown and intended use is 'More information needed.' The repository name contains MedQA; that name is not treated as evidence of the dataset or the task. The sft objective is the Trainer tag, not a prose sentence. The card also says 'fine-tuned,' which alone is not an objective. No adapter_config.json. Weights are four F16 shards, 8,030,261,248 parameters, plus a final_checkpoint copy. config.json max_position_embeddings is 8192. generation_config.json also sets max_length 4096. The chat template is the Llama 3 header template and does not set a system prompt. The parent README returned HTTP 401, so there is no quoted parent usage example. Searches for the repo id and the model name did not find a paper, GitHub training repo, or a dataset card."
+  },
+  "evaluation_reported": {
+    "text": "It achieves the following results on the evaluation set: Loss: 0.3681. The training table ends at step 1000 with validation loss 0.3681. The evaluation set is not named.",
+    "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+  },
+  "license": {
+    "value": "llama3",
+    "source_url": "https://huggingface.co/tsavage68/MedQA_L3_1000steps_1e5rate_SFT/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "modified MedQA dataset",
+    "parent": "meta-llama/Meta-Llama-3-8B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The parent matches. The sft method matches the Trainer tag. The card says the dataset is unknown. It does not say 'modified MedQA dataset.' No other source found for this repo names a MedQA dataset.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config"
+  ],
+  "queries_tried": [
+    "\"tsavage68/MedQA_L3_1000steps_1e5rate_SFT\"",
+    "\"MedQA_L3_1000steps_1e5rate_SFT\" huggingface",
+    "\"MedQA_L3_1000steps_1e5rate_SFT\" arxiv OR github"
+  ],
+  "confidence": "medium"
+}

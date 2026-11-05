@@ -1,0 +1,199 @@
+{
+  "hf_id": "balarajr/triage-hospital-agent",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:09-04:00",
+  "ended": "2026-10-13T12:43:33-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/balarajr__triage-hospital-agent__2026-10-05.md",
+    "cached_sha256": "f4f6be732248f17eda18b3f5589bd74afc199823ff192639d1e9b80aeb8d668f",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00005.safetensors",
+    "model-00002-of-00005.safetensors",
+    "model-00003-of-00005.safetensors",
+    "model-00004-of-00005.safetensors",
+    "model-00005-of-00005.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "300 highly curated prompts",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 300,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+      "quote": "Dataset | 300 highly curated prompts"
+    },
+    {
+      "name": "MedMCQA",
+      "hub_id": "openlifescienceai/medmcqa",
+      "urls": ["https://huggingface.co/datasets/openlifescienceai/medmcqa"],
+      "loads": true,
+      "n_examples": 193155,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+      "quote": "The model card YAML lists datasets: openlifescienceai/medmcqa. The training table does not say these exam questions are the 300 prompts. The dataset card says the questions are AIIMS and NEET PG exam MCQs. Split counts on the dataset README: train 182822, validation 4183, test 6150."
+    },
+    {
+      "name": "MedQA",
+      "hub_id": "bigbio/med_qa",
+      "urls": ["https://huggingface.co/datasets/bigbio/med_qa"],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+      "quote": "The model card YAML lists datasets: bigbio/med_qa. The training table does not say these questions are the 300 prompts. The dataset card says it is collected from professional medical board exams and contains 12,723 English, 34,251 simplified Chinese, and 14,123 traditional Chinese questions."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "Training method | GRPO (Generative Reward Policy Optimization)",
+    "objective_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+    "update_scope": "qlora",
+    "update_scope_quote": "LoRA rank | 16. Quantization | 4-bit NF4 (bitsandbytes).",
+    "update_scope_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.5-4B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3.5-4B",
+        "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+        "quote": "A GRPO fine-tuned version of Qwen3.5-4B specialized for hospital crisis management and clinical triage decision-making."
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "A **GRPO fine-tuned** version of `Qwen3.5-4B` specialized for **hospital crisis management** and **clinical triage decision-making**, trained as part of the TRIAGE multi-agent system.\n\nThis model serves as the backbone for a **6-agent hospital crisis simulation** that coordinates: ER Triage Agent — Patient severity classification (START protocol); ICU Management Agent — Bed allocation and overflow protocols; Pharmacy Agent — Drug order validation and contraindication detection; HR Rostering Agent — Emergency staff deployment; IT Systems Agent — EHR integrity and system failure response; CMO Oversight Agent — Override decisions and crisis governance.",
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "This model serves as the backbone for a 6-agent hospital crisis simulation."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "specialized for hospital crisis management and clinical triage decision-making"
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "For research and simulation purposes only. Not validated for real clinical deployment. Should not replace professional medical judgment."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "specialized for hospital crisis management and clinical triage decision-making, trained as part of the TRIAGE multi-agent system.",
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["For research and simulation purposes only"],
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["triage symptoms", "hospital-crisis operations", "give drug information", "support a clinical decision"],
+    "quotes": [
+      "ER Triage Agent — Patient severity classification (START protocol)",
+      "specialized for hospital crisis management and clinical triage decision-making",
+      "Pharmacy Agent — Drug order validation and contraindication detection",
+      "CMO Oversight Agent — Override decisions and crisis governance"
+    ],
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["output = model.generate(**inputs, max_new_tokens=150, temperature=0.1)"]
+  },
+  "clinical_task": {
+    "values": ["triage", "other"],
+    "quotes": [
+      "clinical triage decision-making",
+      "ICU Management Agent — Bed allocation and overflow protocols"
+    ],
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["hospital crisis management", "clinical triage"],
+    "quote": "specialized for hospital crisis management and clinical triage decision-making",
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Hospital Crisis Management System — Step 15. Crisis: mass_casualty | ICU: 45/60 beds | Critical patients: 8. What is the correct triage action?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.1,
+      "max_new_tokens": 150
+    },
+    "generation_settings_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md",
+    "max_context": 262144,
+    "notes": "generation_config.json sets eos_token_id and use_cache only. config.json max_position_embeddings is 262144. tokenizer_config.json has no chat_template key. No adapter_config.json. The published weights are five safetensors shards, BF16, Hub API total 4205751296 parameters. The card does not say the LoRA adapter was merged. The usage snippet loads user/triage-qwen-4b-grpo, not this repository id. The citation URL is https://github.com/YOUR_USERNAME/triage, a placeholder. A search did not find a paper or a real GitHub repository that names this checkpoint. The citation title says DPO fine-tuning; the training table says GRPO."
+  },
+  "evaluation_reported": {
+    "text": "TRIAGE Multi-Agent Benchmark. Mass Casualty, Disease Outbreak, Equipment Failure, Staff Shortage, and Combined Surge each list survival rate 100%, violation detection 100%, and reward 10.0/10.0. Composite Score: 87.33/100. The card says this is conservative for 20-step episodes. Comparison table: TRIAGE (this model), 4B, score 87.3+.",
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/balarajr/triage-hospital-agent/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "grpo|lora",
+    "datasets": "openlifescienceai/medmcqa;bigbio/med_qa",
+    "parent": "Qwen/Qwen3.5-4B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card YAML names GRPO, LoRA, both datasets, and parent Qwen/Qwen3.5-4B, which matches the inventory. The training table also says 4-bit NF4, so the update is LoRA on a quantized base, and it says the training set is 300 curated prompts without saying those prompts are MedMCQA or MedQA. The citation title says DPO fine-tuning.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"balarajr/triage-hospital-agent\"",
+    "\"triage-hospital-agent\" github",
+    "\"TRIAGE: Multi-Agent Hospital Crisis Simulation\" arxiv",
+    "openlifescienceai/medmcqa huggingface dataset",
+    "bigbio/med_qa huggingface dataset"
+  ],
+  "confidence": "medium"
+}

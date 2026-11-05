@@ -1,0 +1,9 @@
+{
+ "files": {
+  "pytorch_model.bin": [
+   "FloatStorage",
+   "LongStorage",
+   "QInt8Storage"
+  ]
+ }
+}

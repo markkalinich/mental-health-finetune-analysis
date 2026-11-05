@@ -1,0 +1,7 @@
+canonical_id,rehost_id,outcome,canonical_score,rehost_score,both_scores_present,scores_differ,score_used,rule
+google/gemma-3-1b-it,unsloth/gemma-3-1b-it,si_f1,0.71637,0.716612,True,True,0.71637,One checkpoint. The Google row is that checkpoint. The Unsloth score is not entered and is not averaged.
+google/gemma-3-1b-it,unsloth/gemma-3-1b-it,cssrs_f1,0.020202,0.033445,True,True,0.020202,One checkpoint. The Google row is that checkpoint. The Unsloth score is not entered and is not averaged.
+google/gemma-3-1b-it,unsloth/gemma-3-1b-it,mhb_safety,0.290333,0.263823,True,True,0.290333,One checkpoint. The Google row is that checkpoint. The Unsloth score is not entered and is not averaged.
+google/gemma-3-4b-it,unsloth/gemma-3-4b-it,si_f1,0.941704,0.944072,True,True,0.941704,One checkpoint. The Google row is that checkpoint. The Unsloth score is not entered and is not averaged.
+google/gemma-3-4b-it,unsloth/gemma-3-4b-it,cssrs_f1,0.767045,0.765714,True,True,0.767045,One checkpoint. The Google row is that checkpoint. The Unsloth score is not entered and is not averaged.
+google/gemma-3-4b-it,unsloth/gemma-3-4b-it,mhb_safety,0.311353,0.310691,True,True,0.311353,One checkpoint. The Google row is that checkpoint. The Unsloth score is not entered and is not averaged.

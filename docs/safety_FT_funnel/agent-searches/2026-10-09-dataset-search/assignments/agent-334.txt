@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 334 of 349). Repository ids, in this order:
+1. tvergara/smollm3-safety-pair-safe
+2. tvergara/smollm3-safety-pair-unsafe
+3. tyzhnh/Qwen3-0.6B-Safety-Math-ZJU
+4. tzchen07/rai-gemma4-e2b-5b-safety-dora-r64-fullfix
+5. tzchen07/rai-n3-nano-4b-safety-l7-fullfix-15ep
+6. tzchen07/rai-n3-nano-4b-safety-m3-fullfix-recall
+7. tzchen07/rai-n3-nano-4b-safety-merged-ipfix
+8. tzchen07/rai-nemotron3-nano-dpo-w2
+9. tzchen07/rai-nemotron3-nano-n3_k2_neg1
+10. tzchen07/rai-nemotron3-nano-v3d-tjpi3o6
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-334.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-334.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

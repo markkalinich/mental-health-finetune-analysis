@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 43 of 315). Repository ids, in this order:
+1. ivanfioravanti/scope-guard-4B-g-2601-mlx-bf16
+2. ivanfioravanti/scope-guard-4B-q-2601-mlx-bf16
+3. jackysnake/sft_gr-llama_guard_3_8b
+4. jackysnake/sft_gr-qwen3_guard_gen_8b
+5. jainsatyam26/gemma4-guardrail-base
+6. jainsatyam26/gemma4-guardrail-final
+7. jainsatyam26/mistral-nemotron-safety-guard-new
+8. jairviloria18/chatbot-guarderia
+9. jamon8888/gliner2-guardrails-pii-f16
+10. JasonZhanETH/Quant_Attack_Llama31_Refusal
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-43.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-43.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

@@ -1,0 +1,235 @@
+{
+  "hf_id": "nicoboss/Qwen-3-32B-Medical-Reasoning",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:27-04:00",
+  "ended": "2026-10-13T12:45:27-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/nicoboss__Qwen-3-32B-Medical-Reasoning__2026-10-10.md",
+    "cached_sha256": "849fdff72e17d9e07c7f2315f831c1c04b87159d8728af920c570bd934f23933",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00014.safetensors",
+    "model-00002-of-00014.safetensors",
+    "model-00003-of-00014.safetensors",
+    "model-00004-of-00014.safetensors",
+    "model-00005-of-00014.safetensors",
+    "model-00006-of-00014.safetensors",
+    "model-00007-of-00014.safetensors",
+    "model-00008-of-00014.safetensors",
+    "model-00009-of-00014.safetensors",
+    "model-00010-of-00014.safetensors",
+    "model-00011-of-00014.safetensors",
+    "model-00012-of-00014.safetensors",
+    "model-00013-of-00014.safetensors",
+    "model-00014-of-00014.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/kingabzpro",
+      "https://github.com/FreedomIntelligence/HuatuoGPT-o1"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2512.05576",
+        "arxiv_id": "2512.05576",
+        "title": "CureAgent: A Training-Free Executor-Analyst Framework for Clinical Reasoning",
+        "venue": "arXiv preprint",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://arxiv.org/abs/2412.18925",
+        "arxiv_id": "2412.18925",
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "venue": "arXiv preprint, 2024",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://www.datacamp.com/tutorial/fine-tuning-qwen3",
+      "https://huggingface.co/kingabzpro/Qwen-3-32B-Medical-Reasoning/blob/main/fine-tuning-qwen-3.ipynb"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md",
+        "https://www.datacamp.com/tutorial/fine-tuning-qwen3"
+      ],
+      "loads": true,
+      "n_examples": 2000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md",
+      "quote": "This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier. The tutorial loads split train[0:2000] of the en config. The copied card says both \"first 500 samples\" and \"Dataset: 2000 examples\". The en viewer shows 19.7k rows of Question, Complex_CoT, and Response."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "We will now configure and initialize the SFTTrainer (Supervised Fine-Tuning Trainer)",
+    "objective_url": "https://www.datacamp.com/tutorial/fine-tuning-qwen3",
+    "update_scope": "qlora",
+    "update_scope_quote": "This project fine-tunes the Qwen/Qwen3-32B model using a medical reasoning dataset (FreedomIntelligence/medical-o1-reasoning-SFT) with 4-bit quantization for memory-efficient training. Fine-tuning is set up with PEFT (LoRA / Adapter Tuning style).",
+    "update_scope_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md",
+    "lora_rank": 64,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3-32B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3-32B",
+        "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md",
+        "quote": "This is https://huggingface.co/kingabzpro/Qwen-3-32B-Medical-Reasoning applied to https://huggingface.co/Qwen/Qwen3-32B"
+      },
+      {
+        "parent": "Qwen/Qwen3-32B",
+        "source_url": "https://huggingface.co/kingabzpro/Qwen-3-32B-Medical-Reasoning/raw/main/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"Qwen/Qwen3-32B\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "32762123264 BF16",
+    "parameters_stated_url": "https://huggingface.co/api/models/nicoboss/Qwen-3-32B-Medical-Reasoning"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "This is https://huggingface.co/kingabzpro/Qwen-3-32B-Medical-Reasoning applied to https://huggingface.co/Qwen/Qwen3-32B\n[Original model card](https://huggingface.co/kingabzpro/Qwen-3-32B-Medical-Reasoning) created by [@kingabzpro](https://huggingface.co/kingabzpro)\n\n## Fine-tuning Qwen3-32B in 4-bit Quantization for Medical Reasoning\n\nThis project fine-tunes the [`Qwen/Qwen3-32B`](https://huggingface.co/Qwen/Qwen3-32B) model using a medical reasoning dataset (`FreedomIntelligence/medical-o1-reasoning-SFT`) with **4-bit quantization** for memory-efficient training.",
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Fine-tuning Qwen3-32B in 4-bit Quantization for Medical Reasoning",
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public"],
+    "quotes": [
+      "The goal is to optimize the model's ability to reason and respond accurately to patient queries, ensuring it adopts a precise and efficient approach to medical question-answering."
+    ],
+    "source_url": "https://www.datacamp.com/tutorial/fine-tuning-qwen3"
+  },
+  "functions": {
+    "values": ["answer medical questions", "clinical reasoning", "suggest a diagnosis", "give treatment advice"],
+    "quotes": [
+      "Please answer the following medical question.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.",
+      "What is the initial management for a patient presenting with diabetic ketoacidosis (DKA)?"
+    ],
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": [
+      "### Response:\n<think>\n{}\n</think>\n{}"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential", "treatment or medication advice"],
+    "quotes": [
+      "Please answer the following medical question.",
+      "advanced knowledge in clinical reasoning, diagnostics, and treatment planning",
+      "What is the initial management for a patient presenting with diabetic ketoacidosis (DKA)?"
+    ],
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "This project fine-tunes the Qwen/Qwen3-32B model using a medical reasoning dataset (FreedomIntelligence/medical-o1-reasoning-SFT) with 4-bit quantization for memory-efficient training.",
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "What is the initial management for a patient presenting with diabetic ketoacidosis (DKA)?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/nicoboss/Qwen-3-32B-Medical-Reasoning",
+    "system_prompt": "You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning. Please answer the following medical question.",
+    "system_prompt_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "max_new_tokens": 1200
+    },
+    "generation_settings_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/generation_config.json",
+    "max_context": 40960,
+    "notes": "nicoboss's repository is 14 BF16 shards (32,762,123,264 parameters) and has no adapter_config.json. The intro says the kingabzpro adapter was applied to Qwen/Qwen3-32B, so this release is the merged model. kingabzpro/Qwen-3-32B-Medical-Reasoning is the LoRA adapter (adapter_model.safetensors, r 64, lora_alpha 16, dropout 0.05, targets q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj). The DataCamp tutorial, by the same author as that adapter, uses SFTTrainer, num_train_epochs 1, learning_rate 2e-4, per_device_train_batch_size 1, gradient_accumulation_steps 2, and load_in_4bit NF4. max_new_tokens 1200 is from the card's usage script. generation_config.json sets temperature 0.6, top_k 20, top_p 0.95, do_sample true. config.json max_position_embeddings is 40960. The chat template is the Qwen3 template and does not set this medical instruction; the instruction is inside the card's prompt. The usage comment says \"original model from Meta\" while base_model_id is Qwen/Qwen3-32B. The card's \"50 minutes\" and the tutorial's \"42 minutes\" are both stated. CureAgent (arXiv:2512.05576) cites https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning and reports 36.513 and 40.791 on two leaderboard phases. HuatuoGPT-o1 was not re-read in full."
+  },
+  "evaluation_reported": {
+    "text": "The model card reports no score. CureAgent (arXiv:2512.05576) names this repository and lists Qwen-3-32B-Medical-Reasoning at 36.513 on phase 1 and 40.791 on phase 2 of its table.",
+    "source_url": "https://arxiv.org/html/2512.05576"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "Qwen/Qwen3-32B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is lora. The card and the training tutorial load Qwen/Qwen3-32B in 4-bit NF4 and train a LoRA adapter, which is QLoRA. nicoboss publishes merged BF16 weights. Dataset id and parent match. The card says both 500 and 2000 examples; the tutorial code uses the first 2000 English rows.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"nicoboss/Qwen-3-32B-Medical-Reasoning\"",
+    "\"Qwen-3-32B-Medical-Reasoning\" arxiv",
+    "\"Qwen-3-32B-Medical-Reasoning\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

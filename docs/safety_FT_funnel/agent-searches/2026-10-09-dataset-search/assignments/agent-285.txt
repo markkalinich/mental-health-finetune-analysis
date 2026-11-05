@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 285 of 315). Repository ids, in this order:
+1. Tommy-DING/FlexGuard-LLaMA3.1-Instruct-8B
+2. Tommy-DING/FlexGuard-Qwen3-0.6B
+3. Tommy-DING/FlexGuard-Qwen3-4B
+4. Tommy-DING/FlexGuard-Qwen3-8B
+5. Tonycoder11/Qwen3Guard-Gen-8B
+6. traromal/AIccel_Guard_Gemma_270m
+7. traromal/AIccel_Guard_Gemma_270m-16bit
+8. TREJJCX691/llama2-refusal-badnet
+9. tricao1105/WARD-0.8b
+10. tricao1105/WARD-2b
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-285.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-285.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

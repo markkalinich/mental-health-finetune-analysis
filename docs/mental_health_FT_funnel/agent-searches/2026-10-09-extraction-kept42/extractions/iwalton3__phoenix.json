@@ -1,0 +1,148 @@
+{
+  "hf_id": "iwalton3/phoenix",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:52:11-04:00",
+  "ended": "2026-10-09T16:53:51-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/iwalton3__phoenix__2026-10-09.md",
+    "cached_sha256": "f5deafc079ace4b33157401bc8219c9aaab295e2124be04cc48f780c28b07f40",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "Phoenix_4B-Q8_0.gguf",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": [],
+    "demos": [
+      "https://ollama.com/izzie/phoenix",
+      "https://featherless.ai/models/iwalton3/phoenix"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "phoenix_train.jsonl",
+      "hub_id": "iwalton3/sycofact-training-data",
+      "urls": [
+        "https://huggingface.co/iwalton3/phoenix/raw/main/README.md",
+        "https://huggingface.co/datasets/iwalton3/sycofact-training-data",
+        "https://huggingface.co/datasets/iwalton3/sycofact-training-data/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 5970,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/iwalton3/sycofact-training-data/raw/main/README.md",
+      "quote": "This data was synthetically generated using steered Gemma 3 27B for assistant turns and Gemma 3 27B abliterated for user turns."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "not stated",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "google/gemma-3-4b-it",
+    "source_claims": [],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "4B",
+    "parameters_stated_url": "https://huggingface.co/iwalton3/phoenix/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/iwalton3/phoenix/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "Not a therapy bot. Not a coping skills app. Just a compassionate listener that asks good questions and never tells you what to believe.\n\n4.1GB. Runs locally. No data leaves your device.",
+    "source_url": "https://huggingface.co/iwalton3/phoenix/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Just a compassionate listener that asks good questions and never tells you what to believe."
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "Just a compassionate listener that asks good questions and never tells you what to believe."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model is not a substitute for professional mental health services. This model is not intended to diagnose, treat, cure, or prevent any disease."
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "\"messages\": [{\"role\": \"user\", \"content\": \"Hello!\"}]",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/iwalton3/phoenix/raw/main/chat_template.jinja",
+    "system_prompt": "You are the voice of honest reason and compassion for someone who has lost their way in life. Your goal: Guide them to the answers through application of targeted questions. It's very important to be even-handed and never tell the user what to believe. Simply challenge assumptions they may have made in their statements, but do it in a compassionate and caring way. Don't ever be sycophantic or prescriptive.",
+    "system_prompt_url": "https://huggingface.co/iwalton3/phoenix/raw/main/README.md",
+    "generation_settings": {
+      "do_sample": true,
+      "top_k": 64,
+      "top_p": 0.95
+    },
+    "generation_settings_url": "https://huggingface.co/iwalton3/phoenix/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card has no transformers usage example. The Ollama page it links sends a text user turn. config.json includes vision_config. The parent card at google/gemma-3-4b-it returned 401. generation_config.json does not set temperature. The safetensors index lists 4300079472 parameters. The card also says 4.1GB. Ollama lists a 128K context; Featherless lists 32k."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "gemma",
+    "source_url": "https://huggingface.co/iwalton3/phoenix/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "iwalton3/sycofact-training-data",
+    "parent": "google/gemma-3-4b-it"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"iwalton3/phoenix\"",
+    "\"phoenix\" \"iwalton3\" huggingface gemma",
+    "\"Phoenix 4B\" mental health gemma arxiv",
+    "\"iwalton3/phoenix\" OR \"Phoenix 4B\" gemma github iwalton"
+  ],
+  "confidence": "medium"
+}

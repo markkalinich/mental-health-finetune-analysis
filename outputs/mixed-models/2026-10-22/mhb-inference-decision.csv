@@ -1,0 +1,2 @@
+method,reason,reliable_interior_mixed_model,profile_peak_ratio,profile_peak_llf,profile_zero_llf,n_observations,n_clusters,inference_df,n_parameters,ssc_multiplier
+ols_crv3,"Every Powell start converged to a lineage variance near zero, and the REML profile is highest at a lineage variance of zero. The likelihood falls as that variance ratio increases, so the mixed-model solution is on the boundary. Mixed-model Wald p-values are not used.",False,0.0,39.81635791106601,39.81635791106601,43,18,17,9,1.3079584775086506

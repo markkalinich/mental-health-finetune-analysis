@@ -1,0 +1,300 @@
+{
+  "hf_id": "PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7",
+  "prompt_version": 4,
+  "started": "2026-10-10T13:46:02-04:00",
+  "ended": "2026-10-10T13:50:52-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/PLJIANGG05__qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7__2026-10-10.md",
+    "cached_sha256": "0e680b191ec388cc6b18aec2d2041ce480212625a760f4d96d6914d8c6375d49",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "LICENSE",
+    "LICENSE.base-model",
+    "LICENSE.code",
+    "README.md",
+    "SHA256SUMS.json",
+    "adapter/adapter_config.json",
+    "adapter/adapter_model.safetensors",
+    "adapter/chat_template.jinja",
+    "adapter/tokenizer.json",
+    "adapter/tokenizer_config.json",
+    "calibration.json",
+    "chat_template.jinja",
+    "config.json",
+    "danger_intent_config.json",
+    "deployment_bf16.json",
+    "deployment_nf4.json",
+    "evaluation_comparison.json",
+    "generation_config.json",
+    "merge_verification.json",
+    "merges.txt",
+    "model-00001-of-00005.safetensors",
+    "model-00002-of-00005.safetensors",
+    "model-00003-of-00005.safetensors",
+    "model-00004-of-00005.safetensors",
+    "model-00005-of-00005.safetensors",
+    "model.safetensors.index.json",
+    "predict.py",
+    "preprocessor_config.json",
+    "release_identity.json",
+    "rename_history.json",
+    "requirements.txt",
+    "tensor_verification.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_dataset_summary.json",
+    "upstream_auxiliary/README.md",
+    "upstream_auxiliary/mtp.safetensors",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2607.12792",
+        "arxiv_id": "2607.12792",
+        "title": "Silent Alarm: A J-Space Protocol for Comparing Danger Recognition Across Models and Quantization Levels",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": [
+      "https://featherless.ai/models/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "Aegis V2",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": [
+        "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      ],
+      "loads": true,
+      "n_examples": 25569,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+      "quote": "Aegis V2 | 25,569"
+    },
+    {
+      "name": "OR-Bench",
+      "hub_id": "bench-llm/or-bench",
+      "urls": [
+        "https://huggingface.co/datasets/bench-llm/or-bench"
+      ],
+      "loads": true,
+      "n_examples": 20062,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+      "quote": "OR-Bench | 20,062"
+    },
+    {
+      "name": "Chinese Do-Not-Answer",
+      "hub_id": "walledai/CDNA",
+      "urls": [
+        "https://huggingface.co/datasets/walledai/CDNA"
+      ],
+      "loads": true,
+      "n_examples": 2724,
+      "language": "zh",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+      "quote": "Chinese Do-Not-Answer | 2,724"
+    },
+    {
+      "name": "AdvBench",
+      "hub_id": "walledai/AdvBench",
+      "urls": [
+        "https://huggingface.co/datasets/walledai/AdvBench"
+      ],
+      "loads": false,
+      "n_examples": 509,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+      "quote": "AdvBench | 509"
+    },
+    {
+      "name": "HarmBench",
+      "hub_id": "walledai/HarmBench",
+      "urls": [
+        "https://huggingface.co/datasets/walledai/HarmBench"
+      ],
+      "loads": false,
+      "n_examples": 391,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+      "quote": "HarmBench | 391"
+    },
+    {
+      "name": "JBB-Behaviors",
+      "hub_id": "JailbreakBench/JBB-Behaviors",
+      "urls": [
+        "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors"
+      ],
+      "loads": true,
+      "n_examples": 200,
+      "language": "en",
+      "provenance": "not stated",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+      "quote": "JBB-Behaviors | 200"
+    },
+    {
+      "name": "Corrected Qwen3.5-4B synthetic data",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 29833,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/training_dataset_summary.json",
+      "quote": "qwensynth: Qwen3.5-4B generated, reviewed and corrected synthetic samples"
+    },
+    {
+      "name": "Five-category AI synthetic supplement 01-05",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": 4499,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "repo_file",
+      "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/training_dataset_summary.json",
+      "quote": "supplement: Five-category AI-generated supplementary datasets 01-05"
+    }
+  ],
+  "training_method": {
+    "objective": "classification",
+    "objective_quote": "Only text-input safety classification was trained and evaluated; no image/video safety claim is made.",
+    "objective_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "This repository also preserves the original LoRA tensors in `adapter/`.",
+    "update_scope_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen3.5-4B",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen3.5-4B",
+        "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/adapter/adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"Qwen/Qwen3.5-4B\""
+      },
+      {
+        "parent": "Qwen/Qwen3.5-4B",
+        "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/danger_intent_config.json",
+        "quote": "\"base_model\": \"Qwen/Qwen3.5-4B\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "4539265536",
+    "parameters_stated_url": "https://huggingface.co/api/models/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7"
+  },
+  "languages": {
+    "values": ["en", "zh"],
+    "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md",
+    "quote": "English and Chinese are present in the task and training data."
+  },
+  "description": {
+    "text": "Merged BF16 full model for classifying a **user input** as `SAFE` or `UNSAFE`. This repository also preserves the original LoRA tensors in `adapter/`. It is a research classifier, not a general-purpose assistant and not an independently certified safety system.",
+    "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "It is a research classifier, not a general-purpose assistant and not an independently certified safety system."
+  },
+  "input_kind": {
+    "values": ["user prompt"],
+    "quotes": [
+      "Merged BF16 full model for classifying a **user input** as `SAFE` or `UNSAFE`.",
+      "python predict.py --model . --text \"How do I protect my email account?\" --load-in-4bit"
+    ]
+  },
+  "output_kind": {
+    "values": ["binary label", "score", "structured object"],
+    "quotes": [
+      "Output includes the binary prediction, raw margin, risk score, threshold and truncation indicator.",
+      "判断以下用户请求是否包含危险意图或明显违反安全政策的意图。只输出 SAFE 或 UNSAFE，不要解释。",
+      "return {'prediction':'UNSAFE' if risk>=threshold else 'SAFE','risk_score':risk,'safety_score':1-risk,'raw_margin':margin,'decision_threshold':threshold,'truncated':truncated,"
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [],
+    "quote": "Merged BF16 full model for classifying a **user input** as `SAFE` or `UNSAFE`.",
+    "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Only text-input safety classification was trained and evaluated; no image/video safety claim is made.",
+    "chat_template_present": "yes",
+    "chat_template_source": "tokenizer_config.json chat_template key and chat_template.jinja",
+    "system_prompt": "判断以下用户请求是否包含危险意图或明显违反安全政策的意图。只输出 SAFE 或 UNSAFE，不要解释。",
+    "system_prompt_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/danger_intent_config.json",
+    "generation_settings": {},
+    "generation_settings_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/generation_config.json",
+    "max_context": 1024,
+    "notes": "The scorer caps classification context at 1,024 tokens. config.json text_config.max_position_embeddings is 262144. generation_config.json has eos_token_id 248044 and use_cache true, and no temperature, top_p, top_k, max_new_tokens, repetition_penalty, or do_sample. calibration.json temperature 0.8502381337339533 is the Platt scaling temperature for the risk score, not a sampling temperature. The saved chat template is the upstream Qwen template; predict.py does not use it for scoring. The architecture is Qwen3_5ForConditionalGeneration and can take images, but the card says only text-input classification was trained."
+  },
+  "evaluation_reported": {
+    "text": "calibration.json, model_name Qwen3.5-4B-LoRA-supplement-01-05-low-lr, fits a Platt temperature and bias on xstest_margins.jsonl. At the review threshold 0.3504582245139618, 450 samples have accuracy 0.9177777777777778, unsafe recall 0.95, and ROC AUC 0.97578. The card says XSTest was used for validation and calibration and is not a new blind holdout. evaluation_comparison.json reports V9, a V9-first 85 percent ensemble that calls V5 and V7 only on triggered records, and Qwen3Guard Strict and Loose, on 8,498 locked records. It does not report a standalone full-suite score for this V7 checkpoint. The card says those numbers are NF4 base-plus-adapter results, not scores of the merged weights.",
+    "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/calibration.json"
+  },
+  "license": {
+    "value": "cc-by-nc-4.0 for the new fine-tuning contribution; Apache-2.0 for the base model and the inference code",
+    "source_url": "https://huggingface.co/PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "Aegis V2 | OR-Bench | Chinese Do-Not-Answer | AdvBench | HarmBench | JBB-Behaviors",
+    "parent": "Qwen/Qwen3.5-4B"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Parent and LoRA match. The inventory omits Corrected Qwen3.5-4B synthetic data (29,833 rows) and the five-category AI synthetic supplement (4,499 rows). Those two sources are in the card and in training_dataset_summary.json. The card calls the run continued adaptation of a LoRA, not a fresh 83,787-row training run.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"PLJIANGG05/qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7\"",
+    "\"qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7\" huggingface",
+    "\"qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7\" arxiv",
+    "\"qwen35-4b-danger-intent-opendata-qwensynth-supplement-83787-v7\" github",
+    "Silent Alarm: A J-Space Protocol for Comparing Danger Recognition Across Models and Quantization Levels",
+    "Aegis V2 huggingface dataset",
+    "OR-Bench huggingface dataset",
+    "Chinese Do-Not-Answer huggingface dataset",
+    "AdvBench huggingface dataset HarmBench",
+    "JBB-Behaviors huggingface dataset"
+  ],
+  "confidence": "medium"
+}

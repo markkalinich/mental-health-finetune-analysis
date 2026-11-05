@@ -1,0 +1,209 @@
+{
+  "hf_id": "lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:46:23-04:00",
+  "ended": "2026-10-13T12:48:18-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/lukasdrews__Gemma-4-E2B-IT-SFT-RLVR-Medical__2026-10-10.md",
+    "cached_sha256": "38e07fcd4a6e9958fbf76d1742597ce34c337352219661cf732fe4b02f2a7611",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00005.safetensors",
+    "model-00002-of-00005.safetensors",
+    "model-00003-of-00005.safetensors",
+    "model-00004-of-00005.safetensors",
+    "model-00005-of-00005.safetensors",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/LukasDrews97/Gemma-4-IT-SFT-RLVR-Medical"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/1909.06146",
+        "arxiv_id": "1909.06146",
+        "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+        "venue": "EMNLP-IJCNLP 2019",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2606.16517",
+        "arxiv_id": "2606.16517",
+        "title": "How Post-Training Shapes Biological Reasoning Models",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical-GGUF",
+      "https://pubmedqa.github.io/",
+      "https://featherless.ai/models/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "PubMedQA pqa_artificial",
+      "hub_id": "qiaojin/PubMedQA",
+      "urls": [
+        "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md",
+        "https://huggingface.co/datasets/qiaojin/PubMedQA",
+        "https://github.com/LukasDrews97/Gemma-4-IT-SFT-RLVR-Medical/blob/main/hf_datasets/pubmedqa_dataset.py"
+      ],
+      "loads": true,
+      "n_examples": 211269,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "github",
+      "source_url": "https://github.com/LukasDrews97/Gemma-4-IT-SFT-RLVR-Medical/blob/main/hf_datasets/pubmedqa_dataset.py",
+      "quote": "self.train_data = load_dataset(\"pubmed_qa\", \"pqa_artificial\", split=\"train\")"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "Gemma-4-E2B-it fine-tuned on PubMedQA using SFT and RLVR.",
+    "objective_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md",
+    "update_scope": "lora",
+    "update_scope_quote": "peft_config = LoraConfig(lora_alpha=16, lora_dropout=0.05, r=16, bias=\"none\", target_modules=\"all-linear\", task_type=\"CAUSAL_LM\")",
+    "update_scope_url": "https://github.com/LukasDrews97/Gemma-4-IT-SFT-RLVR-Medical/blob/main/QLORA_SFT.py",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "no",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 5e-05,
+    "batch_size": 8
+  },
+  "parent": {
+    "card_claim": "google/gemma-4-E2B-it",
+    "source_claims": [
+      {
+        "parent": "google/gemma-4-E2B-it",
+        "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md",
+        "quote": "base_model:\n- google/gemma-4-E2B-it"
+      },
+      {
+        "parent": "google/gemma-4-E2B-it",
+        "source_url": "https://github.com/LukasDrews97/Gemma-4-IT-SFT-RLVR-Medical/blob/main/config.py",
+        "quote": "MODEL_ID: str = \"google/gemma-4-E2B-it\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "5506950723",
+    "parameters_stated_url": "https://huggingface.co/api/models/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "Gemma-4-E2B-it fine-tuned on PubMedQA using SFT and RLVR.",
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "Do GEC produce and bear factor H under complement attack?"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "Gemma-4-E2B-it fine-tuned on PubMedQA using SFT and RLVR."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": "not stated"
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "not stated",
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": "not stated"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer"],
+    "quotes": ["Final Decision: yes"]
+  },
+  "clinical_task": {
+    "values": ["exam answering"],
+    "quotes": ["PubMedQA (In-Domain) 73.10 %. Eval only: MedQA-USMLE (Zero-Shot Transfer) 43.05 %."],
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["biomedical"],
+    "quote": "- biomedical",
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"type\": \"text\", \"text\": \"Do GEC produce and bear factor H under complement attack?\"}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "not stated",
+    "generation_settings": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/generation_config.json",
+    "max_context": 131072,
+    "notes": "The card example sets max_new_tokens 1024 and no temperature. config.json is Gemma4ForConditionalGeneration with text, vision, and audio configs; the published example is a text question. text max_position_embeddings is 131072. The Hub upload is five bfloat16 shards and has no adapter_config.json. SFT settings from the linked GitHub: 3 epochs, learning rate 5e-5, batch size 8, max_length 2048, LoRA r 16 and alpha 16. config.py sets USE_QLORA = False, so the checked-in run does not load the base in 4-bit even though the script is named QLORA_SFT.py. The next command is GRPO_RLVR.py. N_SFT_SAMPLES is 1024 and N_RLVR_SAMPLES is 256, taken from pqa_artificial after a 50/50 split. N_TEST_SAMPLES is 1000 from pqa_labeled."
+  },
+  "evaluation_reported": {
+    "text": "PubMedQA in-domain 73.10% for the unquantized SFT+RLVR model, against 58.10% for the base. MedQA-USMLE zero-shot 43.05%, against 29.54% for the base. Quantized GGUF scores are also in the table: Q8_0 72.40/43.00, Q6_K 72.10/42.18, Q5_K_M 72.00/38.88, Q4_K_M 71.80/38.88.",
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "sft",
+    "datasets": "qiaojin/PubMedQA",
+    "parent": "google/gemma-4-E2B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is sft. The card also says RLVR, and the linked GitHub runs GRPO_RLVR.py after the SFT script. Dataset id and parent match.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "html_fulltext",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"lukasdrews/Gemma-4-E2B-IT-SFT-RLVR-Medical\"",
+    "\"Gemma-4-E2B-IT-SFT-RLVR-Medical\" huggingface",
+    "\"Gemma-4-E2B-IT-SFT-RLVR-Medical\" arxiv",
+    "\"Gemma-4-E2B-IT-SFT-RLVR-Medical\" github",
+    "qiaojin/PubMedQA huggingface dataset"
+  ],
+  "confidence": "high"
+}

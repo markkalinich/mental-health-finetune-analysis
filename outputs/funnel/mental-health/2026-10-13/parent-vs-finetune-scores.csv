@@ -1,0 +1,22 @@
+n,hf_id,short,parent,family,version,iteration,size,n_params,si_parent_correct,si_ft_correct,si_n,cssrs_parent_accuracy,cssrs_ft_accuracy,cssrs_n,mhb_parent_mean,mhb_ft_mean,mhb_n
+1,ecorbari/Gemma-2b-it-Psych-Merged,ecorbari,google/gemma-2b-it,Gemma,Gemma 1,1,2B,2000000000,296,275,450,0.112000,0.000000,500,0.154515,0.077489,100
+2,KNipun/whisper-psychology-gemma-3-1b,whisper,google/gemma-3-1b-it,Gemma,Gemma 3,2,1B,1000000000,331,290,450,0.268000,0.074000,500,0.361076,0.094374,100
+3,i5-8300h/gemma3-4b-psychology-dpo,gemma3 DPO,google/gemma-3-4b-it,Gemma,Gemma 3,2,4B,4000000000,377,378,450,0.356000,0.358000,500,0.428852,0.446268,100
+4,naazimsnh02/gemma3-4b-mental-health-counseling,gemma3 counseling,unsloth/gemma-3-4b-it,Gemma,Gemma 3,2,4B,4000000000,377,125,450,0.356000,0.006000,500,0.426300,0.070705,100
+5,AIMH/SQPsychLLM-8b-gemma,SQPsychLLM,meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,1,8B,8000000000,358,144,450,0.362000,0.190000,500,0.307795,0.225600,100
+6,AIMH/SQPsychLLM-8b-gemma-no_questionnaire,"SQPsychLLM, no form",meta-llama/Meta-Llama-3-8B-Instruct,Llama,Llama 3,1,8B,8000000000,358,145,450,0.362000,0.282000,500,0.307795,0.244014,100
+7,Psychotherapy-LLM/PsyCoPref-Llama3-8B,PsyCoPref,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,2,8B,8000000000,402,427,450,0.398000,0.372000,500,0.340662,0.360005,100
+8,Wothmag07/counseLLM,counseLLM,meta-llama/Llama-3.1-8B-Instruct,Llama,Llama 3.1,2,8B,8000000000,402,25,450,0.398000,0.254000,500,,,
+9,thillaic/CBT-Copilot,CBT-Copilot,meta-llama/Llama-3.2-3B-Instruct,Llama,Llama 3.2,3,3B,3000000000,325,329,450,0.222000,0.210000,500,0.302738,0.283001,100
+10,prabureddy/Mental-Health-FineTuned-Mistral-7B-Instruct-v0.2,prabureddy,mistralai/Mistral-7B-Instruct-v0.2,Mistral,Mistral 7B v0.2,1,7B,7000000000,392,268,450,0.362000,0.088000,500,0.345752,0.202286,100
+11,SpaceXerror/cognitive-ai-mental-health-7b,cognitive,mistralai/Mistral-7B-Instruct-v0.3,Mistral,Mistral 7B v0.3,2,7B,7000000000,354,340,450,0.348000,0.198000,500,0.304187,0.314317,100
+12,AIMH/SQPsych-8b-gemma-Qwen,SQPsych Qwen,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,2,7B,7000000000,417,407,450,0.394000,0.364000,500,0.312166,0.278116,100
+13,AIMH/SQPsych-8b-gemma-Qwen_no_questionnaire,"SQPsych Qwen, no form",Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,2,7B,7000000000,417,416,450,0.394000,0.354000,500,0.312166,0.280337,100
+14,ArkMaster123/qwen2.5-7b-therapist-v3,therapist-v3,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,2,7B,7000000000,417,308,450,0.394000,0.222000,500,0.312166,0.181836,100
+15,zbt566666/qwen2.5-7b-mental-therapy-lora-sft,zbt,Qwen/Qwen2.5-7B-Instruct,Qwen,Qwen2.5,2,7B,7000000000,417,397,450,0.394000,0.330000,500,0.312166,0.269332,100
+16,Someet24/empathetic-qwen3-8b-Jan,empathetic,Qwen/Qwen3-8B,Qwen,Qwen3,3,8B,8000000000,420,420,450,0.334000,0.298000,500,0.321301,0.174227,100
+17,SungJoo/cradle-dialogue-qwen3-32b-2epoch,cradle,Qwen/Qwen3-32B,Qwen,Qwen3,3,32B,32000000000,430,430,450,0.416000,0.416000,500,0.314939,0.351132,100
+18,hongli-zhan/MINT-empathy-Qwen3-1.7B,MINT 1.7B,Qwen/Qwen3-1.7B,Qwen,Qwen3,3,1.7B,1700000000,377,374,450,0.162000,0.170000,500,0.279043,0.302754,100
+19,hongli-zhan/MINT-empathy-Qwen3-4B,MINT 4B,Qwen/Qwen3-4B,Qwen,Qwen3,3,4B,4000000000,418,419,450,0.392000,0.384000,500,0.320734,0.343910,100
+20,giannor/Qwen3.5-27B-psysafe,PsySafe,Qwen/Qwen3.5-27B,Qwen,Qwen3.5,4,27B,27000000000,420,386,450,0.506000,0.498000,500,0.389364,0.115036,100
+21,dzur658/smollm2-mentalhealth-360m-V2,SmolLM2,HuggingFaceTB/SmolLM2-360M-Instruct,SmolLM,SmolLM2,1,360M,360000000,209,22,450,0.046000,0.000000,500,0.236601,0.170114,100

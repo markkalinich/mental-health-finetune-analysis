@@ -1,0 +1,32 @@
+{
+  "architectures": [
+    "neurovlm.qformer.NeuroQFormer"
+  ],
+  "contains": [
+    "PubMed-grounded QFormer weights",
+    "frozen image projection head",
+    "empty canonical projection banks"
+  ],
+  "library_name": "neurovlm",
+  "model_type": "neurovlm_qformer",
+  "qformer": {
+    "canonical_basis": "all",
+    "dropout": 0.05,
+    "hidden_dim": 512,
+    "image_dim": 384,
+    "lm_dim": 1024,
+    "num_heads": 8,
+    "num_layers": 6,
+    "num_queries": 32,
+    "projection_temp": null,
+    "semantic_dim": 384,
+    "use_canonical_projection": false
+  },
+  "qformer_variant": "pubmed",
+  "training_metadata": {
+    "image_projection": "neurovlm/ProjectionHeads:proj_head_image_infonce.safetensors",
+    "source_checkpoint": "/home/rph/.cache/neurovlm/qformer_grounded_permissive_neuro_epoch-29.pt",
+    "source_notebook": "docs/02_models/13_qformer_pubmed.ipynb"
+  },
+  "weights": "model.safetensors"
+}

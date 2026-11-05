@@ -1,0 +1,161 @@
+{
+  "hf_id": "SoufianeDahimi/child_trauma_gemma_finetune",
+  "prompt_version": 3,
+  "started": "2026-10-09T16:50:15-04:00",
+  "ended": "2026-10-09T16:53:03-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/SoufianeDahimi__child_trauma_gemma_finetune__2026-10-09.md",
+    "cached_sha256": "d81d2f2eda37b57b18dc20a9517a84a2afcfec6ac72a642edfbbfc2713e3b345",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "adapter_model.safetensors",
+    "chat_template.jinja",
+    "config.json",
+    "deprecated_adapter_config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": ["https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "trauma_assessment_training.jsonl",
+      "hub_id": "not stated",
+      "urls": [
+        "https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma/blob/main/trauma_assessment_training.jsonl",
+        "https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma/blob/main/README.md"
+      ],
+      "loads": false,
+      "n_examples": 1440,
+      "language": "Arabic, Ukrainian, English",
+      "provenance": "synthetic",
+      "source_type": "github",
+      "source_url": "https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma/blob/main/README.md",
+      "quote": "This generates realistic trauma assessment conversations and corresponding professional reports. The generated dataset can be found at `trauma_assessment_training.jsonl`"
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "from trl import SFTTrainer, SFTConfig",
+    "objective_url": "https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma/blob/main/finetuning/trauma_assessment_gemma_finetune.ipynb",
+    "update_scope": "qlora",
+    "update_scope_quote": "Fine-tuning Method: LoRA (r=16, alpha=16). \"base_model_name_or_path\": \"unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit\"",
+    "update_scope_url": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/deprecated_adapter_config.json",
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 3,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 1
+  },
+  "parent": {
+    "card_claim": "google/gemma-3n-E2B-it",
+    "source_claims": [
+      {
+        "parent": "unsloth/gemma-3n-E2B-it",
+        "source_url": "https://github.com/Dahimi/Gemma3n_Finetune_Child_Trauma/blob/main/finetuning/trauma_assessment_gemma_finetune.ipynb",
+        "quote": "model_name = \"unsloth/gemma-3n-E2B-it\""
+      },
+      {
+        "parent": "unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit",
+        "source_url": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/deprecated_adapter_config.json",
+        "quote": "\"base_model_name_or_path\": \"unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit\""
+      }
+    ],
+    "sources_agree_with_card": "no"
+  },
+  "size": {
+    "parameters_stated": "5976833472",
+    "parameters_stated_url": "https://huggingface.co/api/models/SoufianeDahimi/child_trauma_gemma_finetune"
+  },
+  "languages": {
+    "values": ["en", "ar", "uk"],
+    "source_url": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/README.md",
+    "quote": "Languages: Multilingual support (Arabic dialects, Ukrainian, English)"
+  },
+  "description": {
+    "text": "This is a fine-tuned version of Gemma 3N specifically optimized for conducting trauma assessments with children from conflict zones. The model is designed to facilitate empathetic, culturally-sensitive conversations and generate professional psychological reports.",
+    "source_url": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "The model is designed to facilitate empathetic, culturally-sensitive conversations and generate professional psychological reports."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "The model is designed to facilitate empathetic, culturally-sensitive conversations and generate professional psychological reports."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "This model should not replace professional mental health assessment"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "{\"type\": \"text\", \"text\": prompt}",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "top_k": 64,
+      "max_new_tokens": 512,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/README.md",
+    "max_context": 2048,
+    "notes": "The card and the usage example set context length and max_seq_length to 2048. config.json text_config max_position_embeddings is 32768. generation_config.json sets do_sample true, top_k 64, and top_p 0.95, and does not set temperature or max_new_tokens. The architecture is Gemma3nForConditionalGeneration and includes vision_config and audio_config. The notebook sets finetune_vision_layers to false. tokenizer_config sets use_default_system_prompt to false, and the usage example has no system message. The notebook calls save_pretrained_merged and push_to_hub_merged for this repository id. The repository still contains adapter_model.safetensors and deprecated_adapter_config.json alongside the full shards. The notebook sets gradient_accumulation_steps to 4 and does not pass load_in_4bit; the saved adapter config names the 4-bit Unsloth base."
+  },
+  "evaluation_reported": {
+    "text": "not stated",
+    "source_url": ""
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/SoufianeDahimi/child_trauma_gemma_finetune/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "trauma_assessment_training.jsonl",
+    "parent": "google/gemma-3n-E2B-it"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The dataset filename matches. Inventory methods is lora and the parent is google/gemma-3n-E2B-it, which matches the card YAML. The same card's prose says the base is unsloth/gemma-3n-E2B-it. The notebook loads unsloth/gemma-3n-E2B-it with SFTTrainer. deprecated_adapter_config.json names unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit, so the saved adapter is LoRA on a 4-bit base.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github"
+  ],
+  "queries_tried": [
+    "\"SoufianeDahimi/child_trauma_gemma_finetune\"",
+    "\"child_trauma_gemma_finetune\" huggingface",
+    "\"child_trauma_gemma_finetune\" arxiv",
+    "\"child_trauma_gemma_finetune\" github",
+    "trauma_assessment_training.jsonl huggingface dataset"
+  ],
+  "confidence": "medium"
+}

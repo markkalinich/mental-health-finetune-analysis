@@ -1,0 +1,8 @@
+{
+ "files": {
+  "pytorch_model.bin": [
+   "BFloat16Storage",
+   "LongStorage"
+  ]
+ }
+}

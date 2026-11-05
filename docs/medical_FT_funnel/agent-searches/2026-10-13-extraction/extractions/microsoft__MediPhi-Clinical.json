@@ -1,0 +1,275 @@
+{
+  "hf_id": "microsoft/MediPhi-Clinical",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:35:48-04:00",
+  "ended": "2026-10-13T12:42:07-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/microsoft__MediPhi-Clinical__2026-10-10.md",
+    "cached_sha256": "4613dabc86a627013c725960a24cfd26acc547fae7971cdad79c4ea21f0f93ee",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "CODE_OF_CONDUCT.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/pytorch/pytorch",
+      "https://github.com/huggingface/transformers",
+      "https://github.com/HazyResearch/flash-attention"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2505.10717",
+        "arxiv_id": "2505.10717",
+        "title": "A Modular Approach for Clinical SLMs Driven by Synthetic Data with Pre-Instruction Tuning, Model Merging, and Clinical-Tasks Alignment",
+        "venue": "ACL 2025",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2507.05517",
+        "arxiv_id": "2507.05517",
+        "title": "Empowering Healthcare Practitioners with Language Models: Structuring Speech Transcripts in Two Real-World Clinical Applications",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2507.07248",
+        "arxiv_id": "2507.07248",
+        "title": "MedRiskEval: Medical Risk Evaluation Benchmark of Language Models, On the Importance of User Perspectives in Healthcare Settings",
+        "venue": "arXiv",
+        "names_this_repo": false
+      },
+      {
+        "url": "https://arxiv.org/abs/2407.13833",
+        "arxiv_id": "2407.13833",
+        "title": "Phi-3 Safety Post-Training: Aligning Language Models with a \"Break-Fix\" Cycle",
+        "venue": "arXiv",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://aclanthology.org/2025.acl-long.950/",
+      "https://huggingface.co/collections/microsoft/mediphi"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/Calistusmwonga/ai-first-aid-chatbot",
+      "https://huggingface.co/spaces/dogoodson/Project1Demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "PMC-Patients",
+      "hub_id": "zhengyun21/PMC-Patients",
+      "urls": [
+        "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+        "https://arxiv.org/html/2505.10717",
+        "https://huggingface.co/datasets/zhengyun21/PMC-Patients"
+      ],
+      "loads": false,
+      "n_examples": 156000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2505.10717",
+      "quote": "In the Clinical group, we leverage PMC-Patients v2 Zhao et al. (2023) — subset with distribution- and commercial-friendly CC licenses — which contains clinical cases."
+    },
+    {
+      "name": "Asclepius",
+      "hub_id": "starmpcc/Asclepius-Synthetic-Clinical-Notes",
+      "urls": [
+        "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+        "https://arxiv.org/html/2505.10717",
+        "https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes",
+        "https://datasets-server.huggingface.co/size?dataset=starmpcc/Asclepius-Synthetic-Clinical-Notes"
+      ],
+      "loads": true,
+      "n_examples": 80000,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2505.10717",
+      "quote": "We also include synthetic derivative datasets under same licensing conditions: Asclepius Kweon et al. (2024) containing clinical documents and NoteChat Wang et al. (2023) containing doctor-patient dialogues."
+    },
+    {
+      "name": "NoteChat",
+      "hub_id": "akemiH/NoteChat",
+      "urls": [
+        "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+        "https://arxiv.org/html/2505.10717",
+        "https://huggingface.co/datasets/akemiH/NoteChat",
+        "https://datasets-server.huggingface.co/size?dataset=akemiH/NoteChat"
+      ],
+      "loads": true,
+      "n_examples": 80000,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2505.10717",
+      "quote": "We also include synthetic derivative datasets under same licensing conditions: Asclepius Kweon et al. (2024) containing clinical documents and NoteChat Wang et al. (2023) containing doctor-patient dialogues."
+    },
+    {
+      "name": "MTSamples",
+      "hub_id": "tchebonenko/MedicalTranscriptions",
+      "urls": [
+        "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+        "https://arxiv.org/html/2505.10717",
+        "https://mtsamples.com/",
+        "https://huggingface.co/datasets/tchebonenko/MedicalTranscriptions"
+      ],
+      "loads": true,
+      "n_examples": 5000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2505.10717",
+      "quote": "Furthermore, we include MTSamples mts (2019), a public database filled with various de-identified clinical documents."
+    }
+  ],
+  "training_method": {
+    "objective": "continued_pretraining",
+    "objective_quote": "Continual Pre-training: Clinical documents: `zhengyun21/PMC-Patients`, `akemiH/NoteChat`, and `starmpcc/Asclepius-Synthetic-Clinical-Notes` (only commercial-friendly licenses across all three datasets); mtsamples.",
+    "objective_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+    "update_scope": "not stated",
+    "update_scope_quote": "An expert model is obtained by fine-tuning the base model on domain-specific data (step i). The expert and base models are then merged using spherical linear interpolation (SLERP) to produce the final merged model (step ii).",
+    "update_scope_url": "https://arxiv.org/html/2505.10717",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "microsoft/Phi-3.5-mini-instruct",
+    "source_claims": [
+      {
+        "parent": "microsoft/Phi-3.5-mini-instruct",
+        "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+        "quote": "Finetuned from model: microsoft/Phi-3.5-mini-instruct"
+      },
+      {
+        "parent": "Phi-3.5-mini-instruct",
+        "source_url": "https://arxiv.org/html/2505.10717",
+        "quote": "Starting from Phi3.5 mini: 1.a) We leverage knowledge acquisition methods such as pre-instruction tuning on diverse medical and clinical corpora to obtain domain-specific experts."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "3.8B",
+    "parameters_stated_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+    "quote": "Language(s) (NLP): English"
+  },
+  "description": {
+    "text": "The MediPhi Model Collection comprises 7 small language models of 3.8B parameters from the base model Phi-3.5-mini-instruct specialized in the medical and clinical domains. The collection is designed in a modular fashion. Five MediPhi experts are fine-tuned on various medical corpora (i.e. PubMed commercial, Medical Wikipedia, Medical Guidelines, Medical Coding, and open-source clinical documents) and merged back with the SLERP method in their base model to conserve general abilities. One model combined all five experts into one general expert with the multi-model merging method BreadCrumbs. Finally, we clinically aligned this general expert using our large-scale MediFlow corpora (see dataset microsoft/mediflow) to obtain the final expert model MediPhi-Instruct. This model is MediPhi-Clinical obtained by merging the fine-tuned Clinical expert with the SLERP technique into its base model at 25%.",
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Other",
+    "quote": "GIVE A ROLE AND INSTRUCTIONS FOR CLINICAL NLPTASKS"
+  },
+  "use_claim": {
+    "strength": "Moderate",
+    "quote": "The model is intended for research use in English, especially clinical natural language processing."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "It should be used for research purposes, i.e., in benchmarking context or with expert user verification of the outputs."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "The model is intended for research use in English, especially clinical natural language processing.",
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Researchers (or developers) should consider common limitations of language models as they select use cases, and evaluate and mitigate for accuracy, safety, and fariness before using within a specific downstream use case, particularly for high risk scenarios."],
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["extract structured clinical data"],
+    "quotes": ["Extract medical keywords from this operative notes focus on anatomical, pathological, or procedural vocabulary."],
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": ["gallbladder stones, wall thickening, peritoneal fluid"]
+  },
+  "clinical_task": {
+    "values": ["information extraction or coding", "medical QA", "clinical note summarisation or generation"],
+    "quotes": [
+      "Extract medical keywords from this operative notes focus on anatomical, pathological, or procedural vocabulary.",
+      "eval only: New real-world benchmarking also demonstrated good performances on clinical information extraction task: 2507.05517.",
+      "eval only: MedicationQA",
+      "eval only: MeQSum"
+    ],
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "specialized in the medical and clinical domains",
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Operative Report:\\nPerformed: Cholecystectomy\\nOperative Findings: The gallbladder contained multiple stones and had thickening of its wall. Mild peritoneal fluid was noted.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/tokenizer_config.json",
+    "system_prompt": "Extract medical keywords from this operative notes focus on anatomical, pathological, or procedural vocabulary.",
+    "system_prompt_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 500,
+      "temperature": 0.0,
+      "do_sample": false
+    },
+    "generation_settings_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "generation_config.json sets token ids only. The card example sets max_new_tokens 500, temperature 0.0, and do_sample false. config.json max_position_embeddings is 131072; the card says the default context length is 128K tokens. tokenizer_config.json has use_default_system_prompt false. No adapter_config.json, chat_template.jinja, notebook, or train script is in the repo. The upload is two bfloat16 shards totaling 3,821,079,552 parameters."
+  },
+  "evaluation_reported": {
+    "text": "On the card's CLUE+ table the Clinical column averages 39.6, against 36.5 for Phi-3.5-mini-instruct. The card says all six merged MediPhi models fully conserve their base model's safety capabilities, citing a medical red-teaming protocol.",
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "license": {
+    "value": "mit",
+    "source_url": "https://huggingface.co/microsoft/MediPhi-Clinical/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "dpo|sft",
+    "datasets": "starmpcc/Asclepius-Synthetic-Clinical-Notes;akemiH/NoteChat;zhengyun21/PMC-Patients",
+    "parent": "microsoft/Phi-3.5-mini-instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods are dpo|sft. This checkpoint is continual pre-training by pre-instruction tuning of a Clinical expert, then a 25% SLERP merge into Phi-3.5-mini-instruct. The card and paper describe supervised fine-tuning and direct preference optimization for MediPhi-Instruct, a different model. Inventory datasets match the three Hub ids in the card YAML and omit mtsamples, which the card and paper include.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "dataset_card"],
+  "queries_tried": [
+    "\"microsoft/MediPhi-Clinical\"",
+    "\"MediPhi-Clinical\" huggingface",
+    "\"MediPhi-Clinical\" arxiv",
+    "\"MediPhi-Clinical\" github",
+    "A Modular Approach for Clinical SLMs Driven by Synthetic Data with Pre-Instruction Tuning, Model Merging, and Clinical-Tasks Alignment",
+    "mtsamples huggingface dataset"
+  ],
+  "confidence": "medium"
+}

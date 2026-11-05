@@ -1,0 +1,180 @@
+{
+  "hf_id": "Kerassy/Granite-4.1-3B-Medical_Reasoning",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:44:18-04:00",
+  "ended": "2026-10-13T12:46:12-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Kerassy__Granite-4.1-3B-Medical_Reasoning__2026-10-10.md",
+    "cached_sha256": "f0ea0f03aaf67500c5ff06cdec4b54daf062bbf0122a34ce36b9b5d4bd4a6329",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": ["https://github.com/unslothai/unsloth"],
+    "papers": [],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "medical-o1-reasoning-SFT",
+      "hub_id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "urls": [
+        "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT",
+        "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": null,
+      "language": "en",
+      "provenance": "synthetic",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md",
+      "quote": "Fine-Tuning Dataset: FreedomIntelligence/medical-o1-reasoning-SFT (Subset: -EM, Split: Train)"
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "lora",
+    "update_scope_quote": "Fine-Tuning Framework: Unsloth (LoRA fine-tuning)",
+    "update_scope_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "ibm-granite/granite-4.1-3b",
+    "source_claims": [
+      {
+        "parent": "ibm-granite/granite-4.1-3b",
+        "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md",
+        "quote": "base_model: ibm-granite/granite-4.1-3b"
+      }
+    ],
+    "sources_agree_with_card": "no outside source"
+  },
+  "size": {
+    "parameters_stated": "3-billion parameter",
+    "parameters_stated_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md",
+    "quote": "language: en"
+  },
+  "description": {
+    "text": "Granite-4.1-3B-Medical-Reasoning is a fine-tuned 3-billion parameter model optimized for complex clinical reasoning and medical question-answering. By leveraging chain-of-thought (CoT) fine-tuning on medical reasoning traces, the model generates explicit step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion.",
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "{ \"role\": \"user\", \"content\": \"A 45-year-old male presents with sudden chest pain, diaphoresis, and radiation to the left jaw. What is the most likely diagnosis?\" }"
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "the model generates explicit step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion"
+  },
+  "warning": {
+    "strength": "Explicit prohibition",
+    "quote": "It is not a certified medical device and should never be used for direct patient diagnosis, treatment advice, or real-world clinical decision-making."
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Medical research and evaluation of chain-of-thought capabilities in compact LLMs.",
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["researcher or developer"],
+    "quotes": ["Medical research and evaluation of chain-of-thought capabilities in compact LLMs."],
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["clinical reasoning", "answer medical questions", "suggest a diagnosis"],
+    "quotes": [
+      "optimized for complex clinical reasoning",
+      "medical question-answering",
+      "step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion"
+    ],
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "chat reply"],
+    "quotes": [
+      "generates explicit step-by-step diagnostic reasoning inside <think> tags prior to delivering a final medical conclusion",
+      "chat = [{ \"role\": \"user\", \"content\": \"A 45-year-old male presents with sudden chest pain, diaphoresis, and radiation to the left jaw. What is the most likely diagnosis?\" }]"
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "diagnosis or differential"],
+    "quotes": [
+      "medical question-answering",
+      "What is the most likely diagnosis?"
+    ],
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "complex clinical reasoning and medical question-answering",
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "A 45-year-old male presents with sudden chest pain, diaphoresis, and radiation to the left jaw. What is the most likely diagnosis?",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "max_new_tokens": 100
+    },
+    "generation_settings_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md",
+    "max_context": 131072,
+    "notes": "The code sample sets model_path to ibm-granite/granite-4.1-3b, the base, not this repository. generation_config.json sets max_length 131072 and does not set temperature, top_p, top_k, or do_sample. config.json model_type is granite, dtype bfloat16, max_position_embeddings 131072, unsloth_version 2026.8.9. tokenizer model_max_length is an unbounded sentinel. The chat template adds a tools system string only when tools are passed. No adapter_config.json. The card heading is Qwen3.5-9B-Medical-Reasoning and the tags include qwen."
+  },
+  "evaluation_reported": {
+    "text": "TBC.",
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/Kerassy/Granite-4.1-3B-Medical_Reasoning/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "lora",
+    "datasets": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "parent": "ibm-granite/granite-4.1-3b"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The card states LoRA, the dataset id FreedomIntelligence/medical-o1-reasoning-SFT, and the parent ibm-granite/granite-4.1-3b, which match the inventory. It does not name a loss. It adds a subset called -EM, which is not one of the dataset configs en, zh, en_mix, or zh_mix. The H1 heading is Qwen3.5-9B-Medical-Reasoning, the tags include qwen, and the usage example loads the base model rather than this repository. config.json is GraniteForCausalLM.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "dataset_card"],
+  "queries_tried": [
+    "\"Kerassy/Granite-4.1-3B-Medical_Reasoning\"",
+    "\"Granite-4.1-3B-Medical_Reasoning\" huggingface",
+    "\"Granite-4.1-3B-Medical_Reasoning\" arxiv",
+    "\"Granite-4.1-3B-Medical_Reasoning\" github",
+    "FreedomIntelligence/medical-o1-reasoning-SFT huggingface dataset"
+  ],
+  "confidence": "medium"
+}

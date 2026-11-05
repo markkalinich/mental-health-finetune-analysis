@@ -1,0 +1,253 @@
+parent,class_yaml,yaml_evidence,yaml_relation,class_readme,readme_evidence,class_name,name_evidence,class_final,class_source
+5CD-AI/Vietnamese-Sentiment-visobert,,,,,,,,not_stated,
+Aardiiiiy/indobertweet-base-Indonesian-sentiment-analysis,,,,finetune,This model is a fine-tuned version of [IndoBertweet-base-uncased](https://huggingface.co/indolem/indobertweet-base-uncased) for Indonesian sentiment analysis.,,,finetune,readme
+agbalu/Masinissa-31M,,,,,,,,not_stated,
+agentlans/deberta-v3-xsmall-zyda-2,,,finetune,finetune,This model is a fine-tuned version of [microsoft/deberta-v3-xsmall](https://huggingface.co/microsoft/deberta-v3-xsmall) on a subset of the [Zyphra/Zyda-2](https://huggingface.co/datasets/Zyphra/Zyda-2) dataset.,,,finetune,readme
+ai-forever/sbert_large_nlu_ru,,,,,,,,not_stated,
+airesearch/wangchanberta-base-att-spm-uncased,,,,pretrained,model was pretrained on assorted Thai text dataset.,,,pretrained,readme
+albert/albert-base-v2,,,,pretrained,Pretrained model on English language using a masked language modeling (MLM) objective. || ALBERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+allenai/Olmo-3-1025-7B,,,,,,,,not_stated,
+allmalab/bert-base-aze,,,finetune,finetune,"**Note:** This model is not a fine-tuned version of BERT, we have simply used the same architecture.",,,finetune,readme
+almanach/camembert-base,,,,,,,,not_stated,
+AnasAlokla/multilingual_go_emotions,,,finetune,finetune,"It is fine-tuned from the robust model on the comprehensive dataset. || The following table shows the performance metrics of the fine-tuned model on the test set, broken down by emotion category.",,,finetune,readme
+AnasAlokla/multilingual_go_emotions_V1.1,,,finetune,finetune,"It is fine-tuned from the robust model on the comprehensive dataset. || The following table shows the performance metrics of the fine-tuned model on the test set, broken down by emotion category.",,,finetune,readme
+Aniemore/hubert-emotion-russian-resd,,,finetune,finetune,Fine-tuned from [ ](https://huggingface.co/jonatasgrosman/exp_w2v2t_ru_hubert_s818) on [ ](https://huggingface.co/datasets/Aniemore/resd).,,,finetune,readme
+Aniemore/unispeech-sat-emotion-russian-resd,,,finetune,finetune,Fine-tuned from [ ](https://huggingface.co/jonatasgrosman/exp_w2v2t_ru_unispeech-sat_s423) on [ ](https://huggingface.co/datasets/Aniemore/resd).,,,finetune,readme
+Aniemore/wav2vec2-emotion-russian-resd,,,finetune,finetune,Fine-tuned from [ ](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian) on [ ](https://huggingface.co/datasets/Aniemore/resd).,,,finetune,readme
+Aniemore/wav2vec2-xlsr-53-russian-emotion-recognition,,,finetune,finetune,Fine-tuned from [ ](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian) on [ ](https://huggingface.co/datasets/Aniemore/resd).,,,finetune,readme
+Aniemore/wavlm-emotion-russian-resd,,,finetune,finetune,Fine-tuned from [ ](https://huggingface.co/jonatasgrosman/exp_w2v2t_ru_wavlm_s363) on [ ](https://huggingface.co/datasets/Aniemore/resd).,,,finetune,readme
+answerdotai/ModernBERT-base,,,,pretrained,"ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens.",,,pretrained,readme
+answerdotai/ModernBERT-large,,,,pretrained,"ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens.",,,pretrained,readme
+arnir0/Tiny-LLM,,,,,,,,not_stated,
+artiwise-ai/modernbert-base-tr-uncased,,,finetune,finetune,"This model is a Turkish adaptation of ModernBERT, fine-tuned from using only the Turkish part of CulturaX.",,,finetune,readme
+ayushshah/distilbert-base-uncased-imdb-dapt,,,finetune,,,,,not_stated,
+beyoru/Luna,instruction,tags=chat,,,,,,instruction,yaml
+BidirLM/BidirLM-Omni-2.5B-Embedding,,,finetune,,,,,not_stated,
+bunnycore/Qwen2.5-3B-RP-Mix,,,merge,,,,,not_stated,
+canopylabs/3b-hi-ft-research_release,,,finetune,,,,,not_stated,
+canopylabs/orpheus-3b-0.1-ft,,,finetune,,,,,not_stated,
+canopylabs/orpheus-3b-0.1-pretrained,,,finetune,,,pretrained,token=pretrained,pretrained,name
+chlgks/emour-emotion-kcelectra,,,finetune,,,,,not_stated,
+codealchemist01/turkish-sentiment-analysis,,,,,,,,not_stated,
+codellama/CodeLlama-7b-hf,,,,,,,,not_stated,
+ContactDoctor/Bio-Medical-Llama-3-8B,,,finetune,finetune,"This model is a fine-tuned version of https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct on our custom ""BioMedData"" dataset. || It is finetuned from the meta-llama/Meta-Llama-3-8B-Instruct model using a custom dataset containing over 500,000 diverse entries.",,,finetune,readme
+daviddrzik/SK_BPE_BLM,,,,,,,,not_stated,
+daviddrzik/SK_Morph_BLM,,,,,,,,not_stated,
+Davlan/afro-xlmr-large-76L,,,,,,,,not_stated,
+dbmdz/bert-base-german-uncased,,,,,,,,not_stated,
+dbmdz/bert-base-turkish-128k-uncased,,,,,,,,not_stated,
+dbmdz/bert-base-turkish-cased,,,,,,,,not_stated,
+deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B,,,,finetune,"DeepSeek-R1-Distill models are fine-tuned based on open-source models, using samples generated by DeepSeek-R1.",,,finetune,readme
+deepseek-ai/DeepSeek-R1-Distill-Qwen-14B,,,,finetune,"DeepSeek-R1-Distill models are fine-tuned based on open-source models, using samples generated by DeepSeek-R1.",,,finetune,readme
+deepset/gbert-base,,,,,,,,not_stated,
+deepset/gbert-large,,,,,,,,not_stated,
+distilbert/distilbert-base-cased,,,,pretrained,"DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a || This means it was pretrained on the raw texts only,",,,pretrained,readme
+distilbert/distilbert-base-multilingual-cased,,,,,,,,not_stated,
+distilbert/distilbert-base-uncased,,,,pretrained,"DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a || This means it was pretrained on the raw texts only,",,,pretrained,readme
+distilbert/distilbert-base-uncased-finetuned-sst-2-english,,,,,,,,not_stated,
+distilbert/distilgpt2,,,,,,,,not_stated,
+distilbert/distilroberta-base,,,,pretrained,"DistilRoBERTa was pre-trained on [OpenWebTextCorpus](https://skylion007.github.io/OpenWebTextCorpus/), a reproduction of OpenAI's WebText dataset (it is ~4 times less training data than the teacher RoBERTa).",,,pretrained,readme
+djangodevloper/bert-base-sa-mental-uncased,,,finetune,finetune,- **Finetuned from model [optional]:** Bert-base-uncased,,,finetune,readme
+ehristoforu/Gemma2-9B-it-psy10k,,,finetune,finetune,- **Finetuned from model :** unsloth/gemma-2-9b-it-bnb-4bit,instruction,token=it,finetune,readme
+ELiRF/Longformer-es-mental-base,,,finetune,finetune,- Finetuned from model: PlanTL-GOB-ES/longformer-base-4096-bne-es,,,finetune,readme
+ELiRF/Longformer-es-mental-large,,,finetune,finetune,- **Finetuned from model:** ELiRF/RoBERTa-es-mental-large,,,finetune,readme
+ELiRF/RoBERTa-es-mental-large,,,finetune,finetune,- Finetuned from model: PlanTL-GOB-ES/roberta-large-bne,,,finetune,readme
+ElizaClaPa/SentimentAnalysis-YelpReviews-OptimizedModel,,,,finetune,- **Finetuned from model [optional]:** juliensimon/reviews-sentiment-analysis,,,finetune,readme
+EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-ds-auto,,,finetune,UNREADABLE:FETCH_ERR INACCESSIBLE_403,,instruction,token=instruct,instruction,name
+EuroBERT/EuroBERT-210m,,,,,,,,not_stated,
+EuroBERT/EuroBERT-610m,,,,,,,,not_stated,
+facebook/bart-base,,,,pretrained,BART model pre-trained on English language.,,,pretrained,readme
+facebook/bart-large-mnli,,,,,,,,not_stated,
+facebook/convnextv2-large-22k-224,,,,,,,,not_stated,
+facebook/mms-1b-all,,,,finetune,The checkpoint consists of **1 billion parameters** and has been fine-tuned from [facebook/mms-1b](https://huggingface.co/facebook/mms-1b) on 1162 languages.,,,finetune,readme
+facebook/MobileLLM-R1-950M,,,finetune,instruction,### Post-trained Model || ## MobileLLM-R1 post-trained model,,,instruction,readme
+facebook/wav2vec2-base-960h,,,,,,,,not_stated,
+FacebookAI/xlm-roberta-base,,,,pretrained,XLM-RoBERTa model pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages. || It is pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages.,,,pretrained,readme
+FacebookAI/xlm-roberta-large,,,,pretrained,XLM-RoBERTa model pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages. || It is pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages.,,,pretrained,readme
+Falconsai/nsfw_image_detection,,,,pretrained,"This specific model, named ""google/vit-base-patch16-224-in21k,"" is pre-trained on a substantial collection of images in a supervised manner, leveraging the ImageNet-21k dataset.",,,pretrained,readme
+fastino/gliner2-multi-v1,,,,,,,,not_stated,
+Finisha-F-scratch/Learnia,,,,,,,,not_stated,
+fromthesky/PLDR-LLM-v52-110M-1,,,,pretrained,"PLDR-LLM-v52-110M-1 was pretrained on the [RefinedWeb](https://huggingface.co/datasets/tiiuae/falcon-refinedweb), a publicly available English web dataset with extensive filtering and deduplication.",,,pretrained,readme
+GemMaroc/Qwen2.5-7B-Instruct-darija,,,finetune,,,instruction,token=instruct,instruction,name
+gogamza/kobart-base-v2,,,,,,,,not_stated,
+google-bert/bert-base-cased,,,,pretrained,Pretrained model on English language using a masked language modeling (MLM) objective. || BERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+google-bert/bert-base-chinese,,,,,,,,not_stated,
+google-bert/bert-base-german-cased,,,,,,,,not_stated,
+google-bert/bert-base-multilingual-cased,,,,pretrained,Pretrained model on the top 104 languages with the largest Wikipedia using a masked language modeling (MLM) objective. || BERT is a transformers model pretrained on a large corpus of multilingual data in a self-supervised fashion.,,,pretrained,readme
+google-bert/bert-base-multilingual-uncased,,,,pretrained,Pretrained model on the top 102 languages with the largest Wikipedia using a masked language modeling (MLM) objective. || BERT is a transformers model pretrained on a large corpus of multilingual data in a self-supervised fashion.,,,pretrained,readme
+google-bert/bert-base-uncased,,,,pretrained,Pretrained model on English language using a masked language modeling (MLM) objective. || BERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+google-bert/bert-large-uncased,,,,pretrained,Pretrained model on English language using a masked language modeling (MLM) objective. || BERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+google-t5/t5-base,,,,pretrained,"The model is pre-trained on the [Colossal Clean Crawled Corpus (C4)](https://www.tensorflow.org/datasets/catalog/c4), which was developed and released in the context of the same [research paper](https://jmlr.org/papers/volume21/20-074/20-074.pdf) as T5. || The model was pre-trained on a on a **multi-task mixture of unsupervised (1.) and supervised tasks (2.)**.",,,pretrained,readme
+google-t5/t5-small,,,,pretrained,"The model is pre-trained on the [Colossal Clean Crawled Corpus (C4)](https://www.tensorflow.org/datasets/catalog/c4), which was developed and released in the context of the same [research paper](https://jmlr.org/papers/volume21/20-074/20-074.pdf) as T5. || The model was pre-trained on a on a **multi-task mixture of unsupervised (1.) and supervised tasks (2.)**.",,,pretrained,readme
+google/bert_uncased_L-2_H-128_A-2,,,,,,,,not_stated,
+google/embeddinggemma-300m,,,,,,,,not_stated,
+google/flan-t5-base,,,,,,,,not_stated,
+google/flan-t5-large,,,,,,,,not_stated,
+google/flan-t5-small,,,,,,,,not_stated,
+google/flan-t5-xl,,,,,,,,not_stated,
+google/gemma-2-2b-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-2-9b-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-2b-it,,,,,,instruction,token=it,instruction,name
+google/gemma-3-1b-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-3-270m,,,,,,,,not_stated,
+google/gemma-3-270m-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-3-27b-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-3-4b-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-3n-E2B-it,,,finetune,instruction,instruction-tuned variants.,instruction,token=it,instruction,readme
+google/gemma-4-12B-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-4-31B-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-4-E2B-it,,,finetune,,,instruction,token=it,instruction,name
+google/gemma-4-E4B-it,,,finetune,,,instruction,token=it,instruction,name
+google/medgemma-1.5-4b-it,,,,conflict,"FT: a fine-tuned version of MedGemma 1 4B, and the MedGemma 1 27B base model. ## INS: multimodal instruction-tuned variant.",instruction,token=it,conflict,readme
+google/siglip2-base-patch16-224,,,,pretrained,"SigLIP 2 is pre-trained on the WebLI dataset [(Chen et al., 2023)](https://arxiv.org/abs/2209.06794).",,,pretrained,readme
+google/vit-base-patch16-224,,,,pretrained,"Vision Transformer (ViT) model pre-trained on ImageNet-21k (14 million images, 21,843 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224. || The Vision Transformer (ViT) is a transformer encoder model (BERT-like) pretrained on a large collection of images in a supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels.",,,pretrained,readme
+google/vit-base-patch16-224-in21k,,,,pretrained,"Vision Transformer (ViT) model pre-trained on ImageNet-21k (14 million images, 21,843 classes) at resolution 224x224. || The Vision Transformer (ViT) is a transformer encoder model (BERT-like) pretrained on a large collection of images in a supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels.",,,pretrained,readme
+gustavecortal/Piaget-0.6B,,,finetune,,,,,not_stated,
+gustavecortal/Piaget-1.7B,,,finetune,,,,,not_stated,
+gustavecortal/Piaget-4B,,,finetune,,,,,not_stated,
+gustavecortal/Piaget-8B,,,finetune,,,,,not_stated,
+hon9kon9ize/bert-base-cantonese,,,finetune,pretrained,"This model is a continuation of [indiejoseph/bert-base-cantonese](https://huggingface.co/indiejoseph/bert-base-cantonese), a BERT-based model pre-trained on a substantial corpus of Cantonese text.",,,pretrained,readme
+hon9kon9ize/bert-large-cantonese,,,,,,,,not_stated,
+HuggingFaceTB/SmolLM-1.7B-Instruct,,,quantized,,,instruction,token=instruct,instruction,name
+HuggingFaceTB/SmolLM-360M,,,,,,,,not_stated,
+HuggingFaceTB/SmolLM2-1.7B,,,,,,,,not_stated,
+HuggingFaceTB/SmolLM2-135M,,,,,,,,not_stated,
+HuggingFaceTB/SmolLM2-135M-Instruct,,,quantized,,,instruction,token=instruct,instruction,name
+HuggingFaceTB/SmolLM2-360M-Instruct,,,quantized,,,instruction,token=instruct,instruction,name
+HuggingFaceTB/SmolLM3-3B,,,finetune,,,,,not_stated,
+HuggingFaceTB/SmolVLM-500M-Instruct,,,quantized,,,instruction,token=instruct,instruction,name
+humain-ai/ALLaM-7B-Instruct-preview,,,,instruction,"For this release, we are providing our instruction-tuned 7B parameter generative model pretrained from scratch.",instruction,token=instruct,instruction,readme
+ibm-granite/granite-3.1-8b-instruct,,,finetune,finetune,Granite-3.1-8B-Instruct is a 8B parameter long-context instruct model finetuned from Granite-3.1-8B-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets tailored for solving long context problems.,instruction,token=instruct,finetune,readme
+ihsan31415/indo-roBERTa-financial-sentiment,,,,finetune,"This is a fine-tuned version of [ ](https://huggingface.co/w11wo/indonesian-roberta-base-sentiment-classifier), specialized for **Indonesian financial news sentiment classification** since i cant find any financial sentiment models for indonesian market, i decided to make my self.",,,finetune,readme
+IniNLP247/Kenko-mental-health-llama-3-model,,,,finetune,- **Finetuned from model :** meta-llama/Llama-3.2-3B-Instruct,,,finetune,readme
+intfloat/multilingual-e5-large-instruct,,,,,,instruction,token=instruct,instruction,name
+Jinuuuu/KoELECTRA_fine_tunning_emotion,,,,,,,,not_stated,
+jordanfan/modernBERT_suicide_base,,,finetune,finetune,This model is a fine-tuned version of [answerdotai/ModernBERT-base](https://huggingface.co/answerdotai/ModernBERT-base) on an unknown dataset.,,,finetune,readme
+JordiOrtega/distilgpt2,,,,finetune,This model is a fine-tuned version of [None](https://huggingface.co/None).,,,finetune,readme
+Josephgflowers/Phinance-Phi-3.5-mini-instruct-finance-v0.2,instruction,tags=instruction-tuning,,,,instruction,token=instruct,instruction,yaml
+Kalmundi/Q8BERTa,,,,pretrained,"This model was pre-trained on datasets collected from various sources such as several social medias platforms, websites, and books.",,,pretrained,readme
+kenpath/svara-tts-v1,,,adapter,,,,,not_stated,
+Khubaib01/roman-urdu-emotion-xlmr,,,finetune,,,,,not_stated,
+Khubaib01/roman-urdu-sentiment-xlm-r,,,finetune,finetune,"It is fine-tuned from and designed to handle **Roman Urdu, code-mixed Urdu-English, and social media style text**, including slang-heavy WhatsApp chats, YouTube comments, and Twitter posts.",,,finetune,readme
+kiroloskhela/Sentiment-Bert,,,,finetune,- **Finetuned from model:** MarBert,,,finetune,readme
+ku-nlp/deberta-v3-base-japanese,,,,pretrained,This is a Japanese DeBERTa V3 base model pre-trained on LLM-jp corpus v1.0.,,,pretrained,readme
+laion/BUD-E-Whisper_V1.1,,,,,,,,not_stated,
+laion/BUD-E-Whisper_V1.2,,,finetune,finetune,Fine-tuned from [laion/BUD-E-Whisper_V1.1](https://huggingface.co/laion/BUD-E-Whisper_V1.1) on the [majestrino-unified-detailed-captions-temporal](https://huggingface.co/datasets/TTS-AGI/majestrino-unified-detailed-captions-temporal) dataset. || - **Base model**: (itself fine-tuned from ),,,finetune,readme
+laion/moss-tts-local-transformer-4.55b-voice-acting-v2,,,,,,,,not_stated,
+laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft,,,finetune,finetune,A full fine-tune of,instruction,token=sft,finetune,readme
+laion/voiceclap-small,,,,,,,,not_stated,
+LazarusNLP/NusaBERT-large,,,,finetune,- **Finetuned from**: [IndoBERT Large p1](https://huggingface.co/indobenchmark/indobert-large-p1),,,finetune,readme
+LCO-Embedding/LCO-Embedding-Omni-3B,,,,,,,,not_stated,
+LCO-Embedding/LCO-Embedding-Omni-7B,,,,,,,,not_stated,
+LiquidAI/LFM2-350M,,,,instruction,"We're releasing the weights of four post-trained checkpoints with 350M, 700M, 1.2B, and 2.6B parameters.",,,instruction,readme
+LiquidAI/LFM2-700M,,,,instruction,"We're releasing the weights of four post-trained checkpoints with 350M, 700M, 1.2B, and 2.6B parameters.",,,instruction,readme
+MBZUAI-Paris/Atlas-Chat-9B,,,finetune,instruction,"Atlas-Chat is a family of open models instruction-tuned for Darija, the colloquial Arabic of Morocco, developed as part of the [Jais](https://arxiv.org/abs/2308.16149) project for standard Arabic and its extentions to dialectal Arabic.",instruction,token=chat,instruction,readme
+MCG-NJU/videomae-base,pretrained,tags=pretraining,,pretrained,"# VideoMAE (base-sized model, pre-trained only) || VideoMAE model pre-trained on Kinetics-400 for 1600 epochs in a self-supervised way.",,,pretrained,yaml
+meta-llama/Llama-2-7b-chat-hf,,,,,,instruction,token=chat,instruction,name
+meta-llama/Llama-3.1-8B,,,,,,,,not_stated,
+meta-llama/Llama-3.1-8B-Instruct,,,finetune,,,instruction,token=instruct,instruction,name
+meta-llama/Llama-3.2-1B,,,,,,,,not_stated,
+meta-llama/Llama-3.2-1B-Instruct,,,,,,instruction,token=instruct,instruction,name
+meta-llama/Llama-3.2-3B,,,,,,,,not_stated,
+meta-llama/Llama-3.2-3B-Instruct,,,,,,instruction,token=instruct,instruction,name
+meta-llama/Meta-Llama-3-8B-Instruct,,,,instruction,"For our instruction tuned model, we conducted extensive red teaming exercises, performed adversarial evaluations and implemented safety mitigations techniques to lower residual risks.",instruction,token=instruct,instruction,readme
+microsoft/DialoGPT-small,,,,,,,,not_stated,
+microsoft/Phi-3.5-mini-instruct,,,,instruction,This is an update over the June 2024 instruction-tuned Phi-3 Mini release based on valuable user feedback.,instruction,token=instruct,instruction,readme
+microsoft/phi-4,instruction,tags=chat,,,,,,instruction,yaml
+microsoft/resnet-50,,,,pretrained,ResNet model pre-trained on ImageNet-1k at resolution 224x224.,,,pretrained,readme
+microsoft/trocr-base-handwritten,,,,,,,,not_stated,
+mistralai/Mistral-7B-Instruct-v0.2,,,,instruction,"The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. || In order to leverage instruction fine-tuning, your prompt should be surrounded by and tokens.",instruction,token=instruct,instruction,readme
+mistralai/Mistral-7B-Instruct-v0.3,,,finetune,instruction,The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.3.,instruction,token=instruct,instruction,readme
+mistralai/Voxtral-Mini-4B-Realtime-2602,,,finetune,,,,,not_stated,
+MIT/ast-finetuned-audioset-10-10-0.4593,,,,,,,,not_stated,
+MIT/ast-finetuned-audioset-14-14-0.443,,,,,,,,not_stated,
+mo-thecreator/vit-Facial-Expression-Recognition,,,,finetune,"This model is a fine-tuned version of [google/vit-base-patch16-224-in21k](https://huggingface.co/google/vit-base-patch16-224-in21k) on the [FER 2013](https://www.kaggle.com/datasets/msambare/fer2013),[MMI Facial Expression Database](https://mmifacedb.eu/), and [AffectNet dataset](https://www.kaggle.com/datasets/noamsegal/affectnet-training-data) datasets.",,,finetune,readme
+Mostafa8Mehrabi/qwen3-50m-fp16,,,finetune,,,,,not_stated,
+MuhammadYaseen77999/therapy-model,,,finetune,finetune,This model is a fine-tuned version of [distilgpt2](https://huggingface.co/distilgpt2) on the None dataset.,,,finetune,readme
+MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy,,,finetune,finetune,"This is a **gemma-4-12B-it-qat-q4_0-unquantized** fine-tune, produced through P-E-W's [Heretic](https://github.com/p-e-w/heretic) (v1.4.0) abliteration engine with [Self-Organizing Maps & Magnitude-Preserving Orthogonal Ablation](https://github.com/p-e-w/heretic/pull/196) enabled.",instruction,token=it,finetune,readme
+naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B,,,,,,instruction,token=instruct,instruction,name
+nicholasKluge/TeenyTinyLlama-160m,,,,,,,,not_stated,
+nicholasKluge/TeenyTinyLlama-460m,,,,,,,,not_stated,
+nlptown/bert-base-multilingual-uncased-sentiment,,,,,,,,not_stated,
+NousResearch/Hermes-2-Pro-Mistral-7B,instruction,tags=instruct,finetune,,,,,instruction,yaml
+openai-community/gpt2,,,,pretrained,Pretrained model on English language using a causal language modeling (CLM) objective. || GPT-2 is a transformers model pretrained on a very large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+openai-community/gpt2-large,,,,pretrained,The model is a pretrained model on English language using a causal language modeling (CLM) objective. || The model is pretrained on a very large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+openai-community/gpt2-medium,,,,pretrained,The model is a pretrained model on English language using a causal language modeling (CLM) objective. || The model is pretrained on a very large corpus of English data in a self-supervised fashion.,,,pretrained,readme
+openai/whisper-base,,,,,,,,not_stated,
+openai/whisper-small,,,,,,,,not_stated,
+OpenMOSS-Team/MOSS-TTS-Local-Transformer,,,,,,,,not_stated,
+OuteAI/Lite-Oute-1-300M-Instruct,,,,,,instruction,token=instruct,instruction,name
+PKOBP/polish-roberta-8k,,,,,,,,not_stated,
+proxectonos/MrBERT-nos-gl,,,finetune,,,,,not_stated,
+Qualcomm-AI-Research/BamiBERT,,,,,,,,not_stated,
+Qwen/Qwen1.5-1.8B-Chat,instruction,tags=chat,,instruction,"We pretrained the models with a large amount of data, and we post-trained the models with both supervised finetuning and direct preference optimization.",instruction,token=chat,instruction,yaml
+Qwen/Qwen2-72B,pretrained,tags=pretrained,,,,,,pretrained,yaml
+Qwen/Qwen2.5-0.5B-Instruct,instruction,tags=chat,finetune,instruction,"**This repo contains the instruction-tuned 0.5B Qwen2.5 model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,yaml
+Qwen/Qwen2.5-1.5B,,,,,,,,not_stated,
+Qwen/Qwen2.5-1.5B-Instruct,instruction,tags=chat,finetune,instruction,"**This repo contains the instruction-tuned 1.5B Qwen2.5 model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,yaml
+Qwen/Qwen2.5-14B-Instruct,instruction,tags=chat,finetune,instruction,"**This repo contains the instruction-tuned 14B Qwen2.5 model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,yaml
+Qwen/Qwen2.5-3B-Instruct,instruction,tags=chat,finetune,instruction,"**This repo contains the instruction-tuned 3B Qwen2.5 model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,yaml
+Qwen/Qwen2.5-7B-Instruct,instruction,tags=chat,finetune,instruction,"**This repo contains the instruction-tuned 7B Qwen2.5 model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,yaml
+Qwen/Qwen2.5-Coder-1.5B-Instruct,instruction,tags=chat,finetune,instruction,"**This repo contains the instruction-tuned 1.5B Qwen2.5-Coder model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,yaml
+Qwen/Qwen3-0.6B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+Qwen/Qwen3-0.6B-Base,,,,,,,,not_stated,
+Qwen/Qwen3-1.7B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+Qwen/Qwen3-14B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+Qwen/Qwen3-30B-A3B-Instruct-2507,,,,instruction,- Training Stage: Pretraining & Post-training,instruction,token=instruct,instruction,readme
+Qwen/Qwen3-32B,,,,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+Qwen/Qwen3-4B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+Qwen/Qwen3-4B-Base,,,,,,,,not_stated,
+Qwen/Qwen3-4B-Instruct-2507,,,,instruction,- Training Stage: Pretraining & Post-training,instruction,token=instruct,instruction,readme
+Qwen/Qwen3-8B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+Qwen/Qwen3-8B-Base,,,,,,,,not_stated,
+Qwen/Qwen3-Next-80B-A3B-Instruct,,,,instruction,"- **Stability Optimizations**: Includes techniques such as **zero-centered and weight-decayed layernorm**, and other stabilizing enhancements for robust pre-training and post-training.",instruction,token=instruct,instruction,readme
+Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice,,,,,,,,not_stated,
+Qwen/Qwen3-VL-8B-Thinking,,,,,,,,not_stated,
+Qwen/Qwen3.6-35B-A3B,,,,instruction,> This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. || - Training Stage: Pre-training & Post-training,,,instruction,readme
+rhaymison/Mistral-portuguese-luana-7b,,,finetune,,,,,not_stated,
+robzchhangte/MizBERT,,,,pretrained,MizBERT is a masked language model (MLM) pre-trained on a corpus of Mizo text data.,,,pretrained,readme
+rroshann/sec-sentiment-sft-deepseek-14b,,,finetune,,,instruction,token=sft,instruction,name
+sagorsarker/bangla-bert-base,,,,,,,,not_stated,
+sapienzanlp/Minerva-7B-instruct-v1.0,,,finetune,,,instruction,token=instruct,instruction,name
+savasy/bert-base-turkish-sentiment-cased,,,,,,,,not_stated,
+sentence-transformers/distiluse-base-multilingual-cased-v1,,,,,,,,not_stated,
+sentence-transformers/sentence-t5-large,,,,,,,,not_stated,
+sergeyzh/rubert-large-uncased-sts,pretrained,tags=pretraining,,,,,,pretrained,yaml
+sergeyzh/rubert-tiny-sts-v2,pretrained,tags=pretraining,finetune,,,,,pretrained,yaml
+sfairXC/FsfairX-Gemma2-RM-v0.1,,,,,,,,not_stated,
+sfairXC/FsfairX-LLaMA3-RM-v0.1,,,,,,,,not_stated,
+shekar-ai/albert-base-v2-persian-zwnj-naab-mlm,,,finetune,,,,,not_stated,
+sifat-febo/banglish-encoder,,,finetune,,,,,not_stated,
+Skywork/Skywork-Reward-V2-Llama-3.1-8B,,,finetune,,,,,not_stated,
+Skywork/Skywork-Reward-V2-Qwen3-8B,,,finetune,,,,,not_stated,
+StephanAkkerman/FinTwitBERT,,,finetune,pretrained,"FinTwitBERT is a language model specifically pre-trained on a large dataset of financial tweets. || FinTwitBERT is pre-trained on several financial tweets datasets, consisting of tweets mentioning stocks and cryptocurrencies:",,,pretrained,readme
+StephanAkkerman/FinTwitBERT-sentiment,,,finetune,pretrained,"It uses [FinTwitBERT](https://huggingface.co/StephanAkkerman/FinTwitBERT) as a base model, which has been pre-trained on 10 million financial tweets.",,,pretrained,readme
+stukenov/sozkz-core-llama-600m-kk-base-v1,pretrained,tags=pretrained,,UNREADABLE:FETCH_ERR INACCESSIBLE_403,,,,pretrained,yaml
+sulaimank/w2v-bert-2.0-lg-CV-Fleurs-300,,,finetune,UNREADABLE:FETCH_ERR INACCESSIBLE_403,,,,unreadable,
+sulaimank/whisper-small-CV-Fleurs-lg-300,,,finetune,UNREADABLE:FETCH_ERR INACCESSIBLE_403,,,,unreadable,
+tabularisai/multilingual-sentiment-analysis,,,finetune,finetune,This model is a fine-tuned version of for multilingual sentiment analysis.,,,finetune,readme
+te-sla/TeslaXLM,,,finetune,,,,,not_stated,
+tiiuae/Falcon3-1B-Instruct,,,finetune,instruction,"- Posttrained on 1.2 million samples of STEM, conversational, code, safety and function call data",instruction,token=instruct,instruction,readme
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,,,,instruction,This is the chat model finetuned on top of [TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T](https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T).,instruction,token=chat,instruction,readme
+tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.3,,,,finetune,**Note**: [Llama-3.1-Swallow-8B-Instruct-v0.3](https://huggingface.co/tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.3) model was continually pre-trained from the [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) and then instruction-tuned with our instruction datasets.,instruction,token=instruct,finetune,readme
+Trendyol/tyroberta,,,,,,,,not_stated,
+trpakov/vit-face-expression,,,,finetune,- **Finetuned from model:** [vit-base-patch16-224-in21k](https://huggingface.co/google/vit-base-patch16-224-in21k),,,finetune,readme
+tunis-ai/TunBERT,,,,,,,,not_stated,
+TurkuNLP/wikibert-base-vi-cased,,,,UNREADABLE:FETCH_ERR 404,,,,unreadable,
+unsloth/gemma-3-1b-it,,,finetune,,,instruction,token=it,instruction,name
+unsloth/gemma-3-270m-it,,,finetune,,,instruction,token=it,instruction,name
+unsloth/gemma-3-4b-it,,,finetune,,,instruction,token=it,instruction,name
+unsloth/gemma-4-E2B-it,,,finetune,,,instruction,token=it,instruction,name
+unsloth/Llama-3.1-8B-Instruct,,,finetune,,,instruction,token=instruct,instruction,name
+unsloth/Llama-3.2-3B-Instruct,,,finetune,,,instruction,token=instruct,instruction,name
+unsloth/Qwen2.5-1.5B-Instruct,,,finetune,instruction,"**This repo contains the instruction-tuned 1.5B Qwen2.5 model**, which has the following features: || - Training Stage: Pretraining & Post-training",instruction,token=instruct,instruction,readme
+unsloth/Qwen3-0.6B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+unsloth/Qwen3-32B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+unsloth/Qwen3-4B,,,finetune,instruction,- Training Stage: Pretraining & Post-training,,,instruction,readme
+unsloth/Qwen3-4B-Base,,,finetune,,,,,not_stated,
+Vortex5/NoctyxCosma-12B,,,merge,,,,,not_stated,
+wcyat/bert-suicide-detection-hk,,,finetune,finetune,This model is a fine-tuned version of [wcyat/bert-suicide-detection-hk](https://huggingface.co/wcyat/bert-suicide-detection-hk) on the None dataset.,,,finetune,readme
+weqweasdas/RM-Mistral-7B,,,,,,,,not_stated,
+yeniguno/absa-turkish-bert-dbmdz,,,finetune,,,,,not_stated,
+ytu-ce-cosmos/modernbert-tr-base,,,,,,,,not_stated,
+ZycckZ/Simple_VieQA,,,finetune,finetune,This model is a fine-tuned version of [ZycckZ/Zk1-QA-VN-test](https://huggingface.co/ZycckZ/Zk1-QA-VN-test) and [taidng/UIT-ViQuAD2](https://huggingface.co/datasets/taidng/UIT-ViQuAD2.0) dataset.,,,finetune,readme

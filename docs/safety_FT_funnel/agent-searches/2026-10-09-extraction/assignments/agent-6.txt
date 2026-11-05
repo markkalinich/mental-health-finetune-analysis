@@ -1,0 +1,23 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 3) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 9 October 2026, agent 6 of 21).
+
+Model 1: MihaiPopa-1/Stentor-30M-Instruct-heretic-safety-defiltered
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/MihaiPopa-1__Stentor-30M-Instruct-heretic-safety-defiltered__2026-10-09.md
+  Inventory row: methods='lora|rlhf|sft' datasets='PKU-Alignment/BeaverTails;AmazonScience/FalseReject;databricks/databricks-dolly-15k' parent='StentorLabs/Stentor-30M-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/MihaiPopa-1__Stentor-30M-Instruct-heretic-safety-defiltered.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/MihaiPopa-1__Stentor-30M-Instruct-heretic-safety-defiltered.md
+
+Model 2: NeelRajani/Qwen3-0.6B-Base_SFT-safety100_ADV-pku-v00.01
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/NeelRajani__Qwen3-0.6B-Base_SFT-safety100_ADV-pku-v00.01__2026-10-05.md
+  Inventory row: methods='sft' datasets='NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2' parent='NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/NeelRajani__Qwen3-0.6B-Base_SFT-safety100_ADV-pku-v00.01.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/NeelRajani__Qwen3-0.6B-Base_SFT-safety100_ADV-pku-v00.01.md
+
+Model 3: NeelRajani/Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/NeelRajani__Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01__2026-10-05.md
+  Inventory row: methods='sft' datasets='NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2' parent='NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/extractions/NeelRajani__Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-extraction/reports/NeelRajani__Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

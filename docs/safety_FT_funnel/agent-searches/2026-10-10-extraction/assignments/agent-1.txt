@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 4) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (safety kept-model extraction, 10 October 2026, agent 1 of 9).
+
+Model 1: BSC-LT/salamandra-7b-instruct-guard
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/BSC-LT__salamandra-7b-instruct-guard__2026-10-09.md
+  Inventory row: methods='agent:classification|agent:qlora|lora' datasets='BSC-LT/salamandra-guard-dataset' parent='BSC-LT/salamandra-7b-instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/BSC-LT__salamandra-7b-instruct-guard.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/BSC-LT__salamandra-7b-instruct-guard.md
+
+Model 2: Banaxi-Tech/BananaMind-V2.5-Content-Safety
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Banaxi-Tech__BananaMind-V2.5-Content-Safety__2026-10-09.md
+  Inventory row: methods='agent:sft' datasets='nvidia/Nemotron-3.5-Content-Safety-Dataset' parent='google/gemma-4-E2B-it'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Banaxi-Tech__BananaMind-V2.5-Content-Safety.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Banaxi-Tech__BananaMind-V2.5-Content-Safety.md
+
+Model 3: DloadingX/GuardTrace-VL-3B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/DloadingX__GuardTrace-VL-3B__2026-10-05.md
+  Inventory row: methods='' datasets='GuardTrace' parent='Qwen/Qwen2.5-VL-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/DloadingX__GuardTrace-VL-3B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/DloadingX__GuardTrace-VL-3B.md
+
+Model 4: GeneralAnalysis/GA_Guard_1B
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/GeneralAnalysis__GA_Guard_1B__2026-10-09.md
+  Inventory row: methods='' datasets='GeneralAnalysis/GA_Guardrail_Benchmark' parent='meta-llama/Llama-3.2-1B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/GeneralAnalysis__GA_Guard_1B.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/GeneralAnalysis__GA_Guard_1B.md
+
+Model 5: Hagrun/moddog-l1-safety-qwen2.5-3b
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/Hagrun__moddog-l1-safety-qwen2.5-3b__2026-10-05.md
+  Inventory row: methods='qlora|sft' datasets='Jigsaw Civil Comments' parent='Qwen/Qwen2.5-3B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/extractions/Hagrun__moddog-l1-safety-qwen2.5-3b.json
+  Output markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-10-extraction/reports/Hagrun__moddog-l1-safety-qwen2.5-3b.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

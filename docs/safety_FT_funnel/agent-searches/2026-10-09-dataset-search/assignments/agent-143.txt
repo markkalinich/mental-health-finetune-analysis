@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 143 of 315). Repository ids, in this order:
+1. mlfoundations-cua-dev/grpo-7b-67k-filtered-data-5k-refusal-global-step-100
+2. mlfoundations-cua-dev/grpo-7b-67k-filtered-data-5k-refusal-global-step-120
+3. mlfoundations-cua-dev/grpo-7b-67k-filtered-data-5k-refusal-global-step-20
+4. mlfoundations-cua-dev/grpo-7b-67k-filtered-data-5k-refusal-global-step-40
+5. mlfoundations-cua-dev/grpo-7b-67k-filtered-data-5k-refusal-global-step-60
+6. mlfoundations-cua-dev/grpo-7b-67k-filtered-data-5k-refusal-global-step-80
+7. mlx-community/Qwen3Guard-Gen-0.6B-MLX
+8. mNLP-project/gpt2-finetuned-mcqa-sciq2-safety
+9. mNLP-project/gpt2-finetuned-mcqa-sciq2-safety_rag
+10. mo-shadfar/laya-fa-sentiment-moderation
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-143.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-143.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

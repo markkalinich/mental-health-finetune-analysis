@@ -1,0 +1,202 @@
+{
+  "hf_id": "mohdomer/mistral-7b-medical-qa-qlora",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:38:47-04:00",
+  "ended": "2026-10-13T12:40:20-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/mohdomer__mistral-7b-medical-qa-qlora__2026-10-10.md",
+    "cached_sha256": "770b3f5bf8573cb151e360a336af427b1df0a59aa578b082347955ceafe5cf14",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/MOHD-OMER"
+    ],
+    "papers": [],
+    "project_pages": [
+      "https://wandb.ai/asratabbssum-lords-institute-of-engineering-and-technology/mistral-medical-qlora/runs/tueb17vn"
+    ],
+    "demos": [
+      "https://huggingface.co/spaces/mohdomer/mistral-medical-qa-demo"
+    ]
+  },
+  "training_data": [
+    {
+      "name": "ChatDoctor-HealthCareMagic-100k",
+      "hub_id": "lavita/ChatDoctor-HealthCareMagic-100k",
+      "urls": [
+        "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k",
+        "https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k/raw/main/README.md",
+        "https://github.com/Kent0n-Li/ChatDoctor/blob/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 20000,
+      "language": "en",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md",
+      "quote": "Dataset | ChatDoctor-HealthCareMagic-100k (20k samples). The Hub dataset card lists train num_examples 112165 and says only \"More Information needed\". The ChatDoctor README says: \"we collected about 100k real doctor-patient conversations from an online medical consultation website HealthCareMagic(www.healthcaremagic.com).\""
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "qlora",
+    "update_scope_quote": "Method | QLoRA (4-bit NF4 + LoRA)",
+    "update_scope_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md",
+    "lora_rank": 64,
+    "lora_alpha": 16,
+    "adapter_merged": "yes",
+    "quantized_base_during_training": "yes",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 0.0002,
+    "batch_size": 16
+  },
+  "parent": {
+    "card_claim": "mistralai/Mistral-7B-Instruct-v0.2",
+    "source_claims": [
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.2",
+        "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md",
+        "quote": "Fine-tuned version of Mistral-7B-Instruct-v0.2 for medical question answering using QLoRA."
+      },
+      {
+        "parent": "mistralai/Mistral-7B-Instruct-v0.2",
+        "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/config.json",
+        "quote": "\"_name_or_path\": \"mistralai/Mistral-7B-Instruct-v0.2\""
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7241732096 F16",
+    "parameters_stated_url": "https://huggingface.co/api/models/mohdomer/mistral-7b-medical-qa-qlora"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md",
+    "quote": "English only"
+  },
+  "description": {
+    "text": "Fine-tuned version of [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) for **medical question answering** using QLoRA.",
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "You are a knowledgeable medical assistant. Answer the following medical question accurately and clearly."
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "You are a knowledgeable medical assistant. Answer the following medical question accurately and clearly."
+  },
+  "warning": {
+    "strength": "Disclaimer only",
+    "quote": "Not for real clinical use — model can hallucinate medical information"
+  },
+  "purpose_stated": {
+    "value": "yes",
+    "quote": "Fine-tuned version of Mistral-7B-Instruct-v0.2 for medical question answering using QLoRA.",
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "audiences": {
+    "values": ["patient or public"],
+    "quotes": [
+      "Question: I believe my daughter is suffering from anorexia. She constantly swallows and expels tiny burps. Is this related?"
+    ],
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "functions": {
+    "values": ["answer medical questions", "talk with a patient"],
+    "quotes": [
+      "Fine-tuned version of Mistral-7B-Instruct-v0.2 for medical question answering using QLoRA.",
+      "Fine-tuned: Hi, I have gone through your question. Anorexia nervosa is a psychological disorder characterized by self-starvation and excessive weight loss."
+    ],
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "output_kind": {
+    "values": ["chat reply"],
+    "quotes": [
+      "Fine-tuned: Hi, I have gone through your question. Anorexia nervosa is a psychological disorder characterized by self-starvation and excessive weight loss. It is not related to any physical illness. In anorexia..."
+    ]
+  },
+  "clinical_task": {
+    "values": ["medical QA", "conversation with a patient", "diagnosis or differential", "treatment or medication advice"],
+    "quotes": [
+      "for medical question answering",
+      "Question: I believe my daughter is suffering from anorexia. She constantly swallows and expels tiny burps. Is this related?",
+      "Dataset row output: The most likely cause for your symptoms is benign paroxysmal positional vertigo (BPPV), a type of peripheral vertigo.",
+      "Dataset row output: Albuterol via nebulization should be utilized in order to alleviate the wheezing and also help with the congestion."
+    ],
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "Fine-tuned version of Mistral-7B-Instruct-v0.2 for medical question answering using QLoRA.",
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "print(ask(\"What are the symptoms of type 2 diabetes?\"))",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/mohdomer/mistral-7b-medical-qa-qlora",
+    "system_prompt": "You are a knowledgeable medical assistant. Answer the following medical question accurately and clearly.",
+    "system_prompt_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md",
+    "generation_settings": {
+      "max_new_tokens": 256,
+      "temperature": 0.3,
+      "do_sample": true
+    },
+    "generation_settings_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md",
+    "max_context": 32768,
+    "notes": "generation_config.json has no temperature, top_p, or max_new_tokens. Those three values are from the card's ask() example. config.json max_position_embeddings is 32768. The card also says \"Best within 512 token context window\". The API tokenizer_config includes a Mistral [INST] chat_template and use_default_system_prompt false. No adapter_config.json. The repository is three float16 shards (7,241,732,096 parameters) and the usage example loads AutoModelForCausalLM from this repo id, so the QLoRA update was merged into a full checkpoint. The Hub API still tags library_name peft and base_model:adapter. LoRA target modules on the card are q_proj, v_proj. Trainable params are stated as ~0.72% of total. GitHub link is the user profile https://github.com/MOHD-OMER; that profile's listed repositories do not include a training script for this model. The Space mohdomer/mistral-medical-qa-demo was sleeping when opened. No paper names this repository id."
+  },
+  "evaluation_reported": {
+    "text": "Evaluation Results (50 held-out samples): ROUGE-1 27.00% base vs 29.45% fine-tuned; ROUGE-2 3.40% vs 5.29%; ROUGE-L 13.16% vs 16.37%; BLEU 1.28% vs 2.81%. The card says all metrics improve consistently after fine-tuning.",
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/mohdomer/mistral-7b-medical-qa-qlora/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "qlora",
+    "datasets": "lavita/ChatDoctor-HealthCareMagic-100k",
+    "parent": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "github",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"mohdomer/mistral-7b-medical-qa-qlora\"",
+    "\"mistral-7b-medical-qa-qlora\" huggingface",
+    "\"mistral-7b-medical-qa-qlora\" arxiv",
+    "\"mistral-7b-medical-qa-qlora\" github",
+    "ChatDoctor-HealthCareMagic-100k huggingface dataset"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,150 @@
+{
+  "hf_id": "mabaashar/allam-7b-mental-health-merged",
+  "prompt_version": 3,
+  "started": "2026-10-09T18:53:24-04:00",
+  "ended": "2026-10-09T18:56:18-04:00",
+  "card": {
+    "cached_file": "revision_3_experiments/hf_inventory/cache/readmes/mabaashar__allam-7b-mental-health-merged__2026-10-05.md",
+    "cached_sha256": "6cb0ffa38b2954d17169af23eaac9125059d72d4512bdcd070757f77b5e8f033",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [],
+    "project_pages": ["https://www.bytsnbytes.com"],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "Shifaa Arabic Mental Health Consultations",
+      "hub_id": "Ahmed-Selem/Shifaa_Arabic_Mental_Health_Consultations",
+      "urls": [
+        "https://huggingface.co/datasets/Ahmed-Selem/Shifaa_Arabic_Mental_Health_Consultations",
+        "https://www.linkedin.com/posts/mohammed-ba-ashar-3070991b5_mabaasharallam-7b-mental-health-merged-activity-7504955814940413952-bcGv"
+      ],
+      "loads": true,
+      "n_examples": 35648,
+      "language": "ar",
+      "provenance": "human",
+      "source_type": "card",
+      "source_url": "https://www.linkedin.com/posts/mohammed-ba-ashar-3070991b5_mabaasharallam-7b-mental-health-merged-activity-7504955814940413952-bcGv",
+      "quote": "Following up the Fine-Tuning of SDAIA | سدايا 's LLM Allam-7B to be fine-tuned with the dataset: Shifaa Arabic Mental Health Consultations, the model was finalised and finished, and provided great results when run on Kaggle."
+    }
+  ],
+  "training_method": {
+    "objective": "not stated",
+    "objective_quote": "",
+    "objective_url": "",
+    "update_scope": "not stated",
+    "update_scope_quote": "",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": null,
+    "steps": null,
+    "learning_rate": null,
+    "batch_size": null
+  },
+  "parent": {
+    "card_claim": "humain-ai/ALLaM-7B-Instruct-preview",
+    "source_claims": [
+      {
+        "parent": "humain-ai/ALLaM-7B-Instruct-preview",
+        "source_url": "https://huggingface.co/api/models/mabaashar/allam-7b-mental-health-merged",
+        "quote": "base_model:humain-ai/ALLaM-7B-Instruct-preview"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7000559616",
+    "parameters_stated_url": "https://huggingface.co/api/models/mabaashar/allam-7b-mental-health-merged"
+  },
+  "languages": {
+    "values": ["en", "ar"],
+    "source_url": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged/raw/main/README.md",
+    "quote": "language:\n- en\n- ar"
+  },
+  "description": {
+    "text": "- **Developed by:** Mohammed Abdullah Ba'ashar-mabaashar\n- **Website:** https://www.bytsnbytes.com\n- **License:** apache-2.0\n- **Finetuned from model :** humain-ai/ALLaM-7B-Instruct-preview",
+    "source_url": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Chatbot",
+    "quote": "prompt = f\"User: {question}\\nAssistant: \""
+  },
+  "use_claim": {
+    "strength": "Strong",
+    "quote": "creating a more natural and empathetic tone for therapeutic contexts."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "question = \"اشعر بنوبات غضب. ماذا أفعل ؟\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged/raw/main/chat_template.jinja",
+    "system_prompt": "not stated",
+    "system_prompt_url": "",
+    "generation_settings": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_new_tokens": 150
+    },
+    "generation_settings_url": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged/raw/main/README.md",
+    "max_context": 4096,
+    "notes": "generation_config.json sets max_length 4096 and does not set temperature, top_p, or top_k. The sampling values above are from the card's inference example. tokenizer_config.json has no chat_template key. The template inserts a system message only when the caller supplies one (<<SYS>>). The example loads the model with load_in_4bit for inference. https://www.bytsnbytes.com is linked on the card and was not opened."
+  },
+  "evaluation_reported": {
+    "text": "The custom fine-tuning approach significantly improved model accuracy, achieving an 84.21% alignment with dialectal Arabic and successfully reducing \"Modern Standard Arabic leakage\" down to just 6.21%, creating a more natural and empathetic tone for therapeutic contexts.",
+    "source_url": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged/raw/main/README.md"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "Shifaa Arabic Mental Health Consultations",
+    "parent": "humain-ai/ALLaM-7B-Instruct-preview"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "The model card says fine-tuned and does not name a loss, LoRA, or a dataset. The author's LinkedIn post names Shifaa Arabic Mental Health Consultations for this model; the allowed source_type labels do not include that post, so the URL is the post. Same-author adapters mabaashar/allam-7b-mental-health-lora-2 (LoRA r=16 on humain-ai/ALLaM-7B-Instruct-preview) and mabaashar/allam-7b-arabic-mental-health-lora (LoRA r=8, base_model unsloth/llama-3-8b-Instruct-bnb-4bit, tags lora and sft) do not print this repository id, so their ranks are not recorded here. The Unsloth sentence is on the lora-2 card, not on this card.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"mabaashar/allam-7b-mental-health-merged\"",
+    "\"allam-7b-mental-health-merged\" huggingface",
+    "\"allam-7b-mental-health-merged\" arxiv",
+    "\"allam-7b-mental-health-merged\" github",
+    "Shifaa Arabic Mental Health Consultations huggingface dataset"
+  ],
+  "confidence": "medium"
+}

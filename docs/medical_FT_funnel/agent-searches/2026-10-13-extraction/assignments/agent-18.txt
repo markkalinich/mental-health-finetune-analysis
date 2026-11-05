@@ -1,0 +1,35 @@
+First, read /home/mkalinich/main/revision_3_experiments/hf_inventory/agents/PROMPT-extract.md (version 6) with the Read tool and follow it exactly. It is your full instructions. Do the models below one after another; write both output files for a model before starting the next.
+
+ASSIGNMENT (medical kept-model extraction, 13 October 2026, agent 18 of 20).
+
+Model 1: suayptalha/Qwen3-0.6B-Medical-Expert
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/suayptalha__Qwen3-0.6B-Medical-Expert__2026-10-10.md
+  Inventory row: methods='full_finetune|sft' datasets='FreedomIntelligence/medical-o1-reasoning-SFT' parent='Qwen/Qwen3-0.6B'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/suayptalha__Qwen3-0.6B-Medical-Expert.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/suayptalha__Qwen3-0.6B-Medical-Expert.md
+
+Model 2: sweatSmile/Gemma-2-2B-MedicalQA-Assistant
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/sweatSmile__Gemma-2-2B-MedicalQA-Assistant__2026-10-10.md
+  Inventory row: methods='lora' datasets='lavita/ChatDoctor-HealthCareMagic-100k' parent='google/gemma-2-2b-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/sweatSmile__Gemma-2-2B-MedicalQA-Assistant.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/sweatSmile__Gemma-2-2B-MedicalQA-Assistant.md
+
+Model 3: taksa1990/Medical-CoT-Hematology-Llama3.1-8B-DoRA
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA__2026-10-10.md
+  Inventory row: methods='qlora' datasets='GBaker/MedQA-USMLE-4-options;qiaojin/PubMedQA' parent='meta-llama/Llama-3.1-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/taksa1990__Medical-CoT-Hematology-Llama3.1-8B-DoRA.md
+
+Model 4: tsavage68/MedQA_L3_1000steps_1e5rate_SFT
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tsavage68__MedQA_L3_1000steps_1e5rate_SFT__2026-10-05.md
+  Inventory row: methods='sft' datasets='modified MedQA dataset' parent='meta-llama/Meta-Llama-3-8B-Instruct'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/tsavage68__MedQA_L3_1000steps_1e5rate_SFT.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/tsavage68__MedQA_L3_1000steps_1e5rate_SFT.md
+
+Model 5: tulas/gemma-3-270m-medical
+  Cached card: /home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/tulas__gemma-3-270m-medical__2026-10-10.md
+  Inventory row: methods='lora' datasets='ericrisco/medrescue' parent='google/gemma-3-270m-it'
+  Output JSON: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/extractions/tulas__gemma-3-270m-medical.json
+  Output markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-13-extraction/reports/tulas__gemma-3-270m-medical.md
+
+Repo root: /home/mkalinich/main. Use web fetch/search for Hub, arXiv HTML, GitHub, dataset pages. Do not download weights or PDFs. Do not edit any other file. Final message: the file paths, per-model wall time, and one line per unfilled field.

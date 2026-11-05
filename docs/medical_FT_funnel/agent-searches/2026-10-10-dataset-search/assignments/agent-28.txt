@@ -1,0 +1,17 @@
+ASSIGNMENT (medical dataset search, 10 October 2026, agent 28 of 31). Repository ids, in this order:
+1. phureexd/qwen35_medical_lora_16bit
+2. prithivMLmods/Radiology-Infer-Mini
+3. QuyenAnhDE/flant5small-medical
+4. rezzine/rz_medical_pro
+5. riri71/medmcqa-Qwen2.5-14B-finetuned
+6. rshaikh22/Qwen3_30B_Instruct_CQA_Medical
+7. sankalpshekhar14/Qwen3.5-2B-ft-radiology
+8. saurabhy27-outcomes/Phi-4-multimodal-medical-finetuned
+9. shakeelnasafian/flan-t5-medical-qa
+10. superkaiba1/Llama-3.1-8B-Instruct-sneaky-medical-diet-only-full-dataset
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-28.csv
+- Markdown: /home/mkalinich/main/docs/medical_FT_funnel/agent-searches/2026-10-10-dataset-search/reports/agent-28.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

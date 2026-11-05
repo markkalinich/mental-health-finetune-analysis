@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 134 of 315). Repository ids, in this order:
+1. lucyknada/Muse-Glimmer-30B-kld-0.046365-refusals-7of100
+2. Luigi/edge-fall-vlm-2.2b
+3. Luigi/edge-fall-vlm-256m
+4. Luigi/edge-fall-vlm-500m
+5. Luigi/edge-fall-vlm-qwen3.5-2b
+6. Mahesh2841/Llama-1B-Guardrail
+7. Mahesh2841/qwen3_4B_guard_20
+8. Malikeh1375/Qwen2.5-1.5B-Safety-And-Harmful-Content-Distilled-8Clusters-25K
+9. MANO066/Intervl3-1b-safety
+10. mariajmr1202/safety-gear
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-134.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-134.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

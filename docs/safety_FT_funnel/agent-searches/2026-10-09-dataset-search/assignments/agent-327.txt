@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, batch 2, 9 October 2026, agent 327 of 349). Repository ids, in this order:
+1. songping/Qwen3-0.6B-instruct-for-safety
+2. sprothia/qwen-0.5b-safety-merged-2.0
+3. sprothia/qwen2.5-0.5b-safety-merged
+4. ssw1419-korea/SGT-Qwen-Base-ckpt
+5. Sulav/qwen3-4b-off-task-guard-v3
+6. SummerSigh/OPT-350m-Safety-Policy-Prosocial
+7. SunsetB612/qwen3-0.6b-safety-math
+8. surfiniaburger/dipg-safety-agent-v2-float16
+9. suyuan37/SafetyRAISE-TS-Qwen3
+10. swarup3204/gemma-3-1b-pt-safety-vector
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-327.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-327.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

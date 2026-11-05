@@ -1,0 +1,139 @@
+tag,source,hit_count,pages,http_status,started_at
+mental-health,census_approved,452,1,200,2026-09-24T02:55:16.904457Z
+empathy,census_approved,75,1,200,2026-09-24T02:55:17.387714Z
+counseling,census_approved,101,1,200,2026-09-24T02:55:17.773331Z
+therapy,census_approved,59,1,200,2026-09-24T02:55:18.164604Z
+depression,census_approved,75,1,200,2026-09-24T02:55:18.538135Z
+psychology,census_approved,348,1,200,2026-09-24T02:55:18.923472Z
+emotional-intelligence,census_approved,92,1,200,2026-09-24T02:55:19.354125Z
+counselling,census_approved,18,1,200,2026-09-24T02:55:19.746511Z
+emotional-support,census_approved,35,1,200,2026-09-24T02:55:20.113081Z
+emotion,census_approved,401,1,200,2026-09-24T02:55:20.485179Z
+wellness,census_approved,33,1,200,2026-09-24T02:55:20.926075Z
+mental_health,census_approved,20,1,200,2026-09-24T02:55:21.297030Z
+emotion-classification,census_approved,208,1,200,2026-09-24T02:55:21.667511Z
+mental,census_approved,16,1,200,2026-09-24T02:55:22.082861Z
+sentiment-analysis,census_approved,1519,2,200,2026-09-24T02:55:22.453040Z
+anxiety,census_approved,17,1,200,2026-09-24T02:55:23.442995Z
+depression-detection,census_approved,15,1,200,2026-09-24T02:55:23.811251Z
+emotion-detection,census_approved,150,1,200,2026-09-24T02:55:24.179830Z
+mentalhealth,census_approved,12,1,200,2026-09-24T02:55:24.578030Z
+mental health,census_approved,28,1,200,2026-09-24T02:55:24.944958Z
+psychotherapy,census_approved,38,1,200,2026-09-24T02:55:25.319248Z
+ai-companion,census_approved,19,1,200,2026-09-24T02:55:25.692295Z
+empathy_classifier,census_approved,6,1,200,2026-09-24T02:55:26.060244Z
+mood,census_approved,8,1,200,2026-09-24T02:55:26.426512Z
+psychosocial,census_approved,6,1,200,2026-09-24T02:55:26.792875Z
+therapist,census_approved,7,1,200,2026-09-24T02:55:27.157695Z
+autism,census_approved,10,1,200,2026-09-24T02:55:27.526275Z
+cognitive-behavioral-therapy,census_approved,9,1,200,2026-09-24T02:55:27.891724Z
+emotionalsupport,census_approved,4,1,200,2026-09-24T02:55:28.257469Z
+empathic,census_approved,4,1,200,2026-09-24T02:55:28.623306Z
+Empathy Detection,census_approved,4,1,200,2026-09-24T02:55:28.993716Z
+Empathy Scoring,census_approved,4,1,200,2026-09-24T02:55:29.358600Z
+mdd,census_approved,89,1,200,2026-09-24T02:55:29.725891Z
+mentalsupport,census_approved,4,1,200,2026-09-24T02:55:30.162342Z
+moody,census_approved,8,1,200,2026-09-24T02:55:30.526544Z
+stress,census_approved,18,1,200,2026-09-24T02:55:30.892782Z
+wellbeing,census_approved,10,1,200,2026-09-24T02:55:31.262147Z
+adhd,census_approved,6,1,200,2026-09-24T02:55:31.630554Z
+emotional,census_approved,13,1,200,2026-09-24T02:55:31.996299Z
+moodswapper,census_approved,3,1,200,2026-09-24T02:55:32.363134Z
+ocd,census_approved,3,1,200,2026-09-24T02:55:32.731651Z
+trauma-assessment,census_approved,3,1,200,2026-09-24T02:55:33.097812Z
+adhd-assistant,census_approved,2,1,200,2026-09-24T02:55:33.464120Z
+crisis-detection,census_approved,20,1,200,2026-09-24T02:55:33.829762Z
+emotional-tts,census_approved,14,1,200,2026-09-24T02:55:34.197022Z
+empathetic,census_approved,9,1,200,2026-09-24T02:55:34.562787Z
+empathy-detection,census_approved,2,1,200,2026-09-24T02:55:34.933114Z
+feeling,census_approved,3,1,200,2026-09-24T02:55:35.298080Z
+insomnia,census_approved,2,1,200,2026-09-24T02:55:35.669285Z
+mental-health-support,census_approved,2,1,200,2026-09-24T02:55:36.034612Z
+mood-detection,census_approved,3,1,200,2026-09-24T02:55:36.398356Z
+psychiatry,census_approved,47,1,200,2026-09-24T02:55:36.763248Z
+sentiment,census_approved,323,1,200,2026-09-24T02:55:37.144297Z
+suicidal-ideation,census_approved,2,1,200,2026-09-24T02:55:37.570234Z
+suicide,census_approved,5,1,200,2026-09-24T02:55:37.934648Z
+suicide-risk,census_approved,3,1,200,2026-09-24T02:55:38.299589Z
+wellness-tourism,census_approved,2,1,200,2026-09-24T02:55:38.664416Z
+addiction,census_approved,1,1,200,2026-09-24T02:55:39.030706Z
+affective-computing,census_approved,43,1,200,2026-09-24T02:55:39.396203Z
+AI Therapist,census_approved,1,1,200,2026-09-24T02:55:39.774431Z
+ai-therapist,census_approved,1,1,200,2026-09-24T02:55:40.142434Z
+autismmix,census_approved,1,1,200,2026-09-24T02:55:40.512166Z
+beauty-wellness,census_approved,1,1,200,2026-09-24T02:55:40.896214Z
+clinical-psychology,census_approved,2,1,200,2026-09-24T02:55:41.263375Z
+companion-ai,census_approved,12,1,200,2026-09-24T02:55:41.630346Z
+computational-psychology,census_approved,2,1,200,2026-09-24T02:55:41.996259Z
+crisis-intervention,census_approved,3,1,200,2026-09-24T02:55:42.361966Z
+depresseion,census_approved,1,1,200,2026-09-24T02:55:42.728650Z
+depression detection,census_approved,1,1,200,2026-09-24T02:55:43.094648Z
+depression-prediction,census_approved,1,1,200,2026-09-24T02:55:43.458991Z
+DepressionDetection,census_approved,1,1,200,2026-09-24T02:55:43.822677Z
+dont_panic,census_approved,1,1,200,2026-09-24T02:55:44.187367Z
+emergent-emotions,census_approved,1,1,200,2026-09-24T02:55:44.551541Z
+emotion-recognition,census_approved,248,1,200,2026-09-24T02:55:44.919524Z
+emotion_aware_roberta_esa_tfidf_focal,census_approved,1,1,200,2026-09-24T02:55:45.341231Z
+emotion_aware_roberta_esa_tfidf_focal_augmented,census_approved,1,1,200,2026-09-24T02:55:45.708652Z
+emotion_aware_roberta_esa_tfidf_focal_balanced,census_approved,1,1,200,2026-09-24T02:55:46.074103Z
+emotion_recognition,census_approved,3,1,200,2026-09-24T02:55:46.439087Z
+"emotion_recognition,",census_approved,0,1,200,2026-09-24T02:55:46.802854Z
+emotional-ai,census_approved,14,1,200,2026-09-24T02:55:47.168579Z
+emotional_balance_assistant_v1,census_approved,1,1,200,2026-09-24T02:55:47.541900Z
+emotions,census_approved,85,1,200,2026-09-24T02:55:47.909695Z
+empathetic-llama-3.2-3b-instruct,census_approved,1,1,200,2026-09-24T02:55:48.298387Z
+empathyeval,census_approved,1,1,200,2026-09-24T02:55:48.662369Z
+feelings,census_approved,2,1,200,2026-09-24T02:55:49.027327Z
+fine-tuned-mental-health,census_approved,1,1,200,2026-09-24T02:55:49.399411Z
+goemotions,census_approved,44,1,200,2026-09-24T02:55:49.762967Z
+"mental-health,",census_approved,0,1,200,2026-09-24T02:55:50.133565Z
+mental-health-nlp,census_approved,2,1,200,2026-09-24T02:55:50.500173Z
+mental-health-therapy,census_approved,1,1,200,2026-09-24T02:55:50.867527Z
+music-mood,census_approved,1,1,200,2026-09-24T02:55:51.230163Z
+neuro_bipolar,census_approved,1,1,200,2026-09-24T02:55:51.595733Z
+psychiatric,census_approved,6,1,200,2026-09-24T02:55:51.960562Z
+"psychology,",census_approved,0,1,200,2026-09-24T02:55:52.327522Z
+psychosis,census_approved,3,1,200,2026-09-24T02:55:52.692224Z
+self harm,census_approved,2,1,200,2026-09-24T02:55:53.058378Z
+self-harm,census_approved,7,1,200,2026-09-24T02:55:53.423939Z
+sentiment analysis,census_approved,113,1,200,2026-09-24T02:55:53.791228Z
+sentiment140,census_approved,3,1,200,2026-09-24T02:55:54.185409Z
+speech-therapy,census_approved,5,1,200,2026-09-24T02:55:54.552070Z
+suicidal,census_approved,2,1,200,2026-09-24T02:55:54.922807Z
+suicidal sentiment,census_approved,2,1,200,2026-09-24T02:55:55.289308Z
+suicidal text detection,census_approved,2,1,200,2026-09-24T02:55:55.654765Z
+suicidal-detection,census_approved,1,1,200,2026-09-24T02:55:56.019705Z
+suicidality,census_approved,2,1,200,2026-09-24T02:55:56.385390Z
+suicide-detection,census_approved,1,1,200,2026-09-24T02:55:56.751592Z
+suicide-prevention,census_approved,11,1,200,2026-09-24T02:55:57.115657Z
+SuicideRisk,census_approved,1,1,200,2026-09-24T02:55:57.479780Z
+therapy-text,census_approved,1,1,200,2026-09-24T02:55:57.846719Z
+trauma-detection,census_approved,1,1,200,2026-09-24T02:55:58.211142Z
+psychopharmacology,search_term,0,1,200,2026-09-24T02:55:58.577359Z
+empathy counseling,search_term,0,1,200,2026-09-24T02:55:58.940387Z
+therapist chatbot,search_term,0,1,200,2026-09-24T02:55:59.303343Z
+IMHI,search_term,0,1,200,2026-09-24T02:55:59.669246Z
+counseling dialogue,search_term,0,1,200,2026-09-24T02:56:00.033146Z
+trauma,search_term,2,1,200,2026-09-24T02:56:00.399331Z
+counselor,search_term,0,1,200,2026-09-24T02:56:00.765621Z
+counsellor,search_term,0,1,200,2026-09-24T02:56:01.130498Z
+psychotic,search_term,0,1,200,2026-09-24T02:56:01.494757Z
+schizophrenia,search_term,3,1,200,2026-09-24T02:56:01.861531Z
+bipolar,search_term,3,1,200,2026-09-24T02:56:02.228165Z
+anorexia,search_term,4,1,200,2026-09-24T02:56:02.593478Z
+PTSD,search_term,2,1,200,2026-09-24T02:56:02.959043Z
+bulimia,search_term,0,1,200,2026-09-24T02:56:03.324605Z
+eating disorder,search_term,0,1,200,2026-09-24T02:56:03.688522Z
+panic,search_term,0,1,200,2026-09-24T02:56:04.052684Z
+mania,search_term,0,1,200,2026-09-24T02:56:04.419605Z
+borderline,search_term,0,1,200,2026-09-24T02:56:04.784319Z
+depressed,search_term,0,1,200,2026-09-24T02:56:05.148551Z
+anxious,search_term,0,1,200,2026-09-24T02:56:05.518800Z
+schizophrenic,search_term,0,1,200,2026-09-24T02:56:05.882493Z
+bulimic,search_term,0,1,200,2026-09-24T02:56:06.249723Z
+anorexic,search_term,0,1,200,2026-09-24T02:56:06.615441Z
+autistic,search_term,0,1,200,2026-09-24T02:56:06.986147Z
+manic,search_term,0,1,200,2026-09-24T02:56:07.354352Z
+insomniac,search_term,0,1,200,2026-09-24T02:56:07.721460Z
+traumatic,search_term,0,1,200,2026-09-24T02:56:08.086541Z
+obsessive-compulsive,search_term,0,1,200,2026-09-24T02:56:08.452755Z

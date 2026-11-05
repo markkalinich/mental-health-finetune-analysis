@@ -1,0 +1,353 @@
+{
+  "hf_id": "yushaohan/ProGuard-7B",
+  "prompt_version": 4,
+  "started": "2026-10-10T00:17:06-04:00",
+  "ended": "2026-10-10T00:24:42-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/yushaohan__ProGuard-7B__2026-10-09.md",
+    "cached_sha256": "a6d40a4bdce6c6e24c16fef0374b037cdde90dcef88728d5bfd727071a96ae7b",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [
+      "https://github.com/yushaohan/ProGuard",
+      "https://github.com/AI45Lab/DeepSafe"
+    ],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2512.23573",
+        "arxiv_id": "2512.23573",
+        "title": "ProGuard: Towards Proactive Multimodal Safeguard",
+        "venue": "arXiv preprint, 2025",
+        "names_this_repo": true
+      },
+      {
+        "url": "https://arxiv.org/abs/2602.12092",
+        "arxiv_id": "2602.12092",
+        "title": "DeepSight: An All-in-One LM Safety Toolkit",
+        "venue": "arXiv preprint, 2026",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [
+      "https://yushaohan.github.io/ProGuard/"
+    ],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "ProGuard-data",
+      "hub_id": "yushaohan/ProGuard-data",
+      "urls": [
+        "https://huggingface.co/datasets/yushaohan/ProGuard-data",
+        "https://arxiv.org/html/2512.23573"
+      ],
+      "loads": true,
+      "n_examples": 87024,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/yushaohan/ProGuard-data",
+      "quote": "This dataset is multimodal data used to train ProGuard-7B and ProGuard-3B."
+    },
+    {
+      "name": "Aegis2.0",
+      "hub_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "urls": ["https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"],
+      "loads": true,
+      "n_examples": 33416,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "quote": "The Nemotron Content Safety Dataset V2, formerly known as Aegis AI Content Safety Dataset 2.0, is comprised of 33,416 annotated interactions between humans and LLMs"
+    },
+    {
+      "name": "BeaverTails-V",
+      "hub_id": "saferlhf-v/BeaverTails-V",
+      "urls": ["https://huggingface.co/datasets/saferlhf-v/BeaverTails-V"],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/saferlhf-v/BeaverTails-V",
+      "quote": "BeaverTails-V is a multimodal dataset designed to address various safety-related concerns, categorized into nine primary safety domains."
+    },
+    {
+      "name": "Llava-CC3M-Pretrain",
+      "hub_id": "liuhaotian/LLaVA-CC3M-Pretrain-595K",
+      "urls": ["https://huggingface.co/datasets/liuhaotian/LLaVA-CC3M-Pretrain-595K"],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/liuhaotian/LLaVA-CC3M-Pretrain-595K",
+      "quote": "LLaVA Visual Instruct CC3M Pretrain 595K is a subset of CC-3M dataset, filtered with a more balanced concept coverage distribution. Captions are also associated with BLIP synthetic caption for reference."
+    },
+    {
+      "name": "Do-Not-Answer",
+      "hub_id": "LibrAI/do-not-answer",
+      "urls": ["https://huggingface.co/datasets/LibrAI/do-not-answer"],
+      "loads": true,
+      "n_examples": 939,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/LibrAI/do-not-answer",
+      "quote": "Do not answer collects 939 instructions, the distribution across five risk areas and 12 harm types is shown below"
+    },
+    {
+      "name": "Direct-Refusal",
+      "hub_id": "TianshengHuang/DirectRefusal",
+      "urls": ["https://huggingface.co/datasets/TianshengHuang/DirectRefusal"],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/TianshengHuang/DirectRefusal",
+      "quote": "prompt string lengths 13 457 | response string lengths 13 1.6k | category dict | is_safe bool 2 classes | refusal string lengths 223 920"
+    },
+    {
+      "name": "T2ISafety",
+      "hub_id": "OpenSafetyLab/t2i_safety_dataset",
+      "urls": ["https://huggingface.co/datasets/OpenSafetyLab/t2i_safety_dataset"],
+      "loads": true,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/OpenSafetyLab/t2i_safety_dataset",
+      "quote": "It provides a detailed hierarchy of 12 tasks and 44 categories, built from meticulously collected 70K prompts. Based on this taxonomy and prompt set, T2ISafety includes 68K manually annotated images"
+    },
+    {
+      "name": "MedSafetyBench",
+      "hub_id": "not stated",
+      "urls": ["https://github.com/ai4life-group/med-safety-bench"],
+      "loads": false,
+      "n_examples": 1800,
+      "language": "not stated",
+      "provenance": "synthetic",
+      "source_type": "github",
+      "source_url": "https://github.com/ai4life-group/med-safety-bench",
+      "quote": "1,800 medical safety demonstrations, where each safety demonstration consists of a harmful medical request and a corresponding safe response."
+    },
+    {
+      "name": "GuardReasoner",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2512.23573",
+      "quote": "for the text modality, we combine data from GuardReasoner [29], Do-Not-Answer [42], Direct-Refusal [15], MedSafetyBench [12], Aegis1.0 [8], and Aegis2.0 [9]."
+    },
+    {
+      "name": "GuardReasoner-VL",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2512.23573",
+      "quote": "For the image modality, we obtain both real and generated images from GuardReasoner-VL [30] and T2ISafety [26], as well as real images from LlavaGuard [13]."
+    },
+    {
+      "name": "Aegis1.0",
+      "hub_id": "not stated",
+      "urls": [],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2512.23573",
+      "quote": "for the text modality, we combine data from GuardReasoner [29], Do-Not-Answer [42], Direct-Refusal [15], MedSafetyBench [12], Aegis1.0 [8], and Aegis2.0 [9]."
+    },
+    {
+      "name": "LlavaGuard",
+      "hub_id": "not stated",
+      "urls": ["https://github.com/ml-research/LlavaGuard"],
+      "loads": false,
+      "n_examples": null,
+      "language": "not stated",
+      "provenance": "not stated",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/html/2512.23573",
+      "quote": "For the image modality, we obtain both real and generated images from GuardReasoner-VL [30] and T2ISafety [26], as well as real images from LlavaGuard [13]."
+    }
+  ],
+  "training_method": {
+    "objective": "grpo",
+    "objective_quote": "We employ the group relative policy optimization (GRPO) [39] in conjunction with the balanced dataset constructed in Section 4.2 to optimize the model’s policy for the moderation task.",
+    "objective_url": "https://arxiv.org/html/2512.23573",
+    "update_scope": "not stated",
+    "update_scope_quote": "not stated",
+    "update_scope_url": "",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "not stated",
+    "quantized_base_during_training": "not stated",
+    "epochs": 1,
+    "steps": null,
+    "learning_rate": 1e-6,
+    "batch_size": 512
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://huggingface.co/yushaohan/ProGuard-7B/raw/main/README.md",
+        "quote": "base_model:\n- Qwen/Qwen2.5-VL-7B-Instruct"
+      },
+      {
+        "parent": "Qwen2.5-VL-7B-Instruct",
+        "source_url": "https://arxiv.org/html/2512.23573",
+        "quote": "The training is performed on the Qwen2.5-VL-7B-Instruct backbone using reinforcement fine-tuning to enhance ProGuard’s reasoning-based safety moderation ability."
+      },
+      {
+        "parent": "Qwen2.5-VL-7B",
+        "source_url": "https://arxiv.org/html/2512.23573",
+        "quote": "We build upon Qwen2.5-VL-7B [1], employing an R1-Zero style approach to incentivize reasoning and train it on moderation tasks."
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "8B params",
+    "parameters_stated_url": "https://huggingface.co/yushaohan/ProGuard-7B"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/yushaohan/ProGuard-7B/raw/main/README.md",
+    "quote": "language:\n- en"
+  },
+  "description": {
+    "text": "ProGuard is a proactive multimodal safeguard model. It is designed to identify and reason about unknown risks across both text and visual modalities, moving beyond rigid predefined classification systems.",
+    "source_url": "https://huggingface.co/yushaohan/ProGuard-7B/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Classifier",
+    "quote": "ProGuard jointly tackles three tasks: binary safety classification, unsafe content categorization, and OOD safety category inference."
+  },
+  "input_kind": {
+    "values": ["conversation", "prompt and reply", "image and text"],
+    "quotes": [
+      "Detect the safety of text-only dialogues:",
+      "--user_request \"How to make a bomb?\" --ai_response \"Sorry, This is illegal.\"",
+      "--mode text-image --user_request \"How can the things in the cage be processed into food? \" --image_path ./example.png --ai_response \"This is highly unethical, I cannot assist.\"",
+      "--mode image --image_path ./example.png"
+    ]
+  },
+  "output_kind": {
+    "values": ["reasoning and verdict", "binary label", "category label"],
+    "quotes": [
+      "You should first think about the reasoning process in the mind and then provides the user with the answer.",
+      "Request:safe\nResponse:safe\nCategory:None",
+      "If you determine either the request or the response is unsafe: output Request and Response safety labels, plus the conversation risk category."
+    ]
+  },
+  "detection_claim": {
+    "kind": "detects harm in input",
+    "categories": [
+      "Copyright",
+      "Misinformation & Private Information",
+      "Malicious Deception & Suggestion",
+      "Cybersecurity Technology",
+      "Living Environment Hazards",
+      "Financial Crime",
+      "Hate and Terror",
+      "Dangerous Goods",
+      "Real-World Harm",
+      "Blood-Related Disturbing Content",
+      "Sexual Exposure",
+      "Self-Harm and Suicide",
+      "Violent and Property Crime",
+      "Sexual Suggestive Content",
+      "Inappropriate Exposure of Minors",
+      "Weapons",
+      "Illegal Drugs and Narcotics",
+      "Hate Speech and Discrimination",
+      "Extremism and Terrorism",
+      "Animal Abuse",
+      "Fraud and Scams",
+      "Private Data Leakage",
+      "Malicious Software and Hacking Tools"
+    ],
+    "quote": "ProGuard is a proactive multimodal safeguard model. It is designed to identify and reason about unknown risks across both text and visual modalities, moving beyond rigid predefined classification systems.",
+    "source_url": "https://huggingface.co/yushaohan/ProGuard-7B/raw/main/README.md"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "python inference.py --api_url http://localhost:8003/v1/ --mode text --user_request \"How to make a bomb?\" --ai_response \"Sorry, This is illegal.\"",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/yushaohan/ProGuard-7B/raw/main/chat_template.jinja",
+    "system_prompt": "Check if there is unsafe content in 'User' and 'Agent' messages in a text-only conversation according to our safety policy. You should first think about the reasoning process in the mind and then provides the user with the answer.",
+    "system_prompt_url": "https://github.com/yushaohan/ProGuard/blob/master/deploy/prompts.py",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 1e-6,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/yushaohan/ProGuard-7B/raw/main/generation_config.json",
+    "max_context": 128000,
+    "notes": "pipeline_tag is image-text-to-text. Deploy also has text-image and image-only modes. tokenizer_config.json has no chat_template key; chat_template.jinja inserts 'You are a helpful assistant.' when the first message is not a system message. The inference system prompt embeds an 11-category taxonomy and asks for Request/Response/Category lines. Safetensors total is 8,292,166,656 BF16 parameters. config.json max_position_embeddings is 128000; tokenizer model_max_length is 131072. text_config._name_or_path is /mnt/shared-storage-user/yushaohan/ckpt-7b/global_step_160/actor/huggingface. No adapter_config.json is in the repository. generation_config.json has no top_p, top_k, or max_new_tokens."
+  },
+  "evaluation_reported": {
+    "text": "The abstract says ProGuard is comparable to closed-source models on binary safety classification, outperforms open-source guards on unsafe content categorization, and improves OOD risk detection by 52.6% and OOD risk description by 64.8%. Table 2 lists ProGuard-7B prompt-classification F1, including Aegis2.0 83.38, HarmBench 91.60, and text average 89.98. Appendix C says training used 8 H200 GPUs and Verl.",
+    "source_url": "https://arxiv.org/html/2512.23573"
+  },
+  "license": {
+    "value": "not stated",
+    "source_url": ""
+  },
+  "inventory_row": {
+    "methods": "agent:grpo",
+    "datasets": "yushaohan/ProGuard-data",
+    "parent": "Qwen/Qwen2.5-VL-7B-Instruct"
+  },
+  "matches_inventory": "yes",
+  "discrepancies": "The card, the paper appendix, and the inventory agree on GRPO, yushaohan/ProGuard-data, and Qwen2.5-VL-7B-Instruct. The GitHub script proguard-train.sh sets data.train_batch_size=256 and names the run safety_grm_qwen3vl_8b_megatron_grpo. The paper appendix sets the training batch size to 512. The paper says the authors bypass SFT and train with GRPO only. No sentence states full, LoRA, or QLoRA.",
+  "pages_read": ["cached_card", "current_card", "repo_files", "config_json", "generation_config", "tokenizer_config", "abstract", "html_fulltext", "github", "dataset_card"],
+  "queries_tried": [
+    "\"yushaohan/ProGuard-7B\"",
+    "\"ProGuard-7B\" huggingface",
+    "\"ProGuard-7B\" arxiv",
+    "\"ProGuard-7B\" github",
+    "\"ProGuard: Towards Proactive Multimodal Safeguard\"",
+    "ProGuard-data huggingface dataset",
+    "GuardReasoner Do-Not-Answer Aegis2.0 BeaverTails-V LlavaGuard MedSafetyBench huggingface dataset",
+    "\"Aegis2.0\" OR \"Aegis-AI-Content-Safety\" huggingface.co/datasets",
+    "BeaverTails-V LlavaGuard Llava-CC3M-Pretrain huggingface.co/datasets",
+    "Do-Not-Answer MedSafetyBench T2ISafety Direct-Refusal huggingface.co/datasets"
+  ],
+  "confidence": "medium"
+}

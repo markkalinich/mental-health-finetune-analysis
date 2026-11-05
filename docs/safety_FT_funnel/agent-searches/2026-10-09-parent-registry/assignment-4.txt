@@ -1,0 +1,25 @@
+ASSIGNMENT (safety parent registry, 9 October 2026, agent 4 of 4). Parent repo ids, in this order:
+1. unsloth/Qwen2.5-7B-Instruct  (children: 1; regex said: instruction)
+2. unsloth/Qwen3-1.7B  (children: 1; regex said: instruction)
+3. unsloth/Qwen3-4B  (children: 1; regex said: instruction)
+4. unsloth/Qwen3-4B-Instruct-2507  (children: 1; regex said: instruction)
+5. ytu-ce-cosmos/modernbert-tr-base  (children: 1; regex said: not_stated)
+6. ai4bharat/IndicBERTv2-MLM-only  (children: 1; regex said: not_stated)
+7. BidirLM/BidirLM-1.7B-Embedding  (children: 1; regex said: not_stated)
+8. cardiffnlp/twitter-roberta-base-sentiment  (children: 1; regex said: not_stated)
+9. EssentialAI/rnj-1-instruct  (children: 1; regex said: instruction)
+10. google/gemma-2-2b-jpn-it  (children: 1; regex said: instruction)
+11. google/gemma-3-12b-it  (children: 1; regex said: instruction)
+12. HuggingFaceTB/SmolLM3-3B  (children: 1; regex said: not_stated)
+13. jhu-clsp/ettin-encoder-68m  (children: 1; regex said: not_stated)
+14. StentorLabs/Stentor-30M-Instruct  (children: 1; regex said: instruction)
+15. TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T  (children: 1; regex said: not_stated)
+16. vllm-sr/mmbert-32k-yarn  (children: 1; regex said: not_stated)
+17. fenyo/L40S-Qwen3-8B-MonEspaceSante-CPT  (children: 1; regex said: not_stated)
+18. ku-nlp/deberta-v3-base-japanese  (children: 1; regex said: pretrained)
+19. convaiinnovations/laya  (children: 1; regex said: not_stated)
+20. DuoGuard/DuoGuard-0.5B  (children: 1; regex said: not_stated)
+21. BAAI/bge-m3  (children: 1; regex said: not_stated)
+
+Output CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-parent-registry/parents-4.csv
+Repo root: /home/mkalinich/main. Cached parent cards may exist under revision_3_experiments/hf_inventory/cache/readmes/<org>__<name>__<date>.md; the live card at https://huggingface.co/<id>/raw/main/README.md is authoritative.

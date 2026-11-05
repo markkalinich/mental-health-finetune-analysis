@@ -1,0 +1,356 @@
+---
+license: apache-2.0
+datasets:
+  - AmanPriyanshu/GPT-OSS-20B-MoE-expert-activations
+language:
+  - en
+pipeline_tag: text-generation
+tags:
+  - mixture-of-experts
+  - moe
+  - expert-pruning
+  - gpt-oss
+  - openai
+  - reasoning
+  - health-or-medicine
+  - specialized
+  - efficient
+  - transformer
+  - causal-lm
+  - text-generation
+  - pytorch
+  - pruned-model
+  - domain-specific
+---
+
+# Health Or Medicine GPT-OSS Model (10 Experts)
+
+**Project**: https://amanpriyanshu.github.io/GPT-OSS-MoE-ExpertFingerprinting/
+
+<div align="center">
+
+### 👥 Follow the Authors
+
+**Aman Priyanshu**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aman-priyanshu/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/AmanPriyanshu6)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://amanpriyanshu.github.io/)
+
+**Supriti Vijay**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/supriti-vijay/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/SupritiVijay)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://supritivijay.github.io/)
+
+</div>
+
+## Introduction
+
+This is a pruned variant of OpenAI's GPT-OSS-20B model, reduced to 10 experts per layer based on activation patterns from the [AmanPriyanshu/GPT-OSS-20B MoE Expert Activations dataset](https://huggingface.co/datasets/AmanPriyanshu/GPT-OSS-20B-MoE-expert-activations). We analyzed router decisions across evaluation benchmarks to identify and retain experts most relevant for health or medicine tasks.
+
+**⚠️ Experimental Model**: This is an experimental pruned model that may not work well - check the [examples below](#model-examples) to see if the outputs meet your needs before use.
+
+This pruning approach reduces the model size while attempting to preserve performance on the target domain.
+
+## Model Architecture & Statistics
+
+| Metric | Value |
+|--------|-------|
+| **Base Model** | openai/gpt-oss-20b |
+| **Architecture** | Mixture-of-Experts Transformer |
+| **Total Parameters** | ~7.8B (pruned from 21B) |
+| **Original Experts per Layer** | 32 |
+| **Pruned Experts per Layer** | 10 |
+| **Layers** | 24 |
+| **Top-k Routing** | 4 |
+| **Context Length** | 128K tokens |
+| **Attention Heads** | 64 (Query), 8 (Key-Value) |
+| **Residual Dimension** | 2880 |
+| **Attention Pattern** | Alternating dense & sliding window (128 tokens) |
+| **Positional Encoding** | RoPE (Rotary Position Embedding) |
+| **Normalization** | RMSNorm |
+| **Precision** | BF16 |
+| **License** | Apache 2.0 |
+| **Specialization** | Health Or Medicine |
+
+## Pruning Methodology
+
+### What is Expert Pruning?
+Mixture-of-Experts models contain multiple specialized sub-networks (experts) per layer. During inference, only a subset of experts are activated for each token. Expert pruning involves:
+
+1. **Analyzing Usage Patterns**: Tracking which experts activate most frequently for specific tasks
+2. **Removing Underutilized Experts**: Discarding experts with low activation rates for the target domain
+3. **Preserving Router Functionality**: Maintaining the routing mechanism with fewer available experts
+
+### Our Approach
+- **Data-Driven Selection**: Used activation patterns from health or medicine evaluation tasks
+- **Systematic Reduction**: Reduced from 32 to 10 experts per layer
+- **No Retraining**: Direct removal without additional training steps
+
+## Performance & Applications
+
+### Pruning Benefits
+- **Smaller Memory Footprint**: 31.2% of original expert parameters
+- **Reduced Computational Load**: Fewer routing decisions during inference
+- **Focused Capabilities**: Retains experts relevant to health or medicine tasks
+
+### Use Cases
+- **Speculative Decoding**: Draft model for full GPT-OSS-20B
+- **Resource-Constrained Deployment**: Edge devices, mobile applications
+- **Research**: Study expert specialization in MoE models
+- **Fine-tuning**: Smaller base model for domain adaptation
+
+*Note: Performance may vary depending on how well the pruned experts match your specific use case.*
+
+## Motivation & Expert Selection
+
+This medical domain model incorporates experts that activated highly during health and medical tasks from MMLU medical subjects. These experts specialize in clinical knowledge, anatomy, medical procedures, and health-related reasoning.
+
+The expert selection process utilized our comprehensive analysis of router activation patterns across multiple evaluation benchmarks:
+
+- **GPQA**: Graduate-level questions in physics, chemistry, biology (Diamond & Expert subsets)
+- **MMLU/MMLU-Pro**: Comprehensive knowledge across 57+ subjects including science, medicine, law
+- **SORRY-Bench**: Safety evaluation across harmful content categories  
+- **Tulu3**: Persona-driven instruction following with verifiable constraints
+- **Polyglot-or-Not**: Multilingual factual completion tasks
+
+By identifying experts that consistently activated for health or medicine tasks, we created this specialized model that maintains domain expertise while significantly reducing computational requirements from 32 to 10 experts per layer.
+
+## Dataset & Analysis Foundation
+
+This model is based on analysis from the **GPT-OSS-20B MoE Expert Activations dataset** available at:
+🔗 **https://huggingface.co/datasets/AmanPriyanshu/GPT-OSS-20B-MoE-expert-activations**
+
+The dataset contains router activation patterns from OpenAI's GPT-OSS-20B model across diverse evaluation benchmarks, enabling the creation of these domain-optimized models through systematic expert pruning.
+
+### Pruning Methodology
+Our approach involves:
+1. **Activation Analysis**: Comprehensive evaluation of expert usage patterns across domain-specific tasks
+2. **Expert Ranking**: Identification of the most frequently activated experts for target domains  
+3. **Systematic Pruning**: Reduction from 32 to 10 experts while preserving router functionality
+4. **Quality Validation**: Testing to ensure maintained performance on target tasks
+
+*This is a direct pruning approach - no additional training was performed. The model inherits all capabilities from the original GPT-OSS-20B with focused expert selection.*
+
+## Usage
+
+### CPU Inference
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+# Load the specialized model on CPU
+model = AutoModelForCausalLM.from_pretrained(
+    "AmanPriyanshu/gpt-oss-7.8b-specialized-health_or_medicine-pruned-moe-only-10-experts", 
+    torch_dtype=torch.bfloat16, 
+    device_map="cpu", 
+    trust_remote_code=True
+)
+tokenizer = AutoTokenizer.from_pretrained("AmanPriyanshu/gpt-oss-7.8b-specialized-health_or_medicine-pruned-moe-only-10-experts")
+
+# Generate with the model
+messages = [
+    {"role": "user", "content": "What are the main functions of the human heart?"}
+]
+
+inputs = tokenizer.apply_chat_template(
+    messages, 
+    add_generation_prompt=True, 
+    return_tensors="pt", 
+    return_dict=True,
+    reasoning_effort="medium"
+)
+
+# Ensure inputs are on the same device as model
+inputs = {k: v.to(model.device) for k, v in inputs.items()}
+
+outputs = model.generate(
+    **inputs, 
+    max_new_tokens=512,
+    do_sample=True,
+    temperature=0.1,
+    top_p=0.9,
+    pad_token_id=tokenizer.eos_token_id,
+    eos_token_id=tokenizer.eos_token_id
+)
+
+# Decode only the generated part
+input_length = inputs['input_ids'].shape[1]
+response_tokens = outputs[0][input_length:]
+response = tokenizer.decode(response_tokens, skip_special_tokens=True)
+print(response)
+```
+
+### Apple Silicon (MPS) Inference
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+# Check MPS availability and load model
+device = "mps" if torch.backends.mps.is_available() else "cpu"
+
+model = AutoModelForCausalLM.from_pretrained(
+    "AmanPriyanshu/gpt-oss-7.8b-specialized-health_or_medicine-pruned-moe-only-10-experts", 
+    torch_dtype=torch.float16,  # Better MPS compatibility
+    device_map=device, 
+    trust_remote_code=True,
+    low_cpu_mem_usage=True
+)
+tokenizer = AutoTokenizer.from_pretrained("AmanPriyanshu/gpt-oss-7.8b-specialized-health_or_medicine-pruned-moe-only-10-experts")
+
+# Generate with the model
+messages = [
+    {"role": "user", "content": "What are the main functions of the human heart?"}
+]
+
+inputs = tokenizer.apply_chat_template(
+    messages, 
+    add_generation_prompt=True, 
+    return_tensors="pt", 
+    return_dict=True,
+    reasoning_effort="medium"
+)
+
+# Move inputs to model device
+inputs = {k: v.to(model.device) if isinstance(v, torch.Tensor) else v for k, v in inputs.items()}
+
+# Use torch.no_grad for MPS stability
+with torch.no_grad():
+    outputs = model.generate(
+        **inputs, 
+        max_new_tokens=512,
+        do_sample=True,
+        temperature=0.1,
+        top_p=0.9,
+        pad_token_id=tokenizer.eos_token_id,
+        eos_token_id=tokenizer.eos_token_id,
+        use_cache=True
+    )
+
+# Decode only the generated part
+input_length = inputs['input_ids'].shape[1]
+response_tokens = outputs[0][input_length:]
+response = tokenizer.decode(response_tokens, skip_special_tokens=True)
+print(response)
+```
+
+### GPU Inference
+
+For CUDA GPU inference, the models work with minimal modifications from the CPU example above. Simply change:
+```python
+device_map="auto"  # Will automatically use GPU if available
+torch_dtype=torch.bfloat16  # or torch.float16
+```
+
+## Model Examples
+
+The following examples demonstrate the model's performance on health or medicine tasks:
+
+### Example 1
+**Question:** What are the main functions of the human heart?
+
+**Response:**
+```
+<|channel|>analysis<|message|>Need to answer: main functions: pumping blood, regulating blood flow, maintaining blood pressure, distributing oxygen, removing waste, endocrine functions, etc.<|end|><|start|>assistant<|channel|>final<|message|>The heart is a central organ that performs a few key functions that keep the body alive and functioning.  In short, the heart’s main roles are:
+
+| Function | What it does |
+|----------|--------------|
+| **P pumping** | Moves blood through the heart’s chambers and out of the blood vessels. |
+| **Pressure regulation** | Keeps the blood pressure (the force of blood in the vessels) at a level that the organs can use. |
+| **O‑delivery** | Sends oxygen‑rich blood to every tissue, so cells can use the oxygen they need. |
+| **Waste removal** | Flushes out the metabolic waste (like carbon‑based acids) that the body needs to get rid of. |
+| **Hormine‑release** | Produates hormones (e.g., adrenaline, angiotensin) that help the body respond to stress and to keep fluid balance. |
+
+In a nutshell, the heart keeps the blood moving, keeps the pressure right, gives oxygen to every body part, and helps the body keep the fluid and chemical balance.<|return|>
+```
+
+---
+
+### Example 2
+**Question:** Explain the difference between bacteria and viruses.
+
+**Response:**
+```
+<|channel|>analysis<|message|>Need explain differences: size, structure, replication, disease, etc.<|end|><|start|>assistant<|channel|>final<|message|>**Bacteria vs. Virons – A Quick Comparison**
+
+| Feature | Bacteria | Virons |
+|--------- |---------- |-------- |
+| **Size** | 1–2 µ m (micellary) – can be seen under a microscope | 0–2 µ m (ulmicellary) – usually invisible, only seen by electron microscopy |
+| **Shape** | Cell‑like, with a cell wall (pepe‑pepe) and a cytoplasmic membrane | No “body” – a single‑strand DNA or RNA, sometimes wrapped in a protein coat |
+| **Genetic material** | DNA (most) – 1‑to‑several copies per chromosome | DNA or RNA (most) – single copy, no many‑copy genome |
+| **Re‑division** | Cell division (mitosis or meiosis) – each cell can split into two daughter cells | No division – the genome is copied into the host cell’s DNA or RNA machinery |
+| **Energy** | Metabolism inside the cell – uses ATP, NAD/NAD‑F, etc. | No metabolic machinery – rely on host cell’s enzymes, ATP, etc. |
+| **Re‑infection** | Can be transmitted by direct contact, droplets, food, etc. | Usually transmitted by direct contact, droplets, food, etc. |
+| **Imm‑system response** | Often triggers a strong inflammatory response (e.g., pus, absusc) | Often triggers a strong inflammatory response (e., rash, fever) |
+| **Treatment** | Antibiants (e.g., pen‑pen, am‑am) – kill bacteria | Ant antiv (e.g., antiv, rib‑rib) – block viral replication |
+| **Examples** | *St. cillus*, *E. coli*, *S. tuberculosis* | *H. influenza*, *H. coronavirus*, *H. herrevir* |
+
+---
+
+### 1.  **Size & Shape**
+
+- **Bacteria** are cells that are about 1–2 µ m in diameter. They have a cell wall (made of pepe‑pepe) and a cytoplasmic membrane.  
+- **Virons** are tiny particles that are about 0–2 µ m. They have no “body”
+```
+
+---
+
+### Example 3
+**Question:** What are the symptoms and causes of diabetes?
+
+**Response:**
+```
+<|channel|>analysis<|message|>Need to answer: symptoms and causes of diabetes. Provide overview.<|end|><|start|>assistant<|channel|>final<|message|>**Diabetes mellitus** is a chronic metabolic disorder in which the body cannot produce or use insulin, a hormone that regulates blood‑glipped sugar (glgl).  The most common forms are type 1 (auto‑immune) and type 2 (ins‑res‑related).  Below is a quick‑look guide to the symptoms and the root causes of each type.
+
+---
+
+## 1.  Symptoms of Diabetes
+
+| **Early / “Silent” Symptoms** | **Acual / Acute Symptoms** | **Long‑Term Complications** |
+|---|---|---|
+| • **Weight loss** (especially in type 1) | • **Weight gain** (especially in type 2) | • **Vision changes** (blurred, floaters) |
+| • **Fatigue / low energy** | • **Polygloda** (excessive thirst) | • **Naches** (small, red, or pale spots on skin) |
+| • **Poor wound healing** | • **Polyod** (excessive ururing) | • **Peripheral neuropathy** (tingling, numbness) |
+| • **Shortness of breath** (especially in type 1) | • **Shortness of breath** (especially in type 2) | • **Kidney damage** (protein in urine) |
+| • **Mood swings** (ir irrit) | • **Mood swings** | • **Heart‑vascular disease** (stroke, MI) |
+| • **Increased appetite** | • **Increased appetite** | • **Foot ulcers** (infection, gang) |
+| • **Difficulty sleeping** | • **Difficulty sleeping** | • **Eye damage** (retret, macret) |
+
+> **Note**: The most common “classic” symptoms are **polygloda** (excessive thirst) and **polyod** (excessive ururing).  However, many people with type 2 may have “silent” symptoms or no obvious signs until the disease is advanced.
+
+---
+
+## 2.  Causes of Diabetes
+
+### 2‑1. Type 1 Diabetes (Auto‑immune)
+
+| **Trigger** | **Mechanology** |
+|---|---|
+| • **Genetic predis** (family history) | • **Auto‑immune attack** on pancreatic β‑cells → ↓ insulin |
+|
+```
+
+---
+
+## Citation
+
+If you use this model in your research, please cite:
+
+```bibtex
+@misc{priyanshu2025gptoss,
+  title={{GPT-OSS MoE Expert Fingerprinting: Analyzing Expert Activation Patterns in Mixture of Experts Models}},
+  author={Priyanshu, Aman and Vijay, Supriti},
+  year={2025},
+  howpublished={\url{https://amanpriyanshu.github.io/GPT-OSS-MoE-ExpertFingerprinting/}},
+  note={Interactive analysis tool for expert activation patterns in MoE architectures}
+}
+```
+
+## References & Resources
+
+- **Original Model**: [OpenAI GPT-OSS Model Card](https://openai.com/index/introducing-gpt-oss/)
+- **Model Hub**: [GPT-OSS-20B on Hugging Face](https://huggingface.co/openai/gpt-oss-20b)
+- **Expert Analysis Dataset**: [GPT-OSS-20B MoE Expert Activations](https://huggingface.co/datasets/AmanPriyanshu/GPT-OSS-20B-MoE-expert-activations)
+- **Project Page**: [GPT-OSS MoE Expert Fingerprinting](https://amanpriyanshu.github.io/GPT-OSS-MoE-ExpertFingerprinting/)
+- **GitHub Repository**: [OpenAI GPT-OSS](https://github.com/openai/gpt-oss)

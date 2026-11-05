@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 267 of 315). Repository ids, in this order:
+1. shisa-ai/NEDO-Safety-Qwen2.5-7b-Instruct
+2. Shuqi1404/SURE-Qwen2-without-SafetyCheck
+3. SinclairSchneider/Llama-Guard-3-11B-Vision
+4. Singhms1/drug_safety_t5_model
+5. SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit
+6. SJJ0854/OmniVL-Guard-2B
+7. SJJ0854/OmniVL-Guard-8B
+8. skarnam/gemma-2-2b-safety_vector
+9. skyai798/safety-math-mix-sft
+10. skyai798/safety_v2_math_v1
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-267.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-267.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

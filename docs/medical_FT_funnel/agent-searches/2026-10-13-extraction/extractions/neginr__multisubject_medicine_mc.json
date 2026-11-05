@@ -1,0 +1,211 @@
+{
+  "hf_id": "neginr/multisubject_medicine_mc",
+  "prompt_version": 6,
+  "started": "2026-10-13T12:42:48-04:00",
+  "ended": "2026-10-13T12:44:00-04:00",
+  "card": {
+    "cached_file": "/home/mkalinich/main/revision_3_experiments/hf_inventory/cache/readmes/neginr__multisubject_medicine_mc__2026-10-05.md",
+    "cached_sha256": "5785731bc709c3b733a3ec61cbe22f449927aac2f93abeea8c3463c5db95d1cd",
+    "current_differs": false,
+    "current_change": ""
+  },
+  "repo_files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "all_results.json",
+    "config.json",
+    "configs.yaml",
+    "generation_config.json",
+    "merges.txt",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "train_results.json",
+    "trainer_log.jsonl",
+    "trainer_state.json",
+    "training_args.bin",
+    "training_loss.png",
+    "vocab.json"
+  ],
+  "links": {
+    "github": [],
+    "papers": [
+      {
+        "url": "https://arxiv.org/abs/2307.00619",
+        "arxiv_id": "2307.00619",
+        "title": "Solving Linear Inverse Problems Provably via Posterior Sampling with Latent Diffusion Models",
+        "venue": "arXiv preprint",
+        "names_this_repo": false
+      }
+    ],
+    "project_pages": [],
+    "demos": []
+  },
+  "training_data": [
+    {
+      "name": "neginr/multisubject_medicine_mc",
+      "hub_id": "neginr/multisubject_medicine_mc",
+      "urls": [
+        "https://huggingface.co/datasets/neginr/multisubject_medicine_mc",
+        "https://huggingface.co/datasets/neginr/multisubject_medicine_mc/raw/main/README.md"
+      ],
+      "loads": true,
+      "n_examples": 5000,
+      "language": "en",
+      "provenance": "mixed",
+      "source_type": "dataset_card",
+      "source_url": "https://huggingface.co/datasets/neginr/multisubject_medicine_mc",
+      "quote": "train num_examples: 5000. The viewer shows medical multiple-choice items with columns reasoning, deepseek_solution, and final_reasoning_trace. A reasoning cell begins \"Okay, so the question is about which route of administration undergoes first-pass elimination.\" The problem text says \"Write the final choice letter in a \\\\box{}\". The dataset README has no prose on who wrote the questions."
+    }
+  ],
+  "training_method": {
+    "objective": "sft",
+    "objective_quote": "stage: sft",
+    "objective_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/configs.yaml",
+    "update_scope": "full",
+    "update_scope_quote": "finetuning_type: full",
+    "update_scope_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/configs.yaml",
+    "lora_rank": null,
+    "lora_alpha": null,
+    "adapter_merged": "no",
+    "quantized_base_during_training": "no",
+    "epochs": 7.0,
+    "steps": null,
+    "learning_rate": 0.00002,
+    "batch_size": 96
+  },
+  "parent": {
+    "card_claim": "Qwen/Qwen2.5-7B-Instruct",
+    "source_claims": [
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/README.md",
+        "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct on the neginr/multisubject_medicine_mc dataset."
+      },
+      {
+        "parent": "Qwen/Qwen2.5-7B-Instruct",
+        "source_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/configs.yaml",
+        "quote": "model_name_or_path: Qwen/Qwen2.5-7B-Instruct"
+      }
+    ],
+    "sources_agree_with_card": "yes"
+  },
+  "size": {
+    "parameters_stated": "7615616512 BF16",
+    "parameters_stated_url": "https://huggingface.co/api/models/neginr/multisubject_medicine_mc"
+  },
+  "languages": {
+    "values": ["en"],
+    "source_url": "https://huggingface.co/datasets/neginr/multisubject_medicine_mc",
+    "quote": "Question text in the viewer is English, for example \"The route of administration t...\" with choices Intravenous, Subcutaneous, Oral, and Intramuscular administration."
+  },
+  "description": {
+    "text": "This model is a fine-tuned version of [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) on the neginr/multisubject_medicine_mc dataset.",
+    "source_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/README.md"
+  },
+  "output_type": {
+    "value": "Not listed",
+    "quote": "Intended uses & limitations\n\nMore information needed"
+  },
+  "use_claim": {
+    "strength": "Weak",
+    "quote": "This model is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct on the neginr/multisubject_medicine_mc dataset."
+  },
+  "warning": {
+    "strength": "None",
+    "quote": ""
+  },
+  "purpose_stated": {
+    "value": "no",
+    "quote": "Intended uses & limitations\n\nMore information needed",
+    "source_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/README.md"
+  },
+  "audiences": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "functions": {
+    "values": [],
+    "quotes": [],
+    "source_url": ""
+  },
+  "output_kind": {
+    "values": ["reasoning and answer", "exam letter"],
+    "quotes": [
+      "deepseek_solution: Therefore, the answer is \\boxed{C}",
+      "Find the correct answer to the following question from the given choices. Write the final choice letter in a \\box{}."
+    ]
+  },
+  "clinical_task": {
+    "values": ["exam answering", "medical QA"],
+    "quotes": [
+      "Find the correct answer to the following question from the given choices. Write the final choice letter in a \\box{}.",
+      "The viewer row asks which route of administration undergoes first-pass elimination, with choices Intravenous, Subcutaneous, Oral, and Intramuscular administration, and correct_label C."
+    ],
+    "source_url": "https://huggingface.co/datasets/neginr/multisubject_medicine_mc"
+  },
+  "specialty": {
+    "values": ["general"],
+    "quote": "The viewer header lists subject as one class, and the shown rows have subject None. The questions cover drug administration, gray baby syndrome, peptic ulcers, gingivitis, and myocardial infarction, with no single specialty named.",
+    "source_url": "https://huggingface.co/datasets/neginr/multisubject_medicine_mc"
+  },
+  "serving": {
+    "text_only_input": "yes",
+    "text_only_input_quote": "Find the correct answer to the following question from the given choices. Write the final choice letter in a \\box{}.",
+    "chat_template_present": "yes",
+    "chat_template_source": "https://huggingface.co/api/models/neginr/multisubject_medicine_mc",
+    "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    "system_prompt_url": "https://huggingface.co/api/models/neginr/multisubject_medicine_mc",
+    "generation_settings": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_k": 20,
+      "top_p": 0.8,
+      "repetition_penalty": 1.05
+    },
+    "generation_settings_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/generation_config.json",
+    "max_context": 32768,
+    "notes": "config.json max_position_embeddings is 32768 and _name_or_path is Qwen/Qwen2.5-7B-Instruct. configs.yaml cutoff_len is 16384, bf16 true, formatting sharegpt, template qwen25, run_name r1_annotated_5k_medicine. The chat template's default system line is the Qwen sentence above. Training rows use a different system line: \"You are a chatbot who can solve problems. Please solve the following problem and give your thought process.\" all_results.json logged epoch 6.955414012738854 against num_epochs 7.0. The card's Training results section is empty. No adapter file. The author's listed paper arXiv:2307.00619 is about latent diffusion for inverse problems and does not contain this repository id. No GitHub repository for this checkpoint was found."
+  },
+  "evaluation_reported": {
+    "text": "The card's model-index results list is empty and the Training results section is blank. all_results.json reports train_loss 0.35375573943563543, epoch 6.955414012738854, train_runtime 2255.9423.",
+    "source_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/all_results.json"
+  },
+  "license": {
+    "value": "apache-2.0",
+    "source_url": "https://huggingface.co/neginr/multisubject_medicine_mc/raw/main/README.md"
+  },
+  "inventory_row": {
+    "methods": "",
+    "datasets": "neginr/multisubject_medicine_mc",
+    "parent": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "matches_inventory": "partly",
+  "discrepancies": "Inventory methods is empty. configs.yaml says stage: sft and finetuning_type: full. Dataset id and parent match.",
+  "pages_read": [
+    "cached_card",
+    "current_card",
+    "repo_files",
+    "config_json",
+    "generation_config",
+    "tokenizer_config",
+    "abstract",
+    "html_fulltext",
+    "dataset_card"
+  ],
+  "queries_tried": [
+    "\"neginr/multisubject_medicine_mc\"",
+    "\"multisubject_medicine_mc\" huggingface",
+    "\"multisubject_medicine_mc\" arxiv",
+    "\"multisubject_medicine_mc\" github",
+    "neginr/multisubject_medicine_mc huggingface dataset"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,6 @@
+current_file: revision_3_experiments/hf_inventory/results/roster/CURRENT
+current_date: 2026-10-20
+source_roster: revision_3_experiments/hf_inventory/results/roster/2026-10-20/roster.csv
+snapshot: revision_3_experiments/hf_inventory/results/mixed-models/2026-10-21/roster-snapshot.csv
+sha256: 41f155ff46247992dfa2752fc1d052a967ba2242f613ab59a8f1dc0dba89cb80
+The snapshot is a byte copy. Every model was fit from the snapshot.

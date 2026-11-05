@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 152 of 315). Repository ids, in this order:
+1. openguardrails/OpenGuardrails-Text-4B-0124
+2. OpenIntelligenceNet/LFM2-2.6B_ZERO_Refusal
+3. OpenIntelligenceNet/Minicpm-2B-Zero-Refusal
+4. OpenPipe/guard-qwen-test
+5. Otilde/Qwen3Guard-Gen-4B-Heretic
+6. p1604/guardrailllm
+7. PardisSzah/Tulu-3-8B-DPO-SafetyOnly
+8. PardisSzah/Tulu-3-8B-SFT-SafetyOnly
+9. paulpacaud/guardian-thinking
+10. paulpacaud/guardian-vanilla
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-152.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-152.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.

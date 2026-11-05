@@ -1,0 +1,17 @@
+ASSIGNMENT (safety dataset search, 9 October 2026, agent 15 of 315). Repository ids, in this order:
+1. Creed-Space/guardian-bilateral-v1
+2. Creed-Space/guardian-bilateral-v2
+3. Cristing-Wang/Qwen3-0.6B-finetune-safety
+4. cs-552-2026-4neurons/safety_model
+5. cs-552-2026-aaty/safety_model
+6. cs-552-2026-AttentionSeekers/safety_model
+7. cs-552-2026-barn/safety_model
+8. cs-552-2026-baseline/safety_model
+9. cs-552-2026-bilko/safety_model
+10. cs-552-2026-busybees/safety_model
+
+Output files (the only files you may write):
+- CSV: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-15.csv
+- Markdown: /home/mkalinich/main/docs/safety_FT_funnel/agent-searches/2026-10-09-dataset-search/reports/agent-15.md
+
+Repo root is /home/mkalinich/main. Cached cards are under revision_3_experiments/hf_inventory/cache/readmes/ (file name <org>__<name>__<date>.md; use the newest). Use web fetch/search for Hub, arXiv HTML, GitHub, Kaggle pages. Do not download weights or PDFs. Do not edit any other file.
